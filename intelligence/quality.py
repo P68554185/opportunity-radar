@@ -14,14 +14,11 @@ def build_quality():
     intel=load(os.path.join(ROOT,'reports','intelligence_report.json'),{})
     live=load(os.path.join(ROOT,'real_data','ted_live_normalized.json'),[])
     opp=intel.get('opportunities',[])
-    # intelligence_report stores top 50; derive full distributions directly from live records using same eligibility/score logic.
-    from build import opportunity_score
+    enriched=load(os.path.join(ROOT,'real_data','ted_live_enriched.json'),[])
     full=[]
-    for x in live:
-        if not (x.get('project_type') or x.get('_trades')): continue
-        score=opportunity_score(x)
-        band='HOT' if score>=85 else ('UPCOMING' if score>=65 else 'EARLY')
-        full.append({**x,'score':score,'band':band})
+    for x in enriched:
+        if not (x.get('project_type') or x.get('trades')): continue
+        full.append({**x,'_trades':x.get('trades',[])})
     project=Counter(x.get('project_type') or 'unclassified_project' for x in full)
     trades=Counter(t for x in full for t in x.get('_trades',[]))
     bands=Counter(x['band'] for x in full)
@@ -34,7 +31,7 @@ def build_quality():
         'project_type_only':sum(1 for x in full if x.get('project_type') and not x.get('_trades')),
         'trade_only':sum(1 for x in full if not x.get('project_type') and x.get('_trades')),
         'project_and_trade':sum(1 for x in full if x.get('project_type') and x.get('_trades')),
-        'high_confidence_85_plus':sum(1 for x in full if x['score']>=85)
+        'opportunity_score_85_plus':sum(1 for x in full if x['score']>=85)
       },
       'sample_top':[{
         'source_id':x.get('source_id'),'title':x.get('title'),'authority':x.get('authority'),'city':x.get('city'),

@@ -112,6 +112,8 @@ def event_key(e: SourceEvent) -> str:
 
 def project_similarity(a: Project, e: SourceEvent) -> float:
     # v0.4 safety gate: two known, different municipalities cannot auto-merge.
+    if a.project_type not in ("", "unknown") and e.project_type and a.project_type != e.project_type:
+        return 0.0
     if a.city and e.city and norm(a.city) != norm(e.city):
         return 0.0
     city = 1.0 if norm(a.city) == norm(e.city) and a.city else 0.0
@@ -119,11 +121,16 @@ def project_similarity(a: Project, e: SourceEvent) -> float:
     title = SequenceMatcher(None, norm(a.canonical_name), norm(e.title)).ratio()
     return .45*city + .25*typ + .30*title
 
-def resolve_project(projects: list[Project], e: SourceEvent, threshold=.72) -> Project:
+def resolve_project(projects: list[Project], e: SourceEvent, threshold=.78) -> Project:
     candidates = [(project_similarity(p,e),p) for p in projects]
     if candidates:
-        score, best = max(candidates, key=lambda x:x[0])
-        if score >= threshold:
+        candidates.sort(key=lambda x:x[0], reverse=True)
+        score, best = candidates[0]
+        gap = score-candidates[1][0] if len(candidates)>1 else 1.0
+        title_similarity = SequenceMatcher(None, norm(best.canonical_name), norm(e.title)).ratio()
+        if event_key(e) in best.event_ids:
+            return best
+        if score >= threshold and gap >= .07 and title_similarity >= .50:
             best.event_ids.append(event_key(e))
             if PHASE_SCORE.get(e.phase,0) > PHASE_SCORE.get(best.phase,0):
                 best.phase = e.phase
@@ -131,7 +138,7 @@ def resolve_project(projects: list[Project], e: SourceEvent, threshold=.72) -> P
             best.value_eur = e.value_eur or best.value_eur
             best.funding_eur = e.funding_eur or best.funding_eur
             return best
-    pid = "PRJ-" + hashlib.sha1(f"{e.city}|{e.title}".encode()).hexdigest()[:10].upper()
+    pid = "PRJ-" + hashlib.sha1(f"{norm(e.city)}|{norm(e.title)}|{e.project_type}|{e.country}".encode()).hexdigest()[:10].upper()
     p = Project(pid, e.title, e.city, e.region, e.country, e.project_type or "unknown",
                 e.phase or "idea", PHASE_SCORE.get(e.phase,35), e.lat,e.lon,
                 e.value_eur,e.funding_eur,[event_key(e)])

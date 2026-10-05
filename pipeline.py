@@ -4,7 +4,7 @@ from storage import DevStore
 
 def run(records, db_path="engine_v03.sqlite"):
     store=DevStore(db_path)
-    projects=[]
+    projects=store.load_projects()
     seen=set()
     for raw in records:
         e=SourceEvent(**raw)

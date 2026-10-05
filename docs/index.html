@@ -2,61 +2,34 @@
 <html lang="de">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Opportunity Radar</title>
-<link rel="stylesheet" href="styles.css">
+<meta name="description" content="BauRadar zeigt Bauunternehmen und Handwerkern relevante Bauvorhaben aus offiziellen Quellen.">
+<title>BauRadar · Neue Bauprojekte für Ihren Betrieb</title>
+<link rel="stylesheet" href="bauradar.css">
 </head>
 <body>
-<header><div><span class="eyebrow">CONSTRUCTION INTELLIGENCE</span><h1>Opportunity Radar</h1></div>
-<div class="status"><i></i><span id="sync">Datenstatus wird geladen…</span></div></header>
+<header class="topbar"><a class="brand" href="./"><span class="brand-icon" aria-hidden="true">⌖</span> BauRadar</a><div class="account-controls"><span class="preview">MVP-Vorschau</span><button id="accountOpen" hidden>Anmelden</button><button id="logout" hidden>Abmelden</button></div></header>
 <main>
-<section class="hero">
-<div><span class="eyebrow">AUFTRÄGE ERKENNEN, BEVOR SIE AUSGESCHRIEBEN WERDEN.</span>
-<h2>Dein Frühwarnsystem<br>für neue Bauprojekte.</h2>
-<p>Förderung, Planung, Vergabe und Zuschlag werden zu einem Projekt-Lifecycle verbunden.</p></div>
-<div class="metric primary"><small>MASTER PROJECTS</small><strong id="projects">34</strong><span>verifizierte Ausgangsbasis</span></div>
+<section class="intro"><p class="eyebrow">BAUPROJEKTE FRÜH ERKENNEN</p><h1>Die nächste Chance<br>für Ihren Betrieb.</h1><p>Offizielle Bauvorhaben und aktuelle Vergaben. Nach Ihren Gewerken sortiert, mit Quelle und nächstem Schritt.</p></section>
+<section id="accountPanel" class="panel account-panel" hidden aria-labelledby="accountTitle"><h2 id="accountTitle">Bei BauRadar anmelden</h2><p>Ihr Betriebsprofil und Ihre Merkliste auf allen Geräten.</p><form id="accountForm"><label>E-Mail<input id="accountEmail" type="email" autocomplete="email" required maxlength="254"></label><label>Passwort<input id="accountPassword" type="password" autocomplete="current-password" required minlength="12" maxlength="200"></label><div class="form-footer"><button class="primary" type="submit">Anmelden</button><button id="register" type="button" hidden>Konto erstellen</button><button id="accountClose" type="button">Schließen</button></div></form><p id="accountMessage" role="status"></p></section>
+<section class="profile panel" aria-labelledby="profileTitle">
+<div><h2 id="profileTitle">Was passt zu Ihrem Betrieb?</h2><p id="profileHint">Profil und Merkliste werden auf diesem Gerät gespeichert.</p></div>
+<form id="profileForm">
+<label>Betriebsname<input id="companyName" maxlength="120" autocomplete="organization" placeholder="Ihr Betrieb"></label>
+<label>Ort<input id="companyCity" maxlength="100" autocomplete="address-level2" placeholder="z. B. München"></label>
+<label>Suchgebiet<select id="locationMode"><option value="all">Deutschlandweit</option><option value="city">Nur dieser Ort</option></select></label>
+<fieldset><legend>Ihre Gewerke <span>(mehrere möglich)</span></legend><div id="tradeChoices" class="trade-choices"></div></fieldset>
+<div class="form-footer"><p>Entfernungen und Umkreissuche folgen mit geprüften Standortdaten.</p><button type="submit" class="primary">Passende Projekte anzeigen</button></div>
+</form><p id="profileMessage" class="message" role="status"></p>
 </section>
-
-<section class="metrics">
-<div class="metric"><small>EARLY SIGNALS</small><strong id="early">37</strong><span>offiziell verifiziert</span></div>
-<div class="metric"><small>LIVE PROCUREMENT</small><strong id="live">0</strong><span>TED / DÖE Records</span></div>
-<div class="metric"><small>LIVE OPPORTUNITIES</small><strong id="classified">0</strong><span>klassifizierte TED-Signale</span></div>
-<div class="metric"><small>LIFECYCLE LINKS</small><strong id="links">0</strong><span>EARLY → Vergabe</span></div>
+<section class="results" aria-labelledby="feedTitle">
+<div class="results-heading"><div><p class="eyebrow">IHRE PROJEKTE</p><h2 id="feedTitle">Neue Chancen entdecken</h2><p id="resultCount" role="status">Projekte werden geladen …</p></div><span id="lastUpdate" class="updated"></span></div>
+<div class="filters"><div role="group" aria-label="Projektliste"><button data-view="all" class="active" aria-pressed="true">Alle Chancen</button><button data-view="early" aria-pressed="false">Frühe Bauvorhaben</button><button data-view="saved" aria-pressed="false">Beobachtet <span id="savedCount">0</span></button></div><label>Projektphase<select id="phaseFilter"><option value="">Alle Phasen</option><option value="funding">Förderung beschlossen</option><option value="tender">In Ausschreibung</option><option value="award">Bereits vergeben</option></select></label><label>Projekt suchen<input id="search" type="search" placeholder="Projekt, Ort oder Auftraggeber"></label></div>
+<div id="feed" class="feed" aria-live="polite"><p class="empty">Bauprojekte werden geladen …</p></div>
+<button id="loadMore" class="more" hidden>Weitere Projekte anzeigen</button>
 </section>
-
-<section class="panel">
-<div class="panelhead"><div><span class="eyebrow">PIPELINE</span><h3>Project Lifecycle</h3></div><span class="badge">v0.8.9</span></div>
-<div class="pipeline">
-<div class="step active"><b>01</b><strong>EARLY</strong><span>Förderung & Beschlüsse</span></div>
-<div class="arrow">→</div><div class="step"><b>02</b><strong>PLANUNG</strong><span>Objekt- & Fachplanung</span></div>
-<div class="arrow">→</div><div class="step"><b>03</b><strong>VERGABE</strong><span>TED & DÖE</span></div>
-<div class="arrow">→</div><div class="step"><b>04</b><strong>ZUSCHLAG</strong><span>Auftrag & Gewinner</span></div>
-</div></section>
-
-<section class="grid">
-<div class="panel"><span class="eyebrow">ENTWICKLUNGSSTAND</span><h3>Systemstatus</h3>
-<table><tr><td>EARLY-Daten</td><td class="ok">AKTIV</td></tr><tr><td>Master Project Graph</td><td class="ok">AKTIV</td></tr>
-<tr><td>Trade Matching</td><td class="ok">AKTIV</td></tr><tr><td>TED Live Ingestion</td><td id="tedStatus">BEREIT</td></tr>
-<tr><td>DÖE Live Ingestion</td><td>VORBEREITUNG</td></tr><tr><td>Kunden-Dashboard</td><td>PROTOTYP</td></tr></table></div>
-<div class="panel"><span class="eyebrow">LIVE INTELLIGENCE</span><h3>500 Vergaben → Opportunities</h3>
-<p>Die Live-Records werden nach Projektart und Gewerk klassifiziert und gegen die EARLY-Projekte als Lifecycle-Kandidaten geprüft.</p>
-<div class="progress"><div id="bar"></div></div><small><span id="progressText">0 / 500</span> Live Records</small></div>
-</section>
-
-<section class="panel"><div class="panelhead"><div><span class="eyebrow">QUALITY CONTROL</span><h3>Live Opportunity Qualität</h3></div><span class="badge" id="qualityRate">–</span></div>
-<div class="qualityGrid"><div><small>BANDS</small><div id="bands" class="qualityList"></div></div><div><small>TOP PROJEKTARTEN</small><div id="projectTypes" class="qualityList"></div></div><div><small>TOP GEWERKE</small><div id="tradeTypes" class="qualityList"></div></div><div><small>SIGNALQUALITÄT</small><div id="qualityFlags" class="qualityList"></div></div></div></section>
-
-<section class="panel"><div class="panelhead"><div><span class="eyebrow">QUALITY SAMPLE</span><h3>Top Opportunities & Klassifizierungsgrund</h3></div></div><div id="qualitySample" class="feed"><div class="empty">Qualitätsanalyse wird geladen…</div></div></section>
-
-
-<section class="panel" id="qualityAudit"><div class="panelhead"><div><span class="eyebrow">SMART VALIDATION · v0.9.0</span><h3>Smart Validation & Error Analysis</h3></div><span class="badge" id="auditState">0 / 60</span></div>
-<p>Prüfe zuerst die Fälle mit dem höchsten Widerspruchsrisiko. Die Engine zeigt konkrete Warnsignale und Alternativen; Precision wird nur aus tatsächlich bewerteten Fällen berechnet.</p>
-<div class="auditStats"><div class="auditStat"><small>BEWERTET</small><strong id="auditReviewed">0</strong></div><div class="auditStat"><small>PRECISION</small><strong id="auditPrecision">–</strong></div><div class="auditStat"><small>PROJEKTART</small><strong id="auditProjectAcc">–</strong></div><div class="auditStat"><small>GEWERKE</small><strong id="auditTradeAcc">–</strong></div></div>
-<div class="auditProgress"><i id="auditBar" style="width:0%"></i></div><div id="auditCase" class="auditCard"><div class="empty">Audit-Fälle werden geladen…</div></div>
-<div class="auditActions"><button id="auditExport">Bewertungen als CSV exportieren</button><button id="auditReset">Lokale Bewertungen zurücksetzen</button></div></section>
-
-<section class="panel"><div class="panelhead"><div><span class="eyebrow">LATEST SIGNALS</span><h3>Opportunity Feed</h3></div></div>
-<div id="feed" class="feed"><div class="empty">Live Opportunities werden geladen…</div></div></section>
+<section class="source-note"><h2>Wissen, worauf Sie sich verlassen können.</h2><p>Jedes Projekt führt zur Originalquelle. Bei frühen Bauvorhaben sind mögliche Gewerke aus der Projektart abgeleitet; konkrete Lose und Termine können noch offen sein. Bereits vergebene Aufträge sind als solche gekennzeichnet.</p></section>
 </main>
-<footer>Opportunity Radar · Development Build v0.8.9</footer>
-<script src="app.js"></script>
-</body></html>
+<footer><span>BauRadar · Offizielle Quellen, klare nächste Schritte.</span><a href="development.html">Entwicklungsstatus</a></footer>
+<script src="app.js" defer></script>
+</body>
+</html>

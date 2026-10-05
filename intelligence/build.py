@@ -1,6 +1,10 @@
 """Build enriched Opportunity Intelligence records from normalized TED notices."""
 import json, os, re
 from difflib import SequenceMatcher
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+from intelligence.evidence import evidence_for
+from lifecycle.graph import classify_link
 ROOT=os.path.dirname(os.path.dirname(__file__))
 
 def load(path, default):
@@ -18,7 +22,8 @@ def lifecycle_link_score(e,x):
  # Municipality is the strongest project identity signal. Authority names often differ
  # between funding owner and procurement office, so use them as secondary evidence.
  ec,xc=norm(e.get("city","")),norm(x.get("city",""))
- if ec and xc and ec!=xc:return 0.0,{}
+ if ec and xc and ec!=xc:return 0.0,{"city_contradiction":1}
+ if e.get("project_type") and x.get("project_type") and e["project_type"]!=x["project_type"]:return 0.0,{"type_contradiction":1}
  city=1.0 if ec and xc and ec==xc else 0.0
  pt=1.0 if e.get("project_type") and x.get("project_type") and e["project_type"]==x["project_type"] else 0.0
  title=sim(e.get("title",""),x.get("title",""))
@@ -39,23 +44,34 @@ def opportunity_score(x):
  return min(100,score)
 
 def enrich(x):
- b=body_obj(x); score=opportunity_score(x)
+ b=body_obj(x)
  cpv=b.get("cpv",[])
+ project,trades,confidence,evidence=evidence_for(x.get("title") or "",cpv)
+ x={**x,"project_type":project,"_trades":trades}
+ score=opportunity_score(x)
  desc=" ".join(str(v) for v in [x.get("title") or "",x.get("authority") or "",b.get("place") or ""] if v)
  return {
   "source_id":x.get("source_id"),"notice_id":x.get("external_id"),"source_url":x.get("source_url"),
   "published":x.get("published"),"title":x.get("title"),"description":desc,
   "authority":x.get("authority"),"city":x.get("city"),"region":x.get("region"),"country":x.get("country"),
   "project_type":x.get("project_type") or "","trades":x.get("_trades",[]),"cpv":cpv,
-  "phase":x.get("phase"),"score":score,"confidence":score/100,
+  "phase":x.get("phase"),"score":score,"opportunity_score":score,
+  "classification_confidence":confidence,"confidence":confidence,
   "band":"HOT" if score>=85 else ("UPCOMING" if score>=65 else "EARLY"),
-  "evidence":{"project_type":bool(x.get("project_type")),"trade":bool(x.get("_trades")),"cpv":bool(cpv),"source":"TED live"}
+  "evidence":evidence
  }
 
 def build():
  live=load(os.path.join(ROOT,"real_data","ted_live_normalized.json"),[])
  early=load(os.path.join(ROOT,"real_data","bavaria_verified_events.json"),[])
- enriched=[enrich(x) for x in live]
+ unique={}
+ for record in live:
+  key=record.get("source_id")
+  if not key:raise ValueError("Missing notice identity")
+  if key in unique and record.get("title")!=unique[key].get("title"):
+   raise ValueError(f"Conflicting notice identity: {key}")
+  unique[key]=record
+ enriched=[enrich(x) for x in unique.values()]
  opp=[x for x in enriched if x.get("project_type") or x.get("trades")]
  opp.sort(key=lambda x:(x["score"],x.get("published") or ""),reverse=True)
  links=[]
@@ -67,11 +83,16 @@ def build():
    # >=0.60 means a strong municipality/type/title combination. Auto-link stays strict.
    if s>=.60:candidates.append((s,x,evidence))
   if candidates:
-   s,x,evidence=max(candidates,key=lambda z:z[0])
+   candidates.sort(key=lambda z:z[0],reverse=True)
+   s,x,evidence=candidates[0]
+   gap=s-candidates[1][0] if len(candidates)>1 else 1.0
+   # Same municipality/type alone never proves project identity.
+   decision=classify_link(s,gap)
+   if evidence.get("title",0)<.50 or not evidence.get("city"):decision="review"
    links.append({"early_source_id":e.get("source_id"),"early_title":e.get("title"),"early_city":e.get("city"),
     "live_source_id":x.get("source_id"),"live_title":x.get("title"),"live_city":x.get("city"),
-    "score":round(s,3),"status":"review" if s<.84 else "auto_link","evidence":evidence})
- out={"version":"0.9.2","live_records":len(live),"enriched_records":len(enriched),"classified_opportunities":len(opp),"lifecycle_candidates":len(links),"opportunities":opp[:50],"lifecycle_links":links}
+    "score":round(s,3),"status":decision,"best_gap":round(gap,3),"evidence":evidence})
+ out={"version":"0.9.2","live_records":len(live),"enriched_records":len(enriched),"duplicate_source_records":len(live)-len(enriched),"classified_opportunities":len(opp),"lifecycle_candidates":len(links),"opportunities":opp[:50],"lifecycle_links":links}
  os.makedirs(os.path.join(ROOT,"docs","data"),exist_ok=True); os.makedirs(os.path.join(ROOT,"reports"),exist_ok=True); os.makedirs(os.path.join(ROOT,"real_data"),exist_ok=True)
  with open(os.path.join(ROOT,"real_data","ted_live_enriched.json"),"w",encoding="utf-8") as f:json.dump(enriched,f,ensure_ascii=False,indent=2)
  with open(os.path.join(ROOT,"reports","intelligence_report.json"),"w",encoding="utf-8") as f:json.dump(out,f,ensure_ascii=False,indent=2)

@@ -1,44 +1,28 @@
-## v0.9.0 – Readable Quality Audit
-Bereinigt multilinguale TED-Texte für die manuelle 60-Fall-Validierung; Originaltext bleibt aufklappbar.
+# BauRadar / Opportunity Radar
+Ein einfaches Auftragsfrühwarnsystem für deutsche Bauunternehmen und Handwerker.
+Die aktuelle GitHub-Pages-Version ist eine MVP-Vorschau mit offiziellen Bauprojektquellen, Gewerk-/Ortsfilter und lokaler Merkliste. Login, Umkreissuche, E-Mail und Bezahlung sind noch nicht produktiv verfügbar.
 
-# Opportunity Radar v0.9.0
+- [Entwicklungsstatus und Roadmap](DEVELOPMENT_STATUS.md)
+- [Bestandsaufnahme und Architektur](ARCHITECTURE.md)
+- [Kundenoberfläche](https://p68554185.github.io/opportunity-radar/)
 
-Stable GitHub workflow architecture.
+## Datenqualität
+Classification Rate beschreibt den Anteil klassifizierter Meldungen, keine Accuracy.
+Classification-Confidence ist regelbasierte Belegstärke und unabhängig vom kommerziellen Opportunity Score.
+Der TED-Kundenfeed enthält ausschließlich Einträge aus der gemeinsamen Evidenzprüfung.
+Frühe Projekte stammen aus offiziellen Fördermeldungen; mögliche Gewerke sind als Ableitung aus der Projektart gekennzeichnet.
+Lifecycle-Kandidaten und unbekannte Vergabezeiträume werden nicht als bestätigte Verbindungen oder Termine ausgegeben.
 
-# Opportunity Radar v0.9.0 — Live Intelligence
+## Ausführen
+Python 3.12, für die aktive Pipeline keine externen Pakete nötig.
 
-v0.9.0 converts the proven TED live acquisition into an intelligence pipeline:
+```sh
+python -m unittest discover -s tests -p 'test_*.py'
+python benchmarks/classifier_regression.py
+python build_snapshot.py
+```
 
-`TED Live → normalize → classify project/trades → opportunity score → EARLY lifecycle candidates → dashboard feed`
-
-## New in v0.9.0
-- Broad construction ontology: 16+ project types and 19+ trade/service classes.
-- CPV-prefix classification as fallback for terse TED titles.
-- Live Opportunity builder and confidence band (`HOT`, `UPCOMING`, `EARLY`).
-- Candidate matching between verified Bavarian EARLY signals and later TED records.
-- Dashboard Opportunity Feed generated from real live records.
-- GitHub Action runs regression → 500 live TED notices → intelligence → dashboard update.
-
-## Data integrity
-- No synthetic fallback in the live workflow.
-- `500 downloaded_live` means 500 records returned by TED in that run.
-- `classified_opportunities` is a deterministic subset of live records, not a prediction accuracy claim.
-- `lifecycle_candidates` are candidate links; only high-confidence candidates are marked `auto_link`, others remain review candidates.
-
-## Run
-Use GitHub Actions → **Live Data Ingestion** → **Run workflow**.
-
-
-## v0.9.0
-Adds automated opportunity quality analytics and dashboard QA views before scaling ingestion volume.
-
-## v0.9.0
-Adds an enriched full-dataset layer (`real_data/ted_live_enriched.json`) between classification and the quality gate. It carries project type, trades, CPV, confidence/score and evidence into quality screening so the gate evaluates the intelligence output rather than raw normalized notices.
-
-
-## v0.9.0
-Quality Audit UI auf GitHub Pages für 60 stratifizierte Fälle. Browser-lokale Review-Labels, Live-Precision nur aus echten Bewertungen und CSV-Export.
-
-
-## v0.9.0
-Compact human-audit cards: readable evidence excerpt, prediction facts, and collapsible TED source evidence. No precision is claimed before manual labels exist.
+Der Snapshot-Build verwendet gespeicherte echte Daten ohne Netzwerkzugriff.
+`python run_pipeline.py` führt zusätzlich die Live-TED-Akquisition aus.
+GitHub Actions: **Verify BauRadar**, **Live Data Ingestion**, **Deploy Website**.
+Die technische Prüfansicht liegt als Vorlage unter `admin/` außerhalb des veröffentlichten Pages-Verzeichnisses.
