@@ -33,3 +33,5 @@ E-Mail-Verifizierung/Passwort-Reset, Versand, Zahlung und vollständige rechtlic
 ## Blocker
 Es fehlen Render-/Neon-Accounts bzw. eine sichere verbundene Zugriffsmöglichkeit. Diese neue externe Account-Einrichtung erfordert Nutzerbeteiligung.
 Es wurde kein externer Account angelegt und noch kein kostenloses Backend deployt.
+
+Sicherheits-/Persistenzabsicherung: Auf Render startet die App nur mit einer PostgreSQL-URL, explizitem TLS-Modus, HTTPS-Origin und Secure Cookies. Ein versehentlicher Rückfall auf die flüchtige lokale SQLite-Datei wird blockiert.

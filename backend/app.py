@@ -9,6 +9,7 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, model_validator
 from typing import Literal
+from urllib.parse import urlparse, parse_qs
 import psycopg
 from backend.database import connect
 
@@ -18,6 +19,16 @@ DATABASE_URL=os.environ.get("BAURADAR_DATABASE_URL","")
 ORIGIN=(os.environ.get("BAURADAR_ORIGIN") or os.environ.get("RENDER_EXTERNAL_URL") or "http://localhost:8000").rstrip("/")
 SECURE=os.environ.get("BAURADAR_SECURE_COOKIES","true")=="true"
 SIGNUP=os.environ.get("BAURADAR_ENABLE_SIGNUP","false")=="true"
+if os.environ.get("RENDER_EXTERNAL_URL"):
+    # A free ephemeral host must never silently store customer data in local SQLite.
+    parsed=urlparse(DATABASE_URL)
+    if parsed.scheme not in ("postgres","postgresql") or not parsed.hostname:
+        raise RuntimeError("Render requires a persistent PostgreSQL database secret.")
+    sslmode=parse_qs(parsed.query).get("sslmode",[""])[0]
+    if sslmode not in ("require","verify-ca","verify-full"):
+        raise RuntimeError("Hosted PostgreSQL requires an explicit TLS mode.")
+    if not SECURE or urlparse(ORIGIN).scheme!="https":
+        raise RuntimeError("Hosted accounts require HTTPS and Secure cookies.")
 TRADES={"electrical","hvac","plumbing","drywall","painting","flooring","roof","windows_doors",
  "facade","earthworks","structural","landscaping","fire_protection","elevator","demolition",
  "roadworks","sewer_pipe","railworks","solar_energy","scaffolding","metalwork",
