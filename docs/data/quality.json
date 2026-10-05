@@ -1,80 +1,80 @@
 {
   "live_records": 2000,
-  "classified_opportunities": 1937,
-  "classification_rate_pct": 96.8,
+  "classified_opportunities": 1930,
+  "classification_rate_pct": 96.5,
   "bands": {
-    "HOT": 374,
-    "UPCOMING": 1178,
-    "EARLY": 385
+    "HOT": 337,
+    "UPCOMING": 1167,
+    "EARLY": 426
   },
   "project_types": [
     [
       "unclassified_project",
-      581
+      642
     ],
     [
       "school",
-      357
+      347
     ],
     [
       "rail",
-      192
-    ],
-    [
-      "hospital",
-      114
+      181
     ],
     [
       "water_wastewater",
-      83
-    ],
-    [
-      "university_research",
-      66
-    ],
-    [
-      "administration",
-      65
+      90
     ],
     [
       "bridge",
-      60
+      68
+    ],
+    [
+      "hospital",
+      65
     ],
     [
       "industrial",
-      56
+      64
+    ],
+    [
+      "civil_engineering",
+      63
     ],
     [
       "road",
       56
     ],
     [
-      "civil_engineering",
-      54
+      "university_research",
+      49
+    ],
+    [
+      "administration",
+      45
     ],
     [
       "kindergarten",
-      46
+      43
     ],
     [
       "fire_station",
-      46
+      41
     ],
     [
       "public_building",
+      30
+    ],
+    [
+      "energy",
       28
     ],
     [
       "public_space",
-      26
-    ],
-    [
-      "energy",
-      26
+      27
     ],
     [
       "sports_leisure",
-      25
+      23
     ],
     [
       "infrastructure",
@@ -85,98 +85,98 @@
       19
     ],
     [
-      "commercial",
-      8
+      "care_social",
+      18
     ],
     [
-      "care_social",
-      8
+      "commercial",
+      10
     ]
   ],
   "trades": [
     [
       "structural",
-      337
+      338
     ],
     [
       "electrical",
-      286
+      287
     ],
     [
       "windows_doors",
-      272
+      269
     ],
     [
       "hvac",
-      230
+      225
     ],
     [
       "railworks",
-      194
+      188
     ],
     [
       "earthworks",
-      171
+      164
     ],
     [
       "flooring",
-      148
-    ],
-    [
-      "demolition",
-      128
+      142
     ],
     [
       "fire_protection",
-      128
+      131
+    ],
+    [
+      "demolition",
+      129
     ],
     [
       "roof",
-      114
+      115
     ],
     [
       "painting",
-      113
+      107
     ],
     [
       "roadworks",
-      80
-    ],
-    [
-      "landscaping",
-      66
+      77
     ],
     [
       "facade",
-      64
+      61
+    ],
+    [
+      "landscaping",
+      61
     ],
     [
       "plumbing",
-      51
+      50
     ],
     [
       "drywall",
-      46
+      47
     ],
     [
       "plastering",
-      42
+      43
     ],
     [
       "elevator",
-      29
-    ],
-    [
-      "sewer_pipe",
-      23
+      27
     ],
     [
       "solar_energy",
       23
     ],
     [
+      "sewer_pipe",
+      14
+    ],
+    [
       "finishing",
-      15
+      14
     ],
     [
       "building_services",
@@ -187,39 +187,39 @@
     {
       "from": 50,
       "to": 59,
-      "count": 46
+      "count": 49
     },
     {
       "from": 60,
       "to": 69,
-      "count": 380
+      "count": 417
     },
     {
       "from": 70,
       "to": 79,
-      "count": 462
+      "count": 495
     },
     {
       "from": 80,
       "to": 89,
-      "count": 946
+      "count": 876
     },
     {
       "from": 90,
       "to": 99,
-      "count": 78
+      "count": 70
     },
     {
       "from": 100,
       "to": 100,
-      "count": 25
+      "count": 23
     }
   ],
   "quality_flags": {
-    "project_type_only": 232,
-    "trade_only": 581,
-    "project_and_trade": 1124,
-    "high_confidence_85_plus": 374
+    "project_type_only": 247,
+    "trade_only": 642,
+    "project_and_trade": 1041,
+    "opportunity_score_85_plus": 337
   },
   "sample_top": [
     {
@@ -280,10 +280,9 @@
       "city": "Kassel",
       "project_type": "road",
       "trades": [
-        "earthworks",
-        "railworks",
         "structural",
         "roadworks",
+        "railworks",
         "electrical"
       ],
       "score": 100,
@@ -298,10 +297,9 @@
       "city": "Kassel",
       "project_type": "road",
       "trades": [
-        "earthworks",
-        "railworks",
         "structural",
         "roadworks",
+        "railworks",
         "electrical"
       ],
       "score": 100,
@@ -365,7 +363,7 @@
       "title": "Rahmenvertrag Bauunterhaltsleistungen nach STLB",
       "authority": "Universitätsklinikum Köln AöR",
       "city": "Köln",
-      "project_type": "hospital",
+      "project_type": "industrial",
       "trades": [
         "structural",
         "electrical",
@@ -415,21 +413,21 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/671570-2026"
     },
     {
-      "source_id": "TED-673727-2026",
-      "title": "Malerarbeiten_Beschichtungen_Innenputz Bestand_WDVS, Erweiterungsneubau und Teilumbau Kinder- und Jugendpsychiatrie, Osianderstrasse 16, 72076 Tübingen",
-      "authority": "Universitätsklinikum Tübingen",
-      "city": "Tübingen",
-      "project_type": "hospital",
+      "source_id": "TED-668762-2026",
+      "title": "Baufeldfreimachung für das Projekt Neubau des Besucher- und Informationszentrums des Deutschen Bundestags (BIZ) und der Unterirdischen Kältezentrale (UKZ) vor dem Reichstagsgebäude („Projekt BIZ/UKZ“) in Berlin Vergabenummer: O9611-e-003/26-058",
+      "authority": "Bundesanstalt für Immobilienaufgaben",
+      "city": "Berlin",
+      "project_type": "civil_engineering",
       "trades": [
-        "painting",
-        "facade",
-        "fire_protection",
-        "plastering"
+        "hvac",
+        "earthworks",
+        "structural",
+        "demolition"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/673727-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/668762-2026"
     }
   ]
 }

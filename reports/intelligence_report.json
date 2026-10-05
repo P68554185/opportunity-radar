@@ -2,8 +2,9 @@
   "version": "0.9.2",
   "live_records": 2000,
   "enriched_records": 2000,
-  "classified_opportunities": 1937,
-  "lifecycle_candidates": 1,
+  "duplicate_source_records": 0,
+  "classified_opportunities": 1930,
+  "lifecycle_candidates": 0,
   "opportunities": [
     {
       "source_id": "TED-684848-2026",
@@ -36,15 +37,35 @@
         "39314000",
         "39150000"
       ],
-      "phase": "tender",
+      "phase": "prior_information",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "flooring",
+          "windows_doors",
+          "electrical",
+          "earthworks"
+        ],
+        "construction_cpv": [
+          "45214210",
+          "45214000",
+          "45214210",
+          "45431000",
+          "45421131",
+          "45421000",
+          "45311000",
+          "45315300",
+          "45112700"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -85,13 +106,38 @@
       ],
       "phase": "award",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "windows_doors",
+          "structural",
+          "finishing",
+          "flooring"
+        ],
+        "construction_cpv": [
+          "45420000",
+          "45212200",
+          "45262670",
+          "45450000",
+          "45421141",
+          "45422100",
+          "45432210",
+          "45420000",
+          "45212200",
+          "45262670",
+          "45450000",
+          "45421141",
+          "45422100",
+          "45432210"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -126,13 +172,33 @@
       ],
       "phase": "tender",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "landscaping"
+        ],
+        "trade_cpv": [
+          "earthworks",
+          "demolition",
+          "roadworks"
+        ],
+        "construction_cpv": [
+          "45112700",
+          "45111000",
+          "45233120",
+          "45232452",
+          "45112700",
+          "45111000",
+          "45233120",
+          "45232452"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -148,10 +214,9 @@
       "country": "DEU",
       "project_type": "road",
       "trades": [
-        "earthworks",
-        "railworks",
         "structural",
         "roadworks",
+        "railworks",
         "electrical"
       ],
       "cpv": [
@@ -174,13 +239,40 @@
       ],
       "phase": "tender",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "structural",
+          "roadworks",
+          "railworks",
+          "electrical"
+        ],
+        "construction_cpv": [
+          "45000000",
+          "45262300",
+          "45262670",
+          "45233120",
+          "45234116",
+          "45233222",
+          "45316212",
+          "45232000",
+          "45000000",
+          "45262300",
+          "45262670",
+          "45233120",
+          "45234116",
+          "45233222",
+          "45316212",
+          "45232000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -196,10 +288,9 @@
       "country": "DEU",
       "project_type": "road",
       "trades": [
-        "earthworks",
-        "railworks",
         "structural",
         "roadworks",
+        "railworks",
         "electrical"
       ],
       "cpv": [
@@ -222,13 +313,40 @@
       ],
       "phase": "tender",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "structural",
+          "roadworks",
+          "railworks",
+          "electrical"
+        ],
+        "construction_cpv": [
+          "45000000",
+          "45262300",
+          "45262670",
+          "45233120",
+          "45234116",
+          "45233222",
+          "45316212",
+          "45232000",
+          "45000000",
+          "45262300",
+          "45262670",
+          "45233120",
+          "45234116",
+          "45233222",
+          "45316212",
+          "45232000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -265,13 +383,36 @@
       ],
       "phase": "award",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "railworks",
+          "demolition",
+          "earthworks",
+          "structural"
+        ],
+        "construction_cpv": [
+          "45234100",
+          "45111100",
+          "45112000",
+          "45221112",
+          "45234116",
+          "45262310",
+          "45234100",
+          "45111100",
+          "45112000",
+          "45221112",
+          "45234116",
+          "45262310"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -306,13 +447,35 @@
       ],
       "phase": "award",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "flooring"
+        ],
+        "trade_cpv": [
+          "structural",
+          "fire_protection",
+          "roof"
+        ],
+        "construction_cpv": [
+          "45262321",
+          "45262320",
+          "45321000",
+          "45323000",
+          "45261420",
+          "45262321",
+          "45262320",
+          "45321000",
+          "45323000",
+          "45261420"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -349,13 +512,36 @@
       ],
       "phase": "award",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "railworks",
+          "demolition",
+          "earthworks",
+          "structural"
+        ],
+        "construction_cpv": [
+          "45234100",
+          "45111100",
+          "45112000",
+          "45221112",
+          "45234116",
+          "45262310",
+          "45234100",
+          "45111100",
+          "45112000",
+          "45221112",
+          "45234116",
+          "45262310"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -369,7 +555,7 @@
       "city": "Köln",
       "region": "",
       "country": "DEU",
-      "project_type": "hospital",
+      "project_type": "industrial",
       "trades": [
         "structural",
         "electrical",
@@ -655,13 +841,299 @@
       ],
       "phase": "tender",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "structural",
+          "electrical",
+          "hvac",
+          "plastering",
+          "windows_doors",
+          "flooring",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45210000",
+          "45260000",
+          "45262100",
+          "45262300",
+          "45262321",
+          "45262500",
+          "45310000",
+          "45312310",
+          "45330000",
+          "45331100",
+          "45331210",
+          "45410000",
+          "45421000",
+          "45421141",
+          "45431000",
+          "45432100",
+          "45441000",
+          "45442100",
+          "45262500",
+          "45262300",
+          "45210000",
+          "45210000",
+          "45210000",
+          "45210000",
+          "45210000",
+          "45210000",
+          "45210000",
+          "45210000",
+          "45210000",
+          "45210000",
+          "45210000",
+          "45210000",
+          "45210000",
+          "45210000",
+          "45260000",
+          "45262100",
+          "45262300",
+          "45262321",
+          "45262500",
+          "45310000",
+          "45312310",
+          "45330000",
+          "45331100",
+          "45331210",
+          "45410000",
+          "45421000",
+          "45421141",
+          "45431000",
+          "45432100",
+          "45441000",
+          "45442100",
+          "45260000",
+          "45262100",
+          "45262300",
+          "45262321",
+          "45262500",
+          "45310000",
+          "45312310",
+          "45330000",
+          "45331100",
+          "45331210",
+          "45410000",
+          "45421000",
+          "45421141",
+          "45431000",
+          "45432100",
+          "45441000",
+          "45442100",
+          "45260000",
+          "45262100",
+          "45262300",
+          "45262321",
+          "45262500",
+          "45310000",
+          "45312310",
+          "45330000",
+          "45331100",
+          "45331210",
+          "45410000",
+          "45421000",
+          "45421141",
+          "45431000",
+          "45432100",
+          "45441000",
+          "45442100",
+          "45260000",
+          "45262100",
+          "45262300",
+          "45262321",
+          "45262500",
+          "45310000",
+          "45312310",
+          "45330000",
+          "45331100",
+          "45331210",
+          "45410000",
+          "45421000",
+          "45421141",
+          "45431000",
+          "45432100",
+          "45441000",
+          "45442100",
+          "45260000",
+          "45262100",
+          "45262300",
+          "45262321",
+          "45262500",
+          "45310000",
+          "45312310",
+          "45330000",
+          "45331100",
+          "45331210",
+          "45410000",
+          "45421000",
+          "45421141",
+          "45431000",
+          "45432100",
+          "45441000",
+          "45442100",
+          "45260000",
+          "45262100",
+          "45262300",
+          "45262321",
+          "45262500",
+          "45310000",
+          "45312310",
+          "45330000",
+          "45331100",
+          "45331210",
+          "45410000",
+          "45421000",
+          "45421141",
+          "45431000",
+          "45432100",
+          "45441000",
+          "45442100",
+          "45260000",
+          "45262100",
+          "45262300",
+          "45262321",
+          "45262500",
+          "45310000",
+          "45312310",
+          "45330000",
+          "45331100",
+          "45331210",
+          "45410000",
+          "45421000",
+          "45421141",
+          "45431000",
+          "45432100",
+          "45441000",
+          "45442100",
+          "45260000",
+          "45262100",
+          "45262300",
+          "45262321",
+          "45262500",
+          "45310000",
+          "45312310",
+          "45330000",
+          "45331100",
+          "45331210",
+          "45410000",
+          "45421000",
+          "45421141",
+          "45431000",
+          "45432100",
+          "45441000",
+          "45442100",
+          "45260000",
+          "45262100",
+          "45262300",
+          "45262321",
+          "45262500",
+          "45310000",
+          "45312310",
+          "45330000",
+          "45331100",
+          "45331210",
+          "45410000",
+          "45421000",
+          "45421141",
+          "45431000",
+          "45432100",
+          "45441000",
+          "45442100",
+          "45260000",
+          "45262100",
+          "45262300",
+          "45262321",
+          "45262500",
+          "45310000",
+          "45312310",
+          "45330000",
+          "45331100",
+          "45331210",
+          "45410000",
+          "45421000",
+          "45421141",
+          "45431000",
+          "45432100",
+          "45441000",
+          "45442100",
+          "45260000",
+          "45262100",
+          "45262300",
+          "45262321",
+          "45262500",
+          "45310000",
+          "45312310",
+          "45330000",
+          "45331100",
+          "45331210",
+          "45410000",
+          "45421000",
+          "45421141",
+          "45431000",
+          "45432100",
+          "45441000",
+          "45442100",
+          "45260000",
+          "45262100",
+          "45262300",
+          "45262321",
+          "45262500",
+          "45310000",
+          "45312310",
+          "45330000",
+          "45331100",
+          "45331210",
+          "45410000",
+          "45421000",
+          "45421141",
+          "45431000",
+          "45432100",
+          "45441000",
+          "45442100",
+          "45260000",
+          "45262100",
+          "45262300",
+          "45262321",
+          "45262500",
+          "45310000",
+          "45312310",
+          "45330000",
+          "45331100",
+          "45331210",
+          "45410000",
+          "45421000",
+          "45421141",
+          "45431000",
+          "45432100",
+          "45441000",
+          "45442100",
+          "45260000",
+          "45262100",
+          "45262300",
+          "45262321",
+          "45262500",
+          "45310000",
+          "45312310",
+          "45330000",
+          "45331100",
+          "45331210",
+          "45410000",
+          "45421000",
+          "45421141",
+          "45431000",
+          "45432100",
+          "45441000",
+          "45442100"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -692,13 +1164,31 @@
       ],
       "phase": "tender",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "landscaping"
+        ],
+        "trade_cpv": [
+          "fire_protection",
+          "windows_doors",
+          "earthworks"
+        ],
+        "construction_cpv": [
+          "45324000",
+          "45421146",
+          "45000000",
+          "45112700",
+          "45112720",
+          "45000000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -729,50 +1219,32 @@
       ],
       "phase": "award",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.85,
+      "confidence": 0.85,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-673727-2026",
-      "notice_id": "673727-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/673727-2026",
-      "published": "2026-09-30+02:00",
-      "title": "Malerarbeiten_Beschichtungen_Innenputz Bestand_WDVS, Erweiterungsneubau und Teilumbau Kinder- und Jugendpsychiatrie, Osianderstrasse 16, 72076 Tübingen",
-      "description": "Malerarbeiten_Beschichtungen_Innenputz Bestand_WDVS, Erweiterungsneubau und Teilumbau Kinder- und Jugendpsychiatrie, Osianderstrasse 16, 72076 Tübingen Universitätsklinikum Tübingen ['DE142', 'DEU', 'DE142', 'DEU']",
-      "authority": "Universitätsklinikum Tübingen",
-      "city": "Tübingen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "hospital",
-      "trades": [
-        "painting",
-        "facade",
-        "fire_protection",
-        "plastering"
-      ],
-      "cpv": [
-        "45442100",
-        "45321000",
-        "45410000",
-        "45442100",
-        "45321000",
-        "45410000"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "confidence": 1.0,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "earthworks",
+          "landscaping",
+          "roadworks"
+        ],
+        "trade_cpv": [
+          "roadworks",
+          "fire_protection"
+        ],
+        "construction_cpv": [
+          "45233222",
+          "45233120",
+          "45340000",
+          "45233222",
+          "45233120",
+          "45340000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -809,13 +1281,38 @@
       ],
       "phase": "tender",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "hvac"
+        ],
+        "trade_cpv": [
+          "earthworks",
+          "structural",
+          "demolition",
+          "hvac"
+        ],
+        "construction_cpv": [
+          "45112500",
+          "45262311",
+          "45223210",
+          "45111100",
+          "45262511",
+          "45332300",
+          "45112500",
+          "45262311",
+          "45223210",
+          "45111100",
+          "45262511",
+          "45332300"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -862,13 +1359,47 @@
       ],
       "phase": "award",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "landscaping",
+          "sewer_pipe"
+        ],
+        "trade_cpv": [
+          "earthworks",
+          "demolition",
+          "roadworks"
+        ],
+        "construction_cpv": [
+          "45112000",
+          "45247110",
+          "45112000",
+          "45112500",
+          "45247112",
+          "45112700",
+          "45113000",
+          "45232411",
+          "45232450",
+          "45112200",
+          "45112400",
+          "45233140",
+          "45112000",
+          "45112000",
+          "45247112",
+          "45113000",
+          "45112500",
+          "45247110",
+          "45112700",
+          "45113000",
+          "45112500"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -884,10 +1415,9 @@
       "country": "DEU",
       "project_type": "road",
       "trades": [
-        "earthworks",
-        "railworks",
         "structural",
         "roadworks",
+        "railworks",
         "electrical"
       ],
       "cpv": [
@@ -910,13 +1440,40 @@
       ],
       "phase": "tender",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "structural",
+          "roadworks",
+          "railworks",
+          "electrical"
+        ],
+        "construction_cpv": [
+          "45000000",
+          "45262300",
+          "45262670",
+          "45233120",
+          "45234116",
+          "45233222",
+          "45316212",
+          "45232000",
+          "45000000",
+          "45262300",
+          "45262670",
+          "45233120",
+          "45234116",
+          "45233222",
+          "45316212",
+          "45232000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -949,52 +1506,33 @@
       ],
       "phase": "tender",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-660397-2026",
-      "notice_id": "660397-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/660397-2026",
-      "published": "2026-09-25+02:00",
-      "title": "Neubau Kreiskrankenhaus Alsfeld, Metallbauarbeiten 1 (Aluminium Glasfassadenelemente), KKA",
-      "description": "Neubau Kreiskrankenhaus Alsfeld, Metallbauarbeiten 1 (Aluminium Glasfassadenelemente), KKA Kreiskrankenhaus des Vogelsbergkreises in Alsfeld GmbH ['DE725', 'DEU', 'DE725', 'DEU']",
-      "authority": "Kreiskrankenhaus des Vogelsbergkreises in Alsfeld GmbH",
-      "city": "Alsfeld",
-      "region": "",
-      "country": "DEU",
-      "project_type": "hospital",
-      "trades": [
-        "facade",
-        "structural",
-        "windows_doors",
-        "painting"
-      ],
-      "cpv": [
-        "45262670",
-        "45421100",
-        "45421143",
-        "45441000",
-        "45262670",
-        "45421100",
-        "45421143",
-        "45441000"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "confidence": 1.0,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "facade"
+        ],
+        "trade_cpv": [
+          "structural",
+          "windows_doors",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45262670",
+          "45421100",
+          "45421143",
+          "45441000",
+          "45262670",
+          "45421100",
+          "45421143",
+          "45441000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -1031,13 +1569,37 @@
       ],
       "phase": "tender",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "facade"
+        ],
+        "trade_cpv": [
+          "painting",
+          "windows_doors",
+          "structural"
+        ],
+        "construction_cpv": [
+          "45443000",
+          "45421100",
+          "45441000",
+          "45421144",
+          "45262670",
+          "45421160",
+          "45443000",
+          "45421100",
+          "45441000",
+          "45421144",
+          "45262670",
+          "45421160"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -1070,13 +1632,33 @@
       ],
       "phase": "tender",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "facade"
+        ],
+        "trade_cpv": [
+          "structural",
+          "windows_doors",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45262670",
+          "45421100",
+          "45421143",
+          "45441000",
+          "45262670",
+          "45421100",
+          "45421143",
+          "45441000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -1119,13 +1701,42 @@
       ],
       "phase": "award",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "structural",
+          "roof",
+          "windows_doors",
+          "hvac",
+          "electrical",
+          "demolition"
+        ],
+        "construction_cpv": [
+          "45000000",
+          "45223220",
+          "45262100",
+          "45261210",
+          "45421100",
+          "45331000",
+          "45231000",
+          "45311000",
+          "45000000",
+          "45113000",
+          "45261300",
+          "45212190",
+          "45331210",
+          "45232411",
+          "45232460",
+          "45317000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -1156,13 +1767,32 @@
       ],
       "phase": "tender",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.85,
+      "confidence": 0.85,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "drywall",
+          "painting"
+        ],
+        "trade_cpv": [
+          "fire_protection",
+          "plastering",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45324000",
+          "45410000",
+          "45442100",
+          "45324000",
+          "45410000",
+          "45442100"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -1271,170 +1901,242 @@
       ],
       "phase": "tender",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.85,
+      "confidence": 0.85,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "earthworks"
+        ],
+        "trade_cpv": [
+          "railworks",
+          "electrical",
+          "earthworks",
+          "roof",
+          "hvac",
+          "finishing"
+        ],
+        "construction_cpv": [
+          "45234100",
+          "45000000",
+          "45200000",
+          "45221250",
+          "45234116",
+          "45234160",
+          "45311000",
+          "45314300",
+          "45314310",
+          "45234100",
+          "45234100",
+          "45234100",
+          "45000000",
+          "45112700",
+          "45200000",
+          "45210000",
+          "45213321",
+          "45220000",
+          "45221112",
+          "45221200",
+          "45221243",
+          "45221250",
+          "45223000",
+          "45223200",
+          "45223220",
+          "45234116",
+          "45234160",
+          "45259900",
+          "45261213",
+          "45311000",
+          "45314300",
+          "45314310",
+          "45332400",
+          "45453100",
+          "45000000",
+          "45112700",
+          "45200000",
+          "45210000",
+          "45213321",
+          "45220000",
+          "45221112",
+          "45221200",
+          "45221243",
+          "45221250",
+          "45223000",
+          "45223200",
+          "45223220",
+          "45234116",
+          "45234160",
+          "45259900",
+          "45261213",
+          "45311000",
+          "45314300",
+          "45314310",
+          "45332400",
+          "45453100",
+          "45000000",
+          "45112700",
+          "45200000",
+          "45210000",
+          "45213321",
+          "45220000",
+          "45221112",
+          "45221200",
+          "45221243",
+          "45221250",
+          "45223000",
+          "45223200",
+          "45223220",
+          "45234116",
+          "45234160",
+          "45259900",
+          "45261213",
+          "45311000",
+          "45314300",
+          "45314310",
+          "45332400",
+          "45453100"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
-      "source_id": "TED-657290-2026",
-      "notice_id": "657290-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/657290-2026",
+      "source_id": "TED-657580-2026",
+      "notice_id": "657580-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/657580-2026",
       "published": "2026-09-24+02:00",
-      "title": "Zimmer- und Holzbauarbeiten",
-      "description": "Zimmer- und Holzbauarbeiten Regionalverband Saarbrücken ['DEC01', 'DEU', 'DEC01', 'DEU']",
-      "authority": "Regionalverband Saarbrücken",
-      "city": "Quierschied",
+      "title": "Energiepark - Hochschwarzwald",
+      "description": "Energiepark - Hochschwarzwald badenova AG & Co. KG ['DE131', 'DEU', 'DE131', 'DE131', 'DE131', 'DE131', 'DE131', 'DE131', 'DE131', 'DEU', 'DEU', 'DEU', 'DEU', 'DEU', 'DEU', 'DEU']",
+      "authority": "badenova AG & Co. KG",
+      "city": "Freiburg",
       "region": "",
       "country": "DEU",
-      "project_type": "bridge",
+      "project_type": "civil_engineering",
       "trades": [
-        "structural",
-        "windows_doors",
-        "roof",
-        "painting",
-        "fire_protection"
-      ],
-      "cpv": [
-        "45422100",
-        "45261100",
-        "45443000",
-        "45262100",
-        "45343100",
-        "45422100",
-        "45261100",
-        "45443000",
-        "45262100",
-        "45343100"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "confidence": 1.0,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-657599-2026",
-      "notice_id": "657599-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/657599-2026",
-      "published": "2026-09-24+02:00",
-      "title": "Kabeltiefbau ESTW, Neubau Gleis 5 inkl. OLA, Gleis- und Weichenerneuerung Schönefeld",
-      "description": "Kabeltiefbau ESTW, Neubau Gleis 5 inkl. OLA, Gleis- und Weichenerneuerung Schönefeld DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DE406', 'DEU', 'DE406', 'DE406', 'DE406', 'DEU', 'DEU', 'DEU']",
-      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
-      "city": "Schönefeld",
-      "region": "",
-      "country": "DEU",
-      "project_type": "rail",
-      "trades": [
-        "earthworks",
-        "railworks",
         "electrical",
+        "demolition",
         "roof",
-        "hvac",
-        "finishing"
+        "earthworks",
+        "roadworks"
       ],
       "cpv": [
-        "45234100",
-        "34944000",
-        "45000000",
-        "45200000",
-        "45221250",
-        "45234116",
-        "45234160",
         "45311000",
-        "45314300",
-        "45314310",
-        "45234100",
-        "45234100",
-        "45234100",
-        "34944000",
         "45000000",
-        "45112700",
-        "45200000",
-        "45210000",
-        "45213321",
-        "45220000",
-        "45221112",
-        "45221200",
-        "45221243",
-        "45221250",
-        "45223000",
-        "45223200",
-        "45223220",
-        "45234116",
-        "45234160",
-        "45259900",
-        "45261213",
-        "45311000",
-        "45314300",
-        "45314310",
-        "45332400",
-        "45453100",
-        "34944000",
+        "45315300",
+        "45315300",
+        "45310000",
+        "31440000",
+        "45315100",
+        "45317300",
+        "45223810",
+        "45111200",
+        "45232221",
+        "45315100",
+        "45311100",
+        "71323100",
+        "45232220",
         "45000000",
-        "45112700",
-        "45200000",
-        "45210000",
-        "45213321",
-        "45220000",
-        "45221112",
-        "45221200",
-        "45221243",
-        "45221250",
-        "45223000",
-        "45223200",
-        "45223220",
-        "45234116",
-        "45234160",
-        "45259900",
-        "45261213",
         "45311000",
-        "45314300",
-        "45314310",
-        "45332400",
-        "45453100",
-        "34944000",
-        "45000000",
-        "45112700",
-        "45200000",
-        "45210000",
-        "45213321",
-        "45220000",
-        "45221112",
-        "45221200",
-        "45221243",
-        "45221250",
-        "45223000",
-        "45223200",
-        "45223220",
-        "45234116",
-        "45234160",
-        "45259900",
-        "45261213",
+        "31400000",
+        "45232221",
+        "45315500",
+        "45231400",
+        "63710000",
+        "09330000",
+        "09331200",
+        "09332000",
+        "45261215",
+        "45112000",
+        "45111200",
+        "09330000",
+        "45223810",
         "45311000",
-        "45314300",
-        "45314310",
-        "45332400",
-        "45453100"
+        "65300000",
+        "71320000",
+        "71323100",
+        "71242000",
+        "71314000",
+        "51112000",
+        "09331200",
+        "31434000",
+        "31430000",
+        "31440000",
+        "45311000",
+        "45317300",
+        "51112000",
+        "31321300",
+        "31170000",
+        "45315100",
+        "45317200",
+        "44211000",
+        "31682300",
+        "45231400",
+        "45112000",
+        "45232220",
+        "45231110",
+        "45233142",
+        "45111200",
+        "79418000",
+        "63520000",
+        "79630000"
       ],
       "phase": "tender",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "electrical",
+          "demolition",
+          "roof",
+          "earthworks",
+          "roadworks"
+        ],
+        "construction_cpv": [
+          "45311000",
+          "45000000",
+          "45315300",
+          "45315300",
+          "45310000",
+          "45315100",
+          "45317300",
+          "45223810",
+          "45111200",
+          "45232221",
+          "45315100",
+          "45311100",
+          "45232220",
+          "45000000",
+          "45311000",
+          "45232221",
+          "45315500",
+          "45231400",
+          "45261215",
+          "45112000",
+          "45111200",
+          "45223810",
+          "45311000",
+          "45311000",
+          "45317300",
+          "45315100",
+          "45317200",
+          "45231400",
+          "45112000",
+          "45232220",
+          "45231110",
+          "45233142",
+          "45111200"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -1450,10 +2152,9 @@
       "country": "DEU",
       "project_type": "road",
       "trades": [
-        "earthworks",
-        "railworks",
         "structural",
         "roadworks",
+        "railworks",
         "electrical"
       ],
       "cpv": [
@@ -1476,13 +2177,116 @@
       ],
       "phase": "tender",
       "score": 100,
-      "confidence": 1.0,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "structural",
+          "roadworks",
+          "railworks",
+          "electrical"
+        ],
+        "construction_cpv": [
+          "45000000",
+          "45262300",
+          "45262670",
+          "45233120",
+          "45234116",
+          "45233222",
+          "45316212",
+          "45232000",
+          "45000000",
+          "45262300",
+          "45262670",
+          "45233120",
+          "45234116",
+          "45233222",
+          "45316212",
+          "45232000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-655721-2026",
+      "notice_id": "655721-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/655721-2026",
+      "published": "2026-09-23+02:00",
+      "title": "Kreuzungsfreier Ausbau Frankenschnellweg, Abschnitt West: Bauleistungen, Straßen- & Ingenieurbau",
+      "description": "Kreuzungsfreier Ausbau Frankenschnellweg, Abschnitt West: Bauleistungen, Straßen- & Ingenieurbau Stadt Nürnberg - Servicebetrieb Öffentlicher Raum ['DE254', 'DEU', 'DE254', 'DE254', 'DE254', 'DEU', 'DEU', 'DEU']",
+      "authority": "Stadt Nürnberg - Servicebetrieb Öffentlicher Raum",
+      "city": "Nürnberg",
+      "region": "",
+      "country": "DEU",
+      "project_type": "road",
+      "trades": [
+        "roadworks",
+        "demolition",
+        "earthworks",
+        "structural"
+      ],
+      "cpv": [
+        "45233120",
+        "44141100",
+        "45111100",
+        "45111250",
+        "45112400",
+        "45221111",
+        "45223210",
+        "45223820",
+        "45232450",
+        "45247110",
+        "45262200",
+        "45262310",
+        "45262426",
+        "71311220",
+        "71319000",
+        "77211100",
+        "45233120",
+        "45233120",
+        "45233120"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
+      "band": "HOT",
+      "evidence": {
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "roadworks",
+          "demolition",
+          "earthworks",
+          "structural"
+        ],
+        "construction_cpv": [
+          "45233120",
+          "45111100",
+          "45111250",
+          "45112400",
+          "45221111",
+          "45223210",
+          "45223820",
+          "45232450",
+          "45247110",
+          "45262200",
+          "45262310",
+          "45262426",
+          "45233120",
+          "45233120",
+          "45233120"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -1511,13 +2315,28 @@
       ],
       "phase": "tender",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "painting",
+          "plastering",
+          "flooring"
+        ],
+        "construction_cpv": [
+          "45214200",
+          "45442110",
+          "45442120",
+          "45410000",
+          "45430000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -1553,13 +2372,35 @@
       ],
       "phase": "tender",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.85,
+      "confidence": 0.85,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "windows_doors",
+          "facade"
+        ],
+        "trade_cpv": [
+          "painting",
+          "windows_doors"
+        ],
+        "construction_cpv": [
+          "45212225",
+          "45443000",
+          "45441000",
+          "45421140",
+          "45421130",
+          "45212225",
+          "45443000",
+          "45441000",
+          "45421140",
+          "45421130"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -1587,13 +2428,28 @@
       ],
       "phase": "tender",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "facade"
+        ],
+        "trade_cpv": [
+          "structural",
+          "fire_protection"
+        ],
+        "construction_cpv": [
+          "45262650",
+          "45321000",
+          "45262650",
+          "45321000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -1629,13 +2485,35 @@
       ],
       "phase": "tender",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "electrical",
+          "hvac",
+          "fire_protection"
+        ],
+        "construction_cpv": [
+          "45000000",
+          "45200000",
+          "45000000",
+          "45210000",
+          "45213000",
+          "45213150",
+          "45213320",
+          "45311200",
+          "45331200",
+          "45332400",
+          "45343000",
+          "45213000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -1665,13 +2543,30 @@
       ],
       "phase": "award",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "solar_energy"
+        ],
+        "trade_cpv": [
+          "roof",
+          "electrical"
+        ],
+        "construction_cpv": [
+          "45000000",
+          "45261215",
+          "45315300",
+          "45000000",
+          "45261215",
+          "45315300"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -1719,13 +2614,47 @@
       ],
       "phase": "tender",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "earthworks"
+        ],
+        "trade_cpv": [
+          "earthworks",
+          "roadworks",
+          "demolition"
+        ],
+        "construction_cpv": [
+          "45000000",
+          "45235200",
+          "45235320",
+          "45235310",
+          "45112000",
+          "45232450",
+          "45233120",
+          "45233200",
+          "45231100",
+          "45232453",
+          "45111100",
+          "45000000",
+          "45235200",
+          "45235320",
+          "45235310",
+          "45112000",
+          "45232450",
+          "45233120",
+          "45233200",
+          "45231100",
+          "45232453",
+          "45111100"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -1773,13 +2702,47 @@
       ],
       "phase": "tender",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "earthworks"
+        ],
+        "trade_cpv": [
+          "earthworks",
+          "roadworks",
+          "demolition"
+        ],
+        "construction_cpv": [
+          "45000000",
+          "45235200",
+          "45235320",
+          "45235310",
+          "45112000",
+          "45232450",
+          "45233120",
+          "45233200",
+          "45231100",
+          "45232453",
+          "45111100",
+          "45000000",
+          "45235200",
+          "45235320",
+          "45235310",
+          "45112000",
+          "45232450",
+          "45233120",
+          "45233200",
+          "45231100",
+          "45232453",
+          "45111100"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -1815,47 +2778,36 @@
       ],
       "phase": "tender",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-678432-2026",
-      "notice_id": "678432-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/678432-2026",
-      "published": "2026-10-02+02:00",
-      "title": "Vorgehängte Fassadenplatten BT C+F - Umbau und Erweiterung der Bertolt-Brecht-Gesamtschule in Seelze",
-      "description": "Vorgehängte Fassadenplatten BT C+F - Umbau und Erweiterung der Bertolt-Brecht-Gesamtschule in Seelze Stadt Seelze - 21.1 Innere Verwaltung - Zentrale Vergabestelle ['DE929', 'DEU', 'DE929', 'DEU']",
-      "authority": "Stadt Seelze - 21.1 Innere Verwaltung - Zentrale Vergabestelle",
-      "city": "Seelze",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "facade",
-        "painting",
-        "fire_protection"
-      ],
-      "cpv": [
-        "45443000",
-        "45321000",
-        "45443000",
-        "45321000"
-      ],
-      "phase": "tender",
-      "score": 94,
-      "confidence": 0.94,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "drywall"
+        ],
+        "trade_cpv": [
+          "fire_protection",
+          "windows_doors"
+        ],
+        "construction_cpv": [
+          "45324000",
+          "45421146",
+          "45421150",
+          "45421140",
+          "45421000",
+          "45212212",
+          "45324000",
+          "45421146",
+          "45421150",
+          "45421140",
+          "45421000",
+          "45212212"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -1889,13 +2841,33 @@
       ],
       "phase": "tender",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "structural",
+          "fire_protection",
+          "windows_doors"
+        ],
+        "construction_cpv": [
+          "45262670",
+          "45223100",
+          "45340000",
+          "45262511",
+          "45421147",
+          "45262670",
+          "45223100",
+          "45340000",
+          "45262511",
+          "45421147"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -1929,13 +2901,34 @@
       ],
       "phase": "award",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "drywall"
+        ],
+        "trade_cpv": [
+          "fire_protection",
+          "windows_doors"
+        ],
+        "construction_cpv": [
+          "45324000",
+          "45421146",
+          "45421141",
+          "45421152",
+          "45343100",
+          "45324000",
+          "45421146",
+          "45421141",
+          "45421152",
+          "45343100"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -1967,13 +2960,32 @@
       ],
       "phase": "tender",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "painting"
+        ],
+        "trade_cpv": [
+          "roadworks",
+          "flooring"
+        ],
+        "construction_cpv": [
+          "45000000",
+          "45200000",
+          "45233228",
+          "45432000",
+          "45000000",
+          "45200000",
+          "45233228",
+          "45432000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -2011,101 +3023,32 @@
       ],
       "phase": "tender",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-676829-2026",
-      "notice_id": "676829-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/676829-2026",
-      "published": "2026-10-01+02:00",
-      "title": "Bundesstadt Bonn: Kita Wilhelmstr. 34 - Außenanlagen",
-      "description": "Bundesstadt Bonn: Kita Wilhelmstr. 34 - Außenanlagen Bundesstadt Bonn - Referat Vergabedienste ['DEA22', 'DEU', 'DEA22', 'DEA22', 'DEU', 'DEU']",
-      "authority": "Bundesstadt Bonn - Referat Vergabedienste",
-      "city": "Bonn",
-      "region": "",
-      "country": "DEU",
-      "project_type": "kindergarten",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "roadworks"
-      ],
-      "cpv": [
-        "45112700",
-        "45112710",
-        "45221250",
-        "45233260",
-        "45112700",
-        "45112700",
-        "45112710",
-        "45221250",
-        "45233260",
-        "45112710",
-        "45221250",
-        "45233260"
-      ],
-      "phase": "award",
-      "score": 94,
-      "confidence": 0.94,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-674668-2026",
-      "notice_id": "674668-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/674668-2026",
-      "published": "2026-10-01+02:00",
-      "title": "Trockenbauarbeiten, Neubau Feuer- und Rettungswache II",
-      "description": "Trockenbauarbeiten, Neubau Feuer- und Rettungswache II Stadt Solingen ['DEA19', 'DEU', 'DEA19', 'DEU']",
-      "authority": "Stadt Solingen",
-      "city": "Solingen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "fire_station",
-      "trades": [
-        "drywall",
-        "fire_protection",
-        "windows_doors"
-      ],
-      "cpv": [
-        "45000000",
-        "39515000",
-        "39515200",
-        "44112310",
-        "45216120",
-        "45324000",
-        "45421141",
-        "45421146",
-        "45000000",
-        "39515000",
-        "39515200",
-        "44112310",
-        "45216120",
-        "45324000",
-        "45421141",
-        "45421146"
-      ],
-      "phase": "tender",
-      "score": 94,
-      "confidence": 0.94,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "landscaping"
+        ],
+        "trade_cpv": [
+          "earthworks",
+          "roadworks"
+        ],
+        "construction_cpv": [
+          "45112000",
+          "45231300",
+          "45223300",
+          "45233260",
+          "45112000",
+          "45231300",
+          "45223300",
+          "45233260"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -2139,13 +3082,33 @@
       ],
       "phase": "award",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "structural",
+          "demolition",
+          "fire_protection"
+        ],
+        "construction_cpv": [
+          "45223220",
+          "45262310",
+          "45262500",
+          "45111100",
+          "45320000",
+          "45223220",
+          "45262310",
+          "45262500",
+          "45111100",
+          "45320000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -2171,13 +3134,26 @@
       ],
       "phase": "award",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "roof",
+          "fire_protection"
+        ],
+        "trade_cpv": [
+          "railworks"
+        ],
+        "construction_cpv": [
+          "45234100",
+          "45234100"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -2205,99 +3181,28 @@
       ],
       "phase": "tender",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-677045-2026",
-      "notice_id": "677045-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/677045-2026",
-      "published": "2026-10-01+02:00",
-      "title": "Baugrube und Spezialtiefbau",
-      "description": "Baugrube und Spezialtiefbau Städtische Klinikum \"St. Georg\" Leipzig ['DED51', 'DEU', 'DED51', 'DEU']",
-      "authority": "Städtische Klinikum \"St. Georg\" Leipzig",
-      "city": "Leipzig",
-      "region": "",
-      "country": "DEU",
-      "project_type": "hospital",
-      "trades": [
-        "earthworks",
-        "structural",
-        "demolition"
-      ],
-      "cpv": [
-        "45262426",
-        "45262210",
-        "45262212",
-        "45112000",
-        "45262211",
-        "14212300",
-        "45111230",
-        "90513000",
-        "90500000",
-        "90522000",
-        "90522200",
-        "45262426",
-        "45262210",
-        "45262212",
-        "45112000",
-        "45262211",
-        "14212300",
-        "45111230",
-        "90513000",
-        "90500000",
-        "90522000",
-        "90522200"
-      ],
-      "phase": "tender",
-      "score": 94,
-      "confidence": 0.94,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-675913-2026",
-      "notice_id": "675913-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/675913-2026",
-      "published": "2026-10-01+02:00",
-      "title": "Sanitär, Feuerlöschanlagen 2A",
-      "description": "Sanitär, Feuerlöschanlagen 2A Klinikum Neumarkt - Anstalt des öffentlichen Rechts des Landkreises Neumarkt i.d.OPf. ['DE236', 'DEU', 'DE236', 'DEU']",
-      "authority": "Klinikum Neumarkt - Anstalt des öffentlichen Rechts des Landkreises Neumarkt i.d.OPf.",
-      "city": "Neumarkt in der Oberpfalz",
-      "region": "",
-      "country": "DEU",
-      "project_type": "hospital",
-      "trades": [
-        "hvac",
-        "plumbing",
-        "fire_protection"
-      ],
-      "cpv": [
-        "45332400",
-        "45343200",
-        "45332400",
-        "45343200"
-      ],
-      "phase": "award",
-      "score": 94,
-      "confidence": 0.94,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "facade"
+        ],
+        "trade_cpv": [
+          "structural",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45262670",
+          "45443000",
+          "45262670",
+          "45443000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -2325,13 +3230,28 @@
       ],
       "phase": "tender",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "facade"
+        ],
+        "trade_cpv": [
+          "structural",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45262670",
+          "45443000",
+          "45262670",
+          "45443000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -2361,13 +3281,30 @@
       ],
       "phase": "award",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "electrical"
+        ],
+        "trade_cpv": [
+          "windows_doors",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45216114",
+          "45421100",
+          "45441000",
+          "45216114",
+          "45421100",
+          "45441000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -2395,13 +3332,28 @@
       ],
       "phase": "tender",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "facade"
+        ],
+        "trade_cpv": [
+          "structural",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45262670",
+          "45443000",
+          "45262670",
+          "45443000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -2441,13 +3393,34 @@
       ],
       "phase": "award",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "landscaping"
+        ],
+        "trade_cpv": [
+          "earthworks",
+          "roadworks"
+        ],
+        "construction_cpv": [
+          "45212212",
+          "45112000",
+          "45231300",
+          "45223300",
+          "45233260",
+          "45212212",
+          "45112000",
+          "45231300",
+          "45223300",
+          "45233260"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     },
     {
@@ -2477,32 +3450,431 @@
       ],
       "phase": "tender",
       "score": 94,
-      "confidence": 0.94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
       "band": "HOT",
       "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "drywall"
+        ],
+        "trade_cpv": [
+          "fire_protection",
+          "windows_doors"
+        ],
+        "construction_cpv": [
+          "45000000",
+          "45324000",
+          "45422000",
+          "45000000",
+          "45324000",
+          "45422000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-673651-2026",
+      "notice_id": "673651-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/673651-2026",
+      "published": "2026-09-30+02:00",
+      "title": "Rohbauarbeiten - Umbau Kläranlage BA 1",
+      "description": "Rohbauarbeiten - Umbau Kläranlage BA 1 Stadtwerke Schramberg Eigenbetrieb Abwasserbehandlung e.K. ['DE135', 'DEU', 'DE135', 'DEU']",
+      "authority": "Stadtwerke Schramberg Eigenbetrieb Abwasserbehandlung e.K.",
+      "city": "Schramberg",
+      "region": "",
+      "country": "DEU",
+      "project_type": "water_wastewater",
+      "trades": [
+        "structural",
+        "demolition",
+        "earthworks"
+      ],
+      "cpv": [
+        "45200000",
+        "45110000",
+        "45232420",
+        "45210000",
+        "45262300",
+        "45262330",
+        "45112000",
+        "45252000",
+        "45200000",
+        "45110000",
+        "45232420",
+        "45210000",
+        "45262300",
+        "45262330",
+        "45112000",
+        "45252000"
+      ],
+      "phase": "tender",
+      "score": 94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.85,
+      "confidence": 0.85,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "structural"
+        ],
+        "trade_cpv": [
+          "demolition",
+          "structural",
+          "earthworks"
+        ],
+        "construction_cpv": [
+          "45200000",
+          "45110000",
+          "45232420",
+          "45210000",
+          "45262300",
+          "45262330",
+          "45112000",
+          "45252000",
+          "45200000",
+          "45110000",
+          "45232420",
+          "45210000",
+          "45262300",
+          "45262330",
+          "45112000",
+          "45252000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-672147-2026",
+      "notice_id": "672147-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/672147-2026",
+      "published": "2026-09-30+02:00",
+      "title": "Kinder- und Jugendtreff Südstadt mit PV-Anlage, Abbruch- und Neubau",
+      "description": "Kinder- und Jugendtreff Südstadt mit PV-Anlage, Abbruch- und Neubau Stadt Karlsruhe Amt für Hochbau und Gebäudewirtschaft ['DE122', 'DEU', 'DE122', 'DEU']",
+      "authority": "Stadt Karlsruhe Amt für Hochbau und Gebäudewirtschaft",
+      "city": "Karlsruhe",
+      "region": "",
+      "country": "DEU",
+      "project_type": "civil_engineering",
+      "trades": [
+        "demolition",
+        "solar_energy",
+        "structural"
+      ],
+      "cpv": [
+        "45223220",
+        "45262311",
+        "45223220",
+        "45262311"
+      ],
+      "phase": "award",
+      "score": 94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
+      "band": "HOT",
+      "evidence": {
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "demolition",
+          "solar_energy"
+        ],
+        "trade_cpv": [
+          "structural"
+        ],
+        "construction_cpv": [
+          "45223220",
+          "45262311",
+          "45223220",
+          "45262311"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-671313-2026",
+      "notice_id": "671313-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/671313-2026",
+      "published": "2026-09-30+02:00",
+      "title": "Neugestaltung der Rheinallee in Boppard - Los 04 - Garten- und Landschaftsbauarbeiten / Tiefbau",
+      "description": "Neugestaltung der Rheinallee in Boppard - Los 04 - Garten- und Landschaftsbauarbeiten / Tiefbau Stadt Boppard ['DEB1D', 'DEU', 'DEB1D', 'DEU']",
+      "authority": "Stadt Boppard",
+      "city": "Boppard",
+      "region": "",
+      "country": "DEU",
+      "project_type": "road",
+      "trades": [
+        "earthworks",
+        "landscaping",
+        "roadworks"
+      ],
+      "cpv": [
+        "45000000",
+        "45112711",
+        "45233161",
+        "45000000",
+        "45112711",
+        "45233161"
+      ],
+      "phase": "award",
+      "score": 94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
+      "band": "HOT",
+      "evidence": {
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "earthworks",
+          "landscaping"
+        ],
+        "trade_cpv": [
+          "earthworks",
+          "roadworks"
+        ],
+        "construction_cpv": [
+          "45000000",
+          "45112711",
+          "45233161",
+          "45000000",
+          "45112711",
+          "45233161"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-672231-2026",
+      "notice_id": "672231-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/672231-2026",
+      "published": "2026-09-30+02:00",
+      "title": "TU-Museumspavillon: Außenanlagen",
+      "description": "TU-Museumspavillon: Außenanlagen Technische Universität Berlin ['DE300', 'DEU', 'DE300', 'DEU']",
+      "authority": "Technische Universität Berlin",
+      "city": "Berlin",
+      "region": "",
+      "country": "DEU",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "roadworks"
+      ],
+      "cpv": [
+        "45112700",
+        "45233200",
+        "45112700",
+        "45233200"
+      ],
+      "phase": "award",
+      "score": 94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "landscaping"
+        ],
+        "trade_cpv": [
+          "earthworks",
+          "roadworks"
+        ],
+        "construction_cpv": [
+          "45112700",
+          "45233200",
+          "45112700",
+          "45233200"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-672409-2026",
+      "notice_id": "672409-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/672409-2026",
+      "published": "2026-09-30+02:00",
+      "title": "Holzbauarbeiten",
+      "description": "Holzbauarbeiten Landratsamt Eichstätt ['DE219', 'DEU', 'DE219', 'DEU']",
+      "authority": "Landratsamt Eichstätt",
+      "city": "Eichstätt",
+      "region": "",
+      "country": "DEU",
+      "project_type": "care_social",
+      "trades": [
+        "structural",
+        "roof",
+        "painting"
+      ],
+      "cpv": [
+        "45215130",
+        "45261100",
+        "45443000",
+        "45215130",
+        "45261100",
+        "45443000"
+      ],
+      "phase": "award",
+      "score": 94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
+      "band": "HOT",
+      "evidence": {
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "structural"
+        ],
+        "trade_cpv": [
+          "roof",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45215130",
+          "45261100",
+          "45443000",
+          "45215130",
+          "45261100",
+          "45443000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-668264-2026",
+      "notice_id": "668264-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/668264-2026",
+      "published": "2026-09-29+02:00",
+      "title": "Geb. 3403 Energetische Sanierung Dach und Fassade - VE407 Erneuerung zentrale Kälteerzeugung",
+      "description": "Geb. 3403 Energetische Sanierung Dach und Fassade - VE407 Erneuerung zentrale Kälteerzeugung Gottfried Wilhelm Leibniz Universität Hannover Stiftung Öffentlichen Rechts/ Dezernat 3, Gebäudemanagement Sachgebiet 36 Vergabe- und Vertragswesen ['DE929', 'DEU', 'DE929', 'DEU']",
+      "authority": "Gottfried Wilhelm Leibniz Universität Hannover Stiftung Öffentlichen Rechts/ Dezernat 3, Gebäudemanagement Sachgebiet 36 Vergabe- und Vertragswesen",
+      "city": "Hannover",
+      "region": "",
+      "country": "DEU",
+      "project_type": "water_wastewater",
+      "trades": [
+        "hvac",
+        "roof",
+        "facade"
+      ],
+      "cpv": [
+        "45331231",
+        "42123300",
+        "42510000",
+        "42512500",
+        "45231113",
+        "45331231",
+        "42123300",
+        "42510000",
+        "42512500",
+        "45231113"
+      ],
+      "phase": "tender",
+      "score": 94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
+      "band": "HOT",
+      "evidence": {
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "hvac",
+          "roof",
+          "facade"
+        ],
+        "trade_cpv": [
+          "hvac"
+        ],
+        "construction_cpv": [
+          "45331231",
+          "45231113",
+          "45331231",
+          "45231113"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-670453-2026",
+      "notice_id": "670453-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/670453-2026",
+      "published": "2026-09-29+02:00",
+      "title": "Tragwerk und dichte Gebäudehülle - Erweiterung der Peter-Wust-Schule zur vollen Vierzügigkeit",
+      "description": "Tragwerk und dichte Gebäudehülle - Erweiterung der Peter-Wust-Schule zur vollen Vierzügigkeit Stadt Münster - Zentrale Rechtsdienstleistungen und Vergabemanagement ['DEA33', 'DEU', 'DEA33', 'DEU']",
+      "authority": "Stadt Münster - Zentrale Rechtsdienstleistungen und Vergabemanagement",
+      "city": "Münster",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "demolition",
+        "structural",
+        "windows_doors"
+      ],
+      "cpv": [
+        "45210000",
+        "45110000",
+        "45223220",
+        "45260000",
+        "45262100",
+        "45422000",
+        "45210000",
+        "45110000",
+        "45223220",
+        "45260000",
+        "45262100",
+        "45422000"
+      ],
+      "phase": "award",
+      "score": 94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "demolition",
+          "structural",
+          "windows_doors"
+        ],
+        "construction_cpv": [
+          "45210000",
+          "45110000",
+          "45223220",
+          "45260000",
+          "45262100",
+          "45422000",
+          "45210000",
+          "45110000",
+          "45223220",
+          "45260000",
+          "45262100",
+          "45422000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
       }
     }
   ],
-  "lifecycle_links": [
-    {
-      "early_source_id": "REAL-BY-e626b5f37d916cd2",
-      "early_title": "Generalsanierung und Umbau der Heinrich-Thein-Schule",
-      "early_city": "Haßfurt",
-      "live_source_id": "TED-666937-2026",
-      "live_title": "Außenanlagen Südpausenhof (GaLa-Bau)",
-      "live_city": "Haßfurt",
-      "score": 0.74,
-      "status": "review",
-      "evidence": {
-        "city": 1.0,
-        "project_type": 1.0,
-        "title": 0.115,
-        "authority": 0.186
-      }
-    }
-  ]
+  "lifecycle_links": []
 }
