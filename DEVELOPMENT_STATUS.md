@@ -63,15 +63,14 @@ CI-Läufe 37331459564 und 37331452274 bestanden für Commit 480c674a1490a373f658
 CI 37332039989 / 37332032772 für Commit 02dd1036e978bbf426bac490d211fe2215069c38: Kern, vollständiger Feed, 7 Backend-/Backup-Tests, Chromium-Abläufe, Docker-Compose-Konfiguration und Container-Build erfolgreich. Konsistentes Datenbankbackup konnte aus einer privaten Datei wieder gelesen werden. Produktions-Smoke-Workflow prüft nach Pages-Veröffentlichung die echte URL sowie Filter, lokale Persistenz und mobile Darstellung. Der produktive Backend-Host bleibt ein externer Blocker.
 
 ## Aktueller Live-Stand nach Integration
-PR #1 wurde in main integriert. Live-Akquisition 37333090288 erfolgreich, Pages-Deployment 37333152494 erfolgreich.
-Der neue Lauf am 05.10.2026 um 15:28 UTC verarbeitet **2.000 eindeutige TED-Meldungen**; 66 überlappende Treffer wurden während der Akquisition übersprungen und durch weitere Seiten ersetzt.
-Aktuelle Evidenzprüfung: **658 CONFIDENT, 1.272 REVIEW, 70 UNKNOWN**. **37 EARLY-Meldungen / 36 Masterprojekte**. Aktueller Kundenfeed: **694 Einträge** (658 TED, 36 frühe Projekte).
-Nach der Korrektur der Klassifikation ohne Auftraggebernamen liefert der aktuelle Live-Stand **0 Lifecycle-Kandidaten / 0 bestätigte Auto-Links**. Der eine Kandidat des historischen Snapshots ist kein fortgeschriebener Nachweis.
-Der Browser-Test der veröffentlichten URL bestätigt 694 Kundenprojekte, Gewerkfilter, lokale Persistenz und mobile Darstellung. Run-Logs enthalten den tatsächlichen URL-Test, nicht nur einen erfolgreichen Upload.
+PRs #1 bis #4 sind in main integriert. Aktueller erfolgreicher Live-Lauf: 37336966216; aktuelles erfolgreiches Pages-Deployment: 37337036911.
+Stand 2026-10-05 15:57 UTC: **2000 eindeutige TED-Meldungen**, **648 CONFIDENT / 1282 REVIEW / 70 UNKNOWN**. Die Klassifikationsquote ist weiterhin keine Accuracy.
+**37 EARLY-Meldungen / 36 Masterprojekte**. Aktueller Kundenfeed: **684 Einträge** (648 TED, 36 frühe Projekte).
+Aktuell **0 Lifecycle-Kandidaten / 0 bestätigte Auto-Links**; historische Kandidaten werden nicht als aktuelle Verbindungen fortgeschrieben.
+Der erfolgreiche Browser-Smoke-Lauf **37337093616** prüft die tatsächlich veröffentlichte URL, Gewerke, lokale Merkliste nach Neuladen, frühe Projekte und mobile Darstellung.
 
 Veröffentlicht: https://p68554185.github.io/opportunity-radar/
-Produktionsvorschlag: deploy/README.md (Docker, TLS-Proxy, persistentes Volume; Containerbuild und Konfiguration geprüft).
-**Nächster externer Blocker: kostenlose Render-/Neon-Accounts und sichere Konfiguration der Datenbankverbindung.** Rechtliche Texte und anschließend E-Mail-/Zahlungsaccounts bleiben erforderlich.
+**Nächster externer Blocker: kostenlose Render-/Neon-Accounts und sichere Secret-Konfiguration der Datenbankverbindung.** Rechtliche Texte, Geo-/Radiusabdeckung, E-Mail und Zahlung bleiben offen.
 Die laufende Vorschau ist nutzbar; eine verkaufsfähige SaaS-GO-LIVE-Freigabe wird noch nicht behauptet.
 
 ## Verbindliche Kostenentscheidung des Nutzers
@@ -81,3 +80,10 @@ Das vorhandene Backend unterstützt PostgreSQL zusätzlich zu SQLite. Auf flüch
 Konto-, Sitzungs-, Neustart- und Merkliste-Isolationstests bestehen gegen SQLite und PostgreSQL 16 (CI 37334583300). Plattform-Healthchecks wecken die Datenbank nicht dauerhaft.
 Render- und Neon-Nutzungslimits/Ruhephasen bleiben Einschränkungen eines Kundenvalidierungs-Pilots. Kein kostenpflichtiger Tarif und kein neuer externer Account wurde eingerichtet.
 Konkrete Einrichtung, Grenzen und sichere Secret-Konfiguration: deploy/FREE_PILOT.md. Die Accounts fehlen noch; der kostenlose Backend-Pilot ist noch nicht deployt.
+
+## Fachliche Regressionen vor Kundenvalidierung
+Offizielle CPV-Semantik korrigiert: 4532 Dämmung; 4534 Zäune/Geländer; spezifisches 45343 Brandschutz; 45332 Sanitär.
+Hochschule und alleinstehende Sporthalle werden nicht mehr als Schule über Substring-/Sammelregeln klassifiziert; mehrdeutiges Campus ohne expliziten Kontext bleibt ohne Text-Projektklassifikation.
+Vorankündigungen erhalten eine Prüfung geplanter Lose/Vergabezeitpunkte. Bei unbekannter Phase wird zunächst die Phase geklärt; es wird kein Zuschlag oder aktives Tenderverfahren unterstellt.
+Die Änderungen sind durch fachliche Regressionstests sowie vollständige Feed-, SQLite-/PostgreSQL-, Browser- und Containerprüfungen abgesichert (PR-CI 37335901279 / 37336613596).
+Kostenstrategie: kostenloser Pilot bis zur erfolgreichen Kundenvalidierung; keine kostenpflichtigen Hostingdienste bestellt.
