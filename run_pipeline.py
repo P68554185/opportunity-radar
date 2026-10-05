@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 STEPS=[
  ("Classifier regression",[sys.executable,"benchmarks/classifier_regression.py"]),
- ("Acquire and normalize 500 TED notices",[sys.executable,"benchmarks/live_ted_500.py"]),
+ ("Acquire and normalize 2000 TED notices",[sys.executable,"benchmarks/live_ted_500.py"]),
  ("Build intelligence layer",[sys.executable,"intelligence/build.py"]),
  ("Analyze opportunity quality",[sys.executable,"intelligence/quality.py"]),
  ("Full dataset quality gate",[sys.executable,"intelligence/full_quality_gate.py"]),
