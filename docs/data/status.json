@@ -1,16 +1,1 @@
-{
-  "version": "0.8.1",
-  "early_signals": 37,
-  "master_projects": 34,
-  "live_records": 500,
-  "classified_opportunities": 374,
-  "classification_rate_pct": 0,
-  "opportunities": 862,
-  "lifecycle_links": 0,
-  "last_sync": "2026-10-05 11:39 UTC",
-  "ted_run_status": "complete",
-  "ted_errors": 0,
-  "ted_requested": 500,
-  "project_type_classified": 238,
-  "trade_classified": 267
-}
+{"version":"0.8.0","early_signals":37,"master_projects":34,"live_records":0,"classified_opportunities":0,"opportunities":488,"lifecycle_links":0,"last_sync":null,"ted_run_status":"awaiting_first_v0.8_run","ted_errors":0,"ted_requested":500,"project_type_classified":0,"trade_classified":0}

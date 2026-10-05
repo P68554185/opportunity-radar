@@ -1,3 +1,7 @@
+# Opportunity Radar v0.8.2
+
+Stable GitHub workflow architecture.
+
 # Opportunity Radar v0.8.1 — Live Intelligence
 
 v0.8.1 converts the proven TED live acquisition into an intelligence pipeline:
