@@ -22,6 +22,7 @@ def records_from(obj):
 
 # Prefer complete normalized acquisition, never the 50-card website feed.
 sources = [
+    REAL/"ted_live_enriched.json",
     REAL/"ted_live_normalized.json",
     REPORTS/"live_ted_500_normalized.json",
     REPORTS/"live_ted_500.json",
@@ -91,7 +92,7 @@ for r in records:
 counts=Counter(x["status"] for x in evaluated)
 
 # deterministic stratified sample, max 60
-rng=random.Random(804)
+rng=random.Random(805)
 sample=[]
 targets={"CONFIDENT":20,"REVIEW":25,"UNKNOWN":15}
 for status,n in targets.items():
@@ -120,7 +121,7 @@ with (REPORTS/"quality_audit_sample.csv").open("w",newline="",encoding="utf-8-si
         })
 
 summary={
- "version":"0.8.4","source":source,"records_seen":len(records),
+ "version":"0.8.5","source":source,"records_seen":len(records),
  "records_evaluated":len(evaluated),"quality_gate":dict(counts),
  "customer_facing_confident":counts.get("CONFIDENT",0),
  "held_for_review":counts.get("REVIEW",0),"suppressed_unknown":counts.get("UNKNOWN",0),
