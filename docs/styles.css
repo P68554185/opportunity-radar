@@ -6,3 +6,13 @@
 
 /* v0.8.8 Readable TED Audit */
 .auditReadableLabel{font-size:10px;letter-spacing:1.5px;color:#7ea7ff;font-weight:800;margin:4px 0 8px}.auditTitle{font-size:18px;line-height:1.45;margin:0 0 10px;max-width:1100px}.auditOriginal{margin:12px 0;padding:10px 12px;border:1px solid #263245;border-radius:9px;background:#0c121c;color:#93a1b4;font-size:12px}.auditOriginal summary{cursor:pointer;color:#9fc2f5;font-weight:700}.auditOriginal div{white-space:pre-wrap;line-height:1.45;max-height:220px;overflow:auto;margin-top:10px}.auditDesc{max-height:none;background:#0c121c;border-left:3px solid #355d91;padding:12px;border-radius:6px}
+
+/* v0.8.9 compact quality-audit card */
+.auditFacts,.auditPrediction{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:12px 0 18px}
+.auditPrediction{grid-template-columns:1fr 1fr .55fr}
+.auditFacts>div,.auditPrediction>div{border:1px solid #26364a;border-radius:10px;padding:12px 14px;background:#0d1622}
+.auditFacts span,.auditPrediction span{display:block;color:#86a4c8;font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px}
+.auditFacts b,.auditPrediction b{font-size:15px;overflow-wrap:anywhere}
+.auditTitle.compact{font-size:20px;line-height:1.45;max-width:1100px;margin:8px 0}
+.auditDesc.compact{font-size:16px;line-height:1.55;max-width:1100px;max-height:none;overflow:visible}
+@media(max-width:850px){.auditFacts,.auditPrediction{grid-template-columns:1fr 1fr}}

@@ -19,7 +19,7 @@ def score01(r):
     except Exception:return 0
 
 
-# v0.8.8: make multilingual TED records readable for human audit without deleting source evidence.
+# v0.8.9: make multilingual TED records readable for human audit without deleting source evidence.
 EN_HINTS=("construction work", "building work", "works for", "renovation", "installation work", "engineering work", "road works", "railway", "pipeline", "electrical", "heating", "ventilation", "plumbing")
 DE_HINTS=("bauarbeiten", "bauleistungen", "neubau", "sanierung", "umbau", "erweiterung", "elektro", "heizung", "lüftung", "rohrleitung", "straßenbau", "gleis", "brücke")
 LANG_MARKER=re.compile(r"(?:^|\s)(?:Germany|Deutschland|Poland|Polen|France|Frankreich|Italy|Italien|Spain|Spanien|Austria|Österreich|Belgium|Belgien|Netherlands|Niederlande|Czechia|Tschechien|Sweden|Schweden|Denmark|Dänemark|Finland|Finnland|Romania|Rumänien|Hungary|Ungarn|Slovakia|Slowakei|Slovenia|Slowenien|Croatia|Kroatien|Bulgaria|Bulgarien|Greece|Griechenland|Portugal|Ireland|Irland|Lithuania|Litauen|Latvia|Lettland|Estonia|Estland)[-–—][^:]{1,80}:\s*",re.I)
@@ -44,11 +44,37 @@ def readable_ted_text(text):
     if len(best)>700: best=best[:697].rsplit(" ",1)[0]+"…"
     return best or raw[:700]
 
-def audit_summary(r):
-    title=readable_ted_text(r.get('title'))
-    desc=readable_ted_text(r.get('description'))
+def evidence_excerpt(text, max_len=430):
+    """Return one compact German/English evidence excerpt from multilingual TED text."""
+    raw=clean_space(text)
+    if not raw:return ""
+    low=raw.lower()
+    hints=list(DE_HINTS)+list(EN_HINTS)
+    hits=[low.find(h) for h in hints if low.find(h)>=0]
+    if not hits:
+        return (raw[:max_len-1].rsplit(" ",1)[0]+"…") if len(raw)>max_len else raw
+    pos=min(hits)
+    # Start after the nearest language/country label colon when possible.
+    left=max(0,pos-150)
+    colon=raw.rfind(":",left,pos)
+    begin=colon+1 if colon>=0 else left
+    # Stop before the next obvious language/country label.
+    tail=raw[pos+40:]
+    m=LANG_MARKER.search(tail)
+    finish=pos+40+(m.start() if m else max_len)
+    excerpt=clean_space(raw[begin:min(len(raw),finish)]).strip(" ;|:-")
+    if len(excerpt)>max_len:
+        excerpt=excerpt[:max_len-1].rsplit(" ",1)[0]+"…"
+    return excerpt
+
+def compact_audit_card(r):
+    title=evidence_excerpt(r.get('title'),360)
+    desc=evidence_excerpt(r.get('description'),430)
     if desc==title: desc=""
     return title,desc
+
+def audit_summary(r):
+    return compact_audit_card(r)
 
 def evidence_gate(r):
     p=str(r.get('project_type') or '').lower()
@@ -76,7 +102,7 @@ counts=Counter(x['quality_status'] for x in rows)
 # Customer feed contains only evidence-gated CONFIDENT records. No REVIEW/UNKNOWN leakage.
 customer=[dict(x['record'], quality_status='CONFIDENT', quality_evidence=x['evidence']) for x in rows if x['quality_status']=='CONFIDENT']
 customer.sort(key=lambda r:(float(r.get('score') or 0),str(r.get('published') or '')),reverse=True)
-feed={'version':'0.8.8','policy':'CONFIDENT_ONLY','count':len(customer),'opportunities':customer}
+feed={'version':'0.8.9','policy':'CONFIDENT_ONLY','count':len(customer),'opportunities':customer}
 (DOCS/'customer_opportunities.json').write_text(json.dumps(feed,ensure_ascii=False,indent=2),encoding='utf-8')
 
 # Deterministic 60-case stratified audit pack. Labels remain blank until human review.
@@ -100,9 +126,10 @@ for i,x in enumerate(sample,1):
         'description':clean_desc,'original_title':r.get('title'),'original_description':r.get('description'),'cpv':arr(r.get('cpv')),
         'project_type_predicted':r.get('project_type'),'trades_predicted':arr(r.get('trades')),
         'confidence':e['confidence'],'quality_status':x['quality_status'],
-        'evidence':e,'authority':r.get('authority'),'published':r.get('published'),'city':r.get('city')
+        'evidence':e,'authority':r.get('authority'),'published':r.get('published'),'city':r.get('city'),
+        'country':r.get('country'),'source_url':r.get('source_url'),'phase':r.get('phase')
     })
-(DOCS/'audit_cases.json').write_text(json.dumps({'version':'0.8.8','count':len(audit_cases),'cases':audit_cases},ensure_ascii=False,indent=2),encoding='utf-8')
+(DOCS/'audit_cases.json').write_text(json.dumps({'version':'0.8.9','count':len(audit_cases),'cases':audit_cases},ensure_ascii=False,indent=2),encoding='utf-8')
 
 # Precision is calculated only when a reviewed audit CSV exists; never fabricated.
 labels=REPORTS/'audit_v086_reviewed.csv'; metrics={'measured':False,'reviewed_rows':0,'precision':None,'project_type_accuracy':None,'trade_accuracy':None}
@@ -117,7 +144,7 @@ if labels.exists():
         tr=[r for r in labelled if str(r.get('trades_correct','')).strip()!='']
         metrics['project_type_accuracy']=round(100*sum(yes(r.get('project_type_correct')) for r in pt)/len(pt),1) if pt else None
         metrics['trade_accuracy']=round(100*sum(yes(r.get('trades_correct')) for r in tr)/len(tr),1) if tr else None
-summary={'version':'0.8.8','records_evaluated':len(rows),'quality_gate':dict(counts),'customer_feed_count':len(customer),'customer_feed_policy':'CONFIDENT_ONLY','review_leakage':sum(1 for r in customer if r.get('quality_status')!='CONFIDENT'),'audit_sample_size':len(sample),'accuracy':metrics,'accuracy_note':'Precision is reported only from explicitly reviewed labels; otherwise it remains unmeasured.'}
+summary={'version':'0.8.9','records_evaluated':len(rows),'quality_gate':dict(counts),'customer_feed_count':len(customer),'customer_feed_policy':'CONFIDENT_ONLY','review_leakage':sum(1 for r in customer if r.get('quality_status')!='CONFIDENT'),'audit_sample_size':len(sample),'accuracy':metrics,'accuracy_note':'Precision is reported only from explicitly reviewed labels; otherwise it remains unmeasured.'}
 (REPORTS/'audit_precision_summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
 (DOCS/'audit_precision.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(summary,ensure_ascii=False,indent=2))
