@@ -44,7 +44,7 @@ Vollständige Datensatzprüfung erfolgt durch den neuen CI-Snapshot: aktuelle Za
 - Geprüfter Kundendatensatz bedeutet Evidence-Screening, keine fachlich gemessene Precision.
 
 ## Nächste Schritte
-1. Geprüfte Änderung integrieren und Pages-Deployment mit dem Produktions-Smoke-Workflow abnehmen.
+1. Hostingbudget/Host/Domain festlegen und das geprüfte Backend auf der gewählten Infrastruktur bereitstellen.
 2. Backend-Infrastruktur auswählen und bereitstellen; erst anschließend Login und serverseitige Profile anbinden.
 3. Geodatenquelle und kommerzielle Nutzungsbedingungen klären; Radius mit unbekannten Orten konservativ behandeln.
 4. Laufende EARLY-Akquisition aus weiteren offiziellen Quellen und manuell bewerteten Stichproben ausbauen.
@@ -61,3 +61,15 @@ CI-Läufe 37331459564 und 37331452274 bestanden für Commit 480c674a1490a373f658
 
 ## Abschließende technische Abnahme
 CI 37332039989 / 37332032772 für Commit 02dd1036e978bbf426bac490d211fe2215069c38: Kern, vollständiger Feed, 7 Backend-/Backup-Tests, Chromium-Abläufe, Docker-Compose-Konfiguration und Container-Build erfolgreich. Konsistentes Datenbankbackup konnte aus einer privaten Datei wieder gelesen werden. Produktions-Smoke-Workflow prüft nach Pages-Veröffentlichung die echte URL sowie Filter, lokale Persistenz und mobile Darstellung. Der produktive Backend-Host bleibt ein externer Blocker.
+
+## Aktueller Live-Stand nach Integration
+PR #1 wurde in main integriert. Live-Akquisition 37333090288 erfolgreich, Pages-Deployment 37333152494 erfolgreich.
+Der neue Lauf am 05.10.2026 um 15:28 UTC verarbeitet **2.000 eindeutige TED-Meldungen**; 66 überlappende Treffer wurden während der Akquisition übersprungen und durch weitere Seiten ersetzt.
+Aktuelle Evidenzprüfung: **658 CONFIDENT, 1.272 REVIEW, 70 UNKNOWN**. **37 EARLY-Meldungen / 36 Masterprojekte**. Aktueller Kundenfeed: **694 Einträge** (658 TED, 36 frühe Projekte).
+Nach der Korrektur der Klassifikation ohne Auftraggebernamen liefert der aktuelle Live-Stand **0 Lifecycle-Kandidaten / 0 bestätigte Auto-Links**. Der eine Kandidat des historischen Snapshots ist kein fortgeschriebener Nachweis.
+Der Browser-Test der veröffentlichten URL bestätigt 694 Kundenprojekte, Gewerkfilter, lokale Persistenz und mobile Darstellung. Run-Logs enthalten den tatsächlichen URL-Test, nicht nur einen erfolgreichen Upload.
+
+Veröffentlicht: https://p68554185.github.io/opportunity-radar/
+Produktionsvorschlag: deploy/README.md (Docker, TLS-Proxy, persistentes Volume; Containerbuild und Konfiguration geprüft).
+**Nächste notwendige Nutzerentscheidung: Hostingbudget und Auswahl eines Hosts/einer Domain.** Serverzugang, rechtliche Texte und anschließend E-Mail-/Zahlungsaccounts bleiben erforderlich.
+Die laufende Vorschau ist nutzbar; eine verkaufsfähige SaaS-GO-LIVE-Freigabe wird noch nicht behauptet.
