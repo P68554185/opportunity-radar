@@ -14,6 +14,18 @@ def sim(a,b):
  A,B=tok(a),tok(b); j=len(A&B)/len(A|B) if A|B else 0
  return .55*j+.45*SequenceMatcher(None,norm(a),norm(b)).ratio()
 
+def lifecycle_link_score(e,x):
+ # Municipality is the strongest project identity signal. Authority names often differ
+ # between funding owner and procurement office, so use them as secondary evidence.
+ ec,xc=norm(e.get("city","")),norm(x.get("city",""))
+ if ec and xc and ec!=xc:return 0.0,{}
+ city=1.0 if ec and xc and ec==xc else 0.0
+ pt=1.0 if e.get("project_type") and x.get("project_type") and e["project_type"]==x["project_type"] else 0.0
+ title=sim(e.get("title",""),x.get("title",""))
+ auth=SequenceMatcher(None,norm(e.get("authority","")),norm(x.get("authority",""))).ratio() if x.get("authority") else 0
+ score=.48*city+.22*pt+.22*title+.08*auth
+ return min(1,score),{"city":round(city,2),"project_type":round(pt,2),"title":round(title,3),"authority":round(auth,3)}
+
 def body_obj(x):
  try:return json.loads(x.get("body") or "{}")
  except Exception:return {}
@@ -51,14 +63,15 @@ def build():
   candidates=[]
   for x in live:
    if e.get("project_type") and x.get("project_type") and e["project_type"]!=x["project_type"]: continue
-   title_score=sim(e.get("title",""),x.get("title",""))
-   auth_score=SequenceMatcher(None,norm(e.get("authority","")),norm(x.get("authority",""))).ratio() if x.get("authority") else 0
-   city_bonus=.30 if e.get("city") and x.get("city") and norm(e["city"])==norm(x["city"]) else 0
-   s=min(1,.55*title_score+.15*auth_score+city_bonus)
-   if s>=.58:candidates.append((s,x))
+   s,evidence=lifecycle_link_score(e,x)
+   # >=0.60 means a strong municipality/type/title combination. Auto-link stays strict.
+   if s>=.60:candidates.append((s,x,evidence))
   if candidates:
-   s,x=max(candidates,key=lambda z:z[0]); links.append({"early_source_id":e.get("source_id"),"early_title":e.get("title"),"live_source_id":x.get("source_id"),"live_title":x.get("title"),"score":round(s,3),"status":"review" if s<.82 else "auto_link"})
- out={"version":"0.8.5","live_records":len(live),"enriched_records":len(enriched),"classified_opportunities":len(opp),"lifecycle_candidates":len(links),"opportunities":opp[:50],"lifecycle_links":links}
+   s,x,evidence=max(candidates,key=lambda z:z[0])
+   links.append({"early_source_id":e.get("source_id"),"early_title":e.get("title"),"early_city":e.get("city"),
+    "live_source_id":x.get("source_id"),"live_title":x.get("title"),"live_city":x.get("city"),
+    "score":round(s,3),"status":"review" if s<.84 else "auto_link","evidence":evidence})
+ out={"version":"0.9.2","live_records":len(live),"enriched_records":len(enriched),"classified_opportunities":len(opp),"lifecycle_candidates":len(links),"opportunities":opp[:50],"lifecycle_links":links}
  os.makedirs(os.path.join(ROOT,"docs","data"),exist_ok=True); os.makedirs(os.path.join(ROOT,"reports"),exist_ok=True); os.makedirs(os.path.join(ROOT,"real_data"),exist_ok=True)
  with open(os.path.join(ROOT,"real_data","ted_live_enriched.json"),"w",encoding="utf-8") as f:json.dump(enriched,f,ensure_ascii=False,indent=2)
  with open(os.path.join(ROOT,"reports","intelligence_report.json"),"w",encoding="utf-8") as f:json.dump(out,f,ensure_ascii=False,indent=2)
