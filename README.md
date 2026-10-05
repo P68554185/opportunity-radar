@@ -1,4 +1,4 @@
-# Opportunity Radar v0.8.2
+# Opportunity Radar v0.8.3
 
 Stable GitHub workflow architecture.
 
