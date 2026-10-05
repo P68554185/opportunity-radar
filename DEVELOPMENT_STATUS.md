@@ -44,7 +44,7 @@ Vollständige Datensatzprüfung erfolgt durch den neuen CI-Snapshot: aktuelle Za
 - Geprüfter Kundendatensatz bedeutet Evidence-Screening, keine fachlich gemessene Precision.
 
 ## Nächste Schritte
-1. CI abschließen, Fehler beheben, geprüfte Änderung integrieren und Pages-Deployment abnehmen.
+1. Geprüfte Änderung integrieren und Pages-Deployment mit dem Produktions-Smoke-Workflow abnehmen.
 2. Backend-Infrastruktur auswählen und bereitstellen; erst anschließend Login und serverseitige Profile anbinden.
 3. Geodatenquelle und kommerzielle Nutzungsbedingungen klären; Radius mit unbekannten Orten konservativ behandeln.
 4. Laufende EARLY-Akquisition aus weiteren offiziellen Quellen und manuell bewerteten Stichproben ausbauen.
@@ -58,3 +58,6 @@ Session-Login, serverseitige Betriebsprofile und Merklisten sowie geschütztes A
 
 ## Validierung und Bereitstellungsvorschlag
 CI-Läufe 37331459564 und 37331452274 bestanden für Commit 480c674a1490a373f6586309b8a4fcd445d41087. 17 Kern-/Evidenz-/Akquisitions-/Phasentests, bestehender Pipeline-Smoke-Test, 8 Classifier-Fälle, 6 Account-Tests und Chromium-End-to-End-Abläufe wurden erfolgreich ausgeführt. Die neue Container-/TLS-Vorlage und ein konsistentes privates SQLite-Backup werden zusätzlich geprüft. Hostingentscheidung und reale Server-/Domain-Zugangsdaten fehlen. Keine öffentliche Kontoregistrierung wird ohne diese Abnahme freigeschaltet.
+
+## Abschließende technische Abnahme
+CI 37332039989 / 37332032772 für Commit 02dd1036e978bbf426bac490d211fe2215069c38: Kern, vollständiger Feed, 7 Backend-/Backup-Tests, Chromium-Abläufe, Docker-Compose-Konfiguration und Container-Build erfolgreich. Konsistentes Datenbankbackup konnte aus einer privaten Datei wieder gelesen werden. Produktions-Smoke-Workflow prüft nach Pages-Veröffentlichung die echte URL sowie Filter, lokale Persistenz und mobile Darstellung. Der produktive Backend-Host bleibt ein externer Blocker.
