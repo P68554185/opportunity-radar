@@ -21,8 +21,10 @@ PROJECT_RULES = [
 ]
 
 TRADE_RULES = [
+ ("insulation", r"(dämm|schallschutz|isolierarbeiten)"),
+ ("fencing", r"(zaun|zäune|geländer)"),
  ("electrical", r"(elektro|elektrotechnik|starkstrom|schwachstrom|beleuchtung|netzwerktechnik|sicherheitsbeleuchtung)"),
- ("hvac", r"(heizung|lüftung|sanitär|hls|tga|wärmepumpe|kälte|klima|gebäudetechnik)"),
+ ("hvac", r"(heizung|lüftung|hls|tga|wärmepumpe|kälte|klima|gebäudetechnik)"),
  ("drywall", r"(trockenbau|gipskarton|abhangdecke|akustikdecke)"),
  ("painting", r"(maler|anstrich|beschichtung|lackier)"),
  ("flooring", r"(bodenbelag|bodenleger|parkett|estrich|fliesen|naturstein)"),
@@ -52,8 +54,8 @@ CPV_PROJECT_PREFIXES = {
 }
 CPV_TRADE_PREFIXES = {
  "4511":"demolition", "45112":"earthworks", "45233":"roadworks", "45234":"railworks",
- "45261":"roof", "45262":"structural", "4531":"electrical", "4532":"fire_protection",
- "4533":"hvac", "4534":"fire_protection", "4535":"building_services",
+ "45261":"roof", "45262":"structural", "4531":"electrical", "4532":"insulation",
+ "4533":"hvac", "4534":"fencing", "45343":"fire_protection", "45332":"plumbing", "4535":"building_services",
  "4541":"plastering", "4542":"windows_doors", "4543":"flooring", "4544":"painting", "4545":"finishing",
 }
 
