@@ -1,15 +1,17 @@
 {
-  "version": "0.8.3",
-  "source": "docs/data/opportunities.json",
-  "records_seen": 50,
-  "records_evaluated": 50,
+  "version": "0.8.4",
+  "source": "real_data/ted_live_normalized.json",
+  "records_seen": 500,
+  "records_evaluated": 500,
   "quality_gate": {
-    "CONFIDENT": 50
+    "UNKNOWN": 500
   },
-  "customer_facing_confident": 50,
+  "customer_facing_confident": 0,
   "held_for_review": 0,
-  "suppressed_unknown": 0,
-  "audit_sample_size": 50,
+  "suppressed_unknown": 500,
+  "audit_sample_size": 60,
+  "gate_total_check": 500,
+  "gate_total_matches_records": true,
   "accuracy_measured": false,
-  "accuracy_note": "Precision/false-positive metrics require reviewed labels; no accuracy is fabricated."
+  "accuracy_note": "Quality gate is evidence screening, not measured precision. Review labels are required for accuracy."
 }
