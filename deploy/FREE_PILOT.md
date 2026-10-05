@@ -31,7 +31,7 @@ E-Mail-Verifizierung/Passwort-Reset, Versand, Zahlung und vollständige rechtlic
 - https://neon.com/blog/neon-free-plan-1-gb-per-project (02.10.2026; aktuelle Erweiterung des Free Plans)
 
 ## Blocker
-Es fehlen Render-/Neon-Accounts bzw. eine sichere verbundene Zugriffsmöglichkeit. Diese neue externe Account-Einrichtung erfordert Nutzerbeteiligung.
-Es wurde kein externer Account angelegt und noch kein kostenloses Backend deployt.
+Der Nutzer hat Render- und Neon-Accounts über GitHub angelegt. In dieser Arbeitsumgebung besteht weiterhin kein direkter Zugriff auf die Render-/Neon-Dashboards. Die GitHub-Anmeldung bei den Anbietern verbindet diese Accounts nicht automatisch mit dem Assistenten.
+Nächster Schritt: Neon-Free-Projekt in einer EU-Region erstellen, Render-Blueprint aus diesem Repository einrichten und die Datenbankverbindung ausschließlich in Render hinterlegen. Noch kein kostenloses Backend deployt.
 
 Sicherheits-/Persistenzabsicherung: Auf Render startet die App nur mit einer PostgreSQL-URL, explizitem TLS-Modus, HTTPS-Origin und Secure Cookies. Ein versehentlicher Rückfall auf die flüchtige lokale SQLite-Datei wird blockiert.
