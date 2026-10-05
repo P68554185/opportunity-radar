@@ -1,11 +1,11 @@
 {
   "live_records": 500,
-  "classified_opportunities": 487,
-  "classification_rate_pct": 97.4,
+  "classified_opportunities": 486,
+  "classification_rate_pct": 97.2,
   "bands": {
-    "HOT": 102,
-    "UPCOMING": 274,
-    "EARLY": 111
+    "HOT": 99,
+    "UPCOMING": 277,
+    "EARLY": 110
   },
   "project_types": [
     [
@@ -14,11 +14,11 @@
     ],
     [
       "school",
-      114
+      113
     ],
     [
       "rail",
-      37
+      34
     ],
     [
       "water_wastewater",
@@ -26,15 +26,19 @@
     ],
     [
       "university_research",
-      20
-    ],
-    [
-      "administration",
-      16
+      21
     ],
     [
       "industrial",
-      14
+      16
+    ],
+    [
+      "civil_engineering",
+      15
+    ],
+    [
+      "administration",
+      15
     ],
     [
       "bridge",
@@ -43,10 +47,6 @@
     [
       "road",
       14
-    ],
-    [
-      "civil_engineering",
-      13
     ],
     [
       "kindergarten",
@@ -69,12 +69,12 @@
       7
     ],
     [
-      "fire_station",
+      "energy",
       6
     ],
     [
-      "energy",
-      6
+      "fire_station",
+      5
     ],
     [
       "residential",
@@ -96,7 +96,7 @@
     ],
     [
       "electrical",
-      73
+      71
     ],
     [
       "hvac",
@@ -107,28 +107,28 @@
       61
     ],
     [
-      "flooring",
+      "earthworks",
       45
     ],
     [
-      "earthworks",
-      44
+      "flooring",
+      43
     ],
     [
       "railworks",
-      39
+      36
+    ],
+    [
+      "fire_protection",
+      32
+    ],
+    [
+      "roof",
+      31
     ],
     [
       "demolition",
       31
-    ],
-    [
-      "fire_protection",
-      31
-    ],
-    [
-      "roof",
-      29
     ],
     [
       "painting",
@@ -136,27 +136,27 @@
     ],
     [
       "roadworks",
-      24
+      23
     ],
     [
       "facade",
-      16
+      17
     ],
     [
       "plumbing",
-      15
-    ],
-    [
-      "plastering",
-      13
-    ],
-    [
-      "landscaping",
-      13
+      16
     ],
     [
       "drywall",
       13
+    ],
+    [
+      "plastering",
+      12
+    ],
+    [
+      "landscaping",
+      12
     ],
     [
       "sewer_pipe",
@@ -188,22 +188,22 @@
     {
       "from": 60,
       "to": 69,
-      "count": 105
+      "count": 104
     },
     {
       "from": 70,
       "to": 79,
-      "count": 109
+      "count": 111
     },
     {
       "from": 80,
       "to": 89,
-      "count": 235
+      "count": 234
     },
     {
       "from": 90,
       "to": 99,
-      "count": 16
+      "count": 15
     },
     {
       "from": 100,
@@ -214,26 +214,26 @@
   "quality_flags": {
     "project_type_only": 60,
     "trade_only": 153,
-    "project_and_trade": 274,
-    "high_confidence_85_plus": 102
+    "project_and_trade": 273,
+    "high_confidence_85_plus": 99
   },
   "sample_top": [
     {
-      "source_id": "TED-684848-2026",
-      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
-      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
-      "city": "Erlangen",
-      "project_type": "school",
+      "source_id": "TED-683855-2026",
+      "title": "Freianlagen Sem I und Infra",
+      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+      "city": "Gießen",
+      "project_type": "public_space",
       "trades": [
-        "flooring",
-        "windows_doors",
-        "electrical",
-        "earthworks"
+        "landscaping",
+        "earthworks",
+        "demolition",
+        "roadworks"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026"
     },
     {
       "source_id": "TED-683210-2026",
@@ -253,21 +253,21 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/683210-2026"
     },
     {
-      "source_id": "TED-683855-2026",
-      "title": "Freianlagen Sem I und Infra",
-      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
-      "city": "Gießen",
-      "project_type": "public_space",
+      "source_id": "TED-684848-2026",
+      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
+      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
+      "city": "Erlangen",
+      "project_type": "school",
       "trades": [
-        "landscaping",
-        "earthworks",
-        "demolition",
-        "roadworks"
+        "flooring",
+        "windows_doors",
+        "electrical",
+        "earthworks"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026"
     },
     {
       "source_id": "TED-681697-2026",
@@ -306,23 +306,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/681250-2026"
     },
     {
-      "source_id": "TED-680734-2026",
-      "title": "Umbau Bf Müllheim Bauleistungen",
-      "authority": "DB Netz AG (Bukr 16)",
-      "city": "Müllheim",
-      "project_type": "rail",
-      "trades": [
-        "railworks",
-        "demolition",
-        "earthworks",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/680734-2026"
-    },
-    {
       "source_id": "TED-679848-2026",
       "title": "Gymnasium Füssen - Estricharbeiten BA 1-2",
       "authority": "Landkreis Ostallgäu",
@@ -338,6 +321,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/679848-2026"
+    },
+    {
+      "source_id": "TED-680734-2026",
+      "title": "Umbau Bf Müllheim Bauleistungen",
+      "authority": "DB Netz AG (Bukr 16)",
+      "city": "Müllheim",
+      "project_type": "rail",
+      "trades": [
+        "railworks",
+        "demolition",
+        "earthworks",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/680734-2026"
     },
     {
       "source_id": "TED-680492-2026",

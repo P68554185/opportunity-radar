@@ -1,40 +1,39 @@
 {
-  "version": "0.8.5",
+  "version": "0.9.2",
   "live_records": 500,
   "enriched_records": 500,
-  "classified_opportunities": 487,
+  "classified_opportunities": 486,
   "lifecycle_candidates": 0,
   "opportunities": [
     {
-      "source_id": "TED-684848-2026",
-      "notice_id": "684848-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026",
+      "source_id": "TED-683855-2026",
+      "notice_id": "683855-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026",
       "published": "2026-10-05+02:00",
-      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
-      "description": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude Stadt Erlangen - Zentrale Vergabestelle ['DE252', 'DEU', 'DE252', 'DEU']",
-      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
-      "city": "Erlangen",
+      "title": "Freianlagen Sem I und Infra",
+      "description": "Freianlagen Sem I und Infra Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe ['DE721', 'DEU', 'DE721', 'DEU']",
+      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+      "city": "Gießen",
       "region": "",
       "country": "DEU",
-      "project_type": "school",
+      "project_type": "public_space",
       "trades": [
-        "flooring",
-        "windows_doors",
-        "electrical",
-        "earthworks"
+        "landscaping",
+        "earthworks",
+        "demolition",
+        "roadworks"
       ],
       "cpv": [
-        "45214210",
-        "45214000",
-        "45214210",
-        "45431000",
-        "45421131",
-        "45421000",
-        "45311000",
-        "45315300",
         "45112700",
-        "39314000",
-        "39150000"
+        "31527200",
+        "45111000",
+        "45233120",
+        "45232452",
+        "45112700",
+        "31527200",
+        "45111000",
+        "45233120",
+        "45232452"
       ],
       "phase": "tender",
       "score": 100,
@@ -95,34 +94,35 @@
       }
     },
     {
-      "source_id": "TED-683855-2026",
-      "notice_id": "683855-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026",
+      "source_id": "TED-684848-2026",
+      "notice_id": "684848-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026",
       "published": "2026-10-05+02:00",
-      "title": "Freianlagen Sem I und Infra",
-      "description": "Freianlagen Sem I und Infra Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe ['DE721', 'DEU', 'DE721', 'DEU']",
-      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
-      "city": "Gießen",
+      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
+      "description": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude Stadt Erlangen - Zentrale Vergabestelle ['DE252', 'DEU', 'DE252', 'DEU']",
+      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
+      "city": "Erlangen",
       "region": "",
       "country": "DEU",
-      "project_type": "public_space",
+      "project_type": "school",
       "trades": [
-        "landscaping",
-        "earthworks",
-        "demolition",
-        "roadworks"
+        "flooring",
+        "windows_doors",
+        "electrical",
+        "earthworks"
       ],
       "cpv": [
+        "45214210",
+        "45214000",
+        "45214210",
+        "45431000",
+        "45421131",
+        "45421000",
+        "45311000",
+        "45315300",
         "45112700",
-        "31527200",
-        "45111000",
-        "45233120",
-        "45232452",
-        "45112700",
-        "31527200",
-        "45111000",
-        "45233120",
-        "45232452"
+        "39314000",
+        "39150000"
       ],
       "phase": "tender",
       "score": 100,
@@ -232,6 +232,47 @@
       }
     },
     {
+      "source_id": "TED-679848-2026",
+      "notice_id": "679848-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/679848-2026",
+      "published": "2026-10-02+02:00",
+      "title": "Gymnasium Füssen - Estricharbeiten BA 1-2",
+      "description": "Gymnasium Füssen - Estricharbeiten BA 1-2 Landkreis Ostallgäu ['DE27B', 'DEU', 'DE27B', 'DEU']",
+      "authority": "Landkreis Ostallgäu",
+      "city": "Füssen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "flooring",
+        "structural",
+        "fire_protection",
+        "roof"
+      ],
+      "cpv": [
+        "45262321",
+        "45262320",
+        "45321000",
+        "45323000",
+        "45261420",
+        "45262321",
+        "45262320",
+        "45321000",
+        "45323000",
+        "45261420"
+      ],
+      "phase": "award",
+      "score": 100,
+      "confidence": 1.0,
+      "band": "HOT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "source": "TED live"
+      }
+    },
+    {
       "source_id": "TED-680734-2026",
       "notice_id": "680734-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/680734-2026",
@@ -262,47 +303,6 @@
         "45221112",
         "45234116",
         "45262310"
-      ],
-      "phase": "award",
-      "score": 100,
-      "confidence": 1.0,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-679848-2026",
-      "notice_id": "679848-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/679848-2026",
-      "published": "2026-10-02+02:00",
-      "title": "Gymnasium Füssen - Estricharbeiten BA 1-2",
-      "description": "Gymnasium Füssen - Estricharbeiten BA 1-2 Landkreis Ostallgäu ['DE27B', 'DEU', 'DE27B', 'DEU']",
-      "authority": "Landkreis Ostallgäu",
-      "city": "Füssen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "flooring",
-        "structural",
-        "fire_protection",
-        "roof"
-      ],
-      "cpv": [
-        "45262321",
-        "45262320",
-        "45321000",
-        "45323000",
-        "45261420",
-        "45262321",
-        "45262320",
-        "45321000",
-        "45323000",
-        "45261420"
       ],
       "phase": "award",
       "score": 100,
@@ -962,6 +962,40 @@
       }
     },
     {
+      "source_id": "TED-678432-2026",
+      "notice_id": "678432-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/678432-2026",
+      "published": "2026-10-02+02:00",
+      "title": "Vorgehängte Fassadenplatten BT C+F - Umbau und Erweiterung der Bertolt-Brecht-Gesamtschule in Seelze",
+      "description": "Vorgehängte Fassadenplatten BT C+F - Umbau und Erweiterung der Bertolt-Brecht-Gesamtschule in Seelze Stadt Seelze - 21.1 Innere Verwaltung - Zentrale Vergabestelle ['DE929', 'DEU', 'DE929', 'DEU']",
+      "authority": "Stadt Seelze - 21.1 Innere Verwaltung - Zentrale Vergabestelle",
+      "city": "Seelze",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "facade",
+        "painting",
+        "fire_protection"
+      ],
+      "cpv": [
+        "45443000",
+        "45321000",
+        "45443000",
+        "45321000"
+      ],
+      "phase": "tender",
+      "score": 94,
+      "confidence": 0.94,
+      "band": "HOT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "source": "TED live"
+      }
+    },
+    {
       "source_id": "TED-680736-2026",
       "notice_id": "680736-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/680736-2026",
@@ -991,40 +1025,6 @@
         "45421140",
         "45421000",
         "45212212"
-      ],
-      "phase": "tender",
-      "score": 94,
-      "confidence": 0.94,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-678432-2026",
-      "notice_id": "678432-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/678432-2026",
-      "published": "2026-10-02+02:00",
-      "title": "Vorgehängte Fassadenplatten BT C+F - Umbau und Erweiterung der Bertolt-Brecht-Gesamtschule in Seelze",
-      "description": "Vorgehängte Fassadenplatten BT C+F - Umbau und Erweiterung der Bertolt-Brecht-Gesamtschule in Seelze Stadt Seelze - 21.1 Innere Verwaltung - Zentrale Vergabestelle ['DE929', 'DEU', 'DE929', 'DEU']",
-      "authority": "Stadt Seelze - 21.1 Innere Verwaltung - Zentrale Vergabestelle",
-      "city": "Seelze",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "facade",
-        "painting",
-        "fire_protection"
-      ],
-      "cpv": [
-        "45443000",
-        "45321000",
-        "45443000",
-        "45321000"
       ],
       "phase": "tender",
       "score": 94,
@@ -1200,83 +1200,35 @@
       }
     },
     {
-      "source_id": "TED-676829-2026",
-      "notice_id": "676829-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/676829-2026",
+      "source_id": "TED-675209-2026",
+      "notice_id": "675209-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/675209-2026",
       "published": "2026-10-01+02:00",
-      "title": "Bundesstadt Bonn: Kita Wilhelmstr. 34 - Außenanlagen",
-      "description": "Bundesstadt Bonn: Kita Wilhelmstr. 34 - Außenanlagen Bundesstadt Bonn - Referat Vergabedienste ['DEA22', 'DEU', 'DEA22', 'DEA22', 'DEU', 'DEU']",
-      "authority": "Bundesstadt Bonn - Referat Vergabedienste",
-      "city": "Bonn",
+      "title": "TUD WIL Willersbau, Gesamtsanierung",
+      "description": "TUD WIL Willersbau, Gesamtsanierung Staatsbetrieb Sächsisches Immobilien- und Baumanagement, Zentrale, Zentralstelle Vergabe- und Vertragsmanagement ['DED21', 'DEU', 'DED21', 'DEU']",
+      "authority": "Staatsbetrieb Sächsisches Immobilien- und Baumanagement, Zentrale, Zentralstelle Vergabe- und Vertragsmanagement",
+      "city": "Dresden",
       "region": "",
       "country": "DEU",
-      "project_type": "kindergarten",
+      "project_type": "civil_engineering",
       "trades": [
-        "landscaping",
-        "earthworks",
-        "roadworks"
+        "structural",
+        "demolition",
+        "fire_protection"
       ],
       "cpv": [
-        "45112700",
-        "45112710",
-        "45221250",
-        "45233260",
-        "45112700",
-        "45112700",
-        "45112710",
-        "45221250",
-        "45233260",
-        "45112710",
-        "45221250",
-        "45233260"
+        "45223220",
+        "45262310",
+        "45262500",
+        "45111100",
+        "45320000",
+        "45223220",
+        "45262310",
+        "45262500",
+        "45111100",
+        "45320000"
       ],
       "phase": "award",
-      "score": 94,
-      "confidence": 0.94,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-674668-2026",
-      "notice_id": "674668-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/674668-2026",
-      "published": "2026-10-01+02:00",
-      "title": "Trockenbauarbeiten, Neubau Feuer- und Rettungswache II",
-      "description": "Trockenbauarbeiten, Neubau Feuer- und Rettungswache II Stadt Solingen ['DEA19', 'DEU', 'DEA19', 'DEU']",
-      "authority": "Stadt Solingen",
-      "city": "Solingen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "fire_station",
-      "trades": [
-        "drywall",
-        "fire_protection",
-        "windows_doors"
-      ],
-      "cpv": [
-        "45000000",
-        "39515000",
-        "39515200",
-        "44112310",
-        "45216120",
-        "45324000",
-        "45421141",
-        "45421146",
-        "45000000",
-        "39515000",
-        "39515200",
-        "44112310",
-        "45216120",
-        "45324000",
-        "45421141",
-        "45421146"
-      ],
-      "phase": "tender",
       "score": 94,
       "confidence": 0.94,
       "band": "HOT",
@@ -1329,30 +1281,26 @@
       }
     },
     {
-      "source_id": "TED-683230-2026",
-      "notice_id": "683230-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/683230-2026",
+      "source_id": "TED-681663-2026",
+      "notice_id": "681663-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/681663-2026",
       "published": "2026-10-05+02:00",
-      "title": "7. Gesamtschule, Bockmühle - Baureifmachung/Bodensanierung",
-      "description": "7. Gesamtschule, Bockmühle - Baureifmachung/Bodensanierung Stadt Wuppertal ['DEA1A', 'DEU', 'DEA1A', 'DEU']",
-      "authority": "Stadt Wuppertal",
-      "city": "Wuppertal",
+      "title": "KA, PH, Sporthalle, Ersatzneubau Rohbau-, Beton-, Erd- und Entwässerungskanalarbeiten DIN 18300, 18303, 18306, 18308, 18330, 18331, 18336",
+      "description": "KA, PH, Sporthalle, Ersatzneubau Rohbau-, Beton-, Erd- und Entwässerungskanalarbeiten DIN 18300, 18303, 18306, 18308, 18330, 18331, 18336 Vermögen und Bau Baden-Württemberg, Amt Karlsruhe ['DE122', 'DEU', 'DE122', 'DEU']",
+      "authority": "Vermögen und Bau Baden-Württemberg, Amt Karlsruhe",
+      "city": "Karlsruhe",
       "region": "",
       "country": "DEU",
       "project_type": "school",
       "trades": [
-        "earthworks",
-        "demolition"
+        "structural",
+        "sewer_pipe"
       ],
       "cpv": [
-        "45112000",
-        "45112200",
-        "45111100",
-        "45112000",
-        "45112200",
-        "45111100"
+        "45000000",
+        "45000000"
       ],
-      "phase": "tender",
+      "phase": "award",
       "score": 88,
       "confidence": 0.88,
       "band": "HOT",
@@ -1364,29 +1312,24 @@
       }
     },
     {
-      "source_id": "TED-683234-2026",
-      "notice_id": "683234-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/683234-2026",
+      "source_id": "TED-681629-2026",
+      "notice_id": "681629-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/681629-2026",
       "published": "2026-10-05+02:00",
-      "title": "Rohrleitungsbauarbeiten zum BV \"Sanierung Lietzenburger Straße\"",
-      "description": "Rohrleitungsbauarbeiten zum BV \"Sanierung Lietzenburger Straße\" BEW Berliner Energie und Wärme GmbH ['DE300', 'DEU', 'DE300', 'DE300', 'DEU', 'DEU']",
-      "authority": "BEW Berliner Energie und Wärme GmbH",
-      "city": "Berlin",
+      "title": "Erweiterung bzw. Sanierung der Kläranlage in Cham",
+      "description": "Erweiterung bzw. Sanierung der Kläranlage in Cham Stadt Cham - Tiefbau ['DE235', 'DEU', 'DE235', 'DEU']",
+      "authority": "Stadt Cham - Tiefbau",
+      "city": "Cham",
       "region": "",
       "country": "DEU",
       "project_type": "water_wastewater",
       "trades": [
-        "plumbing",
-        "sewer_pipe"
+        "earthworks",
+        "electrical"
       ],
       "cpv": [
-        "45232000",
-        "09323000",
-        "44115100",
-        "44160000",
-        "45231100",
-        "45232000",
-        "45232000"
+        "45315100",
+        "45311200"
       ],
       "phase": "tender",
       "score": 88,
@@ -1400,32 +1343,102 @@
       }
     },
     {
-      "source_id": "TED-684120-2026",
-      "notice_id": "684120-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684120-2026",
+      "source_id": "TED-681638-2026",
+      "notice_id": "681638-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/681638-2026",
       "published": "2026-10-05+02:00",
-      "title": "Kernsanierung Regionale Schule \"Dr.-Ernst-Alban\" in 19077 Rastow",
-      "description": "Kernsanierung Regionale Schule \"Dr.-Ernst-Alban\" in 19077 Rastow Gemeinde Rastow über Amt Ludwigslust-Land ['DE80O', 'DEU', 'DE80O', 'DE80O', 'DE80O', 'DEU', 'DEU', 'DEU']",
-      "authority": "Gemeinde Rastow über Amt Ludwigslust-Land",
-      "city": "Rastow",
+      "title": "Med. Schule - Alufassade,-fenster,-türen, Sonnenschutz",
+      "description": "Med. Schule - Alufassade,-fenster,-türen, Sonnenschutz Universitätsklinikum Brandenburg an der Havel GmbH ['DE401', 'DEU', 'DE401', 'DEU']",
+      "authority": "Universitätsklinikum Brandenburg an der Havel GmbH",
+      "city": "Brandenburg an der Havel",
       "region": "",
       "country": "DEU",
       "project_type": "school",
       "trades": [
-        "hvac",
-        "electrical"
+        "windows_doors",
+        "facade"
       ],
       "cpv": [
-        "45214200",
-        "45210000",
-        "45214200",
-        "45331000",
-        "45331210",
-        "45311000",
-        "39715300",
-        "45214200"
+        "45421130",
+        "44000000",
+        "44221000",
+        "45400000",
+        "45421130",
+        "44000000",
+        "44221000",
+        "45400000"
       ],
       "phase": "tender",
+      "score": 88,
+      "confidence": 0.88,
+      "band": "HOT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "source": "TED live"
+      }
+    },
+    {
+      "source_id": "TED-682163-2026",
+      "notice_id": "682163-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/682163-2026",
+      "published": "2026-10-05+02:00",
+      "title": "Digitalisierung des Datentransportnetzwerks und der Fahrgaststromerfassung (DigiDaFa) - Baustufe 2",
+      "description": "Digitalisierung des Datentransportnetzwerks und der Fahrgaststromerfassung (DigiDaFa) - Baustufe 2 Stadtwerke Bonn Verkehrs-GmbH ['DEA22', 'DEU', 'DEA22', 'DEU']",
+      "authority": "Stadtwerke Bonn Verkehrs-GmbH",
+      "city": "Bonn",
+      "region": "",
+      "country": "DEU",
+      "project_type": "water_wastewater",
+      "trades": [
+        "electrical",
+        "railworks"
+      ],
+      "cpv": [
+        "45311100",
+        "45231600",
+        "45234128",
+        "45311200",
+        "45311100",
+        "45231600",
+        "45234128",
+        "45311200"
+      ],
+      "phase": "tender",
+      "score": 88,
+      "confidence": 0.88,
+      "band": "HOT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "source": "TED live"
+      }
+    },
+    {
+      "source_id": "TED-683050-2026",
+      "notice_id": "683050-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/683050-2026",
+      "published": "2026-10-05+02:00",
+      "title": "Anbau von Klassen- und Förderräumen sowie die Sanierung des Bestandsgebäudes der Regionalen Schule Waren West - Los 8.1: Elektroarbeiten - Förderanlagen / Aufzug",
+      "description": "Anbau von Klassen- und Förderräumen sowie die Sanierung des Bestandsgebäudes der Regionalen Schule Waren West - Los 8.1: Elektroarbeiten - Förderanlagen / Aufzug Stadt Waren (Müritz) ['DE80J', 'DEU', 'DE80J', 'DEU']",
+      "authority": "Stadt Waren (Müritz)",
+      "city": "Waren (Müritz)",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "electrical",
+        "elevator"
+      ],
+      "cpv": [
+        "45300000",
+        "45313100",
+        "45300000",
+        "45313100"
+      ],
+      "phase": "award",
       "score": 88,
       "confidence": 0.88,
       "band": "HOT",
@@ -1468,34 +1481,29 @@
       }
     },
     {
-      "source_id": "TED-684687-2026",
-      "notice_id": "684687-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684687-2026",
+      "source_id": "TED-683234-2026",
+      "notice_id": "683234-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/683234-2026",
       "published": "2026-10-05+02:00",
-      "title": "Neubau der Friedensschule; Festeinbauten, Tischlerarbeiten",
-      "description": "Neubau der Friedensschule; Festeinbauten, Tischlerarbeiten Stadt Osnabrück - FD Öffentliche Aufträge ['DE944', 'DEU', 'DE944', 'DEU']",
-      "authority": "Stadt Osnabrück - FD Öffentliche Aufträge",
-      "city": "Osnabrück",
+      "title": "Rohrleitungsbauarbeiten zum BV \"Sanierung Lietzenburger Straße\"",
+      "description": "Rohrleitungsbauarbeiten zum BV \"Sanierung Lietzenburger Straße\" BEW Berliner Energie und Wärme GmbH ['DE300', 'DEU', 'DE300', 'DE300', 'DEU', 'DEU']",
+      "authority": "BEW Berliner Energie und Wärme GmbH",
+      "city": "Berlin",
       "region": "",
       "country": "DEU",
-      "project_type": "school",
+      "project_type": "water_wastewater",
       "trades": [
-        "windows_doors",
-        "flooring"
+        "plumbing",
+        "sewer_pipe"
       ],
       "cpv": [
-        "45421000",
-        "45420000",
-        "45421151",
-        "45421153",
-        "45422000",
-        "45432210",
-        "45421000",
-        "45420000",
-        "45421151",
-        "45421153",
-        "45422000",
-        "45432210"
+        "45232000",
+        "09323000",
+        "44115100",
+        "44160000",
+        "45231100",
+        "45232000",
+        "45232000"
       ],
       "phase": "tender",
       "score": 88,
@@ -1583,28 +1591,36 @@
       }
     },
     {
-      "source_id": "TED-683050-2026",
-      "notice_id": "683050-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/683050-2026",
+      "source_id": "TED-684687-2026",
+      "notice_id": "684687-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/684687-2026",
       "published": "2026-10-05+02:00",
-      "title": "Anbau von Klassen- und Förderräumen sowie die Sanierung des Bestandsgebäudes der Regionalen Schule Waren West - Los 8.1: Elektroarbeiten - Förderanlagen / Aufzug",
-      "description": "Anbau von Klassen- und Förderräumen sowie die Sanierung des Bestandsgebäudes der Regionalen Schule Waren West - Los 8.1: Elektroarbeiten - Förderanlagen / Aufzug Stadt Waren (Müritz) ['DE80J', 'DEU', 'DE80J', 'DEU']",
-      "authority": "Stadt Waren (Müritz)",
-      "city": "Waren (Müritz)",
+      "title": "Neubau der Friedensschule; Festeinbauten, Tischlerarbeiten",
+      "description": "Neubau der Friedensschule; Festeinbauten, Tischlerarbeiten Stadt Osnabrück - FD Öffentliche Aufträge ['DE944', 'DEU', 'DE944', 'DEU']",
+      "authority": "Stadt Osnabrück - FD Öffentliche Aufträge",
+      "city": "Osnabrück",
       "region": "",
       "country": "DEU",
       "project_type": "school",
       "trades": [
-        "electrical",
-        "elevator"
+        "windows_doors",
+        "flooring"
       ],
       "cpv": [
-        "45300000",
-        "45313100",
-        "45300000",
-        "45313100"
+        "45421000",
+        "45420000",
+        "45421151",
+        "45421153",
+        "45422000",
+        "45432210",
+        "45421000",
+        "45420000",
+        "45421151",
+        "45421153",
+        "45422000",
+        "45432210"
       ],
-      "phase": "award",
+      "phase": "tender",
       "score": 88,
       "confidence": 0.88,
       "band": "HOT",
@@ -1649,24 +1665,65 @@
       }
     },
     {
-      "source_id": "TED-681629-2026",
-      "notice_id": "681629-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/681629-2026",
+      "source_id": "TED-683230-2026",
+      "notice_id": "683230-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/683230-2026",
       "published": "2026-10-05+02:00",
-      "title": "Erweiterung bzw. Sanierung der Kläranlage in Cham",
-      "description": "Erweiterung bzw. Sanierung der Kläranlage in Cham Stadt Cham - Tiefbau ['DE235', 'DEU', 'DE235', 'DEU']",
-      "authority": "Stadt Cham - Tiefbau",
-      "city": "Cham",
+      "title": "7. Gesamtschule, Bockmühle - Baureifmachung/Bodensanierung",
+      "description": "7. Gesamtschule, Bockmühle - Baureifmachung/Bodensanierung Stadt Wuppertal ['DEA1A', 'DEU', 'DEA1A', 'DEU']",
+      "authority": "Stadt Wuppertal",
+      "city": "Wuppertal",
       "region": "",
       "country": "DEU",
-      "project_type": "water_wastewater",
+      "project_type": "school",
       "trades": [
         "earthworks",
+        "demolition"
+      ],
+      "cpv": [
+        "45112000",
+        "45112200",
+        "45111100",
+        "45112000",
+        "45112200",
+        "45111100"
+      ],
+      "phase": "tender",
+      "score": 88,
+      "confidence": 0.88,
+      "band": "HOT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "source": "TED live"
+      }
+    },
+    {
+      "source_id": "TED-684120-2026",
+      "notice_id": "684120-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/684120-2026",
+      "published": "2026-10-05+02:00",
+      "title": "Kernsanierung Regionale Schule \"Dr.-Ernst-Alban\" in 19077 Rastow",
+      "description": "Kernsanierung Regionale Schule \"Dr.-Ernst-Alban\" in 19077 Rastow Gemeinde Rastow über Amt Ludwigslust-Land ['DE80O', 'DEU', 'DE80O', 'DE80O', 'DE80O', 'DEU', 'DEU', 'DEU']",
+      "authority": "Gemeinde Rastow über Amt Ludwigslust-Land",
+      "city": "Rastow",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "hvac",
         "electrical"
       ],
       "cpv": [
-        "45315100",
-        "45311200"
+        "45214200",
+        "45210000",
+        "45214200",
+        "45331000",
+        "45331210",
+        "45311000",
+        "39715300",
+        "45214200"
       ],
       "phase": "tender",
       "score": 88,
@@ -1680,131 +1737,30 @@
       }
     },
     {
-      "source_id": "TED-681638-2026",
-      "notice_id": "681638-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/681638-2026",
+      "source_id": "TED-681569-2026",
+      "notice_id": "681569-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/681569-2026",
       "published": "2026-10-05+02:00",
-      "title": "Med. Schule - Alufassade,-fenster,-türen, Sonnenschutz",
-      "description": "Med. Schule - Alufassade,-fenster,-türen, Sonnenschutz Universitätsklinikum Brandenburg an der Havel GmbH ['DE401', 'DEU', 'DE401', 'DEU']",
-      "authority": "Universitätsklinikum Brandenburg an der Havel GmbH",
-      "city": "Brandenburg an der Havel",
+      "title": "Neubau Feuerwache Nord - Photovoltaikarbeiten",
+      "description": "Neubau Feuerwache Nord - Photovoltaikarbeiten Stadt Nordhorn ['DE94B', 'DEU', 'DE94B', 'DEU']",
+      "authority": "Stadt Nordhorn",
+      "city": "Nordhorn",
       "region": "",
       "country": "DEU",
-      "project_type": "school",
+      "project_type": "fire_station",
       "trades": [
-        "windows_doors",
-        "facade"
+        "solar_energy",
+        "electrical"
       ],
       "cpv": [
-        "45421130",
-        "44000000",
-        "44221000",
-        "45400000",
-        "45421130",
-        "44000000",
-        "44221000",
-        "45400000"
+        "45315300",
+        "09330000",
+        "09331200",
+        "45315300",
+        "09330000",
+        "09331200"
       ],
       "phase": "tender",
-      "score": 88,
-      "confidence": 0.88,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-681663-2026",
-      "notice_id": "681663-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/681663-2026",
-      "published": "2026-10-05+02:00",
-      "title": "KA, PH, Sporthalle, Ersatzneubau Rohbau-, Beton-, Erd- und Entwässerungskanalarbeiten DIN 18300, 18303, 18306, 18308, 18330, 18331, 18336",
-      "description": "KA, PH, Sporthalle, Ersatzneubau Rohbau-, Beton-, Erd- und Entwässerungskanalarbeiten DIN 18300, 18303, 18306, 18308, 18330, 18331, 18336 Vermögen und Bau Baden-Württemberg, Amt Karlsruhe ['DE122', 'DEU', 'DE122', 'DEU']",
-      "authority": "Vermögen und Bau Baden-Württemberg, Amt Karlsruhe",
-      "city": "Karlsruhe",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "structural",
-        "sewer_pipe"
-      ],
-      "cpv": [
-        "45000000",
-        "45000000"
-      ],
-      "phase": "award",
-      "score": 88,
-      "confidence": 0.88,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-682163-2026",
-      "notice_id": "682163-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/682163-2026",
-      "published": "2026-10-05+02:00",
-      "title": "Digitalisierung des Datentransportnetzwerks und der Fahrgaststromerfassung (DigiDaFa) - Baustufe 2",
-      "description": "Digitalisierung des Datentransportnetzwerks und der Fahrgaststromerfassung (DigiDaFa) - Baustufe 2 Stadtwerke Bonn Verkehrs-GmbH ['DEA22', 'DEU', 'DEA22', 'DEU']",
-      "authority": "Stadtwerke Bonn Verkehrs-GmbH",
-      "city": "Bonn",
-      "region": "",
-      "country": "DEU",
-      "project_type": "water_wastewater",
-      "trades": [
-        "electrical",
-        "railworks"
-      ],
-      "cpv": [
-        "45311100",
-        "45231600",
-        "45234128",
-        "45311200",
-        "45311100",
-        "45231600",
-        "45234128",
-        "45311200"
-      ],
-      "phase": "tender",
-      "score": 88,
-      "confidence": 0.88,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-684496-2026",
-      "notice_id": "684496-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684496-2026",
-      "published": "2026-10-05+02:00",
-      "title": "Schulverbund am Deutenberg - Sanitärarbeiten 2. BA",
-      "description": "Schulverbund am Deutenberg - Sanitärarbeiten 2. BA Stadt Villingen-Schwenningen, RefBM - Zentrale Vergabestelle ['DE136', 'DEU', 'DE136', 'DEU']",
-      "authority": "Stadt Villingen-Schwenningen, RefBM - Zentrale Vergabestelle",
-      "city": "Villingen-Schwenningen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "water_wastewater",
-      "trades": [
-        "hvac",
-        "plumbing"
-      ],
-      "cpv": [
-        "45232460",
-        "45232460"
-      ],
-      "phase": "award",
       "score": 88,
       "confidence": 0.88,
       "band": "HOT",
@@ -1867,6 +1823,165 @@
         "45234100"
       ],
       "phase": "award",
+      "score": 88,
+      "confidence": 0.88,
+      "band": "HOT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "source": "TED live"
+      }
+    },
+    {
+      "source_id": "TED-684238-2026",
+      "notice_id": "684238-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/684238-2026",
+      "published": "2026-10-05+02:00",
+      "title": "Karl-Rehbein-Schule Dep. II, Abbruch Haus des Handwerks und Erweiterungsbau Karl-Rehbein-Schule - Baustrom und Baubeleuchtung",
+      "description": "Karl-Rehbein-Schule Dep. II, Abbruch Haus des Handwerks und Erweiterungsbau Karl-Rehbein-Schule - Baustrom und Baubeleuchtung Hanau Immobilien- und Baumanagement, Eigenbetrieb der Stadt Hanau ['DE719', 'DEU', 'DE719', 'DEU']",
+      "authority": "Hanau Immobilien- und Baumanagement, Eigenbetrieb der Stadt Hanau",
+      "city": "Hanau",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "electrical",
+        "demolition"
+      ],
+      "cpv": [
+        "45311200",
+        "45311200"
+      ],
+      "phase": "tender",
+      "score": 88,
+      "confidence": 0.88,
+      "band": "HOT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "source": "TED live"
+      }
+    },
+    {
+      "source_id": "TED-684496-2026",
+      "notice_id": "684496-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/684496-2026",
+      "published": "2026-10-05+02:00",
+      "title": "Schulverbund am Deutenberg - Sanitärarbeiten 2. BA",
+      "description": "Schulverbund am Deutenberg - Sanitärarbeiten 2. BA Stadt Villingen-Schwenningen, RefBM - Zentrale Vergabestelle ['DE136', 'DEU', 'DE136', 'DEU']",
+      "authority": "Stadt Villingen-Schwenningen, RefBM - Zentrale Vergabestelle",
+      "city": "Villingen-Schwenningen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "water_wastewater",
+      "trades": [
+        "hvac",
+        "plumbing"
+      ],
+      "cpv": [
+        "45232460",
+        "45232460"
+      ],
+      "phase": "award",
+      "score": 88,
+      "confidence": 0.88,
+      "band": "HOT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "source": "TED live"
+      }
+    },
+    {
+      "source_id": "TED-685224-2026",
+      "notice_id": "685224-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/685224-2026",
+      "published": "2026-10-05+02:00",
+      "title": "Neubau OFW Zug / Sanierung alte Schule, Hauptstraße 127 ST Zug, 09599 Freiberg; Los 20 - Estricharbeiten; Maßnahme: 126001-MZ001 Feuerwehr Zug und 111325-MZ006 Ortszentrum Zug",
+      "description": "Neubau OFW Zug / Sanierung alte Schule, Hauptstraße 127 ST Zug, 09599 Freiberg; Los 20 - Estricharbeiten; Maßnahme: 126001-MZ001 Feuerwehr Zug und 111325-MZ006 Ortszentrum Zug Stadtverwaltung Freiberg – Dezernat für Stadtentwicklung und Bauwesen ['DED43', 'DEU', 'DED43', 'DEU']",
+      "authority": "Stadtverwaltung Freiberg – Dezernat für Stadtentwicklung und Bauwesen",
+      "city": "Freiberg",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "flooring",
+        "structural"
+      ],
+      "cpv": [
+        "45262320",
+        "45262320"
+      ],
+      "phase": "award",
+      "score": 88,
+      "confidence": 0.88,
+      "band": "HOT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "source": "TED live"
+      }
+    },
+    {
+      "source_id": "TED-682819-2026",
+      "notice_id": "682819-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/682819-2026",
+      "published": "2026-10-05+02:00",
+      "title": "Vilbeler Straße 38, Feuerwehrhaus Ober-Erlenbach - Schlosserarbeiten",
+      "description": "Vilbeler Straße 38, Feuerwehrhaus Ober-Erlenbach - Schlosserarbeiten Stadt Bad Homburg v. d. Höhe - Der Magistrat, Fachbereich Recht - Vergabestelle - ['DE718', 'DEU', 'DE718', 'DEU']",
+      "authority": "Stadt Bad Homburg v. d. Höhe - Der Magistrat, Fachbereich Recht - Vergabestelle -",
+      "city": "Bad Homburg v. d. Höhe",
+      "region": "",
+      "country": "DEU",
+      "project_type": "fire_station",
+      "trades": [
+        "structural",
+        "fire_protection"
+      ],
+      "cpv": [
+        "45262670",
+        "45341000",
+        "45262670",
+        "45341000"
+      ],
+      "phase": "award",
+      "score": 88,
+      "confidence": 0.88,
+      "band": "HOT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "source": "TED live"
+      }
+    },
+    {
+      "source_id": "TED-684853-2026",
+      "notice_id": "684853-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/684853-2026",
+      "published": "2026-10-05+02:00",
+      "title": "Freiherr-vom-Stein-Gymnasium, Ringstraße 69, 32257 Bünde; Erweiterung, Estricharbeiten",
+      "description": "Freiherr-vom-Stein-Gymnasium, Ringstraße 69, 32257 Bünde; Erweiterung, Estricharbeiten Kommunalbetriebe Bünde - Anstalt des öffentlichen Rechts (AöR) - Gebäudemanagement ['DEA43', 'DEU', 'DEA43', 'DEU']",
+      "authority": "Kommunalbetriebe Bünde - Anstalt des öffentlichen Rechts (AöR) - Gebäudemanagement",
+      "city": "Bünde",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "flooring",
+        "structural"
+      ],
+      "cpv": [
+        "45262320",
+        "45262321",
+        "45262320",
+        "45262321"
+      ],
+      "phase": "tender",
       "score": 88,
       "confidence": 0.88,
       "band": "HOT",
@@ -1943,169 +2058,6 @@
       }
     },
     {
-      "source_id": "TED-685224-2026",
-      "notice_id": "685224-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/685224-2026",
-      "published": "2026-10-05+02:00",
-      "title": "Neubau OFW Zug / Sanierung alte Schule, Hauptstraße 127 ST Zug, 09599 Freiberg; Los 20 - Estricharbeiten; Maßnahme: 126001-MZ001 Feuerwehr Zug und 111325-MZ006 Ortszentrum Zug",
-      "description": "Neubau OFW Zug / Sanierung alte Schule, Hauptstraße 127 ST Zug, 09599 Freiberg; Los 20 - Estricharbeiten; Maßnahme: 126001-MZ001 Feuerwehr Zug und 111325-MZ006 Ortszentrum Zug Stadtverwaltung Freiberg – Dezernat für Stadtentwicklung und Bauwesen ['DED43', 'DEU', 'DED43', 'DEU']",
-      "authority": "Stadtverwaltung Freiberg – Dezernat für Stadtentwicklung und Bauwesen",
-      "city": "Freiberg",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "flooring",
-        "structural"
-      ],
-      "cpv": [
-        "45262320",
-        "45262320"
-      ],
-      "phase": "award",
-      "score": 88,
-      "confidence": 0.88,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-682819-2026",
-      "notice_id": "682819-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/682819-2026",
-      "published": "2026-10-05+02:00",
-      "title": "Vilbeler Straße 38, Feuerwehrhaus Ober-Erlenbach - Schlosserarbeiten",
-      "description": "Vilbeler Straße 38, Feuerwehrhaus Ober-Erlenbach - Schlosserarbeiten Stadt Bad Homburg v. d. Höhe - Der Magistrat, Fachbereich Recht - Vergabestelle - ['DE718', 'DEU', 'DE718', 'DEU']",
-      "authority": "Stadt Bad Homburg v. d. Höhe - Der Magistrat, Fachbereich Recht - Vergabestelle -",
-      "city": "Bad Homburg v. d. Höhe",
-      "region": "",
-      "country": "DEU",
-      "project_type": "fire_station",
-      "trades": [
-        "structural",
-        "fire_protection"
-      ],
-      "cpv": [
-        "45262670",
-        "45341000",
-        "45262670",
-        "45341000"
-      ],
-      "phase": "award",
-      "score": 88,
-      "confidence": 0.88,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-684238-2026",
-      "notice_id": "684238-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684238-2026",
-      "published": "2026-10-05+02:00",
-      "title": "Karl-Rehbein-Schule Dep. II, Abbruch Haus des Handwerks und Erweiterungsbau Karl-Rehbein-Schule - Baustrom und Baubeleuchtung",
-      "description": "Karl-Rehbein-Schule Dep. II, Abbruch Haus des Handwerks und Erweiterungsbau Karl-Rehbein-Schule - Baustrom und Baubeleuchtung Hanau Immobilien- und Baumanagement, Eigenbetrieb der Stadt Hanau ['DE719', 'DEU', 'DE719', 'DEU']",
-      "authority": "Hanau Immobilien- und Baumanagement, Eigenbetrieb der Stadt Hanau",
-      "city": "Hanau",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "electrical",
-        "demolition"
-      ],
-      "cpv": [
-        "45311200",
-        "45311200"
-      ],
-      "phase": "tender",
-      "score": 88,
-      "confidence": 0.88,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-684853-2026",
-      "notice_id": "684853-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684853-2026",
-      "published": "2026-10-05+02:00",
-      "title": "Freiherr-vom-Stein-Gymnasium, Ringstraße 69, 32257 Bünde; Erweiterung, Estricharbeiten",
-      "description": "Freiherr-vom-Stein-Gymnasium, Ringstraße 69, 32257 Bünde; Erweiterung, Estricharbeiten Kommunalbetriebe Bünde - Anstalt des öffentlichen Rechts (AöR) - Gebäudemanagement ['DEA43', 'DEU', 'DEA43', 'DEU']",
-      "authority": "Kommunalbetriebe Bünde - Anstalt des öffentlichen Rechts (AöR) - Gebäudemanagement",
-      "city": "Bünde",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "flooring",
-        "structural"
-      ],
-      "cpv": [
-        "45262320",
-        "45262321",
-        "45262320",
-        "45262321"
-      ],
-      "phase": "tender",
-      "score": 88,
-      "confidence": 0.88,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
-      "source_id": "TED-681569-2026",
-      "notice_id": "681569-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/681569-2026",
-      "published": "2026-10-05+02:00",
-      "title": "Neubau Feuerwache Nord - Photovoltaikarbeiten",
-      "description": "Neubau Feuerwache Nord - Photovoltaikarbeiten Stadt Nordhorn ['DE94B', 'DEU', 'DE94B', 'DEU']",
-      "authority": "Stadt Nordhorn",
-      "city": "Nordhorn",
-      "region": "",
-      "country": "DEU",
-      "project_type": "fire_station",
-      "trades": [
-        "solar_energy",
-        "electrical"
-      ],
-      "cpv": [
-        "45315300",
-        "09330000",
-        "09331200",
-        "45315300",
-        "09330000",
-        "09331200"
-      ],
-      "phase": "tender",
-      "score": 88,
-      "confidence": 0.88,
-      "band": "HOT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "source": "TED live"
-      }
-    },
-    {
       "source_id": "TED-681950-2026",
       "notice_id": "681950-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/681950-2026",
@@ -2137,28 +2089,71 @@
       }
     },
     {
-      "source_id": "TED-683768-2026",
-      "notice_id": "683768-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/683768-2026",
+      "source_id": "TED-683999-2026",
+      "notice_id": "683999-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/683999-2026",
       "published": "2026-10-05+02:00",
-      "title": "VerglasungsuSonnenscharbGeb237",
-      "description": "VerglasungsuSonnenscharbGeb237 Staatliches Bauamt Schweinfurt ['DE265', 'DEU', 'DE265', 'DEU']",
-      "authority": "Staatliches Bauamt Schweinfurt",
-      "city": "Hammelburg",
+      "title": "Neubau OFW Zug / Sanierung alte Schule, 126001-MZ001 Feuerwehr Zug u. 111325-MZ006 Ortszentrum Zug, Hauptstr. 127 ST Zug, 09599 Freiberg; Los 23c - Bodenbeschichtung",
+      "description": "Neubau OFW Zug / Sanierung alte Schule, 126001-MZ001 Feuerwehr Zug u. 111325-MZ006 Ortszentrum Zug, Hauptstr. 127 ST Zug, 09599 Freiberg; Los 23c - Bodenbeschichtung Stadtverwaltung Freiberg – Dezernat für Stadtentwicklung und Bauwesen ['DED43', 'DEU', 'DED43', 'DEU']",
+      "authority": "Stadtverwaltung Freiberg – Dezernat für Stadtentwicklung und Bauwesen",
+      "city": "Freiberg",
       "region": "",
       "country": "DEU",
-      "project_type": "public_building",
+      "project_type": "school",
       "trades": [
         "painting",
-        "windows_doors"
+        "flooring"
       ],
       "cpv": [
+        "45431000",
+        "45431000"
+      ],
+      "phase": "award",
+      "score": 88,
+      "confidence": 0.88,
+      "band": "HOT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "source": "TED live"
+      }
+    },
+    {
+      "source_id": "TED-684396-2026",
+      "notice_id": "684396-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/684396-2026",
+      "published": "2026-10-05+02:00",
+      "title": "Ohnhorststraße 18 - Gewächshausbau",
+      "description": "Ohnhorststraße 18 - Gewächshausbau GMH | Gebäudemanagement Hamburg GmbH ['DE600', 'DEU', 'DE600', 'DEU']",
+      "authority": "GMH | Gebäudemanagement Hamburg GmbH",
+      "city": "Hamburg",
+      "region": "",
+      "country": "DEU",
+      "project_type": "civil_engineering",
+      "trades": [
+        "electrical",
+        "painting"
+      ],
+      "cpv": [
+        "45223210",
+        "41000000",
+        "44000000",
+        "48000000",
+        "45300000",
+        "45232460",
+        "45311000",
         "45441000",
-        "45421100",
-        "45212190",
+        "45443000",
+        "45223210",
+        "41000000",
+        "44000000",
+        "48000000",
+        "45300000",
+        "45232460",
+        "45311000",
         "45441000",
-        "45421100",
-        "45212190"
+        "45443000"
       ],
       "phase": "tender",
       "score": 88,
