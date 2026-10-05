@@ -1,39 +1,31 @@
 {
   "live_records": 2000,
-  "classified_opportunities": 1930,
+  "classified_opportunities": 1931,
   "classification_rate_pct": 96.5,
   "bands": {
-    "HOT": 337,
-    "UPCOMING": 1167,
-    "EARLY": 426
+    "HOT": 330,
+    "UPCOMING": 1162,
+    "EARLY": 439
   },
   "project_types": [
     [
       "unclassified_project",
-      642
+      663
     ],
     [
       "school",
-      347
+      299
     ],
     [
       "rail",
-      181
+      185
     ],
     [
       "water_wastewater",
-      90
+      91
     ],
     [
       "bridge",
-      68
-    ],
-    [
-      "hospital",
-      65
-    ],
-    [
-      "industrial",
       64
     ],
     [
@@ -41,126 +33,138 @@
       63
     ],
     [
+      "hospital",
+      63
+    ],
+    [
+      "industrial",
+      62
+    ],
+    [
+      "university_research",
+      58
+    ],
+    [
       "road",
       56
     ],
     [
-      "university_research",
-      49
-    ],
-    [
       "administration",
-      45
+      47
     ],
     [
-      "kindergarten",
-      43
+      "sports_leisure",
+      42
     ],
     [
       "fire_station",
+      42
+    ],
+    [
+      "kindergarten",
       41
     ],
     [
       "public_building",
-      30
-    ],
-    [
-      "energy",
-      28
+      29
     ],
     [
       "public_space",
       27
     ],
     [
-      "sports_leisure",
-      23
+      "energy",
+      27
+    ],
+    [
+      "residential",
+      21
     ],
     [
       "infrastructure",
       21
     ],
     [
-      "residential",
+      "care_social",
       19
     ],
     [
-      "care_social",
-      18
-    ],
-    [
       "commercial",
-      10
+      11
     ]
   ],
   "trades": [
     [
       "structural",
-      338
+      336
     ],
     [
       "electrical",
-      287
+      289
     ],
     [
       "windows_doors",
-      269
-    ],
-    [
-      "hvac",
-      225
+      265
     ],
     [
       "railworks",
+      191
+    ],
+    [
+      "hvac",
       188
     ],
     [
       "earthworks",
-      164
+      162
     ],
     [
       "flooring",
-      142
-    ],
-    [
-      "fire_protection",
-      131
+      145
     ],
     [
       "demolition",
-      129
+      130
     ],
     [
       "roof",
-      115
+      114
     ],
     [
       "painting",
-      107
+      108
+    ],
+    [
+      "insulation",
+      95
+    ],
+    [
+      "plumbing",
+      78
     ],
     [
       "roadworks",
-      77
+      78
     ],
     [
       "facade",
-      61
+      63
     ],
     [
       "landscaping",
       61
     ],
     [
-      "plumbing",
-      50
+      "drywall",
+      49
     ],
     [
-      "drywall",
-      47
+      "fire_protection",
+      46
     ],
     [
       "plastering",
-      43
+      44
     ],
     [
       "elevator",
@@ -168,15 +172,19 @@
     ],
     [
       "solar_energy",
-      23
-    ],
-    [
-      "sewer_pipe",
-      14
+      22
     ],
     [
       "finishing",
       14
+    ],
+    [
+      "fencing",
+      13
+    ],
+    [
+      "sewer_pipe",
+      12
     ],
     [
       "building_services",
@@ -192,34 +200,34 @@
     {
       "from": 60,
       "to": 69,
-      "count": 417
+      "count": 428
     },
     {
       "from": 70,
       "to": 79,
-      "count": 495
+      "count": 498
     },
     {
       "from": 80,
       "to": 89,
-      "count": 876
+      "count": 858
     },
     {
       "from": 90,
       "to": 99,
-      "count": 70
+      "count": 73
     },
     {
       "from": 100,
       "to": 100,
-      "count": 23
+      "count": 25
     }
   ],
   "quality_flags": {
-    "project_type_only": 247,
-    "trade_only": 642,
-    "project_and_trade": 1041,
-    "opportunity_score_85_plus": 337
+    "project_type_only": 241,
+    "trade_only": 663,
+    "project_and_trade": 1027,
+    "opportunity_score_85_plus": 330
   },
   "sample_top": [
     {
@@ -255,6 +263,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/683210-2026"
+    },
+    {
+      "source_id": "TED-684925-2026",
+      "title": "BASF-KVT, Modul 50, Y109 - Büro- und Sozialgebäude in Modulbauweise",
+      "authority": "BASF SE",
+      "city": "Ludwigshafen am Rhein",
+      "project_type": "industrial",
+      "trades": [
+        "electrical",
+        "hvac",
+        "plumbing",
+        "fire_protection"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/684925-2026"
     },
     {
       "source_id": "TED-683855-2026",
@@ -333,7 +358,7 @@
       "trades": [
         "flooring",
         "structural",
-        "fire_protection",
+        "insulation",
         "roof"
       ],
       "score": 100,
@@ -357,6 +382,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/680492-2026"
+    },
+    {
+      "source_id": "TED-680881-2026",
+      "title": "Gymnasium Füssen - Trockenbauarbeiten BA 1-2",
+      "authority": "Landkreis Ostallgäu",
+      "city": "Füssen",
+      "project_type": "school",
+      "trades": [
+        "drywall",
+        "insulation",
+        "windows_doors",
+        "fire_protection"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/680881-2026"
     },
     {
       "source_id": "TED-680829-2026",
@@ -383,10 +425,10 @@
       "title": "Bauleistungen Rudi-Altig-Sporthalle in Sinzig - Los 24 - Außenanlagen",
       "authority": "Stadt Sinzig",
       "city": "Sinzig",
-      "project_type": "school",
+      "project_type": "sports_leisure",
       "trades": [
         "landscaping",
-        "fire_protection",
+        "insulation",
         "windows_doors",
         "earthworks"
       ],
@@ -394,40 +436,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/676028-2026"
-    },
-    {
-      "source_id": "TED-671570-2026",
-      "title": "Neubau Gebäude für TK-Anbindung BZ München – Allg. Tiefbauleistungen Außenanlagen inkl. Straßenbau",
-      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
-      "city": "München",
-      "project_type": "road",
-      "trades": [
-        "earthworks",
-        "landscaping",
-        "roadworks",
-        "fire_protection"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/671570-2026"
-    },
-    {
-      "source_id": "TED-668762-2026",
-      "title": "Baufeldfreimachung für das Projekt Neubau des Besucher- und Informationszentrums des Deutschen Bundestags (BIZ) und der Unterirdischen Kältezentrale (UKZ) vor dem Reichstagsgebäude („Projekt BIZ/UKZ“) in Berlin Vergabenummer: O9611-e-003/26-058",
-      "authority": "Bundesanstalt für Immobilienaufgaben",
-      "city": "Berlin",
-      "project_type": "civil_engineering",
-      "trades": [
-        "hvac",
-        "earthworks",
-        "structural",
-        "demolition"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/668762-2026"
     }
   ]
 }

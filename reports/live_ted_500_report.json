@@ -2,10 +2,10 @@
   "requested": 2000,
   "downloaded_live": 2000,
   "normalized": 2000,
-  "duplicates_skipped": 66,
-  "project_type_classified": 1288,
-  "trade_classified": 1683,
+  "duplicates_skipped": 70,
+  "project_type_classified": 1268,
+  "trade_classified": 1690,
   "errors": [],
   "status": "complete",
-  "run_at": "2026-10-05 15:28 UTC"
+  "run_at": "2026-10-05 15:51 UTC"
 }
