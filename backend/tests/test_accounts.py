@@ -55,6 +55,24 @@ class AccountTests(unittest.TestCase):
         self.assertEqual(self.client.get("/api/profile").json()["name"],"Betrieb Eins")
         self.assertEqual(self.client.put("/api/profile",json={"radius_km":0}).status_code,422)
         self.assertEqual(self.client.put("/api/profile",json={"trades":["invented"]}).status_code,422)
+    def test_restart_keeps_accounts_and_sessions(self):
+        self.register(self.client)
+        restarted=TestClient(importlib.reload(self.module).app,headers={"Origin":"http://testserver"})
+        restarted.cookies.update(self.client.cookies)
+        self.assertEqual(restarted.get("/api/me").json()["email"],"one@example.com")
+
+    def test_watches_are_isolated_and_idempotent(self):
+        import json
+        self.register(self.client)
+        feed=json.loads((self.module.ROOT/"docs"/"data"/"bauradar_feed.json").read_text(encoding="utf-8"))
+        identity=feed["opportunities"][0]["id"]
+        self.assertEqual(self.client.put("/api/watches/"+identity).status_code,200)
+        self.assertEqual(self.client.put("/api/watches/"+identity).status_code,200)
+        self.assertEqual(self.client.get("/api/watches").json(),[identity])
+        other=TestClient(self.app,headers={"Origin":"http://testserver"})
+        self.register(other,"other@example.com")
+        self.assertEqual(other.get("/api/watches").json(),[])
+
     def test_expired_session(self):
         self.register(self.client)
         with self.module.database() as db: db.execute("UPDATE sessions SET expires=0")
