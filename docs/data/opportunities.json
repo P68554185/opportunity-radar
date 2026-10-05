@@ -3,7 +3,7 @@
   "live_records": 2000,
   "enriched_records": 2000,
   "duplicate_source_records": 0,
-  "classified_opportunities": 1931,
+  "classified_opportunities": 1930,
   "lifecycle_candidates": 0,
   "opportunities": [
     {
@@ -1446,6 +1446,93 @@
       }
     },
     {
+      "source_id": "TED-666420-2026",
+      "notice_id": "666420-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/666420-2026",
+      "published": "2026-09-28+02:00",
+      "title": "Stadt Bergkamen: Wasserstadt Aden - Kanalbau, Baustrasse, Gabionenwand & Landschaftsbauarbeiten",
+      "description": "Stadt Bergkamen: Wasserstadt Aden - Kanalbau, Baustrasse, Gabionenwand & Landschaftsbauarbeiten DSK Deutsche Stadt- und Grundstücksentwicklungsgesellschaft mbH als Treuhänder der Stadt Bergkamen ['DEA5C', 'DEU', 'DEA5C', 'DEA5C', 'DEU', 'DEU']",
+      "authority": "DSK Deutsche Stadt- und Grundstücksentwicklungsgesellschaft mbH als Treuhänder der Stadt Bergkamen",
+      "city": "Bergkamen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "water_wastewater",
+      "trades": [
+        "landscaping",
+        "sewer_pipe",
+        "earthworks",
+        "demolition",
+        "roadworks"
+      ],
+      "cpv": [
+        "45112000",
+        "45247110",
+        "45112000",
+        "45112500",
+        "45247112",
+        "45112700",
+        "45113000",
+        "45232411",
+        "45232450",
+        "45112200",
+        "45112400",
+        "45233140",
+        "45112000",
+        "45112000",
+        "45247112",
+        "45113000",
+        "45112500",
+        "45247110",
+        "45112700",
+        "45113000",
+        "45112500"
+      ],
+      "phase": "award",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "landscaping",
+          "sewer_pipe"
+        ],
+        "trade_cpv": [
+          "earthworks",
+          "demolition",
+          "roadworks"
+        ],
+        "construction_cpv": [
+          "45112000",
+          "45247110",
+          "45112000",
+          "45112500",
+          "45247112",
+          "45112700",
+          "45113000",
+          "45232411",
+          "45232450",
+          "45112200",
+          "45112400",
+          "45233140",
+          "45112000",
+          "45112000",
+          "45247112",
+          "45113000",
+          "45112500",
+          "45247110",
+          "45112700",
+          "45113000",
+          "45112500"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
       "source_id": "TED-666551-2026",
       "notice_id": "666551-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/666551-2026",
@@ -1579,65 +1666,6 @@
       }
     },
     {
-      "source_id": "TED-660397-2026",
-      "notice_id": "660397-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/660397-2026",
-      "published": "2026-09-25+02:00",
-      "title": "Neubau Kreiskrankenhaus Alsfeld, Metallbauarbeiten 1 (Aluminium Glasfassadenelemente), KKA",
-      "description": "Neubau Kreiskrankenhaus Alsfeld, Metallbauarbeiten 1 (Aluminium Glasfassadenelemente), KKA Kreiskrankenhaus des Vogelsbergkreises in Alsfeld GmbH ['DE725', 'DEU', 'DE725', 'DEU']",
-      "authority": "Kreiskrankenhaus des Vogelsbergkreises in Alsfeld GmbH",
-      "city": "Alsfeld",
-      "region": "",
-      "country": "DEU",
-      "project_type": "hospital",
-      "trades": [
-        "facade",
-        "structural",
-        "windows_doors",
-        "painting"
-      ],
-      "cpv": [
-        "45262670",
-        "45421100",
-        "45421143",
-        "45441000",
-        "45262670",
-        "45421100",
-        "45421143",
-        "45441000"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": false,
-        "trade_text": [
-          "facade"
-        ],
-        "trade_cpv": [
-          "structural",
-          "windows_doors",
-          "painting"
-        ],
-        "construction_cpv": [
-          "45262670",
-          "45421100",
-          "45421143",
-          "45441000",
-          "45262670",
-          "45421100",
-          "45421143",
-          "45441000"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
       "source_id": "TED-660919-2026",
       "notice_id": "660919-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/660919-2026",
@@ -1699,6 +1727,65 @@
           "45421144",
           "45262670",
           "45421160"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-660397-2026",
+      "notice_id": "660397-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/660397-2026",
+      "published": "2026-09-25+02:00",
+      "title": "Neubau Kreiskrankenhaus Alsfeld, Metallbauarbeiten 1 (Aluminium Glasfassadenelemente), KKA",
+      "description": "Neubau Kreiskrankenhaus Alsfeld, Metallbauarbeiten 1 (Aluminium Glasfassadenelemente), KKA Kreiskrankenhaus des Vogelsbergkreises in Alsfeld GmbH ['DE725', 'DEU', 'DE725', 'DEU']",
+      "authority": "Kreiskrankenhaus des Vogelsbergkreises in Alsfeld GmbH",
+      "city": "Alsfeld",
+      "region": "",
+      "country": "DEU",
+      "project_type": "hospital",
+      "trades": [
+        "facade",
+        "structural",
+        "windows_doors",
+        "painting"
+      ],
+      "cpv": [
+        "45262670",
+        "45421100",
+        "45421143",
+        "45441000",
+        "45262670",
+        "45421100",
+        "45421143",
+        "45441000"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "facade"
+        ],
+        "trade_cpv": [
+          "structural",
+          "windows_doors",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45262670",
+          "45421100",
+          "45421143",
+          "45441000",
+          "45262670",
+          "45421100",
+          "45421143",
+          "45441000"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -2323,82 +2410,6 @@
           "45262670",
           "45330000",
           "45212212"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-655721-2026",
-      "notice_id": "655721-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/655721-2026",
-      "published": "2026-09-23+02:00",
-      "title": "Kreuzungsfreier Ausbau Frankenschnellweg, Abschnitt West: Bauleistungen, Straßen- & Ingenieurbau",
-      "description": "Kreuzungsfreier Ausbau Frankenschnellweg, Abschnitt West: Bauleistungen, Straßen- & Ingenieurbau Stadt Nürnberg - Servicebetrieb Öffentlicher Raum ['DE254', 'DEU', 'DE254', 'DE254', 'DE254', 'DEU', 'DEU', 'DEU']",
-      "authority": "Stadt Nürnberg - Servicebetrieb Öffentlicher Raum",
-      "city": "Nürnberg",
-      "region": "",
-      "country": "DEU",
-      "project_type": "road",
-      "trades": [
-        "roadworks",
-        "demolition",
-        "earthworks",
-        "structural"
-      ],
-      "cpv": [
-        "45233120",
-        "44141100",
-        "45111100",
-        "45111250",
-        "45112400",
-        "45221111",
-        "45223210",
-        "45223820",
-        "45232450",
-        "45247110",
-        "45262200",
-        "45262310",
-        "45262426",
-        "71311220",
-        "71319000",
-        "77211100",
-        "45233120",
-        "45233120",
-        "45233120"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.55,
-      "confidence": 0.55,
-      "band": "HOT",
-      "evidence": {
-        "project_text": false,
-        "project_cpv": true,
-        "trade_text": [],
-        "trade_cpv": [
-          "roadworks",
-          "demolition",
-          "earthworks",
-          "structural"
-        ],
-        "construction_cpv": [
-          "45233120",
-          "45111100",
-          "45111250",
-          "45112400",
-          "45221111",
-          "45223210",
-          "45223820",
-          "45232450",
-          "45247110",
-          "45262200",
-          "45262310",
-          "45262426",
-          "45233120",
-          "45233120",
-          "45233120"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
