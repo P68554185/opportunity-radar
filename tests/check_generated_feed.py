@@ -11,7 +11,8 @@ enriched=read("real_data/ted_live_enriched.json")
 feed=read("docs/data/customer_opportunities.json")
 customer=read("docs/data/bauradar_feed.json")
 status=read("docs/data/status.json")
-assert len(live)==len(enriched)==status["quality_records"]
+assert len(enriched)==status["quality_records"] and len(enriched)<=len(live)
+assert len({r["source_id"] for r in enriched})==len(enriched)
 assert feed["count"]==len(feed["opportunities"])==status["quality_confident"]
 assert all(classify_evidence(r)[0]=="CONFIDENT" for r in feed["opportunities"])
 assert customer["count"]==len(customer["opportunities"])==status["opportunities"]

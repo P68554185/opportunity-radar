@@ -64,7 +64,14 @@ def enrich(x):
 def build():
  live=load(os.path.join(ROOT,"real_data","ted_live_normalized.json"),[])
  early=load(os.path.join(ROOT,"real_data","bavaria_verified_events.json"),[])
- enriched=[enrich(x) for x in live]
+ unique={}
+ for record in live:
+  key=record.get("source_id")
+  if not key:raise ValueError("Missing notice identity")
+  if key in unique and record.get("title")!=unique[key].get("title"):
+   raise ValueError(f"Conflicting notice identity: {key}")
+  unique[key]=record
+ enriched=[enrich(x) for x in unique.values()]
  opp=[x for x in enriched if x.get("project_type") or x.get("trades")]
  opp.sort(key=lambda x:(x["score"],x.get("published") or ""),reverse=True)
  links=[]
@@ -85,7 +92,7 @@ def build():
    links.append({"early_source_id":e.get("source_id"),"early_title":e.get("title"),"early_city":e.get("city"),
     "live_source_id":x.get("source_id"),"live_title":x.get("title"),"live_city":x.get("city"),
     "score":round(s,3),"status":decision,"best_gap":round(gap,3),"evidence":evidence})
- out={"version":"0.9.2","live_records":len(live),"enriched_records":len(enriched),"classified_opportunities":len(opp),"lifecycle_candidates":len(links),"opportunities":opp[:50],"lifecycle_links":links}
+ out={"version":"0.9.2","live_records":len(live),"enriched_records":len(enriched),"duplicate_source_records":len(live)-len(enriched),"classified_opportunities":len(opp),"lifecycle_candidates":len(links),"opportunities":opp[:50],"lifecycle_links":links}
  os.makedirs(os.path.join(ROOT,"docs","data"),exist_ok=True); os.makedirs(os.path.join(ROOT,"reports"),exist_ok=True); os.makedirs(os.path.join(ROOT,"real_data"),exist_ok=True)
  with open(os.path.join(ROOT,"real_data","ted_live_enriched.json"),"w",encoding="utf-8") as f:json.dump(enriched,f,ensure_ascii=False,indent=2)
  with open(os.path.join(ROOT,"reports","intelligence_report.json"),"w",encoding="utf-8") as f:json.dump(out,f,ensure_ascii=False,indent=2)
