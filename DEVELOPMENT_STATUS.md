@@ -44,7 +44,7 @@ Vollständige Datensatzprüfung erfolgt durch den neuen CI-Snapshot: aktuelle Za
 - Geprüfter Kundendatensatz bedeutet Evidence-Screening, keine fachlich gemessene Precision.
 
 ## Nächste Schritte
-1. Hostingbudget/Host/Domain festlegen und das geprüfte Backend auf der gewählten Infrastruktur bereitstellen.
+1. Kostenlose Render-/Neon-Accounts sicher anbinden und das geprüfte Backend als Kundenvalidierungs-Pilot bereitstellen.
 2. Backend-Infrastruktur auswählen und bereitstellen; erst anschließend Login und serverseitige Profile anbinden.
 3. Geodatenquelle und kommerzielle Nutzungsbedingungen klären; Radius mit unbekannten Orten konservativ behandeln.
 4. Laufende EARLY-Akquisition aus weiteren offiziellen Quellen und manuell bewerteten Stichproben ausbauen.
@@ -71,5 +71,13 @@ Der Browser-Test der veröffentlichten URL bestätigt 694 Kundenprojekte, Gewerk
 
 Veröffentlicht: https://p68554185.github.io/opportunity-radar/
 Produktionsvorschlag: deploy/README.md (Docker, TLS-Proxy, persistentes Volume; Containerbuild und Konfiguration geprüft).
-**Nächste notwendige Nutzerentscheidung: Hostingbudget und Auswahl eines Hosts/einer Domain.** Serverzugang, rechtliche Texte und anschließend E-Mail-/Zahlungsaccounts bleiben erforderlich.
+**Nächster externer Blocker: kostenlose Render-/Neon-Accounts und sichere Konfiguration der Datenbankverbindung.** Rechtliche Texte und anschließend E-Mail-/Zahlungsaccounts bleiben erforderlich.
 Die laufende Vorschau ist nutzbar; eine verkaufsfähige SaaS-GO-LIVE-Freigabe wird noch nicht behauptet.
+
+## Verbindliche Kostenentscheidung des Nutzers
+Kostenpflichtiges Hosting erst nach erfolgreicher Kundenvalidierung. Bis dahin keine kostenpflichtigen Hostingbestellungen.
+GitHub Pages bleibt die laufende kostenlose Vorschau. Ein kostenloser Konto-Pilot ist für Render Free + Neon Free vorbereitet; eine gekaufte Domain ist dafür nicht nötig.
+Das vorhandene Backend unterstützt PostgreSQL zusätzlich zu SQLite. Auf flüchtigen Render-Hosts verhindert es den Start ohne dauerhafte PostgreSQL-Konfiguration/TLS.
+Konto-, Sitzungs-, Neustart- und Merkliste-Isolationstests bestehen gegen SQLite und PostgreSQL 16 (CI 37334583300). Plattform-Healthchecks wecken die Datenbank nicht dauerhaft.
+Render- und Neon-Nutzungslimits/Ruhephasen bleiben Einschränkungen eines Kundenvalidierungs-Pilots. Kein kostenpflichtiger Tarif und kein neuer externer Account wurde eingerichtet.
+Konkrete Einrichtung, Grenzen und sichere Secret-Konfiguration: deploy/FREE_PILOT.md. Die Accounts fehlen noch; der kostenlose Backend-Pilot ist noch nicht deployt.

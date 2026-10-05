@@ -7,6 +7,20 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: bauradar_test
+          POSTGRES_PASSWORD: ci-only-test-password
+          POSTGRES_DB: bauradar_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U bauradar_test"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -28,6 +42,8 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Test account isolation and sessions
         run: python -m unittest discover -s backend/tests -p 'test_*.py'
+        env:
+          TEST_POSTGRES_URL: postgresql://bauradar_test:ci-only-test-password@localhost:5432/bauradar_test
       - name: Test customer workflows in Chromium
         run: python checks/browser_smoke.py
       - name: Verify deployment configuration and container build

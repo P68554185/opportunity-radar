@@ -1,6 +1,6 @@
 """BauRadar API. Same-origin sessions; SQLite requires a persistent local volume."""
 from __future__ import annotations
-import hashlib, hmac, json, os, re, secrets, sqlite3, time
+import hashlib, hmac, json, os, re, secrets, sqlite3, time, threading
 from contextlib import contextmanager
 from pathlib import Path
 from fastapi import FastAPI, HTTPException, Request, Response
@@ -9,12 +9,26 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, model_validator
 from typing import Literal
+from urllib.parse import urlparse, parse_qs
+import psycopg
+from backend.database import connect
 
 ROOT=Path(__file__).resolve().parents[1]
 DB=Path(os.environ.get("BAURADAR_DB", "/tmp/bauradar/users.sqlite"))
-ORIGIN=os.environ.get("BAURADAR_ORIGIN", "http://localhost:8000").rstrip("/")
+DATABASE_URL=os.environ.get("BAURADAR_DATABASE_URL","")
+ORIGIN=(os.environ.get("BAURADAR_ORIGIN") or os.environ.get("RENDER_EXTERNAL_URL") or "http://localhost:8000").rstrip("/")
 SECURE=os.environ.get("BAURADAR_SECURE_COOKIES","true")=="true"
 SIGNUP=os.environ.get("BAURADAR_ENABLE_SIGNUP","false")=="true"
+if os.environ.get("RENDER_EXTERNAL_URL"):
+    # A free ephemeral host must never silently store customer data in local SQLite.
+    parsed=urlparse(DATABASE_URL)
+    if parsed.scheme not in ("postgres","postgresql") or not parsed.hostname:
+        raise RuntimeError("Render requires a persistent PostgreSQL database secret.")
+    sslmode=parse_qs(parsed.query).get("sslmode",[""])[0]
+    if sslmode not in ("require","verify-ca","verify-full"):
+        raise RuntimeError("Hosted PostgreSQL requires an explicit TLS mode.")
+    if not SECURE or urlparse(ORIGIN).scheme!="https":
+        raise RuntimeError("Hosted accounts require HTTPS and Secure cookies.")
 TRADES={"electrical","hvac","plumbing","drywall","painting","flooring","roof","windows_doors",
  "facade","earthworks","structural","landscaping","fire_protection","elevator","demolition",
  "roadworks","sewer_pipe","railworks","solar_energy","scaffolding","metalwork",
@@ -22,27 +36,30 @@ TRADES={"electrical","hvac","plumbing","drywall","painting","flooring","roof","w
  "building_services","plastering","finishing"}
 app=FastAPI(title="BauRadar",docs_url=None,redoc_url=None,openapi_url=None)
 
+_initialized=set()
+_initialization_lock=threading.Lock()
+SCHEMA="""
+CREATE TABLE IF NOT EXISTS users(id TEXT PRIMARY KEY,email TEXT UNIQUE NOT NULL,password TEXT NOT NULL,created BIGINT NOT NULL);
+CREATE TABLE IF NOT EXISTS sessions(token_hash TEXT PRIMARY KEY,user_id TEXT NOT NULL REFERENCES users(id),expires BIGINT NOT NULL);
+CREATE TABLE IF NOT EXISTS profiles(user_id TEXT PRIMARY KEY REFERENCES users(id),payload TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS watches(user_id TEXT NOT NULL REFERENCES users(id),project_id TEXT NOT NULL,created BIGINT NOT NULL,PRIMARY KEY(user_id,project_id));
+CREATE TABLE IF NOT EXISTS attempts(client TEXT NOT NULL,created BIGINT NOT NULL);
+CREATE INDEX IF NOT EXISTS sessions_expiry_idx ON sessions(expires);
+CREATE INDEX IF NOT EXISTS attempts_client_time_idx ON attempts(client,created);
+"""
 @contextmanager
 def database():
-    DB.parent.mkdir(parents=True,exist_ok=True)
-    db=sqlite3.connect(DB,timeout=15)
-    db.row_factory=sqlite3.Row
-    db.execute("PRAGMA foreign_keys=ON")
-    db.execute("PRAGMA journal_mode=WAL")
-    db.executescript("""
-    CREATE TABLE IF NOT EXISTS users(id TEXT PRIMARY KEY,email TEXT UNIQUE NOT NULL,password TEXT NOT NULL,created INTEGER NOT NULL);
-    CREATE TABLE IF NOT EXISTS sessions(token_hash TEXT PRIMARY KEY,user_id TEXT NOT NULL REFERENCES users(id),expires INTEGER NOT NULL);
-    CREATE TABLE IF NOT EXISTS profiles(user_id TEXT PRIMARY KEY REFERENCES users(id),payload TEXT NOT NULL);
-    CREATE TABLE IF NOT EXISTS watches(user_id TEXT NOT NULL REFERENCES users(id),project_id TEXT NOT NULL,created INTEGER NOT NULL,PRIMARY KEY(user_id,project_id));
-    CREATE TABLE IF NOT EXISTS attempts(client TEXT NOT NULL,created INTEGER NOT NULL);
-    """)
-    try:
-        yield db
-        db.commit()
-    except Exception:
-        db.rollback()
-        raise
-    finally: db.close()
+    identity=DATABASE_URL or str(DB)
+    with connect(DB,DATABASE_URL) as db:
+        try:
+            with _initialization_lock:
+                if identity not in _initialized:
+                    db.executescript(SCHEMA);db.commit();_initialized.add(identity)
+            yield db
+            db.commit()
+        except Exception:
+            db.rollback()
+            raise
 
 def password_hash(password):
     salt=secrets.token_hex(16)
@@ -124,6 +141,11 @@ async def headers(request,call_next):
     if request.url.path.startswith(("/api","/admin")): response.headers["Cache-Control"]="no-store"
     return response
 
+@app.get("/api/live")
+def live():
+    # Platform health checks must not keep a free database awake continuously.
+    return {"status":"ok"}
+
 @app.get("/api/health")
 def health():
     with database() as db: db.execute("SELECT 1").fetchone()
@@ -136,7 +158,7 @@ def register(credentials:Credentials,request:Request,response:Response):
     throttle(request);uid=secrets.token_hex(16)
     with database() as db:
         try: db.execute("INSERT INTO users VALUES(?,?,?,?)",(uid,credentials.email,password_hash(credentials.password),int(time.time())))
-        except sqlite3.IntegrityError: raise HTTPException(409,"Registrierung mit dieser Adresse nicht möglich.")
+        except (sqlite3.IntegrityError,psycopg.IntegrityError): raise HTTPException(409,"Registrierung mit dieser Adresse nicht möglich.")
     session(response,uid)
     return {"email":credentials.email}
 

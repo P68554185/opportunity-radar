@@ -35,3 +35,7 @@ Host/Domain, TLS-Konfiguration, Backup und Restore-Test, Monitoring, Datenschutz
 SQLite ist für einen einzelnen MVP-Server vorgesehen. Mehrere Instanzen benötigen PostgreSQL und verteilte Limits/Sessions.
 Ohne Proxy-Header-Vertrauen teilen Clients hinter einem Proxy zunächst das Authentifizierungslimit; vertrauenswürdige Proxy-IPs müssen bei der konkreten Bereitstellung konfiguriert werden.
 Kundenprofile/Merklisten werden nicht automatisch zwischen lokaler Vorschau und Konto kopiert, damit Profile verschiedener Personen auf gemeinsam genutzten Geräten nicht vermischt werden.
+
+## Kostenloser Pilot mit PostgreSQL
+BAURADAR_DATABASE_URL aktiviert gehostetes PostgreSQL. Ohne diese Variable bleibt SQLite aktiv. BAURADAR_ORIGIN kann auf Render durch RENDER_EXTERNAL_URL ersetzt werden. API-Verhalten und Session-/Kundentrennung bleiben gleich und werden gegen beide Datenbanken getestet.
+Render-Free-Blueprint und konkrete Schritte: deploy/FREE_PILOT.md. Plattform-Healthchecks verwenden /api/live, damit sie die kostenlose Datenbank nicht permanent aktiv halten. Für PostgreSQL gelten pg_dump/Restore-Verfahren; backend/backup.py ist ausschließlich für SQLite.
