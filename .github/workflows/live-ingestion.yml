@@ -1,51 +1,42 @@
 name: Live Data Ingestion
+
 on:
   workflow_dispatch:
   schedule:
     - cron: "15 5 * * *"
+
 permissions:
   contents: write
-concurrency:
-  group: live-data-ingestion
-  cancel-in-progress: false
+
 jobs:
   ingest:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Classifier regression
-        run: python benchmarks/classifier_regression.py
-      - name: Acquire and normalize 500 TED notices
-        run: python benchmarks/live_ted_500.py
-      - name: Build intelligence layer
-        run: python intelligence/build.py
-      - name: Update website status
-        run: python github_status.py
-      - name: Commit live intelligence and dashboard status
+
+      - name: Run Opportunity Radar pipeline
+        run: python run_pipeline.py
+
+      - name: Commit generated dashboard data
         run: |
           git config user.name "opportunity-radar-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/data/status.json docs/data/opportunities.json reports/live_ted_500_report.json reports/intelligence_report.json real_data/ted_live_normalized.json
-          git diff --cached --quiet && exit 0
-          git commit -m "Update live opportunity intelligence"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          git add docs/data/ reports/ || true
+          git diff --cached --quiet || git commit -m "Update Opportunity Radar live intelligence"
+          git push
+
       - name: Upload run diagnostics
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: ted-live-run-${{ github.run_number }}
+          name: opportunity-radar-run
           path: |
-            reports/live_ted_500_report.json
-            reports/intelligence_report.json
-            real_data/ted_live_raw/
+            reports/
+            docs/data/
           if-no-files-found: warn
-          retention-days: 14
