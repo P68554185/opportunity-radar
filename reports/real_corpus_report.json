@@ -1,0 +1,19 @@
+{
+  "raw_records": 37,
+  "unique_events": 37,
+  "duplicate_events": 0,
+  "duplicate_event_rate": 0.0,
+  "master_projects": 34,
+  "quarantine_records": 0,
+  "quarantine_rate": 0.0,
+  "opportunities_generated": 488,
+  "project_types": {
+    "school": 20,
+    "kindergarten": 14
+  },
+  "phases": {
+    "funding": 34
+  },
+  "corpus_kind": "official_verified_real_data",
+  "verified_source_pages": 6
+}

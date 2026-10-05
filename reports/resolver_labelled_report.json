@@ -1,0 +1,9 @@
+{
+  "pairs": 4,
+  "tp": 2,
+  "tn": 2,
+  "fp": 0,
+  "fn": 0,
+  "precision": 1.0,
+  "recall": 1.0
+}

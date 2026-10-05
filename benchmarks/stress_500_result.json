@@ -1,0 +1,19 @@
+{
+  "raw_records": 520,
+  "unique_events": 500,
+  "duplicate_events": 20,
+  "duplicate_event_rate": 0.0385,
+  "master_projects": 500,
+  "quarantine_records": 0,
+  "quarantine_rate": 0.0,
+  "opportunities_generated": 7375,
+  "project_types": {
+    "school": 125,
+    "kindergarten": 125,
+    "hospital": 125,
+    "fire_station": 125
+  },
+  "phases": {
+    "funding": 500
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "cases": 4,
+  "tp": 3,
+  "tn": 1,
+  "fp": 0,
+  "fn": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "details": [
+    {
+      "score": 0.8308,
+      "decision": "auto_link",
+      "expected_link": true
+    },
+    {
+      "score": 0.7324,
+      "decision": "review",
+      "expected_link": true
+    },
+    {
+      "score": 0.832,
+      "decision": "auto_link",
+      "expected_link": true
+    },
+    {
+      "score": 0.0,
+      "decision": "unlinked",
+      "expected_link": false
+    }
+  ]
+}

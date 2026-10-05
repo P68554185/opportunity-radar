@@ -1,0 +1,9 @@
+{
+  "verified_early_event_records": 37,
+  "baseline_project_keys": 37,
+  "with_early": 37,
+  "with_planning": 0,
+  "with_tender": 0,
+  "with_award": 0,
+  "note": "No later events are fabricated; live procurement enrichment is required to close these chains."
+}

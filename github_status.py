@@ -10,7 +10,7 @@ report = load_json("reports/live_ted_500_report.json", {})
 run_status = report.get("status", "never")
 last_sync = report.get("run_at") if run_status in ("complete", "partial") else None
 status = {
-    "version": "0.7.2",
+    "version": "0.7.3",
     "early_signals": 37,
     "master_projects": 34,
     "live_records": len(live),
