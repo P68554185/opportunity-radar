@@ -44,11 +44,11 @@ counts=Counter(x['quality_status'] for x in rows)
 # Customer feed contains only evidence-gated CONFIDENT records. No REVIEW/UNKNOWN leakage.
 customer=[dict(x['record'], quality_status='CONFIDENT', quality_evidence=x['evidence']) for x in rows if x['quality_status']=='CONFIDENT']
 customer.sort(key=lambda r:(float(r.get('score') or 0),str(r.get('published') or '')),reverse=True)
-feed={'version':'0.8.6','policy':'CONFIDENT_ONLY','count':len(customer),'opportunities':customer}
+feed={'version':'0.8.7','policy':'CONFIDENT_ONLY','count':len(customer),'opportunities':customer}
 (DOCS/'customer_opportunities.json').write_text(json.dumps(feed,ensure_ascii=False,indent=2),encoding='utf-8')
 
 # Deterministic 60-case stratified audit pack. Labels remain blank until human review.
-rng=random.Random(806); sample=[]
+rng=random.Random(807); sample=[]
 for status,n in [('CONFIDENT',25),('REVIEW',25),('UNKNOWN',10)]:
     bucket=[x for x in rows if x['quality_status']==status]; rng.shuffle(bucket); sample+=bucket[:n]
 fields=['audit_id','notice_id','title','description','cpv','project_type_predicted','trades_predicted','confidence','quality_status','evidence_reason','project_type_correct','trades_correct','false_positive','review_notes']
@@ -58,6 +58,19 @@ with (REPORTS/'audit_v086.csv').open('w',newline='',encoding='utf-8-sig') as f:
         r=x['record']; e=x['evidence']
         reason=f"project={e['project_type']}; trade={e['trade']}; cpv={e['cpv']}; text={e['textual_evidence']}; confidence={e['confidence']}"
         w.writerow({'audit_id':i,'notice_id':r.get('notice_id'),'title':r.get('title'),'description':r.get('description'),'cpv':'; '.join(map(str,arr(r.get('cpv')))),'project_type_predicted':r.get('project_type'),'trades_predicted':'; '.join(map(str,arr(r.get('trades')))),'confidence':e['confidence'],'quality_status':x['quality_status'],'evidence_reason':reason,'project_type_correct':'','trades_correct':'','false_positive':'','review_notes':''})
+
+# Browser-readable audit pack for the GitHub Pages Quality Audit UI.
+audit_cases=[]
+for i,x in enumerate(sample,1):
+    r=x['record']; e=x['evidence']
+    audit_cases.append({
+        'audit_id':i,'notice_id':r.get('notice_id'),'title':r.get('title'),
+        'description':r.get('description'),'cpv':arr(r.get('cpv')),
+        'project_type_predicted':r.get('project_type'),'trades_predicted':arr(r.get('trades')),
+        'confidence':e['confidence'],'quality_status':x['quality_status'],
+        'evidence':e,'authority':r.get('authority'),'published':r.get('published'),'city':r.get('city')
+    })
+(DOCS/'audit_cases.json').write_text(json.dumps({'version':'0.8.7','count':len(audit_cases),'cases':audit_cases},ensure_ascii=False,indent=2),encoding='utf-8')
 
 # Precision is calculated only when a reviewed audit CSV exists; never fabricated.
 labels=REPORTS/'audit_v086_reviewed.csv'; metrics={'measured':False,'reviewed_rows':0,'precision':None,'project_type_accuracy':None,'trade_accuracy':None}
@@ -72,7 +85,7 @@ if labels.exists():
         tr=[r for r in labelled if str(r.get('trades_correct','')).strip()!='']
         metrics['project_type_accuracy']=round(100*sum(yes(r.get('project_type_correct')) for r in pt)/len(pt),1) if pt else None
         metrics['trade_accuracy']=round(100*sum(yes(r.get('trades_correct')) for r in tr)/len(tr),1) if tr else None
-summary={'version':'0.8.6','records_evaluated':len(rows),'quality_gate':dict(counts),'customer_feed_count':len(customer),'customer_feed_policy':'CONFIDENT_ONLY','review_leakage':sum(1 for r in customer if r.get('quality_status')!='CONFIDENT'),'audit_sample_size':len(sample),'accuracy':metrics,'accuracy_note':'Precision is reported only from explicitly reviewed labels; otherwise it remains unmeasured.'}
+summary={'version':'0.8.7','records_evaluated':len(rows),'quality_gate':dict(counts),'customer_feed_count':len(customer),'customer_feed_policy':'CONFIDENT_ONLY','review_leakage':sum(1 for r in customer if r.get('quality_status')!='CONFIDENT'),'audit_sample_size':len(sample),'accuracy':metrics,'accuracy_note':'Precision is reported only from explicitly reviewed labels; otherwise it remains unmeasured.'}
 (REPORTS/'audit_precision_summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
 (DOCS/'audit_precision.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(summary,ensure_ascii=False,indent=2))

@@ -29,5 +29,9 @@ Use GitHub Actions → **Live Data Ingestion** → **Run workflow**.
 ## v0.8.1
 Adds automated opportunity quality analytics and dashboard QA views before scaling ingestion volume.
 
-## v0.8.6
+## v0.8.7
 Adds an enriched full-dataset layer (`real_data/ted_live_enriched.json`) between classification and the quality gate. It carries project type, trades, CPV, confidence/score and evidence into quality screening so the gate evaluates the intelligence output rather than raw normalized notices.
+
+
+## v0.8.7
+Quality Audit UI auf GitHub Pages für 60 stratifizierte Fälle. Browser-lokale Review-Labels, Live-Precision nur aus echten Bewertungen und CSV-Export.
