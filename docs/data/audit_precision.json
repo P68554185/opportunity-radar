@@ -1,0 +1,21 @@
+{
+  "version": "0.8.6",
+  "records_evaluated": 500,
+  "quality_gate": {
+    "CONFIDENT": 131,
+    "REVIEW": 243,
+    "UNKNOWN": 126
+  },
+  "customer_feed_count": 131,
+  "customer_feed_policy": "CONFIDENT_ONLY",
+  "review_leakage": 0,
+  "audit_sample_size": 60,
+  "accuracy": {
+    "measured": false,
+    "reviewed_rows": 0,
+    "precision": null,
+    "project_type_accuracy": null,
+    "trade_accuracy": null
+  },
+  "accuracy_note": "Precision is reported only from explicitly reviewed labels; otherwise it remains unmeasured."
+}
