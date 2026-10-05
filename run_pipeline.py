@@ -9,6 +9,7 @@ STEPS=[
  ("Build intelligence layer",[sys.executable,"intelligence/build.py"]),
  ("Analyze opportunity quality",[sys.executable,"intelligence/quality.py"]),
  ("Full dataset quality gate",[sys.executable,"intelligence/full_quality_gate.py"]),
+ ("Build audit and precision layer",[sys.executable,"intelligence/audit_precision.py"]),
  ("Update website status",[sys.executable,"github_status.py"]),
 ]
 for name,cmd in STEPS:
