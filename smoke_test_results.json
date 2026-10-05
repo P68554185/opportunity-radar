@@ -1,0 +1,92 @@
+[
+  {
+    "company_id": "C1",
+    "project_id": "PRJ-8D827493CC",
+    "trade": "electrical",
+    "distance_km": 0.0,
+    "score": 72.0,
+    "band": "UPCOMING",
+    "project": "Generalsanierung und Erweiterung Richard-Wagner-Gymnasium mit Sporthalle",
+    "phase": "funding"
+  },
+  {
+    "company_id": "C1",
+    "project_id": "PRJ-8D827493CC",
+    "trade": "drywall",
+    "distance_km": 0.0,
+    "score": 71.2,
+    "band": "UPCOMING",
+    "project": "Generalsanierung und Erweiterung Richard-Wagner-Gymnasium mit Sporthalle",
+    "phase": "funding"
+  },
+  {
+    "company_id": "C1",
+    "project_id": "PRJ-8D827493CC",
+    "trade": "painting",
+    "distance_km": 0.0,
+    "score": 71.2,
+    "band": "UPCOMING",
+    "project": "Generalsanierung und Erweiterung Richard-Wagner-Gymnasium mit Sporthalle",
+    "phase": "funding"
+  },
+  {
+    "company_id": "C1",
+    "project_id": "PRJ-575A024DAE",
+    "trade": "electrical",
+    "distance_km": 35.4,
+    "score": 68.5,
+    "band": "UPCOMING",
+    "project": "Neubau Kindertageseinrichtung Kirchenlamitz",
+    "phase": "funding"
+  },
+  {
+    "company_id": "C1",
+    "project_id": "PRJ-575A024DAE",
+    "trade": "drywall",
+    "distance_km": 35.4,
+    "score": 67.5,
+    "band": "UPCOMING",
+    "project": "Neubau Kindertageseinrichtung Kirchenlamitz",
+    "phase": "funding"
+  },
+  {
+    "company_id": "C1",
+    "project_id": "PRJ-575A024DAE",
+    "trade": "painting",
+    "distance_km": 35.4,
+    "score": 67.7,
+    "band": "UPCOMING",
+    "project": "Neubau Kindertageseinrichtung Kirchenlamitz",
+    "phase": "funding"
+  },
+  {
+    "company_id": "C1",
+    "project_id": "PRJ-EEBEA79805",
+    "trade": "electrical",
+    "distance_km": 45.6,
+    "score": 67.4,
+    "band": "UPCOMING",
+    "project": "Neubau evangelischer Kindergarten Villa Weinberggasse",
+    "phase": "funding"
+  },
+  {
+    "company_id": "C1",
+    "project_id": "PRJ-EEBEA79805",
+    "trade": "drywall",
+    "distance_km": 45.6,
+    "score": 66.4,
+    "band": "UPCOMING",
+    "project": "Neubau evangelischer Kindergarten Villa Weinberggasse",
+    "phase": "funding"
+  },
+  {
+    "company_id": "C1",
+    "project_id": "PRJ-EEBEA79805",
+    "trade": "painting",
+    "distance_km": 45.6,
+    "score": 66.7,
+    "band": "UPCOMING",
+    "project": "Neubau evangelischer Kindergarten Villa Weinberggasse",
+    "phase": "funding"
+  }
+]

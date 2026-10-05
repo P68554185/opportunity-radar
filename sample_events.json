@@ -1,0 +1,50 @@
+[
+  {
+    "source_id": "BY-2026-RWG",
+    "source_type": "funding_program",
+    "source_url": "https://www.bayern.de/",
+    "published": "2026-05-18",
+    "title": "Generalsanierung und Erweiterung Richard-Wagner-Gymnasium mit Sporthalle",
+    "body": "Förderung kommunale Hochbaumaßnahme",
+    "authority": "Stadt Bayreuth",
+    "city": "Bayreuth",
+    "region": "Bayern",
+    "project_type": "school",
+    "phase": "funding",
+    "funding_eur": 1800000,
+    "lat": 49.9456,
+    "lon": 11.5713
+  },
+  {
+    "source_id": "BY-2026-KILA",
+    "source_type": "funding_notice",
+    "source_url": "https://www.stmfh.bayern.de/",
+    "published": "2026-06-22",
+    "title": "Neubau Kindertageseinrichtung Kirchenlamitz",
+    "body": "Kita für 200 Kinder, vier Kindergarten- und vier Hortgruppen",
+    "authority": "Stadt Kirchenlamitz",
+    "city": "Kirchenlamitz",
+    "region": "Bayern",
+    "project_type": "kindergarten",
+    "phase": "funding",
+    "funding_eur": 1800000,
+    "lat": 50.151,
+    "lon": 11.95
+  },
+  {
+    "source_id": "BY-2026-ARZ1",
+    "source_type": "funding_notice",
+    "source_url": "https://www.stmfh.bayern.de/",
+    "published": "2026-06-22",
+    "title": "Neubau evangelischer Kindergarten Villa Weinberggasse",
+    "body": "Kommunale Hochbaumaßnahme",
+    "authority": "Stadt Arzberg",
+    "city": "Arzberg",
+    "region": "Bayern",
+    "project_type": "kindergarten",
+    "phase": "funding",
+    "funding_eur": 667000,
+    "lat": 50.057,
+    "lon": 12.186
+  }
+]
