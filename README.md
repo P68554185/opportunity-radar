@@ -1,17 +1,17 @@
-## v0.8.9 – Readable Quality Audit
+## v0.9.0 – Readable Quality Audit
 Bereinigt multilinguale TED-Texte für die manuelle 60-Fall-Validierung; Originaltext bleibt aufklappbar.
 
-# Opportunity Radar v0.8.9
+# Opportunity Radar v0.9.0
 
 Stable GitHub workflow architecture.
 
-# Opportunity Radar v0.8.9 — Live Intelligence
+# Opportunity Radar v0.9.0 — Live Intelligence
 
-v0.8.9 converts the proven TED live acquisition into an intelligence pipeline:
+v0.9.0 converts the proven TED live acquisition into an intelligence pipeline:
 
 `TED Live → normalize → classify project/trades → opportunity score → EARLY lifecycle candidates → dashboard feed`
 
-## New in v0.8.9
+## New in v0.9.0
 - Broad construction ontology: 16+ project types and 19+ trade/service classes.
 - CPV-prefix classification as fallback for terse TED titles.
 - Live Opportunity builder and confidence band (`HOT`, `UPCOMING`, `EARLY`).
@@ -29,16 +29,16 @@ v0.8.9 converts the proven TED live acquisition into an intelligence pipeline:
 Use GitHub Actions → **Live Data Ingestion** → **Run workflow**.
 
 
-## v0.8.9
+## v0.9.0
 Adds automated opportunity quality analytics and dashboard QA views before scaling ingestion volume.
 
-## v0.8.9
+## v0.9.0
 Adds an enriched full-dataset layer (`real_data/ted_live_enriched.json`) between classification and the quality gate. It carries project type, trades, CPV, confidence/score and evidence into quality screening so the gate evaluates the intelligence output rather than raw normalized notices.
 
 
-## v0.8.9
+## v0.9.0
 Quality Audit UI auf GitHub Pages für 60 stratifizierte Fälle. Browser-lokale Review-Labels, Live-Precision nur aus echten Bewertungen und CSV-Export.
 
 
-## v0.8.9
+## v0.9.0
 Compact human-audit cards: readable evidence excerpt, prediction facts, and collapsible TED source evidence. No precision is claimed before manual labels exist.

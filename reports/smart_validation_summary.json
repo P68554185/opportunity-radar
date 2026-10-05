@@ -1,0 +1,10 @@
+{
+  "version": "0.9.0",
+  "cases": 0,
+  "risk": {
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 0
+  },
+  "strategy": "Review highest-risk contradictions first; do not infer measured precision from unreviewed cases."
+}
