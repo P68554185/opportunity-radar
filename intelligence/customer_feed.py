@@ -7,6 +7,12 @@ sys.path.insert(0,str(ROOT))
 from engine import ingest, ONTOLOGY
 from intelligence.evidence import POLICY_VERSION
 
+def next_action(phase):
+    if phase=="tender":return "Vergabeunterlagen und Frist in der Originalquelle prüfen."
+    if phase=="award":return "Zuschlag und Auftragnehmer in der Originalquelle prüfen."
+    if phase=="prior_information":return "Geplante Lose und den vorgesehenen Vergabezeitpunkt in der Vorankündigung prüfen."
+    return "Projektphase und nächsten Vergabeschritt beim Auftraggeber oder in der Originalquelle klären."
+
 def build():
     data=ROOT/"docs"/"data"
     tender=json.loads((data/"customer_opportunities.json").read_text(encoding="utf-8"))
@@ -19,8 +25,7 @@ def build():
         if r.get("quality_status")!="CONFIDENT": raise ValueError("Feed quality violation")
         records.append(dict(r, id=r["source_id"], trade_basis="notice",
             expected_tender_period=None,
-            next_action="Vergabeunterlagen und Frist in der Originalquelle prüfen." if r.get("phase")=="tender"
-                else "Zuschlag und Auftragnehmer in der Originalquelle prüfen."))
+            next_action=next_action(r.get("phase"))))
     for p in projects:
         evidence=[r for r in early if r["source_url"] in official and r["city"]==p.city and r["title"]==p.canonical_name]
         if not evidence: continue

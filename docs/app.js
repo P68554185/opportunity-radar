@@ -54,7 +54,7 @@ function selectedTrades(record){
 function card(record){
  const early=EARLY.has(record.phase),url=sourceLink(record.source_url),watch=saved.has(record.id);
  const trades=selectedTrades(record).slice(0,6);
- const priority=record.phase==="award"?"Zur Marktbeobachtung":early?"Frühzeitig Kontakt aufnehmen":"Unterlagen jetzt prüfen";
+ const priority=record.phase==="award"?"Zur Marktbeobachtung":early?"Frühzeitig Kontakt aufnehmen":record.phase==="tender"?"Unterlagen jetzt prüfen":"Projektphase klären";
  return `<article class="project-card"><div class="card-top"><span class="phase ${early?"early":record.phase==="tender"?"tender":""}">${esc(PHASES[record.phase]||"Phase noch offen")}</span><span class="priority">${esc(priority)}</span></div>
  <h3>${esc(record.title)}</h3><p class="location">${esc(record.city||"Projektort noch offen")}${record.region?" · "+esc(record.region):""}</p>
  <dl class="facts"><div><dt>Auftraggeber</dt><dd>${esc(record.authority||"Noch nicht bekannt")}</dd></div><div><dt>Ausschreibung</dt><dd>${record.phase==="tender"?"Bereits veröffentlicht · Frist in der Quelle prüfen":record.phase==="award"?"Auftrag bereits vergeben":"Zeitraum noch unbekannt"}</dd></div><div><dt>Veröffentlicht</dt><dd>${esc(dateLabel(record.published))}</dd></div></dl>
