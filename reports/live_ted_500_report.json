@@ -1,10 +1,10 @@
 {
-  "requested": 500,
-  "downloaded_live": 500,
-  "normalized": 500,
-  "project_type_classified": 333,
-  "trade_classified": 426,
+  "requested": 2000,
+  "downloaded_live": 2000,
+  "normalized": 2000,
+  "project_type_classified": 1356,
+  "trade_classified": 1705,
   "errors": [],
   "status": "complete",
-  "run_at": "2026-10-05 13:05 UTC"
+  "run_at": "2026-10-05 14:07 UTC"
 }

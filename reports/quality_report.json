@@ -1,239 +1,243 @@
 {
-  "live_records": 500,
-  "classified_opportunities": 486,
-  "classification_rate_pct": 97.2,
+  "live_records": 2000,
+  "classified_opportunities": 1937,
+  "classification_rate_pct": 96.8,
   "bands": {
-    "HOT": 99,
-    "UPCOMING": 277,
-    "EARLY": 110
+    "HOT": 374,
+    "UPCOMING": 1178,
+    "EARLY": 385
   },
   "project_types": [
     [
       "unclassified_project",
-      153
+      581
     ],
     [
       "school",
-      113
+      357
     ],
     [
       "rail",
-      34
-    ],
-    [
-      "water_wastewater",
-      25
-    ],
-    [
-      "university_research",
-      21
-    ],
-    [
-      "industrial",
-      16
-    ],
-    [
-      "civil_engineering",
-      15
-    ],
-    [
-      "administration",
-      15
-    ],
-    [
-      "bridge",
-      14
-    ],
-    [
-      "road",
-      14
-    ],
-    [
-      "kindergarten",
-      11
+      192
     ],
     [
       "hospital",
-      11
+      114
     ],
     [
-      "infrastructure",
-      9
+      "water_wastewater",
+      83
     ],
     [
-      "public_building",
-      8
+      "university_research",
+      66
     ],
     [
-      "public_space",
-      7
+      "administration",
+      65
     ],
     [
-      "energy",
-      6
+      "bridge",
+      60
+    ],
+    [
+      "industrial",
+      56
+    ],
+    [
+      "road",
+      56
+    ],
+    [
+      "civil_engineering",
+      54
+    ],
+    [
+      "kindergarten",
+      46
     ],
     [
       "fire_station",
-      5
+      46
     ],
     [
-      "residential",
-      4
+      "public_building",
+      28
+    ],
+    [
+      "public_space",
+      26
+    ],
+    [
+      "energy",
+      26
     ],
     [
       "sports_leisure",
-      3
+      25
+    ],
+    [
+      "infrastructure",
+      21
+    ],
+    [
+      "residential",
+      19
     ],
     [
       "commercial",
-      2
+      8
+    ],
+    [
+      "care_social",
+      8
     ]
   ],
   "trades": [
     [
       "structural",
-      89
+      337
     ],
     [
       "electrical",
-      71
-    ],
-    [
-      "hvac",
-      64
+      286
     ],
     [
       "windows_doors",
-      61
+      272
     ],
     [
-      "earthworks",
-      45
-    ],
-    [
-      "flooring",
-      43
+      "hvac",
+      230
     ],
     [
       "railworks",
-      36
+      194
     ],
     [
-      "fire_protection",
-      32
+      "earthworks",
+      171
     ],
     [
-      "roof",
-      31
+      "flooring",
+      148
     ],
     [
       "demolition",
-      31
+      128
+    ],
+    [
+      "fire_protection",
+      128
+    ],
+    [
+      "roof",
+      114
     ],
     [
       "painting",
-      28
+      113
     ],
     [
       "roadworks",
-      23
-    ],
-    [
-      "facade",
-      17
-    ],
-    [
-      "plumbing",
-      16
-    ],
-    [
-      "drywall",
-      13
-    ],
-    [
-      "plastering",
-      12
+      80
     ],
     [
       "landscaping",
-      12
+      66
     ],
     [
-      "sewer_pipe",
-      5
+      "facade",
+      64
     ],
     [
-      "solar_energy",
-      5
+      "plumbing",
+      51
     ],
     [
-      "finishing",
-      4
+      "drywall",
+      46
+    ],
+    [
+      "plastering",
+      42
     ],
     [
       "elevator",
-      3
+      29
+    ],
+    [
+      "sewer_pipe",
+      23
+    ],
+    [
+      "solar_energy",
+      23
+    ],
+    [
+      "finishing",
+      15
     ],
     [
       "building_services",
-      3
+      8
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 13
+      "count": 46
     },
     {
       "from": 60,
       "to": 69,
-      "count": 104
+      "count": 380
     },
     {
       "from": 70,
       "to": 79,
-      "count": 111
+      "count": 462
     },
     {
       "from": 80,
       "to": 89,
-      "count": 234
+      "count": 946
     },
     {
       "from": 90,
       "to": 99,
-      "count": 15
+      "count": 78
     },
     {
       "from": 100,
       "to": 100,
-      "count": 9
+      "count": 25
     }
   ],
   "quality_flags": {
-    "project_type_only": 60,
-    "trade_only": 153,
-    "project_and_trade": 273,
-    "high_confidence_85_plus": 99
+    "project_type_only": 232,
+    "trade_only": 581,
+    "project_and_trade": 1124,
+    "high_confidence_85_plus": 374
   },
   "sample_top": [
     {
-      "source_id": "TED-683855-2026",
-      "title": "Freianlagen Sem I und Infra",
-      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
-      "city": "Gießen",
-      "project_type": "public_space",
+      "source_id": "TED-684848-2026",
+      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
+      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
+      "city": "Erlangen",
+      "project_type": "school",
       "trades": [
-        "landscaping",
-        "earthworks",
-        "demolition",
-        "roadworks"
+        "flooring",
+        "windows_doors",
+        "electrical",
+        "earthworks"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026"
     },
     {
       "source_id": "TED-683210-2026",
@@ -253,21 +257,21 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/683210-2026"
     },
     {
-      "source_id": "TED-684848-2026",
-      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
-      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
-      "city": "Erlangen",
-      "project_type": "school",
+      "source_id": "TED-683855-2026",
+      "title": "Freianlagen Sem I und Infra",
+      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+      "city": "Gießen",
+      "project_type": "public_space",
       "trades": [
-        "flooring",
-        "windows_doors",
-        "electrical",
-        "earthworks"
+        "landscaping",
+        "earthworks",
+        "demolition",
+        "roadworks"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026"
     },
     {
       "source_id": "TED-681697-2026",
@@ -306,23 +310,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/681250-2026"
     },
     {
-      "source_id": "TED-679848-2026",
-      "title": "Gymnasium Füssen - Estricharbeiten BA 1-2",
-      "authority": "Landkreis Ostallgäu",
-      "city": "Füssen",
-      "project_type": "school",
-      "trades": [
-        "flooring",
-        "structural",
-        "fire_protection",
-        "roof"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/679848-2026"
-    },
-    {
       "source_id": "TED-680734-2026",
       "title": "Umbau Bf Müllheim Bauleistungen",
       "authority": "DB Netz AG (Bukr 16)",
@@ -338,6 +325,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/680734-2026"
+    },
+    {
+      "source_id": "TED-679848-2026",
+      "title": "Gymnasium Füssen - Estricharbeiten BA 1-2",
+      "authority": "Landkreis Ostallgäu",
+      "city": "Füssen",
+      "project_type": "school",
+      "trades": [
+        "flooring",
+        "structural",
+        "fire_protection",
+        "roof"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/679848-2026"
     },
     {
       "source_id": "TED-680492-2026",
@@ -377,52 +381,55 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/680829-2026"
     },
     {
-      "source_id": "TED-685597-2026",
-      "title": "Don Bosco-Schule Stappenbach - Erweiterung und Sanierungsmaßnahmen",
-      "authority": "Verein \"Hilfe für Schüler an Förderschulen im Landkreis Bamberg e. V.\"",
-      "city": "Burgebrach",
+      "source_id": "TED-676028-2026",
+      "title": "Bauleistungen Rudi-Altig-Sporthalle in Sinzig - Los 24 - Außenanlagen",
+      "authority": "Stadt Sinzig",
+      "city": "Sinzig",
       "project_type": "school",
       "trades": [
-        "painting",
-        "plastering",
-        "flooring"
-      ],
-      "score": 94,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/685597-2026"
-    },
-    {
-      "source_id": "TED-684024-2026",
-      "title": "NSS Neubau 2-Feld-Sporthalle, Schwerin, VE081 Elementierte Fassaden und Fenster",
-      "authority": "Erzbistum Hamburg",
-      "city": "Schwerin",
-      "project_type": "school",
-      "trades": [
+        "landscaping",
+        "fire_protection",
         "windows_doors",
-        "facade",
-        "painting"
+        "earthworks"
       ],
-      "score": 94,
+      "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684024-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/676028-2026"
     },
     {
-      "source_id": "TED-683011-2026",
-      "title": "Klinkerriemchen + WDVS, Erweiterung Ganztagsangebot an der JFK+Saalburgschule",
-      "authority": "Wetteraukreis",
-      "city": "Bad Vilbel",
-      "project_type": "school",
+      "source_id": "TED-671570-2026",
+      "title": "Neubau Gebäude für TK-Anbindung BZ München – Allg. Tiefbauleistungen Außenanlagen inkl. Straßenbau",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "city": "München",
+      "project_type": "road",
       "trades": [
-        "facade",
-        "structural",
+        "earthworks",
+        "landscaping",
+        "roadworks",
         "fire_protection"
       ],
-      "score": 94,
+      "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/683011-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/671570-2026"
+    },
+    {
+      "source_id": "TED-673727-2026",
+      "title": "Malerarbeiten_Beschichtungen_Innenputz Bestand_WDVS, Erweiterungsneubau und Teilumbau Kinder- und Jugendpsychiatrie, Osianderstrasse 16, 72076 Tübingen",
+      "authority": "Universitätsklinikum Tübingen",
+      "city": "Tübingen",
+      "project_type": "hospital",
+      "trades": [
+        "painting",
+        "facade",
+        "fire_protection",
+        "plastering"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/673727-2026"
     }
   ]
 }
