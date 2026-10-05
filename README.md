@@ -1,10 +1,10 @@
-# Opportunity Radar v0.8.0 — Live Intelligence
+# Opportunity Radar v0.8.1 — Live Intelligence
 
-v0.8.0 converts the proven TED live acquisition into an intelligence pipeline:
+v0.8.1 converts the proven TED live acquisition into an intelligence pipeline:
 
 `TED Live → normalize → classify project/trades → opportunity score → EARLY lifecycle candidates → dashboard feed`
 
-## New in v0.8.0
+## New in v0.8.1
 - Broad construction ontology: 16+ project types and 19+ trade/service classes.
 - CPV-prefix classification as fallback for terse TED titles.
 - Live Opportunity builder and confidence band (`HOT`, `UPCOMING`, `EARLY`).
@@ -20,3 +20,7 @@ v0.8.0 converts the proven TED live acquisition into an intelligence pipeline:
 
 ## Run
 Use GitHub Actions → **Live Data Ingestion** → **Run workflow**.
+
+
+## v0.8.1
+Adds automated opportunity quality analytics and dashboard QA views before scaling ingestion volume.

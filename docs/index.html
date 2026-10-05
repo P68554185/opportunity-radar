@@ -24,7 +24,7 @@
 </section>
 
 <section class="panel">
-<div class="panelhead"><div><span class="eyebrow">PIPELINE</span><h3>Project Lifecycle</h3></div><span class="badge">v0.8.0</span></div>
+<div class="panelhead"><div><span class="eyebrow">PIPELINE</span><h3>Project Lifecycle</h3></div><span class="badge">v0.8.1</span></div>
 <div class="pipeline">
 <div class="step active"><b>01</b><strong>EARLY</strong><span>Förderung & Beschlüsse</span></div>
 <div class="arrow">→</div><div class="step"><b>02</b><strong>PLANUNG</strong><span>Objekt- & Fachplanung</span></div>
@@ -42,9 +42,14 @@
 <div class="progress"><div id="bar"></div></div><small><span id="progressText">0 / 500</span> Live Records</small></div>
 </section>
 
+<section class="panel"><div class="panelhead"><div><span class="eyebrow">QUALITY CONTROL</span><h3>Live Opportunity Qualität</h3></div><span class="badge" id="qualityRate">–</span></div>
+<div class="qualityGrid"><div><small>BANDS</small><div id="bands" class="qualityList"></div></div><div><small>TOP PROJEKTARTEN</small><div id="projectTypes" class="qualityList"></div></div><div><small>TOP GEWERKE</small><div id="tradeTypes" class="qualityList"></div></div><div><small>SIGNALQUALITÄT</small><div id="qualityFlags" class="qualityList"></div></div></div></section>
+
+<section class="panel"><div class="panelhead"><div><span class="eyebrow">QUALITY SAMPLE</span><h3>Top Opportunities & Klassifizierungsgrund</h3></div></div><div id="qualitySample" class="feed"><div class="empty">Qualitätsanalyse wird geladen…</div></div></section>
+
 <section class="panel"><div class="panelhead"><div><span class="eyebrow">LATEST SIGNALS</span><h3>Opportunity Feed</h3></div></div>
 <div id="feed" class="feed"><div class="empty">Live Opportunities werden geladen…</div></div></section>
 </main>
-<footer>Opportunity Radar · Development Build v0.8.0</footer>
+<footer>Opportunity Radar · Development Build v0.8.1</footer>
 <script src="app.js"></script>
 </body></html>
