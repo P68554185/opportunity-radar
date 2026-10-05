@@ -1,3 +1,6 @@
+## v0.8.8 – Readable Quality Audit
+Bereinigt multilinguale TED-Texte für die manuelle 60-Fall-Validierung; Originaltext bleibt aufklappbar.
+
 # Opportunity Radar v0.8.3
 
 Stable GitHub workflow architecture.
