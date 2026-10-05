@@ -2,9 +2,9 @@
   "requested": 500,
   "downloaded_live": 500,
   "normalized": 500,
-  "project_type_classified": 238,
-  "trade_classified": 267,
+  "project_type_classified": 334,
+  "trade_classified": 427,
   "errors": [],
   "status": "complete",
-  "run_at": "2026-10-05 12:50 UTC"
+  "run_at": "2026-10-05 13:01 UTC"
 }
