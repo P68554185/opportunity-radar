@@ -1,4 +1,9 @@
 __pycache__/
-*.pyc
+*.py[cod]
 *.sqlite
+*.sqlite-*
 .env
+.env.*
+!.env.example
+reports/browser/
+real_data/ted_live_raw/

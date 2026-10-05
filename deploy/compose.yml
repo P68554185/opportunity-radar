@@ -1,0 +1,40 @@
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: backend/Dockerfile
+    restart: unless-stopped
+    environment:
+      BAURADAR_DB: /var/lib/bauradar/users.sqlite
+      BAURADAR_ORIGIN: https://${BAURADAR_DOMAIN:?Set BAURADAR_DOMAIN}
+      BAURADAR_SECURE_COOKIES: "true"
+      BAURADAR_ENABLE_SIGNUP: ${BAURADAR_ENABLE_SIGNUP:-false}
+      BAURADAR_ADMIN_EMAILS: ${BAURADAR_ADMIN_EMAILS:-}
+    volumes:
+      - customer_data:/var/lib/bauradar
+    expose:
+      - "8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+  proxy:
+    image: caddy:2.9.1
+    restart: unless-stopped
+    environment:
+      BAURADAR_DOMAIN: ${BAURADAR_DOMAIN:?Set BAURADAR_DOMAIN}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - tls_data:/data
+      - tls_config:/config
+    depends_on:
+      app:
+        condition: service_healthy
+volumes:
+  customer_data:
+  tls_data:
+  tls_config:

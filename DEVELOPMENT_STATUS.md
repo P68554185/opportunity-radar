@@ -5,12 +5,12 @@ Stand: 05.10.2026. Verbindlich sind geprüfte Funktionen und Actions-Ergebnisse,
 | Meilenstein | Stand | Abnahmekriterium |
 |---|---|---|
 | Bestandsaufnahme | abgeschlossen | Architektur, Quellen, Pipeline, Workflows und Grenzen dokumentiert |
-| Datenmotor / Evidence | erste vollständige CI erfolgreich | Evidenz unabhängig vom kommerziellen Score; keine leeren CPV als Beleg |
+| Datenmotor / Evidence | CI erfolgreich | Evidenz unabhängig vom kommerziellen Score; keine leeren CPV als Beleg |
 | Lifecycle / Persistenz | erste vollständige CI erfolgreich | Widersprüche blockiert; mehrdeutige Links bleiben Review; Historie bleibt bei Folgeläufen erhalten |
-| Kundenoberfläche | umgesetzt; Chromium-Abnahme läuft | Deutsche Begriffe, Originalquelle, Phase, Gewerk, Auftraggeber, nächste Handlung |
+| Kundenoberfläche | Chromium-Abnahme erfolgreich | Deutsche Begriffe, Originalquelle, Phase, Gewerk, Auftraggeber, nächste Handlung |
 | Betriebsprofil / Beobachten | lokale MVP-Vorschau | Ort und Gewerke filtern; Merkliste über Browser-Neustart erhalten |
 | Radius / Entfernung | offen | Geprüfte Koordinaten und geographische Abdeckung nötig |
-| Anmeldung / serverseitige Profile | implementiert, Tests laufen; Deployment blockiert | Backend-Host fehlt (vom Nutzer bestätigt) |
+| Anmeldung / serverseitige Profile | implementiert und getestet; Deployment blockiert | Backend-Host fehlt (vom Nutzer bestätigt) |
 | Benachrichtigungen / E-Mail | offen | Persistenz, Versandaccount, verifizierte Absenderdomain, Opt-in |
 | Tarife / Zahlung | offen | Preisstrategie und Zahlungsaccount; keine kostenpflichtigen Dienste angelegt |
 | Verkaufsfähiger Produktionsbetrieb | nicht erreicht | Zugangsschutz, Backups, Betrieb, Datenschutz/Impressum, Zahlung und End-to-End-Abnahme |
@@ -39,7 +39,7 @@ Vollständige Datensatzprüfung erfolgt durch den neuen CI-Snapshot: aktuelle Za
 - TED-CPV-45-Suche deckt Bauvergaben ab; gesonderte Planungsvergaben sind damit nicht vollständig erfasst.
 - Projektzusammenführung ist konservativ; gleiche Gebäude mit verschiedenen Titeln können getrennt bleiben.
 - Lokale Profile/Merklisten sind gerätegebunden und senden keine Benachrichtigungen.
-- Admin-Vorlage liegt außerhalb des Pages-Verzeichnisses; ein geschützter Admin-Server fehlt noch.
+- Admin-Vorlage liegt außerhalb des Pages-Verzeichnisses; ein produktiv gehosteter Admin-Server fehlt noch.
 - Öffentliche Quelldaten und Audits enthalten keine Zugangsdaten; spätere Kundendaten dürfen dort nicht gespeichert werden.
 - Geprüfter Kundendatensatz bedeutet Evidence-Screening, keine fachlich gemessene Precision.
 
@@ -54,4 +54,7 @@ Vollständige Datensatzprüfung erfolgt durch den neuen CI-Snapshot: aktuelle Za
 2.000 gespeicherte Quellzeilen enthalten 29 doppelte TED-IDs. Nach Bereinigung bleiben 1.971 eindeutige Meldungen, davon 655 CONFIDENT, 1.250 REVIEW und 66 UNKNOWN nach der neuen Belegpolitik. 37 EARLY-Meldungen ergeben konservativ 36 Masterprojekte. Kundenfeed: 691 Einträge (655 TED, 36 frühe Projekte). Ein Lifecycle-Kandidat bleibt Review; null automatisch bestätigte Verbindungen. Dies wurde im erfolgreichen CI-Lauf 37328438780 nachgewiesen.
 
 ## Backend-Vorbereitung
-Session-Login, serverseitige Betriebsprofile und Merklisten sowie geschütztes Admin-Routing sind implementiert. Die Oberfläche nutzt sie automatisch, sobald der Backend-Host verfügbar ist. Das ist noch kein produktives Login auf GitHub Pages. Die Container-/Betriebskonfiguration steht in backend/README.md; öffentliche Registrierung ist standardmäßig deaktiviert. End-to-End-Abnahme läuft in Chromium. E-Mail-Verifikation/Passwort-Reset, E-Mail-Versand, Zahlung und Hosting bleiben offen.
+Session-Login, serverseitige Betriebsprofile und Merklisten sowie geschütztes Admin-Routing sind implementiert. Die Oberfläche nutzt sie automatisch, sobald der Backend-Host verfügbar ist. Das ist noch kein produktives Login auf GitHub Pages. Die Container-/Betriebskonfiguration steht in backend/README.md; öffentliche Registrierung ist standardmäßig deaktiviert. End-to-End-Abnahme in Chromium erfolgreich (Desktop, Mobil, Filter, lokale Merkliste, Registrierung/Logout, serverseitiges Profil und Merkliste). E-Mail-Verifikation/Passwort-Reset, E-Mail-Versand, Zahlung und Hosting bleiben offen.
+
+## Validierung und Bereitstellungsvorschlag
+CI-Läufe 37331459564 und 37331452274 bestanden für Commit 480c674a1490a373f6586309b8a4fcd445d41087. 17 Kern-/Evidenz-/Akquisitions-/Phasentests, bestehender Pipeline-Smoke-Test, 8 Classifier-Fälle, 6 Account-Tests und Chromium-End-to-End-Abläufe wurden erfolgreich ausgeführt. Die neue Container-/TLS-Vorlage und ein konsistentes privates SQLite-Backup werden zusätzlich geprüft. Hostingentscheidung und reale Server-/Domain-Zugangsdaten fehlen. Keine öffentliche Kontoregistrierung wird ohne diese Abnahme freigeschaltet.

@@ -57,7 +57,7 @@ function card(record){
  const priority=record.phase==="award"?"Zur Marktbeobachtung":early?"Frühzeitig Kontakt aufnehmen":"Unterlagen jetzt prüfen";
  return `<article class="project-card"><div class="card-top"><span class="phase ${early?"early":record.phase==="tender"?"tender":""}">${esc(PHASES[record.phase]||"Phase noch offen")}</span><span class="priority">${esc(priority)}</span></div>
  <h3>${esc(record.title)}</h3><p class="location">${esc(record.city||"Projektort noch offen")}${record.region?" · "+esc(record.region):""}</p>
- <dl class="facts"><div><dt>Auftraggeber</dt><dd>${esc(record.authority||"Noch nicht bekannt")}</dd></div><div><dt>Ausschreibung</dt><dd>${record.phase==="tender"?"Bereits veröffentlicht · Frist in der Quelle prüfen":record.phase==="award"?"Auftrag bereits vergeben":"Zeitraum noch nicht veröffentlicht"}</dd></div><div><dt>Veröffentlicht</dt><dd>${esc(dateLabel(record.published))}</dd></div></dl>
+ <dl class="facts"><div><dt>Auftraggeber</dt><dd>${esc(record.authority||"Noch nicht bekannt")}</dd></div><div><dt>Ausschreibung</dt><dd>${record.phase==="tender"?"Bereits veröffentlicht · Frist in der Quelle prüfen":record.phase==="award"?"Auftrag bereits vergeben":"Zeitraum noch unbekannt"}</dd></div><div><dt>Veröffentlicht</dt><dd>${esc(dateLabel(record.published))}</dd></div></dl>
  <div class="trade-chips">${trades.map(t=>`<span>${esc(TRADE_NAMES[t]||t)}</span>`).join("")}</div>
  <p class="trade-note">${record.trade_basis==="project_type_expected"?"Mögliche Gewerke aus der Projektart; konkrete Lose noch offen.":"Gewerke aus der Vergabemeldung abgeleitet."}</p>
  <div class="action"><strong>Ihr nächster Schritt</strong>${esc(record.next_action||"Details beim Auftraggeber oder in der Quelle prüfen.")}</div>

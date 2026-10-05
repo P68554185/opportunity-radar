@@ -28,6 +28,10 @@ jobs:
         run: python -m unittest discover -s backend/tests -p 'test_*.py'
       - name: Test customer workflows in Chromium
         run: python checks/browser_smoke.py
+      - name: Verify deployment configuration and container build
+        run: |
+          docker compose --env-file deploy/.env.example -f deploy/compose.yml config --quiet
+          docker build -f backend/Dockerfile -t bauradar:test .
       - uses: actions/upload-artifact@v4
         if: always()
         with:
