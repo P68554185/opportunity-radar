@@ -2,7 +2,7 @@
 import re
 
 PROJECT_RULES = [
- ("school", r"(schule|schulzentrum|gymnasium|realschule|mittelschule|grundschule|berufsschule|campus|sporthalle)"),
+ ("school", r"((?<!hoch)schule|schulzentrum|gymnasium|realschule|mittelschule|grundschule|berufsschule)"),
  ("kindergarten", r"(kita|kindergarten|kindertageseinrichtung|kinderhaus|kinderkrippe|hort)"),
  ("hospital", r"(klinikum|krankenhaus|klinik|medizinzentrum|operationssaal|pflegezentrum)"),
  ("fire_station", r"(feuerwehrhaus|feuerwache|feuerwehrgerätehaus|rettungswache)"),
@@ -10,7 +10,7 @@ PROJECT_RULES = [
  ("administration", r"(rathaus|verwaltungsgebäude|landratsamt|bürgerzentrum|dienstgebäude|justizgebäude|polizei)"),
  ("industrial", r"(industriehalle|produktionshalle|gewerbehalle|lagerhalle|werkstatt|betriebsgebäude|logistikzentrum)"),
  ("sports_leisure", r"(sporthalle|turnhalle|stadion|schwimmbad|hallenbad|freibad|sportanlage|freizeitanlage)"),
- ("university_research", r"(universität|hochschule|forschungsgebäude|laborgebäude|institutsgebäude|campus)"),
+ ("university_research", r"(universität|hochschule|forschungsgebäude|laborgebäude|institutsgebäude)"),
  ("care_social", r"(pflegeheim|seniorenheim|altenheim|sozialzentrum|jugendzentrum|wohnheim)"),
  ("road", r"(straßenbau|fahrbahnerneuerung|bundesstraße|staatsstraße|kreisstraße|ortsstraße|verkehrsanlage)"),
  ("bridge", r"(brücke|brückenbau|überführung|unterführung|viadukt)"),
