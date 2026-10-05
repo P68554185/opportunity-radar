@@ -7,9 +7,10 @@
 <link rel="stylesheet" href="bauradar.css">
 </head>
 <body>
-<header class="topbar"><a class="brand" href="./"><span class="brand-icon" aria-hidden="true">⌖</span> BauRadar</a><span class="preview">MVP-Vorschau</span></header>
+<header class="topbar"><a class="brand" href="./"><span class="brand-icon" aria-hidden="true">⌖</span> BauRadar</a><div class="account-controls"><span class="preview">MVP-Vorschau</span><button id="accountOpen" hidden>Anmelden</button><button id="logout" hidden>Abmelden</button></div></header>
 <main>
 <section class="intro"><p class="eyebrow">BAUPROJEKTE FRÜH ERKENNEN</p><h1>Die nächste Chance<br>für Ihren Betrieb.</h1><p>Offizielle Bauvorhaben und aktuelle Vergaben. Nach Ihren Gewerken sortiert, mit Quelle und nächstem Schritt.</p></section>
+<section id="accountPanel" class="panel account-panel" hidden aria-labelledby="accountTitle"><h2 id="accountTitle">Bei BauRadar anmelden</h2><p>Ihr Betriebsprofil und Ihre Merkliste auf allen Geräten.</p><form id="accountForm"><label>E-Mail<input id="accountEmail" type="email" autocomplete="email" required maxlength="254"></label><label>Passwort<input id="accountPassword" type="password" autocomplete="current-password" required minlength="12" maxlength="200"></label><div class="form-footer"><button class="primary" type="submit">Anmelden</button><button id="register" type="button" hidden>Konto erstellen</button><button id="accountClose" type="button">Schließen</button></div></form><p id="accountMessage" role="status"></p></section>
 <section class="profile panel" aria-labelledby="profileTitle">
 <div><h2 id="profileTitle">Was passt zu Ihrem Betrieb?</h2><p id="profileHint">Profil und Merkliste werden auf diesem Gerät gespeichert.</p></div>
 <form id="profileForm">

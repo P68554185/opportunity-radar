@@ -1,0 +1,8 @@
+.git
+__pycache__
+**/__pycache__
+*.sqlite
+*.sqlite-*
+.env
+.env.*
+real_data/ted_live_raw

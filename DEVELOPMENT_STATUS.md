@@ -5,12 +5,12 @@ Stand: 05.10.2026. Verbindlich sind geprüfte Funktionen und Actions-Ergebnisse,
 | Meilenstein | Stand | Abnahmekriterium |
 |---|---|---|
 | Bestandsaufnahme | abgeschlossen | Architektur, Quellen, Pipeline, Workflows und Grenzen dokumentiert |
-| Datenmotor / Evidence | umgesetzt, CI läuft | Evidenz unabhängig vom kommerziellen Score; keine leeren CPV als Beleg |
-| Lifecycle / Persistenz | umgesetzt, CI läuft | Widersprüche blockiert; mehrdeutige Links bleiben Review; Historie bleibt bei Folgeläufen erhalten |
-| Kundenoberfläche | umgesetzt, CI läuft | Deutsche Begriffe, Originalquelle, Phase, Gewerk, Auftraggeber, nächste Handlung |
+| Datenmotor / Evidence | erste vollständige CI erfolgreich | Evidenz unabhängig vom kommerziellen Score; keine leeren CPV als Beleg |
+| Lifecycle / Persistenz | erste vollständige CI erfolgreich | Widersprüche blockiert; mehrdeutige Links bleiben Review; Historie bleibt bei Folgeläufen erhalten |
+| Kundenoberfläche | umgesetzt; Chromium-Abnahme läuft | Deutsche Begriffe, Originalquelle, Phase, Gewerk, Auftraggeber, nächste Handlung |
 | Betriebsprofil / Beobachten | lokale MVP-Vorschau | Ort und Gewerke filtern; Merkliste über Browser-Neustart erhalten |
 | Radius / Entfernung | offen | Geprüfte Koordinaten und geographische Abdeckung nötig |
-| Anmeldung / serverseitige Profile | blockiert | Backend-Host fehlt (vom Nutzer bestätigt) |
+| Anmeldung / serverseitige Profile | implementiert, Tests laufen; Deployment blockiert | Backend-Host fehlt (vom Nutzer bestätigt) |
 | Benachrichtigungen / E-Mail | offen | Persistenz, Versandaccount, verifizierte Absenderdomain, Opt-in |
 | Tarife / Zahlung | offen | Preisstrategie und Zahlungsaccount; keine kostenpflichtigen Dienste angelegt |
 | Verkaufsfähiger Produktionsbetrieb | nicht erreicht | Zugangsschutz, Backups, Betrieb, Datenschutz/Impressum, Zahlung und End-to-End-Abnahme |
@@ -49,3 +49,9 @@ Vollständige Datensatzprüfung erfolgt durch den neuen CI-Snapshot: aktuelle Za
 3. Geodatenquelle und kommerzielle Nutzungsbedingungen klären; Radius mit unbekannten Orten konservativ behandeln.
 4. Laufende EARLY-Akquisition aus weiteren offiziellen Quellen und manuell bewerteten Stichproben ausbauen.
 5. E-Mail, Tarife/Zahlung und rechtliche Texte mit erforderlichen Nutzerentscheidungen anschließen.
+
+## Ergebnis der vollständigen Quellenprüfung
+2.000 gespeicherte Quellzeilen enthalten 29 doppelte TED-IDs. Nach Bereinigung bleiben 1.971 eindeutige Meldungen, davon 655 CONFIDENT, 1.250 REVIEW und 66 UNKNOWN nach der neuen Belegpolitik. 37 EARLY-Meldungen ergeben konservativ 36 Masterprojekte. Kundenfeed: 691 Einträge (655 TED, 36 frühe Projekte). Ein Lifecycle-Kandidat bleibt Review; null automatisch bestätigte Verbindungen. Dies wurde im erfolgreichen CI-Lauf 37328438780 nachgewiesen.
+
+## Backend-Vorbereitung
+Session-Login, serverseitige Betriebsprofile und Merklisten sowie geschütztes Admin-Routing sind implementiert. Die Oberfläche nutzt sie automatisch, sobald der Backend-Host verfügbar ist. Das ist noch kein produktives Login auf GitHub Pages. Die Container-/Betriebskonfiguration steht in backend/README.md; öffentliche Registrierung ist standardmäßig deaktiviert. End-to-End-Abnahme läuft in Chromium. E-Mail-Verifikation/Passwort-Reset, E-Mail-Versand, Zahlung und Hosting bleiben offen.

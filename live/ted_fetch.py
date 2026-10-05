@@ -45,17 +45,28 @@ class LiveTedFetcher:
             if attempt < self.retries: time.sleep(attempt * 2)
         return None, last_error
 
-    def fetch(self, target=2000, max_pages=8):
-        notices, errors = [], []
-        target=max(1,int(target)); pages_needed=min(max_pages,(target+self.page_size-1)//self.page_size)
-        for page in range(1,pages_needed+1):
+    def fetch(self, target=2000, max_pages=12):
+        notices, errors, seen = [], [], set()
+        self.duplicate_count=0
+        target=max(1,int(target))
+        for page in range(1,int(max_pages)+1):
             raw,error=self._request(page)
             if error: errors.append({"page":page,**error}); break
             with open(os.path.join(self.raw_dir,f"ted_page_{page:03d}.json"),"w",encoding="utf-8") as f:f.write(raw)
             try:data=json.loads(raw)
             except json.JSONDecodeError as ex: errors.append({"page":page,"type":"json","message":repr(ex)}); break
             batch=data.get("notices") or data.get("results") or []
-            if not isinstance(batch,list): errors.append({"page":page,"type":"schema","message":"TED response contains no notice list","keys":list(data)[:30]}); break
-            notices.extend(batch)
+            if not isinstance(batch,list): errors.append({"page":page,"type":"schema","message":"TED response contains no notice list"}); break
+            for notice in batch:
+                if not isinstance(notice,dict):
+                    errors.append({"page":page,"type":"schema","message":"Invalid notice"}); continue
+                identity=notice.get("publication-number") or notice.get("publicationNumber") or notice.get("id")
+                if not identity:
+                    errors.append({"page":page,"type":"identity","message":"Notice has no publication identity"}); continue
+                key=json.dumps(identity,sort_keys=True)
+                if key in seen:
+                    self.duplicate_count+=1; continue
+                seen.add(key);notices.append(notice)
+                if len(notices)>=target:break
             if not batch or len(notices)>=target: break
         return notices[:target], errors

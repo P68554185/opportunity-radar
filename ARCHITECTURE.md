@@ -28,3 +28,6 @@ Ein Python-Backend mit serverseitiger Persistenz und Session-Login kann den vorh
 Erforderlich: TLS, persistentes Volume/PostgreSQL, Secrets, Backups, Monitoring und geschütztes Admin-Routing.
 Ein neuer externer Account oder kostenpflichtiger Host wurde nicht angelegt.
 Bis dahin bleiben Betriebsprofile/Merklisten ausschließlich lokal im Browser; keine personenbezogenen Kundendaten in öffentlichen Git-Snapshots.
+
+## Implementierte Backend-Vorbereitung
+backend/app.py stellt Session-Login, validierte Betriebsprofile, kontoabhängige Merklisten und zugriffsgeschützte Admin-Routen bereit. API und Oberfläche werden im Container unter demselben Origin ausgeliefert. Pages bleibt eine lokale Vorschau. Produktionshosting, E-Mail und Zahlung sind noch nicht angeschlossen. Details und Abnahmekriterien: backend/README.md.

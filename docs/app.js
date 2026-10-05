@@ -10,7 +10,13 @@ let profile=storedProfile&&typeof storedProfile==="object"&&!Array.isArray(store
 profile.trades=Array.isArray(profile.trades)?profile.trades.filter(t=>Object.hasOwn(TRADE_NAMES,t)):[];
 const storedSaved=read("bauradar.saved.v1",[]);
 let saved=new Set(Array.isArray(storedSaved)?storedSaved.filter(x=>typeof x==="string"):[]);
-let records=[],view="all",limit=20;
+let records=[],view="all",limit=20,account=null,backend=false;
+async function api(path,method="GET",body){
+ const r=await fetch("api/"+path,{method,headers:body?{"Content-Type":"application/json"}:{},credentials:"same-origin",body:body?JSON.stringify(body):undefined});
+ const d=await r.json().catch(()=>({}));
+ if(!r.ok)throw Error(typeof d.detail==="string"?d.detail:"Bitte prüfen Sie Ihre Angaben und versuchen Sie es erneut.");
+ return d;
+}
 const $=id=>document.getElementById(id);
 function persist(key,value){try{localStorage.setItem(key,JSON.stringify(value));return true}catch{$("profileMessage").textContent="Speichern auf diesem Gerät ist nicht verfügbar. Ihre Auswahl gilt für diese Sitzung.";return false}}
 function sourceLink(url){try{const u=new URL(url);return u.protocol==="https:"&&["ted.europa.eu","www.stmfh.bayern.de"].includes(u.hostname)?u.href:""}catch{return ""}}
@@ -19,13 +25,13 @@ $("companyName").value=typeof profile.name==="string"?profile.name:"";
 $("companyCity").value=typeof profile.city==="string"?profile.city:"";
 $("locationMode").value=profile.locationMode==="city"?"city":"all";
 $("tradeChoices").innerHTML=Object.entries(TRADE_NAMES).filter(([t])=>!["elevators","medical_technology","steelwork","screed","industrial_doors","building_automation","building_services","plastering","finishing"].includes(t)).map(([t,n])=>`<label><input type="checkbox" name="trade" value="${esc(t)}" ${profile.trades.includes(t)?"checked":""}><span>${esc(n)}</span></label>`).join("");
-$("profileForm").addEventListener("submit",event=>{
+$("profileForm").addEventListener("submit",async event=>{
  event.preventDefault();
  const city=$("companyCity").value.trim(),locationMode=$("locationMode").value;
  if(locationMode==="city"&&!city){$("profileMessage").textContent="Bitte geben Sie einen Ort ein oder wählen Sie deutschlandweit.";return}
- profile={name:$("companyName").value.trim(),city,locationMode,trades:[...document.querySelectorAll('[name="trade"]:checked')].map(e=>e.value)};
- const ok=persist("bauradar.profile.v1",profile);
- if(ok)$("profileMessage").textContent="Profil auf diesem Gerät gespeichert.";
+ const next={...profile,name:$("companyName").value.trim(),city,locationMode,trades:[...document.querySelectorAll('[name="trade"]:checked')].map(e=>e.value)};
+ if(account){try{profile=await api("profile","PUT",next);$("profileMessage").textContent="Betriebsprofil gespeichert."}catch(error){$("profileMessage").textContent=error.message;return}}
+ else{profile=next;const ok=persist("bauradar.profile.v1",profile);if(ok)$("profileMessage").textContent="Profil auf diesem Gerät gespeichert."}
  limit=20;render();
 });
 document.querySelectorAll("[data-view]").forEach(button=>button.addEventListener("click",()=>{
@@ -34,10 +40,12 @@ document.querySelectorAll("[data-view]").forEach(button=>button.addEventListener
 }));
 ["phaseFilter","search"].forEach(id=>$(id).addEventListener("input",()=>{limit=20;render()}));
 $("loadMore").addEventListener("click",()=>{limit+=20;render()});
-$("feed").addEventListener("click",event=>{
+$("feed").addEventListener("click",async event=>{
  const button=event.target.closest("[data-watch]");if(!button)return;
- const id=button.dataset.watch;saved.has(id)?saved.delete(id):saved.add(id);
- persist("bauradar.saved.v1",[...saved]);render();
+ const id=button.dataset.watch;button.disabled=true;
+ if(account){try{await api("watches/"+encodeURIComponent(id),saved.has(id)?"DELETE":"PUT")}catch(error){$("profileMessage").textContent=error.message;button.disabled=false;return}}
+ saved.has(id)?saved.delete(id):saved.add(id);
+ if(!account)persist("bauradar.saved.v1",[...saved]);render();
 });
 function selectedTrades(record){
  const t=record.trades||[];
@@ -75,4 +83,39 @@ async function init(){
   const status=await fetch("data/status.json",{cache:"no-store"});if(status.ok){const d=await status.json();$("lastUpdate").textContent=d.last_sync?"Datenstand: "+d.last_sync:""}
  }catch{$("feed").innerHTML='<p class="empty">Die Projekte konnten gerade nicht geladen werden. Bitte versuchen Sie es später erneut.</p>';$("resultCount").textContent="Projekte derzeit nicht verfügbar."}
 }
+function fillProfile(){
+ $("companyName").value=profile.name||"";$("companyCity").value=profile.city||"";
+ $("locationMode").value=profile.locationMode||"all";
+ document.querySelectorAll('[name="trade"]').forEach(e=>e.checked=(profile.trades||[]).includes(e.value));
+}
+async function loadAccount(){
+ const current=await api("me");
+ const [serverProfile,serverWatches]=await Promise.all([api("profile"),api("watches")]);
+ account=current;profile=serverProfile;saved=new Set(serverWatches);fillProfile();render();
+ $("profileHint").textContent="Angemeldet als "+account.email+". Profil und Merkliste werden in Ihrem Konto gespeichert.";
+ $("accountOpen").hidden=true;$("logout").hidden=false;$("accountPanel").hidden=true;
+ $("accountPassword").value="";
+}
+async function initAccount(){
+ try{
+  const health=await api("health");if(health.status!=="ok")return;backend=true;
+  $("accountOpen").hidden=false;$("register").hidden=!health.signup_enabled;
+  await loadAccount();
+ }catch{}
+}
+$("accountOpen").addEventListener("click",()=>{$("accountPanel").hidden=false;$("accountEmail").focus()});
+$("accountClose").addEventListener("click",()=>{$("accountPanel").hidden=true});
+async function authenticate(register=false){
+ $("accountMessage").textContent="Bitte warten …";
+ try{await api(register?"register":"login","POST",{email:$("accountEmail").value,password:$("accountPassword").value});await loadAccount();$("accountMessage").textContent=""}
+ catch(error){$("accountMessage").textContent=error.message}
+}
+$("accountForm").addEventListener("submit",event=>{event.preventDefault();authenticate()});
+$("register").addEventListener("click",()=>{if($("accountForm").reportValidity())authenticate(true)});
+$("logout").addEventListener("click",async()=>{
+ try{await api("logout","POST");account=null;profile={trades:[],locationMode:"all"};saved=new Set();fillProfile();render();
+ $("profileHint").textContent="Abgemeldet. Neue Auswahl bleibt auf diesem Gerät.";$("logout").hidden=true;$("accountOpen").hidden=false;
+ }catch(error){$("profileMessage").textContent=error.message}
+});
 init();
+initAccount();
