@@ -1,12 +1,9 @@
+"""Legacy entry point now exercises the actual shared evidence policy."""
+import unittest
+from intelligence.evidence import classify_evidence
 
-def quality(points, confidence):
-    if points >= 5 and confidence >= 0.65: return "CONFIDENT"
-    if points >= 3: return "REVIEW"
-    return "UNKNOWN"
-
-assert quality(6, .90) == "CONFIDENT"
-assert quality(5, .65) == "CONFIDENT"
-assert quality(5, .40) == "REVIEW"
-assert quality(3, .10) == "REVIEW"
-assert quality(2, .99) == "UNKNOWN"
-print("5/5 v0.8.3 quality policy tests passed")
+class QualityPolicyTests(unittest.TestCase):
+    def test_high_legacy_score_cannot_open_customer_gate(self):
+        status,_=classify_evidence({"project_type":"school","trades":["electrical"],
+            "title":"Grundschule Elektroarbeiten","cpv":[],"confidence":1,"score":100})
+        self.assertNotEqual(status,"CONFIDENT")

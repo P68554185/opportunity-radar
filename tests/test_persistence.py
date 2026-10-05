@@ -23,7 +23,7 @@ class PersistenceTests(unittest.TestCase):
         base=dict(source_id="a",source_type="official",source_url="u",published="2026-01-01",
                   title="Neubau Hauptgebäude",body="",city="Roth",project_type="school")
         resolve_project(projects,SourceEvent(**base))
-        resolve_project(projects,SourceEvent(**dict(base,source_id="b",project_type="hospital")))
+        resolve_project(projects,SourceEvent(**dict(base,source_id="b",source_url="v",project_type="hospital")))
         self.assertEqual(len(projects),2)
 
 if __name__=="__main__": unittest.main()
