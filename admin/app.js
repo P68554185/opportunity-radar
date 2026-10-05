@@ -11,7 +11,7 @@ Promise.all([
  set('qualityRate',(q.classification_rate_pct??0)+'% klassifiziert');
  list('bands',Object.entries(q.bands||{}));
  list('projectTypes',(q.project_types||[]).slice(0,6));list('tradeTypes',(q.trades||[]).slice(0,6));
- const f=q.quality_flags||{};list('qualityFlags',[["Projekt + Gewerk",f.project_and_trade||0],["Nur Projektart",f.project_type_only||0],["Nur Gewerk/CPV",f.trade_only||0],["Score ≥ 85",f.high_confidence_85_plus||0]]);
+ const f=q.quality_flags||{};list('qualityFlags',[["Projekt + Gewerk",f.project_and_trade||0],["Nur Projektart",f.project_type_only||0],["Nur Gewerk/CPV",f.trade_only||0],["Score ≥ 85",f.opportunity_score_85_plus||0]]);
  const qs=document.getElementById('qualitySample'), samples=q.sample_top||[];
  if(qs) qs.innerHTML=samples.length?samples.map(x=>`<article class="opp"><div class="oppTop"><span class="band ${esc((x.band||'EARLY').toLowerCase())}">${esc(x.band)}</span><strong>${esc(x.score)}%</strong></div><h4>${esc(x.title)}</h4><div class="reason">${esc(x.reason)}</div><div class="meta">${esc(x.project_type||'ohne Projektart')} ${x.city?'· '+esc(x.city):''}</div><div class="chips">${(x.trades||[]).slice(0,5).map(t=>`<span>${esc(t)}</span>`).join('')}</div></article>`).join(''):'<div class="empty">Noch keine Qualitätsstichprobe.</div>';
  const feed=document.getElementById("feed"), rows=(o.opportunities||[]).slice(0,12);

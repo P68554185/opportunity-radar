@@ -35,7 +35,8 @@ with tempfile.TemporaryDirectory() as temp:
             expect(page.locator("#savedCount")).to_have_text("1")
             page.screenshot(path=str(OUTPUT/"desktop.png"),full_page=True)
             page.set_viewport_size({"width":390,"height":844})
-            assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth"),"Mobile horizontal overflow"
+            overflow=page.evaluate("Array.from(document.querySelectorAll('body *')).filter(e=>e.getBoundingClientRect().right>window.innerWidth+1).map(e=>({tag:e.tagName,id:e.id,class:e.className,width:e.getBoundingClientRect().width})).slice(0,10)")
+            assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth"),f"Mobile horizontal overflow: {overflow}"
             page.screenshot(path=str(OUTPUT/"mobile.png"),full_page=True)
             page.locator("#accountOpen").click()
             page.locator("#accountEmail").fill("browser@example.com")
