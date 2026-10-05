@@ -4,9 +4,21 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "15 5 * * *"
+  push:
+    branches: ["main"]
+    paths:
+      - "live/**"
+      - "classification/**"
+      - "intelligence/**"
+      - "run_pipeline.py"
+      - "github_status.py"
 
 permissions:
   contents: write
+
+concurrency:
+  group: live-ingestion
+  cancel-in-progress: true
 
 jobs:
   ingest:
@@ -14,23 +26,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
       - name: Run Opportunity Radar pipeline
         run: python run_pipeline.py
-
       - name: Commit generated dashboard data
         run: |
           git config user.name "opportunity-radar-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/data/ reports/ || true
+          git add docs/data/ reports/ real_data/ted_live_normalized.json real_data/ted_live_enriched.json || true
           git diff --cached --quiet || git commit -m "Update Opportunity Radar live intelligence"
           git push
-
       - name: Upload run diagnostics
         if: always()
         uses: actions/upload-artifact@v4
