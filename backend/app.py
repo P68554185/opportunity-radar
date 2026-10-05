@@ -29,7 +29,7 @@ if os.environ.get("RENDER_EXTERNAL_URL"):
         raise RuntimeError("Hosted PostgreSQL requires an explicit TLS mode.")
     if not SECURE or urlparse(ORIGIN).scheme!="https":
         raise RuntimeError("Hosted accounts require HTTPS and Secure cookies.")
-TRADES={"electrical","hvac","plumbing","drywall","painting","flooring","roof","windows_doors",
+TRADES={"insulation","fencing","electrical","hvac","plumbing","drywall","painting","flooring","roof","windows_doors",
  "facade","earthworks","structural","landscaping","fire_protection","elevator","demolition",
  "roadworks","sewer_pipe","railworks","solar_energy","scaffolding","metalwork",
  "building_automation","industrial_doors","screed","steelwork","medical_technology","elevators",
