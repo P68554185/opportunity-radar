@@ -9,6 +9,7 @@ class AccountTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.temp=tempfile.TemporaryDirectory()
+        os.environ["BAURADAR_DATABASE_URL"]=os.environ.get("TEST_POSTGRES_URL","") if getattr(cls,"use_postgres",False) else ""
         os.environ["BAURADAR_DB"]=str(Path(cls.temp.name)/"users.sqlite")
         os.environ["BAURADAR_ORIGIN"]="http://testserver"
         os.environ["BAURADAR_SECURE_COOKIES"]="false"
@@ -61,5 +62,9 @@ class AccountTests(unittest.TestCase):
     def test_unknown_projects_not_watched(self):
         self.register(self.client)
         self.assertEqual(self.client.put("/api/watches/nonexistent").status_code,404)
+
+@unittest.skipUnless(os.environ.get("TEST_POSTGRES_URL"),"PostgreSQL test service unavailable")
+class PostgresAccountTests(AccountTests):
+    use_postgres=True
 
 if __name__=="__main__": unittest.main()

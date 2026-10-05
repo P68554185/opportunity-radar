@@ -1,0 +1,20 @@
+# Free customer-validation pilot only; no paid services or local customer DB.
+services:
+  - type: web
+    name: bauradar-pilot
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/live
+    autoDeploy: false
+    envVars:
+      - key: BAURADAR_DATABASE_URL
+        sync: false
+      - key: BAURADAR_SECURE_COOKIES
+        value: "true"
+      - key: BAURADAR_ENABLE_SIGNUP
+        value: "false"
+      - key: BAURADAR_ADMIN_EMAILS
+        sync: false
