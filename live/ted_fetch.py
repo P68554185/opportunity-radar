@@ -32,7 +32,7 @@ class LiveTedFetcher:
         for attempt in range(1, self.retries + 1):
             try:
                 req = Request(URL, data=json.dumps(payload).encode("utf-8"),
-                    headers={"Content-Type":"application/json","Accept":"application/json","User-Agent":"OpportunityRadar/0.9.1"},
+                    headers={"Content-Type":"application/json","Accept":"application/json","User-Agent":"OpportunityRadar/0.9.3"},
                     method="POST")
                 with urlopen(req, timeout=90) as response:
                     raw = response.read().decode("utf-8")
@@ -45,7 +45,7 @@ class LiveTedFetcher:
             if attempt < self.retries: time.sleep(attempt * 2)
         return None, last_error
 
-    def fetch(self, target=500, max_pages=5):
+    def fetch(self, target=2000, max_pages=8):
         notices, errors = [], []
         target=max(1,int(target)); pages_needed=min(max_pages,(target+self.page_size-1)//self.page_size)
         for page in range(1,pages_needed+1):
