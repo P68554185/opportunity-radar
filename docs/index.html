@@ -19,12 +19,12 @@
 <section class="metrics">
 <div class="metric"><small>EARLY SIGNALS</small><strong id="early">37</strong><span>offiziell verifiziert</span></div>
 <div class="metric"><small>LIVE PROCUREMENT</small><strong id="live">0</strong><span>TED / DÖE Records</span></div>
-<div class="metric"><small>OPPORTUNITIES</small><strong id="opps">488</strong><span>potenzielle Gewerke</span></div>
+<div class="metric"><small>LIVE OPPORTUNITIES</small><strong id="classified">0</strong><span>klassifizierte TED-Signale</span></div>
 <div class="metric"><small>LIFECYCLE LINKS</small><strong id="links">0</strong><span>EARLY → Vergabe</span></div>
 </section>
 
 <section class="panel">
-<div class="panelhead"><div><span class="eyebrow">PIPELINE</span><h3>Project Lifecycle</h3></div><span class="badge">v0.7.3</span></div>
+<div class="panelhead"><div><span class="eyebrow">PIPELINE</span><h3>Project Lifecycle</h3></div><span class="badge">v0.8.0</span></div>
 <div class="pipeline">
 <div class="step active"><b>01</b><strong>EARLY</strong><span>Förderung & Beschlüsse</span></div>
 <div class="arrow">→</div><div class="step"><b>02</b><strong>PLANUNG</strong><span>Objekt- & Fachplanung</span></div>
@@ -37,14 +37,14 @@
 <table><tr><td>EARLY-Daten</td><td class="ok">AKTIV</td></tr><tr><td>Master Project Graph</td><td class="ok">AKTIV</td></tr>
 <tr><td>Trade Matching</td><td class="ok">AKTIV</td></tr><tr><td>TED Live Ingestion</td><td id="tedStatus">BEREIT</td></tr>
 <tr><td>DÖE Live Ingestion</td><td>VORBEREITUNG</td></tr><tr><td>Kunden-Dashboard</td><td>PROTOTYP</td></tr></table></div>
-<div class="panel"><span class="eyebrow">NÄCHSTER MEILENSTEIN</span><h3>500 echte Vergabeereignisse</h3>
-<p>GitHub Actions führt den TED-Live-Run ohne lokale Software aus. Danach werden die echten Records gegen unsere EARLY-Projekte gematcht.</p>
+<div class="panel"><span class="eyebrow">LIVE INTELLIGENCE</span><h3>500 Vergaben → Opportunities</h3>
+<p>Die Live-Records werden nach Projektart und Gewerk klassifiziert und gegen die EARLY-Projekte als Lifecycle-Kandidaten geprüft.</p>
 <div class="progress"><div id="bar"></div></div><small><span id="progressText">0 / 500</span> Live Records</small></div>
 </section>
 
 <section class="panel"><div class="panelhead"><div><span class="eyebrow">LATEST SIGNALS</span><h3>Opportunity Feed</h3></div></div>
-<div id="feed" class="feed"><div class="empty">Noch keine Live-Vergabeereignisse synchronisiert.</div></div></section>
+<div id="feed" class="feed"><div class="empty">Live Opportunities werden geladen…</div></div></section>
 </main>
-<footer>Opportunity Radar · Development Build v0.7.3</footer>
+<footer>Opportunity Radar · Development Build v0.8.0</footer>
 <script src="app.js"></script>
 </body></html>

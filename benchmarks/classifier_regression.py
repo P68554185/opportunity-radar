@@ -1,11 +1,20 @@
-import os,sys,json
+import os,sys
 ROOT=os.path.dirname(os.path.dirname(__file__));sys.path.insert(0,os.path.join(ROOT,"classification"))
 from rules import classify
-cases=[("Elektroarbeiten Generalsanierung Gymnasium Roth","school","electrical"),
-("Lüftungs- und Sanitärarbeiten Kindergarten Sonnenhügel","kindergarten","hvac"),
-("Rohbau Neubau Feuerwehrhaus","fire_station","structural"),("Malerarbeiten Klinikum","hospital","painting")]
-details=[];ok=0
-for txt,pt,tr in cases:
- a,b=classify(txt);passed=(a==pt and tr in b);ok+=passed;details.append([txt,a,b,passed])
-assert ok==len(cases),details
-print(json.dumps({"cases":len(cases),"passed":ok,"details":details},ensure_ascii=False,indent=2))
+CASES=[
+("Neubau Grundschule mit Sporthalle Elektroarbeiten","school","electrical"),
+("Erweiterung Feuerwehrgerätehaus Heizungs- und Lüftungsanlagen","fire_station","hvac"),
+("Sanierung Kläranlage Rohrleitungsbau","water_wastewater","sewer_pipe"),
+("Brückensanierung Stahlbetonarbeiten","bridge","structural"),
+("Neubau von 48 Wohnungen Fenster und Türen","residential","windows_doors"),
+("Photovoltaikanlage mit Batteriespeicher","energy","solar_energy"),
+("Gleiserneuerung und Bahnsteigarbeiten","rail","railworks"),
+("Rathaus Fassadensanierung","administration","facade"),
+]
+ok=0
+for text,p,t in CASES:
+ got,tr=classify(text)
+ passed=got==p and t in tr;ok+=passed
+ print("PASS" if passed else "FAIL",text,"=>",got,tr)
+print(f"{ok}/{len(CASES)} passed")
+if ok!=len(CASES):raise SystemExit(1)

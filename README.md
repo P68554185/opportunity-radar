@@ -1,3 +1,22 @@
-# Opportunity Radar v0.7.3
+# Opportunity Radar v0.8.0 — Live Intelligence
 
-GitHub/Pages edition. See `GITHUB_SETUP.md`.
+v0.8.0 converts the proven TED live acquisition into an intelligence pipeline:
+
+`TED Live → normalize → classify project/trades → opportunity score → EARLY lifecycle candidates → dashboard feed`
+
+## New in v0.8.0
+- Broad construction ontology: 16+ project types and 19+ trade/service classes.
+- CPV-prefix classification as fallback for terse TED titles.
+- Live Opportunity builder and confidence band (`HOT`, `UPCOMING`, `EARLY`).
+- Candidate matching between verified Bavarian EARLY signals and later TED records.
+- Dashboard Opportunity Feed generated from real live records.
+- GitHub Action runs regression → 500 live TED notices → intelligence → dashboard update.
+
+## Data integrity
+- No synthetic fallback in the live workflow.
+- `500 downloaded_live` means 500 records returned by TED in that run.
+- `classified_opportunities` is a deterministic subset of live records, not a prediction accuracy claim.
+- `lifecycle_candidates` are candidate links; only high-confidence candidates are marked `auto_link`, others remain review candidates.
+
+## Run
+Use GitHub Actions → **Live Data Ingestion** → **Run workflow**.
