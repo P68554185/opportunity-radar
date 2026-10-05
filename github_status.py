@@ -1,12 +1,34 @@
-import json, os
+"""Status is derived from current generated datasets, never hard-coded totals."""
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parent
 def load(path,default):
- try:
-  with open(path,encoding='utf-8') as f:return json.load(f)
- except Exception:return default
-live=load('real_data/ted_live_normalized.json',[]);report=load('reports/live_ted_500_report.json',{});intel=load('reports/intelligence_report.json',{});quality=load('reports/quality_report.json',{});gate=load('reports/quality_validation_summary.json',{})
-run_status=report.get('status','never');last_sync=report.get('run_at') if run_status in ('complete','partial') else None
-dates=sorted([str(x.get('published') or '')[:10] for x in live if x.get('published')])
-status={'version':"0.9.1",'early_signals':37,'master_projects':34,'live_records':len(live),'classified_opportunities':intel.get('classified_opportunities',0),'classification_rate_pct':quality.get('classification_rate_pct',0),'opportunities':488+intel.get('classified_opportunities',0),'lifecycle_links':intel.get('lifecycle_candidates',0),'last_sync':last_sync,'ted_run_status':run_status,'ted_errors':len(report.get('errors',[])),'ted_requested':report.get('requested',500),'project_type_classified':report.get('project_type_classified',0),'trade_classified':report.get('trade_classified',0),'quality_confident':gate.get('customer_facing_confident',0),'quality_review':gate.get('held_for_review',0),'quality_unknown':gate.get('suppressed_unknown',0),'quality_records':gate.get('records_evaluated',0),'data_from':dates[0] if dates else None,'data_to':dates[-1] if dates else None,'market':'Germany','ted_query':'RC = DEU AND classification-cpv = 45*; newest first'}
-os.makedirs('docs/data',exist_ok=True)
-with open('docs/data/status.json','w',encoding='utf-8') as f:json.dump(status,f,ensure_ascii=False,indent=2)
-print(json.dumps(status,ensure_ascii=False,indent=2))
+    try: return json.loads((ROOT/path).read_text(encoding="utf-8"))
+    except FileNotFoundError: return default
+def build():
+    live=load("real_data/ted_live_normalized.json",[])
+    report=load("reports/live_ted_500_report.json",{})
+    intel=load("reports/intelligence_report.json",{})
+    gate=load("reports/quality_validation_summary.json",{})
+    customer=load("reports/customer_feed_summary.json",{})
+    dates=sorted(str(x["published"])[:10] for x in live if x.get("published"))
+    classified=intel.get("classified_opportunities",0)
+    status={"version":"0.10.0","early_signals":customer.get("early_signals",0),
+        "master_projects":customer.get("master_projects",0),"live_records":len(live),
+        "classified_opportunities":classified,
+        "classification_rate_pct":round(100*classified/len(live),1) if live else 0,
+        "opportunities":customer.get("customer_records",0),
+        "customer_ted_records":customer.get("customer_ted_records",0),
+        "lifecycle_candidates":intel.get("lifecycle_candidates",0),
+        "lifecycle_links":sum(x.get("status")=="auto_link" for x in intel.get("lifecycle_links",[])),
+        "last_sync":report.get("run_at"),"ted_run_status":report.get("status","never"),
+        "ted_errors":len(report.get("errors",[])),"ted_requested":report.get("requested",0),
+        "quality_confident":gate.get("customer_facing_confident",0),
+        "quality_review":gate.get("held_for_review",0),"quality_unknown":gate.get("suppressed_unknown",0),
+        "quality_records":gate.get("records_evaluated",0),"accuracy_measured":False,
+        "data_from":dates[0] if dates else None,"data_to":dates[-1] if dates else None,
+        "market":"Germany","ted_query":"RC = DEU AND classification-cpv = 45*; newest first"}
+    (ROOT/"docs"/"data"/"status.json").write_text(json.dumps(status,ensure_ascii=False,indent=2),encoding="utf-8")
+    print(json.dumps(status,ensure_ascii=False,indent=2))
+    return status
+if __name__=="__main__": build()

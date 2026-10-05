@@ -1,0 +1,33 @@
+name: Verify BauRadar
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m unittest discover -s tests -p 'test_*.py'
+      - run: python benchmarks/classifier_regression.py
+      - name: Rebuild checked feeds from committed source data
+        run: |
+          python intelligence/build.py
+          python intelligence/full_quality_gate.py
+          python intelligence/audit_precision.py
+          python intelligence/customer_feed.py
+          python github_status.py
+          python tests/check_generated_feed.py
+      - name: JavaScript syntax
+        run: node --check docs/app.js
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verified-bauradar-data
+          path: |
+            docs/data/
+            reports/

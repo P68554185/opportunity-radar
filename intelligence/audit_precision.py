@@ -14,7 +14,7 @@ def load(p, default):
 def arr(v): return v if isinstance(v,list) else ([] if v in (None,'') else [v])
 def score01(r):
     try:
-        x=float(r.get('confidence',r.get('score',0)) or 0)
+        x=float(r.get('classification_confidence',0) or 0)
         return min(1,max(0,x/100 if x>1 else x))
     except Exception:return 0
 
@@ -76,20 +76,9 @@ def compact_audit_card(r):
 def audit_summary(r):
     return compact_audit_card(r)
 
-def evidence_gate(r):
-    p=str(r.get('project_type') or '').lower()
-    trades=arr(r.get('trades'))
-    cpv=arr(r.get('cpv'))
-    title=str(r.get('title') or '')
-    desc=str(r.get('description') or '')
-    project_ok=bool(p and p not in ('unknown','other','none'))
-    trade_ok=bool(trades); cpv_ok=bool(cpv)
-    textual=int(len(title)>=10)+int(len(desc)>=40)
-    conf=score01(r)
-    if project_ok and trade_ok and cpv_ok and textual>=1 and conf>=.70: status='CONFIDENT'
-    elif (project_ok and trade_ok) or ((project_ok or trade_ok) and cpv_ok): status='REVIEW'
-    else: status='UNKNOWN'
-    return status, {'project_type':project_ok,'trade':trade_ok,'cpv':cpv_ok,'textual_evidence':textual,'confidence':round(conf,3)}
+import sys
+sys.path.insert(0, str(ROOT))
+from intelligence.evidence import classify_evidence as evidence_gate
 
 records=load(REAL/'ted_live_enriched.json',[])
 if not isinstance(records,list) or len(records)<100: raise SystemExit('Audit layer requires >=100 enriched records.')

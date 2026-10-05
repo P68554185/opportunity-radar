@@ -53,35 +53,9 @@ def val(r,*ks,default=""):
 def arr(v):
     return v if isinstance(v,list) else ([] if v in (None,"") else [v])
 
-def score01(r):
-    try:
-        x=float(val(r,"confidence","score","opportunity_score",default=0))
-        return min(1,max(0,x/100 if x>1 else x))
-    except: return 0
-
-def classify_evidence(r):
-    p=str(val(r,"project_type","type",default="")).lower()
-    trades=arr(val(r,"trades","trade","classified_trades",default=[]))
-    cpv=str(val(r,"cpv","cpv_code","classification",default=""))
-    title=str(val(r,"title","name",default=""))
-    desc=str(val(r,"description","text","summary",default=""))
-    project_ok=bool(p and p not in ("unknown","other","none"))
-    trade_ok=bool(trades)
-    cpv_ok=bool(cpv)
-    textual=(len(title)>=10)+(len(desc)>=40)
-    conf=score01(r)
-
-    # v0.8.4: stricter gate. Both semantic dimensions are required for CONFIDENT.
-    if project_ok and trade_ok and cpv_ok and textual >= 1 and conf >= .70:
-        status="CONFIDENT"
-    elif (project_ok and trade_ok) or ((project_ok or trade_ok) and cpv_ok):
-        status="REVIEW"
-    else:
-        status="UNKNOWN"
-    return status, {
-        "project_type":project_ok, "trade":trade_ok, "cpv":cpv_ok,
-        "textual_evidence":int(textual), "confidence":round(conf,3)
-    }
+import sys
+sys.path.insert(0, str(ROOT))
+from intelligence.evidence import classify_evidence
 
 evaluated=[]
 for r in records:

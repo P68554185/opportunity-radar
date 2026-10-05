@@ -33,3 +33,8 @@ class DevStore:
             self.db.execute("INSERT OR IGNORE INTO project_events(project_id,event_key) VALUES(?,?)",
                             (project.project_id,ek))
         self.db.commit()
+
+    def load_projects(self):
+        from engine import Project
+        return [Project(**json.loads(row[0])) for row in
+                self.db.execute("SELECT payload_json FROM projects ORDER BY project_id")]
