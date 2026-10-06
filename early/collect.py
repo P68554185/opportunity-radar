@@ -136,7 +136,11 @@ def collect():
                 if discovery["adapter"]=="review_queue":
                     report["review_queue"].append({"source_url":url,"reason":"needs_dated_source_adapter"})
                     continue
-                candidate,digest=client.read(url)
+                try:
+                    candidate,digest=client.read(url)
+                except Exception as exc:
+                    report["review_queue"].append({"source_url":url,"reason":"candidate_fetch_failed","detail":str(exc)[:180]})
+                    continue
                 date_match=re.search(r"München,\s*(\d{2})\.(\d{2})\.(\d{4})",candidate.text)
                 if not date_match:
                     report["review_queue"].append({"source_url":url,"reason":"unproven_publication_date"}); continue

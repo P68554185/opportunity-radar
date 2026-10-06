@@ -1,7 +1,7 @@
 "use strict";
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const TRADE_NAMES={insulation:"Dämmung",fencing:"Zäune & Geländer",electrical:"Elektro",hvac:"Heizung, Lüftung & Klima",plumbing:"Sanitär",drywall:"Trockenbau",painting:"Malerarbeiten",flooring:"Boden & Fliesen",roof:"Dach",windows_doors:"Fenster & Türen",facade:"Fassade",earthworks:"Erdarbeiten & Tiefbau",structural:"Rohbau",landscaping:"Garten- & Landschaftsbau",fire_protection:"Brandschutz",elevator:"Aufzüge",demolition:"Abbruch",roadworks:"Straßenbau",sewer_pipe:"Kanalbau",railworks:"Gleisbau",solar_energy:"Photovoltaik",scaffolding:"Gerüstbau",metalwork:"Metallbau",steelwork:"Stahlbau",screed:"Estrich",building_automation:"Gebäudeautomation",industrial_doors:"Industrietore",medical_technology:"Medizintechnik",elevators:"Aufzüge",building_services:"Gebäudetechnik",plastering:"Putzarbeiten",finishing:"Ausbau"};
-const PHASES={project_announced:"Bauvorhaben angekündigt",idea:"Projektidee",political_decision:"Beschluss gefasst",funding:"Förderung beschlossen",prior_information:"Ausschreibung angekündigt",object_planning:"In Planung",specialist_planning:"Fachplanung",execution_planning:"Ausführungsplanung",tender:"In Ausschreibung",award:"Bereits vergeben"};
+const PHASES={procurement:"Vergaben veröffentlicht",project_announced:"Bauvorhaben angekündigt",idea:"Projektidee",political_decision:"Beschluss gefasst",funding:"Förderung beschlossen",prior_information:"Ausschreibung angekündigt",object_planning:"In Planung",specialist_planning:"Fachplanung",execution_planning:"Ausführungsplanung",tender:"In Ausschreibung",award:"Bereits vergeben"};
 const EARLY=new Set(["project_announced","idea","political_decision","funding","prior_information","object_planning","specialist_planning","execution_planning"]);
 const norm=s=>String(s||"").toLocaleLowerCase("de").trim().replace(/\s+/g," ");
 const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};
@@ -43,10 +43,16 @@ $("loadMore").addEventListener("click",()=>{limit+=20;render()});
 $("feed").addEventListener("click",async event=>{
  const button=event.target.closest("[data-watch]");if(!button)return;
  const id=button.dataset.watch;button.disabled=true;
- if(account){try{await api("watches/"+encodeURIComponent(id),saved.has(id)?"DELETE":"PUT")}catch(error){$("profileMessage").textContent=error.message;button.disabled=false;return}}
- saved.has(id)?saved.delete(id):saved.add(id);
+ const record=records.find(r=>r.id===id),watched=record?watchIds(record):[id].filter(key=>saved.has(key));
+ if(account){try{
+  if(watched.length){for(const key of watched)await api("watches/"+encodeURIComponent(key),"DELETE")}
+  else await api("watches/"+encodeURIComponent(id),"PUT");
+ }catch(error){$("profileMessage").textContent=error.message;button.disabled=false;return}}
+ if(watched.length){for(const key of watched)saved.delete(key)}else saved.add(id);
  if(!account)persist("bauradar.saved.v1",[...saved]);render();
 });
+function watchIds(record){return [record.id,...(record.aliases||[])].filter(id=>saved.has(id))}
+function hasWatch(record){return watchIds(record).length>0}
 function selectedTrades(record){
  const t=record.trades||[];
  return profile.trades.length?t.filter(x=>profile.trades.includes(x)):t;
@@ -56,17 +62,17 @@ function projectHistory(record){
  if(events.length<2)return "";
  const rows=events.map(event=>{
   const url=sourceLink(event.source_url);
-  return `<li><time>${esc(dateLabel(event.published))}</time><span>${esc(PHASES[event.phase]||"Projektmeldung")}</span>${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Quelle ↗</a>`:""}</li>`;
+  return `<li><time>${esc(dateLabel(event.published))}</time><span>${esc(PHASES[event.phase]||"Projektmeldung")}</span><span class="history-title">${esc(event.title||"")}</span>${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Quelle ↗</a>`:""}</li>`;
  }).join("");
  return `<details class="project-history"><summary>Entwicklung des Bauvorhabens ansehen</summary><ol>${rows}</ol><p>Frühere öffentliche Meldungen zum Projekt. Vergabezeiträume bitte in der aktuellen Quelle prüfen.</p></details>`;
 }
 function card(record){
- const early=EARLY.has(record.phase),url=sourceLink(record.source_url),watch=saved.has(record.id);
+ const early=EARLY.has(record.phase),url=sourceLink(record.source_url),watch=hasWatch(record);
  const trades=selectedTrades(record).slice(0,6);
  const priority=record.phase==="award"?"Zur Marktbeobachtung":early?"Frühzeitig Kontakt aufnehmen":record.phase==="tender"?"Unterlagen jetzt prüfen":"Projektphase klären";
  return `<article class="project-card"><div class="card-top"><span class="phase ${early?"early":record.phase==="tender"?"tender":""}">${esc(PHASES[record.phase]||"Phase noch offen")}</span><span class="priority">${esc(priority)}</span></div>
  <h3>${esc(record.title)}</h3><p class="location">${esc(record.city||"Projektort noch offen")}${record.region?" · "+esc(record.region):""}</p>
- <dl class="facts"><div><dt>Auftraggeber</dt><dd>${esc(record.authority||"Noch nicht bekannt")}</dd></div><div><dt>Ausschreibung</dt><dd>${record.phase==="tender"?"Bereits veröffentlicht · Frist in der Quelle prüfen":record.phase==="award"?"Auftrag bereits vergeben":"Zeitraum noch unbekannt"}</dd></div><div><dt>Veröffentlicht</dt><dd>${esc(dateLabel(record.published))}</dd></div></dl>
+ <dl class="facts"><div><dt>Auftraggeber</dt><dd>${esc(record.authority||"Noch nicht bekannt")}</dd></div><div><dt>Ausschreibung</dt><dd>${record.phase==="tender"?"Bereits veröffentlicht · Frist in der Quelle prüfen":record.phase==="award"?"Auftrag bereits vergeben":record.phase==="procurement"?"Einzelne Vergabemeldungen und Fristen prüfen":"Zeitraum noch unbekannt"}</dd></div><div><dt>Veröffentlicht</dt><dd>${esc(dateLabel(record.published))}</dd></div></dl>
  <div class="trade-chips">${trades.map(t=>`<span>${esc(TRADE_NAMES[t]||t)}</span>`).join("")}</div>
  <p class="trade-note">${record.trade_basis==="project_type_expected"?"Mögliche Gewerke aus der Projektart; konkrete Lose noch offen.":"Gewerke aus der Vergabemeldung abgeleitet."}</p>
  <div class="action"><strong>Ihr nächster Schritt</strong>${esc(record.next_action||"Details beim Auftraggeber oder in der Quelle prüfen.")}</div>
@@ -77,11 +83,11 @@ function render(){
  const query=norm($("search").value),phase=$("phaseFilter").value;
  const rows=records.filter(r=>(!profile.trades.length||selectedTrades(r).length)
   &&(profile.locationMode!=="city"||norm(r.city)===norm(profile.city))
-  &&(view!=="early"||EARLY.has(r.phase))&&(view!=="saved"||saved.has(r.id))
+  &&(view!=="early"||EARLY.has(r.phase))&&(view!=="saved"||hasWatch(r))
   &&(!phase||r.phase===phase)&&(!query||norm([r.title,r.city,r.authority].join(" ")).includes(query)))
   .sort((a,b)=>Number(b.phase!=="award")-Number(a.phase!=="award")||Number(EARLY.has(b.phase))-Number(EARLY.has(a.phase))||String(b.published).localeCompare(String(a.published)));
  $("resultCount").textContent=rows.length+" passende "+(rows.length===1?"Chance":"Chancen")+(profile.locationMode==="city"?" in "+profile.city:" in Deutschland");
- $("savedCount").textContent=saved.size;
+ $("savedCount").textContent=new Set([...saved].map(id=>records.find(r=>r.id===id||(r.aliases||[]).includes(id))?.id||id)).size;
  $("feed").innerHTML=rows.length?rows.slice(0,limit).map(card).join(""):`<p class="empty">${view==="saved"?"Noch keine passenden Projekte in Ihrer Merkliste. Wählen Sie bei einem Projekt „Beobachten“.":"Keine passenden Projekte gefunden. Erweitern Sie Ihr Suchgebiet oder wählen Sie weitere Gewerke."}</p>`;
  $("loadMore").hidden=rows.length<=limit;
 }

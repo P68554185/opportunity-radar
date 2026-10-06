@@ -9,3 +9,5 @@
 .project-history li{padding:8px 0;display:flex;flex-wrap:wrap;gap:6px 12px;border-bottom:1px solid var(--line)}
 .project-history time{font-weight:600}.project-history a{margin-left:auto;min-height:32px}
 .project-history p{color:#65786d;font-size:12px}
+
+.project-history .history-title{flex-basis:100%;overflow-wrap:anywhere}

@@ -38,7 +38,7 @@ def build():
         if not links: continue
         early_ids={p["source_ids"][0] for p in links}
         later_ids={p["source_ids"][1] for p in links}
-        timelines.append({"master_project_id":master.project_id,
+        timelines.append({"master_project_id":master.project_id,"title":master.canonical_name,
             "history":history([e for e in events if e["source_id"] in early_ids]+
                               [n for n in notices if n["source_id"] in later_ids])})
     report={"matching_version":VERSION,"active_early_signals":len(active),
