@@ -2,7 +2,7 @@
 
 Stand: 06.10.2026, Datenlauf 09:56 UTC. Qualität und Funktionsnachweise haben Vorrang vor Terminen.
 
-## Aktueller Entwicklungsblock: EARLY / Lifecycle
+## Aktueller Entwicklungsblock: Dresden / kommunale Frühquellen / Umkreis
 
 PR #8 ist integriert. Offizielle Quellen werden reproduzierbar aktualisiert; neue Fundstellen
 ohne belegtes Datum oder unterstützte Struktur bleiben in der internen Prüfung.
@@ -12,7 +12,39 @@ Bestätigte Ausschreibungen erscheinen als ein Projekt mit Quellenhistorie und k
 PR #9 ergänzt die dauerhaft erhaltene Historie und Merkliste-Verweise bei einem wechselnden TED-Fenster.
 Auch diese Korrektur ist integriert, neu aufgenommen und nach Veröffentlichung im Browser geprüft.
 
-## Messbarer Datenstand
+## Dresdner Pilot – integriert, Veröffentlichung läuft
+
+[PR #10](https://github.com/P68554185/opportunity-radar/pull/10) ist integriert.
+Vier datierte kommunale Bekanntmachungen erschließen Wohnbebauung Am Lehmberg/Wirtschaftsweg,
+Quartier Ostra-Allee, Königsbrücker Straße Nord und das Wohnquartier Kötzschenbroder/Pieschener Straße.
+Sie werden als Bauleitplanung angezeigt, nicht als zugesagte Bauausführung oder bevorstehende Ausschreibung.
+Die Stadtplanungsbehörde wird als Verfahrensstelle ausgewiesen, nicht als vermeintlicher Bauherr.
+
+Amtliche Referenzen: 377 Bebauungsplangebiete, 157 Vorhaben-/Erschließungsplangebiete und
+67.590 aktive, als Dresden ausgewiesene Adresspunkte. Diese Referenzobjekte sind keine zusätzlichen Opportunities.
+Die WFS-Antwort meldet keine überprüfbare Gesamtzahl; eine vollständige kommunale Abdeckung wird deshalb nicht behauptet.
+Lizenz: Datenlizenz Deutschland – Namensnennung 2.0; Landeshauptstadt Dresden / Quelle: Geodaten Sachsen.
+
+Der Nutzer wählt seine konkrete Dresdner Betriebsadresse lokal aus. Der Umkreis zeigt nur Projekte,
+deren belegtes Plangebiet vollständig innerhalb des Radius liegt. Unbekannte Orte und
+Gebiete am Radiusrand werden ausgeschlossen; die Ortssuche bleibt die breitere Alternative.
+Entfernung ist ausdrücklich ungefähre Luftlinie zu einem Plangebiet, keine Fahrstrecke oder genaue Baustellenadresse.
+Besucher-/Auftraggeberadressen werden nicht als Bauort übernommen.
+
+Aktueller geprüfter Pilot-Snapshot: 60 EARLY-Signale / 60 Masterprojekte, davon vier Dresdner
+kommunale Frühprojekte mit belegtem Standort; 705 Kundenkarten auf dem TED-Snapshot 09:56 UTC.
+Die laufende Neuaufnahme kann TED-/Feedzahlen verändern.
+63 Kern- und 28 Backendtests sowie die realen Browser-/Mobil-, Kontotrennungs-,
+PostgreSQL-Neustart/Restore- und Dockerprüfungen sind erfolgreich:
+[Push-CI](https://github.com/P68554185/opportunity-radar/actions/runs/37448961789),
+[PR-CI](https://github.com/P68554185/opportunity-radar/actions/runs/37449024652).
+
+Pages-Veröffentlichung und neuer Hauptbranch-Datenlauf werden gerade geprüft.
+Render benötigt den üblichen manuellen Betreiber-Deploy; die Aufforderung wurde gestellt.
+Danach folgt die erste kontrollierte Verfünffachung auf 10.000 aktuelle TED-Meldungen.
+Qualifizierung, unsichere Lifecycle-Fälle und unbekannte Standorte bleiben unverändert konservativ.
+
+## Vorheriger verifizierter Datenstand – EARLY-/Lifecycle-Abschluss
 
 | Kennzahl | Geprüfte Baseline | Aktuell |
 |---|---:|---:|
@@ -57,13 +89,14 @@ Prozentwerte sind begründete Planungsschätzungen, keine Messung von Datenquali
 | Grundarchitektur / Datenmodell | 100 % | Bestehende Architektur weiterverwendet, Historie und Quellenjournal ergänzt |
 | Live-Ingestion | 100 % | 2.000 TED, täglicher Lauf; Quellenrefresh mit sicherem Rückfall |
 | Klassifizierung / Datenqualität | 90 % | Evidenzgate und Regressionen; unabhängige Bewertungsmenge fehlt |
-| EARLY-Signale | 65 % | 56 Signale, acht Quellen; weitere Kommunen/Planungsquellen fehlen |
+| EARLY-Signale | 68 % | 60 Signale, zusätzliche kommunale Planungsquellen; regionale Breite fehlt |
 | Lifecycle-Verknüpfung | 60 % | Erklärbare Engine, echter rückblickender Projektfall; breitere Validierung fehlt |
-| Kundenfeed | 88 % | Geprüfte Karten, belegte Lose zusammengeführt; weitere regionale Relevanzarbeit |
+| Kundenfeed | 90 % | Geprüfte Karten, belegte Lose zusammengeführt; weitere regionale Relevanzarbeit |
 | Account / Pilotbetrieb | 65 % | Render/Neon, geschlossene Konten und Redeploy-Persistenz geprüft; produktive Backups offen |
-| Handwerker-UX | 70 % | Einfache mobile Karten, Phase, Handlung und aufklappbare Historie; Kundenfeedback fehlt |
+| Handwerker-UX | 76 % | Einfache mobile Karten, Phase, Handlung und aufklappbare Historie; Kundenfeedback fehlt |
 
-Gesamt Richtung Pilot: **ca. 80 % Planungsschätzung** (vorher ca. 76 %).
+Gesamt Richtung Pilot: **ca. 82 % Planungsschätzung** (vorher ca. 80 %).
+Der Fortschritt beruht auf reproduzierbaren kommunalen Quellen und abgenommenen Standort-/Radiusabläufen; breites Kundenfeedback und Produktionsbetrieb fehlen.
 Kein verkaufsfähiger Produktionsbetrieb zugesichert.
 
 ## Abnahmen
@@ -80,9 +113,8 @@ Kein verkaufsfähiger Produktionsbetrieb zugesichert.
 
 ## Blocker und nächste Schritte
 
-1. EARLY-Abdeckung für eine konkrete Pilotregion um kommunale Planung/Projektbeschlüsse erweitern;
-   unabhängige reale Fallmenge für Lifecycle-Prüfung aufbauen.
-2. Geprüfte Projektkoordinaten und Standort-/Radiusrelevanz vervollständigen, anschließend Nutzen mit echten Betrieben testen.
+1. Dresden-Veröffentlichung und Render-Deploy abnehmen; anschließend kontrollierte Datenvergrößerung.
+2. Weitere kommunale Fundstellen prüfen, zusätzliche Projekte verorten und Nutzen mit echten Dresdner Betrieben testen. Ein neuer bestätigter Dresdner Lifecycle-Fall ist noch nicht nachgewiesen.
 3. Produktive Backup-Zeitplanung und verschlüsselte Ablage einrichten; technische Wiederherstellung in CI bereits geprüft.
 4. Öffentliches Signup, E-Mail, Passwort-Reset und Bezahlung folgen auf Betreiberwunsch erst nach funktionierender Produktvalidierung.
    Rechtstexte und Angebot/Preis benötigen Betreiberentscheidungen.
