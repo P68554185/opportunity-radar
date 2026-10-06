@@ -25,7 +25,7 @@ def build():
         "lifecycle_links":lifecycle.get("confirmed_notice_links",0),
         "lifecycle_confirmed_projects":lifecycle.get("confirmed_project_cases",0),
         "historical_confirmed_projects":historical.get("confirmed_project_cases",0),
-        "live_early_lead_measured":False,
+        "live_early_lead_measured":bool(lifecycle.get("live_observed_lead_days")),
         "last_sync":report.get("run_at"),"ted_run_status":report.get("status","never"),
         "ted_errors":len(report.get("errors",[])),"ted_requested":report.get("requested",0),
         "quality_confident":gate.get("customer_facing_confident",0),

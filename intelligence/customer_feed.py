@@ -25,7 +25,7 @@ def collapse_confirmed(records,timelines):
         rows=[by_id[key] for key in ids if key in by_id]
         notices=[r for r in rows if r["quality_status"]=="CONFIDENT"]
         if not notices: continue
-        latest=max(notices,key=lambda r:r.get("published") or "")
+        latest=max(notices,key=lambda r:(r.get("published") or "",r["source_id"]))
         phases={r.get("phase") for r in notices}
         merged.append(dict(latest,id=timeline["master_project_id"],
             master_project_id=timeline["master_project_id"],title=timeline["title"],

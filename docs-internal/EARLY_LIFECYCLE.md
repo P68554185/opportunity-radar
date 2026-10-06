@@ -57,3 +57,17 @@ gold dataset, no guarantee of first-tender coverage. Network failures retain pre
 verified sources and are reported internally rather than fabricated as successful refresh.
 Render requires deployment of the extended source host allowlist before accepting
 Hamburg cards; the previous server safely retains its last validated feed meanwhile.
+
+## Persistence and customer grouping
+Confirmed qualified TED notices are retained in a public evidence archive with
+the evidence policy version and first tracked observation time. Future runs
+re-evaluate archived and current notice facts; publication history survives the
+rolling acquisition window. Historical facts are not automatically reintroduced
+as current customer opportunities.
+The observation ledger records now, never a historical publication date. A
+tracked lead is reported only where a later publication follows that recorded
+observation; it is still a lead to that notice, not proof of the first tender.
+Confirmed notices collapse to one customer master card with a union of actual
+qualified notice trades and source links; old watched notice IDs remain usable.
+Mixed tender/award lots are labelled as published procurements rather than
+incorrectly marking the entire project awarded.
