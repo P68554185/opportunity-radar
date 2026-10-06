@@ -3,9 +3,11 @@ import os
 from pathlib import Path
 import secrets
 import tempfile
+import sys
 from urllib.parse import urlparse, urlunparse
 import psycopg
 from psycopg import sql
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from backend.postgres_backup import backup, restore
 from backend.app import SCHEMA
 
