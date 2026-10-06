@@ -1,5 +1,5 @@
 import unittest
-from early.collect import Text, safe_url, validate_reviewed
+from early.collect import Text, safe_url, validate_reviewed, article_url
 
 class CollectionTests(unittest.TestCase):
     def test_html_preserves_measure_lines_and_ignores_script(self):
@@ -46,3 +46,11 @@ class CollectionTests(unittest.TestCase):
         self.assertEqual(len(validate_reviewed(doc,"Gymnasium Hochrad")),1)
         with self.assertRaises(ValueError):
             validate_reviewed(dict(doc,published="2026-08-19"),"Gymnasium Hochrad")
+
+    def test_discovery_accepts_canonical_paths_with_or_without_trailing_slash(self):
+        for url in ("https://example.org/internet/stmf/aktuelles/pressemitteilungen/26385",
+                    "https://example.org/internet/stmf/aktuelles/pressemitteilungen/26385/",
+                    "https://example.org/press/pressemitteilungen/neubau-schule-1210668"):
+            self.assertTrue(article_url(url,"example.org"))
+        self.assertFalse(article_url("https://example.org/kommunaler_finanzausgleich/hochbauten/","example.org"))
+        self.assertFalse(article_url("https://evil.org/pressemitteilungen/26385","example.org"))

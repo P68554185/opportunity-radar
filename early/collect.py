@@ -77,6 +77,10 @@ def safe_url(url,host):
     p=urlparse(url)
     return p.scheme=="https" and p.hostname==host and not p.username and not p.password and p.port in (None,443)
 
+def article_url(url,host):
+    return safe_url(url,host) and bool(re.search(
+        r"/pressemitteilungen/(?:\d+|[^/]+-\d+)/?$",urlparse(url).path))
+
 class Collector:
     def __init__(self,limits):
         self.limits=limits; self.robots={}; self.last={}; self.opener=build_opener(SameHostRedirect()); self.started=time.monotonic()
@@ -155,8 +159,8 @@ def collect():
             report["sources"].append({"source_url":url,"status":"verified","verified_from":verified_from,"content_sha256":digest,"records":len(events)})
         except Exception as exc:
             report["sources"].append({"source_url":url,"status":"refresh_failed_retained","reason":type(exc).__name__,"detail":str(exc)[:180]})
-    seen={d["source_url"] for d in manifest["documents"]}
-    seen.update(r["source_url"] for r in json.loads((ROOT/"real_data/bavaria_verified_events.json").read_text()))
+    seen={d["source_url"].rstrip("/") for d in manifest["documents"]}
+    seen.update(r["source_url"].rstrip("/") for r in json.loads((ROOT/"real_data/bavaria_verified_events.json").read_text()))
     budget=max(0,manifest["limits"]["maximum_documents"]-len(manifest["documents"])-len(manifest["discovery"]))
     for discovery in manifest["discovery"]:
         try:
@@ -171,10 +175,10 @@ def collect():
             links=sorted({target(link) for link in page.links
                 if re.search(r"hochbau|krankenhaus|kinder|schul|förderbescheid|neubau|bauvorhaben",page.link_titles.get(link,""),re.I)},reverse=True)
             for url in links:
-                if url in seen or not safe_url(url,discovery["host"]): continue
+                if url.rstrip("/") in seen or not safe_url(url,discovery["host"]): continue
                 if not re.search(r"/pressemitteilungen/(?:\d+/|[^/]+-\d+$)",url): continue
                 if budget<=0: break
-                budget-=1; seen.add(url)
+                budget-=1; seen.add(url.rstrip("/"))
                 if discovery["adapter"]=="review_queue":
                     report["review_queue"].append({"source_url":url,"reason":"needs_dated_source_adapter"})
                     continue
@@ -195,6 +199,8 @@ def collect():
                         report["review_queue"].append({"source_url":url,"reason":"construction_or_municipality_not_proven"}); continue
                     event["body"]="Öffentliche Fördermeldung zu einer konkret benannten Baumaßnahme."
                     indexed[event["source_id"]]=event; accepted.append(event)
+                if not accepted:
+                    report["review_queue"].append({"source_url":url,"reason":"unsupported_or_unqualified_document_layout"})
                 if accepted:
                     report["sources"].append({"source_url":url,"status":"verified","content_sha256":digest,"records":len(accepted)})
         except Exception as exc:
