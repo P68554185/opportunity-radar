@@ -1,233 +1,233 @@
 {
-  "live_records": 2000,
-  "classified_opportunities": 1929,
-  "classification_rate_pct": 96.5,
+  "live_records": 10000,
+  "classified_opportunities": 9677,
+  "classification_rate_pct": 96.8,
   "bands": {
-    "UPCOMING": 1155,
-    "HOT": 320,
-    "EARLY": 454
+    "UPCOMING": 5538,
+    "HOT": 1682,
+    "EARLY": 2457
   },
   "project_types": [
     [
       "unclassified_project",
-      681
+      3574
     ],
     [
       "school",
-      304
+      1489
     ],
     [
       "rail",
-      173
+      778
     ],
     [
       "water_wastewater",
-      83
+      369
     ],
     [
       "industrial",
-      67
-    ],
-    [
-      "university_research",
-      64
-    ],
-    [
-      "civil_engineering",
-      60
-    ],
-    [
-      "hospital",
-      60
+      340
     ],
     [
       "bridge",
-      60
+      333
+    ],
+    [
+      "civil_engineering",
+      328
+    ],
+    [
+      "university_research",
+      295
+    ],
+    [
+      "hospital",
+      280
     ],
     [
       "road",
-      54
-    ],
-    [
-      "kindergarten",
-      46
-    ],
-    [
-      "fire_station",
-      45
+      268
     ],
     [
       "administration",
-      44
+      244
     ],
     [
       "sports_leisure",
-      40
+      242
     ],
     [
-      "energy",
-      27
+      "kindergarten",
+      194
     ],
     [
-      "public_space",
-      26
-    ],
-    [
-      "infrastructure",
-      24
-    ],
-    [
-      "residential",
-      23
+      "fire_station",
+      186
     ],
     [
       "public_building",
-      21
+      180
+    ],
+    [
+      "energy",
+      147
+    ],
+    [
+      "public_space",
+      123
+    ],
+    [
+      "residential",
+      97
     ],
     [
       "care_social",
-      20
+      83
+    ],
+    [
+      "infrastructure",
+      70
     ],
     [
       "commercial",
-      7
+      57
     ]
   ],
   "trades": [
     [
       "structural",
-      327
+      1743
     ],
     [
       "electrical",
-      294
+      1411
     ],
     [
       "windows_doors",
-      266
+      1386
     ],
     [
       "hvac",
-      196
-    ],
-    [
-      "railworks",
-      176
+      973
     ],
     [
       "earthworks",
-      168
+      855
+    ],
+    [
+      "railworks",
+      765
     ],
     [
       "flooring",
-      145
+      711
     ],
     [
       "demolition",
-      122
+      653
     ],
     [
       "painting",
-      114
+      640
     ],
     [
       "roof",
-      111
+      543
     ],
     [
       "insulation",
-      91
-    ],
-    [
-      "plumbing",
-      82
+      507
     ],
     [
       "roadworks",
-      77
+      439
+    ],
+    [
+      "plumbing",
+      401
     ],
     [
       "facade",
-      68
+      359
     ],
     [
       "landscaping",
-      67
-    ],
-    [
-      "plastering",
-      43
+      314
     ],
     [
       "drywall",
-      42
+      303
+    ],
+    [
+      "plastering",
+      205
     ],
     [
       "fire_protection",
-      41
+      191
     ],
     [
       "elevator",
-      27
+      134
     ],
     [
       "finishing",
-      18
-    ],
-    [
-      "solar_energy",
-      16
-    ],
-    [
-      "fencing",
-      14
+      96
     ],
     [
       "sewer_pipe",
-      12
+      85
+    ],
+    [
+      "solar_energy",
+      82
+    ],
+    [
+      "fencing",
+      74
     ],
     [
       "building_services",
-      9
+      61
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 44
+      "count": 241
     },
     {
       "from": 60,
       "to": 69,
-      "count": 444
+      "count": 2395
     },
     {
       "from": 70,
       "to": 79,
-      "count": 498
+      "count": 2387
     },
     {
       "from": 80,
       "to": 89,
-      "count": 851
+      "count": 4154
     },
     {
       "from": 90,
       "to": 99,
-      "count": 67
+      "count": 356
     },
     {
       "from": 100,
       "to": 100,
-      "count": 25
+      "count": 144
     }
   ],
   "quality_flags": {
-    "project_type_only": 236,
-    "trade_only": 681,
-    "project_and_trade": 1012,
-    "opportunity_score_85_plus": 320
+    "project_type_only": 1074,
+    "trade_only": 3574,
+    "project_and_trade": 5029,
+    "opportunity_score_85_plus": 1682
   },
   "sample_top": [
     {
@@ -284,21 +284,21 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/686493-2026"
     },
     {
-      "source_id": "TED-683855-2026",
-      "title": "Freianlagen Sem I und Infra",
-      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
-      "city": "Gießen",
-      "project_type": "public_space",
+      "source_id": "TED-684848-2026",
+      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
+      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
+      "city": "Erlangen",
+      "project_type": "school",
       "trades": [
-        "landscaping",
-        "earthworks",
-        "demolition",
-        "roadworks"
+        "flooring",
+        "windows_doors",
+        "electrical",
+        "earthworks"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026"
     },
     {
       "source_id": "TED-683210-2026",
@@ -318,23 +318,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/683210-2026"
     },
     {
-      "source_id": "TED-684848-2026",
-      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
-      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
-      "city": "Erlangen",
-      "project_type": "school",
-      "trades": [
-        "flooring",
-        "windows_doors",
-        "electrical",
-        "earthworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026"
-    },
-    {
       "source_id": "TED-684925-2026",
       "title": "BASF-KVT, Modul 50, Y109 - Büro- und Sozialgebäude in Modulbauweise",
       "authority": "BASF SE",
@@ -350,6 +333,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/684925-2026"
+    },
+    {
+      "source_id": "TED-683855-2026",
+      "title": "Freianlagen Sem I und Infra",
+      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+      "city": "Gießen",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "demolition",
+        "roadworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026"
     },
     {
       "source_id": "TED-681697-2026",

@@ -3,9 +3,273 @@
   "active_early_signals": 60,
   "active_master_projects": 60,
   "historical_signals": 3,
-  "qualified_procurement_records": 652,
-  "archived_confirmed_notices": 3,
+  "qualified_procurement_records": 3166,
+  "archived_confirmed_notices": 5,
   "links": [
+    {
+      "version": "2026-10-06-identity-v1",
+      "status": "candidate",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "grund"
+        ],
+        "same_authority": true
+      },
+      "blockers": [],
+      "source_ids": [
+        "REAL-BY-6dee7f3731fd66ae",
+        "TED-563108-2026"
+      ],
+      "publication_interval_days": 87,
+      "interval_endpoint": "award",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "master_project_id": "PRJ-0B1C44E784",
+      "retrospective": false
+    },
+    {
+      "version": "2026-10-06-identity-v1",
+      "status": "candidate",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "grund"
+        ],
+        "same_authority": true
+      },
+      "blockers": [],
+      "source_ids": [
+        "REAL-BY-6dee7f3731fd66ae",
+        "TED-560381-2026"
+      ],
+      "publication_interval_days": 87,
+      "interval_endpoint": "award",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "master_project_id": "PRJ-0B1C44E784",
+      "retrospective": false
+    },
+    {
+      "version": "2026-10-06-identity-v1",
+      "status": "candidate",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "grund"
+        ],
+        "same_authority": true
+      },
+      "blockers": [],
+      "source_ids": [
+        "REAL-BY-6dee7f3731fd66ae",
+        "TED-560254-2026"
+      ],
+      "publication_interval_days": 87,
+      "interval_endpoint": "award",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "master_project_id": "PRJ-0B1C44E784",
+      "retrospective": false
+    },
+    {
+      "version": "2026-10-06-identity-v1",
+      "status": "candidate",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "grund"
+        ],
+        "same_authority": true
+      },
+      "blockers": [],
+      "source_ids": [
+        "REAL-BY-6dee7f3731fd66ae",
+        "TED-562451-2026"
+      ],
+      "publication_interval_days": 87,
+      "interval_endpoint": "award",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "master_project_id": "PRJ-0B1C44E784",
+      "retrospective": false
+    },
+    {
+      "version": "2026-10-06-identity-v1",
+      "status": "candidate",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "grund"
+        ],
+        "same_authority": true
+      },
+      "blockers": [],
+      "source_ids": [
+        "REAL-BY-6dee7f3731fd66ae",
+        "TED-561079-2026"
+      ],
+      "publication_interval_days": 87,
+      "interval_endpoint": "award",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "master_project_id": "PRJ-0B1C44E784",
+      "retrospective": false
+    },
+    {
+      "version": "2026-10-06-identity-v1",
+      "status": "candidate",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "grund"
+        ],
+        "same_authority": true
+      },
+      "blockers": [],
+      "source_ids": [
+        "REAL-BY-6dee7f3731fd66ae",
+        "TED-562662-2026"
+      ],
+      "publication_interval_days": 87,
+      "interval_endpoint": "award",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "master_project_id": "PRJ-0B1C44E784",
+      "retrospective": false
+    },
+    {
+      "version": "2026-10-06-identity-v1",
+      "status": "candidate",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "grund"
+        ],
+        "same_authority": true
+      },
+      "blockers": [],
+      "source_ids": [
+        "REAL-BY-6dee7f3731fd66ae",
+        "TED-561720-2026"
+      ],
+      "publication_interval_days": 87,
+      "interval_endpoint": "award",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "master_project_id": "PRJ-0B1C44E784",
+      "retrospective": false
+    },
+    {
+      "version": "2026-10-06-identity-v1",
+      "status": "candidate",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "grund"
+        ],
+        "same_authority": true
+      },
+      "blockers": [],
+      "source_ids": [
+        "REAL-BY-6dee7f3731fd66ae",
+        "TED-562228-2026"
+      ],
+      "publication_interval_days": 87,
+      "interval_endpoint": "award",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "master_project_id": "PRJ-0B1C44E784",
+      "retrospective": false
+    },
+    {
+      "version": "2026-10-06-identity-v1",
+      "status": "candidate",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "grund"
+        ],
+        "same_authority": true
+      },
+      "blockers": [],
+      "source_ids": [
+        "REAL-BY-6dee7f3731fd66ae",
+        "TED-563255-2026"
+      ],
+      "publication_interval_days": 87,
+      "interval_endpoint": "award",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "master_project_id": "PRJ-0B1C44E784",
+      "retrospective": false
+    },
+    {
+      "version": "2026-10-06-identity-v1",
+      "status": "candidate",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "münchen"
+        ],
+        "same_authority": false
+      },
+      "blockers": [],
+      "source_ids": [
+        "EARLY-BY-KHP-20260721-06",
+        "TED-579228-2026"
+      ],
+      "publication_interval_days": 31,
+      "interval_endpoint": "prior_information",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "master_project_id": "PRJ-722DB2A362",
+      "retrospective": false
+    },
+    {
+      "version": "2026-10-06-identity-v1",
+      "status": "candidate",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "münchen"
+        ],
+        "same_authority": false
+      },
+      "blockers": [],
+      "source_ids": [
+        "EARLY-BY-KHP-20260721-06",
+        "TED-566614-2026"
+      ],
+      "publication_interval_days": 27,
+      "interval_endpoint": "prior_information",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "master_project_id": "PRJ-722DB2A362",
+      "retrospective": false
+    },
     {
       "version": "2026-10-06-identity-v1",
       "status": "candidate",
@@ -107,6 +371,56 @@
     },
     {
       "version": "2026-10-06-identity-v1",
+      "status": "confirmed",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "alsfeld",
+          "kreiskrankenhaus"
+        ],
+        "same_authority": true
+      },
+      "blockers": [],
+      "source_ids": [
+        "HIST-KKA-20230727",
+        "TED-586337-2026"
+      ],
+      "publication_interval_days": 1125,
+      "interval_endpoint": "tender",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "master_project_id": "PRJ-A36FC997D2",
+      "retrospective": true
+    },
+    {
+      "version": "2026-10-06-identity-v1",
+      "status": "confirmed",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "alsfeld",
+          "kreiskrankenhaus"
+        ],
+        "same_authority": true
+      },
+      "blockers": [],
+      "source_ids": [
+        "HIST-KKA-20230727",
+        "TED-554265-2026"
+      ],
+      "publication_interval_days": 1111,
+      "interval_endpoint": "tender",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "master_project_id": "PRJ-A36FC997D2",
+      "retrospective": true
+    },
+    {
+      "version": "2026-10-06-identity-v1",
       "status": "probable",
       "evidence": {
         "same_city": true,
@@ -144,6 +458,20 @@
           "title": "Neubau Kreiskrankenhaus Alsfeld"
         },
         {
+          "source_id": "TED-554265-2026",
+          "source_url": "https://ted.europa.eu/en/notice/-/detail/554265-2026",
+          "published": "2026-08-11+02:00",
+          "phase": "tender",
+          "title": "Neubau Kreiskrankenhaus Alsfeld, Metallbauarbeiten 1 (Aluminium Glasfassadenelemente), KKA"
+        },
+        {
+          "source_id": "TED-586337-2026",
+          "source_url": "https://ted.europa.eu/en/notice/-/detail/586337-2026",
+          "published": "2026-08-25+02:00",
+          "phase": "tender",
+          "title": "Neubau Kreiskrankenhaus Alsfeld, Metallbauarbeiten 1 (Aluminium Glasfassadenelemente), KKA"
+        },
+        {
           "source_id": "TED-660397-2026",
           "source_url": "https://ted.europa.eu/en/notice/-/detail/660397-2026",
           "published": "2026-09-25+02:00",
@@ -167,10 +495,10 @@
       ]
     }
   ],
-  "confirmed_notice_links": 3,
-  "confirmed_current_notice_links": 3,
+  "confirmed_notice_links": 5,
+  "confirmed_current_notice_links": 5,
   "confirmed_project_cases": 1,
-  "candidate_notice_links": 2,
+  "candidate_notice_links": 13,
   "live_observed_lead_days": [],
   "observed_lead_note": "Tracked observation to this notice; not necessarily the project's first tender.",
   "note": "Retrospective source dates do not demonstrate prospective BauRadar lead or first tender."
