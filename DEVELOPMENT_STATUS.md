@@ -10,8 +10,8 @@ Stand: 06.10.2026. Funktionsnachweise haben Vorrang vor Zielterminen.
 | Einfache Kundenoberfläche | veröffentlicht, Chromium geprüft | Quelle, Gewerk, Phase, Auftraggeber, nächste Handlung |
 | Kostenloses Backend | Render + Neon eingerichtet | Live-Check 37429224942 erfolgreich: Datenbank erreichbar, 690 geprüfte Feed-Einträge |
 | Betriebsprofile / Merkliste / Login | implementiert, SQLite/PostgreSQL und Browser geprüft | Registrierung öffentlich deaktiviert; kein live getestetes Kundenkonto |
-| Prozessneustart / Kontotrennung | zusätzliche Tests in Arbeit | Echter Neustart mit PostgreSQL; zwei Konten im Browser |
-| Automatischer Render-Feed | Umsetzung in Arbeit | Geprüfte Pages-Daten per Servercache übernehmen, ohne täglichen Redeploy |
+| Prozessneustart / Kontotrennung | CI erfolgreich | Echter Neustart mit PostgreSQL; zwei Konten im Browser; CI 37431562638 |
+| Automatischer Render-Feed | implementiert und integriert; Render-Redeploy ausstehend | Geprüfte Pages-Daten per Servercache übernehmen, ohne täglichen Redeploy |
 | Entfernung / Radius | offen | geprüfte Koordinaten und geographische Abdeckung |
 | E-Mail / Benachrichtigungen | offen | Verifizierung, Passwort-Reset, Versand und Opt-in |
 | Tarife / Bezahlung | offen | Nutzerentscheidung über Angebot/Preis und Zahlungsweg |
@@ -34,7 +34,7 @@ Live-Datenzahlen ändern sich mit erfolgreichen Pipeline-Läufen. Der Render-Liv
 Konservative Lifecycle-Verknüpfungen sind keine Garantie vollständiger Gebäudezusammenführung.
 
 ## Nächste Schritte
-1. Automatische Feed-Übernahme und zusätzliche PostgreSQL-/Browser-Kontotests integrieren und CI abnehmen.
+1. PR #5 integriert und vollständig geprüft (CI 37431562638): automatische Feed-Übernahme, Prozessneustart und Browser-Kontotrennung.
 2. Neue Backend-Version auf Render veröffentlichen und Live-Feed prüfen; manueller Nutzer-Redeploy erforderlich, solange kein sicherer Anbieterzugriff besteht.
 3. Geschlossenen Kontotest vorbereiten; keine öffentliche Registrierung vor Infrastruktur-/Datenschutz-Abnahme.
 4. PostgreSQL-Backup/Wiederherstellung und persistente Konten über echten Render-Redeploy prüfen.
@@ -46,8 +46,14 @@ Render Free und Neon Free haben Ruhephasen und Nutzungslimits; kein Produktions-
 Einrichtung und Nachweise: deploy/FREE_PILOT.md.
 
 ## Bereits integrierte Entwicklung
-PRs #1–#4: Datenmotor, Evidenzpolitik, Dublettenbereinigung, konservative Lifecycle-Regeln, einfache UI, Konto-Backend,
+PRs #1–#5: Datenmotor, Evidenzpolitik, Dublettenbereinigung, konservative Lifecycle-Regeln, einfache UI, Konto-Backend,
 PostgreSQL/TLS-Unterstützung, korrigierte CPV-Gewerke und phasengerechte nächste Handlung.
 Kern-, Feed-, SQLite-/PostgreSQL-, Browser- und Dockerprüfungen bestanden vor Integration.
 GitHub Actions veröffentlicht Pages nach erfolgreicher Live-Ingestion. Admin liegt außerhalb des öffentlichen Pages-Verzeichnisses.
 Kundendaten und Zugangsdaten dürfen nicht in Git, Artefakte oder öffentliche Logs gelangen.
+
+## Abnahme PR #5
+https://github.com/P68554185/opportunity-radar/pull/5 — integriert am 06.10.2026.
+https://github.com/P68554185/opportunity-radar/actions/runs/37431562638 — vollständige Prüfung erfolgreich.
+Neue Tests: Feed-Rückfall/Validierung, tatsächlicher PostgreSQL-Prozessneustart mit deaktivierter Registrierung nach Neustart, erneuter Login und zweites unabhängiges Browserkonto. Docker-Build erfolgreich.
+Noch kein Render-Redeploy dieser Version und kein Kontotest gegen die echte Neon-Datenbank. Keine öffentliche Registrierung freigeschaltet.
