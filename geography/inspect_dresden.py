@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 BASE="https://kommisdd.dresden.de/net3/public/ogc.ashx"
 results={}
-for kind,node in [("plans",489),("addresses",184)]:
+for kind,node in [("plans",489),("development_plans",404),("addresses",184)]:
     url=BASE+"?"+urlencode({"NodeId":node,"Service":"WFS","Request":"GetCapabilities"})
     try:
         with urlopen(Request(url,headers={"User-Agent":"BauRadar/1.0"}),timeout=30) as r:raw=r.read(4_000_001)
@@ -19,8 +19,8 @@ for kind,node in [("plans",489),("addresses",184)]:
         result={"types":types,"parameters":params,"version":root.get("version")}
         results[kind]=result;print(json.dumps({kind:result},ensure_ascii=False))
         name=types[0]["name"]
-        query={"NodeId":node,"Service":"WFS","Request":"GetFeature","Version":"2.0.0","TypeNames":name,"Count":1000 if kind=="plans" else 5,"SrsName":"urn:ogc:def:crs:EPSG::4326"}
-        with urlopen(Request(BASE+"?"+urlencode(query),headers={"User-Agent":"BauRadar/1.0"}),timeout=45) as response:raw=response.read(24_000_001)
+        query={"NodeId":node,"Service":"WFS","Request":"GetFeature","Version":"2.0.0","TypeNames":name,"Count":100000 if kind=="addresses" else 1000,"SrsName":"urn:ogc:def:crs:EPSG::4326"}
+        with urlopen(Request(BASE+"?"+urlencode(query),headers={"User-Agent":"BauRadar/1.0"}),timeout=45) as response:raw=response.read(64_000_001)
         doc=ET.fromstring(raw)
         features=[]
         for member in doc:
@@ -39,6 +39,9 @@ for kind,node in [("plans",489),("addresses",184)]:
             ys=[p[0] for p in points];xs=[p[1] for p in points]
             if not all(50<lat<52 and 12<lon<15 for lat,lon in points):raise ValueError("Unexpected CRS/axis")
             features.append({"id":feature.get("{http://www.opengis.net/gml/3.2}id"),"properties":properties,"bbox":[min(xs),min(ys),max(xs),max(ys)]})
+        if kind=="addresses":
+            features=[f for f in features if f["properties"].get("status")=="A"]
+            for f in features:f["properties"]={k:v for k,v in f["properties"].items() if k in ("adresse","plz_plz","plz_ort","adr_nr")}
         result["features"]=features;result["numberMatched"]=doc.get("numberMatched")
         print(json.dumps({"kind":kind,"count":len(features),"matched":doc.get("numberMatched"),"sample":features[:4],"candidates":[f for f in features if any(s in str(f["properties"]) for s in ["3065","3082","6066","3068","3028","3027 B","6058"])]},ensure_ascii=False))
     except Exception as exc:print(json.dumps({"kind":kind,"error":str(exc)}))
