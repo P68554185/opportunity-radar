@@ -23,12 +23,14 @@ from lifecycle.matching import norm
 
 USER_AGENT="BauRadar/1.0 (+https://p68554185.github.io/opportunity-radar/)"
 class Text(HTMLParser):
-    def __init__(self):
-        super().__init__(); self.parts=[]; self.links=[]; self.skip=0; self.publication_dates=[]; self.link_titles={}; self.current_link=None; self.link_text=[]
+    def __init__(self,source_url=""):
+        super().__init__(); self.source_url=source_url; self.jsonld=False; self.schema_text=[]; self.parts=[]; self.links=[]; self.skip=0; self.publication_dates=[]; self.link_titles={}; self.current_link=None; self.link_text=[]
     def handle_starttag(self,tag,attrs):
         attrs=dict(attrs)
         if tag=="meta" and attrs.get("property")=="article:published_time":
             self.publication_dates.append(attrs.get("content",""))
+        if tag=="script" and attrs.get("type")=="application/ld+json":
+            self.jsonld=True; self.schema_text=[]
         if tag in ("script","style"): self.skip+=1
         if tag in ("p","li","br","h1","h2","h3"): self.parts.append("\n")
         if tag=="a":
@@ -36,12 +38,29 @@ class Text(HTMLParser):
             if href:
                 self.links.append(href); self.current_link=href; self.link_text=[]
     def handle_endtag(self,tag):
+        if tag=="script" and self.jsonld:
+            try:
+                schema=json.loads("".join(self.schema_text))
+                nodes=schema.get("@graph",[schema]) if isinstance(schema,dict) else schema
+                for node in nodes:
+                    if not isinstance(node,dict): continue
+                    kind=node.get("@type","")
+                    if isinstance(kind,str): kind=[kind]
+                    main=node.get("mainEntityOfPage",{})
+                    url=node.get("url") or node.get("@id") or (main.get("@id") if isinstance(main,dict) else main)
+                    if set(kind)&{"NewsArticle","Article","BlogPosting","WebPage"} and node.get("datePublished"):
+                        if url and str(url).split("#")[0].rstrip("/")==self.source_url.rstrip("/"):
+                            self.publication_dates.append(str(node["datePublished"]))
+            except (ValueError,TypeError,AttributeError):
+                pass
+            self.jsonld=False; self.schema_text=[]
         if tag=="a" and self.current_link:
             self.link_titles[self.current_link]=" ".join(self.link_text)
             self.current_link=None; self.link_text=[]
         if tag in ("script","style") and self.skip: self.skip-=1
         if tag in ("p","li","h1","h2","h3"): self.parts.append("\n")
     def handle_data(self,data):
+        if self.jsonld: self.schema_text.append(data)
         if self.current_link: self.link_text.append(data)
         if not self.skip: self.parts.append(data)
     @property
@@ -85,7 +104,7 @@ class Collector:
         if delay>10: raise ValueError("Source crawl delay requires a dedicated schedule")
         time.sleep(max(0,delay-(time.monotonic()-self.last.get(host,0))))
         raw=self.raw(url); self.last[host]=time.monotonic()
-        parsed=Text(); parsed.feed(raw)
+        parsed=Text(url); parsed.feed(raw)
         return parsed,hashlib.sha256(raw.encode()).hexdigest()
 
 def validate_reviewed(document,text):
@@ -112,16 +131,24 @@ def collect():
     for document in manifest["documents"]:
         url=document["source_url"]
         try:
-            page,digest=client.read(url)
-            events=validate_reviewed(document,page.text+" "+" ".join(page.publication_dates))
+            verified_from=url
+            try:
+                page,digest=client.read(url)
+                events=validate_reviewed(document,page.text+" "+" ".join(page.publication_dates))
+            except Exception:
+                fallback=document.get("fallback_url")
+                if not fallback: raise
+                page,digest=client.read(fallback)
+                events=validate_reviewed(document,page.text+" "+" ".join(page.publication_dates))
+                verified_from=fallback
             for event in events:
                 if event["source_id"] not in legacy_ids: indexed[event["source_id"]]=event
-            report["sources"].append({"source_url":url,"status":"verified","content_sha256":digest,"records":len(events)})
+            report["sources"].append({"source_url":url,"status":"verified","verified_from":verified_from,"content_sha256":digest,"records":len(events)})
         except Exception as exc:
             report["sources"].append({"source_url":url,"status":"refresh_failed_retained","reason":type(exc).__name__,"detail":str(exc)[:180]})
     seen={d["source_url"] for d in manifest["documents"]}
     seen.update(r["source_url"] for r in json.loads((ROOT/"real_data/bavaria_verified_events.json").read_text()))
-    budget=manifest["limits"]["maximum_documents"]
+    budget=max(0,manifest["limits"]["maximum_documents"]-len(manifest["documents"])-len(manifest["discovery"]))
     for discovery in manifest["discovery"]:
         try:
             page,_=client.read(discovery["source_url"])

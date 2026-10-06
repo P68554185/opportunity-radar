@@ -341,7 +341,8 @@
           },
           "required_anchor": "Matthias-Claudius-Gymnasiums"
         }
-      ]
+      ],
+      "fallback_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bsfb/weiterhin-erhebliche-investitionen-im-schulbau-1210668"
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26254/",

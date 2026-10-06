@@ -24,3 +24,10 @@ class CollectionTests(unittest.TestCase):
         page.feed('<meta property="article:published_time" content="2026-08-18T10:00:00"><a href="/x">Neue <b>Schule</b></a>')
         self.assertIn("Schule",page.link_titles["/x"])
         self.assertEqual(page.publication_dates,["2026-08-18T10:00:00"])
+
+    def test_only_main_article_publication_date_is_used(self):
+        source="https://example.org/main"
+        page=Text(source)
+        page.feed('<script type="application/ld+json">{"@graph":[{"@type":"NewsArticle","url":"https://example.org/other","datePublished":"2026-10-06"},{"@type":"NewsArticle","url":"https://example.org/main","datePublished":"2026-08-18"}]}</script>')
+        self.assertEqual(page.publication_dates,["2026-08-18"])
+        self.assertNotIn("2026-10-06",page.text)
