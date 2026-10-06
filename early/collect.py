@@ -106,6 +106,7 @@ def collect():
     output=ROOT/"real_data/early_verified_events.json"
     existing=json.loads(output.read_text()) if output.exists() else []
     indexed={r["source_id"]:r for r in existing}
+    legacy_ids={r["source_id"] for r in json.loads((ROOT/"real_data/bavaria_verified_events.json").read_text())}
     report={"observed_at":datetime.now(timezone.utc).isoformat(),"sources":[],"review_queue":[]}
     client=Collector(manifest["limits"])
     for document in manifest["documents"]:
@@ -113,7 +114,8 @@ def collect():
         try:
             page,digest=client.read(url)
             events=validate_reviewed(document,page.text+" "+" ".join(page.publication_dates))
-            for event in events: indexed[event["source_id"]]=event
+            for event in events:
+                if event["source_id"] not in legacy_ids: indexed[event["source_id"]]=event
             report["sources"].append({"source_url":url,"status":"verified","content_sha256":digest,"records":len(events)})
         except Exception as exc:
             report["sources"].append({"source_url":url,"status":"refresh_failed_retained","reason":type(exc).__name__,"detail":str(exc)[:180]})
