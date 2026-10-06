@@ -176,7 +176,7 @@ def collect():
                 if re.search(r"hochbau|krankenhaus|kinder|schul|förderbescheid|neubau|bauvorhaben",page.link_titles.get(link,""),re.I)},reverse=True)
             for url in links:
                 if url.rstrip("/") in seen or not safe_url(url,discovery["host"]): continue
-                if not re.search(r"/pressemitteilungen/(?:\d+/|[^/]+-\d+$)",url): continue
+                if not article_url(url,discovery["host"]): continue
                 if budget<=0: break
                 budget-=1; seen.add(url.rstrip("/"))
                 if discovery["adapter"]=="review_queue":
