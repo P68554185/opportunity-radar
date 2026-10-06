@@ -14,7 +14,7 @@ from typing import Optional
 import hashlib, json, re
 
 PHASE_SCORE = {
-    "project_announced": 25, "prior_information": 92, "idea": 25, "political_decision": 38, "funding": 50,
+    "land_use_planning": 30, "project_announced": 25, "prior_information": 92, "idea": 25, "political_decision": 38, "funding": 50,
     "object_planning": 66, "specialist_planning": 82,
     "execution_planning": 90, "tender": 98, "award": 100,
 }
@@ -26,6 +26,9 @@ TIMING_SCORE = {
 
 # v0.2 ontology: deliberately broad. We refine probabilities from observed historical data later.
 ONTOLOGY = {
+    "residential": {"earthworks": .8, "structural": .8, "roof": .8, "electrical": .8, "hvac": .8, "plumbing": .8, "landscaping": .8},
+    "urban_development": {"earthworks": .8, "roadworks": .8, "sewer_pipe": .8, "landscaping": .8},
+    "industrial_area": {"earthworks": .8, "roadworks": .8, "sewer_pipe": .8, "landscaping": .8},
     "school": {
         "earthworks": .95, "structural": .99, "scaffolding": .90, "roof": .95,
         "facade": .94, "windows_doors": .98, "electrical": .99, "hvac": .99,

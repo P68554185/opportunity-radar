@@ -1,8 +1,10 @@
 {
-  "early_signals": 56,
-  "master_projects": 56,
-  "verified_early_projects": 56,
+  "early_signals": 60,
+  "master_projects": 60,
+  "verified_early_projects": 60,
   "customer_ted_records": 645,
   "customer_ted_notices": 647,
-  "customer_records": 701
+  "customer_records": 705,
+  "located_projects": 4,
+  "dresden_early_projects": 4
 }

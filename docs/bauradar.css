@@ -11,3 +11,5 @@
 .project-history p{color:#65786d;font-size:12px}
 
 .project-history .history-title{flex-basis:100%;overflow-wrap:anywhere}
+
+.radius-controls{grid-column:1/-1;display:grid;grid-template-columns:2fr 1fr;gap:1rem}.radius-controls[hidden]{display:none}.radius-controls p{grid-column:1/-1;overflow-wrap:anywhere}.distance{font-weight:600;color:#155e54}@media(max-width:600px){.radius-controls{grid-template-columns:1fr}}
