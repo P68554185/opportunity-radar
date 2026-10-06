@@ -44,6 +44,24 @@ Render benötigt den üblichen manuellen Betreiber-Deploy; die Aufforderung wurd
 Danach folgt die erste kontrollierte Verfünffachung auf 10.000 aktuelle TED-Meldungen.
 Qualifizierung, unsichere Lifecycle-Fälle und unbekannte Standorte bleiben unverändert konservativ.
 
+## Erste Datenvergrößerung – aufgenommen, Endabnahme läuft
+
+10.000 aktuelle deutsche TED-Meldungen wurden vollständig und fehlerfrei verarbeitet
+([Aufnahme und Budgetprüfung](https://github.com/P68554185/opportunity-radar/actions/runs/37449730693)).
+Snapshot 06.10.2026 10:28 UTC: 9.677 klassifizierte Chancen, 3.166 qualifizierte TED-Meldungen,
+3.162 TED-Projektkarten plus 60 EARLY-Projekte = 3.222 Kundenkarten.
+6.511 Fälle bleiben in der internen Prüfung; 323 unzureichend erkennbare Fälle sind unterdrückt.
+Der Kundenfeed ist 6.314.952 Bytes groß und liegt innerhalb des produktiven 12-MB-Budgets.
+Der Aufnahmezeitraum erweitert sich von 24.09.–06.10. auf 07.08.–06.10.2026.
+
+Fünf bestätigte Vergabeverbindungen beziehen sich weiterhin auf einen unabhängigen Alsfeld-Projektfall.
+13 zusätzliche Kandidaten sind nicht bestätigt und werden nicht als Kundeninformation ausgegeben.
+Dresden bleibt bei vier belegten kommunalen Frühprojekten und vier verorteten Kundenprojekten.
+Die Verfünffachung der TED-Menge schafft keinen Nachweis einer höheren Accuracy oder regional vollständiger Abdeckung.
+Frontend, Konten und Veröffentlichung des vergrößerten Snapshots werden erneut geprüft.
+Weiteres Wachstum über den aktuellen Feed-/Blobrahmen benötigt eine Aufteilung der Daten;
+die Konfiguration und Budgetprüfung verhindern unvollständige oder zu große Veröffentlichungen.
+
 ## Vorheriger verifizierter Datenstand – EARLY-/Lifecycle-Abschluss
 
 | Kennzahl | Geprüfte Baseline | Aktuell |
@@ -113,7 +131,7 @@ Kein verkaufsfähiger Produktionsbetrieb zugesichert.
 
 ## Blocker und nächste Schritte
 
-1. Dresden-Veröffentlichung und Render-Deploy abnehmen; anschließend kontrollierte Datenvergrößerung.
+1. Vergrößerten 10.000er-Snapshot vollständig abnehmen und veröffentlichen; Render-Deploy abnehmen.
 2. Weitere kommunale Fundstellen prüfen, zusätzliche Projekte verorten und Nutzen mit echten Dresdner Betrieben testen. Ein neuer bestätigter Dresdner Lifecycle-Fall ist noch nicht nachgewiesen.
 3. Produktive Backup-Zeitplanung und verschlüsselte Ablage einrichten; technische Wiederherstellung in CI bereits geprüft.
 4. Öffentliches Signup, E-Mail, Passwort-Reset und Bezahlung folgen auf Betreiberwunsch erst nach funktionierender Produktvalidierung.

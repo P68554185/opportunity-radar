@@ -21,6 +21,8 @@ def build():
         "classification_rate_pct":round(100*classified/len(live),1) if live else 0,
         "opportunities":customer.get("customer_records",0),
         "customer_ted_records":customer.get("customer_ted_records",0),
+        "located_projects":customer.get("located_projects",0),
+        "dresden_early_projects":customer.get("dresden_early_projects",0),
         "lifecycle_candidates":lifecycle.get("candidate_notice_links",0),
         "lifecycle_links":lifecycle.get("confirmed_current_notice_links",0),
         "lifecycle_links_including_history":lifecycle.get("confirmed_notice_links",0),

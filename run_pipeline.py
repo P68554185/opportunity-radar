@@ -19,6 +19,7 @@ STEPS=[
  ("Build BauRadar customer feed",[sys.executable,"intelligence/customer_feed.py"]),
  ("Update website status",[sys.executable,"github_status.py"]),
  ("Verify generated feed",[sys.executable,"tests/check_generated_feed.py"]),
+ ("Verify growth completeness and production payload budget",[sys.executable,"checks/growth_data_acceptance.py"]),
 ]
 for name,cmd in STEPS:
     print(f"\n=== {name} ===",flush=True)

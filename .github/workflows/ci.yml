@@ -37,6 +37,8 @@ jobs:
         run: python municipal/collect.py
       - name: Rebuild and verify committed data
         run: python build_snapshot.py
+      - name: Verify complete configured volume and payload budgets
+        run: python checks/growth_data_acceptance.py
       - name: Python syntax for operational checks
         run: python -m compileall -q backend checks intelligence live
       - name: JavaScript syntax
