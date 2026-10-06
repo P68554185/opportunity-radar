@@ -1,8 +1,8 @@
 "use strict";
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const TRADE_NAMES={insulation:"Dämmung",fencing:"Zäune & Geländer",electrical:"Elektro",hvac:"Heizung, Lüftung & Klima",plumbing:"Sanitär",drywall:"Trockenbau",painting:"Malerarbeiten",flooring:"Boden & Fliesen",roof:"Dach",windows_doors:"Fenster & Türen",facade:"Fassade",earthworks:"Erdarbeiten & Tiefbau",structural:"Rohbau",landscaping:"Garten- & Landschaftsbau",fire_protection:"Brandschutz",elevator:"Aufzüge",demolition:"Abbruch",roadworks:"Straßenbau",sewer_pipe:"Kanalbau",railworks:"Gleisbau",solar_energy:"Photovoltaik",scaffolding:"Gerüstbau",metalwork:"Metallbau",steelwork:"Stahlbau",screed:"Estrich",building_automation:"Gebäudeautomation",industrial_doors:"Industrietore",medical_technology:"Medizintechnik",elevators:"Aufzüge",building_services:"Gebäudetechnik",plastering:"Putzarbeiten",finishing:"Ausbau"};
-const PHASES={idea:"Projektidee",political_decision:"Beschluss gefasst",funding:"Förderung beschlossen",prior_information:"Ausschreibung angekündigt",object_planning:"In Planung",specialist_planning:"Fachplanung",execution_planning:"Ausführungsplanung",tender:"In Ausschreibung",award:"Bereits vergeben"};
-const EARLY=new Set(["idea","political_decision","funding","prior_information","object_planning","specialist_planning","execution_planning"]);
+const PHASES={project_announced:"Bauvorhaben angekündigt",idea:"Projektidee",political_decision:"Beschluss gefasst",funding:"Förderung beschlossen",prior_information:"Ausschreibung angekündigt",object_planning:"In Planung",specialist_planning:"Fachplanung",execution_planning:"Ausführungsplanung",tender:"In Ausschreibung",award:"Bereits vergeben"};
+const EARLY=new Set(["project_announced","idea","political_decision","funding","prior_information","object_planning","specialist_planning","execution_planning"]);
 const norm=s=>String(s||"").toLocaleLowerCase("de").trim().replace(/\s+/g," ");
 const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};
 const storedProfile=read("bauradar.profile.v1",{});
@@ -19,7 +19,7 @@ async function api(path,method="GET",body){
 }
 const $=id=>document.getElementById(id);
 function persist(key,value){try{localStorage.setItem(key,JSON.stringify(value));return true}catch{$("profileMessage").textContent="Speichern auf diesem Gerät ist nicht verfügbar. Ihre Auswahl gilt für diese Sitzung.";return false}}
-function sourceLink(url){try{const u=new URL(url);return u.protocol==="https:"&&["ted.europa.eu","www.stmfh.bayern.de","www.kkh-alsfeld.de"].includes(u.hostname)?u.href:""}catch{return ""}}
+function sourceLink(url){try{const u=new URL(url);return u.protocol==="https:"&&["ted.europa.eu","www.stmfh.bayern.de","www.kkh-alsfeld.de","hibb.hamburg.de"].includes(u.hostname)?u.href:""}catch{return ""}}
 function dateLabel(date){const d=new Date(date);return Number.isNaN(d.valueOf())?"Datum unbekannt":new Intl.DateTimeFormat("de-DE").format(d)}
 $("companyName").value=typeof profile.name==="string"?profile.name:"";
 $("companyCity").value=typeof profile.city==="string"?profile.city:"";

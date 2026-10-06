@@ -24,8 +24,11 @@ from lifecycle.matching import norm
 USER_AGENT="BauRadar/1.0 (+https://p68554185.github.io/opportunity-radar/)"
 class Text(HTMLParser):
     def __init__(self):
-        super().__init__(); self.parts=[]; self.links=[]; self.skip=0
+        super().__init__(); self.parts=[]; self.links=[]; self.skip=0; self.publication_dates=[]
     def handle_starttag(self,tag,attrs):
+        attrs=dict(attrs)
+        if tag=="meta" and attrs.get("property")=="article:published_time":
+            self.publication_dates.append(attrs.get("content",""))
         if tag in ("script","style"): self.skip+=1
         if tag in ("p","li","br","h1","h2","h3"): self.parts.append("\n")
         if tag=="a":
@@ -102,7 +105,7 @@ def collect():
         url=document["source_url"]
         try:
             page,digest=client.read(url)
-            events=validate_reviewed(document,page.text)
+            events=validate_reviewed(document,page.text+" "+" ".join(page.publication_dates))
             for event in events: indexed[event["source_id"]]=event
             report["sources"].append({"source_url":url,"status":"verified","content_sha256":digest,"records":len(events)})
         except Exception as exc:

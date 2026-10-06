@@ -5,7 +5,7 @@ from datetime import datetime
 from difflib import SequenceMatcher
 import re, json
 
-PHASE_ORDER={"idea":0,"political_decision":1,"funding":2,"object_planning":3,
+PHASE_ORDER={"project_announced":0,"prior_information":5,"idea":0,"political_decision":1,"funding":2,"object_planning":3,
              "specialist_planning":4,"execution_planning":5,"tender":6,"award":7}
 
 def norm(s):

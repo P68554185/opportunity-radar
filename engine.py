@@ -14,7 +14,7 @@ from typing import Optional
 import hashlib, json, re
 
 PHASE_SCORE = {
-    "idea": 25, "political_decision": 38, "funding": 50,
+    "project_announced": 25, "prior_information": 92, "idea": 25, "political_decision": 38, "funding": 50,
     "object_planning": 66, "specialist_planning": 82,
     "execution_planning": 90, "tender": 98, "award": 100,
 }
