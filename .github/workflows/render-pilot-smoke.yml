@@ -39,14 +39,21 @@ jobs:
           assert health["billing_enabled"] is False
           _, html = get("/")
           assert "Die nächste Chance" in html
-          _, payload = get("/data/bauradar_feed.json")
+          response, payload = get("/data/bauradar_feed.json")
+          assert response.headers.get("Cache-Control") == "no-store", "New feed route not deployed"
           feed = json.loads(payload)
           assert feed["count"] == len(feed["opportunities"]) > 0
           assert all(p["quality_status"] in ("CONFIDENT", "VERIFIED_EARLY") for p in feed["opportunities"])
+          _, status_payload = get("/data/status.json")
+          status = json.loads(status_payload)
+          assert status["opportunities"] == feed["count"]
+          with urlopen("https://p68554185.github.io/opportunity-radar/data/status.json", timeout=30) as published:
+              current_status = json.load(published)
+          assert status["last_sync"] == current_status["last_sync"], "Render feed is behind published pipeline"
           for path in ("/api/me", "/api/profile", "/api/watches", "/admin/"):
               try:
                   get(path)
                   raise AssertionError("Anonymous account access permitted")
               except HTTPError as e:
                   assert e.code == 401
-          print(json.dumps({"url": base, "backend": "ok", "database": "ok", "customer_records": feed["count"], "anonymous_access": "blocked", "signup": "disabled"}))
+          print(json.dumps({"url": base, "backend": "ok", "database": "ok", "customer_records": feed["count"], "anonymous_access": "blocked", "signup": "disabled", "feed_refresh_route": "deployed", "last_sync": status["last_sync"]}))
