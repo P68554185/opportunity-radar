@@ -4,7 +4,9 @@ from pathlib import Path
 import sys
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
-from engine import ingest, ONTOLOGY
+from engine import ingest, ONTOLOGY, event_key, SourceEvent
+from early.corpus import active_events
+from lifecycle.matching import history
 from intelligence.evidence import POLICY_VERSION
 
 def next_action(phase):
@@ -16,18 +18,28 @@ def next_action(phase):
 def build():
     data=ROOT/"docs"/"data"
     tender=json.loads((data/"customer_opportunities.json").read_text(encoding="utf-8"))
-    early=json.loads((ROOT/"real_data"/"bavaria_verified_events.json").read_text(encoding="utf-8"))
+    early=active_events()
     registry=json.loads((ROOT/"real_data"/"source_registry.json").read_text(encoding="utf-8"))
+    extra_registry=ROOT/"real_data"/"early_source_registry.json"
+    if extra_registry.exists(): registry+=json.loads(extra_registry.read_text())
     official={r["source_url"] for r in registry if r.get("status")=="official_verified"}
     projects=ingest(early)
     records=[]
+    historical_path=ROOT/"reports"/"historical_lifecycle_validation.json"
+    historical=json.loads(historical_path.read_text()) if historical_path.exists() else {}
+    confirmed_history={}
+    for timeline in historical.get("timelines",[]):
+        for event in timeline["history"]:
+            if event["source_id"].startswith("TED-"):
+                confirmed_history[event["source_id"]]=timeline["history"]
     for r in tender["opportunities"]:
         if r.get("quality_status")!="CONFIDENT": raise ValueError("Feed quality violation")
         records.append(dict(r, id=r["source_id"], trade_basis="notice",
             expected_tender_period=None,
+            project_history=confirmed_history.get(r["source_id"],[]),
             next_action=next_action(r.get("phase"))))
     for p in projects:
-        evidence=[r for r in early if r["source_url"] in official and r["city"]==p.city and r["title"]==p.canonical_name]
+        evidence=[r for r in early if r["source_url"] in official and event_key(SourceEvent(**r)) in p.event_ids]
         if not evidence: continue
         r=max(evidence,key=lambda x:x["published"])
         records.append({"id":p.project_id,"source_id":r["source_id"],"title":p.canonical_name,
@@ -36,6 +48,7 @@ def build():
             "trades":list(ONTOLOGY.get(p.project_type,{})), "trade_basis":"project_type_expected",
             "source_url":r["source_url"],"quality_status":"VERIFIED_EARLY",
             "opportunity_score":None,"expected_tender_period":None,
+            "project_history":history(evidence),
             "next_action":"Bauvorhaben beim Auftraggeber prüfen und nach dem geplanten Vergabezeitpunkt fragen."})
     out={"policy_version":POLICY_VERSION,"count":len(records),"opportunities":records,
         "notes":{"expected_trades":"Bei frühen Projekten aus der Projektart abgeleitet, noch keine bestätigten Lose.",

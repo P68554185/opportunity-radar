@@ -4,6 +4,7 @@ import subprocess, sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 STEPS=[
+ ("Refresh approved EARLY sources",[sys.executable,"early/collect.py"]),
  ("Classifier regression",[sys.executable,"benchmarks/classifier_regression.py"]),
  ("Acquire and normalize 2000 TED notices",[sys.executable,"benchmarks/live_ted_500.py"]),
  ("Build intelligence layer",[sys.executable,"intelligence/build.py"]),

@@ -19,7 +19,7 @@ async function api(path,method="GET",body){
 }
 const $=id=>document.getElementById(id);
 function persist(key,value){try{localStorage.setItem(key,JSON.stringify(value));return true}catch{$("profileMessage").textContent="Speichern auf diesem Gerät ist nicht verfügbar. Ihre Auswahl gilt für diese Sitzung.";return false}}
-function sourceLink(url){try{const u=new URL(url);return u.protocol==="https:"&&["ted.europa.eu","www.stmfh.bayern.de"].includes(u.hostname)?u.href:""}catch{return ""}}
+function sourceLink(url){try{const u=new URL(url);return u.protocol==="https:"&&["ted.europa.eu","www.stmfh.bayern.de","www.kkh-alsfeld.de"].includes(u.hostname)?u.href:""}catch{return ""}}
 function dateLabel(date){const d=new Date(date);return Number.isNaN(d.valueOf())?"Datum unbekannt":new Intl.DateTimeFormat("de-DE").format(d)}
 $("companyName").value=typeof profile.name==="string"?profile.name:"";
 $("companyCity").value=typeof profile.city==="string"?profile.city:"";
@@ -51,6 +51,15 @@ function selectedTrades(record){
  const t=record.trades||[];
  return profile.trades.length?t.filter(x=>profile.trades.includes(x)):t;
 }
+function projectHistory(record){
+ const events=Array.isArray(record.project_history)?record.project_history:[];
+ if(events.length<2)return "";
+ const rows=events.map(event=>{
+  const url=sourceLink(event.source_url);
+  return `<li><time>${esc(dateLabel(event.published))}</time><span>${esc(PHASES[event.phase]||"Projektmeldung")}</span>${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Quelle ↗</a>`:""}</li>`;
+ }).join("");
+ return `<details class="project-history"><summary>Entwicklung des Bauvorhabens ansehen</summary><ol>${rows}</ol><p>Frühere öffentliche Meldungen zum Projekt. Vergabezeiträume bitte in der aktuellen Quelle prüfen.</p></details>`;
+}
 function card(record){
  const early=EARLY.has(record.phase),url=sourceLink(record.source_url),watch=saved.has(record.id);
  const trades=selectedTrades(record).slice(0,6);
@@ -61,6 +70,7 @@ function card(record){
  <div class="trade-chips">${trades.map(t=>`<span>${esc(TRADE_NAMES[t]||t)}</span>`).join("")}</div>
  <p class="trade-note">${record.trade_basis==="project_type_expected"?"Mögliche Gewerke aus der Projektart; konkrete Lose noch offen.":"Gewerke aus der Vergabemeldung abgeleitet."}</p>
  <div class="action"><strong>Ihr nächster Schritt</strong>${esc(record.next_action||"Details beim Auftraggeber oder in der Quelle prüfen.")}</div>
+ ${projectHistory(record)}
  <div class="card-footer">${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Originalquelle ansehen ↗</a>`:"<span>Quelle nicht verfügbar</span>"}<button class="watch" data-watch="${esc(record.id)}" aria-pressed="${watch}">${watch?"✓ Beobachtet":"＋ Beobachten"}</button></div></article>`;
 }
 function render(){

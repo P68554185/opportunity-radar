@@ -1,0 +1,20 @@
+import unittest
+from early.collect import Text, safe_url, validate_reviewed
+
+class CollectionTests(unittest.TestCase):
+    def test_html_preserves_measure_lines_and_ignores_script(self):
+        p=Text();p.feed("<p>Stadt Roth: 1 Millionen Euro für</p><script>fake</script><li>Neubau</li>")
+        self.assertNotIn("fake",p.text)
+        self.assertIn("\n",p.text)
+
+    def test_url_boundary(self):
+        for url in ("http://example.org/x","https://example.org.evil/x","https://user:pw@example.org/x"):
+            self.assertFalse(safe_url(url,"example.org"))
+        self.assertTrue(safe_url("https://example.org/x","example.org"))
+
+    def test_only_reviewed_date_and_project(self):
+        doc=dict(source_url="https://example.org/x",published="2026-07-21",date_anchor="21.07.2026",
+            records=[dict(required_anchor="Klinikum Traunstein",event=dict(source_url="https://example.org/x",published="2026-07-21"))])
+        self.assertEqual(len(validate_reviewed(doc,"21.07.2026 Klinikum Traunstein")),1)
+        for text in ("Klinikum Traunstein", "21.07.2026 unrelated project"):
+            with self.assertRaises(ValueError): validate_reviewed(doc,text)

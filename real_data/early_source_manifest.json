@@ -1,0 +1,253 @@
+{
+  "version": 1,
+  "documents": [
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
+      "status": "official_verified",
+      "published": "2026-07-21",
+      "date_anchor": "21.07.2026",
+      "adapter": "reviewed_program",
+      "records": [
+        {
+          "event": {
+            "source_id": "EARLY-BY-KHP-20260721-01",
+            "source_type": "official_hospital_program",
+            "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
+            "published": "2026-07-21",
+            "title": "Krankenhaus Traunstein: Dachlandeplatz ertüchtigen",
+            "body": "Aufnahme in ein öffentliches Krankenhausbauprogramm beschlossen. Programmjahr ist kein Ausschreibungstermin.",
+            "authority": "",
+            "city": "Traunstein",
+            "region": "Bayern",
+            "country": "DE",
+            "project_type": "hospital",
+            "phase": "funding"
+          },
+          "required_anchor": "Klinikum Traunstein"
+        },
+        {
+          "event": {
+            "source_id": "EARLY-BY-KHP-20260721-02",
+            "source_type": "official_hospital_program",
+            "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
+            "published": "2026-07-21",
+            "title": "Fachklinik Osterhofen: Westflügel erweitern",
+            "body": "Aufnahme in ein öffentliches Krankenhausbauprogramm beschlossen. Programmjahr ist kein Ausschreibungstermin.",
+            "authority": "",
+            "city": "Osterhofen",
+            "region": "Bayern",
+            "country": "DE",
+            "project_type": "hospital",
+            "phase": "funding"
+          },
+          "required_anchor": "Fachklinik Osterhofen"
+        },
+        {
+          "event": {
+            "source_id": "EARLY-BY-KHP-20260721-03",
+            "source_type": "official_hospital_program",
+            "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
+            "published": "2026-07-21",
+            "title": "Bezirksklinikum Mainkofen: Pflegeschule umbauen",
+            "body": "Aufnahme in ein öffentliches Krankenhausbauprogramm beschlossen. Programmjahr ist kein Ausschreibungstermin.",
+            "authority": "",
+            "city": "Mainkofen",
+            "region": "Bayern",
+            "country": "DE",
+            "project_type": "school",
+            "phase": "funding"
+          },
+          "required_anchor": "Bezirksklinikum Mainkofen"
+        },
+        {
+          "event": {
+            "source_id": "EARLY-BY-KHP-20260721-04",
+            "source_type": "official_hospital_program",
+            "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
+            "published": "2026-07-21",
+            "title": "Krankenhaus Martha-Maria Nürnberg: Standorte zusammenführen, Bauabschnitt 1",
+            "body": "Aufnahme in ein öffentliches Krankenhausbauprogramm beschlossen. Programmjahr ist kein Ausschreibungstermin.",
+            "authority": "",
+            "city": "Nürnberg",
+            "region": "Bayern",
+            "country": "DE",
+            "project_type": "hospital",
+            "phase": "funding"
+          },
+          "required_anchor": "Krankenhaus Martha-Maria"
+        },
+        {
+          "event": {
+            "source_id": "EARLY-BY-KHP-20260721-05",
+            "source_type": "official_hospital_program",
+            "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
+            "published": "2026-07-21",
+            "title": "Neubau Tagesklinik Kinder- und Jugendpsychiatrie Neustadt a. d. Aisch",
+            "body": "Aufnahme in ein öffentliches Krankenhausbauprogramm beschlossen. Programmjahr ist kein Ausschreibungstermin.",
+            "authority": "",
+            "city": "Neustadt a. d. Aisch",
+            "region": "Bayern",
+            "country": "DE",
+            "project_type": "hospital",
+            "phase": "funding"
+          },
+          "required_anchor": "Tagesklinik für Kinder- und Jugendpsychiatrie Neustadt"
+        },
+        {
+          "event": {
+            "source_id": "EARLY-BY-KHP-20260721-06",
+            "source_type": "official_hospital_program",
+            "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
+            "published": "2026-07-21",
+            "title": "Max-Planck-Institut Psychiatrie München: Neubau Klinik Ost",
+            "body": "Aufnahme in ein öffentliches Krankenhausbauprogramm beschlossen. Programmjahr ist kein Ausschreibungstermin.",
+            "authority": "",
+            "city": "München",
+            "region": "Bayern",
+            "country": "DE",
+            "project_type": "hospital",
+            "phase": "funding"
+          },
+          "required_anchor": "Max-Planck-Institut für Psychiatrie München"
+        },
+        {
+          "event": {
+            "source_id": "EARLY-BY-KHP-20260721-07",
+            "source_type": "official_hospital_program",
+            "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
+            "published": "2026-07-21",
+            "title": "Waldkrankenhaus Erlangen: Notaufnahme und Intensivstation erweitern",
+            "body": "Aufnahme in ein öffentliches Krankenhausbauprogramm beschlossen. Programmjahr ist kein Ausschreibungstermin.",
+            "authority": "",
+            "city": "Erlangen",
+            "region": "Bayern",
+            "country": "DE",
+            "project_type": "hospital",
+            "phase": "funding"
+          },
+          "required_anchor": "Waldkrankenhaus St. Marien Erlangen"
+        },
+        {
+          "event": {
+            "source_id": "EARLY-BY-KHP-20260721-08",
+            "source_type": "official_hospital_program",
+            "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
+            "published": "2026-07-21",
+            "title": "Klinikum Altmühlfranken Weißenburg: Bestand sanieren, Bauabschnitt 2",
+            "body": "Aufnahme in ein öffentliches Krankenhausbauprogramm beschlossen. Programmjahr ist kein Ausschreibungstermin.",
+            "authority": "",
+            "city": "Weißenburg",
+            "region": "Bayern",
+            "country": "DE",
+            "project_type": "hospital",
+            "phase": "funding"
+          },
+          "required_anchor": "Klinikum Altmühlfranken Weißenburg"
+        },
+        {
+          "event": {
+            "source_id": "EARLY-BY-KHP-20260721-09",
+            "source_type": "official_hospital_program",
+            "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
+            "published": "2026-07-21",
+            "title": "Klinikum Memmingen: Neubau Pflegeschule",
+            "body": "Aufnahme in ein öffentliches Krankenhausbauprogramm beschlossen. Programmjahr ist kein Ausschreibungstermin.",
+            "authority": "",
+            "city": "Memmingen",
+            "region": "Bayern",
+            "country": "DE",
+            "project_type": "school",
+            "phase": "funding"
+          },
+          "required_anchor": "Klinikum Memmingen"
+        },
+        {
+          "event": {
+            "source_id": "EARLY-BY-KHP-20260721-10",
+            "source_type": "official_hospital_program",
+            "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
+            "published": "2026-07-21",
+            "title": "Klinikum Freising: Ersatzneubau Bauteil C West",
+            "body": "Aufnahme in ein öffentliches Krankenhausbauprogramm beschlossen. Programmjahr ist kein Ausschreibungstermin.",
+            "authority": "",
+            "city": "Freising",
+            "region": "Bayern",
+            "country": "DE",
+            "project_type": "hospital",
+            "phase": "funding"
+          },
+          "required_anchor": "Klinikum Freising"
+        },
+        {
+          "event": {
+            "source_id": "EARLY-BY-KHP-20260721-11",
+            "source_type": "official_hospital_program",
+            "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
+            "published": "2026-07-21",
+            "title": "Asklepios Stadtklinik Bad Tölz: OP erweitern und Intensivpflege neu bauen",
+            "body": "Aufnahme in ein öffentliches Krankenhausbauprogramm beschlossen. Programmjahr ist kein Ausschreibungstermin.",
+            "authority": "",
+            "city": "Bad Tölz",
+            "region": "Bayern",
+            "country": "DE",
+            "project_type": "hospital",
+            "phase": "funding"
+          },
+          "required_anchor": "Asklepios Stadtklinik Bad Tölz"
+        },
+        {
+          "event": {
+            "source_id": "EARLY-BY-KHP-20260721-12",
+            "source_type": "official_hospital_program",
+            "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
+            "published": "2026-07-21",
+            "title": "Klinikum Neumarkt: Erweiterung, Bauabschnitt 3",
+            "body": "Aufnahme in ein öffentliches Krankenhausbauprogramm beschlossen. Programmjahr ist kein Ausschreibungstermin.",
+            "authority": "",
+            "city": "Neumarkt",
+            "region": "Bayern",
+            "country": "DE",
+            "project_type": "hospital",
+            "phase": "funding"
+          },
+          "required_anchor": "Klinikum Neumarkt"
+        },
+        {
+          "event": {
+            "source_id": "EARLY-BY-KHP-20260721-13",
+            "source_type": "official_hospital_program",
+            "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
+            "published": "2026-07-21",
+            "title": "Klinikum Kempten: Ersatzneubau Bauteil F, Teil 1",
+            "body": "Aufnahme in ein öffentliches Krankenhausbauprogramm beschlossen. Programmjahr ist kein Ausschreibungstermin.",
+            "authority": "",
+            "city": "Kempten",
+            "region": "Bayern",
+            "country": "DE",
+            "project_type": "hospital",
+            "phase": "funding"
+          },
+          "required_anchor": "Klinikum Kempten"
+        }
+      ]
+    }
+  ],
+  "discovery": [
+    {
+      "source_url": "https://www.stmfh.bayern.de/aktuelles/pressemitteilungen/",
+      "host": "www.stmfh.bayern.de",
+      "adapter": "bavaria_funding"
+    },
+    {
+      "source_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bsfb/veroeffentlichungen/pressemeldungen",
+      "host": "www.hamburg.de",
+      "adapter": "review_queue"
+    }
+  ],
+  "limits": {
+    "maximum_documents": 16,
+    "maximum_bytes": 2000000,
+    "timeout_seconds": 15
+  },
+  "notes": "Only primary-source factual metadata. Discovery without a reliable dated adapter stays in the internal review queue."
+}
