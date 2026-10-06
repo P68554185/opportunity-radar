@@ -36,7 +36,7 @@ def components(value):
 def childcare_roles(value):
     roles=set()
     text=norm(value)
-    if re.search(r"\b(?:kinderhort|hort)\b",text): roles.add("hort")
+    if re.search(r"\b(?:kinderhort(?:s)?|hort(?:s)?)\b",text): roles.add("hort")
     if re.search(r"\b(?:kinderkrippe|krippe)\b",text): roles.add("krippe")
     if re.search(r"\bkindergarten(?:s)?\b",text): roles.add("kindergarten")
     return roles
