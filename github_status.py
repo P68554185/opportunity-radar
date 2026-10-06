@@ -9,6 +9,8 @@ def build():
     live=load("real_data/ted_live_normalized.json",[])
     report=load("reports/live_ted_500_report.json",{})
     intel=load("reports/intelligence_report.json",{})
+    lifecycle=load("reports/lifecycle_report.json",{})
+    historical=load("reports/historical_lifecycle_validation.json",{})
     gate=load("reports/quality_validation_summary.json",{})
     customer=load("reports/customer_feed_summary.json",{})
     dates=sorted(str(x["published"])[:10] for x in live if x.get("published"))
@@ -19,8 +21,11 @@ def build():
         "classification_rate_pct":round(100*classified/len(live),1) if live else 0,
         "opportunities":customer.get("customer_records",0),
         "customer_ted_records":customer.get("customer_ted_records",0),
-        "lifecycle_candidates":intel.get("lifecycle_candidates",0),
-        "lifecycle_links":sum(x.get("status")=="auto_link" for x in intel.get("lifecycle_links",[])),
+        "lifecycle_candidates":lifecycle.get("candidate_notice_links",0),
+        "lifecycle_links":lifecycle.get("confirmed_notice_links",0),
+        "lifecycle_confirmed_projects":lifecycle.get("confirmed_project_cases",0),
+        "historical_confirmed_projects":historical.get("confirmed_project_cases",0),
+        "live_early_lead_measured":bool(lifecycle.get("live_observed_lead_days")),
         "last_sync":report.get("run_at"),"ted_run_status":report.get("status","never"),
         "ted_errors":len(report.get("errors",[])),"ted_requested":report.get("requested",0),
         "quality_confident":gate.get("customer_facing_confident",0),

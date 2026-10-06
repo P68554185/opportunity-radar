@@ -14,7 +14,7 @@ from typing import Optional
 import hashlib, json, re
 
 PHASE_SCORE = {
-    "idea": 25, "political_decision": 38, "funding": 50,
+    "project_announced": 25, "prior_information": 92, "idea": 25, "political_decision": 38, "funding": 50,
     "object_planning": 66, "specialist_planning": 82,
     "execution_planning": 90, "tender": 98, "award": 100,
 }
@@ -73,6 +73,8 @@ class SourceEvent:
     value_eur: Optional[float] = None
     funding_eur: Optional[float] = None
     external_id: str = ""
+    project_address: str = ""
+    project_reference: str = ""
 
 @dataclass
 class Project:
@@ -89,6 +91,11 @@ class Project:
     value_eur: Optional[float] = None
     funding_eur: Optional[float] = None
     event_ids: list[str] = field(default_factory=list)
+    authority: str = ""
+    project_address: str = ""
+    project_reference: str = ""
+    latest_published: str = ""
+    history: list[dict] = field(default_factory=list)
 
 @dataclass
 class Company:
@@ -111,6 +118,17 @@ def event_key(e: SourceEvent) -> str:
     return hashlib.sha256(raw.encode()).hexdigest()[:20]
 
 def project_similarity(a: Project, e: SourceEvent) -> float:
+    from lifecycle.matching import anchors, component_conflict, childcare_conflict
+    if a.project_address and e.project_address and norm(a.project_address)!=norm(e.project_address):
+        return 0.0
+    if a.project_reference and e.project_reference and a.project_reference!=e.project_reference:
+        return 0.0
+    if component_conflict(a.canonical_name,e.title) or childcare_conflict(a.canonical_name,e.title): return 0.0
+    # Shared generic facility words alone do not identify one construction project.
+    shared=(anchors(a.canonical_name)&anchors(e.title))-set(norm(a.city).split())
+    if not shared and not (a.project_address and a.project_address==e.project_address) and not (
+            a.project_reference and a.project_reference==e.project_reference):
+        return 0.0
     # v0.4 safety gate: two known, different municipalities cannot auto-merge.
     if a.project_type not in ("", "unknown") and e.project_type and a.project_type != e.project_type:
         return 0.0
@@ -122,6 +140,10 @@ def project_similarity(a: Project, e: SourceEvent) -> float:
     return .45*city + .25*typ + .30*title
 
 def resolve_project(projects: list[Project], e: SourceEvent, threshold=.78) -> Project:
+    key=event_key(e)
+    for existing in projects:
+        if key in existing.event_ids:
+            return existing
     candidates = [(project_similarity(p,e),p) for p in projects]
     if candidates:
         candidates.sort(key=lambda x:x[0], reverse=True)
@@ -132,16 +154,31 @@ def resolve_project(projects: list[Project], e: SourceEvent, threshold=.78) -> P
             return best
         if score >= threshold and gap >= .07 and title_similarity >= .50:
             best.event_ids.append(event_key(e))
-            if PHASE_SCORE.get(e.phase,0) > PHASE_SCORE.get(best.phase,0):
-                best.phase = e.phase
+            if e.published and e.published>=best.latest_published:
+                best.phase = e.phase or best.phase
+                best.latest_published = e.published
+            best.authority = best.authority or e.authority
+            best.project_address = best.project_address or e.project_address
+            best.project_reference = best.project_reference or e.project_reference
+            best.history.append({"source_id":e.source_id,"source_url":e.source_url,
+                "published":e.published,"phase":e.phase,"title":e.title})
+            best.history.sort(key=lambda r:(r["published"],r["source_id"]))
             best.project_confidence = max(best.project_confidence, PHASE_SCORE.get(e.phase,35))
             best.value_eur = e.value_eur or best.value_eur
             best.funding_eur = e.funding_eur or best.funding_eur
             return best
     pid = "PRJ-" + hashlib.sha1(f"{norm(e.city)}|{norm(e.title)}|{e.project_type}|{e.country}".encode()).hexdigest()[:10].upper()
+    if any(p.project_id==pid for p in projects):
+        pid=pid+"-"+event_key(e)[:6].upper()
     p = Project(pid, e.title, e.city, e.region, e.country, e.project_type or "unknown",
                 e.phase or "idea", PHASE_SCORE.get(e.phase,35), e.lat,e.lon,
                 e.value_eur,e.funding_eur,[event_key(e)])
+    p.authority=e.authority
+    p.project_address=e.project_address
+    p.project_reference=e.project_reference
+    p.latest_published=e.published
+    p.history=[{"source_id":e.source_id,"source_url":e.source_url,
+        "published":e.published,"phase":e.phase,"title":e.title}]
     projects.append(p)
     return p
 

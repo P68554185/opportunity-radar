@@ -1,6 +1,24 @@
 # BauRadar – Entwicklungsstatus
 Stand: 06.10.2026. Funktionsnachweise haben Vorrang vor Zielterminen.
 
+## Aktiver Entwicklungsblock: EARLY / Lifecycle
+
+Baseline geprüft am 06.10.2026: 2.000 eindeutige TED-Meldungen, 1.926 klassifizierte Chancen,
+654 qualifizierte TED-Einträge; 37 EARLY-Signale / 36 Masterprojekte, 690 Kundenkarten.
+Kein bestätigter Link im bisherigen laufenden Datenbestand.
+Alle letzten vollständigen CI-, Pages- und Render-Prüfungen erfolgreich.
+
+Implementiert auf PR #8: erklärbare Identitätsprüfung, reproduzierbarer historischer Rückblick,
+Quellen-Refresh/Entdeckung, 19 zusätzliche belegte Bauvorhaben, sichere Master-Historie
+und Kundendarstellung bestätigter Verläufe. Die letzte geprüfte Fassung besteht Kern-,
+Feed-, PostgreSQL-, Wiederherstellungs-, Chromium-/Mobil- und Dockerprüfungen.
+Aktuell letzte Ergänzungen zu Gebäude-Ausschlüssen und historischen Negativkontrollen in CI. Die historischen Beispiele wurden erst jetzt
+recherchiert; ihre Zeitabstände sind kein live erzielter BauRadar-Vorsprung.
+Offen: endgültige CI/Integration, Veröffentlichung/Live-Abnahme sowie breitere kommunale
+Abdeckung und eine unabhängig bewertete, repräsentative Validierungsmenge.
+Keine Erhöhung des Gesamtfortschritts allein aufgrund recherchierter Beispiele.
+Details: [EARLY-/Lifecycle-Ledger](docs-internal/EARLY_LIFECYCLE.md).
+
 ## Meilensteine
 | Meilenstein | Stand | Nächster Nachweis / offene Arbeit |
 |---|---|---|

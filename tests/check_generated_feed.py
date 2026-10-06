@@ -5,6 +5,7 @@ import sys
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from intelligence.evidence import classify_evidence
+from early.corpus import active_events
 def read(path): return json.loads((ROOT/path).read_text(encoding="utf-8"))
 live=read("real_data/ted_live_normalized.json")
 enriched=read("real_data/ted_live_enriched.json")
@@ -19,7 +20,7 @@ assert customer["count"]==len(customer["opportunities"])==status["opportunities"
 assert all(r["quality_status"] in ("CONFIDENT","VERIFIED_EARLY") for r in customer["opportunities"])
 assert len({r["id"] for r in customer["opportunities"]})==customer["count"], "Duplicate customer identity"
 assert all(r["expected_tender_period"] is None for r in customer["opportunities"])
-assert status["early_signals"]==len(read("real_data/bavaria_verified_events.json"))
+assert status["early_signals"]==len(active_events())
 print(json.dumps({"verified":True,"source_records":len(live),"customer_ted":feed["count"],
     "early_signals":status["early_signals"],"master_projects":status["master_projects"],
     "lifecycle_candidates":status["lifecycle_candidates"],"confirmed_links":status["lifecycle_links"]}))

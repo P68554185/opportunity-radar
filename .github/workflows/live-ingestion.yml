@@ -7,6 +7,9 @@ on:
   push:
     branches: ["main"]
     paths:
+      - "early/**"
+      - "adapters/**"
+      - "real_data/early_source_manifest.json"
       - "live/**"
       - "benchmarks/**"
       - "classification/**"
@@ -45,7 +48,7 @@ jobs:
         run: |
           git config user.name "opportunity-radar-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/data/ reports/ real_data/ted_live_normalized.json real_data/ted_live_enriched.json || true
+          git add docs/data/ reports/ real_data/ted_live_normalized.json real_data/ted_live_enriched.json real_data/early_verified_events.json real_data/early_source_registry.json real_data/early_observations.json real_data/lifecycle_notice_archive.json || true
           git diff --cached --quiet || git commit -m "Update Opportunity Radar live intelligence"
           git fetch origin main
           git rebase origin/main
