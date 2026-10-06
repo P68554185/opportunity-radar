@@ -28,3 +28,8 @@ class MasterTests(unittest.TestCase):
         a=event(); projects=ingest([a])
         self.assertIs(resolve_project(projects,SourceEvent(**a)),projects[0])
         self.assertEqual(len(projects),1)
+
+    def test_same_generic_school_action_is_not_a_shared_project_name(self):
+        a=event();a["title"]="Zu- und Ersatzbau Gymnasium Hochrad";a["city"]="Hamburg"
+        b=dict(a,source_id="b",source_url="https://example.org/b",title="Zu- und Ersatzbau Gymnasium Hummelsbüttel und Grundschule Grützmühlenweg")
+        self.assertEqual(len(ingest([a,b])),2)

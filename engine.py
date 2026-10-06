@@ -125,7 +125,7 @@ def project_similarity(a: Project, e: SourceEvent) -> float:
         return 0.0
     if component_conflict(a.canonical_name,e.title): return 0.0
     # Shared generic facility words alone do not identify one construction project.
-    shared=anchors(a.canonical_name)&anchors(e.title)
+    shared=(anchors(a.canonical_name)&anchors(e.title))-set(norm(a.city).split())
     if not shared and not (a.project_address and a.project_address==e.project_address) and not (
             a.project_reference and a.project_reference==e.project_reference):
         return 0.0

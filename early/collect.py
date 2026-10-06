@@ -116,13 +116,14 @@ def collect():
             for event in events: indexed[event["source_id"]]=event
             report["sources"].append({"source_url":url,"status":"verified","content_sha256":digest,"records":len(events)})
         except Exception as exc:
-            report["sources"].append({"source_url":url,"status":"refresh_failed_retained","reason":type(exc).__name__})
+            report["sources"].append({"source_url":url,"status":"refresh_failed_retained","reason":type(exc).__name__,"detail":str(exc)[:180]})
     seen={d["source_url"] for d in manifest["documents"]}
     seen.update(r["source_url"] for r in json.loads((ROOT/"real_data/bavaria_verified_events.json").read_text()))
     budget=manifest["limits"]["maximum_documents"]
     for discovery in manifest["discovery"]:
         try:
             page,_=client.read(discovery["source_url"])
+            report["review_queue"].append({"source_url":discovery["source_url"],"reason":"index_observation","links_seen":len(page.links),"construction_headlines":sum(bool(re.search(r"hochbau|krankenhaus|kinder|schul|förderbescheid|neubau|bauvorhaben",title,re.I)) for title in page.link_titles.values())})
             links=sorted({urljoin(discovery["source_url"],link) for link in page.links
                 if re.search(r"hochbau|krankenhaus|kinder|schul|förderbescheid|neubau|bauvorhaben",page.link_titles.get(link,""),re.I)},reverse=True)
             for url in links:

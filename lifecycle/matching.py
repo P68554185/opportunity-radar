@@ -9,7 +9,7 @@ import re
 import unicodedata
 
 VERSION = "2026-10-06-identity-v1"
-GENERIC = set("neubau umbau sanierung erweiterung bau baumaßnahme projekt schule grundschule kindergarten klinikum krankenhaus hallenbad freibad gebäude campus stadt gemeinde landkreis los arbeiten rohbau trockenbau dach fassade vergabe ausschreibung der die das des den dem ein eine einer eines und oder am an im in mit für von zur zum".split())
+GENERIC = set("gymnasium stadtteilschule realschule mittelschule berufsschule pflegeschule zubau ersatzbau ersatzneubau generalsanierung gebaude zu neubau umbau sanierung erweiterung bau baumaßnahme projekt schule grundschule kindergarten klinikum krankenhaus hallenbad freibad gebäude campus stadt gemeinde landkreis los arbeiten rohbau trockenbau dach fassade vergabe ausschreibung der die das des den dem ein eine einer eines und oder am an im in mit für von zur zum".split())
 
 def norm(value):
     value = unicodedata.normalize("NFKC", str(value or "")).casefold()
