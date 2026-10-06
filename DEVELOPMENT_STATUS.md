@@ -14,6 +14,7 @@ Stand: 06.10.2026. Funktionsnachweise haben Vorrang vor Zielterminen.
 | Prozessneustart / Kontotrennung | CI erfolgreich | Echter Neustart mit PostgreSQL; zwei Konten im Browser; CI 37431562638 |
 | Automatischer Render-Feed | auf Render veröffentlicht und live geprüft | Geprüfte Pages-Daten per Servercache übernehmen, ohne täglichen Redeploy |
 | PostgreSQL-Sicherung / Restore | Werkzeuge integriert; Wiederherstellung in CI erfolgreich | Produktive Sicherungsplanung und verschlüsselte Ablage offen |
+| Bereinigung des Testzugangs | Betreiber bestätigt; öffentliche Live-Prüfung bestanden | Secret in Render/GitHub entfernt; Konto-Löschung beim Neustart in CI geprüft, nicht separat live ausgelesen |
 | Entfernung / Radius | offen | geprüfte Koordinaten und geographische Abdeckung |
 | E-Mail / Benachrichtigungen | offen | Verifizierung, Passwort-Reset, Versand und Opt-in |
 | Tarife / Bezahlung | offen | Nutzerentscheidung über Angebot/Preis und Zahlungsweg |
@@ -36,11 +37,11 @@ Live-Datenzahlen ändern sich mit erfolgreichen Pipeline-Läufen. Der Render-Liv
 Konservative Lifecycle-Verknüpfungen sind keine Garantie vollständiger Gebäudezusammenführung.
 
 ## Nächste Schritte
-1. PR #5 integriert und vollständig geprüft (CI 37431562638): automatische Feed-Übernahme, Prozessneustart und Browser-Kontotrennung.
-2. Render-Feed veröffentlicht und live geprüft (37432113469); kein erneutes Deployment allein für die Wartungswerkzeuge erforderlich.
-3. Geschlossener Kontotest live bestanden (37435166258, Versuch 3). Persistenzprüfung nach manuellem Render-Redeploy bestanden (37436725262). Jetzt Testsecret entfernen und Cleanup deployen.
-4. PostgreSQL-Backup/Restore in CI bestanden (37432784843). Produktive Sicherungsplanung/geschützte Ablage und persistente Konten über echten Render-Redeploy noch prüfen.
-5. Radius, weitere EARLY-Quellen, E-Mail sowie Angebot/Rechtstexte vervollständigen.
+1. Laufende EARLY-Akquisition und bewertete Stichproben aus weiteren offiziellen Quellen ausbauen.
+2. Standort-/Radiusabdeckung mit geprüften Koordinaten und geklärten Nutzungsbedingungen vervollständigen.
+3. Geschlossene Kundenaufnahme, E-Mail-Verifizierung/Passwort-Reset und Benachrichtigungen ergänzen.
+4. Produktive Sicherungsplanung und verschlüsselte Ablage einrichten; CI-Backup/Restore bereits bestanden.
+5. Angebot/Preis, Bezahlweg und Rechtstexte mit den erforderlichen Betreiberentscheidungen abschließen.
 
 ## Verbindliche Kostenentscheidung
 Kostenpflichtiges Hosting erst nach erfolgreicher Kundenvalidierung. Keine kostenpflichtigen Hostingbestellungen oder automatischen Upgrades.
@@ -95,3 +96,9 @@ Noch offen: bestehende Daten nach einem weiteren echten Render-Redeploy im verif
 Bestehende synthetische Profile und Merklisten wurden vor Änderungen geprüft: Konto A behielt sein Profil und genau ein beobachtetes Projekt, Konto B behielt sein getrenntes Profil ohne Merkliste. Anmeldung, Logout/Wiederanmeldung, Admin-Verweigerung und Secure-Cookies ebenfalls erfolgreich.
 Dies belegt Profil-/Merkliste-Erhalt nach dem vom Nutzer ausgeführten Render-Redeploy auf der echten Neon-Datenbank. Erhalt bereits offener Live-Sitzungen über Redeploy wurde nicht separat geprüft.
 Nächster Schritt: BAURADAR_CLOSED_TEST_PASSWORD in Render entfernen und deployen, wodurch die beiden reservierten Testkonten samt Daten entfernt werden; GitHub-Testsecret ebenfalls entfernen. Öffentliche Registrierung bleibt false. Cleanup-Live-Nachweis steht noch aus.
+
+## Testbereinigung und Abschluss
+Der Betreiber bestätigt am 06.10.2026 die Entfernung von BAURADAR_CLOSED_TEST_PASSWORD in Render mit anschließendem Deployment sowie die Löschung des gleichnamigen GitHub-Secrets.
+Öffentliche Live-Prüfung nach Bereinigung erfolgreich: https://github.com/P68554185/opportunity-radar/actions/runs/37438407621 — Anwendung, Datenbank, dynamischer geprüfter Feed, geschlossene Registrierung und anonymer Zugriffsschutz funktionsfähig.
+Die Startup-Bereinigung der beiden reservierten Konten wurde in CI nachgewiesen (37433704129). Die tatsächlichen Kontodatensätze auf Neon wurden nach der Betreiberbereinigung nicht separat ausgelesen; keine Behauptung eines direkten Live-Löschungsnachweises.
+Geschlossener Live-Kontotest und Live-Profil-/Merkliste-Persistenz bestanden. E-Mail, Bezahlung, Radius und produktive Sicherungsplanung bleiben offen. Keine verkaufsfähige GO-LIVE-Freigabe allein aus diesen Kontotests abgeleitet.
