@@ -40,9 +40,15 @@ Sicherheits-/Persistenzabsicherung: Auf Render startet die App nur mit einer Pos
 Öffentliche Anwendung: https://bauradar-pilot.onrender.com
 GitHub Actions: https://github.com/P68554185/opportunity-radar/actions/runs/37429224942 (erfolgreich).
 Geprüft: HTTPS-Seite, /api/live, /api/health inklusive Datenbankzugriff und Schemaanlage, 690 qualifizierte Feed-Einträge sowie anonymer Zugriffsschutz für Konto, Profile, Merkliste und Admin.
-Registrierung, E-Mail und Bezahlung sind weiterhin deaktiviert. Die erfolgreiche Datenbankverbindung ersetzt keinen Persistenz-/Wiederherstellungstest über einen Redeploy und keinen Browser-Kontotest. PR #5 ergänzt die regelmäßige Übernahme des geprüften Pages-Feeds im laufenden Backend. Auf Render wird sie erst nach dem nächsten manuellen Deployment aktiv.
+Registrierung, E-Mail und Bezahlung sind weiterhin deaktiviert. Die erfolgreiche Datenbankverbindung ersetzt keinen Persistenz-/Wiederherstellungstest über einen Redeploy und keinen Browser-Kontotest. PR #5 ergänzt die regelmäßige Übernahme des geprüften Pages-Feeds im laufenden Backend. Die Feed-Übernahme ist seit dem manuellen Deployment am 06.10.2026 live geprüft (37432113469).
 
 ## Nächstes manuelles Deployment (PR #5)
 Render: Dashboard → bauradar-pilot → Manual Deploy → Deploy latest commit. Auto-Deploy bleibt deaktiviert; keine Secrets ändern und Registrierung auf false belassen.
 Danach übernimmt der Server bei Feed-Aufrufen spätestens nach Ablauf seines 15-Minuten-Caches den geprüften Pages-Feed. Bei Netzfehlern, unpassender Policy, inkonsistenten Zählern, doppelten IDs, ungültigen Quellen oder älterem Datenstand bleibt der letzte validierte Snapshot bestehen. Bei einem Neustart dient das geprüfte Container-Snapshot als Rückfall.
-Die Prüfung ist CI-erfolgreich, aber nicht als live bereits aktiviert zu behandeln. Kontotrennung und tatsächlicher PostgreSQL-Prozessneustart bestanden in CI; ein realer Render-Redeploy-/Neon-Kontotest bleibt offen.
+Die Feed-Übernahme wurde auf Render erfolgreich live geprüft (37432113469). Kontotrennung und tatsächlicher PostgreSQL-Prozessneustart bestanden in CI; ein realer Render-Redeploy-/Neon-Kontotest bleibt offen.
+
+## Geschlossener Kontotest (PR #7)
+Testablauf bei geschlossener Registrierung gegen PostgreSQL in CI erfolgreich (37433704129). Live-Account-Abnahme steht aus.
+BAURADAR_CLOSED_TEST_PASSWORD ist ein ausschließlich für zwei synthetische Konten verwendetes, zufälliges 32–200-Zeichen-Testpasswort. Aktivierung nur über Render-Secret, keine öffentliche Registrierung. Dasselbe Secret wird für den manuellen Closed Live Account Test in GitHub benötigt; keine Datenbankverbindung in GitHub hinterlegen.
+Die Testkonten erhalten keine Adminrechte. Nach Abschluss Secret in Render entfernen und deployen; dies entfernt die beiden reservierten Testkonten und ihre Daten. GitHub-Testsecret ebenfalls löschen.
+Konkrete Einrichtung, Live-Test und zweiter Persistenztest nach Render-Redeploy: deploy/CLOSED_ACCOUNT_TEST.md.
