@@ -1,4 +1,4 @@
-# Kostenlose Kundenvalidierung – noch nicht bereitgestellt
+# Kostenlose Kundenvalidierung – Backend bereitgestellt
 Nutzerentscheidung vom 05.10.2026: kein kostenpflichtiges Hosting vor erfolgreicher Kundenvalidierung.
 Die nutzbare GitHub-Pages-Vorschau bleibt bestehen.
 Vorbereitete Option: Render Free für das unveränderte FastAPI-/Docker-Backend, Neon Free für dauerhafte PostgreSQL-Kundendaten.
@@ -32,6 +32,12 @@ E-Mail-Verifizierung/Passwort-Reset, Versand, Zahlung und vollständige rechtlic
 
 ## Blocker
 Der Nutzer hat Render- und Neon-Accounts über GitHub angelegt. In dieser Arbeitsumgebung besteht weiterhin kein direkter Zugriff auf die Render-/Neon-Dashboards. Die GitHub-Anmeldung bei den Anbietern verbindet diese Accounts nicht automatisch mit dem Assistenten.
-Nächster Schritt: Neon-Free-Projekt in einer EU-Region erstellen, Render-Blueprint aus diesem Repository einrichten und die Datenbankverbindung ausschließlich in Render hinterlegen. Noch kein kostenloses Backend deployt.
+Nächster Schritt: Neon-Free-Projekt in einer EU-Region erstellen, Render-Blueprint aus diesem Repository einrichten und die Datenbankverbindung ausschließlich in Render hinterlegen. Der Nutzer hat das kostenlose Backend inzwischen bereitgestellt.
 
 Sicherheits-/Persistenzabsicherung: Auf Render startet die App nur mit einer PostgreSQL-URL, explizitem TLS-Modus, HTTPS-Origin und Secure Cookies. Ein versehentlicher Rückfall auf die flüchtige lokale SQLite-Datei wird blockiert.
+
+## Live-Prüfung am 06.10.2026
+Öffentliche Anwendung: https://bauradar-pilot.onrender.com
+GitHub Actions: https://github.com/P68554185/opportunity-radar/actions/runs/37429224942 (erfolgreich).
+Geprüft: HTTPS-Seite, /api/live, /api/health inklusive Datenbankzugriff und Schemaanlage, 690 qualifizierte Feed-Einträge sowie anonymer Zugriffsschutz für Konto, Profile, Merkliste und Admin.
+Registrierung, E-Mail und Bezahlung sind weiterhin deaktiviert. Die erfolgreiche Datenbankverbindung ersetzt keinen Persistenz-/Wiederherstellungstest über einen Redeploy und keinen Browser-Kontotest. Der Feed im Docker-Image ist ein Deployment-Snapshot; regelmäßige Aktualisierung auf Render ist noch einzurichten.
