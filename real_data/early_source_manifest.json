@@ -254,7 +254,7 @@
             "project_type": "school",
             "phase": "project_announced"
           },
-          "required_anchor": "Gymnasiums Hochrad"
+          "required_anchor": "Hochrad"
         },
         {
           "event": {
@@ -271,7 +271,7 @@
             "project_type": "school",
             "phase": "project_announced"
           },
-          "required_anchor": "Stadtteilschule Winterhude"
+          "required_anchor": "Winterhude"
         },
         {
           "event": {
@@ -288,7 +288,7 @@
             "project_type": "school",
             "phase": "project_announced"
           },
-          "required_anchor": "Grundschule Alte Weiden"
+          "required_anchor": "Alte Weiden"
         },
         {
           "event": {
@@ -305,7 +305,7 @@
             "project_type": "school",
             "phase": "project_announced"
           },
-          "required_anchor": "Gymnasiums Hummelsbüttel"
+          "required_anchor": "Hummelsbüttel"
         },
         {
           "event": {
@@ -322,7 +322,7 @@
             "project_type": "school",
             "phase": "project_announced"
           },
-          "required_anchor": "Stadtteilschule Oldenfelde"
+          "required_anchor": "Oldenfelde"
         },
         {
           "event": {
@@ -339,7 +339,7 @@
             "project_type": "school",
             "phase": "project_announced"
           },
-          "required_anchor": "Matthias-Claudius-Gymnasiums"
+          "required_anchor": "Matthias-Claudius"
         }
       ],
       "fallback_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bsfb/weiterhin-erhebliche-investitionen-im-schulbau-1210668"
