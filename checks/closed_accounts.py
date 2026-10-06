@@ -49,7 +49,15 @@ def run(base,password,restart=None,persistence=False):
                                            headers={"Origin":base},data=body,timeout=90000)
             return response
         def login(index):
+            global stage
+            stage="login-account-"+str(index+1)
             page=pages[index]
+            statuses=[]
+            def record_response(response):
+                path=urlparse(response.url).path
+                if path in ("/api/login","/api/me","/api/profile","/api/watches"):
+                    statuses.append({"endpoint":path,"status":response.status})
+            page.on("response",record_response)
             page.goto(base+"/",timeout=90000)
             expect(page.locator("#accountOpen")).to_be_visible(timeout=30000)
             expect(page.locator("#register")).to_be_hidden()
@@ -57,7 +65,13 @@ def run(base,password,restart=None,persistence=False):
             page.locator("#accountEmail").fill(EMAILS[index])
             page.locator("#accountPassword").fill(password)
             page.locator("#accountForm button[type=submit]").click()
-            expect(page.locator("#logout")).to_be_visible(timeout=30000)
+            try:
+                expect(page.locator("#logout")).to_be_visible(timeout=30000)
+            except Exception:
+                print(json.dumps({"stage":stage,"api_statuses":statuses[-12:],"diagnostic":"Login did not complete; response bodies and credentials omitted."}))
+                raise
+            finally:
+                page.remove_listener("response",record_response)
             expect(page.locator("#register")).to_be_hidden()
             if base.startswith("https:"):
                 cookie=next(c for c in contexts[index].cookies(base) if c["name"]=="bauradar_session")
