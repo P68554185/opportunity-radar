@@ -1,18 +1,18 @@
 {
   "version": "0.8.5",
   "source": "real_data/ted_live_enriched.json",
-  "records_seen": 2000,
-  "records_evaluated": 2000,
+  "records_seen": 10000,
+  "records_evaluated": 10000,
   "quality_gate": {
-    "REVIEW": 1277,
-    "CONFIDENT": 652,
-    "UNKNOWN": 71
+    "REVIEW": 6511,
+    "CONFIDENT": 3166,
+    "UNKNOWN": 323
   },
-  "customer_facing_confident": 652,
-  "held_for_review": 1277,
-  "suppressed_unknown": 71,
+  "customer_facing_confident": 3166,
+  "held_for_review": 6511,
+  "suppressed_unknown": 323,
   "audit_sample_size": 60,
-  "gate_total_check": 2000,
+  "gate_total_check": 10000,
   "gate_total_matches_records": true,
   "accuracy_measured": false,
   "accuracy_note": "Quality gate is evidence screening, not measured precision. Review labels are required for accuracy."

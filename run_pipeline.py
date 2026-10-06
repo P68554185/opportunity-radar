@@ -8,7 +8,7 @@ STEPS=[
  ("Refresh Dresden municipal notices",[sys.executable,"municipal/collect.py"]),
  ("Refresh licensed Dresden spatial references",[sys.executable,"geography/dresden.py"]),
  ("Classifier regression",[sys.executable,"benchmarks/classifier_regression.py"]),
- ("Acquire and normalize 2000 TED notices",[sys.executable,"benchmarks/live_ted_500.py"]),
+ ("Acquire and normalize configured TED volume",[sys.executable,"benchmarks/live_ted_500.py"]),
  ("Build intelligence layer",[sys.executable,"intelligence/build.py"]),
  ("Analyze opportunity quality",[sys.executable,"intelligence/quality.py"]),
  ("Full dataset quality gate",[sys.executable,"intelligence/full_quality_gate.py"]),
@@ -19,6 +19,7 @@ STEPS=[
  ("Build BauRadar customer feed",[sys.executable,"intelligence/customer_feed.py"]),
  ("Update website status",[sys.executable,"github_status.py"]),
  ("Verify generated feed",[sys.executable,"tests/check_generated_feed.py"]),
+ ("Verify growth completeness and production payload budget",[sys.executable,"checks/growth_data_acceptance.py"]),
 ]
 for name,cmd in STEPS:
     print(f"\n=== {name} ===",flush=True)

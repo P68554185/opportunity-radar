@@ -11,7 +11,7 @@ from lifecycle.matching import history
 from intelligence.evidence import POLICY_VERSION
 
 def next_action(phase):
-    if phase=="tender":return "Vergabeunterlagen und Frist in der Originalquelle prüfen."
+    if phase=="tender":return "Zuerst in der Originalquelle prüfen, ob das Verfahren noch läuft und die Angebotsfrist offen ist. Danach die Vergabeunterlagen prüfen."
     if phase=="award":return "Zuschlag und Auftragnehmer in der Originalquelle prüfen."
     if phase=="prior_information":return "Geplante Lose und den vorgesehenen Vergabezeitpunkt in der Vorankündigung prüfen."
     return "Projektphase und nächsten Vergabeschritt beim Auftraggeber oder in der Originalquelle klären."

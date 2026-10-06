@@ -14,6 +14,7 @@ on:
       - "adapters/**"
       - "real_data/early_source_manifest.json"
       - "live/**"
+      - "config/data_volume.json"
       - "benchmarks/**"
       - "classification/**"
       - "intelligence/**"
