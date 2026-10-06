@@ -10589,6 +10589,5768 @@
     ],
     "numberMatched": "unknown"
   },
+  "development_plans": {
+    "types": [
+      {
+        "name": "cls:L292",
+        "title": "Kleingartenanlagen"
+      }
+    ],
+    "parameters": [
+      {
+        "tag": "Value",
+        "text": "2.0.0"
+      },
+      {
+        "tag": "DefaultCRS",
+        "text": "urn:ogc:def:crs:EPSG::25833"
+      },
+      {
+        "tag": "OtherCRS",
+        "text": "urn:ogc:def:crs:EPSG::4326"
+      },
+      {
+        "tag": "OtherCRS",
+        "text": "urn:ogc:def:crs:EPSG::31469"
+      },
+      {
+        "tag": "OtherCRS",
+        "text": "urn:ogc:def:crs:EPSG::3857"
+      }
+    ],
+    "version": "2.0.0",
+    "features": [
+      {
+        "id": "L292.1",
+        "properties": {
+          "objectid": "1",
+          "oa": "StB Plauen",
+          "ort": "KG - Coschütz Neuland e. V. - Kleingartenverein",
+          "vereinsreg": "801",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/254"
+        },
+        "bbox": [
+          13.708885277172532,
+          51.01912781054043,
+          13.714022118563774,
+          51.02157146263054
+        ]
+      },
+      {
+        "id": "L292.2",
+        "properties": {
+          "objectid": "2",
+          "oa": "StB Leuben",
+          "ort": "KG - Deutsche Reichsbahn Niedersedlitz e. V./BLW/ - Kleingärtnerverein",
+          "vereinsreg": "673",
+          "url": ""
+        },
+        "bbox": [
+          13.8289478022111,
+          50.9961252748215,
+          13.8319488446539,
+          50.9978710438382
+        ]
+      },
+      {
+        "id": "L292.3",
+        "properties": {
+          "objectid": "3",
+          "oa": "O Gompitz",
+          "ort": "KG - Am Hohlweg Gompitz e. V./GP/KRV - Kleingartenverein",
+          "vereinsreg": "1740",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/346"
+        },
+        "bbox": [
+          13.6385956575629,
+          51.0443011504324,
+          13.6407413483571,
+          51.0464012959214
+        ]
+      },
+      {
+        "id": "L292.4",
+        "properties": {
+          "objectid": "4",
+          "oa": "StB Neustadt",
+          "ort": "KG - Albertpark   e. V. - Kleingärtnerverein",
+          "vereinsreg": "640",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/52"
+        },
+        "bbox": [
+          13.778624295202302,
+          51.07076648269228,
+          13.78298455046353,
+          51.072387258750055
+        ]
+      },
+      {
+        "id": "L292.5",
+        "properties": {
+          "objectid": "5",
+          "oa": "StB Loschwitz",
+          "ort": "KG - Am Heiderand (Bühlau) e. V - Kleingartenverein",
+          "vereinsreg": "677",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/160"
+        },
+        "bbox": [
+          13.858062379305577,
+          51.06173932524756,
+          13.866030532269646,
+          51.06564539320657
+        ]
+      },
+      {
+        "id": "L292.6",
+        "properties": {
+          "objectid": "6",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Altenberger Platz e.V. - Kleingartenverein",
+          "vereinsreg": "470",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/20"
+        },
+        "bbox": [
+          13.805873796907047,
+          51.03168110608428,
+          13.808404312514092,
+          51.03406687368632
+        ]
+      },
+      {
+        "id": "L292.7",
+        "properties": {
+          "objectid": "7",
+          "oa": "StB Neustadt",
+          "ort": "KG - Fortschritt I e. V - Gartenfreunde",
+          "vereinsreg": "565",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/176"
+        },
+        "bbox": [
+          13.7405322055704,
+          51.074283350667,
+          13.7454681248127,
+          51.078241787492
+        ]
+      },
+      {
+        "id": "L292.17",
+        "properties": {
+          "objectid": "17",
+          "oa": "StB Cotta",
+          "ort": "KG - Ostrafeld  e. V. - Kleingärtnerverein",
+          "vereinsreg": "573",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/92"
+        },
+        "bbox": [
+          13.6945112718654,
+          51.0506422138083,
+          13.6986346495153,
+          51.0524033903626
+        ]
+      },
+      {
+        "id": "L292.18",
+        "properties": {
+          "objectid": "18",
+          "oa": "StB Cotta",
+          "ort": "KG - Schleswiger Straße e. V. - Sparte der Kleingärtner",
+          "vereinsreg": "369",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/101"
+        },
+        "bbox": [
+          13.6553752006185,
+          51.0696719726734,
+          13.6596212863849,
+          51.0714695174414
+        ]
+      },
+      {
+        "id": "L292.19",
+        "properties": {
+          "objectid": "19",
+          "oa": "StB Pieschen",
+          "ort": "KG - Erdkugel e. V. - Gartensparte",
+          "vereinsreg": "745",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/213"
+        },
+        "bbox": [
+          13.7368821444716,
+          51.0759391676636,
+          13.7375972417903,
+          51.079315075955
+        ]
+      },
+      {
+        "id": "L292.20",
+        "properties": {
+          "objectid": "20",
+          "oa": "StB Prohlis",
+          "ort": "KG - Reicker Straße 29 e. V. - Verein der Kleingärtner",
+          "vereinsreg": "510",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/326"
+        },
+        "bbox": [
+          13.7710366337592,
+          51.0243727805006,
+          13.7726444255171,
+          51.0259080114489
+        ]
+      },
+      {
+        "id": "L292.21",
+        "properties": {
+          "objectid": "21",
+          "oa": "StB Leuben",
+          "ort": "KG - An dem Zschierbach I e. V. - Kleingärtnersparte",
+          "vereinsreg": "3251",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/132"
+        },
+        "bbox": [
+          13.8392823552778,
+          51.0162281754771,
+          13.8419029853741,
+          51.0171697691458
+        ]
+      },
+      {
+        "id": "L292.22",
+        "properties": {
+          "objectid": "22",
+          "oa": "StB Cotta",
+          "ort": "KG - Sonnenlehne II e. V. - Kleingärtnerverein",
+          "vereinsreg": "734",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/105"
+        },
+        "bbox": [
+          13.6737603076644,
+          51.0506999512978,
+          13.6763754497004,
+          51.0527689447358
+        ]
+      },
+      {
+        "id": "L292.23",
+        "properties": {
+          "objectid": "23",
+          "oa": "StB Pieschen",
+          "ort": "KG - Zur neuen Hoffnung e. V. - Kleingärtnerverein",
+          "vereinsreg": "811",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/247"
+        },
+        "bbox": [
+          13.7155808685297,
+          51.0878465870483,
+          13.71640468289,
+          51.088600661126
+        ]
+      },
+      {
+        "id": "L292.24",
+        "properties": {
+          "objectid": "24",
+          "oa": "StB Cotta",
+          "ort": "KG - Am Gorbitzbach e. V. - Kleingartenverein",
+          "vereinsreg": "817",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/57"
+        },
+        "bbox": [
+          13.67777130741266,
+          51.04069765145412,
+          13.681378609835837,
+          51.042232891576674
+        ]
+      },
+      {
+        "id": "L292.25",
+        "properties": {
+          "objectid": "25",
+          "oa": "StB Cotta",
+          "ort": "KG - Roßthaler Höhe e. V. - Kleingärtnerverein",
+          "vereinsreg": "412",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/100"
+        },
+        "bbox": [
+          13.6772219075874,
+          51.03317898291,
+          13.6805304728446,
+          51.0349037709521
+        ]
+      },
+      {
+        "id": "L292.26",
+        "properties": {
+          "objectid": "26",
+          "oa": "StB Plauen",
+          "ort": "KG - Hohenplauen e. V. - Kleingartenverein",
+          "vereinsreg": "687",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/269"
+        },
+        "bbox": [
+          13.707421250664005,
+          51.01885956883484,
+          13.712354684781785,
+          51.02107081727529
+        ]
+      },
+      {
+        "id": "L292.27",
+        "properties": {
+          "objectid": "27",
+          "oa": "StB Pieschen",
+          "ort": "KG - An der Fähre  e. V. - Kleingärtnerverein",
+          "vereinsreg": "418",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/202"
+        },
+        "bbox": [
+          13.7263624909896,
+          51.0694981286892,
+          13.7289549385572,
+          51.0708712979651
+        ]
+      },
+      {
+        "id": "L292.28",
+        "properties": {
+          "objectid": "28",
+          "oa": "StB Prohlis",
+          "ort": "KG - Altleubnitz e. V. - Kleingärtnerverein",
+          "vereinsreg": "502",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/286"
+        },
+        "bbox": [
+          13.762246217332,
+          51.0127200875191,
+          13.7637474833805,
+          51.014073417593
+        ]
+      },
+      {
+        "id": "L292.29",
+        "properties": {
+          "objectid": "29",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Güttler-Heim e. V. - Kleingärtnerverein",
+          "vereinsreg": "468",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/40"
+        },
+        "bbox": [
+          13.79004222388592,
+          51.021465315341906,
+          13.793193279427557,
+          51.02432889311994
+        ]
+      },
+      {
+        "id": "L292.30",
+        "properties": {
+          "objectid": "30",
+          "oa": "StB Klotzsche",
+          "ort": "KG - Klotzsche  e. V. - Kleingartenanlage",
+          "vereinsreg": "647",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/127"
+        },
+        "bbox": [
+          13.762585804233,
+          51.1158813560399,
+          13.7654788978722,
+          51.117953632174
+        ]
+      },
+      {
+        "id": "L292.31",
+        "properties": {
+          "objectid": "31",
+          "oa": "StB Leuben",
+          "ort": "KG - Borsbergblick e. V. - Kleingärtnerverein",
+          "vereinsreg": "469",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/136"
+        },
+        "bbox": [
+          13.8403611197916,
+          50.9965478505349,
+          13.8434150343284,
+          50.9976969992149
+        ]
+      },
+      {
+        "id": "L292.32",
+        "properties": {
+          "objectid": "32",
+          "oa": "O Langebrück",
+          "ort": "KG - Am Steinweg e. V. /LB/ - Kleingartenverein",
+          "vereinsreg": "2363",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/353"
+        },
+        "bbox": [
+          13.832349902413801,
+          51.1220565438444,
+          13.842313677198414,
+          51.12462413906372
+        ]
+      },
+      {
+        "id": "L292.33",
+        "properties": {
+          "objectid": "33",
+          "oa": "StB Loschwitz",
+          "ort": "KG - Taubenberg e. V. - Kleingartenverein",
+          "vereinsreg": "371",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/172"
+        },
+        "bbox": [
+          13.8642871402506,
+          51.0563377162243,
+          13.8708741374745,
+          51.0601654985301
+        ]
+      },
+      {
+        "id": "L292.34",
+        "properties": {
+          "objectid": "34",
+          "oa": "StB Plauen",
+          "ort": "KG - Fernblick e. V. Kleingartensparte",
+          "vereinsreg": "185",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/258"
+        },
+        "bbox": [
+          13.7363565587235,
+          51.0221010912516,
+          13.7383777033574,
+          51.0239112178688
+        ]
+      },
+      {
+        "id": "L292.35",
+        "properties": {
+          "objectid": "35",
+          "oa": "O Cossebaude",
+          "ort": "KG - Am Urnenfeld  e. V. /CB/ - Kleingarten",
+          "vereinsreg": "1851",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/342"
+        },
+        "bbox": [
+          13.648565513302826,
+          51.081515648291116,
+          13.650658133632668,
+          51.08349676105711
+        ]
+      },
+      {
+        "id": "L292.36",
+        "properties": {
+          "objectid": "36",
+          "oa": "StB Loschwitz",
+          "ort": "KG - Bühlauer Kleingartenverein e. V. - KGV",
+          "vereinsreg": "476",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/162"
+        },
+        "bbox": [
+          13.8596989112997,
+          51.0637131246476,
+          13.8610773614626,
+          51.0645377570916
+        ]
+      },
+      {
+        "id": "L292.37",
+        "properties": {
+          "objectid": "37",
+          "oa": "StB Plauen",
+          "ort": "KG - Freitaler Straße 1 e. V. - Kleingartensparte",
+          "vereinsreg": "805",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/259"
+        },
+        "bbox": [
+          13.688715820959,
+          51.0155568809874,
+          13.6909763415927,
+          51.0163558578053
+        ]
+      },
+      {
+        "id": "L292.38",
+        "properties": {
+          "objectid": "38",
+          "oa": "O Schönfeld-Weißig",
+          "ort": "KG - Kirschallee e. V. /SW/KRV - Kleingartenverein",
+          "vereinsreg": "1595",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/361"
+        },
+        "bbox": [
+          13.8692556143127,
+          51.0445992577007,
+          13.8716447336785,
+          51.0453460753885
+        ]
+      },
+      {
+        "id": "L292.39",
+        "properties": {
+          "objectid": "39",
+          "oa": "O Weixdorf",
+          "ort": "KG - Waldblick I e. V./WX/ - Kleingartenverein",
+          "vereinsreg": "2078",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/370"
+        },
+        "bbox": [
+          13.80182849405235,
+          51.1391300251548,
+          13.805807635911442,
+          51.14255491021905
+        ]
+      },
+      {
+        "id": "L292.40",
+        "properties": {
+          "objectid": "40",
+          "oa": "StB Cotta",
+          "ort": "KG - Neuland e. V. - Kleingärtnersparte",
+          "vereinsreg": "731",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/86"
+        },
+        "bbox": [
+          13.6989039098745,
+          51.0499839626508,
+          13.7021080273046,
+          51.05208359918
+        ]
+      },
+      {
+        "id": "L292.41",
+        "properties": {
+          "objectid": "41",
+          "oa": "StB Leuben",
+          "ort": "KG - Dieselstraße e. V. - Kleingartenverein",
+          "vereinsreg": "600",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/138"
+        },
+        "bbox": [
+          13.8307768317896,
+          51.0124162537786,
+          13.8332769012789,
+          51.0146661263883
+        ]
+      },
+      {
+        "id": "L292.8",
+        "properties": {
+          "objectid": "8",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Am Rothermundtpark e. V. - Kleingärtnerverein",
+          "vereinsreg": "508",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/23"
+        },
+        "bbox": [
+          13.788538150504552,
+          51.031605363482264,
+          13.790910257475359,
+          51.033505541286274
+        ]
+      },
+      {
+        "id": "L292.9",
+        "properties": {
+          "objectid": "9",
+          "oa": "StB Cotta",
+          "ort": "KG - Roßthal e. V. - Kleingärtnerverein",
+          "vereinsreg": "834",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/99"
+        },
+        "bbox": [
+          13.673908775078294,
+          51.035355263836365,
+          13.678163952322475,
+          51.037995289240136
+        ]
+      },
+      {
+        "id": "L292.10",
+        "properties": {
+          "objectid": "10",
+          "oa": "StB Prohlis",
+          "ort": "KG - Leubnitz-Neuostra am Heydenreichweg e. V. - Kleingärtnersparte",
+          "vereinsreg": "2601",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/311"
+        },
+        "bbox": [
+          13.7696134706945,
+          51.0136796489933,
+          13.7729321720941,
+          51.0150252230933
+        ]
+      },
+      {
+        "id": "L292.11",
+        "properties": {
+          "objectid": "11",
+          "oa": "StB Leuben",
+          "ort": "KG - Flurstück  223 e. V. - Kleingärtner",
+          "vereinsreg": "375",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/143"
+        },
+        "bbox": [
+          13.839643607623021,
+          51.00867484154032,
+          13.842315317502306,
+          51.01059631876419
+        ]
+      },
+      {
+        "id": "L292.12",
+        "properties": {
+          "objectid": "12",
+          "oa": "StB Cotta",
+          "ort": "KG - Kleiner Windfang e. V. - Kleingarten",
+          "vereinsreg": "3202",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/80"
+        },
+        "bbox": [
+          13.6937429504244,
+          51.0332387650632,
+          13.6955129596496,
+          51.0338405649087
+        ]
+      },
+      {
+        "id": "L292.13",
+        "properties": {
+          "objectid": "13",
+          "oa": "StB Cotta",
+          "ort": "KG - Tonberg Süd e. V. - Kleingärtnerverein",
+          "vereinsreg": "735",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/110"
+        },
+        "bbox": [
+          13.68177230769217,
+          51.05543936782721,
+          13.682478257774948,
+          51.056956104129625
+        ]
+      },
+      {
+        "id": "L292.14",
+        "properties": {
+          "objectid": "14",
+          "oa": "StB Pieschen",
+          "ort": "KG - Dorndorf e. V. - Kleingärtnerverein",
+          "vereinsreg": "645",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/208"
+        },
+        "bbox": [
+          13.7287789631858,
+          51.084525560381,
+          13.7333331772729,
+          51.0856767691281
+        ]
+      },
+      {
+        "id": "L292.15",
+        "properties": {
+          "objectid": "15",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Pirnaer Landstraße e. V. - Kleingartensparte",
+          "vereinsreg": "393",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/45"
+        },
+        "bbox": [
+          13.8099578265656,
+          51.0193342468615,
+          13.8116965744582,
+          51.0214475397581
+        ]
+      },
+      {
+        "id": "L292.16",
+        "properties": {
+          "objectid": "16",
+          "oa": "O Gompitz",
+          "ort": "KG - Bergfrieden Gompitz e. V./GP/ - Kleingartensparte",
+          "vereinsreg": "2057",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/348"
+        },
+        "bbox": [
+          13.6291189542273,
+          51.033258725416,
+          13.6328213227861,
+          51.0362042717218
+        ]
+      },
+      {
+        "id": "L292.50",
+        "properties": {
+          "objectid": "50",
+          "oa": "StB Prohlis",
+          "ort": "KG - Feuerbachstraße e. V. - Mietergärten",
+          "vereinsreg": "456",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/300"
+        },
+        "bbox": [
+          13.7601213957728,
+          51.018212550421,
+          13.7625238938772,
+          51.0203648338733
+        ]
+      },
+      {
+        "id": "L292.51",
+        "properties": {
+          "objectid": "51",
+          "oa": "StB Neustadt",
+          "ort": "KG - Jägerpark e. V. - Gartenverein",
+          "vereinsreg": "1033",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/182"
+        },
+        "bbox": [
+          13.7811402363503,
+          51.0717445671914,
+          13.7836322968023,
+          51.0729643461343
+        ]
+      },
+      {
+        "id": "L292.52",
+        "properties": {
+          "objectid": "52",
+          "oa": "StB Plauen",
+          "ort": "KG - Eutschützer Straße e. V. - Kleingartenverein",
+          "vereinsreg": "2534",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/256"
+        },
+        "bbox": [
+          13.7539211058399,
+          51.0145211417161,
+          13.7548226039365,
+          51.0152635582204
+        ]
+      },
+      {
+        "id": "L292.53",
+        "properties": {
+          "objectid": "53",
+          "oa": "StB Prohlis",
+          "ort": "KG - Koitschgraben e. V. - Mietergärtnerverein",
+          "vereinsreg": "433",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/309"
+        },
+        "bbox": [
+          13.7791422856448,
+          51.0151368853515,
+          13.7804858293185,
+          51.0167075060313
+        ]
+      },
+      {
+        "id": "L292.54",
+        "properties": {
+          "objectid": "54",
+          "oa": "O Langebrück",
+          "ort": "KG - Am Heideeck e. V./LB/ - Kleingartenverein",
+          "vereinsreg": "2208",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/352"
+        },
+        "bbox": [
+          13.826452715726973,
+          51.125167097706466,
+          13.828233548612138,
+          51.12606255125515
+        ]
+      },
+      {
+        "id": "L292.55",
+        "properties": {
+          "objectid": "55",
+          "oa": "StB Cotta",
+          "ort": "KG - Sonnenland e. V. - Kleingartenanlage",
+          "vereinsreg": "277",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/103"
+        },
+        "bbox": [
+          13.6671364944848,
+          51.0516850604922,
+          13.6689304339573,
+          51.053840865471
+        ]
+      },
+      {
+        "id": "L292.56",
+        "properties": {
+          "objectid": "56",
+          "oa": "StB Prohlis",
+          "ort": "KG - Spitzwegstraße I e. V. - Kleingärtnerverein",
+          "vereinsreg": "814",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/329"
+        },
+        "bbox": [
+          13.757742850319794,
+          51.01436442877604,
+          13.762757784250823,
+          51.01535110571888
+        ]
+      },
+      {
+        "id": "L292.57",
+        "properties": {
+          "objectid": "57",
+          "oa": "StB Pieschen",
+          "ort": "KG - Concordia e. V. - Kleingärtnerverein",
+          "vereinsreg": "417",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/206"
+        },
+        "bbox": [
+          13.7250750631335,
+          51.074875170424,
+          13.7263288879395,
+          51.0755370361443
+        ]
+      },
+      {
+        "id": "L292.58",
+        "properties": {
+          "objectid": "58",
+          "oa": "O Cossebaude",
+          "ort": "KG - Am Hangweg e. V./CB/ - Kleingartenverein",
+          "vereinsreg": "1608",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/340"
+        },
+        "bbox": [
+          13.642303381477168,
+          51.08082619416862,
+          13.645581880986686,
+          51.082154034022395
+        ]
+      },
+      {
+        "id": "L292.79",
+        "properties": {
+          "objectid": "79",
+          "oa": "StB Prohlis",
+          "ort": "KG - Am Teich   e. V. - Kleingärtnersparte",
+          "vereinsreg": "3386",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/295"
+        },
+        "bbox": [
+          13.782307324802884,
+          51.009666282916484,
+          13.79140508334975,
+          51.0128025950598
+        ]
+      },
+      {
+        "id": "L292.80",
+        "properties": {
+          "objectid": "80",
+          "oa": "StB Plauen",
+          "ort": "KG - Felsenkeller e. V. - Kleingartensparte",
+          "vereinsreg": "265",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/257"
+        },
+        "bbox": [
+          13.69509543221633,
+          51.01979750933075,
+          13.703540159070172,
+          51.02325630369986
+        ]
+      },
+      {
+        "id": "L292.81",
+        "properties": {
+          "objectid": "81",
+          "oa": "StB Leuben",
+          "ort": "KG - Laibacher Straße  e. V. - Kleingärtnerverein",
+          "vereinsreg": "552",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/145"
+        },
+        "bbox": [
+          13.8403835293985,
+          51.018902498167,
+          13.8417817343019,
+          51.0198622815745
+        ]
+      },
+      {
+        "id": "L292.82",
+        "properties": {
+          "objectid": "82",
+          "oa": "StB Prohlis",
+          "ort": "KG - Gebergrund e. V./KA/WEIK - Kleingartensparte",
+          "vereinsreg": "199",
+          "url": ""
+        },
+        "bbox": [
+          13.778686841580525,
+          50.990032031583404,
+          13.782433692914731,
+          50.992519916424676
+        ]
+      },
+      {
+        "id": "L292.83",
+        "properties": {
+          "objectid": "83",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Liebenauer Straße  e. V. - Kleingärtnerverein",
+          "vereinsreg": "678",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/43"
+        },
+        "bbox": [
+          13.8048515495931,
+          51.0289467371359,
+          13.8062930273626,
+          51.0300031973611
+        ]
+      },
+      {
+        "id": "L292.84",
+        "properties": {
+          "objectid": "84",
+          "oa": "StB Leuben",
+          "ort": "KG - Sachsenwerk e. V. - Kleingärtnerverein",
+          "vereinsreg": "554",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/150"
+        },
+        "bbox": [
+          13.839986307959418,
+          50.997828016785554,
+          13.845097769721178,
+          51.00057398041212
+        ]
+      },
+      {
+        "id": "L292.85",
+        "properties": {
+          "objectid": "85",
+          "oa": "StB Leuben",
+          "ort": "KG - Bahnhofstraße e. V. - Kleingärtnerverein",
+          "vereinsreg": "566",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/134"
+        },
+        "bbox": [
+          13.8448016714375,
+          51.0034510002649,
+          13.8462697878194,
+          51.0050818797596
+        ]
+      },
+      {
+        "id": "L292.86",
+        "properties": {
+          "objectid": "86",
+          "oa": "StB Cotta",
+          "ort": "KG - Lübecker Höhe e. V. - Kleingärtnerverein",
+          "vereinsreg": "695",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/83"
+        },
+        "bbox": [
+          13.6948526506599,
+          51.0502287579304,
+          13.6970471397936,
+          51.0515887335255
+        ]
+      },
+      {
+        "id": "L292.87",
+        "properties": {
+          "objectid": "87",
+          "oa": "StB Pieschen",
+          "ort": "KG - Mariengärten Dresden-Nord  e. V. - Gartenverein",
+          "vereinsreg": "440",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/225"
+        },
+        "bbox": [
+          13.730161141649761,
+          51.087106063584805,
+          13.73372054908105,
+          51.08880592644005
+        ]
+      },
+      {
+        "id": "L292.88",
+        "properties": {
+          "objectid": "88",
+          "oa": "StB Cotta",
+          "ort": "KG - Freier Blick e. V. - Kleingärtnerverein",
+          "vereinsreg": "141",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/68"
+        },
+        "bbox": [
+          13.6882054780339,
+          51.0300317027058,
+          13.6899553814046,
+          51.0324898722143
+        ]
+      },
+      {
+        "id": "L292.89",
+        "properties": {
+          "objectid": "89",
+          "oa": "StB Cotta",
+          "ort": "KG - Post-Telegrafen e. V. - Kleingärtnerverein",
+          "vereinsreg": "390",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/96"
+        },
+        "bbox": [
+          13.6970471397936,
+          51.0503044621131,
+          13.6995617051537,
+          51.0521380402148
+        ]
+      },
+      {
+        "id": "L292.90",
+        "properties": {
+          "objectid": "90",
+          "oa": "StB Loschwitz",
+          "ort": "KG - Niederpoyritz e. V. - Kleingartensparte",
+          "vereinsreg": "373",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/167"
+        },
+        "bbox": [
+          13.843657172108324,
+          51.02475220486542,
+          13.854756863362242,
+          51.03321945025219
+        ]
+      },
+      {
+        "id": "L292.91",
+        "properties": {
+          "objectid": "91",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Gruna e. V. - Kleingärtnerverein",
+          "vereinsreg": "202",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/39"
+        },
+        "bbox": [
+          13.7900761377777,
+          51.0391446630072,
+          13.7922479772727,
+          51.0400866873615
+        ]
+      },
+      {
+        "id": "L292.92",
+        "properties": {
+          "objectid": "92",
+          "oa": "StB Altstadt",
+          "ort": "KG - Waltherbrücke e. V. - Kleingartenverein",
+          "vereinsreg": "3514",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/12"
+        },
+        "bbox": [
+          13.707657315128,
+          51.0519098179783,
+          13.7087130324138,
+          51.0528753661981
+        ]
+      },
+      {
+        "id": "L292.93",
+        "properties": {
+          "objectid": "93",
+          "oa": "StB Prohlis",
+          "ort": "KG - Am Anger  e. V. - Kleingartenverein",
+          "vereinsreg": "571",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/287"
+        },
+        "bbox": [
+          13.7876321386405,
+          51.0085726164991,
+          13.7892674998348,
+          51.0097213170332
+        ]
+      },
+      {
+        "id": "L292.94",
+        "properties": {
+          "objectid": "94",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Blasewitz e. V. - Kleingärtnerverein",
+          "vereinsreg": "271",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/28"
+        },
+        "bbox": [
+          13.8104001715429,
+          51.0435794693885,
+          13.8124230731469,
+          51.0449001316874
+        ]
+      },
+      {
+        "id": "L292.95",
+        "properties": {
+          "objectid": "95",
+          "oa": "StB Prohlis",
+          "ort": "KG - Heimaterde e. V. - Kleingärtnerverein",
+          "vereinsreg": "513",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/307"
+        },
+        "bbox": [
+          13.7513265242855,
+          51.0196454461872,
+          13.7551557611285,
+          51.0219164612713
+        ]
+      },
+      {
+        "id": "L292.96",
+        "properties": {
+          "objectid": "96",
+          "oa": "StB Plauen",
+          "ort": "KG - Am Hohen Stein  e. V. - Kleingärtnerverein",
+          "vereinsreg": "688",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/250"
+        },
+        "bbox": [
+          13.7041785929523,
+          51.0203049190414,
+          13.7047999242869,
+          51.0209315793766
+        ]
+      },
+      {
+        "id": "L292.97",
+        "properties": {
+          "objectid": "97",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Elbgrund  e. V. - Kleingartenverein",
+          "vereinsreg": "567",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/35"
+        },
+        "bbox": [
+          13.8088410767962,
+          51.0227741132202,
+          13.8179892978548,
+          51.0282069301362
+        ]
+      },
+      {
+        "id": "L292.98",
+        "properties": {
+          "objectid": "98",
+          "oa": "StB Neustadt",
+          "ort": "KG - Elbperle e. V. /BLW/ - Kleingartenverein",
+          "vereinsreg": "626",
+          "url": ""
+        },
+        "bbox": [
+          13.73374576274021,
+          51.06228464914579,
+          13.743213821799081,
+          51.06827568563289
+        ]
+      },
+      {
+        "id": "L292.59",
+        "properties": {
+          "objectid": "59",
+          "oa": "StB Klotzsche",
+          "ort": "KG - Alte Ziegelei (Hellerau) e. V. - Kleingartenverein u. Wohnsiedlung",
+          "vereinsreg": "806",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/122"
+        },
+        "bbox": [
+          13.752830947909427,
+          51.132015499191034,
+          13.756346589396422,
+          51.134189640456434
+        ]
+      },
+      {
+        "id": "L292.60",
+        "properties": {
+          "objectid": "60",
+          "oa": "O Weixdorf",
+          "ort": "KG - Lausa e. V./WX/KRV - Kleingartenverein",
+          "vereinsreg": "1803",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/369"
+        },
+        "bbox": [
+          13.8101155838867,
+          51.1400043930762,
+          13.8124146262362,
+          51.1428748047243
+        ]
+      },
+      {
+        "id": "L292.61",
+        "properties": {
+          "objectid": "61",
+          "oa": "StB Pieschen",
+          "ort": "KG - Seewiesen e. V. - Kleingärtnerverein",
+          "vereinsreg": "441",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/235"
+        },
+        "bbox": [
+          13.6921401213683,
+          51.0868164783852,
+          13.6954992657247,
+          51.0896944172271
+        ]
+      },
+      {
+        "id": "L292.62",
+        "properties": {
+          "objectid": "62",
+          "oa": "StB Leuben",
+          "ort": "KG - Sonnenblume e. V. - Kleingartenverein",
+          "vereinsreg": "226",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/152"
+        },
+        "bbox": [
+          13.836726000333,
+          51.0110132475932,
+          13.8391431609576,
+          51.0130145847151
+        ]
+      },
+      {
+        "id": "L292.63",
+        "properties": {
+          "objectid": "63",
+          "oa": "StB Neustadt",
+          "ort": "KG - Hellersiedlung Nordhöhe e. V. - Kleingartenverein",
+          "vereinsreg": "684",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/180"
+        },
+        "bbox": [
+          13.748563613696145,
+          51.08644888526646,
+          13.765625191201126,
+          51.09456384683314
+        ]
+      },
+      {
+        "id": "L292.64",
+        "properties": {
+          "objectid": "64",
+          "oa": "StB Pieschen",
+          "ort": "KG - Schrebergruß e. V. - Kleingartenverein",
+          "vereinsreg": "796",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/234"
+        },
+        "bbox": [
+          13.7226308042919,
+          51.0853088063465,
+          13.7248572440075,
+          51.0870822252995
+        ]
+      },
+      {
+        "id": "L292.65",
+        "properties": {
+          "objectid": "65",
+          "oa": "StB Prohlis",
+          "ort": "KG - Friebelstraße e. V. - Kleingartenverein",
+          "vereinsreg": "283",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/302"
+        },
+        "bbox": [
+          13.757695402991,
+          51.0121018167239,
+          13.7606778465465,
+          51.0148476044973
+        ]
+      },
+      {
+        "id": "L292.66",
+        "properties": {
+          "objectid": "66",
+          "oa": "StB Cotta",
+          "ort": "KG - Wild-West e. V. - Kleingartenverein",
+          "vereinsreg": "387",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/115"
+        },
+        "bbox": [
+          13.686757746508793,
+          51.04944587743793,
+          13.688809096102126,
+          51.05188680052377
+        ]
+      },
+      {
+        "id": "L292.67",
+        "properties": {
+          "objectid": "67",
+          "oa": "StB Plauen",
+          "ort": "KG - Burkersdorfer Weg e. V. - Gartenverein",
+          "vereinsreg": "1144",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/252"
+        },
+        "bbox": [
+          13.7241972881159,
+          51.0174986979613,
+          13.7261774641979,
+          51.0180151015091
+        ]
+      },
+      {
+        "id": "L292.68",
+        "properties": {
+          "objectid": "68",
+          "oa": "StB Plauen",
+          "ort": "KG - Zschertnitzhöhe e. V. - Kleingartensparte",
+          "vereinsreg": "604",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/284"
+        },
+        "bbox": [
+          13.7393348188949,
+          51.0253921990265,
+          13.7423647426247,
+          51.0271117851494
+        ]
+      },
+      {
+        "id": "L292.69",
+        "properties": {
+          "objectid": "69",
+          "oa": "StB Cotta",
+          "ort": "KG - Neuweidental - Kleingartenanlage",
+          "vereinsreg": "537",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/88"
+        },
+        "bbox": [
+          13.6872186340998,
+          51.0338596453415,
+          13.6925276508543,
+          51.0359717008469
+        ]
+      },
+      {
+        "id": "L292.70",
+        "properties": {
+          "objectid": "70",
+          "oa": "StB Loschwitz",
+          "ort": "KG - Bühlauer Waldgärten e. V. - Kleingärtnersparte",
+          "vereinsreg": "505",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/163"
+        },
+        "bbox": [
+          13.837931812389098,
+          51.066038303580335,
+          13.845698028811995,
+          51.07335922109077
+        ]
+      },
+      {
+        "id": "L292.71",
+        "properties": {
+          "objectid": "71",
+          "oa": "StB Prohlis",
+          "ort": "KG - Poetenweg e. V. - Kleingartensparte",
+          "vereinsreg": "518",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/324"
+        },
+        "bbox": [
+          13.8269290046144,
+          50.9924755834512,
+          13.8291367807193,
+          50.9946890582758
+        ]
+      },
+      {
+        "id": "L292.72",
+        "properties": {
+          "objectid": "72",
+          "oa": "StB Cotta",
+          "ort": "KG - Obergorbitz e. V. - Kleingärtnersparte",
+          "vereinsreg": "378",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/90"
+        },
+        "bbox": [
+          13.664169300326195,
+          51.039058948589314,
+          13.667000280781162,
+          51.039709151847795
+        ]
+      },
+      {
+        "id": "L292.73",
+        "properties": {
+          "objectid": "73",
+          "oa": "StB Altstadt",
+          "ort": "KG - Birkenhain e. V. - Kleingartensparte",
+          "vereinsreg": "1221",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/2"
+        },
+        "bbox": [
+          13.7789074954367,
+          51.059065098247,
+          13.7815038025923,
+          51.0606955159537
+        ]
+      },
+      {
+        "id": "L292.74",
+        "properties": {
+          "objectid": "74",
+          "oa": "StB Neustadt",
+          "ort": "KG - Robinienhain e. V. - Kleingärtnerverein",
+          "vereinsreg": "443",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/187"
+        },
+        "bbox": [
+          13.7491268848248,
+          51.0871965924351,
+          13.754864590645,
+          51.0905260430846
+        ]
+      },
+      {
+        "id": "L292.75",
+        "properties": {
+          "objectid": "75",
+          "oa": "StB Plauen",
+          "ort": "KG - Kaitzbach e. V. - Gartenverein",
+          "vereinsreg": "438",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/271"
+        },
+        "bbox": [
+          13.7320057483684,
+          51.013659468538,
+          13.7329334048577,
+          51.0144263049262
+        ]
+      },
+      {
+        "id": "L292.76",
+        "properties": {
+          "objectid": "76",
+          "oa": "StB Pieschen",
+          "ort": "KG - Hansadreieck e. V. - Kleingärtnersparte",
+          "vereinsreg": "638",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/220"
+        },
+        "bbox": [
+          13.7361508666605,
+          51.0829253359922,
+          13.7391044285917,
+          51.0846038290673
+        ]
+      },
+      {
+        "id": "L292.77",
+        "properties": {
+          "objectid": "77",
+          "oa": "StB Prohlis",
+          "ort": "KG - Goppelner Straße e.V. Kleingartenverein",
+          "vereinsreg": "3725",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/305"
+        },
+        "bbox": [
+          13.7641575378859,
+          51.0040656321676,
+          13.7655191650193,
+          51.0045933206496
+        ]
+      },
+      {
+        "id": "L292.78",
+        "properties": {
+          "objectid": "78",
+          "oa": "StB Pieschen",
+          "ort": "KG - Am Trachauer Bahnhof e. V. /BLW/ - Kleingärtnerverein",
+          "vereinsreg": "420",
+          "url": ""
+        },
+        "bbox": [
+          13.7053698538275,
+          51.0893559965885,
+          13.7069297093988,
+          51.0904409786708
+        ]
+      },
+      {
+        "id": "L292.42",
+        "properties": {
+          "objectid": "42",
+          "oa": "StB Pieschen",
+          "ort": "KG - Eichenkranz e. V. - Kleingärtnerverein",
+          "vereinsreg": "630",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/209"
+        },
+        "bbox": [
+          13.73750445472075,
+          51.07556607868232,
+          13.739188759678093,
+          51.07927509109655
+        ]
+      },
+      {
+        "id": "L292.43",
+        "properties": {
+          "objectid": "43",
+          "oa": "StB Leuben",
+          "ort": "KG - An dem Zschierbach II e. V. - Kleingärtnersparte",
+          "vereinsreg": "3228",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/133"
+        },
+        "bbox": [
+          13.83894030062093,
+          51.01285030057796,
+          13.841601474480663,
+          51.014782657421634
+        ]
+      },
+      {
+        "id": "L292.44",
+        "properties": {
+          "objectid": "44",
+          "oa": "StB Plauen",
+          "ort": "KG - Gostritzer  Straße e. V. - Kleingartenverein",
+          "vereinsreg": "2447",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/265"
+        },
+        "bbox": [
+          13.7513058672237,
+          51.0108063143647,
+          13.7530408182872,
+          51.0116217862432
+        ]
+      },
+      {
+        "id": "L292.45",
+        "properties": {
+          "objectid": "45",
+          "oa": "StB Cotta",
+          "ort": "KG - Sonnenlehne I e. V. - Kleingärtnersparte",
+          "vereinsreg": "516",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/104"
+        },
+        "bbox": [
+          13.6786452680456,
+          51.0483196592677,
+          13.68057577742,
+          51.0490995325217
+        ]
+      },
+      {
+        "id": "L292.46",
+        "properties": {
+          "objectid": "46",
+          "oa": "StB Cotta",
+          "ort": "KG - Steinbacher Höhe e. V. - Kleingartenverein",
+          "vereinsreg": "538",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/107"
+        },
+        "bbox": [
+          13.6758961213077,
+          51.0538804087073,
+          13.6802311644981,
+          51.0547215494216
+        ]
+      },
+      {
+        "id": "L292.47",
+        "properties": {
+          "objectid": "47",
+          "oa": "StB Altstadt",
+          "ort": "KG - Zur Aue e. V. - Kleingartenvereinigung",
+          "vereinsreg": "578",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/15"
+        },
+        "bbox": [
+          13.705024845951113,
+          51.06904040285732,
+          13.710119812303674,
+          51.07429245306157
+        ]
+      },
+      {
+        "id": "L292.48",
+        "properties": {
+          "objectid": "48",
+          "oa": "StB Cotta",
+          "ort": "KG - Friedenshöhe e. V. - Kleingartensparte",
+          "vereinsreg": "194",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/70"
+        },
+        "bbox": [
+          13.6705194974634,
+          51.058052876327,
+          13.6713005108015,
+          51.0596317222289
+        ]
+      },
+      {
+        "id": "L292.49",
+        "properties": {
+          "objectid": "49",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Dresden-Seidnitz e. V. - Kleingartensparte",
+          "vereinsreg": "450",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/33"
+        },
+        "bbox": [
+          13.8041030416326,
+          51.0195106578483,
+          13.8060514067931,
+          51.0211522242057
+        ]
+      },
+      {
+        "id": "L292.133",
+        "properties": {
+          "objectid": "133",
+          "oa": "StB Cotta",
+          "ort": "KG - Weinbauer e. V. - Sparte Kleingärtner",
+          "vereinsreg": "179",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/112"
+        },
+        "bbox": [
+          13.6832372857157,
+          51.0542880558731,
+          13.6844198616314,
+          51.0549412918728
+        ]
+      },
+      {
+        "id": "L292.134",
+        "properties": {
+          "objectid": "134",
+          "oa": "StB Neustadt",
+          "ort": "KG - Am Erlenweg e. V. - Gartenverein",
+          "vereinsreg": "627",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/173"
+        },
+        "bbox": [
+          13.7717154354556,
+          51.0658937879009,
+          13.7732410026636,
+          51.0665129125977
+        ]
+      },
+      {
+        "id": "L292.135",
+        "properties": {
+          "objectid": "135",
+          "oa": "StB Pieschen",
+          "ort": "KG - Blumenhain e.V. - Kleingärtnerverein",
+          "vereinsreg": "177",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/204"
+        },
+        "bbox": [
+          13.7329244170186,
+          51.0795746877495,
+          13.7362399694027,
+          51.0816315122537
+        ]
+      },
+      {
+        "id": "L292.136",
+        "properties": {
+          "objectid": "136",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Angelsteg e. V. - Kleingärtnerverein",
+          "vereinsreg": "683",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/26"
+        },
+        "bbox": [
+          13.8063604686711,
+          51.0527950425848,
+          13.8078786384275,
+          51.0536319414096
+        ]
+      },
+      {
+        "id": "L292.137",
+        "properties": {
+          "objectid": "137",
+          "oa": "StB Pieschen",
+          "ort": "KG - Erdenglück e. V. - Kleingartensparte",
+          "vereinsreg": "741",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/212"
+        },
+        "bbox": [
+          13.7162531338773,
+          51.0884181845602,
+          13.719704559778,
+          51.0916866820709
+        ]
+      },
+      {
+        "id": "L292.138",
+        "properties": {
+          "objectid": "138",
+          "oa": "StB Plauen",
+          "ort": "KG - Friedebacher Straße - Kleingarten",
+          "vereinsreg": "259",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/261"
+        },
+        "bbox": [
+          13.7193163584739,
+          51.0171431835196,
+          13.7224224659016,
+          51.0177064451209
+        ]
+      },
+      {
+        "id": "L292.139",
+        "properties": {
+          "objectid": "139",
+          "oa": "StB Pieschen",
+          "ort": "KG - An der Eiche e. V. - Kleingartenverein",
+          "vereinsreg": "356",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/201"
+        },
+        "bbox": [
+          13.6891294890974,
+          51.0870477766839,
+          13.6923628113237,
+          51.0908640413418
+        ]
+      },
+      {
+        "id": "L292.140",
+        "properties": {
+          "objectid": "140",
+          "oa": "StB Leuben",
+          "ort": "KG - Zschachwitz I e. V. - Kleingärtnersparte",
+          "vereinsreg": "698",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/158"
+        },
+        "bbox": [
+          13.845078664156308,
+          51.00084756473569,
+          13.857654687809339,
+          51.00342771397249
+        ]
+      },
+      {
+        "id": "L292.141",
+        "properties": {
+          "objectid": "141",
+          "oa": "StB Plauen",
+          "ort": "KG - Heiliger Born Leubnitz-Neuostra e. V. - Kleingartenverein",
+          "vereinsreg": "624",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/267"
+        },
+        "bbox": [
+          13.75526364885676,
+          51.004714645734786,
+          13.763402803579654,
+          51.01062676555303
+        ]
+      },
+      {
+        "id": "L292.142",
+        "properties": {
+          "objectid": "142",
+          "oa": "StB Pieschen",
+          "ort": "KG - Neudorf e. V. - Verein der Gartenfreunde",
+          "vereinsreg": "795",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/229"
+        },
+        "bbox": [
+          13.7266647221371,
+          51.0724482272659,
+          13.7294628851225,
+          51.0744006514933
+        ]
+      },
+      {
+        "id": "L292.143",
+        "properties": {
+          "objectid": "143",
+          "oa": "StB Prohlis",
+          "ort": "KG - Freudenberg e. V. - Kleingärtnerverein",
+          "vereinsreg": "545",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/301"
+        },
+        "bbox": [
+          13.7702917110142,
+          51.0195459237425,
+          13.7730085581764,
+          51.0230479381539
+        ]
+      },
+      {
+        "id": "L292.144",
+        "properties": {
+          "objectid": "144",
+          "oa": "StB Klotzsche",
+          "ort": "KG - Finkensteig e. V. - Gartensparte",
+          "vereinsreg": "642",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/125"
+        },
+        "bbox": [
+          13.7582265045968,
+          51.1133955532006,
+          13.7600832180116,
+          51.1148649801269
+        ]
+      },
+      {
+        "id": "L292.145",
+        "properties": {
+          "objectid": "145",
+          "oa": "StB Cotta",
+          "ort": "KG - Frankenberg e. V. - Kleingartenanlage",
+          "vereinsreg": "732",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/67"
+        },
+        "bbox": [
+          13.6908355295985,
+          51.0352582009804,
+          13.6950875533079,
+          51.0376521971957
+        ]
+      },
+      {
+        "id": "L292.146",
+        "properties": {
+          "objectid": "146",
+          "oa": "StB Pieschen",
+          "ort": "KG - Vergißmeinnicht e. V. - Kleingärtnerverein",
+          "vereinsreg": "785",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/244"
+        },
+        "bbox": [
+          13.7258362624576,
+          51.0900569729626,
+          13.7277088211832,
+          51.0922195489358
+        ]
+      },
+      {
+        "id": "L292.147",
+        "properties": {
+          "objectid": "147",
+          "oa": "StB Plauen",
+          "ort": "KG - Bergstraße e. V. - Kleingärtnerverein Mietergartensparte",
+          "vereinsreg": "269",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/251"
+        },
+        "bbox": [
+          13.7300525328948,
+          51.0204983471152,
+          13.7315408877943,
+          51.0215265672881
+        ]
+      },
+      {
+        "id": "L292.148",
+        "properties": {
+          "objectid": "148",
+          "oa": "StB Leuben",
+          "ort": "KG - Am Wiesenrand e. V. - Kleingartensparte",
+          "vereinsreg": "496",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/131"
+        },
+        "bbox": [
+          13.8420153848799,
+          50.9982574170308,
+          13.8459509004197,
+          51.0003892391079
+        ]
+      },
+      {
+        "id": "L292.149",
+        "properties": {
+          "objectid": "149",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Am Wiesengrund e. V. - Kleingärtnerverein",
+          "vereinsreg": "142",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/24"
+        },
+        "bbox": [
+          13.7872113520927,
+          51.0250706873801,
+          13.7984232415334,
+          51.0294273608461
+        ]
+      },
+      {
+        "id": "L292.150",
+        "properties": {
+          "objectid": "150",
+          "oa": "StB Prohlis",
+          "ort": "KG - Am Geberbach  e. V. - Kleingartenverein",
+          "vereinsreg": "400",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/288"
+        },
+        "bbox": [
+          13.79084847548,
+          50.9967145051882,
+          13.7948100581704,
+          50.9987980722088
+        ]
+      },
+      {
+        "id": "L292.151",
+        "properties": {
+          "objectid": "151",
+          "oa": "StB Cotta",
+          "ort": "KG - Lübecker Ecke e. V. - Kleingärtnerverein",
+          "vereinsreg": "774",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/82"
+        },
+        "bbox": [
+          13.690720673179808,
+          51.05090003602911,
+          13.697033283168514,
+          51.053904962825584
+        ]
+      },
+      {
+        "id": "L292.152",
+        "properties": {
+          "objectid": "152",
+          "oa": "StB Altstadt",
+          "ort": "KG - Friedrichseck e. V. - Kleingärtnerverein",
+          "vereinsreg": "178",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/6"
+        },
+        "bbox": [
+          13.7093880915254,
+          51.0510570539565,
+          13.7108017504845,
+          51.052100891822
+        ]
+      },
+      {
+        "id": "L292.153",
+        "properties": {
+          "objectid": "153",
+          "oa": "O Weixdorf",
+          "ort": "KG - Berggut Weixdorf e. V./WX/ - Kleingartenverein",
+          "vereinsreg": "2120",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/368"
+        },
+        "bbox": [
+          13.8161498949458,
+          51.1485975705242,
+          13.817471086504,
+          51.149250996753
+        ]
+      },
+      {
+        "id": "L292.154",
+        "properties": {
+          "objectid": "154",
+          "oa": "StB Cotta",
+          "ort": "KG - Dresden-Wölfnitz e. V. - Kleingartensparte",
+          "vereinsreg": "802",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/65"
+        },
+        "bbox": [
+          13.68030334081847,
+          51.04091048035424,
+          13.682499799128724,
+          51.04231838386348
+        ]
+      },
+      {
+        "id": "L292.99",
+        "properties": {
+          "objectid": "99",
+          "oa": "StB Pieschen",
+          "ort": "KG - Es geht weiter e. V. - Kleingartensparte",
+          "vereinsreg": "171",
+          "url": "https://egw-ev.de"
+        },
+        "bbox": [
+          13.726849834966401,
+          51.08965244683539,
+          13.731064671599515,
+          51.093654463457085
+        ]
+      },
+      {
+        "id": "L292.100",
+        "properties": {
+          "objectid": "100",
+          "oa": "StB Prohlis",
+          "ort": "KG - Langer Weg I e. V. - Kleingartenverein",
+          "vereinsreg": "182",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/310"
+        },
+        "bbox": [
+          13.8037175552117,
+          51.0017230264084,
+          13.8073722183855,
+          51.004119102506
+        ]
+      },
+      {
+        "id": "L292.101",
+        "properties": {
+          "objectid": "101",
+          "oa": "StB Prohlis",
+          "ort": "KG - Am Leubnitzer Hang e. V. - Kleingartenverein",
+          "vereinsreg": "472",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/291"
+        },
+        "bbox": [
+          13.7600689158029,
+          51.0125469417446,
+          13.7628547787906,
+          51.0153631676954
+        ]
+      },
+      {
+        "id": "L292.102",
+        "properties": {
+          "objectid": "102",
+          "oa": "StB Leuben",
+          "ort": "KG - Dresden-Altleuben - Kleingärtnerverein",
+          "vereinsreg": "183",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/139"
+        },
+        "bbox": [
+          13.8286554282715,
+          51.0115875547172,
+          13.8338843163686,
+          51.0155430202197
+        ]
+      },
+      {
+        "id": "L292.103",
+        "properties": {
+          "objectid": "103",
+          "oa": "StB Leuben",
+          "ort": "KG - Zur Elbinsel e. V. - Wochendsiedlersparte",
+          "vereinsreg": "297",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/159"
+        },
+        "bbox": [
+          13.8659694154775,
+          51.0038003097424,
+          13.8677914989794,
+          51.0048287587668
+        ]
+      },
+      {
+        "id": "L292.104",
+        "properties": {
+          "objectid": "104",
+          "oa": "StB Pieschen",
+          "ort": "KG - Am Weinberg e.V. - Kleingartenverein",
+          "vereinsreg": "792",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/199"
+        },
+        "bbox": [
+          13.723492621127464,
+          51.09114896165616,
+          13.730304642703594,
+          51.09514189724427
+        ]
+      },
+      {
+        "id": "L292.105",
+        "properties": {
+          "objectid": "105",
+          "oa": "StB Leuben",
+          "ort": "KG - Struppener Straße e. V. - Kleingartenverein",
+          "vereinsreg": "549",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/155"
+        },
+        "bbox": [
+          13.850850236615,
+          50.997906933455,
+          13.8530866302425,
+          50.9989109050787
+        ]
+      },
+      {
+        "id": "L292.106",
+        "properties": {
+          "objectid": "106",
+          "oa": "O Langebrück",
+          "ort": "KG - Langebrücker Vogelkeller Gartenpark e. V./LB/ - Kleingartenverein",
+          "vereinsreg": "2209",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/355"
+        },
+        "bbox": [
+          13.8452060375385,
+          51.122527760325,
+          13.8464726574352,
+          51.1236644624673
+        ]
+      },
+      {
+        "id": "L292.107",
+        "properties": {
+          "objectid": "107",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Reichsbahn - Dresden 1  e. V. - Verein der Kleingärtner",
+          "vereinsreg": "998",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/325"
+        },
+        "bbox": [
+          13.790809010594417,
+          51.01758807185718,
+          13.794678170133897,
+          51.02070365920586
+        ]
+      },
+      {
+        "id": "L292.108",
+        "properties": {
+          "objectid": "108",
+          "oa": "StB Prohlis",
+          "ort": "KG - Niedersedlitz 104 e. V. - Kleingärtnerverein",
+          "vereinsreg": "680",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/323"
+        },
+        "bbox": [
+          13.8219366540927,
+          50.9953825007834,
+          13.8234030671734,
+          50.9960907599826
+        ]
+      },
+      {
+        "id": "L292.109",
+        "properties": {
+          "objectid": "109",
+          "oa": "O Gompitz",
+          "ort": "KG - Schöner Ausblick e. V./GP/KRV - Kleingartenverein",
+          "vereinsreg": "2309",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/349"
+        },
+        "bbox": [
+          13.6434417148075,
+          51.0557852941855,
+          13.6451316748469,
+          51.0564497340287
+        ]
+      },
+      {
+        "id": "L292.110",
+        "properties": {
+          "objectid": "110",
+          "oa": "StB Neustadt",
+          "ort": "KG - Holunderweg e. V. - Kleingärtnerverein",
+          "vereinsreg": "3129",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/181"
+        },
+        "bbox": [
+          13.7683482946779,
+          51.0704533676858,
+          13.7705811118662,
+          51.0708479983625
+        ]
+      },
+      {
+        "id": "L292.111",
+        "properties": {
+          "objectid": "111",
+          "oa": "StB Leuben",
+          "ort": "KG - Alt Sporbitz e. V. - Kleingarten- u. Wochenendsiedlerverein",
+          "vereinsreg": "569",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/129"
+        },
+        "bbox": [
+          13.8495789287952,
+          50.9952232204827,
+          13.8509232590618,
+          50.9969666778199
+        ]
+      },
+      {
+        "id": "L292.112",
+        "properties": {
+          "objectid": "112",
+          "oa": "StB Loschwitz",
+          "ort": "KG - Neukircherstraße e. V. - Kleingärtnerverein",
+          "vereinsreg": "434",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/166"
+        },
+        "bbox": [
+          13.847926307067,
+          51.0598815386288,
+          13.8493251843665,
+          51.060752100062
+        ]
+      },
+      {
+        "id": "L292.113",
+        "properties": {
+          "objectid": "113",
+          "oa": "StB Pieschen",
+          "ort": "KG - Am Erfurter Platz e. V. - Kleingartenverein",
+          "vereinsreg": "1041",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/194"
+        },
+        "bbox": [
+          13.7266855118124,
+          51.0692924497908,
+          13.728971119357,
+          51.0703079052405
+        ]
+      },
+      {
+        "id": "L292.114",
+        "properties": {
+          "objectid": "114",
+          "oa": "StB Cotta",
+          "ort": "KG - Schulberg e. V. - Kleingarten",
+          "vereinsreg": "721",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/102"
+        },
+        "bbox": [
+          13.6690499855621,
+          51.0661990638217,
+          13.670441743935,
+          51.0676009747342
+        ]
+      },
+      {
+        "id": "L292.115",
+        "properties": {
+          "objectid": "115",
+          "oa": "StB Prohlis",
+          "ort": "KG - Strehlen II e. V. - Sparte Kleingärtner",
+          "vereinsreg": "223",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/332"
+        },
+        "bbox": [
+          13.7639817697332,
+          51.0273958368673,
+          13.7655169647005,
+          51.0295021720247
+        ]
+      },
+      {
+        "id": "L292.116",
+        "properties": {
+          "objectid": "116",
+          "oa": "StB Klotzsche",
+          "ort": "KG - Zum grünen Wäldchen e. V. - Kleingärtnerverein",
+          "vereinsreg": "637",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/128"
+        },
+        "bbox": [
+          13.7436727703063,
+          51.1110811467434,
+          13.7456357540709,
+          51.1123578907897
+        ]
+      },
+      {
+        "id": "L292.117",
+        "properties": {
+          "objectid": "117",
+          "oa": "StB Leuben",
+          "ort": "KG - Struppner Eck e. V. - Kleingartenverein",
+          "vereinsreg": "3408",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/156"
+        },
+        "bbox": [
+          13.8490821893892,
+          50.99550402591,
+          13.8504346684113,
+          50.9964764645258
+        ]
+      },
+      {
+        "id": "L292.118",
+        "properties": {
+          "objectid": "118",
+          "oa": "StB Leuben",
+          "ort": "KG - Kiesgrube Dobritz e. V. - Kleingartenverein",
+          "vereinsreg": "3465",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/41"
+        },
+        "bbox": [
+          13.819662097668,
+          51.0175927899219,
+          13.8229020324907,
+          51.0186427165565
+        ]
+      },
+      {
+        "id": "L292.119",
+        "properties": {
+          "objectid": "119",
+          "oa": "StB Prohlis",
+          "ort": "KG - Geystraße e. V. - Kleingärtnerverein",
+          "vereinsreg": "216",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/304"
+        },
+        "bbox": [
+          13.7518326686964,
+          51.0221822734025,
+          13.7544401930711,
+          51.023909053953
+        ]
+      },
+      {
+        "id": "L292.120",
+        "properties": {
+          "objectid": "120",
+          "oa": "StB Prohlis",
+          "ort": "KG - An der Windmühle e. V. - Gartenverein",
+          "vereinsreg": "460",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/298"
+        },
+        "bbox": [
+          13.8006403575622,
+          50.99898405083458,
+          13.804747301475755,
+          51.00234884689085
+        ]
+      },
+      {
+        "id": "L292.121",
+        "properties": {
+          "objectid": "121",
+          "oa": "StB Loschwitz",
+          "ort": "KG - Sachsenland e. V. - Kleingartenverein",
+          "vereinsreg": "217",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/170"
+        },
+        "bbox": [
+          13.864949603764,
+          51.0569971978362,
+          13.8705643861964,
+          51.0603794374534
+        ]
+      },
+      {
+        "id": "L292.122",
+        "properties": {
+          "objectid": "122",
+          "oa": "StB Prohlis",
+          "ort": "KG - Sternhäuser e. V. - Kleingärtnerverein Mietergärten",
+          "vereinsreg": "286",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/330"
+        },
+        "bbox": [
+          13.8006069293149,
+          50.9967316208727,
+          13.8031519220078,
+          50.9984199676926
+        ]
+      },
+      {
+        "id": "L292.123",
+        "properties": {
+          "objectid": "123",
+          "oa": "StB Cotta",
+          "ort": "KG - Immergrün e. V. - Kleingärtnersparte",
+          "vereinsreg": "693",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/79"
+        },
+        "bbox": [
+          13.6708920193808,
+          51.0582057602323,
+          13.6741479651698,
+          51.060176223038
+        ]
+      },
+      {
+        "id": "L292.124",
+        "properties": {
+          "objectid": "124",
+          "oa": "StB Prohlis",
+          "ort": "KG - Strehlen e. V. - Kleingartensparte",
+          "vereinsreg": "728",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/331"
+        },
+        "bbox": [
+          13.7653272879017,
+          51.0269951417701,
+          13.7684885410691,
+          51.029237416178
+        ]
+      },
+      {
+        "id": "L292.125",
+        "properties": {
+          "objectid": "125",
+          "oa": "StB Leuben",
+          "ort": "KG - Am Sand e. V. /GFA/ - Gartensparte",
+          "vereinsreg": "3143",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/292"
+        },
+        "bbox": [
+          13.8534841294981,
+          50.9976749998586,
+          13.8544174904624,
+          50.9984247392159
+        ]
+      },
+      {
+        "id": "L292.126",
+        "properties": {
+          "objectid": "126",
+          "oa": "StB Neustadt",
+          "ort": "KG - Am Nordhang e. V. - Kleingartensparte",
+          "vereinsreg": "579",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/175"
+        },
+        "bbox": [
+          13.747304549941,
+          51.078363652289,
+          13.7495435922489,
+          51.0796549154869
+        ]
+      },
+      {
+        "id": "L292.127",
+        "properties": {
+          "objectid": "127",
+          "oa": "StB Neustadt",
+          "ort": "KG - Grüne Hoffnung e. V. - Kleingartenverein",
+          "vereinsreg": "17",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/179"
+        },
+        "bbox": [
+          13.7399919513751,
+          51.0761302791898,
+          13.7405434983714,
+          51.0779194997155
+        ]
+      },
+      {
+        "id": "L292.128",
+        "properties": {
+          "objectid": "128",
+          "oa": "StB Plauen",
+          "ort": "KG - Mockritz  e. V. - Kleingartenverein",
+          "vereinsreg": "394",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/273"
+        },
+        "bbox": [
+          13.7436312437175,
+          51.0103996115335,
+          13.7491031125774,
+          51.0119493961419
+        ]
+      },
+      {
+        "id": "L292.129",
+        "properties": {
+          "objectid": "129",
+          "oa": "StB Loschwitz",
+          "ort": "KG - Pillnitzer Gartenfreunde e. V. - Kleingärtnerverein",
+          "vereinsreg": "453",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/168"
+        },
+        "bbox": [
+          13.8653752418009,
+          51.0119375583159,
+          13.8689482945647,
+          51.0135336734597
+        ]
+      },
+      {
+        "id": "L292.130",
+        "properties": {
+          "objectid": "130",
+          "oa": "StB Leuben",
+          "ort": "KG - Moränenende e. V. - Kleingartenverein",
+          "vereinsreg": "3429",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/44"
+        },
+        "bbox": [
+          13.8125805931476,
+          51.0132005363848,
+          13.8149785391486,
+          51.0147991432448
+        ]
+      },
+      {
+        "id": "L292.131",
+        "properties": {
+          "objectid": "131",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Dobritzer Oase e. V. - Kleingärtnerverein",
+          "vereinsreg": "381",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/31"
+        },
+        "bbox": [
+          13.8058022146429,
+          51.0157464571128,
+          13.8082051206867,
+          51.0176184377909
+        ]
+      },
+      {
+        "id": "L292.132",
+        "properties": {
+          "objectid": "132",
+          "oa": "O Schönfeld-Weißig",
+          "ort": "KG - Heidemarie I e. V. /SW/KRV/ - Kleingartenverein",
+          "vereinsreg": "191",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/359"
+        },
+        "bbox": [
+          13.8737159596823,
+          51.0683175609943,
+          13.8758996931722,
+          51.0698721286127
+        ]
+      },
+      {
+        "id": "L292.164",
+        "properties": {
+          "objectid": "164",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Blumenau e. V. - Gartenvereinverein",
+          "vereinsreg": "263",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/29"
+        },
+        "bbox": [
+          13.7891453771061,
+          51.0400340481009,
+          13.7932567915212,
+          51.0421931559285
+        ]
+      },
+      {
+        "id": "L292.165",
+        "properties": {
+          "objectid": "165",
+          "oa": "StB Leuben",
+          "ort": "KG - Weißdornstraße e. V. - Mietergartensparte Leuben",
+          "vereinsreg": "474",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/157"
+        },
+        "bbox": [
+          13.843955255724648,
+          51.00512503897054,
+          13.844592140162614,
+          51.006275357829246
+        ]
+      },
+      {
+        "id": "L292.166",
+        "properties": {
+          "objectid": "166",
+          "oa": "StB Cotta",
+          "ort": "KG - Idyll e. V. - Kleingärtnerverein",
+          "vereinsreg": "733",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/78"
+        },
+        "bbox": [
+          13.686138045836934,
+          51.05267068789229,
+          13.68791679349237,
+          51.0551909128055
+        ]
+      },
+      {
+        "id": "L292.167",
+        "properties": {
+          "objectid": "167",
+          "oa": "O Schönfeld-Weißig",
+          "ort": "KG - Heide - Marie III e. V./SW - Kleingartenverein",
+          "vereinsreg": "4427",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/384"
+        },
+        "bbox": [
+          13.8718738767745,
+          51.0650632150358,
+          13.8731534537442,
+          51.0658569988709
+        ]
+      },
+      {
+        "id": "L292.168",
+        "properties": {
+          "objectid": "168",
+          "oa": "StB Pieschen",
+          "ort": "KG - Alte Elbe - Fürstenhainer Straße e. V. - Kleingartenverein",
+          "vereinsreg": "648",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/192"
+        },
+        "bbox": [
+          13.6882648927622,
+          51.087096557907,
+          13.6904492653858,
+          51.088340424679
+        ]
+      },
+      {
+        "id": "L292.169",
+        "properties": {
+          "objectid": "169",
+          "oa": "StB Plauen",
+          "ort": "KG - Mockritzhöhe e. V. - Kleingärtnerverein",
+          "vereinsreg": "653",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/274"
+        },
+        "bbox": [
+          13.7456915777403,
+          51.0116528369764,
+          13.7474678405487,
+          51.0124187734228
+        ]
+      },
+      {
+        "id": "L292.170",
+        "properties": {
+          "objectid": "170",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Albert Eidner e. V. - Kleingartenverein",
+          "vereinsreg": "568",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/16"
+        },
+        "bbox": [
+          13.7980755636215,
+          51.0308644594315,
+          13.8039729210741,
+          51.032851157532
+        ]
+      },
+      {
+        "id": "L292.171",
+        "properties": {
+          "objectid": "171",
+          "oa": "O Altfranken",
+          "ort": "KG - Altfrankener Gartenfreunde e. V. /AF/ - Kleingartenverein",
+          "vereinsreg": "1980",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/333"
+        },
+        "bbox": [
+          13.6322686870644,
+          51.0322020683767,
+          13.6357971384788,
+          51.0344409605571
+        ]
+      },
+      {
+        "id": "L292.191",
+        "properties": {
+          "objectid": "191",
+          "oa": "StB Pieschen",
+          "ort": "KG - Paradies e. V. - Kleingärtnerverein",
+          "vereinsreg": "643",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/230"
+        },
+        "bbox": [
+          13.71357451557258,
+          51.08087904190932,
+          13.716434404966117,
+          51.08421272399572
+        ]
+      },
+      {
+        "id": "L292.192",
+        "properties": {
+          "objectid": "192",
+          "oa": "StB Pieschen",
+          "ort": "KG - An der dürren Heide e. V. - Kleingärtnerverein",
+          "vereinsreg": "632",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/200"
+        },
+        "bbox": [
+          13.6985659836373,
+          51.0944010046776,
+          13.6994655722722,
+          51.0951244690181
+        ]
+      },
+      {
+        "id": "L292.193",
+        "properties": {
+          "objectid": "193",
+          "oa": "StB Pieschen",
+          "ort": "KG - Frischer Wind e. V. - Kleingarten",
+          "vereinsreg": "421",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/217"
+        },
+        "bbox": [
+          13.716339673986,
+          51.1001646056275,
+          13.7235726324478,
+          51.102484803013
+        ]
+      },
+      {
+        "id": "L292.194",
+        "properties": {
+          "objectid": "194",
+          "oa": "StB Pieschen",
+          "ort": "KG - Flugplatz Übigau e. V. - Kleingärtnerverein",
+          "vereinsreg": "426",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/216"
+        },
+        "bbox": [
+          13.686039099663239,
+          51.068055203521546,
+          13.689657900577366,
+          51.071975196206566
+        ]
+      },
+      {
+        "id": "L292.195",
+        "properties": {
+          "objectid": "195",
+          "oa": "StB Altstadt",
+          "ort": "KG - Emmerich Ambroß  e. V. - Kleingärtnerverein",
+          "vereinsreg": "464",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/5"
+        },
+        "bbox": [
+          13.7048757293015,
+          51.0471782584536,
+          13.7081542977554,
+          51.0509378743964
+        ]
+      },
+      {
+        "id": "L292.196",
+        "properties": {
+          "objectid": "196",
+          "oa": "StB Cotta",
+          "ort": "KG - Alt Leutewitz e. V. - Kleingartenverein",
+          "vereinsreg": "408",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/54"
+        },
+        "bbox": [
+          13.6662119784289,
+          51.0566123500268,
+          13.6683743149259,
+          51.0579719919784
+        ]
+      },
+      {
+        "id": "L292.197",
+        "properties": {
+          "objectid": "197",
+          "oa": "StB Cotta",
+          "ort": "KG - Gartenfreunde II e. V. - Kleingartenanlage",
+          "vereinsreg": "694",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/73"
+        },
+        "bbox": [
+          13.677935710968185,
+          51.05578832721753,
+          13.683059695747138,
+          51.05813312408634
+        ]
+      },
+      {
+        "id": "L292.198",
+        "properties": {
+          "objectid": "198",
+          "oa": "StB Cotta",
+          "ort": "KG - Dölzschener Höhe e. V. - Kleingartenverein",
+          "vereinsreg": "3529",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/61"
+        },
+        "bbox": [
+          13.6969430445579,
+          51.0263925384125,
+          13.6995969999242,
+          51.0287835814792
+        ]
+      },
+      {
+        "id": "L292.199",
+        "properties": {
+          "objectid": "199",
+          "oa": "StB Neustadt",
+          "ort": "KG - Friedenswacht e. V. - Kleingärtnerverein",
+          "vereinsreg": "808",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/178"
+        },
+        "bbox": [
+          13.7511403621653,
+          51.0776039437265,
+          13.755223091333,
+          51.0799403927094
+        ]
+      },
+      {
+        "id": "L292.200",
+        "properties": {
+          "objectid": "200",
+          "oa": "StB Prohlis",
+          "ort": "KG - Kaitzbachstrand e. V. - Kleingartenverein",
+          "vereinsreg": "511",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/308"
+        },
+        "bbox": [
+          13.751761762221667,
+          51.01726918556751,
+          13.756064887682639,
+          51.01863157427196
+        ]
+      },
+      {
+        "id": "L292.201",
+        "properties": {
+          "objectid": "201",
+          "oa": "StB Plauen",
+          "ort": "KG - Mockritz Am Bad e. V. - Kleingärtnerverein",
+          "vereinsreg": "546",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/272"
+        },
+        "bbox": [
+          13.7501805274572,
+          51.0154374238146,
+          13.7511773528477,
+          51.0162593485557
+        ]
+      },
+      {
+        "id": "L292.202",
+        "properties": {
+          "objectid": "202",
+          "oa": "StB Prohlis",
+          "ort": "KG - Am Goldenen Stiefel e. V. - Kleingärtnerverein",
+          "vereinsreg": "869",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/289"
+        },
+        "bbox": [
+          13.777437842528,
+          51.0088013325095,
+          13.7790737146388,
+          51.0100121427247
+        ]
+      },
+      {
+        "id": "L292.203",
+        "properties": {
+          "objectid": "203",
+          "oa": "StB Pieschen",
+          "ort": "KG - Naturfreunde  e. V. - Kleingärtnerverein",
+          "vereinsreg": "445",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/228"
+        },
+        "bbox": [
+          13.7040635733429,
+          51.0818509736037,
+          13.7059092578428,
+          51.0822633051592
+        ]
+      },
+      {
+        "id": "L292.204",
+        "properties": {
+          "objectid": "204",
+          "oa": "StB Prohlis",
+          "ort": "KG - Am Kaitzbach  e. V. - Kleingärtnerverein",
+          "vereinsreg": "432",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/290"
+        },
+        "bbox": [
+          13.7616836625384,
+          51.0284316892031,
+          13.7639510817033,
+          51.0301623708368
+        ]
+      },
+      {
+        "id": "L292.205",
+        "properties": {
+          "objectid": "205",
+          "oa": "StB Prohlis",
+          "ort": "KG - Spitzweg e. V. - Kleingärtnerverein",
+          "vereinsreg": "473",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/328"
+        },
+        "bbox": [
+          13.77153596918921,
+          51.01544309391065,
+          13.77472308090614,
+          51.01839658519622
+        ]
+      },
+      {
+        "id": "L292.206",
+        "properties": {
+          "objectid": "206",
+          "oa": "StB Prohlis",
+          "ort": "KG - Nickern II e. V. - Kleingartensparte",
+          "vereinsreg": "374",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/321"
+        },
+        "bbox": [
+          13.7910033700268,
+          50.9848590998918,
+          13.7963951440768,
+          50.9862412212444
+        ]
+      },
+      {
+        "id": "L292.207",
+        "properties": {
+          "objectid": "207",
+          "oa": "StB Altstadt",
+          "ort": "KG - Ostragehege e. V. - Kleingartenverein",
+          "vereinsreg": "475",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/10"
+        },
+        "bbox": [
+          13.7200236602784,
+          51.067381079846,
+          13.7225161784016,
+          51.0690103892653
+        ]
+      },
+      {
+        "id": "L292.208",
+        "properties": {
+          "objectid": "208",
+          "oa": "StB Prohlis",
+          "ort": "KG - Lilienweg  e. V. - Kleingärtnerverein",
+          "vereinsreg": "686",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/313"
+        },
+        "bbox": [
+          13.8205192389302,
+          50.9917273803096,
+          13.8236459559459,
+          50.9960649063782
+        ]
+      },
+      {
+        "id": "L292.209",
+        "properties": {
+          "objectid": "209",
+          "oa": "StB Leuben",
+          "ort": "KG - Flora II Dresden e. V. - Kleingartenverein",
+          "vereinsreg": "382",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/142"
+        },
+        "bbox": [
+          13.8351629715425,
+          51.0204538102361,
+          13.8382201526289,
+          51.0229258758028
+        ]
+      },
+      {
+        "id": "L292.210",
+        "properties": {
+          "objectid": "210",
+          "oa": "StB Plauen",
+          "ort": "KG - Coschützer Hang e. V. - Wochenendsiedler u. Gartengemeinschaft",
+          "vereinsreg": "679",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/255"
+        },
+        "bbox": [
+          13.691636381040741,
+          51.01338450141085,
+          13.695229221725858,
+          51.01707060068921
+        ]
+      },
+      {
+        "id": "L292.211",
+        "properties": {
+          "objectid": "211",
+          "oa": "StB Pieschen",
+          "ort": "KG - Kleeblatt e. V. - Kleingartenvereinigung",
+          "vereinsreg": "437",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/224"
+        },
+        "bbox": [
+          13.73570672029243,
+          51.075714944871265,
+          13.73711018697063,
+          51.07942343180854
+        ]
+      },
+      {
+        "id": "L292.212",
+        "properties": {
+          "objectid": "212",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Auerblock e. V. - Kleingartenverein",
+          "vereinsreg": "676",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/27"
+        },
+        "bbox": [
+          13.809849867923093,
+          51.02430037563893,
+          13.81116775574494,
+          51.025262365575514
+        ]
+      },
+      {
+        "id": "L292.213",
+        "properties": {
+          "objectid": "213",
+          "oa": "StB Pieschen",
+          "ort": "KG - Markusstraße  e. V. - Kleingärtnerverein",
+          "vereinsreg": "742",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/226"
+        },
+        "bbox": [
+          13.7223068272071,
+          51.0784830948767,
+          13.7228384353101,
+          51.0788332830984
+        ]
+      },
+      {
+        "id": "L292.172",
+        "properties": {
+          "objectid": "172",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Alte Elbe - Frauensteiner Platz  e. V. - Kleingärtnerverein",
+          "vereinsreg": "551",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/19"
+        },
+        "bbox": [
+          13.7935464325601,
+          51.0311444301924,
+          13.7999557752594,
+          51.032347489083
+        ]
+      },
+      {
+        "id": "L292.173",
+        "properties": {
+          "objectid": "173",
+          "oa": "StB Prohlis",
+          "ort": "KG - Nickern III e. V. - Kleingärtnerverein",
+          "vereinsreg": "431",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/322"
+        },
+        "bbox": [
+          13.7914415542443,
+          50.9937084081096,
+          13.7938443810736,
+          50.9954435784129
+        ]
+      },
+      {
+        "id": "L292.174",
+        "properties": {
+          "objectid": "174",
+          "oa": "StB Plauen",
+          "ort": "KG - Achtbeeteweg e. V. - Kleingärtner",
+          "vereinsreg": "184",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/248"
+        },
+        "bbox": [
+          13.7131705581461,
+          51.0148765764599,
+          13.7176503627311,
+          51.017073460161
+        ]
+      },
+      {
+        "id": "L292.175",
+        "properties": {
+          "objectid": "175",
+          "oa": "StB Cotta",
+          "ort": "KG - Zur Hohle e. V. - Kleingärtnerverein",
+          "vereinsreg": "388",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/120"
+        },
+        "bbox": [
+          13.688654267667,
+          51.0355125031081,
+          13.6910998327629,
+          51.0372443149665
+        ]
+      },
+      {
+        "id": "L292.176",
+        "properties": {
+          "objectid": "176",
+          "oa": "StB Altstadt",
+          "ort": "KG - Weißeritzblick - Kleingartenverein",
+          "vereinsreg": "245",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/13"
+        },
+        "bbox": [
+          13.6878027890201,
+          51.0592678566161,
+          13.6895550892378,
+          51.0617718819907
+        ]
+      },
+      {
+        "id": "L292.177",
+        "properties": {
+          "objectid": "177",
+          "oa": "StB Cotta",
+          "ort": "KG - Straßenbahnhof Naußlitz e. V. - Kleingärtnerverein",
+          "vereinsreg": "282",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/109"
+        },
+        "bbox": [
+          13.6828405558045,
+          51.0384155697674,
+          13.6853407346704,
+          51.0406995037079
+        ]
+      },
+      {
+        "id": "L292.178",
+        "properties": {
+          "objectid": "178",
+          "oa": "StB Pieschen",
+          "ort": "KG - Trachau  e. V. - Kleingärtnerverein",
+          "vereinsreg": "793",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/242"
+        },
+        "bbox": [
+          13.703309663919054,
+          51.091105817475686,
+          13.70572169012887,
+          51.09378454630441
+        ]
+      },
+      {
+        "id": "L292.179",
+        "properties": {
+          "objectid": "179",
+          "oa": "StB Plauen",
+          "ort": "KG - Innsbrucker Str. e. V. - Gartenverein",
+          "vereinsreg": "533",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/270"
+        },
+        "bbox": [
+          13.7230070086582,
+          51.0155872169859,
+          13.727965449927,
+          51.0167881723403
+        ]
+      },
+      {
+        "id": "L292.180",
+        "properties": {
+          "objectid": "180",
+          "oa": "StB Altstadt",
+          "ort": "KG - Magdeburger Straße e. V. - Kleingärtnersparte",
+          "vereinsreg": "681",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/8"
+        },
+        "bbox": [
+          13.7211973551777,
+          51.0598193513643,
+          13.7229493354216,
+          51.060993806538
+        ]
+      },
+      {
+        "id": "L292.181",
+        "properties": {
+          "objectid": "181",
+          "oa": "StB Pieschen",
+          "ort": "KG - Sommerfrische e. V. - Kleingärtnerverein",
+          "vereinsreg": "1039",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/237"
+        },
+        "bbox": [
+          13.7338229999732,
+          51.0764951859263,
+          13.7357808357765,
+          51.0796255715946
+        ]
+      },
+      {
+        "id": "L292.182",
+        "properties": {
+          "objectid": "182",
+          "oa": "StB Plauen",
+          "ort": "KG - Westend e. V. - Kleingärtnerverein",
+          "vereinsreg": "267",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/283"
+        },
+        "bbox": [
+          13.71341101649,
+          51.0264979285406,
+          13.7149726370461,
+          51.0272021057956
+        ]
+      },
+      {
+        "id": "L292.183",
+        "properties": {
+          "objectid": "183",
+          "oa": "StB Cotta",
+          "ort": "KG - Erholung I   e. V. - Kleingärtnerverein",
+          "vereinsreg": "409",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/66"
+        },
+        "bbox": [
+          13.7023501811293,
+          51.0466316330933,
+          13.7048315196586,
+          51.0502751587284
+        ]
+      },
+      {
+        "id": "L292.184",
+        "properties": {
+          "objectid": "184",
+          "oa": "O Langebrück",
+          "ort": "KG - Am Forellenbach e. V./LB/ - Kleingartenverein",
+          "vereinsreg": "2235",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/351"
+        },
+        "bbox": [
+          13.83747705634789,
+          51.12592341424233,
+          13.85305708294498,
+          51.130094981822076
+        ]
+      },
+      {
+        "id": "L292.185",
+        "properties": {
+          "objectid": "185",
+          "oa": "StB Plauen",
+          "ort": "KG - Heiliger Born II e. V. - Kleingärtnerverein",
+          "vereinsreg": "671",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/266"
+        },
+        "bbox": [
+          13.7547209318198,
+          51.0056483161472,
+          13.7575735701765,
+          51.0082483840752
+        ]
+      },
+      {
+        "id": "L292.186",
+        "properties": {
+          "objectid": "186",
+          "oa": "StB Pieschen",
+          "ort": "KG - Am Schützenhof e. V. - Kleingärtnerverein",
+          "vereinsreg": "617",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/197"
+        },
+        "bbox": [
+          13.706849357322271,
+          51.09485949322277,
+          13.71136386059267,
+          51.095759951011416
+        ]
+      },
+      {
+        "id": "L292.187",
+        "properties": {
+          "objectid": "187",
+          "oa": "StB Cotta",
+          "ort": "KG - Wendel-Hipler-Straße  e. V. - Wochendsiedler- und Kleingartenverein",
+          "vereinsreg": "690",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/114"
+        },
+        "bbox": [
+          13.6769157118526,
+          51.0376960703152,
+          13.6782539695347,
+          51.0389003121562
+        ]
+      },
+      {
+        "id": "L292.188",
+        "properties": {
+          "objectid": "188",
+          "oa": "StB Prohlis",
+          "ort": "KG - Naturpark Nickern e. V. - Kleingartenverein",
+          "vereinsreg": "3792",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/320"
+        },
+        "bbox": [
+          13.7912405187682,
+          50.9963176655696,
+          13.7937549521367,
+          50.997195760914
+        ]
+      },
+      {
+        "id": "L292.189",
+        "properties": {
+          "objectid": "189",
+          "oa": "StB Cotta",
+          "ort": "KG - Drescherhäuser e. V. - Gartenverein",
+          "vereinsreg": "575",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/62"
+        },
+        "bbox": [
+          13.696626962191244,
+          51.04889726165888,
+          13.700950808073657,
+          51.05071524970818
+        ]
+      },
+      {
+        "id": "L292.190",
+        "properties": {
+          "objectid": "190",
+          "oa": "O Cossebaude",
+          "ort": "KG - Am Tummelsbach e. V. /CB/KRV - Kleingartenverein",
+          "vereinsreg": "1897",
+          "url": "http://www.dresdner-gartenfreunde.de/vereine/details_zum_verein/341"
+        },
+        "bbox": [
+          13.644900205681951,
+          51.08082687074616,
+          13.64847705561904,
+          51.08219704973838
+        ]
+      },
+      {
+        "id": "L292.155",
+        "properties": {
+          "objectid": "155",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Tolkewitz e. V. - Keingartenverein",
+          "vereinsreg": "548",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/46"
+        },
+        "bbox": [
+          13.8233907465742,
+          51.0302467442122,
+          13.8248722575502,
+          51.0315773194639
+        ]
+      },
+      {
+        "id": "L292.156",
+        "properties": {
+          "objectid": "156",
+          "oa": "StB Pieschen",
+          "ort": "KG - Trobischfeld e. V. - Kleingärtnersparte",
+          "vereinsreg": "748",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/243"
+        },
+        "bbox": [
+          13.7147753578931,
+          51.085734543402715,
+          13.717193050565385,
+          51.08647190071255
+        ]
+      },
+      {
+        "id": "L292.157",
+        "properties": {
+          "objectid": "157",
+          "oa": "StB Plauen",
+          "ort": "KG - Heimgarten e. V. - Kleingartenverein",
+          "vereinsreg": "729",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/268"
+        },
+        "bbox": [
+          13.7102354638619,
+          51.0194807264093,
+          13.7115360658687,
+          51.0204546455349
+        ]
+      },
+      {
+        "id": "L292.158",
+        "properties": {
+          "objectid": "158",
+          "oa": "StB Pieschen",
+          "ort": "KG - Eigenheim e. V. - Verein der Gartenfreunde",
+          "vereinsreg": "965",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/210"
+        },
+        "bbox": [
+          13.735478106210948,
+          51.08167065072032,
+          13.740605177444657,
+          51.08499622901883
+        ]
+      },
+      {
+        "id": "L292.159",
+        "properties": {
+          "objectid": "159",
+          "oa": "StB Klotzsche",
+          "ort": "KG - Grüne Aue e. V. - Kleingartenverein",
+          "vereinsreg": "636",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/126"
+        },
+        "bbox": [
+          13.7408284205463,
+          51.1125595315481,
+          13.7428000381166,
+          51.1143930420061
+        ]
+      },
+      {
+        "id": "L292.160",
+        "properties": {
+          "objectid": "160",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Tolkewitzer KGSp am Landgraben  e. V. - Kleingartensparte",
+          "vereinsreg": "800",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/47"
+        },
+        "bbox": [
+          13.8191878980074,
+          51.0264520714107,
+          13.8213489235479,
+          51.0283585409672
+        ]
+      },
+      {
+        "id": "L292.161",
+        "properties": {
+          "objectid": "161",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Alter Striesener Weg e. V. - Kleingartensparte",
+          "vereinsreg": "815",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/21"
+        },
+        "bbox": [
+          13.8042022986324,
+          51.0291690027766,
+          13.8089531879011,
+          51.0322704113467
+        ]
+      },
+      {
+        "id": "L292.162",
+        "properties": {
+          "objectid": "162",
+          "oa": "StB Cotta",
+          "ort": "KG - Gute Hoffnung e. V. - Kleingärtnerverein",
+          "vereinsreg": "274",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/75"
+        },
+        "bbox": [
+          13.6785975721652,
+          51.05477343765,
+          13.6810683565769,
+          51.0568943919001
+        ]
+      },
+      {
+        "id": "L292.163",
+        "properties": {
+          "objectid": "163",
+          "oa": "StB Pieschen",
+          "ort": "KG - Gute Nachbarschaft - Kleingarten",
+          "vereinsreg": "1942",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/219"
+        },
+        "bbox": [
+          13.7020996716947,
+          51.0831962219146,
+          13.7030420600671,
+          51.0839068092457
+        ]
+      },
+      {
+        "id": "L292.243",
+        "properties": {
+          "objectid": "243",
+          "oa": "StB Pieschen",
+          "ort": "KG - Heidegruß e. V. - Kleingärtnerverein",
+          "vereinsreg": "419",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/221"
+        },
+        "bbox": [
+          13.7318122168778,
+          51.0833498571902,
+          13.7350385272585,
+          51.084266855534
+        ]
+      },
+      {
+        "id": "L292.244",
+        "properties": {
+          "objectid": "244",
+          "oa": "StB Leuben",
+          "ort": "KG - Lockwitzbach e. V. - Kleingartenverein",
+          "vereinsreg": "570",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/148"
+        },
+        "bbox": [
+          13.844485561782044,
+          51.00584666074787,
+          13.84621061523414,
+          51.007996064753115
+        ]
+      },
+      {
+        "id": "L292.245",
+        "properties": {
+          "objectid": "245",
+          "oa": "StB Cotta",
+          "ort": "KG - Naturheilverein Dresden-Löbtau und Umgegend e. V. - Kleingartenverein",
+          "vereinsreg": "692",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/89"
+        },
+        "bbox": [
+          13.695620341739,
+          51.030078858802,
+          13.6981798540306,
+          51.0314040786691
+        ]
+      },
+      {
+        "id": "L292.246",
+        "properties": {
+          "objectid": "246",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Am Abzweig nach Reick e. V. - Sparte der Kleingärtner",
+          "vereinsreg": "379",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/22"
+        },
+        "bbox": [
+          13.8112653369993,
+          51.0139245113827,
+          13.8133275129526,
+          51.0150370627556
+        ]
+      },
+      {
+        "id": "L292.247",
+        "properties": {
+          "objectid": "247",
+          "oa": "StB Cotta",
+          "ort": "KG - Am Roßthaler Bach e. V. - Gartenverein",
+          "vereinsreg": "224",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/59"
+        },
+        "bbox": [
+          13.679326449548606,
+          51.03276574882097,
+          13.683969059400578,
+          51.03550867974349
+        ]
+      },
+      {
+        "id": "L292.248",
+        "properties": {
+          "objectid": "248",
+          "oa": "StB Pieschen",
+          "ort": "KG - Elbtal I  e. V. - Kleingärtner",
+          "vereinsreg": "641",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/211"
+        },
+        "bbox": [
+          13.693558147155278,
+          51.09033934099144,
+          13.697848724347521,
+          51.09282850622643
+        ]
+      },
+      {
+        "id": "L292.249",
+        "properties": {
+          "objectid": "249",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Laubenheim e. V. - Kleingartensparte",
+          "vereinsreg": "482",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/42"
+        },
+        "bbox": [
+          13.793681016287508,
+          51.036067623523394,
+          13.798023105348893,
+          51.0408455207711
+        ]
+      },
+      {
+        "id": "L292.250",
+        "properties": {
+          "objectid": "250",
+          "oa": "StB Neustadt",
+          "ort": "KG - Am Hammerweg e. V. - Kleingärtnerverein",
+          "vereinsreg": "447",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/174"
+        },
+        "bbox": [
+          13.741354393621,
+          51.0879477512402,
+          13.7433958113444,
+          51.0895608336008
+        ]
+      },
+      {
+        "id": "L292.251",
+        "properties": {
+          "objectid": "251",
+          "oa": "StB Pieschen",
+          "ort": "KG - Morgensonne e. V. - Gartensparte",
+          "vereinsreg": "383",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/227"
+        },
+        "bbox": [
+          13.73534483623103,
+          51.07832684543856,
+          13.740494817528282,
+          51.08055035303954
+        ]
+      },
+      {
+        "id": "L292.252",
+        "properties": {
+          "objectid": "252",
+          "oa": "O Cossebaude",
+          "ort": "KG - Stauseeblick e. V./CB/KRV - Kleingartenverein",
+          "vereinsreg": "2125",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/345"
+        },
+        "bbox": [
+          13.627161490991917,
+          51.080772558412086,
+          13.63055823461129,
+          51.08160115621468
+        ]
+      },
+      {
+        "id": "L292.253",
+        "properties": {
+          "objectid": "253",
+          "oa": "StB Prohlis",
+          "ort": "KG - Ackerscholle e. V. - Kleingärtnersparte",
+          "vereinsreg": "758",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/285"
+        },
+        "bbox": [
+          13.7611941616549,
+          51.0284594791179,
+          13.7644378506533,
+          51.0306690002856
+        ]
+      },
+      {
+        "id": "L292.254",
+        "properties": {
+          "objectid": "254",
+          "oa": "StB Leuben",
+          "ort": "KG - Berchtesgadener Straße e. V. /GFA/ - Gartenverein",
+          "vereinsreg": "477",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/135"
+        },
+        "bbox": [
+          13.8253765381583,
+          51.0275944699598,
+          13.8288289399626,
+          51.0295489582623
+        ]
+      },
+      {
+        "id": "L292.255",
+        "properties": {
+          "objectid": "255",
+          "oa": "StB Pieschen",
+          "ort": "KG - Seewiesen Kaditz  e. V. - Kleingartenverein",
+          "vereinsreg": "619",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/236"
+        },
+        "bbox": [
+          13.6850639893086,
+          51.0875985261349,
+          13.6875544173344,
+          51.0900144009923
+        ]
+      },
+      {
+        "id": "L292.256",
+        "properties": {
+          "objectid": "256",
+          "oa": "StB Neustadt",
+          "ort": "KG - Neuer Hecht  e. V. - Kleingartenverein",
+          "vereinsreg": "1309",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/184"
+        },
+        "bbox": [
+          13.7450969119773,
+          51.0822376277388,
+          13.7466750020494,
+          51.0830812841686
+        ]
+      },
+      {
+        "id": "L292.257",
+        "properties": {
+          "objectid": "257",
+          "oa": "StB Cotta",
+          "ort": "KG - Wohlfahrt e. V. - Kleingärtnerverein",
+          "vereinsreg": "166",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/117"
+        },
+        "bbox": [
+          13.69543539438,
+          51.0496127717226,
+          13.6983528129638,
+          51.0511839032469
+        ]
+      },
+      {
+        "id": "L292.258",
+        "properties": {
+          "objectid": "258",
+          "oa": "StB Plauen",
+          "ort": "KG - Schweizblick e. V. - Kleingärtnerverein",
+          "vereinsreg": "544",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/280"
+        },
+        "bbox": [
+          13.7120901208177,
+          51.0186417934598,
+          13.7148780207811,
+          51.0193100311435
+        ]
+      },
+      {
+        "id": "L292.259",
+        "properties": {
+          "objectid": "259",
+          "oa": "StB Leuben",
+          "ort": "KG - Am Bierweg  e. V. - Gartensparte",
+          "vereinsreg": "1029",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/130"
+        },
+        "bbox": [
+          13.8421051175363,
+          51.0001295412244,
+          13.8449653725142,
+          51.0011594232363
+        ]
+      },
+      {
+        "id": "L292.260",
+        "properties": {
+          "objectid": "260",
+          "oa": "StB Leuben",
+          "ort": "KG - Grüne Oase e. V. - Kleingärtnerverein",
+          "vereinsreg": "503",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/144"
+        },
+        "bbox": [
+          13.8366976109673,
+          51.007567499948,
+          13.837721593722,
+          51.008301358859
+        ]
+      },
+      {
+        "id": "L292.261",
+        "properties": {
+          "objectid": "261",
+          "oa": "StB Cotta",
+          "ort": "KG - Frohe Stunde e. V. - Kleingartenverein",
+          "vereinsreg": "696",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/71"
+        },
+        "bbox": [
+          13.6811621777615,
+          51.0380531113471,
+          13.6848027883961,
+          51.0416002926543
+        ]
+      },
+      {
+        "id": "L292.262",
+        "properties": {
+          "objectid": "262",
+          "oa": "StB Pieschen",
+          "ort": "KG - Sonnenhang e. V. - Kleingartenverein",
+          "vereinsreg": "784",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/239"
+        },
+        "bbox": [
+          13.703833322588,
+          51.0948453408707,
+          13.7051643263646,
+          51.0966243648427
+        ]
+      },
+      {
+        "id": "L292.263",
+        "properties": {
+          "objectid": "263",
+          "oa": "StB Cotta",
+          "ort": "KG - Hohendölzschen e. V. - Wochendsiedlerverein",
+          "vereinsreg": "703",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/76"
+        },
+        "bbox": [
+          13.6906016304632,
+          51.0232384634178,
+          13.6956108219393,
+          51.0244264785978
+        ]
+      },
+      {
+        "id": "L292.214",
+        "properties": {
+          "objectid": "214",
+          "oa": "StB Altstadt",
+          "ort": "KG - Weißeritzufer e. V. - Kleingartenverein",
+          "vereinsreg": "410",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/14"
+        },
+        "bbox": [
+          13.6899008755941,
+          51.0557392370096,
+          13.6917953290108,
+          51.0573554574739
+        ]
+      },
+      {
+        "id": "L292.215",
+        "properties": {
+          "objectid": "215",
+          "oa": "StB Plauen",
+          "ort": "KG - Süd-Ost Gittersee e.V. - Kleingärtnerverein",
+          "vereinsreg": "1212",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/282"
+        },
+        "bbox": [
+          13.6943221798996,
+          51.0085055926544,
+          13.6949384868558,
+          51.0095756154554
+        ]
+      },
+      {
+        "id": "L292.216",
+        "properties": {
+          "objectid": "216",
+          "oa": "StB Cotta",
+          "ort": "KG - Reichsbahn - Dresden 3  e. V. - Kleingarten",
+          "vereinsreg": "3995",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/97"
+        },
+        "bbox": [
+          13.6845925046296,
+          51.0584168619109,
+          13.6880795631219,
+          51.0600676063894
+        ]
+      },
+      {
+        "id": "L292.217",
+        "properties": {
+          "objectid": "217",
+          "oa": "StB Leuben",
+          "ort": "KG - Leuben e. V. - Kleingärtnerverein",
+          "vereinsreg": "458",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/146"
+        },
+        "bbox": [
+          13.836254228078609,
+          51.0083581821682,
+          13.843861245374827,
+          51.01259273510275
+        ]
+      },
+      {
+        "id": "L292.218",
+        "properties": {
+          "objectid": "218",
+          "oa": "StB Klotzsche",
+          "ort": "KG - Am Heiderand (Klotzsche) e. V. - Kleingärtnersparte",
+          "vereinsreg": "794",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/123"
+        },
+        "bbox": [
+          13.7741904921761,
+          51.1131495841684,
+          13.7763371456099,
+          51.114423272147
+        ]
+      },
+      {
+        "id": "L292.219",
+        "properties": {
+          "objectid": "219",
+          "oa": "StB Pieschen",
+          "ort": "KG - Roscherstraße e. V. - Kleingartenverein",
+          "vereinsreg": "629",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/231"
+        },
+        "bbox": [
+          13.698999267261,
+          51.0889907086959,
+          13.7018825467575,
+          51.0906594199453
+        ]
+      },
+      {
+        "id": "L292.220",
+        "properties": {
+          "objectid": "220",
+          "oa": "StB Prohlis",
+          "ort": "KG - Am Viertelacker e. V. - Kleingärtnerverein",
+          "vereinsreg": "451",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/297"
+        },
+        "bbox": [
+          13.802598561369148,
+          50.98471362494211,
+          13.816812571190813,
+          50.9917831040467
+        ]
+      },
+      {
+        "id": "L292.221",
+        "properties": {
+          "objectid": "221",
+          "oa": "StB Cotta",
+          "ort": "KG - Ostrahöhe e. V. - Kleingartenanlage",
+          "vereinsreg": "562",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/93"
+        },
+        "bbox": [
+          13.6978773889367,
+          51.0477515814067,
+          13.7010448535396,
+          51.0489816296059
+        ]
+      },
+      {
+        "id": "L292.222",
+        "properties": {
+          "objectid": "222",
+          "oa": "StB Cotta",
+          "ort": "KG - Naußlitzer Höhe e. V. - Kleingärtnerverein",
+          "vereinsreg": "275",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/85"
+        },
+        "bbox": [
+          13.684353700670428,
+          51.0399920447126,
+          13.687741920468236,
+          51.042078356703165
+        ]
+      },
+      {
+        "id": "L292.223",
+        "properties": {
+          "objectid": "223",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Worms e. V. - Kleingärtnerverein",
+          "vereinsreg": "542",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/49"
+        },
+        "bbox": [
+          13.7781137409297,
+          51.0476858032482,
+          13.7796676857173,
+          51.0486933902385
+        ]
+      },
+      {
+        "id": "L292.224",
+        "properties": {
+          "objectid": "224",
+          "oa": "StB Prohlis",
+          "ort": "KG - Gartenfreunde Sommerland e. V.",
+          "vereinsreg": "572",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/327"
+        },
+        "bbox": [
+          13.77050014107325,
+          51.023616182387585,
+          13.780728544659237,
+          51.02672910993256
+        ]
+      },
+      {
+        "id": "L292.225",
+        "properties": {
+          "objectid": "225",
+          "oa": "StB Altstadt",
+          "ort": "KG - RAW Fröbelstraße e. V. - Kleingärtnerverein",
+          "vereinsreg": "391",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/11"
+        },
+        "bbox": [
+          13.7031555916046,
+          51.0511320548095,
+          13.7062751310349,
+          51.0519819588592
+        ]
+      },
+      {
+        "id": "L292.226",
+        "properties": {
+          "objectid": "226",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Dresden-Ost e. V. - Kleingärtnerverein",
+          "vereinsreg": "833",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/32"
+        },
+        "bbox": [
+          13.803325336476464,
+          51.03127713169387,
+          13.804980624335624,
+          51.03274186696489
+        ]
+      },
+      {
+        "id": "L292.227",
+        "properties": {
+          "objectid": "227",
+          "oa": "StB Pieschen",
+          "ort": "KG - Kaditzer Tännicht e. V. - Kleingärtnerverein",
+          "vereinsreg": "444",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/223"
+        },
+        "bbox": [
+          13.683691169733198,
+          51.08520835333483,
+          13.691169979341428,
+          51.08764092900822
+        ]
+      },
+      {
+        "id": "L292.228",
+        "properties": {
+          "objectid": "228",
+          "oa": "StB Neustadt",
+          "ort": "KG - An der Martinskirche  e. V. - Kleingärtnerverein",
+          "vereinsreg": "739",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/203"
+        },
+        "bbox": [
+          13.759664568157,
+          51.0722027771144,
+          13.7612014870977,
+          51.0731782609186
+        ]
+      },
+      {
+        "id": "L292.229",
+        "properties": {
+          "objectid": "229",
+          "oa": "StB Cotta",
+          "ort": "KG - Naußlitz 19 a  e. V. - Kleingartenverein",
+          "vereinsreg": "535",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/84"
+        },
+        "bbox": [
+          13.6761248523176,
+          51.0371563080389,
+          13.6772774666393,
+          51.0384710624101
+        ]
+      },
+      {
+        "id": "L292.230",
+        "properties": {
+          "objectid": "230",
+          "oa": "StB Cotta",
+          "ort": "KG - Zur Rose e. V. - Kleingärtnerverein",
+          "vereinsreg": "501",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/121"
+        },
+        "bbox": [
+          13.678046858094701,
+          51.03567324988488,
+          13.680554653937705,
+          51.037897410965975
+        ]
+      },
+      {
+        "id": "L292.231",
+        "properties": {
+          "objectid": "231",
+          "oa": "StB Pieschen",
+          "ort": "KG - Botanik e. V. - Kleingärtnerverein",
+          "vereinsreg": "749",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/205"
+        },
+        "bbox": [
+          13.7373307761754,
+          51.0758922135951,
+          13.7377672226402,
+          51.0792867619391
+        ]
+      },
+      {
+        "id": "L292.232",
+        "properties": {
+          "objectid": "232",
+          "oa": "StB Neustadt",
+          "ort": "KG - Rosenhain e. V. - Kleingartenverein",
+          "vereinsreg": "5740",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/188"
+        },
+        "bbox": [
+          13.739500055648554,
+          51.074248027916944,
+          13.740792011497195,
+          51.07608362313138
+        ]
+      },
+      {
+        "id": "L292.233",
+        "properties": {
+          "objectid": "233",
+          "oa": "StB Plauen",
+          "ort": "KG - Collmweg e. V. - Gartenverein",
+          "vereinsreg": "543",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/253"
+        },
+        "bbox": [
+          13.683878385016131,
+          51.015057060461935,
+          13.685984521617618,
+          51.01611830843044
+        ]
+      },
+      {
+        "id": "L292.234",
+        "properties": {
+          "objectid": "234",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Altdobritz e. V. - Kleingärtnersparte",
+          "vereinsreg": "380",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/17"
+        },
+        "bbox": [
+          13.807912817975,
+          51.0188910008658,
+          13.8104556174016,
+          51.0208981771358
+        ]
+      },
+      {
+        "id": "L292.235",
+        "properties": {
+          "objectid": "235",
+          "oa": "StB Prohlis",
+          "ort": "KG - Borthen II e. V. - Kleingartenverein",
+          "vereinsreg": "266",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/299"
+        },
+        "bbox": [
+          13.7827593625454,
+          50.9927471120016,
+          13.7859003481031,
+          50.9947149360077
+        ]
+      },
+      {
+        "id": "L292.236",
+        "properties": {
+          "objectid": "236",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Bräterstraße e. V. - Kleingärtnerverein",
+          "vereinsreg": "540",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/371"
+        },
+        "bbox": [
+          13.7816354355466,
+          51.0391353370836,
+          13.7847830175627,
+          51.0398789063103
+        ]
+      },
+      {
+        "id": "L292.237",
+        "properties": {
+          "objectid": "237",
+          "oa": "StB Prohlis",
+          "ort": "KG - Münzteichweg e. V. - Kleingartensparte",
+          "vereinsreg": "268",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/319"
+        },
+        "bbox": [
+          13.7508599767105,
+          51.0156966928442,
+          13.7533754144531,
+          51.0174473781668
+        ]
+      },
+      {
+        "id": "L292.238",
+        "properties": {
+          "objectid": "238",
+          "oa": "StB Klotzsche",
+          "ort": "KG - Dresden-Wilschdorf e. V. - Kleingartenverein",
+          "vereinsreg": "628",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/124"
+        },
+        "bbox": [
+          13.7287201586549,
+          51.1090911527279,
+          13.7328507374779,
+          51.1105577505959
+        ]
+      },
+      {
+        "id": "L292.239",
+        "properties": {
+          "objectid": "239",
+          "oa": "StB Pieschen",
+          "ort": "KG - Weinböhlaer Straße  e. V. - Gartensparte",
+          "vereinsreg": "241",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/245"
+        },
+        "bbox": [
+          13.7328219309331,
+          51.0830959940573,
+          13.7349341467993,
+          51.0836779460415
+        ]
+      },
+      {
+        "id": "L292.240",
+        "properties": {
+          "objectid": "240",
+          "oa": "StB Neustadt",
+          "ort": "KG - Prießnitzaue  e. V. - Kleingartenverein",
+          "vereinsreg": "1430",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/186"
+        },
+        "bbox": [
+          13.7597930974046,
+          51.0645109242782,
+          13.7620617864637,
+          51.0659021155942
+        ]
+      },
+      {
+        "id": "L292.241",
+        "properties": {
+          "objectid": "241",
+          "oa": "StB Prohlis",
+          "ort": "KG - Luga II e. V. - Verein der Wochenendsiedler",
+          "vereinsreg": "204",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/317"
+        },
+        "bbox": [
+          13.8374443663599,
+          50.983883757035,
+          13.8387240444327,
+          50.9845001581846
+        ]
+      },
+      {
+        "id": "L292.242",
+        "properties": {
+          "objectid": "242",
+          "oa": "StB Pieschen",
+          "ort": "KG - Hubertus 1905 e. V. - Kleingartenverein",
+          "vereinsreg": "736",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/222"
+        },
+        "bbox": [
+          13.724822475663009,
+          51.09058706487586,
+          13.728355085655929,
+          51.09451826286456
+        ]
+      },
+      {
+        "id": "L292.272",
+        "properties": {
+          "objectid": "272",
+          "oa": "StB Neustadt",
+          "ort": "KG - Kleiner Hecht e. V. - Kleingärtnerverein",
+          "vereinsreg": "685",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/183"
+        },
+        "bbox": [
+          13.7389687233511,
+          51.0844732318241,
+          13.7411670952632,
+          51.0856148894558
+        ]
+      },
+      {
+        "id": "L292.273",
+        "properties": {
+          "objectid": "273",
+          "oa": "StB Prohlis",
+          "ort": "KG - Leubnitzer Höhe  e. V. Kleingartenverein",
+          "vereinsreg": "759",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/312"
+        },
+        "bbox": [
+          13.7598445088298,
+          51.0040480684407,
+          13.7644314492548,
+          51.0052267342231
+        ]
+      },
+      {
+        "id": "L292.274",
+        "properties": {
+          "objectid": "274",
+          "oa": "StB Pieschen",
+          "ort": "KG - Dammkrone  e. V. - Kleingartenanlage",
+          "vereinsreg": "944",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/207"
+        },
+        "bbox": [
+          13.6924998092889,
+          51.0759958426014,
+          13.6974721094422,
+          51.0766341962714
+        ]
+      },
+      {
+        "id": "L292.275",
+        "properties": {
+          "objectid": "275",
+          "oa": "StB Loschwitz",
+          "ort": "KG - Agneshöhe e. V. /GFA/ - Kleingartenverein",
+          "vereinsreg": "2536",
+          "url": ""
+        },
+        "bbox": [
+          13.8399512043288,
+          51.0376093257594,
+          13.842376698654,
+          51.0382755059301
+        ]
+      },
+      {
+        "id": "L292.276",
+        "properties": {
+          "objectid": "276",
+          "oa": "StB Cotta",
+          "ort": "KG - Am Lehmberg  e. V. - Gartenverein",
+          "vereinsreg": "791",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/58"
+        },
+        "bbox": [
+          13.6706519076474,
+          51.0630971854353,
+          13.6723344025817,
+          51.0640534959094
+        ]
+      },
+      {
+        "id": "L292.277",
+        "properties": {
+          "objectid": "277",
+          "oa": "StB Loschwitz",
+          "ort": "KG - Hasenweide Söbrigen  e. V. - Kleingartenverein",
+          "vereinsreg": "553",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/164"
+        },
+        "bbox": [
+          13.882636709056912,
+          50.99063451006129,
+          13.885368452496175,
+          50.9949570126911
+        ]
+      },
+      {
+        "id": "L292.278",
+        "properties": {
+          "objectid": "278",
+          "oa": "StB Altstadt",
+          "ort": "KG - An der Fröbel-Behringstraße e. V. - Kleingarten",
+          "vereinsreg": "691",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/1"
+        },
+        "bbox": [
+          13.7108152761226,
+          51.0513786048872,
+          13.7130300289593,
+          51.0521356932845
+        ]
+      },
+      {
+        "id": "L292.279",
+        "properties": {
+          "objectid": "279",
+          "oa": "O Schönfeld-Weißig",
+          "ort": "KG - Am Napoleonstein e. V. /SW/KRV - Kleingartenverein",
+          "vereinsreg": "253",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/358"
+        },
+        "bbox": [
+          13.8688493993254,
+          51.0450210318133,
+          13.8707181471678,
+          51.0460532938506
+        ]
+      },
+      {
+        "id": "L292.302",
+        "properties": {
+          "objectid": "302",
+          "oa": "StB Cotta",
+          "ort": "KG - Reisewitzer Höhe Dresden-Löbtau  e. V. - Kleingärtnerverein",
+          "vereinsreg": "777",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/98"
+        },
+        "bbox": [
+          13.692303036463136,
+          51.03230503160196,
+          13.697551711337008,
+          51.0354001483277
+        ]
+      },
+      {
+        "id": "L292.303",
+        "properties": {
+          "objectid": "303",
+          "oa": "O Cossebaude",
+          "ort": "KG - Neues Gohlis  e. V./CB/ - Kleingartenverein",
+          "vereinsreg": "1887",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/343"
+        },
+        "bbox": [
+          13.6438985112431,
+          51.083249074659,
+          13.6454210537104,
+          51.0852507967542
+        ]
+      },
+      {
+        "id": "L292.304",
+        "properties": {
+          "objectid": "304",
+          "oa": "StB Cotta",
+          "ort": "KG - Wasserburg e. V. - Kleingartenverein",
+          "vereinsreg": "225",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/111"
+        },
+        "bbox": [
+          13.663309901072,
+          51.0556676441196,
+          13.6648784861022,
+          51.0563397824345
+        ]
+      },
+      {
+        "id": "L292.305",
+        "properties": {
+          "objectid": "305",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Alte Elbe e. V. - Kleingärtnerverein",
+          "vereinsreg": "38",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/18"
+        },
+        "bbox": [
+          13.8036114024619,
+          51.0279990235453,
+          13.8092203189308,
+          51.0313281962551
+        ]
+      },
+      {
+        "id": "L292.306",
+        "properties": {
+          "objectid": "306",
+          "oa": "StB Plauen",
+          "ort": "KG - Freitaler Straße 2 e. V. - Wochendsiedlerverein",
+          "vereinsreg": "724",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/260"
+        },
+        "bbox": [
+          13.688799561865,
+          51.0142521977114,
+          13.6924502582917,
+          51.0155341386393
+        ]
+      },
+      {
+        "id": "L292.307",
+        "properties": {
+          "objectid": "307",
+          "oa": "StB Leuben",
+          "ort": "KG - Sporbitz e. V. Dresden - Kleingärtnerverein",
+          "vereinsreg": "674",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/153"
+        },
+        "bbox": [
+          13.8496495903876,
+          50.9909135196969,
+          13.8520410597142,
+          50.9923249968879
+        ]
+      },
+      {
+        "id": "L292.308",
+        "properties": {
+          "objectid": "308",
+          "oa": "StB Cotta",
+          "ort": "KG - Omsewitz, Martin-Opitz-Straße e. V. - Kleingarten  e. V.",
+          "vereinsreg": "278",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/91"
+        },
+        "bbox": [
+          13.6596217718472,
+          51.0606409004348,
+          13.6611182864515,
+          51.0615910991305
+        ]
+      },
+      {
+        "id": "L292.309",
+        "properties": {
+          "objectid": "309",
+          "oa": "StB Pieschen",
+          "ort": "KG - Am Anton-Günther-Park e. V. - Kleingärtnerverein",
+          "vereinsreg": "612",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/193"
+        },
+        "bbox": [
+          13.7154915836403,
+          51.0812979283318,
+          13.7200665515597,
+          51.0857885149929
+        ]
+      },
+      {
+        "id": "L292.310",
+        "properties": {
+          "objectid": "310",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Flora I e. V. - Kleingärtnerverein",
+          "vereinsreg": "723",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/37"
+        },
+        "bbox": [
+          13.788873298698363,
+          51.041192908261245,
+          13.79341642904123,
+          51.04599878413968
+        ]
+      },
+      {
+        "id": "L292.311",
+        "properties": {
+          "objectid": "311",
+          "oa": "StB Cotta",
+          "ort": "KG - Stiller Winkel e. V. - Kleingärtnerverein",
+          "vereinsreg": "682",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/108"
+        },
+        "bbox": [
+          13.685542218485,
+          51.048376785345,
+          13.6868245683018,
+          51.0495108889095
+        ]
+      },
+      {
+        "id": "L292.312",
+        "properties": {
+          "objectid": "312",
+          "oa": "O Schönfeld-Weißig",
+          "ort": "KG - Rockauer Höhe e. V./SW/ - Kleingartenverein",
+          "vereinsreg": "202",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/363"
+        },
+        "bbox": [
+          13.8663046717006,
+          51.0285531276506,
+          13.8698023208125,
+          51.0306035960727
+        ]
+      },
+      {
+        "id": "L292.313",
+        "properties": {
+          "objectid": "313",
+          "oa": "StB Cotta",
+          "ort": "KG - Frühauf I e. V. - Kleingärtnerverein",
+          "vereinsreg": "675",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/72"
+        },
+        "bbox": [
+          13.701411598161169,
+          51.047733704425276,
+          13.703621491149562,
+          51.05166581679156
+        ]
+      },
+      {
+        "id": "L292.314",
+        "properties": {
+          "objectid": "314",
+          "oa": "StB Pieschen",
+          "ort": "KG - Erholungsheim e. V. - Kleingärtner- u. Wochenendsiedler-Verein",
+          "vereinsreg": "634",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/215"
+        },
+        "bbox": [
+          13.7340657240785,
+          51.079671354603114,
+          13.74065940630044,
+          51.083609285772965
+        ]
+      },
+      {
+        "id": "L292.315",
+        "properties": {
+          "objectid": "315",
+          "oa": "O Gompitz",
+          "ort": "KG - An der Kümmelschänke Zöllmen e. V./GP/KRV - Kleingartenverein",
+          "vereinsreg": "2171",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/347"
+        },
+        "bbox": [
+          13.6071781081466,
+          51.0346837172561,
+          13.6083148645982,
+          51.0352831714089
+        ]
+      },
+      {
+        "id": "L292.316",
+        "properties": {
+          "objectid": "316",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Zur Weide  e. V. - Kleingartenverein",
+          "vereinsreg": "1234",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/51"
+        },
+        "bbox": [
+          13.8254759485533,
+          51.0311005251258,
+          13.8272419134619,
+          51.032316154905
+        ]
+      },
+      {
+        "id": "L292.317",
+        "properties": {
+          "objectid": "317",
+          "oa": "O Schönfeld-Weißig",
+          "ort": "KG - Heidemarie II e. V. /SW/KRV - Kleingartenverein",
+          "vereinsreg": "213",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/360"
+        },
+        "bbox": [
+          13.8721088270347,
+          51.0640942394937,
+          13.8735275300257,
+          51.065184580759
+        ]
+      },
+      {
+        "id": "L292.318",
+        "properties": {
+          "objectid": "318",
+          "oa": "StB Plauen",
+          "ort": "KG - Grabeland  e. V. /ASA/ - Pflegefläche",
+          "vereinsreg": "",
+          "url": ""
+        },
+        "bbox": [
+          13.717236518259105,
+          51.02462362564618,
+          13.719308633112028,
+          51.02580196592081
+        ]
+      },
+      {
+        "id": "L292.319",
+        "properties": {
+          "objectid": "319",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Blumental e. V. - Kleingärtnerverein",
+          "vereinsreg": "726",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/3"
+        },
+        "bbox": [
+          13.7828151168498,
+          51.041535764382,
+          13.7860275689819,
+          51.0425140777262
+        ]
+      },
+      {
+        "id": "L292.320",
+        "properties": {
+          "objectid": "320",
+          "oa": "StB Altstadt",
+          "ort": "KG - Elbeland e. V. - Kleingärtnerverein",
+          "vereinsreg": "649",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/4"
+        },
+        "bbox": [
+          13.7811020963402,
+          51.0591392472504,
+          13.7840855201912,
+          51.0606840960468
+        ]
+      },
+      {
+        "id": "L292.321",
+        "properties": {
+          "objectid": "321",
+          "oa": "StB Neustadt",
+          "ort": "KG - Zum Abendfrieden e. V. - Gartenverein",
+          "vereinsreg": "446",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/191"
+        },
+        "bbox": [
+          13.7405525949664,
+          51.0781795737265,
+          13.7420648249797,
+          51.07949400973
+        ]
+      },
+      {
+        "id": "L292.280",
+        "properties": {
+          "objectid": "280",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Frohes Schaffen e. V. - Kleingartensparte",
+          "vereinsreg": "457",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/38"
+        },
+        "bbox": [
+          13.806102271492797,
+          51.01804317782,
+          13.811551194239625,
+          51.02212505076441
+        ]
+      },
+      {
+        "id": "L292.281",
+        "properties": {
+          "objectid": "281",
+          "oa": "O Cossebaude",
+          "ort": "KG - Sommerfreude e. V./CB/ - Kleingarten",
+          "vereinsreg": "1983",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/344"
+        },
+        "bbox": [
+          13.6466421744417,
+          51.0818538161969,
+          13.6482222427534,
+          51.0824744694987
+        ]
+      },
+      {
+        "id": "L292.282",
+        "properties": {
+          "objectid": "282",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Zur Hoffnung e. V. - Kleingärtnerverein",
+          "vereinsreg": "273",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/50"
+        },
+        "bbox": [
+          13.7932005980923,
+          51.0399429652975,
+          13.794534921536,
+          51.0407615067137
+        ]
+      },
+      {
+        "id": "L292.283",
+        "properties": {
+          "objectid": "283",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Winterbergplatz e. V. - Kleingärtnerverein",
+          "vereinsreg": "466",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/48"
+        },
+        "bbox": [
+          13.783221312545972,
+          51.027383319824,
+          13.786828292554748,
+          51.02941539768839
+        ]
+      },
+      {
+        "id": "L292.284",
+        "properties": {
+          "objectid": "284",
+          "oa": "StB Cotta",
+          "ort": "KG - Alte Ziegelei(Omsewitz)e.V. - Kleingartenverein",
+          "vereinsreg": "399",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/53"
+        },
+        "bbox": [
+          13.654460731534938,
+          51.05280594122478,
+          13.657245168519166,
+          51.05431152841077
+        ]
+      },
+      {
+        "id": "L292.285",
+        "properties": {
+          "objectid": "285",
+          "oa": "O Cossebaude",
+          "ort": "KG - Am Eichberg e. V./CB/ - Kleingartenverein",
+          "vereinsreg": "1993",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/338"
+        },
+        "bbox": [
+          13.62578210576583,
+          51.07961324095598,
+          13.633472504051777,
+          51.08130482204818
+        ]
+      },
+      {
+        "id": "L292.286",
+        "properties": {
+          "objectid": "286",
+          "oa": "StB Plauen",
+          "ort": "KG - Räcknitzhöhe e. V. - Kleingartenverein",
+          "vereinsreg": "448",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/277"
+        },
+        "bbox": [
+          13.73071088761107,
+          51.02210679892435,
+          13.732683180313128,
+          51.02464217513567
+        ]
+      },
+      {
+        "id": "L292.287",
+        "properties": {
+          "objectid": "287",
+          "oa": "StB Prohlis",
+          "ort": "KG - Reichsbahn Dresden - Süd e. V. Verein der Kleingärtner",
+          "vereinsreg": "5177",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/387"
+        },
+        "bbox": [
+          13.770350511327253,
+          51.02506165522661,
+          13.77701719308374,
+          51.02743532401251
+        ]
+      },
+      {
+        "id": "L292.288",
+        "properties": {
+          "objectid": "288",
+          "oa": "StB Cotta",
+          "ort": "KG - Dresden-Stetzsch e. V. - Kleingartenverein",
+          "vereinsreg": "176",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/63"
+        },
+        "bbox": [
+          13.657170188664049,
+          51.079849014135846,
+          13.659957207912969,
+          51.08315344352639
+        ]
+      },
+      {
+        "id": "L292.289",
+        "properties": {
+          "objectid": "289",
+          "oa": "StB Altstadt",
+          "ort": "KG - Menageriegärten  e. V. - Kleingartensparte",
+          "vereinsreg": "541",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/9"
+        },
+        "bbox": [
+          13.7169640961886,
+          51.0605901192089,
+          13.7186270564219,
+          51.0626262568803
+        ]
+      },
+      {
+        "id": "L292.290",
+        "properties": {
+          "objectid": "290",
+          "oa": "StB Pieschen",
+          "ort": "KG - Erholung II  e. V. - Kleingärtnerverein",
+          "vereinsreg": "639",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/214"
+        },
+        "bbox": [
+          13.712836631738,
+          51.078431449797,
+          13.714529727909,
+          51.0794379170319
+        ]
+      },
+      {
+        "id": "L292.291",
+        "properties": {
+          "objectid": "291",
+          "oa": "StB Prohlis",
+          "ort": "KG - Lockwitz  e. V. - Kleingärtnerverein",
+          "vereinsreg": "689",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/314"
+        },
+        "bbox": [
+          13.802982867249831,
+          50.98852439360719,
+          13.813717721315435,
+          50.9961790470176
+        ]
+      },
+      {
+        "id": "L292.292",
+        "properties": {
+          "objectid": "292",
+          "oa": "StB Altstadt",
+          "ort": "KG - Berliner Höhe  e. V. /BLW/ - Siedler- und Kleingartenverein",
+          "vereinsreg": "730",
+          "url": ""
+        },
+        "bbox": [
+          13.7099633508004,
+          51.0550511334819,
+          13.7134484274475,
+          51.0567940391471
+        ]
+      },
+      {
+        "id": "L292.293",
+        "properties": {
+          "objectid": "293",
+          "oa": "StB Cotta",
+          "ort": "KG - Freiheit e. V. - Kleingärtnersparte",
+          "vereinsreg": "429",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/69"
+        },
+        "bbox": [
+          13.6778794661931,
+          51.0349539018496,
+          13.6795114696761,
+          51.0364665012881
+        ]
+      },
+      {
+        "id": "L292.294",
+        "properties": {
+          "objectid": "294",
+          "oa": "StB Pieschen",
+          "ort": "KG - Am Waldrand e. V./KRV - Kleingärtner",
+          "vereinsreg": "1894",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/198"
+        },
+        "bbox": [
+          13.6909858159312,
+          51.0972887411443,
+          13.6971380009045,
+          51.1018344881693
+        ]
+      },
+      {
+        "id": "L292.295",
+        "properties": {
+          "objectid": "295",
+          "oa": "StB Prohlis",
+          "ort": "KG - Am Trützsch e. V. - Kleingartenverein",
+          "vereinsreg": "3268",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/296"
+        },
+        "bbox": [
+          13.7912670520827,
+          50.9875735387044,
+          13.7961043478766,
+          50.9890337420289
+        ]
+      },
+      {
+        "id": "L292.296",
+        "properties": {
+          "objectid": "296",
+          "oa": "StB Cotta",
+          "ort": "KG - Zierde e. V. - Kleingärtnerverein",
+          "vereinsreg": "389",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/119"
+        },
+        "bbox": [
+          13.68469258678944,
+          51.05024208951121,
+          13.687800003679,
+          51.05216017867153
+        ]
+      },
+      {
+        "id": "L292.297",
+        "properties": {
+          "objectid": "297",
+          "oa": "StB Pieschen",
+          "ort": "KG - Gartenfreunde I e. V. - Kleingärtnerverein",
+          "vereinsreg": "666",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/218"
+        },
+        "bbox": [
+          13.70235437153774,
+          51.08020958603391,
+          13.70582606690423,
+          51.08304521012316
+        ]
+      },
+      {
+        "id": "L292.298",
+        "properties": {
+          "objectid": "298",
+          "oa": "StB Cotta",
+          "ort": "KG - Weinbergsenke e. V. - Kleingärtnerverein",
+          "vereinsreg": "463",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/113"
+        },
+        "bbox": [
+          13.6787487113401,
+          51.052506170087,
+          13.6803635937868,
+          51.0543491835492
+        ]
+      },
+      {
+        "id": "L292.299",
+        "properties": {
+          "objectid": "299",
+          "oa": "O Altfranken",
+          "ort": "KG - Altfrankener Höhe e.V. Kleingartenverein",
+          "vereinsreg": "3837",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/334"
+        },
+        "bbox": [
+          13.6406775636232,
+          51.0315456921368,
+          13.6431155033463,
+          51.0324877002293
+        ]
+      },
+      {
+        "id": "L292.300",
+        "properties": {
+          "objectid": "300",
+          "oa": "StB Leuben",
+          "ort": "KG - Stille Ecke e. V. - Kleingärtnerverein",
+          "vereinsreg": "454",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/154"
+        },
+        "bbox": [
+          13.8306594728233,
+          51.0000173952211,
+          13.8333541035488,
+          51.0016787411187
+        ]
+      },
+      {
+        "id": "L292.301",
+        "properties": {
+          "objectid": "301",
+          "oa": "StB Neustadt",
+          "ort": "KG - Friedenseck e. V. - Gartenverein",
+          "vereinsreg": "672",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/177"
+        },
+        "bbox": [
+          13.7394635010489,
+          51.0724124041915,
+          13.7412753896264,
+          51.0734977499545
+        ]
+      },
+      {
+        "id": "L292.264",
+        "properties": {
+          "objectid": "264",
+          "oa": "StB Pieschen",
+          "ort": "KG - Am Güterbahnhof Dresden-Neustadt e. V. - Kleingärtnerverein",
+          "vereinsreg": "740",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/195"
+        },
+        "bbox": [
+          13.731000594049034,
+          51.0743702635426,
+          13.73331583205485,
+          51.07631015112207
+        ]
+      },
+      {
+        "id": "L292.265",
+        "properties": {
+          "objectid": "265",
+          "oa": "StB Cotta",
+          "ort": "KG - Am Froschteich e. V. - Kleingärtnerverein",
+          "vereinsreg": "536",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/56"
+        },
+        "bbox": [
+          13.6505131251026,
+          51.0830972451678,
+          13.6528092290689,
+          51.0849098613961
+        ]
+      },
+      {
+        "id": "L292.266",
+        "properties": {
+          "objectid": "266",
+          "oa": "StB Loschwitz",
+          "ort": "KG - Rochwitzblick e. V. - Kleingartenverein",
+          "vereinsreg": "2040",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/169"
+        },
+        "bbox": [
+          13.8347266223458,
+          51.0560416849729,
+          13.8365930136992,
+          51.0578384240041
+        ]
+      },
+      {
+        "id": "L292.267",
+        "properties": {
+          "objectid": "267",
+          "oa": "StB Neustadt",
+          "ort": "KG - An der Reichsbahn e. V. /BLW/ - Sparte Kleingärtner",
+          "vereinsreg": "203",
+          "url": ""
+        },
+        "bbox": [
+          13.75329424445611,
+          51.07673743233484,
+          13.763165271792218,
+          51.08818906584762
+        ]
+      },
+      {
+        "id": "L292.268",
+        "properties": {
+          "objectid": "268",
+          "oa": "StB Cotta",
+          "ort": "KG - Dresden-West e. V. - Kleingärtnerverein",
+          "vereinsreg": "499",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/64"
+        },
+        "bbox": [
+          13.68161107488742,
+          51.04271907835935,
+          13.689485958414707,
+          51.046492243015955
+        ]
+      },
+      {
+        "id": "L292.269",
+        "properties": {
+          "objectid": "269",
+          "oa": "StB Pieschen",
+          "ort": "KG - Am Hafen e. V. - Kleingartenverein",
+          "vereinsreg": "459",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/196"
+        },
+        "bbox": [
+          13.7221560301896,
+          51.0728870328467,
+          13.7247480874357,
+          51.0744267740094
+        ]
+      },
+      {
+        "id": "L292.270",
+        "properties": {
+          "objectid": "270",
+          "oa": "StB Cotta",
+          "ort": "KG - Altomsewitz e. V. - Kleingartenverein",
+          "vereinsreg": "2460",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/55"
+        },
+        "bbox": [
+          13.6600366129244,
+          51.0534666370359,
+          13.6616072272848,
+          51.0541580199657
+        ]
+      },
+      {
+        "id": "L292.271",
+        "properties": {
+          "objectid": "271",
+          "oa": "StB Pieschen",
+          "ort": "KG - Am Abzweig Pieschen e. V. /BLW/ - Kleingärtnerverein",
+          "vereinsreg": "644",
+          "url": ""
+        },
+        "bbox": [
+          13.7239580076238,
+          51.0810843166807,
+          13.7254043065879,
+          51.0822728041531
+        ]
+      },
+      {
+        "id": "L292.350",
+        "properties": {
+          "objectid": "350",
+          "oa": "O Langebrück",
+          "ort": "KG - Am Bad e. V./LB/ - Kleingartenverein",
+          "vereinsreg": "2264",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/350"
+        },
+        "bbox": [
+          13.8514480741782,
+          51.1262923158588,
+          13.8526660729282,
+          51.1266839287142
+        ]
+      },
+      {
+        "id": "L292.351",
+        "properties": {
+          "objectid": "351",
+          "oa": "StB Cotta",
+          "ort": "KG - Neunimptscher Straße e. V. - Kleingartenverein",
+          "vereinsreg": "576",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/87"
+        },
+        "bbox": [
+          13.6741392333942,
+          51.0348050672432,
+          13.6774065120651,
+          51.0366149394271
+        ]
+      },
+      {
+        "id": "L292.352",
+        "properties": {
+          "objectid": "352",
+          "oa": "StB Leuben",
+          "ort": "KGV Aronia e. V.",
+          "vereinsreg": "",
+          "url": "https://www.dresdner-gartenfreunde.de/vereine/details_zum_verein/390"
+        },
+        "bbox": [
+          13.8422141002261,
+          51.0006560613975,
+          13.8436052238033,
+          51.0016949244661
+        ]
+      },
+      {
+        "id": "L292.353",
+        "properties": {
+          "objectid": "353",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Eschengrund e. V. - Kleingärtnerverein",
+          "vereinsreg": "504",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/36"
+        },
+        "bbox": [
+          13.816013254166,
+          51.0227254715681,
+          13.8185508595239,
+          51.0259611091733
+        ]
+      },
+      {
+        "id": "L292.354",
+        "properties": {
+          "objectid": "354",
+          "oa": "StB Plauen",
+          "ort": "KG - Südhöhe  e. V. - Kleingärtnerverein",
+          "vereinsreg": "514",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/281"
+        },
+        "bbox": [
+          13.746105208132,
+          51.0198359213265,
+          13.7487202920434,
+          51.021594423318
+        ]
+      },
+      {
+        "id": "L292.355",
+        "properties": {
+          "objectid": "355",
+          "oa": "StB Plauen",
+          "ort": "KG - Obere Südhöhe Dresden-Zschertnitz e. V. - Kleingartensparte",
+          "vereinsreg": "384",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/276"
+        },
+        "bbox": [
+          13.7431465025788,
+          51.0194040755368,
+          13.7474260304894,
+          51.0212487341288
+        ]
+      },
+      {
+        "id": "L292.356",
+        "properties": {
+          "objectid": "356",
+          "oa": "StB Leuben",
+          "ort": "KG - Salzburger Straße e. V. - Kleingärtnersparte",
+          "vereinsreg": "722",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/151"
+        },
+        "bbox": [
+          13.817694301602415,
+          51.018651400852995,
+          13.825179252947184,
+          51.024742687476916
+        ]
+      },
+      {
+        "id": "L292.357",
+        "properties": {
+          "objectid": "357",
+          "oa": "StB Prohlis",
+          "ort": "KG - Friedland e. V. - Kleingartenverein",
+          "vereinsreg": "614",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/303"
+        },
+        "bbox": [
+          13.772686678732484,
+          51.022351013937126,
+          13.776744106716855,
+          51.02638563277705
+        ]
+      },
+      {
+        "id": "L292.358",
+        "properties": {
+          "objectid": "358",
+          "oa": "StB Prohlis",
+          "ort": "KG - Groß-Luga e. V. - Kleingärtnerverein",
+          "vereinsreg": "725",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/306"
+        },
+        "bbox": [
+          13.831651075239098,
+          50.98626219426323,
+          13.833982196330668,
+          50.98844582758392
+        ]
+      },
+      {
+        "id": "L292.322",
+        "properties": {
+          "objectid": "322",
+          "oa": "StB Altstadt",
+          "ort": "KG - Jugendgarten e. V. - Kleingärtnerverein",
+          "vereinsreg": "403",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/7"
+        },
+        "bbox": [
+          13.775749925369077,
+          51.05852153650045,
+          13.777138109503301,
+          51.05965770161251
+        ]
+      },
+      {
+        "id": "L292.323",
+        "properties": {
+          "objectid": "323",
+          "oa": "StB Blasewitz",
+          "ort": "KG - Eintracht Dobritz  e. V. - Kleingartenverein",
+          "vereinsreg": "465",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/34"
+        },
+        "bbox": [
+          13.8052695410141,
+          51.0188209097746,
+          13.8078725198389,
+          51.020459389288
+        ]
+      },
+      {
+        "id": "L292.324",
+        "properties": {
+          "objectid": "324",
+          "oa": "O Schönfeld-Weißig",
+          "ort": "KG - Weißig Süd e. V./SW/ - Kleingartenverein",
+          "vereinsreg": "195",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/364"
+        },
+        "bbox": [
+          13.894906302165,
+          51.0510525928152,
+          13.8985311469649,
+          51.0539760581494
+        ]
+      },
+      {
+        "id": "L292.325",
+        "properties": {
+          "objectid": "325",
+          "oa": "StB Plauen",
+          "ort": "KG - Frühauf-Kaitz 1905 e. V. - Kleingärtnerverein",
+          "vereinsreg": "1032",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/262"
+        },
+        "bbox": [
+          13.727425616089402,
+          51.012521589164166,
+          13.733065391146186,
+          51.01445104471353
+        ]
+      },
+      {
+        "id": "L292.326",
+        "properties": {
+          "objectid": "326",
+          "oa": "O Mobschatz",
+          "ort": "KG - Elbtalblick e. V./MOB/KRV - Kleingartenverein",
+          "vereinsreg": "1665",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/356"
+        },
+        "bbox": [
+          13.6327123893033,
+          51.0781599033782,
+          13.6364244855241,
+          51.0799499945332
+        ]
+      },
+      {
+        "id": "L292.327",
+        "properties": {
+          "objectid": "327",
+          "oa": "StB Blasewitz",
+          "ort": "KG - An der Wiener Straße e. V. - Kleingartenverein",
+          "vereinsreg": "550",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/25"
+        },
+        "bbox": [
+          13.7723105484197,
+          51.0274414359083,
+          13.7750904317161,
+          51.0284460016419
+        ]
+      },
+      {
+        "id": "L292.328",
+        "properties": {
+          "objectid": "328",
+          "oa": "StB Prohlis",
+          "ort": "KG - Am Scherbelberg e. V. - Kleingartenverein",
+          "vereinsreg": "1510",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/293"
+        },
+        "bbox": [
+          13.8143695262221,
+          50.9963903141308,
+          13.817549170652,
+          50.9980605501877
+        ]
+      },
+      {
+        "id": "L292.329",
+        "properties": {
+          "objectid": "329",
+          "oa": "StB Cotta",
+          "ort": "KG - Höhenluft I e. V. - Kleingartenverein",
+          "vereinsreg": "564",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/77"
+        },
+        "bbox": [
+          13.692256651447293,
+          51.02977390629153,
+          13.698300579897031,
+          51.03289353296366
+        ]
+      },
+      {
+        "id": "L292.330",
+        "properties": {
+          "objectid": "330",
+          "oa": "StB Cotta",
+          "ort": "KG - Louisenhöhe e. V. - Kleingartensparte",
+          "vereinsreg": "411",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/81"
+        },
+        "bbox": [
+          13.692883286067,
+          51.0474182424788,
+          13.6945410525762,
+          51.0480880599529
+        ]
+      },
+      {
+        "id": "L292.331",
+        "properties": {
+          "objectid": "331",
+          "oa": "StB Neustadt",
+          "ort": "KG - Rudolphia 1902 e. V. - Kleingärtnerverein",
+          "vereinsreg": "509",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/189"
+        },
+        "bbox": [
+          13.7406154501331,
+          51.0776790612548,
+          13.7465297227173,
+          51.0805063664005
+        ]
+      },
+      {
+        "id": "L292.332",
+        "properties": {
+          "objectid": "332",
+          "oa": "StB Pieschen",
+          "ort": "KG - Rübezahl e. V. - Kleingartenverein",
+          "vereinsreg": "633",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/232"
+        },
+        "bbox": [
+          13.7213326221224,
+          51.0868673536588,
+          13.7230216901267,
+          51.089546402466
+        ]
+      },
+      {
+        "id": "L292.333",
+        "properties": {
+          "objectid": "333",
+          "oa": "StB Loschwitz",
+          "ort": "KG - Loschwitzhöhe e. V. - Kleingartensparte",
+          "vereinsreg": "767",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/165"
+        },
+        "bbox": [
+          13.8291967715207,
+          51.0534476780524,
+          13.8308952380769,
+          51.0543772664647
+        ]
+      },
+      {
+        "id": "L292.334",
+        "properties": {
+          "objectid": "334",
+          "oa": "StB Cotta",
+          "ort": "KG - Parklehne e. V. - Kleingärtnerverein",
+          "vereinsreg": "462",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/94"
+        },
+        "bbox": [
+          13.671680198364294,
+          51.05244361139728,
+          13.67827125570702,
+          51.056278926687725
+        ]
+      },
+      {
+        "id": "L292.335",
+        "properties": {
+          "objectid": "335",
+          "oa": "StB Cotta",
+          "ort": "KG - Pflaumen Allee e. V. - Kleingärtnerverein",
+          "vereinsreg": "461",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/95"
+        },
+        "bbox": [
+          13.6693107346652,
+          51.0647566180553,
+          13.6706216159746,
+          51.0651816300912
+        ]
+      },
+      {
+        "id": "L292.336",
+        "properties": {
+          "objectid": "336",
+          "oa": "StB Prohlis",
+          "ort": "KG - Am Schloß Lockwitz e. V. - Kleingartenverein",
+          "vereinsreg": "599",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/294"
+        },
+        "bbox": [
+          13.8105611861254,
+          50.9860308244908,
+          13.8127211384496,
+          50.9877502616905
+        ]
+      },
+      {
+        "id": "L292.337",
+        "properties": {
+          "objectid": "337",
+          "oa": "StB Plauen",
+          "ort": "KG - Schleiermacherstraße e. V. - Kleingartenverein",
+          "vereinsreg": "1409",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/278"
+        },
+        "bbox": [
+          13.7018583572694,
+          51.0272424771572,
+          13.7040477283755,
+          51.0278101639858
+        ]
+      },
+      {
+        "id": "L292.338",
+        "properties": {
+          "objectid": "338",
+          "oa": "StB Prohlis",
+          "ort": "KG - Lugturmblick e. V. - Kleingärtnerverein",
+          "vereinsreg": "255",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/318"
+        },
+        "bbox": [
+          13.8363245613381,
+          50.9923006687355,
+          13.8379551440985,
+          50.9939746247045
+        ]
+      },
+      {
+        "id": "L292.339",
+        "properties": {
+          "objectid": "339",
+          "oa": "StB Neustadt",
+          "ort": "KG - Stille Rast e. V. - Kleingartenverein",
+          "vereinsreg": "744",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/190"
+        },
+        "bbox": [
+          13.7394492498747,
+          51.0712288501304,
+          13.7403126422061,
+          51.0716477691127
+        ]
+      },
+      {
+        "id": "L292.340",
+        "properties": {
+          "objectid": "340",
+          "oa": "StB Pieschen",
+          "ort": "KG - Wilder Mann  e. V. - Kleingärtnerverein",
+          "vereinsreg": "781",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/246"
+        },
+        "bbox": [
+          13.7227705589631,
+          51.0960783353171,
+          13.7257503839301,
+          51.0976974676458
+        ]
+      },
+      {
+        "id": "L292.341",
+        "properties": {
+          "objectid": "341",
+          "oa": "StB Cotta",
+          "ort": "KG - An der Freiheit e. V. - Kleingärtnerverein",
+          "vereinsreg": "719",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/60"
+        },
+        "bbox": [
+          13.6565738794599,
+          51.055593153123,
+          13.6612932239367,
+          51.0563857505876
+        ]
+      },
+      {
+        "id": "L292.342",
+        "properties": {
+          "objectid": "342",
+          "oa": "StB Pieschen",
+          "ort": "KG - Spitzhausblick e. V. - Kleingärtnerverein",
+          "vereinsreg": "750",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/240"
+        },
+        "bbox": [
+          13.6738430935743,
+          51.0886615982003,
+          13.6771733459392,
+          51.0892298455102
+        ]
+      },
+      {
+        "id": "L292.343",
+        "properties": {
+          "objectid": "343",
+          "oa": "StB Plauen",
+          "ort": "KG - Schöne Aussicht  e. V. - Kleingartenanlage",
+          "vereinsreg": "467",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/279"
+        },
+        "bbox": [
+          13.7323086874794,
+          51.0221172000041,
+          13.7344660782222,
+          51.0244948670485
+        ]
+      },
+      {
+        "id": "L292.344",
+        "properties": {
+          "objectid": "344",
+          "oa": "StB Cotta",
+          "ort": "KG - Grenzallee e. V. - Kleingärtnerverein",
+          "vereinsreg": "574",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/74"
+        },
+        "bbox": [
+          13.69166048945031,
+          51.03149649192951,
+          13.692908580118347,
+          51.03247766817682
+        ]
+      },
+      {
+        "id": "L292.345",
+        "properties": {
+          "objectid": "345",
+          "oa": "StB Plauen",
+          "ort": "KG - Nautelweg e. V. - Kleingartenanlage",
+          "vereinsreg": "512",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/275"
+        },
+        "bbox": [
+          13.696300167554021,
+          51.00725451874088,
+          13.697756557037623,
+          51.014365542317236
+        ]
+      },
+      {
+        "id": "L292.346",
+        "properties": {
+          "objectid": "346",
+          "oa": "StB Pieschen",
+          "ort": "KG - Sommerlust I e. V. - Kleingärtnerverein",
+          "vereinsreg": "442",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/238"
+        },
+        "bbox": [
+          13.737892674806007,
+          51.07611752431052,
+          13.740454953271808,
+          51.07918447815947
+        ]
+      },
+      {
+        "id": "L292.347",
+        "properties": {
+          "objectid": "347",
+          "oa": "StB Leuben",
+          "ort": "KG - Elbtal II e. V. - Kleingärtnerverein",
+          "vereinsreg": "697",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/140"
+        },
+        "bbox": [
+          13.8339084082405,
+          51.008704019534655,
+          13.844684097767221,
+          51.01679330932615
+        ]
+      },
+      {
+        "id": "L292.348",
+        "properties": {
+          "objectid": "348",
+          "oa": "StB Plauen",
+          "ort": "KG - Grabeland  e. V. /ASA/ - Kleingarten- und Wohnsiedlerverein",
+          "vereinsreg": "1334",
+          "url": "http://www.kgv-grabeland-dresden.de"
+        },
+        "bbox": [
+          13.71671617344932,
+          51.02362939034172,
+          13.719373843604915,
+          51.025801794266634
+        ]
+      },
+      {
+        "id": "L292.349",
+        "properties": {
+          "objectid": "349",
+          "oa": "StB Neustadt",
+          "ort": "KG - Nord  e. V. - Kleingartenverein",
+          "vereinsreg": "2729",
+          "url": "http://dresdner-gartenfreunde.de/vereine/details_zum_verein/185"
+        },
+        "bbox": [
+          13.7653509077696,
+          51.0710828673134,
+          13.7675895233557,
+          51.0730755403312
+        ]
+      }
+    ],
+    "numberMatched": "unknown"
+  },
   "addresses": {
     "types": [
       {
@@ -10618,189 +16380,6 @@
         "text": "urn:ogc:def:crs:EPSG::3857"
       }
     ],
-    "version": "2.0.0",
-    "features": [
-      {
-        "id": "L134.43184",
-        "properties": {
-          "adr_nr": "43184",
-          "adresse": "Südhöhe 9a",
-          "str_id": "11057",
-          "strasse": "Südhöhe",
-          "strasse_amtl": "Südhöhe",
-          "haus_nr": "9",
-          "hnr_zusatz": "a",
-          "plz_plz": "01217",
-          "plz_ort": "Dresden",
-          "guelt_ab": "1989-01-01T00:00:00",
-          "status": "A",
-          "status_klar": "aktuell",
-          "oam_nr": "8",
-          "stt_nr": "84",
-          "stb_nr": "845",
-          "blk_nr": "845160",
-          "gmk_kennzahl": "0240",
-          "gemarkungsname": "Mockritz",
-          "x": "412009.485",
-          "y": "5652688.572",
-          "x_gk5": "5412111.479",
-          "y_gk5": "5654504.737",
-          "x_wgs84": "13.7455",
-          "y_wgs84": "51.01902",
-          "aend_dat": "2005-05-18T00:00:00"
-        },
-        "bbox": [
-          13.7454971065981,
-          51.0190174492382,
-          13.7454971065981,
-          51.0190174492382
-        ]
-      },
-      {
-        "id": "L134.43185",
-        "properties": {
-          "adr_nr": "43185",
-          "adresse": "Südhöhe 11",
-          "str_id": "11057",
-          "strasse": "Südhöhe",
-          "strasse_amtl": "Südhöhe",
-          "haus_nr": "11",
-          "hnr_zusatz": "",
-          "plz_plz": "01217",
-          "plz_ort": "Dresden",
-          "guelt_ab": "1989-01-01T00:00:00",
-          "status": "A",
-          "status_klar": "aktuell",
-          "oam_nr": "8",
-          "stt_nr": "84",
-          "stb_nr": "845",
-          "blk_nr": "845160",
-          "gmk_kennzahl": "0240",
-          "gemarkungsname": "Mockritz",
-          "x": "412003.027",
-          "y": "5652724.298",
-          "x_gk5": "5412105.017",
-          "y_gk5": "5654540.477",
-          "x_wgs84": "13.7454",
-          "y_wgs84": "51.01934",
-          "aend_dat": "2005-05-18T00:00:00"
-        },
-        "bbox": [
-          13.7453963876197,
-          51.0193376487588,
-          13.7453963876197,
-          51.0193376487588
-        ]
-      },
-      {
-        "id": "L134.43186",
-        "properties": {
-          "adr_nr": "43186",
-          "adresse": "Südhöhe 13",
-          "str_id": "11057",
-          "strasse": "Südhöhe",
-          "strasse_amtl": "Südhöhe",
-          "haus_nr": "13",
-          "hnr_zusatz": "",
-          "plz_plz": "01217",
-          "plz_ort": "Dresden",
-          "guelt_ab": "1989-01-01T00:00:00",
-          "status": "A",
-          "status_klar": "aktuell",
-          "oam_nr": "8",
-          "stt_nr": "84",
-          "stb_nr": "845",
-          "blk_nr": "845160",
-          "gmk_kennzahl": "0240",
-          "gemarkungsname": "Mockritz",
-          "x": "411978.581",
-          "y": "5652723.481",
-          "x_gk5": "5412080.562",
-          "y_gk5": "5654539.66",
-          "x_wgs84": "13.745049999999999",
-          "y_wgs84": "51.01933",
-          "aend_dat": "2005-05-18T00:00:00"
-        },
-        "bbox": [
-          13.7450481402201,
-          51.0193265615551,
-          13.7450481402201,
-          51.0193265615551
-        ]
-      },
-      {
-        "id": "L134.43187",
-        "properties": {
-          "adr_nr": "43187",
-          "adresse": "Südhöhe 15",
-          "str_id": "11057",
-          "strasse": "Südhöhe",
-          "strasse_amtl": "Südhöhe",
-          "haus_nr": "15",
-          "hnr_zusatz": "",
-          "plz_plz": "01217",
-          "plz_ort": "Dresden",
-          "guelt_ab": "1989-01-01T00:00:00",
-          "status": "A",
-          "status_klar": "aktuell",
-          "oam_nr": "8",
-          "stt_nr": "84",
-          "stb_nr": "845",
-          "blk_nr": "845160",
-          "gmk_kennzahl": "0240",
-          "gemarkungsname": "Mockritz",
-          "x": "411958.055",
-          "y": "5652718.861",
-          "x_gk5": "5412060.028",
-          "y_gk5": "5654535.038",
-          "x_wgs84": "13.74476",
-          "y_wgs84": "51.01928",
-          "aend_dat": "2005-05-18T00:00:00"
-        },
-        "bbox": [
-          13.7447566907497,
-          51.0192818834628,
-          13.7447566907497,
-          51.0192818834628
-        ]
-      },
-      {
-        "id": "L134.43188",
-        "properties": {
-          "adr_nr": "43188",
-          "adresse": "Südhöhe 17",
-          "str_id": "11057",
-          "strasse": "Südhöhe",
-          "strasse_amtl": "Südhöhe",
-          "haus_nr": "17",
-          "hnr_zusatz": "",
-          "plz_plz": "01217",
-          "plz_ort": "Dresden",
-          "guelt_ab": "1989-01-01T00:00:00",
-          "status": "A",
-          "status_klar": "aktuell",
-          "oam_nr": "8",
-          "stt_nr": "84",
-          "stb_nr": "845",
-          "blk_nr": "845160",
-          "gmk_kennzahl": "0240",
-          "gemarkungsname": "Mockritz",
-          "x": "411939.167",
-          "y": "5652717.254",
-          "x_gk5": "5412041.133",
-          "y_gk5": "5654533.43",
-          "x_wgs84": "13.74449",
-          "y_wgs84": "51.01926",
-          "aend_dat": "2005-05-18T00:00:00"
-        },
-        "bbox": [
-          13.744487857672,
-          51.0192645433377,
-          13.744487857672,
-          51.0192645433377
-        ]
-      }
-    ],
-    "numberMatched": "unknown"
+    "version": "2.0.0"
   }
 }
