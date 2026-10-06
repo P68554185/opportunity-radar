@@ -55,6 +55,19 @@ class AccountTests(unittest.TestCase):
         self.assertEqual(self.client.get("/api/profile").json()["name"],"Betrieb Eins")
         self.assertEqual(self.client.put("/api/profile",json={"radius_km":0}).status_code,422)
         self.assertEqual(self.client.put("/api/profile",json={"trades":["invented"]}).status_code,422)
+    def test_radius_profile_validation_and_persistence(self):
+        self.register(self.client)
+        self.assertEqual(self.client.put("/api/profile",json={"locationMode":"radius"}).status_code,422)
+        self.assertEqual(self.client.put("/api/profile",json={"locationMode":"radius","lat":51.019,"lon":13.745,"radius_km":501}).status_code,422)
+        value={"locationMode":"radius","city":"Dresden","lat":51.0190174492382,"lon":13.7454971065981,"radius_km":50,
+            "location_id":"DRESDEN-43184","location_label":"Südhöhe 9a · 01217 Dresden"}
+        result=self.client.put("/api/profile",json=value)
+        self.assertEqual(result.status_code,200,result.text)
+        restarted=TestClient(importlib.reload(self.module).app,headers={"Origin":"http://testserver"})
+        restarted.cookies.update(self.client.cookies)
+        profile=restarted.get("/api/profile").json()
+        for key,item in value.items():self.assertEqual(profile[key],item)
+
     def test_restart_keeps_accounts_and_sessions(self):
         self.register(self.client)
         restarted=TestClient(importlib.reload(self.module).app,headers={"Origin":"http://testserver"})
