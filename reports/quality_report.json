@@ -1,11 +1,11 @@
 {
   "live_records": 2000,
-  "classified_opportunities": 1928,
-  "classification_rate_pct": 96.4,
+  "classified_opportunities": 1929,
+  "classification_rate_pct": 96.5,
   "bands": {
-    "UPCOMING": 1157,
-    "HOT": 318,
-    "EARLY": 453
+    "UPCOMING": 1155,
+    "HOT": 320,
+    "EARLY": 454
   },
   "project_types": [
     [
@@ -14,7 +14,7 @@
     ],
     [
       "school",
-      306
+      304
     ],
     [
       "rail",
@@ -22,63 +22,63 @@
     ],
     [
       "water_wastewater",
-      79
+      83
     ],
     [
       "industrial",
-      66
+      67
     ],
     [
       "university_research",
       64
     ],
     [
-      "bridge",
-      61
-    ],
-    [
       "civil_engineering",
-      59
+      60
     ],
     [
       "hospital",
-      59
+      60
+    ],
+    [
+      "bridge",
+      60
     ],
     [
       "road",
-      57
+      54
+    ],
+    [
+      "kindergarten",
+      46
     ],
     [
       "fire_station",
       45
     ],
     [
-      "kindergarten",
-      45
+      "administration",
+      44
     ],
     [
       "sports_leisure",
-      42
-    ],
-    [
-      "administration",
-      41
-    ],
-    [
-      "public_space",
-      28
+      40
     ],
     [
       "energy",
-      25
+      27
     ],
     [
-      "residential",
-      24
+      "public_space",
+      26
     ],
     [
       "infrastructure",
       24
+    ],
+    [
+      "residential",
+      23
     ],
     [
       "public_building",
@@ -90,13 +90,13 @@
     ],
     [
       "commercial",
-      8
+      7
     ]
   ],
   "trades": [
     [
       "structural",
-      332
+      327
     ],
     [
       "electrical",
@@ -104,27 +104,27 @@
     ],
     [
       "windows_doors",
-      267
+      266
     ],
     [
       "hvac",
-      190
+      196
     ],
     [
       "railworks",
-      179
+      176
     ],
     [
       "earthworks",
-      169
+      168
     ],
     [
       "flooring",
-      150
+      145
     ],
     [
       "demolition",
-      121
+      122
     ],
     [
       "painting",
@@ -136,31 +136,31 @@
     ],
     [
       "insulation",
-      87
-    ],
-    [
-      "roadworks",
-      81
+      91
     ],
     [
       "plumbing",
-      81
+      82
     ],
     [
-      "landscaping",
-      68
+      "roadworks",
+      77
     ],
     [
       "facade",
       68
     ],
     [
-      "drywall",
-      42
+      "landscaping",
+      67
     ],
     [
       "plastering",
-      41
+      43
+    ],
+    [
+      "drywall",
+      42
     ],
     [
       "fire_protection",
@@ -176,7 +176,7 @@
     ],
     [
       "solar_energy",
-      15
+      16
     ],
     [
       "fencing",
@@ -184,7 +184,7 @@
     ],
     [
       "sewer_pipe",
-      10
+      12
     ],
     [
       "building_services",
@@ -200,22 +200,22 @@
     {
       "from": 60,
       "to": 69,
-      "count": 443
+      "count": 444
     },
     {
       "from": 70,
       "to": 79,
-      "count": 495
+      "count": 498
     },
     {
       "from": 80,
       "to": 89,
-      "count": 853
+      "count": 851
     },
     {
       "from": 90,
       "to": 99,
-      "count": 68
+      "count": 67
     },
     {
       "from": 100,
@@ -224,28 +224,28 @@
     }
   ],
   "quality_flags": {
-    "project_type_only": 234,
+    "project_type_only": 236,
     "trade_only": 681,
-    "project_and_trade": 1013,
-    "opportunity_score_85_plus": 318
+    "project_and_trade": 1012,
+    "opportunity_score_85_plus": 320
   },
   "sample_top": [
     {
-      "source_id": "TED-686493-2026",
-      "title": "Kreuzungsfreier Ausbau Frankenschnellweg, Abschnitt West: Bauleistungen, Straßen- & Ingenieurbau",
-      "authority": "Stadt Nürnberg - Servicebetrieb Öffentlicher Raum",
-      "city": "Nürnberg",
-      "project_type": "road",
+      "source_id": "TED-685765-2026",
+      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
+      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
+      "city": "Köln",
+      "project_type": "university_research",
       "trades": [
-        "roadworks",
-        "demolition",
-        "earthworks",
-        "structural"
+        "drywall",
+        "insulation",
+        "structural",
+        "flooring"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/686493-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/685765-2026"
     },
     {
       "source_id": "TED-687844-2026",
@@ -267,21 +267,21 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/687844-2026"
     },
     {
-      "source_id": "TED-685765-2026",
-      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
-      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
-      "city": "Köln",
-      "project_type": "university_research",
+      "source_id": "TED-686493-2026",
+      "title": "Kreuzungsfreier Ausbau Frankenschnellweg, Abschnitt West: Bauleistungen, Straßen- & Ingenieurbau",
+      "authority": "Stadt Nürnberg - Servicebetrieb Öffentlicher Raum",
+      "city": "Nürnberg",
+      "project_type": "road",
       "trades": [
-        "drywall",
-        "insulation",
-        "structural",
-        "flooring"
+        "roadworks",
+        "demolition",
+        "earthworks",
+        "structural"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/685765-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/686493-2026"
     },
     {
       "source_id": "TED-683855-2026",

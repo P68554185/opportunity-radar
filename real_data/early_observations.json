@@ -293,5 +293,25 @@
     "first_tracked_seen_at": "2026-10-06T09:44:58.246703+00:00",
     "publication_date": "",
     "note": "First observation tracked by this journal; earlier untracked discovery is unknown."
+  },
+  "DRESDEN-PLAN-3065": {
+    "first_tracked_seen_at": "2026-10-06T10:24:24.708920+00:00",
+    "publication_date": "2026-01-28",
+    "note": "First observation tracked by this journal; earlier untracked discovery is unknown."
+  },
+  "DRESDEN-PLAN-3082": {
+    "first_tracked_seen_at": "2026-10-06T10:24:24.708920+00:00",
+    "publication_date": "2026-03-26",
+    "note": "First observation tracked by this journal; earlier untracked discovery is unknown."
+  },
+  "DRESDEN-PLAN-3068": {
+    "first_tracked_seen_at": "2026-10-06T10:24:24.708920+00:00",
+    "publication_date": "2026-03-27",
+    "note": "First observation tracked by this journal; earlier untracked discovery is unknown."
+  },
+  "DRESDEN-PLAN-6066": {
+    "first_tracked_seen_at": "2026-10-06T10:24:24.708920+00:00",
+    "publication_date": "2026-05-04",
+    "note": "First observation tracked by this journal; earlier untracked discovery is unknown."
   }
 }
