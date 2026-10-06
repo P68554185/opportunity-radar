@@ -20,7 +20,7 @@ async function api(path,method="GET",body){
 const $=id=>document.getElementById(id);
 function persist(key,value){try{localStorage.setItem(key,JSON.stringify(value));return true}catch{$("profileMessage").textContent="Speichern auf diesem Gerät ist nicht verfügbar. Ihre Auswahl gilt für diese Sitzung.";return false}}
 function sourceLink(url){try{const u=new URL(url);return u.protocol==="https:"&&["ted.europa.eu","www.stmfh.bayern.de","www.kkh-alsfeld.de","hibb.hamburg.de","buergerbeteiligung.sachsen.de"].includes(u.hostname)?u.href:""}catch{return ""}}
-function dateLabel(date){const d=new Date(date);return Number.isNaN(d.valueOf())?"Datum unbekannt":new Intl.DateTimeFormat("de-DE").format(d)}
+const dateLabel=BauRadarFormat.dateLabel;
 $("companyName").value=typeof profile.name==="string"?profile.name:"";
 $("companyCity").value=typeof profile.city==="string"?profile.city:"";
 $("locationMode").value=["city","radius"].includes(profile.locationMode)?profile.locationMode:"all";
