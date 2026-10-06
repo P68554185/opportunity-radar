@@ -1,4 +1,5 @@
 name: Verify Render Pilot
+# Recheck public health after the owner removes closed-test secrets.
 on:
   push:
     paths: [".github/workflows/render-pilot-smoke.yml"]
