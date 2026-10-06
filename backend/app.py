@@ -12,6 +12,7 @@ from typing import Literal
 from urllib.parse import urlparse, parse_qs
 import psycopg
 from backend.database import connect
+from backend.feed import cache as feed_cache
 
 ROOT=Path(__file__).resolve().parents[1]
 DB=Path(os.environ.get("BAURADAR_DB", "/tmp/bauradar/users.sqlite"))
@@ -204,7 +205,7 @@ def get_watches(request:Request):
 def watch(project_id:str,request:Request):
     csrf(request);uid=user(request)["id"]
     if len(project_id)>100: raise HTTPException(400,"Ungültiges Projekt.")
-    feed=json.loads((ROOT/"docs"/"data"/"bauradar_feed.json").read_text(encoding="utf-8"))
+    feed,_=feed_cache.get()
     if not any(r["id"]==project_id for r in feed["opportunities"]): raise HTTPException(404,"Projekt nicht gefunden.")
     with database() as db: db.execute("INSERT OR IGNORE INTO watches VALUES(?,?,?)",(uid,project_id,int(time.time())))
     return {"ok":True}
@@ -229,5 +230,15 @@ def admin(request:Request,path:str="index.html"):
         target=(ROOT/"admin"/path).resolve();base=(ROOT/"admin").resolve()
     if not target.is_relative_to(base) or not target.is_file(): raise HTTPException(404)
     return FileResponse(target)
+
+@app.get("/data/bauradar_feed.json")
+def customer_feed():
+    feed,_=feed_cache.get()
+    return JSONResponse(feed,headers={"Cache-Control":"no-store"})
+
+@app.get("/data/status.json")
+def feed_status():
+    _,status=feed_cache.get()
+    return JSONResponse(status,headers={"Cache-Control":"no-store"})
 
 app.mount("/",StaticFiles(directory=ROOT/"docs",html=True),name="website")
