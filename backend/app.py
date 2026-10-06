@@ -1,7 +1,7 @@
 """BauRadar API. Same-origin sessions; SQLite requires a persistent local volume."""
 from __future__ import annotations
 import hashlib, hmac, json, os, re, secrets, sqlite3, time, threading
-from contextlib import contextmanager
+from contextlib import contextmanager, asynccontextmanager
 from pathlib import Path
 from fastapi import FastAPI, HTTPException, Request, Response
 from fastapi.responses import FileResponse, JSONResponse, RedirectResponse
@@ -12,6 +12,7 @@ from typing import Literal
 from urllib.parse import urlparse, parse_qs
 import psycopg
 from backend.database import connect
+from backend.closed_test import configure as configure_closed_test, IDS as CLOSED_TEST_IDS
 from backend.feed import cache as feed_cache
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -35,7 +36,13 @@ TRADES={"insulation","fencing","electrical","hvac","plumbing","drywall","paintin
  "roadworks","sewer_pipe","railworks","solar_energy","scaffolding","metalwork",
  "building_automation","industrial_doors","screed","steelwork","medical_technology","elevators",
  "building_services","plastering","finishing"}
-app=FastAPI(title="BauRadar",docs_url=None,redoc_url=None,openapi_url=None)
+@asynccontextmanager
+async def lifespan(app):
+    with database() as db:
+        configure_closed_test(db, os.environ.get("BAURADAR_CLOSED_TEST_PASSWORD",""), password_hash, password_matches)
+    yield
+
+app=FastAPI(title="BauRadar",docs_url=None,redoc_url=None,openapi_url=None,lifespan=lifespan)
 
 _initialized=set()
 _initialization_lock=threading.Lock()
@@ -221,7 +228,7 @@ def unwatch(project_id:str,request:Request):
 def admin(request:Request,path:str="index.html"):
     current=user(request)
     allowed={v.strip().lower() for v in os.environ.get("BAURADAR_ADMIN_EMAILS","").split(",") if v.strip()}
-    if current["email"] not in allowed: raise HTTPException(403,"Kein Admin-Zugriff.")
+    if current["id"] in CLOSED_TEST_IDS or current["email"] not in allowed: raise HTTPException(403,"Kein Admin-Zugriff.")
     if request.url.path=="/admin": return RedirectResponse("/admin/",status_code=307)
     path=path or "index.html"
     if path.startswith("data/"):

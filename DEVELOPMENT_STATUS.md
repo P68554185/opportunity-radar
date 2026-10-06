@@ -9,6 +9,7 @@ Stand: 06.10.2026. Funktionsnachweise haben Vorrang vor Zielterminen.
 | EARLY / Lifecycle | konservative Engine vorhanden | 37 kuratierte Signale / 36 Masterprojekte; laufende breitere Akquisition fehlt |
 | Einfache Kundenoberfläche | veröffentlicht, Chromium geprüft | Quelle, Gewerk, Phase, Auftraggeber, nächste Handlung |
 | Kostenloses Backend | Render + Neon eingerichtet | Live-Check 37429224942 erfolgreich: Datenbank erreichbar, 690 geprüfte Feed-Einträge |
+| Geschlossener Kontotest | Umsetzung/CI läuft; Live-Secret fehlt | Zwei synthetische Konten bei deaktiviertem Signup; keine echten Kundendaten |
 | Betriebsprofile / Merkliste / Login | implementiert, SQLite/PostgreSQL und Browser geprüft | Registrierung öffentlich deaktiviert; kein live getestetes Kundenkonto |
 | Prozessneustart / Kontotrennung | CI erfolgreich | Echter Neustart mit PostgreSQL; zwei Konten im Browser; CI 37431562638 |
 | Automatischer Render-Feed | auf Render veröffentlicht und live geprüft | Geprüfte Pages-Daten per Servercache übernehmen, ohne täglichen Redeploy |
