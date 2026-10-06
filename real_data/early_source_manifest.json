@@ -937,7 +937,11 @@
             "funding_eur": 1800000,
             "external_id": "9ebe383bde04b745"
           },
-          "required_anchor": "Neubau einer Kindertageseinrichtung für 200 Kinder"
+          "required_anchor": "Neubau einer Kindertageseinrichtung",
+          "required_terms": [
+            "Stadt Kirchenlamitz",
+            "200 Kinder"
+          ]
         }
       ]
     },

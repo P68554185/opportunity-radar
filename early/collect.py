@@ -107,12 +107,21 @@ class Collector:
         parsed=Text(url); parsed.feed(raw)
         return parsed,hashlib.sha256(raw.encode()).hexdigest()
 
+def validation_text(value):
+    # Articles may differ in curated summaries; keep names, nouns, verbs and numbers.
+    return " ".join(word for word in norm(value).split()
+                    if word not in {"der","die","das","des","dem","den","einer","eines","einen","eine","ein"})
+
 def validate_reviewed(document,text):
-    if document["date_anchor"] not in text:
+    permalink=re.search(r"/(\d{4})/(\d{2})/(\d{2})/",document["source_url"])
+    dated_permalink=bool(document.get("date_basis") and permalink and
+        "-".join(permalink.groups())==document["published"])
+    if document["date_anchor"] not in text and not dated_permalink:
         raise ValueError("Expected publication date absent")
     accepted=[]
     for row in document["records"]:
-        if norm(row["required_anchor"]) not in norm(text):
+        if validation_text(row["required_anchor"]) not in validation_text(text) or any(
+                validation_text(term) not in validation_text(text) for term in row.get("required_terms",[])):
             raise ValueError("Reviewed project absent from current source")
         event=row["event"]
         if event["published"]!=document["published"] or event["source_url"]!=document["source_url"]:
@@ -152,8 +161,14 @@ def collect():
     for discovery in manifest["discovery"]:
         try:
             page,_=client.read(discovery["source_url"])
-            report["review_queue"].append({"source_url":discovery["source_url"],"reason":"index_observation","links_seen":len(page.links),"construction_headlines":sum(bool(re.search(r"hochbau|krankenhaus|kinder|schul|förderbescheid|neubau|bauvorhaben",title,re.I)) for title in page.link_titles.values())})
-            links=sorted({urljoin(discovery["source_url"],link) for link in page.links
+            report["review_queue"].append({"source_url":discovery["source_url"],"reason":"index_observation","links_seen":len(page.links),"construction_headlines":sum(bool(re.search(r"hochbau|krankenhaus|kinder|schul|förderbescheid|neubau|bauvorhaben",title,re.I)) for title in page.link_titles.values()),"sample_construction_links":[link for link in page.links if re.search(r"hochbau|krankenhaus|kinder|schul|förderbescheid|neubau|bauvorhaben",page.link_titles.get(link,""),re.I)][:3]})
+            def target(link):
+                result=urljoin(discovery["source_url"],link)
+                parsed=urlparse(result)
+                if parsed.scheme=="http" and parsed.hostname==discovery["host"] and not parsed.username and not parsed.password:
+                    result="https:"+result[len("http:"):]
+                return result
+            links=sorted({target(link) for link in page.links
                 if re.search(r"hochbau|krankenhaus|kinder|schul|förderbescheid|neubau|bauvorhaben",page.link_titles.get(link,""),re.I)},reverse=True)
             for url in links:
                 if url in seen or not safe_url(url,discovery["host"]): continue
