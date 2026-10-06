@@ -60,7 +60,7 @@ def safe_url(url,host):
 
 class Collector:
     def __init__(self,limits):
-        self.limits=limits; self.robots={}; self.last={}; self.opener=build_opener(SameHostRedirect())
+        self.limits=limits; self.robots={}; self.last={}; self.opener=build_opener(SameHostRedirect()); self.started=time.monotonic()
     def raw(self,url):
         request=Request(url,headers={"User-Agent":USER_AGENT})
         with self.opener.open(request,timeout=self.limits["timeout_seconds"]) as response:
@@ -68,6 +68,7 @@ class Collector:
             if len(raw)>self.limits["maximum_bytes"]: raise ValueError("Source size limit")
             return raw.decode(response.headers.get_content_charset() or "utf-8",errors="replace")
     def read(self,url):
+        if time.monotonic()-self.started>120: raise TimeoutError("EARLY collection run budget exhausted")
         host=urlparse(url).hostname
         if not safe_url(url,host): raise ValueError("Unsafe source URL")
         if host not in self.robots:
@@ -81,6 +82,7 @@ class Collector:
             self.robots[host]=rp
         if not self.robots[host].can_fetch(USER_AGENT,url): raise ValueError("Robots disallows source")
         delay=max(1,float(self.robots[host].crawl_delay(USER_AGENT) or 0))
+        if delay>10: raise ValueError("Source crawl delay requires a dedicated schedule")
         time.sleep(max(0,delay-(time.monotonic()-self.last.get(host,0))))
         raw=self.raw(url); self.last[host]=time.monotonic()
         parsed=Text(); parsed.feed(raw)

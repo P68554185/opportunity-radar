@@ -19,3 +19,11 @@ class HistoricalTests(unittest.TestCase):
         th=next(e for e in events if e["city"]=="Köln")
         later=next(n for n in notices if n["city"]=="Köln")
         self.assertIsNone(evaluate(th,later)["publication_interval_days"])
+
+    def test_known_real_negative_controls_never_confirm(self):
+        events=json.loads((ROOT/"real_data/historical_early_events.json").read_text())
+        notices=json.loads((ROOT/"real_data/historical_procurement_notices.json").read_text())["notices"]
+        for early in events:
+            for later in notices:
+                if early["city"]!=later["city"]:
+                    self.assertEqual(evaluate(early,later)["status"],"unlinked")

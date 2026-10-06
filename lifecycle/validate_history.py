@@ -22,10 +22,26 @@ def build():
         linked=[n for n in notices if any(r["source_ids"]==[event["source_id"],n["source_id"]] for r in confirmed)]
         if linked:
             timelines.append({"early_source_id":event["source_id"],"history":history([event,*linked])})
+    labelled_checks=[]
+    for event in events:
+        for notice in notices:
+            if event["city"]!=notice["city"]:
+                labelled_checks.append({"source_ids":[event["source_id"],notice["source_id"]],
+                    "expected":"unlinked","actual":evaluate(event,notice)["status"],
+                    "label_reason":"Different known project municipality"})
+            elif event["city"]=="Alsfeld":
+                labelled_checks.append({"source_ids":[event["source_id"],notice["source_id"]],
+                    "expected":"confirmed","actual":evaluate(event,notice)["status"],
+                    "label_reason":"Same explicitly named new hospital and identical legal owner, primary-source review"})
     report={"matching_version":VERSION,"historical_early_records":len(events),
         "frozen_procurement_records":len(notices),"comparisons":comparisons,
         "confirmed_notice_links":len(confirmed),
         "confirmed_project_cases":len(timelines),"timelines":timelines,
+        "labelled_checks":labelled_checks,
+        "labelled_positive_notice_pairs":sum(c["expected"]=="confirmed" for c in labelled_checks),
+        "labelled_negative_notice_pairs":sum(c["expected"]=="unlinked" for c in labelled_checks),
+        "missed_known_positive_pairs":sum(c["expected"]=="confirmed" and c["actual"]!="confirmed" for c in labelled_checks),
+        "false_confirmations_in_labelled_negatives":sum(c["expected"]=="unlinked" and c["actual"]=="confirmed" for c in labelled_checks),
         "accuracy":None,"precision":None,"recall":None,
         "limitations":[
             "Purposefully selected retrospective examples; no representative labelled denominator.",

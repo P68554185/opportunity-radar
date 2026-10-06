@@ -49,7 +49,7 @@ def build():
             "source_url":r["source_url"],"quality_status":"VERIFIED_EARLY",
             "opportunity_score":None,"expected_tender_period":None,
             "project_history":history(evidence),
-            "next_action":"Bauvorhaben beim Auftraggeber prüfen und nach dem geplanten Vergabezeitpunkt fragen."})
+            "next_action":"Ansprechpartner in der Originalquelle ermitteln und nach dem geplanten Vergabezeitpunkt fragen."})
     out={"policy_version":POLICY_VERSION,"count":len(records),"opportunities":records,
         "notes":{"expected_trades":"Bei frühen Projekten aus der Projektart abgeleitet, noch keine bestätigten Lose.",
                  "dates":"Unbekannte Vergabezeiträume bleiben leer."}}

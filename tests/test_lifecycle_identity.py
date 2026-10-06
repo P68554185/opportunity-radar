@@ -41,3 +41,8 @@ class IdentityTests(unittest.TestCase):
         result=evaluate(self.a,dict(self.b,phase="award"))
         self.assertEqual(result["interval_endpoint"],"award")
         self.assertEqual(history([self.b,self.a])[0]["source_id"],"EARLY-1")
+
+    def test_shared_stage_does_not_hide_different_buildings(self):
+        a=dict(self.a,title="Campus Deutz Gebäude B Bauabschnitt 1")
+        b=dict(self.b,title="Campus Deutz Gebäude C Bauabschnitt 1")
+        self.assertIn("different_building_component",evaluate(a,b)["blockers"])

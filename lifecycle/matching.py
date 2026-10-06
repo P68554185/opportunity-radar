@@ -27,7 +27,15 @@ def anchors(value):
             if len(word) >= 4 and word not in GENERIC and not word.isdigit()}
 
 def components(value):
-    return set(re.findall(r"(?:gebäude|bauteil|bauabschnitt|wache)\s+([a-z]|[ivx]+|\d+)\b", norm(value)))
+    result={}
+    for role,identifier in re.findall(r"(gebäude|bauteil|bauabschnitt|wache)\s+([a-z]|[ivx]+|\d+)\b",norm(value)):
+        role="building" if role in ("gebäude","bauteil") else role
+        result.setdefault(role,set()).add(identifier)
+    return result
+
+def component_conflict(a,b):
+    ca,cb=components(a),components(b)
+    return any(ca[role].isdisjoint(cb[role]) for role in ca.keys() & cb.keys())
 
 def evaluate(early, later, *, ambiguous=False):
     text_a = early.get("title", "")
@@ -53,8 +61,7 @@ def evaluate(early, later, *, ambiguous=False):
         blockers.append("different_project_type")
     if address_a and address_b and address_a != address_b:
         blockers.append("different_project_address")
-    ca, cb = components(text_a), components(text_b)
-    if ca and cb and ca.isdisjoint(cb):
+    if component_conflict(text_a,text_b):
         blockers.append("different_building_component")
     start, end = published(early.get("published")), published(later.get("published"))
     if not start or not end:
