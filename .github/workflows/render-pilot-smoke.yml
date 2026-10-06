@@ -1,0 +1,52 @@
+name: Verify Render Pilot
+on:
+  push:
+    paths: [".github/workflows/render-pilot-smoke.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check public backend and database
+        shell: python
+        run: |
+          import json, time
+          from urllib.request import urlopen, Request
+          from urllib.error import HTTPError
+          base = "https://bauradar-pilot.onrender.com"
+          def get(path):
+              with urlopen(Request(base + path, headers={"Cache-Control": "no-cache"}), timeout=90) as r:
+                  return r, r.read().decode()
+          for attempt in range(3):
+              try:
+                  _, live = get("/api/live")
+                  assert json.loads(live)["status"] == "ok"
+                  break
+              except Exception:
+                  if attempt == 2: raise
+                  time.sleep(5)
+          _, health = get("/api/health")
+          health = json.loads(health)
+          assert health["status"] == "ok"
+          assert health["signup_enabled"] is False
+          assert health["email_enabled"] is False
+          assert health["billing_enabled"] is False
+          _, html = get("/")
+          assert "Die nächste Chance" in html
+          _, payload = get("/data/bauradar_feed.json")
+          feed = json.loads(payload)
+          assert feed["count"] == len(feed["opportunities"]) > 0
+          assert all(p["quality_status"] in ("CONFIDENT", "VERIFIED_EARLY") for p in feed["opportunities"])
+          for path in ("/api/me", "/api/profile", "/api/watches", "/admin/"):
+              try:
+                  get(path)
+                  raise AssertionError("Anonymous account access permitted")
+              except HTTPError as e:
+                  assert e.code == 401
+          print(json.dumps({"url": base, "backend": "ok", "database": "ok", "customer_records": feed["count"], "anonymous_access": "blocked", "signup": "disabled"}))
