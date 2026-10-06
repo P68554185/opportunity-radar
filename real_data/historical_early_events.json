@@ -1,0 +1,44 @@
+[
+  {
+    "source_id": "HIST-KKA-20230727",
+    "source_type": "official_project_announcement",
+    "source_url": "https://www.kkh-alsfeld.de/beitrag/startschuss-fuer-neubau.html",
+    "published": "2023-07-27",
+    "title": "Neubau Kreiskrankenhaus Alsfeld",
+    "body": "Generalplaner beauftragt; Bauantrag als nächster Schritt angekündigt.",
+    "city": "Alsfeld",
+    "region": "Hessen",
+    "country": "DE",
+    "project_type": "hospital",
+    "phase": "object_planning",
+    "authority": "Kreiskrankenhaus des Vogelsbergkreises in Alsfeld GmbH"
+  },
+  {
+    "source_id": "HIST-WARBURG-20241119",
+    "source_type": "official_project_announcement",
+    "source_url": "https://www.warburg.de/index.php?FID=3890.570.1&ModID=255",
+    "published": "2024-11-19",
+    "title": "Neubau Waldbad Warburg",
+    "body": "Förderbescheid und symbolischer Spatenstich; Neubau Hallenbad und Sanierung Freibad.",
+    "city": "Warburg",
+    "region": "Nordrhein-Westfalen",
+    "country": "DE",
+    "project_type": "public_space",
+    "phase": "funding",
+    "authority": "Hansestadt Warburg"
+  },
+  {
+    "source_id": "HIST-THK-DEUTZ-UNDATE",
+    "source_type": "official_project_announcement",
+    "source_url": "https://www.th-koeln.de/hochschule/nachlese-zur-infoveranstaltung_105187.php",
+    "published": "",
+    "title": "Campus Deutz Neubau Gebäude B",
+    "body": "Projektstand zum Neubau; Veranstaltung am 19.06.2023, Veröffentlichungsdatum der Seite nicht belegt.",
+    "city": "Köln",
+    "region": "Nordrhein-Westfalen",
+    "country": "DE",
+    "project_type": "education",
+    "phase": "object_planning",
+    "authority": ""
+  }
+]
