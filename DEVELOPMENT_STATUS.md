@@ -12,7 +12,7 @@ Stand: 06.10.2026. Funktionsnachweise haben Vorrang vor Zielterminen.
 | Betriebsprofile / Merkliste / Login | implementiert, SQLite/PostgreSQL und Browser geprüft | Registrierung öffentlich deaktiviert; kein live getestetes Kundenkonto |
 | Prozessneustart / Kontotrennung | CI erfolgreich | Echter Neustart mit PostgreSQL; zwei Konten im Browser; CI 37431562638 |
 | Automatischer Render-Feed | auf Render veröffentlicht und live geprüft | Geprüfte Pages-Daten per Servercache übernehmen, ohne täglichen Redeploy |
-| PostgreSQL-Sicherung / Restore | vorbereitet, CI-Abnahme läuft | Privates pg_dump-Archiv; Restore ausschließlich in getrennte leere Datenbank |
+| PostgreSQL-Sicherung / Restore | Werkzeuge integriert; Wiederherstellung in CI erfolgreich | Produktive Sicherungsplanung und verschlüsselte Ablage offen |
 | Entfernung / Radius | offen | geprüfte Koordinaten und geographische Abdeckung |
 | E-Mail / Benachrichtigungen | offen | Verifizierung, Passwort-Reset, Versand und Opt-in |
 | Tarife / Bezahlung | offen | Nutzerentscheidung über Angebot/Preis und Zahlungsweg |
@@ -36,9 +36,9 @@ Konservative Lifecycle-Verknüpfungen sind keine Garantie vollständiger Gebäud
 
 ## Nächste Schritte
 1. PR #5 integriert und vollständig geprüft (CI 37431562638): automatische Feed-Übernahme, Prozessneustart und Browser-Kontotrennung.
-2. Neue Backend-Version auf Render veröffentlichen und Live-Feed prüfen; manueller Nutzer-Redeploy erforderlich, solange kein sicherer Anbieterzugriff besteht.
+2. Render-Feed veröffentlicht und live geprüft (37432113469); kein erneutes Deployment allein für die Wartungswerkzeuge erforderlich.
 3. Geschlossenen Kontotest vorbereiten; keine öffentliche Registrierung vor Infrastruktur-/Datenschutz-Abnahme.
-4. PostgreSQL-Backup/Wiederherstellung und persistente Konten über echten Render-Redeploy prüfen.
+4. PostgreSQL-Backup/Restore in CI bestanden (37432784843). Produktive Sicherungsplanung/geschützte Ablage und persistente Konten über echten Render-Redeploy noch prüfen.
 5. Radius, weitere EARLY-Quellen, E-Mail sowie Angebot/Rechtstexte vervollständigen.
 
 ## Verbindliche Kostenentscheidung
@@ -47,7 +47,7 @@ Render Free und Neon Free haben Ruhephasen und Nutzungslimits; kein Produktions-
 Einrichtung und Nachweise: deploy/FREE_PILOT.md.
 
 ## Bereits integrierte Entwicklung
-PRs #1–#5: Datenmotor, Evidenzpolitik, Dublettenbereinigung, konservative Lifecycle-Regeln, einfache UI, Konto-Backend,
+PRs #1–#6: Datenmotor, Evidenzpolitik, Dublettenbereinigung, konservative Lifecycle-Regeln, einfache UI, Konto-Backend,
 PostgreSQL/TLS-Unterstützung, korrigierte CPV-Gewerke und phasengerechte nächste Handlung.
 Kern-, Feed-, SQLite-/PostgreSQL-, Browser- und Dockerprüfungen bestanden vor Integration.
 GitHub Actions veröffentlicht Pages nach erfolgreicher Live-Ingestion. Admin liegt außerhalb des öffentlichen Pages-Verzeichnisses.
@@ -63,6 +63,11 @@ Render-Redeploy dieser Version erfolgreich; noch kein Kontotest gegen die echte 
 06.10.2026, 09:49 Uhr Europe/Berlin: Live-Check 37432113469 erfolgreich. Dynamische Feed-Route (Cache-Control no-store) ist veröffentlicht; Render-Datenstand entspricht der veröffentlichten Pipeline (2026-10-06 05:25 UTC, 690 Projekte). Backend, Datenbank und anonymer Zugriffsschutz erfolgreich; Registrierung bleibt deaktiviert.
 Nächster externer Schritt: geschlossener Kontotest ohne öffentliche Registrierung, danach echter Render-Redeploy mit Konto-Persistenzprüfung. Wiederherstellung, Rechtstexte und E-Mail bleiben offen.
 
-## PostgreSQL-Sicherung in Arbeit
+## PostgreSQL-Sicherung: technische Abnahme bestanden
 Privates pg_dump-Custom-Archiv außerhalb des Repositorys mit Dateirechten 0600; keine Verbindungspasswörter in Prozessargumenten oder Logs. Restore blockiert Quell- und befüllte Zieldatenbanken. CI prüft Wiederherstellung von Konten, Profilen, Sitzungen und Merklisten in getrennten Wegwerf-Datenbanken.
 Produktive Backup-Zeitplanung, verschlüsselte externe Ablage und ein Restore der echten Neon-Datenbank sind noch nicht eingerichtet.
+
+PR #6 integriert: https://github.com/P68554185/opportunity-radar/pull/6
+Vollständige CI erfolgreich: https://github.com/P68554185/opportunity-radar/actions/runs/37432784843
+Tatsächlicher Dump/Restore gegen getrennte PostgreSQL-16-Datenbanken; Konten/Profile/Sitzungen/Merklisten identisch, überschreibende und nichtleere Restore-Ziele blockiert. Anschließende Browser- und Dockerprüfungen erfolgreich. Anleitung: deploy/POSTGRES_RECOVERY.md.
+Keine echte Neon-Sicherung angelegt; keine produktive Wiederherstellung vorgenommen. Der nächste Backend-Funktionsschritt bleibt ein geschlossener Kontotest ohne öffentliche Registrierung.
