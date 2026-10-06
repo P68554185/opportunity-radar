@@ -34,6 +34,8 @@ with tempfile.TemporaryDirectory() as temp:
             expect(page.locator(".project-card").first).to_be_visible()
             expect(page.locator("#savedCount")).to_have_text("1")
             page.locator('[data-view="all"]').click()
+            page.locator('[name="trade"][value="electrical"]').uncheck(force=True)
+            page.get_by_role("button",name="Passende Projekte anzeigen").click()
             page.locator("#search").fill("Alsfeld")
             expect(page.locator(".project-history").first).to_be_visible()
             page.locator(".project-history summary").first.click()
