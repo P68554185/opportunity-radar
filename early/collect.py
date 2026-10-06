@@ -24,7 +24,7 @@ from lifecycle.matching import norm
 USER_AGENT="BauRadar/1.0 (+https://p68554185.github.io/opportunity-radar/)"
 class Text(HTMLParser):
     def __init__(self):
-        super().__init__(); self.parts=[]; self.links=[]; self.skip=0; self.publication_dates=[]
+        super().__init__(); self.parts=[]; self.links=[]; self.skip=0; self.publication_dates=[]; self.link_titles={}; self.current_link=None; self.link_text=[]
     def handle_starttag(self,tag,attrs):
         attrs=dict(attrs)
         if tag=="meta" and attrs.get("property")=="article:published_time":
@@ -33,11 +33,16 @@ class Text(HTMLParser):
         if tag in ("p","li","br","h1","h2","h3"): self.parts.append("\n")
         if tag=="a":
             href=dict(attrs).get("href")
-            if href: self.links.append(href)
+            if href:
+                self.links.append(href); self.current_link=href; self.link_text=[]
     def handle_endtag(self,tag):
+        if tag=="a" and self.current_link:
+            self.link_titles[self.current_link]=" ".join(self.link_text)
+            self.current_link=None; self.link_text=[]
         if tag in ("script","style") and self.skip: self.skip-=1
         if tag in ("p","li","h1","h2","h3"): self.parts.append("\n")
     def handle_data(self,data):
+        if self.current_link: self.link_text.append(data)
         if not self.skip: self.parts.append(data)
     @property
     def text(self):
@@ -116,7 +121,8 @@ def collect():
     for discovery in manifest["discovery"]:
         try:
             page,_=client.read(discovery["source_url"])
-            links=sorted({urljoin(discovery["source_url"],link) for link in page.links})
+            links=sorted({urljoin(discovery["source_url"],link) for link in page.links
+                if re.search(r"hochbau|krankenhaus|kinder|schul|förderbescheid|neubau|bauvorhaben",page.link_titles.get(link,""),re.I)},reverse=True)
             for url in links:
                 if url in seen or not safe_url(url,discovery["host"]): continue
                 if not re.search(r"/pressemitteilungen/(?:\d+/|[^/]+-\d+$)",url): continue
@@ -151,6 +157,7 @@ def collect():
     registry_path.write_text(json.dumps(list(official.values()),ensure_ascii=False,indent=2)+"\n")
     output.write_text(json.dumps(list(indexed.values()),ensure_ascii=False,indent=2)+"\n")
     (ROOT/"reports/early_collection.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n")
+    print(json.dumps({"source_checks":report["sources"],"discovered_review_candidates":report["review_queue"]},ensure_ascii=False))
     print(json.dumps({"verified_sources":sum(r["status"]=="verified" for r in report["sources"]),
         "retained_signals":len(indexed),"review_candidates":len(report["review_queue"])}))
     return report

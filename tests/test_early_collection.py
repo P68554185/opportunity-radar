@@ -18,3 +18,9 @@ class CollectionTests(unittest.TestCase):
         self.assertEqual(len(validate_reviewed(doc,"21.07.2026 Klinikum Traunstein")),1)
         for text in ("Klinikum Traunstein", "21.07.2026 unrelated project"):
             with self.assertRaises(ValueError): validate_reviewed(doc,text)
+
+    def test_discovery_keeps_article_title_and_publication_metadata(self):
+        page=Text()
+        page.feed('<meta property="article:published_time" content="2026-08-18T10:00:00"><a href="/x">Neue <b>Schule</b></a>')
+        self.assertIn("Schule",page.link_titles["/x"])
+        self.assertEqual(page.publication_dates,["2026-08-18T10:00:00"])
