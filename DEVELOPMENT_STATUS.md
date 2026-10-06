@@ -12,6 +12,7 @@ Stand: 06.10.2026. Funktionsnachweise haben Vorrang vor Zielterminen.
 | Betriebsprofile / Merkliste / Login | implementiert, SQLite/PostgreSQL und Browser geprüft | Registrierung öffentlich deaktiviert; kein live getestetes Kundenkonto |
 | Prozessneustart / Kontotrennung | CI erfolgreich | Echter Neustart mit PostgreSQL; zwei Konten im Browser; CI 37431562638 |
 | Automatischer Render-Feed | auf Render veröffentlicht und live geprüft | Geprüfte Pages-Daten per Servercache übernehmen, ohne täglichen Redeploy |
+| PostgreSQL-Sicherung / Restore | vorbereitet, CI-Abnahme läuft | Privates pg_dump-Archiv; Restore ausschließlich in getrennte leere Datenbank |
 | Entfernung / Radius | offen | geprüfte Koordinaten und geographische Abdeckung |
 | E-Mail / Benachrichtigungen | offen | Verifizierung, Passwort-Reset, Versand und Opt-in |
 | Tarife / Bezahlung | offen | Nutzerentscheidung über Angebot/Preis und Zahlungsweg |
@@ -61,3 +62,7 @@ Render-Redeploy dieser Version erfolgreich; noch kein Kontotest gegen die echte 
 ## Render-Abnahme nach manuellem Deployment
 06.10.2026, 09:49 Uhr Europe/Berlin: Live-Check 37432113469 erfolgreich. Dynamische Feed-Route (Cache-Control no-store) ist veröffentlicht; Render-Datenstand entspricht der veröffentlichten Pipeline (2026-10-06 05:25 UTC, 690 Projekte). Backend, Datenbank und anonymer Zugriffsschutz erfolgreich; Registrierung bleibt deaktiviert.
 Nächster externer Schritt: geschlossener Kontotest ohne öffentliche Registrierung, danach echter Render-Redeploy mit Konto-Persistenzprüfung. Wiederherstellung, Rechtstexte und E-Mail bleiben offen.
+
+## PostgreSQL-Sicherung in Arbeit
+Privates pg_dump-Custom-Archiv außerhalb des Repositorys mit Dateirechten 0600; keine Verbindungspasswörter in Prozessargumenten oder Logs. Restore blockiert Quell- und befüllte Zieldatenbanken. CI prüft Wiederherstellung von Konten, Profilen, Sitzungen und Merklisten in getrennten Wegwerf-Datenbanken.
+Produktive Backup-Zeitplanung, verschlüsselte externe Ablage und ein Restore der echten Neon-Datenbank sind noch nicht eingerichtet.

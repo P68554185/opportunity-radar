@@ -1,6 +1,6 @@
-# BauRadar Backend – vorbereitet, noch nicht produktiv gehostet
+# BauRadar Backend – kostenloser Pilot auf Render/Neon
 
-FastAPI + SQLite mit persistentem Volume. Wiederverwendung der geprüften Pages-Dateien und Kundensnapshots.
+FastAPI + PostgreSQL für den kostenlosen Pilot; SQLite für lokale Entwicklung oder einen einzelnen Host mit persistentem Volume. Wiederverwendung der geprüften Pages-Dateien und Kundensnapshots.
 Die Oberfläche erkennt die API automatisch; auf GitHub Pages bleibt sie eine lokale Vorschau.
 
 ## Lokaler Start
@@ -38,4 +38,4 @@ Kundenprofile/Merklisten werden nicht automatisch zwischen lokaler Vorschau und 
 
 ## Kostenloser Pilot mit PostgreSQL
 BAURADAR_DATABASE_URL aktiviert gehostetes PostgreSQL. Ohne diese Variable bleibt SQLite aktiv. BAURADAR_ORIGIN kann auf Render durch RENDER_EXTERNAL_URL ersetzt werden. API-Verhalten und Session-/Kundentrennung bleiben gleich und werden gegen beide Datenbanken getestet.
-Render-Free-Blueprint und konkrete Schritte: deploy/FREE_PILOT.md. Plattform-Healthchecks verwenden /api/live, damit sie die kostenlose Datenbank nicht permanent aktiv halten. Für PostgreSQL gelten pg_dump/Restore-Verfahren; backend/backup.py ist ausschließlich für SQLite.
+Render-Free-Blueprint und konkrete Schritte: deploy/FREE_PILOT.md. Plattform-Healthchecks verwenden /api/live, damit sie die kostenlose Datenbank nicht permanent aktiv halten. PostgreSQL-Sicherung und Wiederherstellung: backend/postgres_backup.py und deploy/POSTGRES_RECOVERY.md. backend/backup.py ist ausschließlich für SQLite.
