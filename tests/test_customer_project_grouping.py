@@ -19,3 +19,11 @@ class GroupingTests(unittest.TestCase):
     def test_one_award_does_not_mark_all_other_lots_awarded(self):
         records=[self.notice("TED-1","facade"),self.notice("TED-2","electrical","award")]
         self.assertEqual(collapse_confirmed(records,[self.timeline()])[0]["phase"],"procurement")
+
+    def test_retired_notice_keeps_bookmark_alias_without_current_opportunity(self):
+        records=[self.notice("TED-2","electrical")]
+        merged=collapse_confirmed(records,[self.timeline()])
+        self.assertEqual(len(merged),1)
+        self.assertEqual(merged[0]["aliases"],["TED-1","TED-2"])
+        self.assertEqual(merged[0]["trades"],["electrical"])
+        self.assertEqual(merged[0]["procurement_notice_count"],1)
