@@ -11,7 +11,7 @@ Stand: 06.10.2026. Funktionsnachweise haben Vorrang vor Zielterminen.
 | Kostenloses Backend | Render + Neon eingerichtet | Live-Check 37429224942 erfolgreich: Datenbank erreichbar, 690 geprüfte Feed-Einträge |
 | Betriebsprofile / Merkliste / Login | implementiert, SQLite/PostgreSQL und Browser geprüft | Registrierung öffentlich deaktiviert; kein live getestetes Kundenkonto |
 | Prozessneustart / Kontotrennung | CI erfolgreich | Echter Neustart mit PostgreSQL; zwei Konten im Browser; CI 37431562638 |
-| Automatischer Render-Feed | implementiert und integriert; Render-Redeploy ausstehend | Geprüfte Pages-Daten per Servercache übernehmen, ohne täglichen Redeploy |
+| Automatischer Render-Feed | auf Render veröffentlicht und live geprüft | Geprüfte Pages-Daten per Servercache übernehmen, ohne täglichen Redeploy |
 | Entfernung / Radius | offen | geprüfte Koordinaten und geographische Abdeckung |
 | E-Mail / Benachrichtigungen | offen | Verifizierung, Passwort-Reset, Versand und Opt-in |
 | Tarife / Bezahlung | offen | Nutzerentscheidung über Angebot/Preis und Zahlungsweg |
@@ -56,4 +56,8 @@ Kundendaten und Zugangsdaten dürfen nicht in Git, Artefakte oder öffentliche L
 https://github.com/P68554185/opportunity-radar/pull/5 — integriert am 06.10.2026.
 https://github.com/P68554185/opportunity-radar/actions/runs/37431562638 — vollständige Prüfung erfolgreich.
 Neue Tests: Feed-Rückfall/Validierung, tatsächlicher PostgreSQL-Prozessneustart mit deaktivierter Registrierung nach Neustart, erneuter Login und zweites unabhängiges Browserkonto. Docker-Build erfolgreich.
-Noch kein Render-Redeploy dieser Version und kein Kontotest gegen die echte Neon-Datenbank. Keine öffentliche Registrierung freigeschaltet.
+Render-Redeploy dieser Version erfolgreich; noch kein Kontotest gegen die echte Neon-Datenbank. Keine öffentliche Registrierung freigeschaltet.
+
+## Render-Abnahme nach manuellem Deployment
+06.10.2026, 09:49 Uhr Europe/Berlin: Live-Check 37432113469 erfolgreich. Dynamische Feed-Route (Cache-Control no-store) ist veröffentlicht; Render-Datenstand entspricht der veröffentlichten Pipeline (2026-10-06 05:25 UTC, 690 Projekte). Backend, Datenbank und anonymer Zugriffsschutz erfolgreich; Registrierung bleibt deaktiviert.
+Nächster externer Schritt: geschlossener Kontotest ohne öffentliche Registrierung, danach echter Render-Redeploy mit Konto-Persistenzprüfung. Wiederherstellung, Rechtstexte und E-Mail bleiben offen.
