@@ -9,7 +9,7 @@ Stand: 06.10.2026. Funktionsnachweise haben Vorrang vor Zielterminen.
 | EARLY / Lifecycle | konservative Engine vorhanden | 37 kuratierte Signale / 36 Masterprojekte; laufende breitere Akquisition fehlt |
 | Einfache Kundenoberfläche | veröffentlicht, Chromium geprüft | Quelle, Gewerk, Phase, Auftraggeber, nächste Handlung |
 | Kostenloses Backend | Render + Neon eingerichtet | Live-Check 37429224942 erfolgreich: Datenbank erreichbar, 690 geprüfte Feed-Einträge |
-| Geschlossener Kontotest | Live-Test auf Render/Neon erfolgreich | 37435166258, Versuch 3: zwei Konten, Profile/Merklisten, Logout/Login, Secure-Cookies; Redeploy-Persistenz offen |
+| Geschlossener Kontotest | Live-Test auf Render/Neon erfolgreich | 37435166258, Versuch 3: zwei Konten, Profile/Merklisten, Logout/Login, Secure-Cookies; Redeploy-Persistenz erfolgreich (37436725262) |
 | Betriebsprofile / Merkliste / Login | implementiert, SQLite/PostgreSQL und Browser geprüft | Registrierung öffentlich deaktiviert; zwei synthetische Konten live geprüft |
 | Prozessneustart / Kontotrennung | CI erfolgreich | Echter Neustart mit PostgreSQL; zwei Konten im Browser; CI 37431562638 |
 | Automatischer Render-Feed | auf Render veröffentlicht und live geprüft | Geprüfte Pages-Daten per Servercache übernehmen, ohne täglichen Redeploy |
@@ -38,7 +38,7 @@ Konservative Lifecycle-Verknüpfungen sind keine Garantie vollständiger Gebäud
 ## Nächste Schritte
 1. PR #5 integriert und vollständig geprüft (CI 37431562638): automatische Feed-Übernahme, Prozessneustart und Browser-Kontotrennung.
 2. Render-Feed veröffentlicht und live geprüft (37432113469); kein erneutes Deployment allein für die Wartungswerkzeuge erforderlich.
-3. Geschlossener Kontotest live bestanden (37435166258, Versuch 3). Jetzt manueller Render-Redeploy und zweiter Workflow mit verify_persistence=true; danach Testsecret entfernen und Cleanup deployen.
+3. Geschlossener Kontotest live bestanden (37435166258, Versuch 3). Persistenzprüfung nach manuellem Render-Redeploy bestanden (37436725262). Jetzt Testsecret entfernen und Cleanup deployen.
 4. PostgreSQL-Backup/Restore in CI bestanden (37432784843). Produktive Sicherungsplanung/geschützte Ablage und persistente Konten über echten Render-Redeploy noch prüfen.
 5. Radius, weitere EARLY-Quellen, E-Mail sowie Angebot/Rechtstexte vervollständigen.
 
@@ -89,3 +89,9 @@ Live-Kontotrennung, Live-Profile/Merklisten und Live-Redeploy-Persistenz sind da
 Zwei synthetische Konten auf echtem Render-/Neon-Pilot in Chromium geprüft: Registrierung geschlossen, Anmeldung, isolierte Profile/Merklisten, Neuladen, Logout und erneute Anmeldung, Admin-Verweigerung, HTTPS-Cookies mit Secure/HttpOnly/SameSite=Strict. Keine Test-Zugangsdaten veröffentlicht.
 Die vorherigen HTTP-401-Fehler sind nach Hinterlegung der fehlenden Render-Testvariable behoben.
 Noch offen: bestehende Daten nach einem weiteren echten Render-Redeploy im verify_persistence-Modus prüfen. Vor diesem zweiten Test die Test-Secrets beibehalten; erst nach Abschluss entfernen und Cleanup deployen. Keine Aussage über Live-Sitzungserhalt über Redeploy, E-Mail oder Bezahlung.
+
+## Live-Persistenztest erfolgreich
+06.10.2026, 10:32 Uhr Europe/Berlin: https://github.com/P68554185/opportunity-radar/actions/runs/37436725262 erfolgreich; VERIFY_PERSISTENCE=true im ausgeführten Job bestätigt.
+Bestehende synthetische Profile und Merklisten wurden vor Änderungen geprüft: Konto A behielt sein Profil und genau ein beobachtetes Projekt, Konto B behielt sein getrenntes Profil ohne Merkliste. Anmeldung, Logout/Wiederanmeldung, Admin-Verweigerung und Secure-Cookies ebenfalls erfolgreich.
+Dies belegt Profil-/Merkliste-Erhalt nach dem vom Nutzer ausgeführten Render-Redeploy auf der echten Neon-Datenbank. Erhalt bereits offener Live-Sitzungen über Redeploy wurde nicht separat geprüft.
+Nächster Schritt: BAURADAR_CLOSED_TEST_PASSWORD in Render entfernen und deployen, wodurch die beiden reservierten Testkonten samt Daten entfernt werden; GitHub-Testsecret ebenfalls entfernen. Öffentliche Registrierung bleibt false. Cleanup-Live-Nachweis steht noch aus.
