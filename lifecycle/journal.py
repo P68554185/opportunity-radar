@@ -27,3 +27,19 @@ def preserve_confirmed(archive,current,confirmed,now=None):
                 "quality_policy_version":notice.get("evidence",{}).get("policy_version"),
                 "notice":notice}
     return archive
+
+def qualified_history(archive,historical,current):
+    """Recheck archived/frozen facts; current acquisition overrides older facts."""
+    from intelligence.evidence import classify_evidence,POLICY_VERSION
+    candidates={sid:item["notice"] for sid,item in archive.items()
+        if item.get("quality_policy_version")==POLICY_VERSION}
+    candidates.update({notice["source_id"]:notice for notice in historical
+        if notice["source_id"] not in candidates})
+    candidates.update({notice["source_id"]:notice for notice in current})
+    qualified={}
+    for sid,notice in candidates.items():
+        status,evidence=classify_evidence(notice)
+        if status=="CONFIDENT":
+            qualified[sid]=dict(notice,evidence=dict(notice.get("evidence",{}),
+                policy_version=evidence["policy_version"]))
+    return qualified
