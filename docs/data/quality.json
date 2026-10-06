@@ -1,40 +1,40 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9677,
+  "classified_opportunities": 9675,
   "classification_rate_pct": 96.8,
   "bands": {
-    "UPCOMING": 5538,
-    "HOT": 1682,
-    "EARLY": 2457
+    "UPCOMING": 5554,
+    "HOT": 1679,
+    "EARLY": 2442
   },
   "project_types": [
     [
       "unclassified_project",
-      3574
+      3562
     ],
     [
       "school",
-      1489
+      1494
     ],
     [
       "rail",
-      778
+      773
     ],
     [
       "water_wastewater",
-      369
+      375
     ],
     [
       "industrial",
-      340
+      343
+    ],
+    [
+      "civil_engineering",
+      333
     ],
     [
       "bridge",
       333
-    ],
-    [
-      "civil_engineering",
-      328
     ],
     [
       "university_research",
@@ -42,31 +42,31 @@
     ],
     [
       "hospital",
-      280
+      279
     ],
     [
       "road",
-      268
+      273
     ],
     [
       "administration",
-      244
-    ],
-    [
-      "sports_leisure",
       242
     ],
     [
+      "sports_leisure",
+      241
+    ],
+    [
       "kindergarten",
-      194
+      190
     ],
     [
       "fire_station",
-      186
+      185
     ],
     [
       "public_building",
-      180
+      182
     ],
     [
       "energy",
@@ -74,11 +74,11 @@
     ],
     [
       "public_space",
-      123
+      121
     ],
     [
       "residential",
-      97
+      98
     ],
     [
       "care_social",
@@ -86,7 +86,7 @@
     ],
     [
       "infrastructure",
-      70
+      69
     ],
     [
       "commercial",
@@ -96,39 +96,39 @@
   "trades": [
     [
       "structural",
-      1743
+      1748
     ],
     [
       "electrical",
-      1411
+      1404
     ],
     [
       "windows_doors",
-      1386
+      1391
     ],
     [
       "hvac",
-      973
+      975
     ],
     [
       "earthworks",
-      855
+      852
     ],
     [
       "railworks",
-      765
+      759
     ],
     [
       "flooring",
-      711
+      708
     ],
     [
       "demolition",
-      653
+      648
     ],
     [
       "painting",
-      640
+      644
     ],
     [
       "roof",
@@ -136,47 +136,47 @@
     ],
     [
       "insulation",
-      507
+      508
     ],
     [
       "roadworks",
-      439
+      442
     ],
     [
       "plumbing",
-      401
+      403
     ],
     [
       "facade",
-      359
+      362
     ],
     [
       "landscaping",
-      314
+      312
     ],
     [
       "drywall",
-      303
+      301
     ],
     [
       "plastering",
-      205
+      210
     ],
     [
       "fire_protection",
-      191
+      190
     ],
     [
       "elevator",
-      134
+      132
     ],
     [
       "finishing",
-      96
+      95
     ],
     [
       "sewer_pipe",
-      85
+      86
     ],
     [
       "solar_energy",
@@ -184,7 +184,7 @@
     ],
     [
       "fencing",
-      74
+      75
     ],
     [
       "building_services",
@@ -200,34 +200,34 @@
     {
       "from": 60,
       "to": 69,
-      "count": 2395
+      "count": 2379
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2387
+      "count": 2397
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4154
+      "count": 4152
     },
     {
       "from": 90,
       "to": 99,
-      "count": 356
+      "count": 359
     },
     {
       "from": 100,
       "to": 100,
-      "count": 144
+      "count": 147
     }
   ],
   "quality_flags": {
-    "project_type_only": 1074,
-    "trade_only": 3574,
-    "project_and_trade": 5029,
-    "opportunity_score_85_plus": 1682
+    "project_type_only": 1079,
+    "trade_only": 3562,
+    "project_and_trade": 5034,
+    "opportunity_score_85_plus": 1679
   },
   "sample_top": [
     {
