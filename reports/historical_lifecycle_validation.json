@@ -1,0 +1,246 @@
+{
+  "matching_version": "2026-10-06-identity-v1",
+  "historical_early_records": 3,
+  "frozen_procurement_records": 4,
+  "comparisons": [
+    {
+      "version": "2026-10-06-identity-v1",
+      "status": "confirmed",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "alsfeld",
+          "kreiskrankenhaus"
+        ],
+        "same_authority": true
+      },
+      "blockers": [],
+      "source_ids": [
+        "HIST-KKA-20230727",
+        "TED-664474-2026"
+      ],
+      "publication_interval_days": 1159,
+      "interval_endpoint": "tender",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "early_url": "https://www.kkh-alsfeld.de/beitrag/startschuss-fuer-neubau.html",
+      "later_url": "https://ted.europa.eu/en/notice/-/detail/664474-2026"
+    },
+    {
+      "version": "2026-10-06-identity-v1",
+      "status": "confirmed",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "alsfeld",
+          "kreiskrankenhaus"
+        ],
+        "same_authority": true
+      },
+      "blockers": [],
+      "source_ids": [
+        "HIST-KKA-20230727",
+        "TED-660397-2026"
+      ],
+      "publication_interval_days": 1156,
+      "interval_endpoint": "tender",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "early_url": "https://www.kkh-alsfeld.de/beitrag/startschuss-fuer-neubau.html",
+      "later_url": "https://ted.europa.eu/en/notice/-/detail/660397-2026"
+    },
+    {
+      "version": "2026-10-06-identity-v1",
+      "status": "probable",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "waldbad",
+          "warburg"
+        ],
+        "same_authority": false
+      },
+      "blockers": [],
+      "source_ids": [
+        "HIST-WARBURG-20241119",
+        "TED-675305-2026"
+      ],
+      "publication_interval_days": 681,
+      "interval_endpoint": "award",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "early_url": "https://www.warburg.de/index.php?FID=3890.570.1&ModID=255",
+      "later_url": "https://ted.europa.eu/en/notice/-/detail/675305-2026"
+    },
+    {
+      "version": "2026-10-06-identity-v1",
+      "status": "unlinked",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "deutz"
+        ],
+        "same_authority": false
+      },
+      "blockers": [
+        "missing_publication_date"
+      ],
+      "source_ids": [
+        "HIST-THK-DEUTZ-UNDATE",
+        "TED-685765-2026"
+      ],
+      "publication_interval_days": null,
+      "interval_endpoint": "tender",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "early_url": "https://www.th-koeln.de/hochschule/nachlese-zur-infoveranstaltung_105187.php",
+      "later_url": "https://ted.europa.eu/en/notice/-/detail/685765-2026"
+    }
+  ],
+  "confirmed_notice_links": 2,
+  "confirmed_project_cases": 1,
+  "timelines": [
+    {
+      "early_source_id": "HIST-KKA-20230727",
+      "history": [
+        {
+          "source_id": "HIST-KKA-20230727",
+          "source_url": "https://www.kkh-alsfeld.de/beitrag/startschuss-fuer-neubau.html",
+          "published": "2023-07-27",
+          "phase": "object_planning",
+          "title": "Neubau Kreiskrankenhaus Alsfeld"
+        },
+        {
+          "source_id": "TED-660397-2026",
+          "source_url": "https://ted.europa.eu/en/notice/-/detail/660397-2026",
+          "published": "2026-09-25+02:00",
+          "phase": "tender",
+          "title": "Neubau Kreiskrankenhaus Alsfeld, Metallbauarbeiten 1 (Aluminium Glasfassadenelemente), KKA"
+        },
+        {
+          "source_id": "TED-664474-2026",
+          "source_url": "https://ted.europa.eu/en/notice/-/detail/664474-2026",
+          "published": "2026-09-28+02:00",
+          "phase": "tender",
+          "title": "Neubau Kreiskrankenhaus Alsfeld, Metallbauarbeiten 1 (Aluminium Glasfassadenelemente), KKA"
+        }
+      ]
+    }
+  ],
+  "labelled_checks": [
+    {
+      "source_ids": [
+        "HIST-KKA-20230727",
+        "TED-664474-2026"
+      ],
+      "expected": "confirmed",
+      "actual": "confirmed",
+      "label_reason": "Same explicitly named new hospital and identical legal owner, primary-source review"
+    },
+    {
+      "source_ids": [
+        "HIST-KKA-20230727",
+        "TED-660397-2026"
+      ],
+      "expected": "confirmed",
+      "actual": "confirmed",
+      "label_reason": "Same explicitly named new hospital and identical legal owner, primary-source review"
+    },
+    {
+      "source_ids": [
+        "HIST-KKA-20230727",
+        "TED-675305-2026"
+      ],
+      "expected": "unlinked",
+      "actual": "unlinked",
+      "label_reason": "Different known project municipality"
+    },
+    {
+      "source_ids": [
+        "HIST-KKA-20230727",
+        "TED-685765-2026"
+      ],
+      "expected": "unlinked",
+      "actual": "unlinked",
+      "label_reason": "Different known project municipality"
+    },
+    {
+      "source_ids": [
+        "HIST-WARBURG-20241119",
+        "TED-664474-2026"
+      ],
+      "expected": "unlinked",
+      "actual": "unlinked",
+      "label_reason": "Different known project municipality"
+    },
+    {
+      "source_ids": [
+        "HIST-WARBURG-20241119",
+        "TED-660397-2026"
+      ],
+      "expected": "unlinked",
+      "actual": "unlinked",
+      "label_reason": "Different known project municipality"
+    },
+    {
+      "source_ids": [
+        "HIST-WARBURG-20241119",
+        "TED-685765-2026"
+      ],
+      "expected": "unlinked",
+      "actual": "unlinked",
+      "label_reason": "Different known project municipality"
+    },
+    {
+      "source_ids": [
+        "HIST-THK-DEUTZ-UNDATE",
+        "TED-664474-2026"
+      ],
+      "expected": "unlinked",
+      "actual": "unlinked",
+      "label_reason": "Different known project municipality"
+    },
+    {
+      "source_ids": [
+        "HIST-THK-DEUTZ-UNDATE",
+        "TED-660397-2026"
+      ],
+      "expected": "unlinked",
+      "actual": "unlinked",
+      "label_reason": "Different known project municipality"
+    },
+    {
+      "source_ids": [
+        "HIST-THK-DEUTZ-UNDATE",
+        "TED-675305-2026"
+      ],
+      "expected": "unlinked",
+      "actual": "unlinked",
+      "label_reason": "Different known project municipality"
+    }
+  ],
+  "labelled_positive_notice_pairs": 2,
+  "labelled_negative_notice_pairs": 8,
+  "missed_known_positive_pairs": 0,
+  "false_confirmations_in_labelled_negatives": 0,
+  "accuracy": null,
+  "precision": null,
+  "recall": null,
+  "limitations": [
+    "Purposefully selected retrospective examples; no representative labelled denominator.",
+    "Early publication dates predate acquisition by BauRadar; no observed live detection lead.",
+    "Intervals end at selected notices, not necessarily the first tender for a project.",
+    "Tender and award intervals must not be combined into a first-tender lead statistic.",
+    "Warburg issuer and buyer differ; a probable name match is not automatically confirmed.",
+    "TH Koeln event date is not proven webpage publication date; interval withheld.",
+    "Frozen TED facts come from the actual acquisition pipeline; subsequent corrections are not tracked here."
+  ]
+}

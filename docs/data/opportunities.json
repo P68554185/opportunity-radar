@@ -3,7 +3,7 @@
   "live_records": 2000,
   "enriched_records": 2000,
   "duplicate_source_records": 0,
-  "classified_opportunities": 1926,
+  "classified_opportunities": 1927,
   "lifecycle_candidates": 0,
   "opportunities": [
     {
@@ -213,36 +213,37 @@
       }
     },
     {
-      "source_id": "TED-683855-2026",
-      "notice_id": "683855-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026",
+      "source_id": "TED-684848-2026",
+      "notice_id": "684848-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026",
       "published": "2026-10-05+02:00",
-      "title": "Freianlagen Sem I und Infra",
-      "description": "Freianlagen Sem I und Infra Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe ['DE721', 'DEU', 'DE721', 'DEU']",
-      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
-      "city": "Gießen",
+      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
+      "description": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude Stadt Erlangen - Zentrale Vergabestelle ['DE252', 'DEU', 'DE252', 'DEU']",
+      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
+      "city": "Erlangen",
       "region": "",
       "country": "DEU",
-      "project_type": "public_space",
+      "project_type": "school",
       "trades": [
-        "landscaping",
-        "earthworks",
-        "demolition",
-        "roadworks"
+        "flooring",
+        "windows_doors",
+        "electrical",
+        "earthworks"
       ],
       "cpv": [
+        "45214210",
+        "45214000",
+        "45214210",
+        "45431000",
+        "45421131",
+        "45421000",
+        "45311000",
+        "45315300",
         "45112700",
-        "31527200",
-        "45111000",
-        "45233120",
-        "45232452",
-        "45112700",
-        "31527200",
-        "45111000",
-        "45233120",
-        "45232452"
+        "39314000",
+        "39150000"
       ],
-      "phase": "tender",
+      "phase": "prior_information",
       "score": 100,
       "opportunity_score": 100,
       "classification_confidence": 0.75,
@@ -251,23 +252,23 @@
       "evidence": {
         "project_text": true,
         "project_cpv": true,
-        "trade_text": [
-          "landscaping"
-        ],
+        "trade_text": [],
         "trade_cpv": [
-          "earthworks",
-          "demolition",
-          "roadworks"
+          "flooring",
+          "windows_doors",
+          "electrical",
+          "earthworks"
         ],
         "construction_cpv": [
-          "45112700",
-          "45111000",
-          "45233120",
-          "45232452",
-          "45112700",
-          "45111000",
-          "45233120",
-          "45232452"
+          "45214210",
+          "45214000",
+          "45214210",
+          "45431000",
+          "45421131",
+          "45421000",
+          "45311000",
+          "45315300",
+          "45112700"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -346,68 +347,6 @@
       }
     },
     {
-      "source_id": "TED-684848-2026",
-      "notice_id": "684848-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026",
-      "published": "2026-10-05+02:00",
-      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
-      "description": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude Stadt Erlangen - Zentrale Vergabestelle ['DE252', 'DEU', 'DE252', 'DEU']",
-      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
-      "city": "Erlangen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "flooring",
-        "windows_doors",
-        "electrical",
-        "earthworks"
-      ],
-      "cpv": [
-        "45214210",
-        "45214000",
-        "45214210",
-        "45431000",
-        "45421131",
-        "45421000",
-        "45311000",
-        "45315300",
-        "45112700",
-        "39314000",
-        "39150000"
-      ],
-      "phase": "prior_information",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": true,
-        "trade_text": [],
-        "trade_cpv": [
-          "flooring",
-          "windows_doors",
-          "electrical",
-          "earthworks"
-        ],
-        "construction_cpv": [
-          "45214210",
-          "45214000",
-          "45214210",
-          "45431000",
-          "45421131",
-          "45421000",
-          "45311000",
-          "45315300",
-          "45112700"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
       "source_id": "TED-684925-2026",
       "notice_id": "684925-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/684925-2026",
@@ -468,6 +407,67 @@
           "45332400",
           "45343000",
           "45213000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-683855-2026",
+      "notice_id": "683855-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026",
+      "published": "2026-10-05+02:00",
+      "title": "Freianlagen Sem I und Infra",
+      "description": "Freianlagen Sem I und Infra Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe ['DE721', 'DEU', 'DE721', 'DEU']",
+      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+      "city": "Gießen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "demolition",
+        "roadworks"
+      ],
+      "cpv": [
+        "45112700",
+        "31527200",
+        "45111000",
+        "45233120",
+        "45232452",
+        "45112700",
+        "31527200",
+        "45111000",
+        "45233120",
+        "45232452"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "landscaping"
+        ],
+        "trade_cpv": [
+          "earthworks",
+          "demolition",
+          "roadworks"
+        ],
+        "construction_cpv": [
+          "45112700",
+          "45111000",
+          "45233120",
+          "45232452",
+          "45112700",
+          "45111000",
+          "45233120",
+          "45232452"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -811,69 +811,6 @@
           "45221112",
           "45234116",
           "45262310"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-680881-2026",
-      "notice_id": "680881-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/680881-2026",
-      "published": "2026-10-02+02:00",
-      "title": "Gymnasium Füssen - Trockenbauarbeiten BA 1-2",
-      "description": "Gymnasium Füssen - Trockenbauarbeiten BA 1-2 Landkreis Ostallgäu ['DE27B', 'DEU', 'DE27B', 'DEU']",
-      "authority": "Landkreis Ostallgäu",
-      "city": "Füssen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "drywall",
-        "insulation",
-        "windows_doors",
-        "fire_protection"
-      ],
-      "cpv": [
-        "45324000",
-        "45421146",
-        "45421141",
-        "45421152",
-        "45343100",
-        "45324000",
-        "45421146",
-        "45421141",
-        "45421152",
-        "45343100"
-      ],
-      "phase": "award",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": false,
-        "trade_text": [
-          "drywall"
-        ],
-        "trade_cpv": [
-          "insulation",
-          "windows_doors",
-          "fire_protection"
-        ],
-        "construction_cpv": [
-          "45324000",
-          "45421146",
-          "45421141",
-          "45421152",
-          "45343100",
-          "45324000",
-          "45421146",
-          "45421141",
-          "45421152",
-          "45343100"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -1472,6 +1409,69 @@
       }
     },
     {
+      "source_id": "TED-680881-2026",
+      "notice_id": "680881-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/680881-2026",
+      "published": "2026-10-02+02:00",
+      "title": "Gymnasium Füssen - Trockenbauarbeiten BA 1-2",
+      "description": "Gymnasium Füssen - Trockenbauarbeiten BA 1-2 Landkreis Ostallgäu ['DE27B', 'DEU', 'DE27B', 'DEU']",
+      "authority": "Landkreis Ostallgäu",
+      "city": "Füssen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "drywall",
+        "insulation",
+        "windows_doors",
+        "fire_protection"
+      ],
+      "cpv": [
+        "45324000",
+        "45421146",
+        "45421141",
+        "45421152",
+        "45343100",
+        "45324000",
+        "45421146",
+        "45421141",
+        "45421152",
+        "45343100"
+      ],
+      "phase": "award",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "drywall"
+        ],
+        "trade_cpv": [
+          "insulation",
+          "windows_doors",
+          "fire_protection"
+        ],
+        "construction_cpv": [
+          "45324000",
+          "45421146",
+          "45421141",
+          "45421152",
+          "45343100",
+          "45324000",
+          "45421146",
+          "45421141",
+          "45421152",
+          "45343100"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
       "source_id": "TED-676028-2026",
       "notice_id": "676028-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/676028-2026",
@@ -1817,65 +1817,6 @@
       "notice_id": "664474-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/664474-2026",
       "published": "2026-09-28+02:00",
-      "title": "Neubau Kreiskrankenhaus Alsfeld, Metallbauarbeiten 1 (Aluminium Glasfassadenelemente), KKA",
-      "description": "Neubau Kreiskrankenhaus Alsfeld, Metallbauarbeiten 1 (Aluminium Glasfassadenelemente), KKA Kreiskrankenhaus des Vogelsbergkreises in Alsfeld GmbH ['DE725', 'DEU', 'DE725', 'DEU']",
-      "authority": "Kreiskrankenhaus des Vogelsbergkreises in Alsfeld GmbH",
-      "city": "Alsfeld",
-      "region": "",
-      "country": "DEU",
-      "project_type": "hospital",
-      "trades": [
-        "facade",
-        "structural",
-        "windows_doors",
-        "painting"
-      ],
-      "cpv": [
-        "45262670",
-        "45421100",
-        "45421143",
-        "45441000",
-        "45262670",
-        "45421100",
-        "45421143",
-        "45441000"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": false,
-        "trade_text": [
-          "facade"
-        ],
-        "trade_cpv": [
-          "structural",
-          "windows_doors",
-          "painting"
-        ],
-        "construction_cpv": [
-          "45262670",
-          "45421100",
-          "45421143",
-          "45441000",
-          "45262670",
-          "45421100",
-          "45421143",
-          "45441000"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-660397-2026",
-      "notice_id": "660397-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/660397-2026",
-      "published": "2026-09-25+02:00",
       "title": "Neubau Kreiskrankenhaus Alsfeld, Metallbauarbeiten 1 (Aluminium Glasfassadenelemente), KKA",
       "description": "Neubau Kreiskrankenhaus Alsfeld, Metallbauarbeiten 1 (Aluminium Glasfassadenelemente), KKA Kreiskrankenhaus des Vogelsbergkreises in Alsfeld GmbH ['DE725', 'DEU', 'DE725', 'DEU']",
       "authority": "Kreiskrankenhaus des Vogelsbergkreises in Alsfeld GmbH",
@@ -2470,6 +2411,80 @@
           "45314310",
           "45332400",
           "45453100"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-657400-2026",
+      "notice_id": "657400-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/657400-2026",
+      "published": "2026-09-24+02:00",
+      "title": "Berliner Brücke (Teichstr.) - Gleiserneuerung, Brückensanierung und Integration von Radverkehrsanlagen",
+      "description": "Berliner Brücke (Teichstr.) - Gleiserneuerung, Brückensanierung und Integration von Radverkehrsanlagen Vergabestelle: Städtische Werke Netz + Service GmbH, Auftraggeber: Gleisbauarbeiten (Titel 1 anteilig und Titel 3 des LV) Kasseler Verkehrs-Gesellschaft AG, Königstor 3-13, 34117 Kassel, Brückensanierung und Integration von Radverkehrsanlagen (Titel 1 anteilig, Titel 2 und Tiel 4 des LV), Magistrat der Stadt Kassel, Straßenverkehrsamt- und Tiefbauamt, Obere Königsstraße 8, 34117 Kassel ['DE731', 'DEU', 'DE731', 'DEU']",
+      "authority": "Vergabestelle: Städtische Werke Netz + Service GmbH, Auftraggeber: Gleisbauarbeiten (Titel 1 anteilig und Titel 3 des LV) Kasseler Verkehrs-Gesellschaft AG, Königstor 3-13, 34117 Kassel, Brückensanierung und Integration von Radverkehrsanlagen (Titel 1 anteilig, Titel 2 und Tiel 4 des LV), Magistrat der Stadt Kassel, Straßenverkehrsamt- und Tiefbauamt, Obere Königsstraße 8, 34117 Kassel",
+      "city": "Kassel",
+      "region": "",
+      "country": "DEU",
+      "project_type": "road",
+      "trades": [
+        "structural",
+        "roadworks",
+        "railworks",
+        "electrical"
+      ],
+      "cpv": [
+        "45000000",
+        "45262300",
+        "45262670",
+        "45233120",
+        "45234116",
+        "45233222",
+        "45316212",
+        "45232000",
+        "45000000",
+        "45262300",
+        "45262670",
+        "45233120",
+        "45234116",
+        "45233222",
+        "45316212",
+        "45232000"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "structural",
+          "roadworks",
+          "railworks",
+          "electrical"
+        ],
+        "construction_cpv": [
+          "45000000",
+          "45262300",
+          "45262670",
+          "45233120",
+          "45234116",
+          "45233222",
+          "45316212",
+          "45232000",
+          "45000000",
+          "45262300",
+          "45262670",
+          "45233120",
+          "45234116",
+          "45233222",
+          "45316212",
+          "45232000"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -3216,6 +3231,63 @@
       }
     },
     {
+      "source_id": "TED-679195-2026",
+      "notice_id": "679195-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/679195-2026",
+      "published": "2026-10-02+02:00",
+      "title": "Bodenbeschichtung BA 2",
+      "description": "Bodenbeschichtung BA 2 Stadt Füssen ['DE27B', 'DEU', 'DE27B', 'DEU']",
+      "authority": "Stadt Füssen",
+      "city": "Füssen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "road",
+      "trades": [
+        "painting",
+        "roadworks",
+        "flooring"
+      ],
+      "cpv": [
+        "45000000",
+        "45200000",
+        "45233228",
+        "45432000",
+        "45000000",
+        "45200000",
+        "45233228",
+        "45432000"
+      ],
+      "phase": "tender",
+      "score": 94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
+      "band": "HOT",
+      "evidence": {
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "painting"
+        ],
+        "trade_cpv": [
+          "roadworks",
+          "flooring"
+        ],
+        "construction_cpv": [
+          "45000000",
+          "45200000",
+          "45233228",
+          "45432000",
+          "45000000",
+          "45200000",
+          "45233228",
+          "45432000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
       "source_id": "TED-679672-2026",
       "notice_id": "679672-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/679672-2026",
@@ -3270,63 +3342,6 @@
           "45340000",
           "45262511",
           "45421147"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-679195-2026",
-      "notice_id": "679195-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/679195-2026",
-      "published": "2026-10-02+02:00",
-      "title": "Bodenbeschichtung BA 2",
-      "description": "Bodenbeschichtung BA 2 Stadt Füssen ['DE27B', 'DEU', 'DE27B', 'DEU']",
-      "authority": "Stadt Füssen",
-      "city": "Füssen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "road",
-      "trades": [
-        "painting",
-        "roadworks",
-        "flooring"
-      ],
-      "cpv": [
-        "45000000",
-        "45200000",
-        "45233228",
-        "45432000",
-        "45000000",
-        "45200000",
-        "45233228",
-        "45432000"
-      ],
-      "phase": "tender",
-      "score": 94,
-      "opportunity_score": 94,
-      "classification_confidence": 0.55,
-      "confidence": 0.55,
-      "band": "HOT",
-      "evidence": {
-        "project_text": false,
-        "project_cpv": true,
-        "trade_text": [
-          "painting"
-        ],
-        "trade_cpv": [
-          "roadworks",
-          "flooring"
-        ],
-        "construction_cpv": [
-          "45000000",
-          "45200000",
-          "45233228",
-          "45432000",
-          "45000000",
-          "45200000",
-          "45233228",
-          "45432000"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -3521,73 +3536,6 @@
       }
     },
     {
-      "source_id": "TED-674668-2026",
-      "notice_id": "674668-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/674668-2026",
-      "published": "2026-10-01+02:00",
-      "title": "Trockenbauarbeiten, Neubau Feuer- und Rettungswache II",
-      "description": "Trockenbauarbeiten, Neubau Feuer- und Rettungswache II Stadt Solingen ['DEA19', 'DEU', 'DEA19', 'DEU']",
-      "authority": "Stadt Solingen",
-      "city": "Solingen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "fire_station",
-      "trades": [
-        "drywall",
-        "insulation",
-        "windows_doors"
-      ],
-      "cpv": [
-        "45000000",
-        "39515000",
-        "39515200",
-        "44112310",
-        "45216120",
-        "45324000",
-        "45421141",
-        "45421146",
-        "45000000",
-        "39515000",
-        "39515200",
-        "44112310",
-        "45216120",
-        "45324000",
-        "45421141",
-        "45421146"
-      ],
-      "phase": "tender",
-      "score": 94,
-      "opportunity_score": 94,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": true,
-        "trade_text": [
-          "drywall"
-        ],
-        "trade_cpv": [
-          "insulation",
-          "windows_doors"
-        ],
-        "construction_cpv": [
-          "45000000",
-          "45216120",
-          "45324000",
-          "45421141",
-          "45421146",
-          "45000000",
-          "45216120",
-          "45324000",
-          "45421141",
-          "45421146"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
       "source_id": "TED-677070-2026",
       "notice_id": "677070-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/677070-2026",
@@ -3682,12 +3630,12 @@
       }
     },
     {
-      "source_id": "TED-675386-2026",
-      "notice_id": "675386-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/675386-2026",
+      "source_id": "TED-674858-2026",
+      "notice_id": "674858-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/674858-2026",
       "published": "2026-10-01+02:00",
-      "title": "Projekt Neubau Petrus-Canisius-Grundschule Weeze Metallbauarbeiten - PR-Fassaden BT-B „Marktplatz“",
-      "description": "Projekt Neubau Petrus-Canisius-Grundschule Weeze Metallbauarbeiten - PR-Fassaden BT-B „Marktplatz“ Gemeinde Weeze ['DEA1B', 'DEU', 'DEA1B', 'DEU']",
+      "title": "Projekt Neubau Petrus-Canisius-Grundschule Weeze Metallbauarbeiten - PR-Fassaden BT-A Lichthöfe",
+      "description": "Projekt Neubau Petrus-Canisius-Grundschule Weeze Metallbauarbeiten - PR-Fassaden BT-A Lichthöfe Gemeinde Weeze ['DEA1B', 'DEU', 'DEA1B', 'DEU']",
       "authority": "Gemeinde Weeze",
       "city": "Weeze",
       "region": "",
@@ -3784,12 +3732,12 @@
       }
     },
     {
-      "source_id": "TED-674858-2026",
-      "notice_id": "674858-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/674858-2026",
+      "source_id": "TED-675386-2026",
+      "notice_id": "675386-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/675386-2026",
       "published": "2026-10-01+02:00",
-      "title": "Projekt Neubau Petrus-Canisius-Grundschule Weeze Metallbauarbeiten - PR-Fassaden BT-A Lichthöfe",
-      "description": "Projekt Neubau Petrus-Canisius-Grundschule Weeze Metallbauarbeiten - PR-Fassaden BT-A Lichthöfe Gemeinde Weeze ['DEA1B', 'DEU', 'DEA1B', 'DEU']",
+      "title": "Projekt Neubau Petrus-Canisius-Grundschule Weeze Metallbauarbeiten - PR-Fassaden BT-B „Marktplatz“",
+      "description": "Projekt Neubau Petrus-Canisius-Grundschule Weeze Metallbauarbeiten - PR-Fassaden BT-B „Marktplatz“ Gemeinde Weeze ['DEA1B', 'DEU', 'DEA1B', 'DEU']",
       "authority": "Gemeinde Weeze",
       "city": "Weeze",
       "region": "",
@@ -3894,6 +3842,80 @@
           "45231300",
           "45223300",
           "45233260"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-673651-2026",
+      "notice_id": "673651-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/673651-2026",
+      "published": "2026-09-30+02:00",
+      "title": "Rohbauarbeiten - Umbau Kläranlage BA 1",
+      "description": "Rohbauarbeiten - Umbau Kläranlage BA 1 Stadtwerke Schramberg Eigenbetrieb Abwasserbehandlung e.K. ['DE135', 'DEU', 'DE135', 'DEU']",
+      "authority": "Stadtwerke Schramberg Eigenbetrieb Abwasserbehandlung e.K.",
+      "city": "Schramberg",
+      "region": "",
+      "country": "DEU",
+      "project_type": "water_wastewater",
+      "trades": [
+        "structural",
+        "demolition",
+        "earthworks"
+      ],
+      "cpv": [
+        "45200000",
+        "45110000",
+        "45232420",
+        "45210000",
+        "45262300",
+        "45262330",
+        "45112000",
+        "45252000",
+        "45200000",
+        "45110000",
+        "45232420",
+        "45210000",
+        "45262300",
+        "45262330",
+        "45112000",
+        "45252000"
+      ],
+      "phase": "tender",
+      "score": 94,
+      "opportunity_score": 94,
+      "classification_confidence": 0.85,
+      "confidence": 0.85,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "structural"
+        ],
+        "trade_cpv": [
+          "demolition",
+          "structural",
+          "earthworks"
+        ],
+        "construction_cpv": [
+          "45200000",
+          "45110000",
+          "45232420",
+          "45210000",
+          "45262300",
+          "45262330",
+          "45112000",
+          "45252000",
+          "45200000",
+          "45110000",
+          "45232420",
+          "45210000",
+          "45262300",
+          "45262330",
+          "45112000",
+          "45252000"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."

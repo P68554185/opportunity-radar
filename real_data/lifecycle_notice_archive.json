@@ -1,1 +1,131 @@
-{}
+{
+  "TED-664474-2026": {
+    "first_tracked_seen_at": "2026-10-06T09:44:58.252160+00:00",
+    "quality_policy_version": "2026-10-05-evidence-v1",
+    "notice": {
+      "source_id": "TED-664474-2026",
+      "notice_id": "664474-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/664474-2026",
+      "published": "2026-09-28+02:00",
+      "title": "Neubau Kreiskrankenhaus Alsfeld, Metallbauarbeiten 1 (Aluminium Glasfassadenelemente), KKA",
+      "description": "Neubau Kreiskrankenhaus Alsfeld, Metallbauarbeiten 1 (Aluminium Glasfassadenelemente), KKA Kreiskrankenhaus des Vogelsbergkreises in Alsfeld GmbH ['DE725', 'DEU', 'DE725', 'DEU']",
+      "authority": "Kreiskrankenhaus des Vogelsbergkreises in Alsfeld GmbH",
+      "city": "Alsfeld",
+      "region": "",
+      "country": "DEU",
+      "project_type": "hospital",
+      "trades": [
+        "facade",
+        "structural",
+        "windows_doors",
+        "painting"
+      ],
+      "cpv": [
+        "45262670",
+        "45421100",
+        "45421143",
+        "45441000",
+        "45262670",
+        "45421100",
+        "45421143",
+        "45441000"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "facade"
+        ],
+        "trade_cpv": [
+          "structural",
+          "windows_doors",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45262670",
+          "45421100",
+          "45421143",
+          "45441000",
+          "45262670",
+          "45421100",
+          "45421143",
+          "45441000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      },
+      "quality_status": "CONFIDENT",
+      "quality_evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.75,
+        "policy_version": "2026-10-05-evidence-v1"
+      }
+    }
+  },
+  "TED-682709-2026": {
+    "first_tracked_seen_at": "2026-10-06T09:44:58.252160+00:00",
+    "quality_policy_version": "2026-10-05-evidence-v1",
+    "notice": {
+      "source_id": "TED-682709-2026",
+      "notice_id": "682709-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/682709-2026",
+      "published": "2026-10-05+02:00",
+      "title": "Neubau Kreiskrankenhaus Alsfeld, Gerüstarbeiten, KKA",
+      "description": "Neubau Kreiskrankenhaus Alsfeld, Gerüstarbeiten, KKA Kreiskrankenhaus des Vogelsbergkreises in Alsfeld GmbH ['DE725', 'DEU', 'DE725', 'DEU']",
+      "authority": "Kreiskrankenhaus des Vogelsbergkreises in Alsfeld GmbH",
+      "city": "Alsfeld",
+      "region": "",
+      "country": "DEU",
+      "project_type": "hospital",
+      "trades": [
+        "structural"
+      ],
+      "cpv": [
+        "45262100",
+        "45262100"
+      ],
+      "phase": "tender",
+      "score": 82,
+      "opportunity_score": 82,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "UPCOMING",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [],
+        "trade_cpv": [
+          "structural"
+        ],
+        "construction_cpv": [
+          "45262100",
+          "45262100"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      },
+      "quality_status": "CONFIDENT",
+      "quality_evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.75,
+        "policy_version": "2026-10-05-evidence-v1"
+      }
+    }
+  }
+}

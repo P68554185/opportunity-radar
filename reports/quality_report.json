@@ -1,24 +1,24 @@
 {
   "live_records": 2000,
-  "classified_opportunities": 1926,
+  "classified_opportunities": 1927,
   "classification_rate_pct": 96.3,
   "bands": {
-    "UPCOMING": 1157,
-    "HOT": 322,
-    "EARLY": 447
+    "UPCOMING": 1153,
+    "HOT": 319,
+    "EARLY": 455
   },
   "project_types": [
     [
       "unclassified_project",
-      675
+      683
     ],
     [
       "school",
-      306
+      303
     ],
     [
       "rail",
-      171
+      167
     ],
     [
       "water_wastewater",
@@ -26,27 +26,27 @@
     ],
     [
       "industrial",
-      64
+      66
     ],
     [
       "university_research",
-      62
+      63
     ],
     [
       "civil_engineering",
       61
     ],
     [
-      "hospital",
-      60
+      "bridge",
+      61
     ],
     [
-      "bridge",
-      59
+      "hospital",
+      58
     ],
     [
       "road",
-      56
+      57
     ],
     [
       "kindergarten",
@@ -54,15 +54,15 @@
     ],
     [
       "fire_station",
-      45
-    ],
-    [
-      "administration",
-      43
+      44
     ],
     [
       "sports_leisure",
-      42
+      41
+    ],
+    [
+      "administration",
+      40
     ],
     [
       "energy",
@@ -70,10 +70,10 @@
     ],
     [
       "public_space",
-      27
+      25
     ],
     [
-      "public_building",
+      "residential",
       24
     ],
     [
@@ -81,50 +81,50 @@
       24
     ],
     [
-      "residential",
+      "public_building",
       23
     ],
     [
       "care_social",
-      18
+      20
     ],
     [
       "commercial",
-      7
+      8
     ]
   ],
   "trades": [
     [
       "structural",
-      333
+      335
     ],
     [
       "electrical",
-      291
+      297
     ],
     [
       "windows_doors",
-      267
+      272
     ],
     [
       "hvac",
-      195
+      190
     ],
     [
       "railworks",
-      174
+      175
     ],
     [
       "earthworks",
-      170
+      169
     ],
     [
       "flooring",
-      144
+      142
     ],
     [
       "demolition",
-      123
+      122
     ],
     [
       "painting",
@@ -136,7 +136,7 @@
     ],
     [
       "insulation",
-      92
+      90
     ],
     [
       "roadworks",
@@ -144,15 +144,15 @@
     ],
     [
       "plumbing",
-      80
-    ],
-    [
-      "landscaping",
-      68
+      78
     ],
     [
       "facade",
       68
+    ],
+    [
+      "landscaping",
+      65
     ],
     [
       "drywall",
@@ -179,12 +179,12 @@
       17
     ],
     [
-      "sewer_pipe",
+      "fencing",
       13
     ],
     [
-      "fencing",
-      13
+      "sewer_pipe",
+      12
     ],
     [
       "building_services",
@@ -195,12 +195,12 @@
     {
       "from": 50,
       "to": 59,
-      "count": 41
+      "count": 43
     },
     {
       "from": 60,
       "to": 69,
-      "count": 439
+      "count": 446
     },
     {
       "from": 70,
@@ -210,12 +210,12 @@
     {
       "from": 80,
       "to": 89,
-      "count": 856
+      "count": 850
     },
     {
       "from": 90,
       "to": 99,
-      "count": 68
+      "count": 66
     },
     {
       "from": 100,
@@ -224,10 +224,10 @@
     }
   ],
   "quality_flags": {
-    "project_type_only": 232,
-    "trade_only": 675,
-    "project_and_trade": 1019,
-    "opportunity_score_85_plus": 322
+    "project_type_only": 234,
+    "trade_only": 683,
+    "project_and_trade": 1010,
+    "opportunity_score_85_plus": 319
   },
   "sample_top": [
     {
@@ -284,21 +284,21 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/685765-2026"
     },
     {
-      "source_id": "TED-683855-2026",
-      "title": "Freianlagen Sem I und Infra",
-      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
-      "city": "Gießen",
-      "project_type": "public_space",
+      "source_id": "TED-684848-2026",
+      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
+      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
+      "city": "Erlangen",
+      "project_type": "school",
       "trades": [
-        "landscaping",
-        "earthworks",
-        "demolition",
-        "roadworks"
+        "flooring",
+        "windows_doors",
+        "electrical",
+        "earthworks"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026"
     },
     {
       "source_id": "TED-683210-2026",
@@ -318,23 +318,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/683210-2026"
     },
     {
-      "source_id": "TED-684848-2026",
-      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
-      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
-      "city": "Erlangen",
-      "project_type": "school",
-      "trades": [
-        "flooring",
-        "windows_doors",
-        "electrical",
-        "earthworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026"
-    },
-    {
       "source_id": "TED-684925-2026",
       "title": "BASF-KVT, Modul 50, Y109 - Büro- und Sozialgebäude in Modulbauweise",
       "authority": "BASF SE",
@@ -350,6 +333,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/684925-2026"
+    },
+    {
+      "source_id": "TED-683855-2026",
+      "title": "Freianlagen Sem I und Infra",
+      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+      "city": "Gießen",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "demolition",
+        "roadworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026"
     },
     {
       "source_id": "TED-681697-2026",

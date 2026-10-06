@@ -1,0 +1,109 @@
+{
+  "observed_at": "2026-10-06T09:44:03.244218+00:00",
+  "sources": [
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
+      "status": "verified",
+      "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
+      "content_sha256": "5980ae5578ee0887bc3e11588897db3dcf89354ac3b3164ab31557f0f725da86",
+      "records": 13
+    },
+    {
+      "source_url": "https://hibb.hamburg.de/2026/08/18/planungsdaten-fuer-das-neue-schuljahr-2026-27/",
+      "status": "verified",
+      "verified_from": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bsfb/weiterhin-erhebliche-investitionen-im-schulbau-1210668",
+      "content_sha256": "cf8523b553556df83316ecc2f3abb1a3e1bffa1db1b0bb4d2bd99d3157bf4446",
+      "records": 6
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26254/",
+      "status": "verified",
+      "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26254/",
+      "content_sha256": "e8e2e8ca3267060e3de235b94fc8287348f094cc84733afae8ffbfcb5286de1b",
+      "records": 27
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26282/",
+      "status": "verified",
+      "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26282/",
+      "content_sha256": "a88a20d5108aeddb5aba7ca98a65222c4b23a2e2fb4b869b7d4ef28e75d6e13f",
+      "records": 2
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26283/",
+      "status": "verified",
+      "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26283/",
+      "content_sha256": "a553402848ac988e7ee4cc71fa57e853364b2c57e5e32fa98b703676c0a702c5",
+      "records": 1
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26298/",
+      "status": "verified",
+      "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26298/",
+      "content_sha256": "9d6c681d69fbb7160079bec082445b98b79c912635ce513074763958b46a2d28",
+      "records": 2
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26297/",
+      "status": "verified",
+      "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26297/",
+      "content_sha256": "a8f1f94ae7faae520c1063b6448b0183a0fdd994c8051e413e0bdc0c6c62f104",
+      "records": 3
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26314/",
+      "status": "verified",
+      "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26314/",
+      "content_sha256": "190b8f919fcaaf465baee78ea8a235d9aa99dcc5703985845fca04fbff7d55ad",
+      "records": 2
+    }
+  ],
+  "review_queue": [
+    {
+      "source_url": "https://www.stmfh.bayern.de/aktuelles/pressemitteilungen/",
+      "reason": "index_observation",
+      "links_seen": 629,
+      "construction_headlines": 29,
+      "sample_construction_links": [
+        "/kommunaler_finanzausgleich/krankenhausfoerderung/",
+        "/kommunaler_finanzausgleich/hochbauten/",
+        "/kommunaler_finanzausgleich/krankenhausfoerderung/"
+      ]
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26344/",
+      "reason": "unsupported_or_unqualified_document_layout"
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26332/",
+      "reason": "unsupported_or_unqualified_document_layout"
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26305/",
+      "reason": "unsupported_or_unqualified_document_layout"
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26304/",
+      "reason": "unsupported_or_unqualified_document_layout"
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26300/",
+      "reason": "unsupported_or_unqualified_document_layout"
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26299/",
+      "reason": "unsupported_or_unqualified_document_layout"
+    },
+    {
+      "source_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bsfb/veroeffentlichungen/pressemeldungen",
+      "reason": "index_observation",
+      "links_seen": 531,
+      "construction_headlines": 15,
+      "sample_construction_links": [
+        "/politik-und-verwaltung/behoerden/bsfb",
+        "/politik-und-verwaltung/behoerden/bsfb/schulen",
+        "/politik-und-verwaltung/behoerden/bsfb/familie"
+      ]
+    }
+  ]
+}
