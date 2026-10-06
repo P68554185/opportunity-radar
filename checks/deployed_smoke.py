@@ -43,7 +43,7 @@ with sync_playwright() as p:
     page.screenshot(path=str(OUTPUT/"mobile.png"),full_page=True)
     page.locator('[data-view="early"]').click()
     expect(page.locator(".project-card").first).to_be_visible()
-    assert all("In Ausschreibung" not in c.inner_text() and "Bereits vergeben" not in c.inner_text() for c in page.locator(".project-card").all())
+    assert all("Ausschreibung veröffentlicht" not in c.inner_text() and "Bereits vergeben" not in c.inner_text() for c in page.locator(".project-card").all())
     page.locator('[data-view="all"]').click()
     page.locator('[name="trade"][value="electrical"]').uncheck(force=True)
     page.get_by_role("button",name="Passende Projekte anzeigen").click()
