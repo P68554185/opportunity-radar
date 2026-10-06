@@ -1,28 +1,28 @@
 {
   "live_records": 2000,
-  "classified_opportunities": 1927,
-  "classification_rate_pct": 96.3,
+  "classified_opportunities": 1928,
+  "classification_rate_pct": 96.4,
   "bands": {
-    "UPCOMING": 1153,
-    "HOT": 319,
-    "EARLY": 455
+    "UPCOMING": 1157,
+    "HOT": 318,
+    "EARLY": 453
   },
   "project_types": [
     [
       "unclassified_project",
-      683
+      681
     ],
     [
       "school",
-      303
+      306
     ],
     [
       "rail",
-      167
+      173
     ],
     [
       "water_wastewater",
-      84
+      79
     ],
     [
       "industrial",
@@ -30,46 +30,46 @@
     ],
     [
       "university_research",
-      63
-    ],
-    [
-      "civil_engineering",
-      61
+      64
     ],
     [
       "bridge",
       61
     ],
     [
+      "civil_engineering",
+      59
+    ],
+    [
       "hospital",
-      58
+      59
     ],
     [
       "road",
       57
     ],
     [
-      "kindergarten",
-      48
+      "fire_station",
+      45
     ],
     [
-      "fire_station",
-      44
+      "kindergarten",
+      45
     ],
     [
       "sports_leisure",
-      41
+      42
     ],
     [
       "administration",
-      40
-    ],
-    [
-      "energy",
-      27
+      41
     ],
     [
       "public_space",
+      28
+    ],
+    [
+      "energy",
       25
     ],
     [
@@ -82,7 +82,7 @@
     ],
     [
       "public_building",
-      23
+      21
     ],
     [
       "care_social",
@@ -96,15 +96,15 @@
   "trades": [
     [
       "structural",
-      335
+      332
     ],
     [
       "electrical",
-      297
+      294
     ],
     [
       "windows_doors",
-      272
+      267
     ],
     [
       "hvac",
@@ -112,7 +112,7 @@
     ],
     [
       "railworks",
-      175
+      179
     ],
     [
       "earthworks",
@@ -120,55 +120,55 @@
     ],
     [
       "flooring",
-      142
+      150
     ],
     [
       "demolition",
-      122
+      121
     ],
     [
       "painting",
-      113
+      114
     ],
     [
       "roof",
-      112
+      111
     ],
     [
       "insulation",
-      90
+      87
     ],
     [
       "roadworks",
-      80
+      81
     ],
     [
       "plumbing",
-      78
+      81
+    ],
+    [
+      "landscaping",
+      68
     ],
     [
       "facade",
       68
     ],
     [
-      "landscaping",
-      65
-    ],
-    [
       "drywall",
-      45
+      42
     ],
     [
       "plastering",
-      43
+      41
     ],
     [
       "fire_protection",
-      40
+      41
     ],
     [
       "elevator",
-      26
+      27
     ],
     [
       "finishing",
@@ -176,15 +176,15 @@
     ],
     [
       "solar_energy",
-      17
+      15
     ],
     [
       "fencing",
-      13
+      14
     ],
     [
       "sewer_pipe",
-      12
+      10
     ],
     [
       "building_services",
@@ -195,39 +195,39 @@
     {
       "from": 50,
       "to": 59,
-      "count": 43
+      "count": 44
     },
     {
       "from": 60,
       "to": 69,
-      "count": 446
+      "count": 443
     },
     {
       "from": 70,
       "to": 79,
-      "count": 496
+      "count": 495
     },
     {
       "from": 80,
       "to": 89,
-      "count": 850
+      "count": 853
     },
     {
       "from": 90,
       "to": 99,
-      "count": 66
+      "count": 68
     },
     {
       "from": 100,
       "to": 100,
-      "count": 26
+      "count": 25
     }
   ],
   "quality_flags": {
     "project_type_only": 234,
-    "trade_only": 683,
-    "project_and_trade": 1010,
-    "opportunity_score_85_plus": 319
+    "trade_only": 681,
+    "project_and_trade": 1013,
+    "opportunity_score_85_plus": 318
   },
   "sample_top": [
     {
@@ -284,21 +284,21 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/685765-2026"
     },
     {
-      "source_id": "TED-684848-2026",
-      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
-      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
-      "city": "Erlangen",
-      "project_type": "school",
+      "source_id": "TED-683855-2026",
+      "title": "Freianlagen Sem I und Infra",
+      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+      "city": "Gießen",
+      "project_type": "public_space",
       "trades": [
-        "flooring",
-        "windows_doors",
-        "electrical",
-        "earthworks"
+        "landscaping",
+        "earthworks",
+        "demolition",
+        "roadworks"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026"
     },
     {
       "source_id": "TED-683210-2026",
@@ -318,6 +318,23 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/683210-2026"
     },
     {
+      "source_id": "TED-684848-2026",
+      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
+      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
+      "city": "Erlangen",
+      "project_type": "school",
+      "trades": [
+        "flooring",
+        "windows_doors",
+        "electrical",
+        "earthworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026"
+    },
+    {
       "source_id": "TED-684925-2026",
       "title": "BASF-KVT, Modul 50, Y109 - Büro- und Sozialgebäude in Modulbauweise",
       "authority": "BASF SE",
@@ -333,23 +350,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/684925-2026"
-    },
-    {
-      "source_id": "TED-683855-2026",
-      "title": "Freianlagen Sem I und Infra",
-      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
-      "city": "Gießen",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "demolition",
-        "roadworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026"
     },
     {
       "source_id": "TED-681697-2026",
@@ -386,23 +386,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/681250-2026"
     },
     {
-      "source_id": "TED-680734-2026",
-      "title": "Umbau Bf Müllheim Bauleistungen",
-      "authority": "DB Netz AG (Bukr 16)",
-      "city": "Müllheim",
-      "project_type": "rail",
-      "trades": [
-        "railworks",
-        "demolition",
-        "earthworks",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/680734-2026"
-    },
-    {
       "source_id": "TED-679848-2026",
       "title": "Gymnasium Füssen - Estricharbeiten BA 1-2",
       "authority": "Landkreis Ostallgäu",
@@ -435,6 +418,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/680492-2026"
+    },
+    {
+      "source_id": "TED-680881-2026",
+      "title": "Gymnasium Füssen - Trockenbauarbeiten BA 1-2",
+      "authority": "Landkreis Ostallgäu",
+      "city": "Füssen",
+      "project_type": "school",
+      "trades": [
+        "drywall",
+        "insulation",
+        "windows_doors",
+        "fire_protection"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/680881-2026"
     }
   ]
 }

@@ -3,8 +3,8 @@
   "active_early_signals": 56,
   "active_master_projects": 56,
   "historical_signals": 3,
-  "qualified_procurement_records": 645,
-  "archived_confirmed_notices": 2,
+  "qualified_procurement_records": 647,
+  "archived_confirmed_notices": 3,
   "links": [
     {
       "version": "2026-10-06-identity-v1",
@@ -82,6 +82,31 @@
     },
     {
       "version": "2026-10-06-identity-v1",
+      "status": "confirmed",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "alsfeld",
+          "kreiskrankenhaus"
+        ],
+        "same_authority": true
+      },
+      "blockers": [],
+      "source_ids": [
+        "HIST-KKA-20230727",
+        "TED-660397-2026"
+      ],
+      "publication_interval_days": 1156,
+      "interval_endpoint": "tender",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "master_project_id": "PRJ-A36FC997D2",
+      "retrospective": true
+    },
+    {
+      "version": "2026-10-06-identity-v1",
       "status": "probable",
       "evidence": {
         "same_city": true,
@@ -119,6 +144,13 @@
           "title": "Neubau Kreiskrankenhaus Alsfeld"
         },
         {
+          "source_id": "TED-660397-2026",
+          "source_url": "https://ted.europa.eu/en/notice/-/detail/660397-2026",
+          "published": "2026-09-25+02:00",
+          "phase": "tender",
+          "title": "Neubau Kreiskrankenhaus Alsfeld, Metallbauarbeiten 1 (Aluminium Glasfassadenelemente), KKA"
+        },
+        {
           "source_id": "TED-664474-2026",
           "source_url": "https://ted.europa.eu/en/notice/-/detail/664474-2026",
           "published": "2026-09-28+02:00",
@@ -135,7 +167,8 @@
       ]
     }
   ],
-  "confirmed_notice_links": 2,
+  "confirmed_notice_links": 3,
+  "confirmed_current_notice_links": 3,
   "confirmed_project_cases": 1,
   "candidate_notice_links": 2,
   "live_observed_lead_days": [],
