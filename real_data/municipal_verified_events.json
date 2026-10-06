@@ -1,0 +1,62 @@
+[
+  {
+    "source_id": "DRESDEN-PLAN-3065",
+    "source_type": "municipal_planning",
+    "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1061092",
+    "published": "2026-01-28",
+    "title": "Wohnbebauung Am Lehmberg / Wirtschaftsweg",
+    "body": "Öffentlich bekanntgemachtes kommunales Planverfahren. Keine Bauzusage; konkrete Bauherren, Lose und Termine sind in den Planunterlagen zu klären.",
+    "authority": "Landeshauptstadt Dresden · Amt für Stadtplanung und Mobilität",
+    "city": "Dresden",
+    "region": "Sachsen",
+    "country": "DE",
+    "project_type": "residential",
+    "phase": "land_use_planning",
+    "project_reference": "DRESDEN-PLAN-3065"
+  },
+  {
+    "source_id": "DRESDEN-PLAN-3082",
+    "source_type": "municipal_planning",
+    "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1063128",
+    "published": "2026-03-26",
+    "title": "Quartier Ostra-Allee",
+    "body": "Öffentlich bekanntgemachtes kommunales Planverfahren. Keine Bauzusage; konkrete Bauherren, Lose und Termine sind in den Planunterlagen zu klären.",
+    "authority": "Landeshauptstadt Dresden · Amt für Stadtplanung und Mobilität",
+    "city": "Dresden",
+    "region": "Sachsen",
+    "country": "DE",
+    "project_type": "urban_development",
+    "phase": "land_use_planning",
+    "project_reference": "DRESDEN-PLAN-3082"
+  },
+  {
+    "source_id": "DRESDEN-PLAN-3068",
+    "source_type": "municipal_planning",
+    "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1063071",
+    "published": "2026-03-27",
+    "title": "Gewerbe- und Industriestandort Königsbrücker Straße Nord",
+    "body": "Öffentlich bekanntgemachtes kommunales Planverfahren. Keine Bauzusage; konkrete Bauherren, Lose und Termine sind in den Planunterlagen zu klären.",
+    "authority": "Landeshauptstadt Dresden · Amt für Stadtplanung und Mobilität",
+    "city": "Dresden",
+    "region": "Sachsen",
+    "country": "DE",
+    "project_type": "industrial_area",
+    "phase": "land_use_planning",
+    "project_reference": "DRESDEN-PLAN-3068"
+  },
+  {
+    "source_id": "DRESDEN-PLAN-6066",
+    "source_type": "municipal_planning",
+    "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1064317",
+    "published": "2026-05-04",
+    "title": "Wohnquartier Kötzschenbroder / Pieschener Straße",
+    "body": "Öffentlich bekanntgemachtes kommunales Planverfahren. Keine Bauzusage; konkrete Bauherren, Lose und Termine sind in den Planunterlagen zu klären.",
+    "authority": "Landeshauptstadt Dresden · Amt für Stadtplanung und Mobilität",
+    "city": "Dresden",
+    "region": "Sachsen",
+    "country": "DE",
+    "project_type": "residential",
+    "phase": "land_use_planning",
+    "project_reference": "DRESDEN-PLAN-6066"
+  }
+]

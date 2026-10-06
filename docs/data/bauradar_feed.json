@@ -1,6 +1,6 @@
 {
   "policy_version": "2026-10-05-evidence-v1",
-  "count": 701,
+  "count": 705,
   "opportunities": [
     {
       "source_id": "TED-685765-2026",
@@ -40651,6 +40651,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-88fbc2688e44fdd3",
@@ -40696,6 +40699,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-41270c2eb8f56177",
@@ -40741,6 +40747,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-cb4d3a8ea2486e3f",
@@ -40782,6 +40791,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-8117778d566da608",
@@ -40827,6 +40839,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-d30c6c3a35aeeb53",
@@ -40868,6 +40883,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-8544bec4890b2820",
@@ -40913,6 +40931,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-bc0d59524c2f576b",
@@ -40954,6 +40975,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-fbee05204bc84b4a",
@@ -40999,6 +41023,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-44f38495d695dd60",
@@ -41044,6 +41071,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-6dee7f3731fd66ae",
@@ -41085,6 +41115,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-91f9aeb1518750f5",
@@ -41130,6 +41163,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-d22dad4d76aaac86",
@@ -41171,6 +41207,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-386233141cd944e8",
@@ -41216,6 +41255,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-b55c2d8cd44ef66b",
@@ -41257,6 +41299,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-5fa166a69fb68bdb",
@@ -41298,6 +41343,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-913b56d088335c25",
@@ -41343,6 +41391,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-cd8f2442d9d9ce18",
@@ -41388,6 +41439,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-2144153d16050501",
@@ -41433,6 +41487,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-d975a78ccaaa1ac4",
@@ -41478,6 +41535,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-2f60aafe8b340f87",
@@ -41519,6 +41579,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-74925c4a21c28f35",
@@ -41564,6 +41627,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-920ed47940bcec08",
@@ -41609,6 +41675,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-e626b5f37d916cd2",
@@ -41654,6 +41723,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-3d84c3e33e27f3eb",
@@ -41695,6 +41767,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-b796a265f25e6caf",
@@ -41740,6 +41815,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-b1918a4b64e86785",
@@ -41785,6 +41863,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-790bf82563beecfc",
@@ -41826,6 +41907,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-6c516c397adf97c5",
@@ -41867,6 +41951,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-d7456acc51cd0c1e",
@@ -41908,6 +41995,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-9ebe383bde04b745",
@@ -41953,6 +42043,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-cef02419b28648c1",
@@ -41994,6 +42087,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-3d4af5ad51926ab0",
@@ -42035,6 +42131,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-71cde74c224df4a6",
@@ -42076,6 +42175,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-98b5819b18cf76f0",
@@ -42117,6 +42219,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-1882fbe2bb4f25ad",
@@ -42162,6 +42267,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-7acae79b104ef355",
@@ -42203,6 +42311,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "REAL-BY-5f978fb00c3bbeb1",
@@ -42247,6 +42358,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-BY-KHP-20260721-01",
@@ -42291,6 +42405,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-BY-KHP-20260721-02",
@@ -42336,6 +42453,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-BY-KHP-20260721-03",
@@ -42380,6 +42500,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-BY-KHP-20260721-04",
@@ -42424,6 +42547,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-BY-KHP-20260721-05",
@@ -42468,6 +42594,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-BY-KHP-20260721-06",
@@ -42512,6 +42641,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-BY-KHP-20260721-07",
@@ -42556,6 +42688,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-BY-KHP-20260721-08",
@@ -42601,6 +42736,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-BY-KHP-20260721-09",
@@ -42645,6 +42783,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-BY-KHP-20260721-10",
@@ -42689,6 +42830,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-BY-KHP-20260721-11",
@@ -42733,6 +42877,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-BY-KHP-20260721-12",
@@ -42777,6 +42924,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-BY-KHP-20260721-13",
@@ -42822,6 +42972,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-HH-SCHULBAU-20260818-01",
@@ -42867,6 +43020,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-HH-SCHULBAU-20260818-02",
@@ -42912,6 +43068,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-HH-SCHULBAU-20260818-03",
@@ -42957,6 +43116,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-HH-SCHULBAU-20260818-04",
@@ -43002,6 +43164,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-HH-SCHULBAU-20260818-05",
@@ -43047,6 +43212,9 @@
       "quality_status": "VERIFIED_EARLY",
       "opportunity_score": null,
       "expected_tender_period": null,
+      "location": null,
+      "authority_role": "buyer",
+      "date_basis": "publication",
       "project_history": [
         {
           "source_id": "EARLY-HH-SCHULBAU-20260818-06",
@@ -43057,6 +43225,188 @@
         }
       ],
       "next_action": "Ansprechpartner in der Originalquelle ermitteln und nach dem geplanten Vergabezeitpunkt fragen."
+    },
+    {
+      "id": "PRJ-2DAAC7F935",
+      "source_id": "DRESDEN-PLAN-3065",
+      "title": "Wohnbebauung Am Lehmberg / Wirtschaftsweg",
+      "city": "Dresden",
+      "region": "Sachsen",
+      "country": "DE",
+      "authority": "Landeshauptstadt Dresden · Amt für Stadtplanung und Mobilität",
+      "published": "2026-01-28",
+      "phase": "land_use_planning",
+      "project_type": "residential",
+      "trades": [
+        "earthworks",
+        "structural",
+        "roof",
+        "electrical",
+        "hvac",
+        "plumbing",
+        "landscaping"
+      ],
+      "trade_basis": "project_type_expected",
+      "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1061092",
+      "quality_status": "VERIFIED_EARLY",
+      "opportunity_score": null,
+      "expected_tender_period": null,
+      "location": {
+        "lat": 51.063489890842,
+        "lon": 13.66508330965395,
+        "extent_km": 0.419,
+        "basis": "plan_area",
+        "source_url": "https://kommisdd.dresden.de/net3/public/ogc.ashx?NodeId=489&Service=WFS&Request=GetFeature&Version=2.0.0&TypeNames=cls%3AL354&Count=1000&SrsName=urn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326",
+        "attribution": "Landeshauptstadt Dresden / Quelle: Geodaten Sachsen",
+        "license": "https://www.govdata.de/dl-de/by-2-0"
+      },
+      "authority_role": "planning_authority",
+      "date_basis": "official_notice_date",
+      "project_history": [
+        {
+          "source_id": "DRESDEN-PLAN-3065",
+          "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1061092",
+          "published": "2026-01-28",
+          "phase": "land_use_planning",
+          "title": "Wohnbebauung Am Lehmberg / Wirtschaftsweg"
+        }
+      ],
+      "next_action": "Vorhabenträger und Bauabsicht in den Planunterlagen prüfen. Danach bei der Verfahrensstelle nach Ansprechpartner und Zeitplan fragen. Ein Planverfahren ist noch keine Bauzusage."
+    },
+    {
+      "id": "PRJ-1A72655A79",
+      "source_id": "DRESDEN-PLAN-3082",
+      "title": "Quartier Ostra-Allee",
+      "city": "Dresden",
+      "region": "Sachsen",
+      "country": "DE",
+      "authority": "Landeshauptstadt Dresden · Amt für Stadtplanung und Mobilität",
+      "published": "2026-03-26",
+      "phase": "land_use_planning",
+      "project_type": "urban_development",
+      "trades": [
+        "earthworks",
+        "roadworks",
+        "sewer_pipe",
+        "landscaping"
+      ],
+      "trade_basis": "project_type_expected",
+      "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1063128",
+      "quality_status": "VERIFIED_EARLY",
+      "opportunity_score": null,
+      "expected_tender_period": null,
+      "location": {
+        "lat": 51.05754654202415,
+        "lon": 13.729223527381851,
+        "extent_km": 0.313,
+        "basis": "plan_area",
+        "source_url": "https://kommisdd.dresden.de/net3/public/ogc.ashx?NodeId=489&Service=WFS&Request=GetFeature&Version=2.0.0&TypeNames=cls%3AL354&Count=1000&SrsName=urn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326",
+        "attribution": "Landeshauptstadt Dresden / Quelle: Geodaten Sachsen",
+        "license": "https://www.govdata.de/dl-de/by-2-0"
+      },
+      "authority_role": "planning_authority",
+      "date_basis": "official_notice_date",
+      "project_history": [
+        {
+          "source_id": "DRESDEN-PLAN-3082",
+          "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1063128",
+          "published": "2026-03-26",
+          "phase": "land_use_planning",
+          "title": "Quartier Ostra-Allee"
+        }
+      ],
+      "next_action": "Vorhabenträger und Bauabsicht in den Planunterlagen prüfen. Danach bei der Verfahrensstelle nach Ansprechpartner und Zeitplan fragen. Ein Planverfahren ist noch keine Bauzusage."
+    },
+    {
+      "id": "PRJ-141ED3A840",
+      "source_id": "DRESDEN-PLAN-3068",
+      "title": "Gewerbe- und Industriestandort Königsbrücker Straße Nord",
+      "city": "Dresden",
+      "region": "Sachsen",
+      "country": "DE",
+      "authority": "Landeshauptstadt Dresden · Amt für Stadtplanung und Mobilität",
+      "published": "2026-03-27",
+      "phase": "land_use_planning",
+      "project_type": "industrial_area",
+      "trades": [
+        "earthworks",
+        "roadworks",
+        "sewer_pipe",
+        "landscaping"
+      ],
+      "trade_basis": "project_type_expected",
+      "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1063071",
+      "quality_status": "VERIFIED_EARLY",
+      "opportunity_score": null,
+      "expected_tender_period": null,
+      "location": {
+        "lat": 51.104484436711445,
+        "lon": 13.7752329513083,
+        "extent_km": 0.906,
+        "basis": "plan_area",
+        "source_url": "https://kommisdd.dresden.de/net3/public/ogc.ashx?NodeId=489&Service=WFS&Request=GetFeature&Version=2.0.0&TypeNames=cls%3AL354&Count=1000&SrsName=urn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326",
+        "attribution": "Landeshauptstadt Dresden / Quelle: Geodaten Sachsen",
+        "license": "https://www.govdata.de/dl-de/by-2-0"
+      },
+      "authority_role": "planning_authority",
+      "date_basis": "official_notice_date",
+      "project_history": [
+        {
+          "source_id": "DRESDEN-PLAN-3068",
+          "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1063071",
+          "published": "2026-03-27",
+          "phase": "land_use_planning",
+          "title": "Gewerbe- und Industriestandort Königsbrücker Straße Nord"
+        }
+      ],
+      "next_action": "Vorhabenträger und Bauabsicht in den Planunterlagen prüfen. Danach bei der Verfahrensstelle nach Ansprechpartner und Zeitplan fragen. Ein Planverfahren ist noch keine Bauzusage."
+    },
+    {
+      "id": "PRJ-A5AF090F1E",
+      "source_id": "DRESDEN-PLAN-6066",
+      "title": "Wohnquartier Kötzschenbroder / Pieschener Straße",
+      "city": "Dresden",
+      "region": "Sachsen",
+      "country": "DE",
+      "authority": "Landeshauptstadt Dresden · Amt für Stadtplanung und Mobilität",
+      "published": "2026-05-04",
+      "phase": "land_use_planning",
+      "project_type": "residential",
+      "trades": [
+        "earthworks",
+        "structural",
+        "roof",
+        "electrical",
+        "hvac",
+        "plumbing",
+        "landscaping"
+      ],
+      "trade_basis": "project_type_expected",
+      "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1064317",
+      "quality_status": "VERIFIED_EARLY",
+      "opportunity_score": null,
+      "expected_tender_period": null,
+      "location": {
+        "lat": 51.0805626445165,
+        "lon": 13.6981761785121,
+        "extent_km": 0.127,
+        "basis": "plan_area",
+        "source_url": "https://kommisdd.dresden.de/net3/public/ogc.ashx?NodeId=759&Service=WFS&Request=GetFeature&Version=2.0.0&TypeNames=cls%3AL575&Count=1000&SrsName=urn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326",
+        "attribution": "Landeshauptstadt Dresden / Quelle: Geodaten Sachsen",
+        "license": "https://www.govdata.de/dl-de/by-2-0"
+      },
+      "authority_role": "planning_authority",
+      "date_basis": "official_notice_date",
+      "project_history": [
+        {
+          "source_id": "DRESDEN-PLAN-6066",
+          "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1064317",
+          "published": "2026-05-04",
+          "phase": "land_use_planning",
+          "title": "Wohnquartier Kötzschenbroder / Pieschener Straße"
+        }
+      ],
+      "next_action": "Vorhabenträger und Bauabsicht in den Planunterlagen prüfen. Danach bei der Verfahrensstelle nach Ansprechpartner und Zeitplan fragen. Ein Planverfahren ist noch keine Bauzusage."
     },
     {
       "source_id": "TED-682709-2026",
