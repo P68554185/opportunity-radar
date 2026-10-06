@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 BASE="https://kommisdd.dresden.de/net3/public/ogc.ashx"
 results={}
-for kind,node in [("plans",489),("development_plans",404),("addresses",184)]:
+for kind,node in [("plans",489),("development_plans",759),("addresses",184)]:
     url=BASE+"?"+urlencode({"NodeId":node,"Service":"WFS","Request":"GetCapabilities"})
     try:
         with urlopen(Request(url,headers={"User-Agent":"BauRadar/1.0"}),timeout=30) as r:raw=r.read(4_000_001)
@@ -20,7 +20,7 @@ for kind,node in [("plans",489),("development_plans",404),("addresses",184)]:
         results[kind]=result;print(json.dumps({kind:result},ensure_ascii=False))
         name=types[0]["name"]
         query={"NodeId":node,"Service":"WFS","Request":"GetFeature","Version":"2.0.0","TypeNames":name,"Count":100000 if kind=="addresses" else 1000,"SrsName":"urn:ogc:def:crs:EPSG::4326"}
-        with urlopen(Request(BASE+"?"+urlencode(query),headers={"User-Agent":"BauRadar/1.0"}),timeout=45) as response:raw=response.read(64_000_001)
+        with urlopen(Request(BASE+"?"+urlencode(query),headers={"User-Agent":"BauRadar/1.0"}),timeout=90) as response:raw=response.read(160_000_001)
         doc=ET.fromstring(raw)
         features=[]
         for member in doc:
