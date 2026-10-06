@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def active_events():
     events=[]
-    for name in ("bavaria_verified_events.json","early_verified_events.json"):
+    for name in ("bavaria_verified_events.json","early_verified_events.json","municipal_verified_events.json"):
         path=ROOT/"real_data"/name
         if path.exists():
             events.extend(json.loads(path.read_text(encoding="utf-8")))

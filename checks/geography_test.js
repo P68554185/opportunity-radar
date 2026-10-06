@@ -1,0 +1,13 @@
+"use strict";
+const assert=require("node:assert/strict"),g=require("../docs/geography.js");
+const origin={lat:51.055,lon:13.73,radius_km:5};
+assert(Math.abs(g.distance({lat:0,lon:0},{lat:0,lon:1})-111.195)<0.01);
+assert.equal(g.distance(origin,{lat:NaN,lon:13}),null);
+assert.equal(g.inRadius(origin,null),false);
+assert.equal(g.inRadius(origin,{city:"Dresden"}),false);
+assert.equal(g.inRadius(origin,{lat:51.055,lon:13.73,extent_km:0.1,basis:"buyer_address"}),false);
+assert.equal(g.inRadius(origin,{lat:51.055,lon:13.73,extent_km:0.1,basis:"plan_area"}),true);
+assert.equal(g.inRadius({...origin,radius_km:0.05},{lat:51.055,lon:13.73,extent_km:0.1,basis:"plan_area"}),false);
+assert.equal(g.inRadius(origin,{lat:52.05,lon:13.73,extent_km:0.1,basis:"plan_area"}),false);
+assert.equal(g.inRadius({...origin,radius_km:Infinity},{lat:51.055,lon:13.73,extent_km:0.1,basis:"plan_area"}),false);
+console.log("Radius regression: real distance, invalid coordinates, unknown/buyer locations and boundary areas verified.");

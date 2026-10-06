@@ -6,6 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from engine import ingest, ONTOLOGY, event_key, SourceEvent
 from early.corpus import active_events
+from geography.dresden import locations
 from lifecycle.matching import history
 from intelligence.evidence import POLICY_VERSION
 
@@ -45,6 +46,7 @@ def build():
     extra_registry=ROOT/"real_data"/"early_source_registry.json"
     if extra_registry.exists(): registry+=json.loads(extra_registry.read_text())
     official={r["source_url"] for r in registry if r.get("status")=="official_verified"}
+    project_locations=locations(early)
     projects=ingest(early)
     records=[]
     historical_path=ROOT/"reports"/"lifecycle_report.json"
@@ -70,8 +72,11 @@ def build():
             "trades":list(ONTOLOGY.get(p.project_type,{})), "trade_basis":"project_type_expected",
             "source_url":r["source_url"],"quality_status":"VERIFIED_EARLY",
             "opportunity_score":None,"expected_tender_period":None,
+            "location":project_locations.get(r["source_id"]),
+            "authority_role":"planning_authority" if r.get("source_type")=="municipal_planning" else "buyer",
+            "date_basis":"official_notice_date" if r.get("source_type")=="municipal_planning" else "publication",
             "project_history":history(evidence),
-            "next_action":"Ansprechpartner in der Originalquelle ermitteln und nach dem geplanten Vergabezeitpunkt fragen."})
+            "next_action":("Vorhabenträger und Bauabsicht in den Planunterlagen prüfen. Danach bei der Verfahrensstelle nach Ansprechpartner und Zeitplan fragen. Ein Planverfahren ist noch keine Bauzusage." if r.get("source_type")=="municipal_planning" else "Ansprechpartner in der Originalquelle ermitteln und nach dem geplanten Vergabezeitpunkt fragen.")})
     records=collapse_confirmed(records,historical.get("timelines",[]))
     out={"policy_version":POLICY_VERSION,"count":len(records),"opportunities":records,
         "notes":{"expected_trades":"Bei frühen Projekten aus der Projektart abgeleitet, noch keine bestätigten Lose.",
@@ -80,7 +85,8 @@ def build():
     report={"early_signals":len(early),"master_projects":len(projects),
             "verified_early_projects":sum(r["quality_status"]=="VERIFIED_EARLY" for r in records),
             "customer_ted_records":sum(r["quality_status"]=="CONFIDENT" for r in records),
-            "customer_ted_notices":len(tender["opportunities"]),"customer_records":len(records)}
+            "customer_ted_notices":len(tender["opportunities"]),"customer_records":len(records),"located_projects":sum(bool(r.get("location")) for r in records),
+            "dresden_early_projects":sum(r.get("city")=="Dresden" and r["quality_status"]=="VERIFIED_EARLY" for r in records)}
     (ROOT/"reports"/"customer_feed_summary.json").write_text(json.dumps(report,indent=2),encoding="utf-8")
     print(json.dumps(report))
     return out

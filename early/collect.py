@@ -90,8 +90,8 @@ class Collector:
             raw=response.read(self.limits["maximum_bytes"]+1)
             if len(raw)>self.limits["maximum_bytes"]: raise ValueError("Source size limit")
             return raw.decode(response.headers.get_content_charset() or "utf-8",errors="replace")
-    def read(self,url):
-        if time.monotonic()-self.started>120: raise TimeoutError("EARLY collection run budget exhausted")
+    def fetch(self,url):
+        if time.monotonic()-self.started>self.limits.get("run_budget_seconds",120): raise TimeoutError("EARLY collection run budget exhausted")
         host=urlparse(url).hostname
         if not safe_url(url,host): raise ValueError("Unsafe source URL")
         if host not in self.robots:
@@ -108,8 +108,11 @@ class Collector:
         if delay>10: raise ValueError("Source crawl delay requires a dedicated schedule")
         time.sleep(max(0,delay-(time.monotonic()-self.last.get(host,0))))
         raw=self.raw(url); self.last[host]=time.monotonic()
+        return raw,hashlib.sha256(raw.encode()).hexdigest()
+    def read(self,url):
+        raw,digest=self.fetch(url)
         parsed=Text(url); parsed.feed(raw)
-        return parsed,hashlib.sha256(raw.encode()).hexdigest()
+        return parsed,digest
 
 def validation_text(value):
     # Articles may differ in curated summaries; keep names, nouns, verbs and numbers.

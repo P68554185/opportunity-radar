@@ -1,8 +1,8 @@
 "use strict";
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const TRADE_NAMES={insulation:"Dämmung",fencing:"Zäune & Geländer",electrical:"Elektro",hvac:"Heizung, Lüftung & Klima",plumbing:"Sanitär",drywall:"Trockenbau",painting:"Malerarbeiten",flooring:"Boden & Fliesen",roof:"Dach",windows_doors:"Fenster & Türen",facade:"Fassade",earthworks:"Erdarbeiten & Tiefbau",structural:"Rohbau",landscaping:"Garten- & Landschaftsbau",fire_protection:"Brandschutz",elevator:"Aufzüge",demolition:"Abbruch",roadworks:"Straßenbau",sewer_pipe:"Kanalbau",railworks:"Gleisbau",solar_energy:"Photovoltaik",scaffolding:"Gerüstbau",metalwork:"Metallbau",steelwork:"Stahlbau",screed:"Estrich",building_automation:"Gebäudeautomation",industrial_doors:"Industrietore",medical_technology:"Medizintechnik",elevators:"Aufzüge",building_services:"Gebäudetechnik",plastering:"Putzarbeiten",finishing:"Ausbau"};
-const PHASES={procurement:"Vergaben veröffentlicht",project_announced:"Bauvorhaben angekündigt",idea:"Projektidee",political_decision:"Beschluss gefasst",funding:"Förderung beschlossen",prior_information:"Ausschreibung angekündigt",object_planning:"In Planung",specialist_planning:"Fachplanung",execution_planning:"Ausführungsplanung",tender:"In Ausschreibung",award:"Bereits vergeben"};
-const EARLY=new Set(["project_announced","idea","political_decision","funding","prior_information","object_planning","specialist_planning","execution_planning"]);
+const PHASES={land_use_planning:"Bauleitplanung",procurement:"Vergaben veröffentlicht",project_announced:"Bauvorhaben angekündigt",idea:"Projektidee",political_decision:"Beschluss gefasst",funding:"Förderung beschlossen",prior_information:"Ausschreibung angekündigt",object_planning:"In Planung",specialist_planning:"Fachplanung",execution_planning:"Ausführungsplanung",tender:"In Ausschreibung",award:"Bereits vergeben"};
+const EARLY=new Set(["land_use_planning","project_announced","idea","political_decision","funding","prior_information","object_planning","specialist_planning","execution_planning"]);
 const norm=s=>String(s||"").toLocaleLowerCase("de").trim().replace(/\s+/g," ");
 const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};
 const storedProfile=read("bauradar.profile.v1",{});
@@ -19,17 +19,49 @@ async function api(path,method="GET",body){
 }
 const $=id=>document.getElementById(id);
 function persist(key,value){try{localStorage.setItem(key,JSON.stringify(value));return true}catch{$("profileMessage").textContent="Speichern auf diesem Gerät ist nicht verfügbar. Ihre Auswahl gilt für diese Sitzung.";return false}}
-function sourceLink(url){try{const u=new URL(url);return u.protocol==="https:"&&["ted.europa.eu","www.stmfh.bayern.de","www.kkh-alsfeld.de","hibb.hamburg.de"].includes(u.hostname)?u.href:""}catch{return ""}}
+function sourceLink(url){try{const u=new URL(url);return u.protocol==="https:"&&["ted.europa.eu","www.stmfh.bayern.de","www.kkh-alsfeld.de","hibb.hamburg.de","buergerbeteiligung.sachsen.de"].includes(u.hostname)?u.href:""}catch{return ""}}
 function dateLabel(date){const d=new Date(date);return Number.isNaN(d.valueOf())?"Datum unbekannt":new Intl.DateTimeFormat("de-DE").format(d)}
 $("companyName").value=typeof profile.name==="string"?profile.name:"";
 $("companyCity").value=typeof profile.city==="string"?profile.city:"";
-$("locationMode").value=profile.locationMode==="city"?"city":"all";
+$("locationMode").value=["city","radius"].includes(profile.locationMode)?profile.locationMode:"all";
 $("tradeChoices").innerHTML=Object.entries(TRADE_NAMES).filter(([t])=>!["elevators","medical_technology","steelwork","screed","industrial_doors","building_automation","building_services","plastering","finishing"].includes(t)).map(([t,n])=>`<label><input type="checkbox" name="trade" value="${esc(t)}" ${profile.trades.includes(t)?"checked":""}><span>${esc(n)}</span></label>`).join("");
+
+let addressRows=[],addressLoad=null;
+$("companyRadius").value=Number.isFinite(profile.radius_km)?profile.radius_km:50;
+$("companyAddress").value=profile.location_label||"";
+async function loadAddresses(){
+ if(addressLoad)return addressLoad;
+ addressLoad=(async()=>{
+  try{const r=await fetch("data/pilot_locations.json");if(!r.ok)throw Error("addresses");const d=await r.json();if(!Array.isArray(d.addresses))throw Error("schema");addressRows=d.addresses;
+   $("locationHint").textContent="Dresden: Straße und Hausnummer eingeben und einen Vorschlag wählen. Die Adresssuche bleibt auf diesem Gerät.";suggestAddresses();
+  }catch{$("locationHint").textContent="Die Dresdner Adressen konnten nicht geladen werden. Bitte vorerst „Nur dieser Ort“ wählen.";addressLoad=null}
+ })();return addressLoad;
+}
+function suggestAddresses(){
+ const query=norm($("companyAddress").value);
+ $("addressSuggestions").innerHTML=query.length>=3?addressRows.filter(r=>norm(r[1]).includes(query)).slice(0,10).map(r=>`<option value="${esc(r[1])}"></option>`).join(""):"";
+}
+function radiusControls(){
+ $("radiusControls").hidden=$("locationMode").value!=="radius";
+ if(!$("radiusControls").hidden)loadAddresses();
+}
+$("locationMode").addEventListener("change",radiusControls);
+$("companyAddress").addEventListener("input",suggestAddresses);
+radiusControls();
+
 $("profileForm").addEventListener("submit",async event=>{
  event.preventDefault();
  const city=$("companyCity").value.trim(),locationMode=$("locationMode").value;
  if(locationMode==="city"&&!city){$("profileMessage").textContent="Bitte geben Sie einen Ort ein oder wählen Sie deutschlandweit.";return}
- const next={...profile,name:$("companyName").value.trim(),city,locationMode,trades:[...document.querySelectorAll('[name="trade"]:checked')].map(e=>e.value)};
+ let origin={lat:null,lon:null,location_id:"",location_label:""};
+ if(locationMode==="radius"){
+  await loadAddresses();
+  const match=addressRows.find(r=>r[1]===$("companyAddress").value.trim());
+  const radius=Number($("companyRadius").value);
+  if(!match||!Number.isFinite(radius)||radius<1||radius>500){$("profileMessage").textContent="Bitte eine Dresdner Adresse aus den Vorschlägen und einen Umkreis von 1 bis 500 km wählen.";return}
+  origin={lat:match[2],lon:match[3],location_id:"DRESDEN-"+match[0],location_label:match[1],radius_km:radius};
+ }
+ const next={...profile,...origin,name:$("companyName").value.trim(),city:locationMode==="radius"?"Dresden":city,locationMode,trades:[...document.querySelectorAll('[name="trade"]:checked')].map(e=>e.value)};
  if(account){try{profile=await api("profile","PUT",next);$("profileMessage").textContent="Betriebsprofil gespeichert."}catch(error){$("profileMessage").textContent=error.message;return}}
  else{profile=next;const ok=persist("bauradar.profile.v1",profile);if(ok)$("profileMessage").textContent="Profil auf diesem Gerät gespeichert."}
  limit=20;render();
@@ -69,10 +101,11 @@ function projectHistory(record){
 function card(record){
  const early=EARLY.has(record.phase),url=sourceLink(record.source_url),watch=hasWatch(record);
  const trades=selectedTrades(record).slice(0,6);
+ const distance=profile.locationMode==="radius"?BauRadarGeo.bounds(profile,record.location):null;
  const priority=record.phase==="award"?"Zur Marktbeobachtung":early?"Frühzeitig Kontakt aufnehmen":record.phase==="tender"?"Unterlagen jetzt prüfen":"Projektphase klären";
  return `<article class="project-card"><div class="card-top"><span class="phase ${early?"early":record.phase==="tender"?"tender":""}">${esc(PHASES[record.phase]||"Phase noch offen")}</span><span class="priority">${esc(priority)}</span></div>
- <h3>${esc(record.title)}</h3><p class="location">${esc(record.city||"Projektort noch offen")}${record.region?" · "+esc(record.region):""}</p>
- <dl class="facts"><div><dt>Auftraggeber</dt><dd>${esc(record.authority||"Noch nicht bekannt")}</dd></div><div><dt>Ausschreibung</dt><dd>${record.phase==="tender"?"Bereits veröffentlicht · Frist in der Quelle prüfen":record.phase==="award"?"Auftrag bereits vergeben":record.phase==="procurement"?"Einzelne Vergabemeldungen und Fristen prüfen":"Zeitraum noch unbekannt"}</dd></div><div><dt>Veröffentlicht</dt><dd>${esc(dateLabel(record.published))}</dd></div></dl>
+ <h3>${esc(record.title)}</h3><p class="location">${esc(record.city||"Projektort noch offen")}${record.region?" · "+esc(record.region):""}${distance?` · <span class="distance">ca. ${esc(distance.distance.toLocaleString("de-DE",{maximumFractionDigits:1}))} km Luftlinie · ${record.location.basis==="plan_area"?"Plangebiet":"Projektort"}</span>`:""}</p>
+ <dl class="facts"><div><dt>${record.authority_role==="planning_authority"?"Verfahrensstelle":"Auftraggeber"}</dt><dd>${esc(record.authority||"Noch nicht bekannt")}</dd></div><div><dt>Ausschreibung</dt><dd>${record.phase==="tender"?"Bereits veröffentlicht · Frist in der Quelle prüfen":record.phase==="award"?"Auftrag bereits vergeben":record.phase==="procurement"?"Einzelne Vergabemeldungen und Fristen prüfen":"Zeitraum noch unbekannt"}</dd></div><div><dt>${record.date_basis==="official_notice_date"?"Bekanntmachung vom":"Veröffentlicht"}</dt><dd>${esc(dateLabel(record.published))}</dd></div></dl>
  <div class="trade-chips">${trades.map(t=>`<span>${esc(TRADE_NAMES[t]||t)}</span>`).join("")}</div>
  <p class="trade-note">${record.trade_basis==="project_type_expected"?"Mögliche Gewerke aus der Projektart; konkrete Lose noch offen.":"Gewerke aus der Vergabemeldung abgeleitet."}</p>
  <div class="action"><strong>Ihr nächster Schritt</strong>${esc(record.next_action||"Details beim Auftraggeber oder in der Quelle prüfen.")}</div>
@@ -83,10 +116,11 @@ function render(){
  const query=norm($("search").value),phase=$("phaseFilter").value;
  const rows=records.filter(r=>(!profile.trades.length||selectedTrades(r).length)
   &&(profile.locationMode!=="city"||norm(r.city)===norm(profile.city))
+  &&(profile.locationMode!=="radius"||BauRadarGeo.inRadius(profile,r.location))
   &&(view!=="early"||EARLY.has(r.phase))&&(view!=="saved"||hasWatch(r))
   &&(!phase||r.phase===phase)&&(!query||norm([r.title,r.city,r.authority].join(" ")).includes(query)))
   .sort((a,b)=>Number(b.phase!=="award")-Number(a.phase!=="award")||Number(EARLY.has(b.phase))-Number(EARLY.has(a.phase))||String(b.published).localeCompare(String(a.published)));
- $("resultCount").textContent=rows.length+" passende "+(rows.length===1?"Chance":"Chancen")+(profile.locationMode==="city"?" in "+profile.city:" in Deutschland");
+ $("resultCount").textContent=rows.length+" passende "+(rows.length===1?"Chance":"Chancen")+(profile.locationMode==="radius"?" im Umkreis von "+profile.radius_km+" km":profile.locationMode==="city"?" in "+profile.city:" in Deutschland")+(profile.locationMode==="radius"?" · "+records.filter(r=>!BauRadarGeo.bounds(profile,r.location)).length+" weitere Projekte ohne belegten Standort werden hier nicht angezeigt.":"");
  $("savedCount").textContent=new Set([...saved].map(id=>records.find(r=>r.id===id||(r.aliases||[]).includes(id))?.id||id)).size;
  $("feed").innerHTML=rows.length?rows.slice(0,limit).map(card).join(""):`<p class="empty">${view==="saved"?"Noch keine passenden Projekte in Ihrer Merkliste. Wählen Sie bei einem Projekt „Beobachten“.":"Keine passenden Projekte gefunden. Erweitern Sie Ihr Suchgebiet oder wählen Sie weitere Gewerke."}</p>`;
  $("loadMore").hidden=rows.length<=limit;
@@ -102,6 +136,7 @@ async function init(){
 function fillProfile(){
  $("companyName").value=profile.name||"";$("companyCity").value=profile.city||"";
  $("locationMode").value=profile.locationMode||"all";
+ $("companyAddress").value=profile.location_label||"";$("companyRadius").value=profile.radius_km||50;radiusControls();
  document.querySelectorAll('[name="trade"]').forEach(e=>e.checked=(profile.trades||[]).includes(e.value));
 }
 async function loadAccount(){

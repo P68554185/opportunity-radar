@@ -25,7 +25,7 @@ def validate(feed, status):
     for row in rows:
         identity = row.get("id")
         source = urlparse(row.get("source_url", ""))
-        allowed = ("ted.europa.eu",) if row.get("quality_status") == "CONFIDENT" else ("www.stmfh.bayern.de", "hibb.hamburg.de")
+        allowed = ("ted.europa.eu",) if row.get("quality_status") == "CONFIDENT" else ("www.stmfh.bayern.de", "hibb.hamburg.de", "buergerbeteiligung.sachsen.de")
         if (row.get("quality_status") not in ("CONFIDENT", "VERIFIED_EARLY")
                 or not isinstance(identity, str) or not identity or identity in identities
                 or not isinstance(row.get("trades"), list)

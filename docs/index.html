@@ -15,21 +15,23 @@
 <div><h2 id="profileTitle">Was passt zu Ihrem Betrieb?</h2><p id="profileHint">Profil und Merkliste werden auf diesem Gerät gespeichert.</p></div>
 <form id="profileForm">
 <label>Betriebsname<input id="companyName" maxlength="120" autocomplete="organization" placeholder="Ihr Betrieb"></label>
-<label>Ort<input id="companyCity" maxlength="100" autocomplete="address-level2" placeholder="z. B. München"></label>
-<label>Suchgebiet<select id="locationMode"><option value="all">Deutschlandweit</option><option value="city">Nur dieser Ort</option></select></label>
+<label>Ort<input id="companyCity" maxlength="100" autocomplete="address-level2" placeholder="z. B. Dresden"></label>
+<label>Suchgebiet<select id="locationMode"><option value="all">Deutschlandweit</option><option value="city">Nur dieser Ort</option><option value="radius">Umkreis meines Standorts</option></select></label>
+<div id="radiusControls" class="radius-controls" hidden><label>Betriebsadresse in Dresden<input id="companyAddress" maxlength="200" list="addressSuggestions" autocomplete="street-address" placeholder="Straße und Hausnummer"><datalist id="addressSuggestions"></datalist></label><label>Umkreis in km<input id="companyRadius" type="number" min="1" max="500" step="1" value="50"></label><p id="locationHint" role="status">Wählen Sie eine Adresse aus den Vorschlägen. Ihre Suche bleibt auf diesem Gerät.</p></div>
 <fieldset><legend>Ihre Gewerke <span>(mehrere möglich)</span></legend><div id="tradeChoices" class="trade-choices"></div></fieldset>
-<div class="form-footer"><p>Entfernungen und Umkreissuche folgen mit geprüften Standortdaten.</p><button type="submit" class="primary">Passende Projekte anzeigen</button></div>
+<div class="form-footer"><p>Im Umkreis erscheinen nur Projekte mit belegtem Standort. Bei Plangebieten muss das gesamte Gebiet im Umkreis liegen; weitere Projekte finden Sie über „Nur dieser Ort“.</p><button type="submit" class="primary">Passende Projekte anzeigen</button></div>
 </form><p id="profileMessage" class="message" role="status"></p>
 </section>
 <section class="results" aria-labelledby="feedTitle">
 <div class="results-heading"><div><p class="eyebrow">IHRE PROJEKTE</p><h2 id="feedTitle">Neue Chancen entdecken</h2><p id="resultCount" role="status">Projekte werden geladen …</p></div><span id="lastUpdate" class="updated"></span></div>
-<div class="filters"><div role="group" aria-label="Projektliste"><button data-view="all" class="active" aria-pressed="true">Alle Chancen</button><button data-view="early" aria-pressed="false">Frühe Bauvorhaben</button><button data-view="saved" aria-pressed="false">Beobachtet <span id="savedCount">0</span></button></div><label>Projektphase<select id="phaseFilter"><option value="">Alle Phasen</option><option value="funding">Förderung beschlossen</option><option value="tender">In Ausschreibung</option><option value="award">Bereits vergeben</option></select></label><label>Projekt suchen<input id="search" type="search" placeholder="Projekt, Ort oder Auftraggeber"></label></div>
+<div class="filters"><div role="group" aria-label="Projektliste"><button data-view="all" class="active" aria-pressed="true">Alle Chancen</button><button data-view="early" aria-pressed="false">Frühe Bauvorhaben</button><button data-view="saved" aria-pressed="false">Beobachtet <span id="savedCount">0</span></button></div><label>Projektphase<select id="phaseFilter"><option value="">Alle Phasen</option><option value="land_use_planning">Bauleitplanung</option><option value="funding">Förderung beschlossen</option><option value="tender">In Ausschreibung</option><option value="award">Bereits vergeben</option></select></label><label>Projekt suchen<input id="search" type="search" placeholder="Projekt, Ort oder Auftraggeber"></label></div>
 <div id="feed" class="feed" aria-live="polite"><p class="empty">Bauprojekte werden geladen …</p></div>
 <button id="loadMore" class="more" hidden>Weitere Projekte anzeigen</button>
 </section>
-<section class="source-note"><h2>Wissen, worauf Sie sich verlassen können.</h2><p>Jedes Projekt führt zur Originalquelle. Bei frühen Bauvorhaben sind mögliche Gewerke aus der Projektart abgeleitet; konkrete Lose und Termine können noch offen sein. Bereits vergebene Aufträge sind als solche gekennzeichnet.</p></section>
+<section class="source-note"><h2>Wissen, worauf Sie sich verlassen können.</h2><p>Jedes Projekt führt zur Originalquelle. Bei frühen Bauvorhaben sind mögliche Gewerke aus der Projektart abgeleitet; konkrete Lose und Termine können noch offen sein. Bereits vergebene Aufträge sind als solche gekennzeichnet.</p><p>Standortdaten: Landeshauptstadt Dresden / Quelle: Geodaten Sachsen · <a href="https://www.govdata.de/dl-de/by-2-0" target="_blank" rel="noopener noreferrer">Datenlizenz Deutschland – Namensnennung 2.0</a>. Entfernungen sind Luftlinie; Plangebiete sind keine genauen Baustandorte.</p></section>
 </main>
 <footer><span>BauRadar · Offizielle Quellen, klare nächste Schritte.</span><a href="development.html">Entwicklungsstatus</a></footer>
+<script src="geography.js" defer></script>
 <script src="app.js" defer></script>
 </body>
 </html>

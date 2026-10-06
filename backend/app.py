@@ -122,7 +122,9 @@ class Credentials(BaseModel):
 class Profile(BaseModel):
     name: str=Field(default="",max_length=120)
     city: str=Field(default="",max_length=100)
-    locationMode: Literal["all","city"]="all"
+    locationMode: Literal["all","city","radius"]="all"
+    location_label: str=Field(default="",max_length=200)
+    location_id: str=Field(default="",max_length=100)
     trades: list[str]=Field(default_factory=list,max_length=40)
     radius_km: float=Field(default=50,gt=0,le=500)
     lat: float|None=Field(default=None,ge=-90,le=90)
@@ -131,6 +133,7 @@ class Profile(BaseModel):
     def valid_profile(self):
         self.name=self.name.strip();self.city=self.city.strip()
         if self.locationMode=="city" and not self.city: raise ValueError("Ort erforderlich.")
+        if self.locationMode=="radius" and (self.lat is None or self.lon is None):raise ValueError("Standort für Umkreis erforderlich.")
         if set(self.trades)-TRADES: raise ValueError("Unbekanntes Gewerk.")
         if (self.lat is None)!=(self.lon is None): raise ValueError("Vollständige Koordinaten erforderlich.")
         return self
