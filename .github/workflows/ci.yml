@@ -44,6 +44,10 @@ jobs:
         run: python -m unittest discover -s backend/tests -p 'test_*.py'
         env:
           TEST_POSTGRES_URL: postgresql://bauradar_test:ci-only-test-password@localhost:5432/bauradar_test
+      - name: Verify PostgreSQL persistence across actual process restart
+        run: python checks/postgres_restart.py
+        env:
+          TEST_POSTGRES_URL: postgresql://bauradar_test:ci-only-test-password@localhost:5432/bauradar_test
       - name: Test customer workflows in Chromium
         run: python checks/browser_smoke.py
       - name: Verify deployment configuration and container build

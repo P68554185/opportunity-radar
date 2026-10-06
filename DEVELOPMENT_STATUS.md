@@ -1,89 +1,53 @@
 # BauRadar – Entwicklungsstatus
-Stand: 05.10.2026. Verbindlich sind geprüfte Funktionen und Actions-Ergebnisse, nicht Zieltermine.
+Stand: 06.10.2026. Funktionsnachweise haben Vorrang vor Zielterminen.
 
 ## Meilensteine
-| Meilenstein | Stand | Abnahmekriterium |
+| Meilenstein | Stand | Nächster Nachweis / offene Arbeit |
 |---|---|---|
-| Bestandsaufnahme | abgeschlossen | Architektur, Quellen, Pipeline, Workflows und Grenzen dokumentiert |
-| Datenmotor / Evidence | CI erfolgreich | Evidenz unabhängig vom kommerziellen Score; keine leeren CPV als Beleg |
-| Lifecycle / Persistenz | erste vollständige CI erfolgreich | Widersprüche blockiert; mehrdeutige Links bleiben Review; Historie bleibt bei Folgeläufen erhalten |
-| Kundenoberfläche | Chromium-Abnahme erfolgreich | Deutsche Begriffe, Originalquelle, Phase, Gewerk, Auftraggeber, nächste Handlung |
-| Betriebsprofil / Beobachten | lokale MVP-Vorschau | Ort und Gewerke filtern; Merkliste über Browser-Neustart erhalten |
-| Radius / Entfernung | offen | Geprüfte Koordinaten und geographische Abdeckung nötig |
-| Anmeldung / serverseitige Profile | implementiert und getestet; Deployment blockiert | Backend-Host fehlt (vom Nutzer bestätigt) |
-| Benachrichtigungen / E-Mail | offen | Persistenz, Versandaccount, verifizierte Absenderdomain, Opt-in |
-| Tarife / Zahlung | offen | Preisstrategie und Zahlungsaccount; keine kostenpflichtigen Dienste angelegt |
-| Verkaufsfähiger Produktionsbetrieb | nicht erreicht | Zugangsschutz, Backups, Betrieb, Datenschutz/Impressum, Zahlung und End-to-End-Abnahme |
+| Bestandsaufnahme / Architektur | abgeschlossen | ARCHITECTURE.md |
+| Datenmotor / Evidenz | integriert und geprüft | Evidenz und kommerzieller Score getrennt; Dubletten und widersprüchliche Links blockiert |
+| EARLY / Lifecycle | konservative Engine vorhanden | 37 kuratierte Signale / 36 Masterprojekte; laufende breitere Akquisition fehlt |
+| Einfache Kundenoberfläche | veröffentlicht, Chromium geprüft | Quelle, Gewerk, Phase, Auftraggeber, nächste Handlung |
+| Kostenloses Backend | Render + Neon eingerichtet | Live-Check 37429224942 erfolgreich: Datenbank erreichbar, 690 geprüfte Feed-Einträge |
+| Betriebsprofile / Merkliste / Login | implementiert, SQLite/PostgreSQL und Browser geprüft | Registrierung öffentlich deaktiviert; kein live getestetes Kundenkonto |
+| Prozessneustart / Kontotrennung | zusätzliche Tests in Arbeit | Echter Neustart mit PostgreSQL; zwei Konten im Browser |
+| Automatischer Render-Feed | Umsetzung in Arbeit | Geprüfte Pages-Daten per Servercache übernehmen, ohne täglichen Redeploy |
+| Entfernung / Radius | offen | geprüfte Koordinaten und geographische Abdeckung |
+| E-Mail / Benachrichtigungen | offen | Verifizierung, Passwort-Reset, Versand und Opt-in |
+| Tarife / Bezahlung | offen | Nutzerentscheidung über Angebot/Preis und Zahlungsweg |
+| Verkaufsfähiger Betrieb | nicht erreicht | Rechtstexte, Backup/Wiederherstellung, Live-Kontotests und Kundenpilot |
 
-## Verifizierter Ausgangsstand
-Gespeicherte Berichte: 2.000 TED-Records, 1.937 klassifizierte Records, 1.124 CONFIDENT, 813 REVIEW, 63 UNKNOWN.
-Die EARLY-Quelldatei enthält 37 Meldungen. Die Zahl 34 Masterprojekte und die 488 zusätzlichen Opportunities waren im Statusgenerator fest codiert; deshalb sind diese alten Zähler kein unabhängiger Nachweis.
-Ein Lifecycle-Kandidat ist keine bestätigte Projektverbindung.
-Die letzten vorgefundenen Live-Ingestion- und Pages-Läufe waren erfolgreich.
-Vollständige Datensatzprüfung erfolgt durch den neuen CI-Snapshot: aktuelle Zahlen können durch die strengere Beweispolitik sinken.
+## Laufende Systeme
+- Vorschau: https://p68554185.github.io/opportunity-radar/
+- Konto-Pilot: https://bauradar-pilot.onrender.com/
+- Nutzer hat Render/Neon über GitHub eingerichtet; Datenbankverbindung ausschließlich im Host hinterlegt.
+- Live-Prüfung am 06.10.2026: HTTPS-Seite, Backend, Datenbank/Schemaanlage, qualifizierter Feed und anonymer Zugriffsschutz erfolgreich.
+- Registrierung, E-Mail und Zahlung deaktiviert. Die Admin-E-Mail-Allowlist legt kein Konto an.
+- Die GitHub-Anbindung der Anbieter verschafft dem Assistenten keinen Dashboard-/Redeploy-Zugriff.
 
-## Änderungen
-- Eine gemeinsame Evidenzpolitik für Gate und Kundenfeed; Classification-Confidence ist regelbasierte Belegstärke, keine gemessene Accuracy.
-- Keine kommerziellen Scores als Ersatz für fehlende Klassifikationsbelege.
-- CPV-Format, Bau-CPV, Originalquelle und Deutschland-Bezug werden geprüft.
-- Klassifikation nutzt Projekttext und CPV; der Auftraggebername ist kein Nachweis für die Projektart.
-- Ambiguitätsabstand und Titelbeleg schützen Lifecycle-Verknüpfungen.
-- SQLite-Folgeläufe übernehmen vorhandene Projekte und Ereignishistorie.
-- Statuszähler werden aus Quelldaten und generiertem Kundenfeed abgeleitet.
-- Unvollständige oder doppelte TED-Akquisition ersetzt den letzten geprüften Datensatz nicht.
-- Pages baut einen vollständigen geprüften Snapshot; nach erfolgreicher Ingestion wird Pages explizit ausgelöst.
-- Kein erfundener Ausschreibungszeitraum, keine Genauigkeitsprozente in der Kundenansicht.
-
-## Bekannte Grenzen
-- EARLY-Quellen: kuratierte bayerische Fördermeldungen, keine flächendeckende laufende Frühprojekt-Akquisition.
-- TED-CPV-45-Suche deckt Bauvergaben ab; gesonderte Planungsvergaben sind damit nicht vollständig erfasst.
-- Projektzusammenführung ist konservativ; gleiche Gebäude mit verschiedenen Titeln können getrennt bleiben.
-- Lokale Profile/Merklisten sind gerätegebunden und senden keine Benachrichtigungen.
-- Admin-Vorlage liegt außerhalb des Pages-Verzeichnisses; ein produktiv gehosteter Admin-Server fehlt noch.
-- Öffentliche Quelldaten und Audits enthalten keine Zugangsdaten; spätere Kundendaten dürfen dort nicht gespeichert werden.
-- Geprüfter Kundendatensatz bedeutet Evidence-Screening, keine fachlich gemessene Precision.
+## Datenqualität
+Keine gemessene Accuracy wird behauptet. Classification-Confidence ist regelbasierte Belegstärke; die Klassifikationsquote ist keine Accuracy.
+Der Kundenfeed enthält ausschließlich CONFIDENT-TED und offiziell verifizierte EARLY-Projekte.
+Frühe Gewerke sind aus der Projektart abgeleitet; unbekannte Ausschreibungszeiträume bleiben unbekannt.
+37 EARLY-Signale sind kuratiert und überwiegend bayerische Fördermeldungen; noch keine bundesweite laufende Frühprojektabdeckung.
+Live-Datenzahlen ändern sich mit erfolgreichen Pipeline-Läufen. Der Render-Live-Check ermittelte 690 Einträge am 06.10.2026; dies ist kein dauerhaft festgelegter Zähler.
+Konservative Lifecycle-Verknüpfungen sind keine Garantie vollständiger Gebäudezusammenführung.
 
 ## Nächste Schritte
-1. Kostenlose Render-/Neon-Accounts sicher anbinden und das geprüfte Backend als Kundenvalidierungs-Pilot bereitstellen.
-2. Backend-Infrastruktur auswählen und bereitstellen; erst anschließend Login und serverseitige Profile anbinden.
-3. Geodatenquelle und kommerzielle Nutzungsbedingungen klären; Radius mit unbekannten Orten konservativ behandeln.
-4. Laufende EARLY-Akquisition aus weiteren offiziellen Quellen und manuell bewerteten Stichproben ausbauen.
-5. E-Mail, Tarife/Zahlung und rechtliche Texte mit erforderlichen Nutzerentscheidungen anschließen.
+1. Automatische Feed-Übernahme und zusätzliche PostgreSQL-/Browser-Kontotests integrieren und CI abnehmen.
+2. Neue Backend-Version auf Render veröffentlichen und Live-Feed prüfen; manueller Nutzer-Redeploy erforderlich, solange kein sicherer Anbieterzugriff besteht.
+3. Geschlossenen Kontotest vorbereiten; keine öffentliche Registrierung vor Infrastruktur-/Datenschutz-Abnahme.
+4. PostgreSQL-Backup/Wiederherstellung und persistente Konten über echten Render-Redeploy prüfen.
+5. Radius, weitere EARLY-Quellen, E-Mail sowie Angebot/Rechtstexte vervollständigen.
 
-## Ergebnis der vollständigen Quellenprüfung
-2.000 gespeicherte Quellzeilen enthalten 29 doppelte TED-IDs. Nach Bereinigung bleiben 1.971 eindeutige Meldungen, davon 655 CONFIDENT, 1.250 REVIEW und 66 UNKNOWN nach der neuen Belegpolitik. 37 EARLY-Meldungen ergeben konservativ 36 Masterprojekte. Kundenfeed: 691 Einträge (655 TED, 36 frühe Projekte). Ein Lifecycle-Kandidat bleibt Review; null automatisch bestätigte Verbindungen. Dies wurde im erfolgreichen CI-Lauf 37328438780 nachgewiesen.
+## Verbindliche Kostenentscheidung
+Kostenpflichtiges Hosting erst nach erfolgreicher Kundenvalidierung. Keine kostenpflichtigen Hostingbestellungen oder automatischen Upgrades.
+Render Free und Neon Free haben Ruhephasen und Nutzungslimits; kein Produktions-SLA zugesichert.
+Einrichtung und Nachweise: deploy/FREE_PILOT.md.
 
-## Backend-Vorbereitung
-Session-Login, serverseitige Betriebsprofile und Merklisten sowie geschütztes Admin-Routing sind implementiert. Die Oberfläche nutzt sie automatisch, sobald der Backend-Host verfügbar ist. Das ist noch kein produktives Login auf GitHub Pages. Die Container-/Betriebskonfiguration steht in backend/README.md; öffentliche Registrierung ist standardmäßig deaktiviert. End-to-End-Abnahme in Chromium erfolgreich (Desktop, Mobil, Filter, lokale Merkliste, Registrierung/Logout, serverseitiges Profil und Merkliste). E-Mail-Verifikation/Passwort-Reset, E-Mail-Versand, Zahlung und Hosting bleiben offen.
-
-## Validierung und Bereitstellungsvorschlag
-CI-Läufe 37331459564 und 37331452274 bestanden für Commit 480c674a1490a373f6586309b8a4fcd445d41087. 17 Kern-/Evidenz-/Akquisitions-/Phasentests, bestehender Pipeline-Smoke-Test, 8 Classifier-Fälle, 6 Account-Tests und Chromium-End-to-End-Abläufe wurden erfolgreich ausgeführt. Die neue Container-/TLS-Vorlage und ein konsistentes privates SQLite-Backup werden zusätzlich geprüft. Hostingentscheidung und reale Server-/Domain-Zugangsdaten fehlen. Keine öffentliche Kontoregistrierung wird ohne diese Abnahme freigeschaltet.
-
-## Abschließende technische Abnahme
-CI 37332039989 / 37332032772 für Commit 02dd1036e978bbf426bac490d211fe2215069c38: Kern, vollständiger Feed, 7 Backend-/Backup-Tests, Chromium-Abläufe, Docker-Compose-Konfiguration und Container-Build erfolgreich. Konsistentes Datenbankbackup konnte aus einer privaten Datei wieder gelesen werden. Produktions-Smoke-Workflow prüft nach Pages-Veröffentlichung die echte URL sowie Filter, lokale Persistenz und mobile Darstellung. Der produktive Backend-Host bleibt ein externer Blocker.
-
-## Aktueller Live-Stand nach Integration
-PRs #1 bis #4 sind in main integriert. Aktueller erfolgreicher Live-Lauf: 37336966216; aktuelles erfolgreiches Pages-Deployment: 37337036911.
-Stand 2026-10-05 15:57 UTC: **2000 eindeutige TED-Meldungen**, **648 CONFIDENT / 1282 REVIEW / 70 UNKNOWN**. Die Klassifikationsquote ist weiterhin keine Accuracy.
-**37 EARLY-Meldungen / 36 Masterprojekte**. Aktueller Kundenfeed: **684 Einträge** (648 TED, 36 frühe Projekte).
-Aktuell **0 Lifecycle-Kandidaten / 0 bestätigte Auto-Links**; historische Kandidaten werden nicht als aktuelle Verbindungen fortgeschrieben.
-Der erfolgreiche Browser-Smoke-Lauf **37337093616** prüft die tatsächlich veröffentlichte URL, Gewerke, lokale Merkliste nach Neuladen, frühe Projekte und mobile Darstellung.
-
-Veröffentlicht: https://p68554185.github.io/opportunity-radar/
-**Nächster externer Blocker: kostenlose Render-/Neon-Accounts und sichere Secret-Konfiguration der Datenbankverbindung.** Rechtliche Texte, Geo-/Radiusabdeckung, E-Mail und Zahlung bleiben offen.
-Die laufende Vorschau ist nutzbar; eine verkaufsfähige SaaS-GO-LIVE-Freigabe wird noch nicht behauptet.
-
-## Verbindliche Kostenentscheidung des Nutzers
-Kostenpflichtiges Hosting erst nach erfolgreicher Kundenvalidierung. Bis dahin keine kostenpflichtigen Hostingbestellungen.
-GitHub Pages bleibt die laufende kostenlose Vorschau. Ein kostenloser Konto-Pilot ist für Render Free + Neon Free vorbereitet; eine gekaufte Domain ist dafür nicht nötig.
-Das vorhandene Backend unterstützt PostgreSQL zusätzlich zu SQLite. Auf flüchtigen Render-Hosts verhindert es den Start ohne dauerhafte PostgreSQL-Konfiguration/TLS.
-Konto-, Sitzungs-, Neustart- und Merkliste-Isolationstests bestehen gegen SQLite und PostgreSQL 16 (CI 37334583300). Plattform-Healthchecks wecken die Datenbank nicht dauerhaft.
-Render- und Neon-Nutzungslimits/Ruhephasen bleiben Einschränkungen eines Kundenvalidierungs-Pilots. Kein kostenpflichtiger Tarif und kein neuer externer Account wurde eingerichtet.
-Konkrete Einrichtung, Grenzen und sichere Secret-Konfiguration: deploy/FREE_PILOT.md. Die Accounts fehlen noch; der kostenlose Backend-Pilot ist noch nicht deployt.
-
-## Fachliche Regressionen vor Kundenvalidierung
-Offizielle CPV-Semantik korrigiert: 4532 Dämmung; 4534 Zäune/Geländer; spezifisches 45343 Brandschutz; 45332 Sanitär.
-Hochschule und alleinstehende Sporthalle werden nicht mehr als Schule über Substring-/Sammelregeln klassifiziert; mehrdeutiges Campus ohne expliziten Kontext bleibt ohne Text-Projektklassifikation.
-Vorankündigungen erhalten eine Prüfung geplanter Lose/Vergabezeitpunkte. Bei unbekannter Phase wird zunächst die Phase geklärt; es wird kein Zuschlag oder aktives Tenderverfahren unterstellt.
-Die Änderungen sind durch fachliche Regressionstests sowie vollständige Feed-, SQLite-/PostgreSQL-, Browser- und Containerprüfungen abgesichert (PR-CI 37335901279 / 37336613596).
-Kostenstrategie: kostenloser Pilot bis zur erfolgreichen Kundenvalidierung; keine kostenpflichtigen Hostingdienste bestellt.
+## Bereits integrierte Entwicklung
+PRs #1–#4: Datenmotor, Evidenzpolitik, Dublettenbereinigung, konservative Lifecycle-Regeln, einfache UI, Konto-Backend,
+PostgreSQL/TLS-Unterstützung, korrigierte CPV-Gewerke und phasengerechte nächste Handlung.
+Kern-, Feed-, SQLite-/PostgreSQL-, Browser- und Dockerprüfungen bestanden vor Integration.
+GitHub Actions veröffentlicht Pages nach erfolgreicher Live-Ingestion. Admin liegt außerhalb des öffentlichen Pages-Verzeichnisses.
+Kundendaten und Zugangsdaten dürfen nicht in Git, Artefakte oder öffentliche Logs gelangen.
