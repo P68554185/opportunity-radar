@@ -1,122 +1,102 @@
 # BauRadar – Entwicklungsstatus
-Stand: 06.10.2026. Funktionsnachweise haben Vorrang vor Zielterminen.
 
-## Aktiver Entwicklungsblock: EARLY / Lifecycle
+Stand: 06.10.2026, Datenlauf 09:56 UTC. Qualität und Funktionsnachweise haben Vorrang vor Terminen.
 
-Baseline geprüft am 06.10.2026: 2.000 eindeutige TED-Meldungen, 1.926 klassifizierte Chancen,
-654 qualifizierte TED-Einträge; 37 EARLY-Signale / 36 Masterprojekte, 690 Kundenkarten.
-Kein bestätigter Link im bisherigen laufenden Datenbestand.
-Alle letzten vollständigen CI-, Pages- und Render-Prüfungen erfolgreich.
+## Aktueller Entwicklungsblock: EARLY / Lifecycle
 
-Implementiert auf PR #8: erklärbare Identitätsprüfung, reproduzierbarer historischer Rückblick,
-Quellen-Refresh/Entdeckung, 19 zusätzliche belegte Bauvorhaben, sichere Master-Historie
-und Kundendarstellung bestätigter Verläufe. Die letzte geprüfte Fassung besteht Kern-,
-Feed-, PostgreSQL-, Wiederherstellungs-, Chromium-/Mobil- und Dockerprüfungen.
-Aktuell letzte Ergänzungen zu Gebäude-Ausschlüssen und historischen Negativkontrollen in CI. Die historischen Beispiele wurden erst jetzt
-recherchiert; ihre Zeitabstände sind kein live erzielter BauRadar-Vorsprung.
-Offen: endgültige CI/Integration, Veröffentlichung/Live-Abnahme sowie breitere kommunale
-Abdeckung und eine unabhängig bewertete, repräsentative Validierungsmenge.
-Keine Erhöhung des Gesamtfortschritts allein aufgrund recherchierter Beispiele.
-Details: [EARLY-/Lifecycle-Ledger](docs-internal/EARLY_LIFECYCLE.md).
+PR #8 ist integriert. Offizielle Quellen werden reproduzierbar aktualisiert; neue Fundstellen
+ohne belegtes Datum oder unterstützte Struktur bleiben in der internen Prüfung.
+Projektidentität wird konservativ anhand unabhängiger Belege geprüft. Widersprüche bei Ort,
+Gebäudeteil, Adresse und Projektart unterdrücken Verbindungen.
+Bestätigte Ausschreibungen erscheinen als ein Projekt mit Quellenhistorie und konkreter nächster Handlung.
+PR #9 ergänzt die dauerhaft erhaltene Historie und Merkliste-Verweise bei einem wechselnden TED-Fenster.
+Auch diese Korrektur ist integriert, neu aufgenommen und nach Veröffentlichung im Browser geprüft.
 
-## Meilensteine
-| Meilenstein | Stand | Nächster Nachweis / offene Arbeit |
-|---|---|---|
-| Bestandsaufnahme / Architektur | abgeschlossen | ARCHITECTURE.md |
-| Datenmotor / Evidenz | integriert und geprüft | Evidenz und kommerzieller Score getrennt; Dubletten und widersprüchliche Links blockiert |
-| EARLY / Lifecycle | konservative Engine vorhanden | 37 kuratierte Signale / 36 Masterprojekte; laufende breitere Akquisition fehlt |
-| Einfache Kundenoberfläche | veröffentlicht, Chromium geprüft | Quelle, Gewerk, Phase, Auftraggeber, nächste Handlung |
-| Kostenloses Backend | Render + Neon eingerichtet | Live-Check 37429224942 erfolgreich: Datenbank erreichbar, 690 geprüfte Feed-Einträge |
-| Geschlossener Kontotest | Live-Test auf Render/Neon erfolgreich | 37435166258, Versuch 3: zwei Konten, Profile/Merklisten, Logout/Login, Secure-Cookies; Redeploy-Persistenz erfolgreich (37436725262) |
-| Betriebsprofile / Merkliste / Login | implementiert, SQLite/PostgreSQL und Browser geprüft | Registrierung öffentlich deaktiviert; zwei synthetische Konten live geprüft |
-| Prozessneustart / Kontotrennung | CI erfolgreich | Echter Neustart mit PostgreSQL; zwei Konten im Browser; CI 37431562638 |
-| Automatischer Render-Feed | auf Render veröffentlicht und live geprüft | Geprüfte Pages-Daten per Servercache übernehmen, ohne täglichen Redeploy |
-| PostgreSQL-Sicherung / Restore | Werkzeuge integriert; Wiederherstellung in CI erfolgreich | Produktive Sicherungsplanung und verschlüsselte Ablage offen |
-| Bereinigung des Testzugangs | Betreiber bestätigt; öffentliche Live-Prüfung bestanden | Secret in Render/GitHub entfernt; Konto-Löschung beim Neustart in CI geprüft, nicht separat live ausgelesen |
-| Entfernung / Radius | offen | geprüfte Koordinaten und geographische Abdeckung |
-| E-Mail / Benachrichtigungen | offen | Verifizierung, Passwort-Reset, Versand und Opt-in |
-| Tarife / Bezahlung | offen | Nutzerentscheidung über Angebot/Preis und Zahlungsweg |
-| Verkaufsfähiger Betrieb | nicht erreicht | Rechtstexte, Backup/Wiederherstellung, Live-Kontotests und Kundenpilot |
+## Messbarer Datenstand
 
-## Laufende Systeme
-- Vorschau: https://p68554185.github.io/opportunity-radar/
-- Konto-Pilot: https://bauradar-pilot.onrender.com/
-- Nutzer hat Render/Neon über GitHub eingerichtet; Datenbankverbindung ausschließlich im Host hinterlegt.
-- Live-Prüfung am 06.10.2026: HTTPS-Seite, Backend, Datenbank/Schemaanlage, qualifizierter Feed und anonymer Zugriffsschutz erfolgreich.
-- Registrierung, E-Mail und Zahlung deaktiviert. Die Admin-E-Mail-Allowlist legt kein Konto an.
-- Die GitHub-Anbindung der Anbieter verschafft dem Assistenten keinen Dashboard-/Redeploy-Zugriff.
+| Kennzahl | Geprüfte Baseline | Aktuell |
+|---|---:|---:|
+| Aktuelle TED-Meldungen | 2.000 | 2.000 |
+| Klassifizierte Chancen | 1.926 | 1.928 |
+| Qualifizierte TED-Meldungen | 654 | 647 |
+| Aktive EARLY-Signale | 37 | 56 |
+| Aktive EARLY-Masterprojekte | 36 | 56 |
+| Kundenkarten insgesamt | 690 | 701 |
+| Bestätigte Links zu aktuellen TED-Meldungen | 0 | 3 |
+| Unabhängige bestätigte Projektfälle | 0 | 1 |
 
-## Datenqualität
-Keine gemessene Accuracy wird behauptet. Classification-Confidence ist regelbasierte Belegstärke; die Klassifikationsquote ist keine Accuracy.
-Der Kundenfeed enthält ausschließlich CONFIDENT-TED und offiziell verifizierte EARLY-Projekte.
-Frühe Gewerke sind aus der Projektart abgeleitet; unbekannte Ausschreibungszeiträume bleiben unbekannt.
-37 EARLY-Signale sind kuratiert und überwiegend bayerische Fördermeldungen; noch keine bundesweite laufende Frühprojektabdeckung.
-Live-Datenzahlen ändern sich mit erfolgreichen Pipeline-Läufen. Der Render-Live-Check ermittelte 690 Einträge am 06.10.2026; dies ist kein dauerhaft festgelegter Zähler.
-Konservative Lifecycle-Verknüpfungen sind keine Garantie vollständiger Gebäudezusammenführung.
+19 zusätzliche belegte Frühprojekte: 13 Klinik-/Pflegeschulmaßnahmen und 6 Hamburger Schulbauvorhaben.
+Die Masterzahl berücksichtigt außerdem die Trennung einer zuvor unsicher zusammengeführten Hort-/Krippenmaßnahme.
+647 qualifizierte TED-Meldungen bilden 645 aktuelle Projektkarten; drei belegte Meldungen desselben Projekts sind zusammengefasst.
+Hinzu kommen 56 frühe Projekte. Die TED-Zahlen ändern sich mit dem rollierenden Datenfenster.
+Acht registrierte Quelldokumente wurden erfolgreich aktualisiert. Acht Prüfqueue-Einträge sind interne Beobachtungen,
+keine zusätzlichen Kundenprojekte. Abdeckung bleibt regional und auf unterstützte Quellen begrenzt.
 
-## Nächste Schritte
-1. Laufende EARLY-Akquisition und bewertete Stichproben aus weiteren offiziellen Quellen ausbauen.
-2. Standort-/Radiusabdeckung mit geprüften Koordinaten und geklärten Nutzungsbedingungen vervollständigen.
-3. Geschlossene Kundenaufnahme, E-Mail-Verifizierung/Passwort-Reset und Benachrichtigungen ergänzen.
-4. Produktive Sicherungsplanung und verschlüsselte Ablage einrichten; CI-Backup/Restore bereits bestanden.
-5. Angebot/Preis, Bezahlweg und Rechtstexte mit den erforderlichen Betreiberentscheidungen abschließen.
+## Historische Validierung und Grenzen
 
-## Verbindliche Kostenentscheidung
-Kostenpflichtiges Hosting erst nach erfolgreicher Kundenvalidierung. Keine kostenpflichtigen Hostingbestellungen oder automatischen Upgrades.
-Render Free und Neon Free haben Ruhephasen und Nutzungslimits; kein Produktions-SLA zugesichert.
-Einrichtung und Nachweise: deploy/FREE_PILOT.md.
+Alsfeld: offizielle Projektmeldung vom 27.07.2023, zwei eingefrorene reale TED-Meldungen vom
+25.09.2026 und 28.09.2026. Zeitabstand: 1.156 bzw. 1.159 Tage.
+Dies ist eine jetzt recherchierte Rückschau, kein von BauRadar damals erzielter Vorsprung
+und kein Beleg dafür, dass dies die erste Ausschreibung des Projekts war.
+Der aktuelle Feed enthält drei bestätigte Alsfeld-Vergabemeldungen (25.09., 28.09. und 05.10.2026; 1.156–1.166 Tage Abstand). Bei einem späteren Ausscheiden bleiben qualifizierte Fakten nur in der Historie.
+Zwei weitere Untersuchungsfälle liefern keinen zusätzlichen bestätigten Projektfall:
+Warburg bleibt wegen unterschiedlicher Auftraggeberrollen unsicher; bei TH Köln fehlt ein belastbares Veröffentlichungsdatum.
 
-## Bereits integrierte Entwicklung
-PRs #1–#7: Datenmotor, Evidenzpolitik, Dublettenbereinigung, konservative Lifecycle-Regeln, einfache UI, Konto-Backend,
-PostgreSQL/TLS-Unterstützung, korrigierte CPV-Gewerke und phasengerechte nächste Handlung.
-Kern-, Feed-, SQLite-/PostgreSQL-, Browser- und Dockerprüfungen bestanden vor Integration.
-GitHub Actions veröffentlicht Pages nach erfolgreicher Live-Ingestion. Admin liegt außerhalb des öffentlichen Pages-Verzeichnisses.
-Kundendaten und Zugangsdaten dürfen nicht in Git, Artefakte oder öffentliche Logs gelangen.
+Zwei bekannte positive Paare und acht reale Negativkontrollen werden reproduzierbar geprüft.
+Diese gezielt gewählte kleine Stichprobe erlaubt keine Accuracy, Präzision, Recall oder allgemeine Trefferquote.
+Ein prospektiver, seit tatsächlicher Erfassung gemessener Ausschreibungsvorsprung ist noch nicht nachgewiesen.
+Das Beobachtungsjournal beginnt am tatsächlichen Erfassungstag und wird nicht auf Quelldaten zurückdatiert.
+Classification Rate ist keine Accuracy; kommerzieller Score und Belegstärke bleiben getrennt.
 
-## Abnahme PR #5
-https://github.com/P68554185/opportunity-radar/pull/5 — integriert am 06.10.2026.
-https://github.com/P68554185/opportunity-radar/actions/runs/37431562638 — vollständige Prüfung erfolgreich.
-Neue Tests: Feed-Rückfall/Validierung, tatsächlicher PostgreSQL-Prozessneustart mit deaktivierter Registrierung nach Neustart, erneuter Login und zweites unabhängiges Browserkonto. Docker-Build erfolgreich.
-Render-Redeploy dieser Version erfolgreich; noch kein Kontotest gegen die echte Neon-Datenbank. Keine öffentliche Registrierung freigeschaltet.
+## Meilensteine und Planung
 
-## Render-Abnahme nach manuellem Deployment
-06.10.2026, 09:49 Uhr Europe/Berlin: Live-Check 37432113469 erfolgreich. Dynamische Feed-Route (Cache-Control no-store) ist veröffentlicht; Render-Datenstand entspricht der veröffentlichten Pipeline (2026-10-06 05:25 UTC, 690 Projekte). Backend, Datenbank und anonymer Zugriffsschutz erfolgreich; Registrierung bleibt deaktiviert.
-Nächster externer Schritt: geschlossener Kontotest ohne öffentliche Registrierung, danach echter Render-Redeploy mit Konto-Persistenzprüfung. Wiederherstellung, Rechtstexte und E-Mail bleiben offen.
+Prozentwerte sind begründete Planungsschätzungen, keine Messung von Datenqualität oder Produktionsreife.
 
-## PostgreSQL-Sicherung: technische Abnahme bestanden
-Privates pg_dump-Custom-Archiv außerhalb des Repositorys mit Dateirechten 0600; keine Verbindungspasswörter in Prozessargumenten oder Logs. Restore blockiert Quell- und befüllte Zieldatenbanken. CI prüft Wiederherstellung von Konten, Profilen, Sitzungen und Merklisten in getrennten Wegwerf-Datenbanken.
-Produktive Backup-Zeitplanung, verschlüsselte externe Ablage und ein Restore der echten Neon-Datenbank sind noch nicht eingerichtet.
+| Bereich | Planung | Erreichter Nachweis / Restarbeit |
+|---|---:|---|
+| Grundarchitektur / Datenmodell | 100 % | Bestehende Architektur weiterverwendet, Historie und Quellenjournal ergänzt |
+| Live-Ingestion | 100 % | 2.000 TED, täglicher Lauf; Quellenrefresh mit sicherem Rückfall |
+| Klassifizierung / Datenqualität | 90 % | Evidenzgate und Regressionen; unabhängige Bewertungsmenge fehlt |
+| EARLY-Signale | 65 % | 56 Signale, acht Quellen; weitere Kommunen/Planungsquellen fehlen |
+| Lifecycle-Verknüpfung | 60 % | Erklärbare Engine, echter rückblickender Projektfall; breitere Validierung fehlt |
+| Kundenfeed | 88 % | Geprüfte Karten, belegte Lose zusammengeführt; weitere regionale Relevanzarbeit |
+| Account / Pilotbetrieb | 65 % | Render/Neon, geschlossene Konten und Redeploy-Persistenz geprüft; produktive Backups offen |
+| Handwerker-UX | 70 % | Einfache mobile Karten, Phase, Handlung und aufklappbare Historie; Kundenfeedback fehlt |
 
-PR #6 integriert: https://github.com/P68554185/opportunity-radar/pull/6
-Vollständige CI erfolgreich: https://github.com/P68554185/opportunity-radar/actions/runs/37432784843
-Tatsächlicher Dump/Restore gegen getrennte PostgreSQL-16-Datenbanken; Konten/Profile/Sitzungen/Merklisten identisch, überschreibende und nichtleere Restore-Ziele blockiert. Anschließende Browser- und Dockerprüfungen erfolgreich. Anleitung: deploy/POSTGRES_RECOVERY.md.
-Keine echte Neon-Sicherung angelegt; keine produktive Wiederherstellung vorgenommen. Der nächste Backend-Funktionsschritt bleibt ein geschlossener Kontotest ohne öffentliche Registrierung.
+Gesamt Richtung Pilot: **ca. 80 % Planungsschätzung** (vorher ca. 76 %).
+Kein verkaufsfähiger Produktionsbetrieb zugesichert.
 
-## Geschlossener Kontotest: CI-Ergebnis und Live-Blocker
-PR #7 integriert: https://github.com/P68554185/opportunity-radar/pull/7
-Vollständige CI erfolgreich: https://github.com/P68554185/opportunity-radar/actions/runs/37433704129
-Chromium gegen PostgreSQL bei BAURADAR_ENABLE_SIGNUP=false: zwei vorhandene synthetische Konten, Profil-/Merkliste-Isolation, Logout/Wiederanmeldung, tatsächlicher Prozessneustart mit vorhandenen Sitzungen und automatische Bereinigung nach Entfernen des Test-Secrets bestanden. Testkonten erhalten keine Adminrechte.
-CI verwendet lokales HTTP (Secure-Cookies dort deaktiviert); das ist ausdrücklich kein HTTPS-/Render-/Neon-Kontotest. Der Live-Workflow prüft HTTPS-Cookies separat, sobald der Betreiber denselben zufälligen BAURADAR_CLOSED_TEST_PASSWORD-Wert sicher in Render und GitHub gesetzt und main deployt hat. Eine weitere Live-Prüfung nach manuellem Render-Redeploy erfolgt mit verify_persistence=true, ohne die bestehenden Testprofile zuerst zurückzusetzen.
-Öffentliche Registrierung bleibt deaktiviert; keine Live-Testkonten wurden durch den Assistenten angelegt. Einrichtung/Bereinigung: deploy/CLOSED_ACCOUNT_TEST.md.
+## Abnahmen
 
-## Erster geschlossener Live-Test: Anmeldung blockiert
-06.10.2026: Live-Workflow 37435166258 wurde vom Nutzer gestartet und nach Ergänzung reiner HTTP-Status-Diagnostik erneut ausgeführt. Beide Versuche fehlgeschlagen. Die Anwendung ist erreichbar; geschlossenes Signup wird im Preflight geprüft. Anmeldung des ersten synthetischen Kontos liefert HTTP 401. Es ist noch nicht belegt, ob das Fixture-Konto fehlt (Secret-/Deploy-Konfiguration) oder das in GitHub hinterlegte Testpasswort vom Render-Wert abweicht. Sonderzeichen sind im Passwortpfad erlaubt. Kein Passwort/Response-Body wurde geloggt.
-Live-Kontotrennung, Live-Profile/Merklisten und Live-Redeploy-Persistenz sind daher noch nicht abgenommen. Nächster Schritt: Betreiber gleicht Render-/GitHub-Testsecret privat ab und prüft das Deployment der Fixture-Version; danach kann der Assistent den fehlgeschlagenen Job erneut starten.
+- [PR #8](https://github.com/P68554185/opportunity-radar/pull/8): integriert.
+- [Vollständige PR-CI](https://github.com/P68554185/opportunity-radar/actions/runs/37444529459): erfolgreich; 57 Kern- und 26 Backendtests, Quellen, Datenneubau, PostgreSQL-Neustart/Restore, Kontotrennung, Chromium/Mobil, Docker.
+- [Main-CI nach PR #9](https://github.com/P68554185/opportunity-radar/actions/runs/37446261023): erfolgreich.
+- [Live-Ingestion](https://github.com/P68554185/opportunity-radar/actions/runs/37446261113): erfolgreich.
+- [Pages nach neuem Datenlauf](https://github.com/P68554185/opportunity-radar/actions/runs/37446410618): veröffentlicht.
+- [Veröffentlichter Browser-/Mobiltest](https://github.com/P68554185/opportunity-radar/actions/runs/37446453409): erfolgreich.
+- [Render-Live-Prüfung, jüngster Versuch am 06.10.2026 09:51 UTC](https://github.com/P68554185/opportunity-radar/actions/runs/37438407621): Backend/Datenbank ok, 700 Karten, Datenstand identisch zu Pages, anonymer Kontozugriff blockiert.
+- [Historien-Randfall PR #9](https://github.com/P68554185/opportunity-radar/pull/9): integriert; [CI](https://github.com/P68554185/opportunity-radar/actions/runs/37445900465) erfolgreich mit 59 Kern- und 26 Backendtests, Merkliste-/Mobilregression sowie vollständigen PostgreSQL-/Browser-/Dockerprüfungen.
+- Render wurde vom Betreiber deployt und live mit 700 Karten / Datenlauf 09:44 UTC abgenommen. Der spätere Pages-Datenlauf 09:56 UTC enthält 701 Karten und wird vom Servercache im regulären Abstand von bis zu 15 Minuten übernommen; diese letzte Cache-Aktualisierung wurde noch nicht separat live abgenommen.
 
-## Geschlossener Live-Kontotest erfolgreich
-06.10.2026, 10:25 Uhr Europe/Berlin: https://github.com/P68554185/opportunity-radar/actions/runs/37435166258/attempts/3 erfolgreich.
-Zwei synthetische Konten auf echtem Render-/Neon-Pilot in Chromium geprüft: Registrierung geschlossen, Anmeldung, isolierte Profile/Merklisten, Neuladen, Logout und erneute Anmeldung, Admin-Verweigerung, HTTPS-Cookies mit Secure/HttpOnly/SameSite=Strict. Keine Test-Zugangsdaten veröffentlicht.
-Die vorherigen HTTP-401-Fehler sind nach Hinterlegung der fehlenden Render-Testvariable behoben.
-Noch offen: bestehende Daten nach einem weiteren echten Render-Redeploy im verify_persistence-Modus prüfen. Vor diesem zweiten Test die Test-Secrets beibehalten; erst nach Abschluss entfernen und Cleanup deployen. Keine Aussage über Live-Sitzungserhalt über Redeploy, E-Mail oder Bezahlung.
+## Blocker und nächste Schritte
 
-## Live-Persistenztest erfolgreich
-06.10.2026, 10:32 Uhr Europe/Berlin: https://github.com/P68554185/opportunity-radar/actions/runs/37436725262 erfolgreich; VERIFY_PERSISTENCE=true im ausgeführten Job bestätigt.
-Bestehende synthetische Profile und Merklisten wurden vor Änderungen geprüft: Konto A behielt sein Profil und genau ein beobachtetes Projekt, Konto B behielt sein getrenntes Profil ohne Merkliste. Anmeldung, Logout/Wiederanmeldung, Admin-Verweigerung und Secure-Cookies ebenfalls erfolgreich.
-Dies belegt Profil-/Merkliste-Erhalt nach dem vom Nutzer ausgeführten Render-Redeploy auf der echten Neon-Datenbank. Erhalt bereits offener Live-Sitzungen über Redeploy wurde nicht separat geprüft.
-Nächster Schritt: BAURADAR_CLOSED_TEST_PASSWORD in Render entfernen und deployen, wodurch die beiden reservierten Testkonten samt Daten entfernt werden; GitHub-Testsecret ebenfalls entfernen. Öffentliche Registrierung bleibt false. Cleanup-Live-Nachweis steht noch aus.
+1. EARLY-Abdeckung für eine konkrete Pilotregion um kommunale Planung/Projektbeschlüsse erweitern;
+   unabhängige reale Fallmenge für Lifecycle-Prüfung aufbauen.
+2. Geprüfte Projektkoordinaten und Standort-/Radiusrelevanz vervollständigen, anschließend Nutzen mit echten Betrieben testen.
+3. Produktive Backup-Zeitplanung und verschlüsselte Ablage einrichten; technische Wiederherstellung in CI bereits geprüft.
+4. Öffentliches Signup, E-Mail, Passwort-Reset und Bezahlung folgen auf Betreiberwunsch erst nach funktionierender Produktvalidierung.
+   Rechtstexte und Angebot/Preis benötigen Betreiberentscheidungen.
 
-## Testbereinigung und Abschluss
-Der Betreiber bestätigt am 06.10.2026 die Entfernung von BAURADAR_CLOSED_TEST_PASSWORD in Render mit anschließendem Deployment sowie die Löschung des gleichnamigen GitHub-Secrets.
-Öffentliche Live-Prüfung nach Bereinigung erfolgreich: https://github.com/P68554185/opportunity-radar/actions/runs/37438407621 — Anwendung, Datenbank, dynamischer geprüfter Feed, geschlossene Registrierung und anonymer Zugriffsschutz funktionsfähig.
-Die Startup-Bereinigung der beiden reservierten Konten wurde in CI nachgewiesen (37433704129). Die tatsächlichen Kontodatensätze auf Neon wurden nach der Betreiberbereinigung nicht separat ausgelesen; keine Behauptung eines direkten Live-Löschungsnachweises.
-Geschlossener Live-Kontotest und Live-Profil-/Merkliste-Persistenz bestanden. E-Mail, Bezahlung, Radius und produktive Sicherungsplanung bleiben offen. Keine verkaufsfähige GO-LIVE-Freigabe allein aus diesen Kontotests abgeleitet.
+## Betrieb und feste Entscheidungen
+
+[Vorschau](https://p68554185.github.io/opportunity-radar/) · [Render-Pilot](https://bauradar-pilot.onrender.com/)
+
+Render Free / Neon Free; kein bezahltes Upgrade ohne Betreiberentscheidung.
+Kostenpflichtiges Hosting erst nach erfolgreicher Kundenvalidierung. Ruhephasen und Nutzungslimits bleiben.
+Öffentliche Registrierung, E-Mail und Bezahlung sind deaktiviert.
+Geschlossene Live-Kontotests und Persistenz nach Render-Redeploy bestanden; Testzugang wurde vom Betreiber bereinigt.
+Zugangsdaten und Kundendaten gehören nicht in Repository, öffentliche Logs oder Artefakte.
+
+Details: [EARLY-/Lifecycle-Ledger](docs-internal/EARLY_LIFECYCLE.md),
+[Kostenloser Pilot](deploy/FREE_PILOT.md), [Recovery](deploy/POSTGRES_RECOVERY.md).
+Frühere Entwicklungsnotizen: [Archiv](docs-internal/DEVELOPMENT_HISTORY_2026-10-06.md).
