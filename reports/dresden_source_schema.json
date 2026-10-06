@@ -1,0 +1,64 @@
+{
+  "plans": {
+    "types": [
+      {
+        "name": "cls:L354",
+        "title": "Bebauungspläne"
+      }
+    ],
+    "parameters": [
+      {
+        "tag": "Value",
+        "text": "2.0.0"
+      },
+      {
+        "tag": "DefaultCRS",
+        "text": "urn:ogc:def:crs:EPSG::25833"
+      },
+      {
+        "tag": "OtherCRS",
+        "text": "urn:ogc:def:crs:EPSG::4326"
+      },
+      {
+        "tag": "OtherCRS",
+        "text": "urn:ogc:def:crs:EPSG::31469"
+      },
+      {
+        "tag": "OtherCRS",
+        "text": "urn:ogc:def:crs:EPSG::3857"
+      }
+    ],
+    "version": "2.0.0"
+  },
+  "addresses": {
+    "types": [
+      {
+        "name": "cls:L134",
+        "title": "Adressen"
+      }
+    ],
+    "parameters": [
+      {
+        "tag": "Value",
+        "text": "2.0.0"
+      },
+      {
+        "tag": "DefaultCRS",
+        "text": "urn:ogc:def:crs:EPSG::25833"
+      },
+      {
+        "tag": "OtherCRS",
+        "text": "urn:ogc:def:crs:EPSG::4326"
+      },
+      {
+        "tag": "OtherCRS",
+        "text": "urn:ogc:def:crs:EPSG::31469"
+      },
+      {
+        "tag": "OtherCRS",
+        "text": "urn:ogc:def:crs:EPSG::3857"
+      }
+    ],
+    "version": "2.0.0"
+  }
+}
