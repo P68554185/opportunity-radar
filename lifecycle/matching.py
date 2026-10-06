@@ -33,6 +33,18 @@ def components(value):
         result.setdefault(role,set()).add(identifier)
     return result
 
+def childcare_roles(value):
+    roles=set()
+    text=norm(value)
+    if re.search(r"\b(?:kinderhort|hort)\b",text): roles.add("hort")
+    if re.search(r"\b(?:kinderkrippe|krippe)\b",text): roles.add("krippe")
+    if re.search(r"\bkindergarten(?:s)?\b",text): roles.add("kindergarten")
+    return roles
+
+def childcare_conflict(a,b):
+    ra,rb=childcare_roles(a),childcare_roles(b)
+    return bool(ra and rb and ra.isdisjoint(rb))
+
 def component_conflict(a,b):
     ca,cb=components(a),components(b)
     return any(ca[role].isdisjoint(cb[role]) for role in ca.keys() & cb.keys())
@@ -61,6 +73,8 @@ def evaluate(early, later, *, ambiguous=False):
         blockers.append("different_project_type")
     if address_a and address_b and address_a != address_b:
         blockers.append("different_project_address")
+    if childcare_conflict(text_a,text_b):
+        blockers.append("different_childcare_facility")
     if component_conflict(text_a,text_b):
         blockers.append("different_building_component")
     start, end = published(early.get("published")), published(later.get("published"))

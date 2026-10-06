@@ -46,3 +46,8 @@ class IdentityTests(unittest.TestCase):
         a=dict(self.a,title="Campus Deutz Gebäude B Bauabschnitt 1")
         b=dict(self.b,title="Campus Deutz Gebäude C Bauabschnitt 1")
         self.assertIn("different_building_component",evaluate(a,b)["blockers"])
+
+    def test_explicit_hort_and_preschool_scopes_are_distinct(self):
+        a=dict(self.a,title="Kinderhort Benker-Areal",project_type="kindergarten")
+        b=dict(self.b,title="Kindergarten und Kinderkrippe Benker-Areal",project_type="kindergarten")
+        self.assertIn("different_childcare_facility",evaluate(a,b)["blockers"])

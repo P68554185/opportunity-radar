@@ -118,12 +118,12 @@ def event_key(e: SourceEvent) -> str:
     return hashlib.sha256(raw.encode()).hexdigest()[:20]
 
 def project_similarity(a: Project, e: SourceEvent) -> float:
-    from lifecycle.matching import anchors, component_conflict
+    from lifecycle.matching import anchors, component_conflict, childcare_conflict
     if a.project_address and e.project_address and norm(a.project_address)!=norm(e.project_address):
         return 0.0
     if a.project_reference and e.project_reference and a.project_reference!=e.project_reference:
         return 0.0
-    if component_conflict(a.canonical_name,e.title): return 0.0
+    if component_conflict(a.canonical_name,e.title) or childcare_conflict(a.canonical_name,e.title): return 0.0
     # Shared generic facility words alone do not identify one construction project.
     shared=(anchors(a.canonical_name)&anchors(e.title))-set(norm(a.city).split())
     if not shared and not (a.project_address and a.project_address==e.project_address) and not (

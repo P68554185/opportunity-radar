@@ -33,3 +33,8 @@ class MasterTests(unittest.TestCase):
         a=event();a["title"]="Zu- und Ersatzbau Gymnasium Hochrad";a["city"]="Hamburg"
         b=dict(a,source_id="b",source_url="https://example.org/b",title="Zu- und Ersatzbau Gymnasium Hummelsbüttel und Grundschule Grützmühlenweg")
         self.assertEqual(len(ingest([a,b])),2)
+
+    def test_shared_development_area_is_not_one_childcare_building(self):
+        a=event();a.update(title="Neubau Kinderhort im Benker-Areal",city="Marktredwitz",project_type="kindergarten")
+        b=dict(a,source_id="b",source_url="https://example.org/b",title="Neubau Kinderkrippe und Kindergarten im Benker-Areal")
+        self.assertEqual(len(ingest([a,b])),2)
