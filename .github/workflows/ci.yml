@@ -52,6 +52,10 @@ jobs:
         run: python checks/postgres_restore.py
         env:
           TEST_POSTGRES_URL: postgresql://bauradar_test:ci-only-test-password@localhost:5432/bauradar_test
+      - name: Test closed signup with two PostgreSQL accounts in Chromium
+        run: python checks/closed_accounts.py
+        env:
+          TEST_POSTGRES_URL: postgresql://bauradar_test:ci-only-test-password@localhost:5432/bauradar_test
       - name: Test customer workflows in Chromium
         run: python checks/browser_smoke.py
       - name: Verify deployment configuration and container build

@@ -1,0 +1,39 @@
+name: Closed Live Account Test
+on:
+  workflow_dispatch:
+    inputs:
+      verify_persistence:
+        description: Verify existing test profile/watch data after a Render redeploy
+        required: false
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: closed-live-account-test
+  cancel-in-progress: false
+jobs:
+  closed-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install browser
+        run: |
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: Test existing synthetic accounts on Render and Neon
+        env:
+          BAURADAR_CLOSED_TEST_PASSWORD: ${{ secrets.BAURADAR_CLOSED_TEST_PASSWORD }}
+          VERIFY_PERSISTENCE: ${{ inputs.verify_persistence }}
+        run: |
+          if [ "$VERIFY_PERSISTENCE" = "true" ]; then
+            python checks/closed_accounts.py --live --verify-persistence
+          else
+            python checks/closed_accounts.py --live
+          fi
