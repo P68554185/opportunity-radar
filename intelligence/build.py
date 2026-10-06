@@ -74,24 +74,7 @@ def build():
  enriched=[enrich(x) for x in unique.values()]
  opp=[x for x in enriched if x.get("project_type") or x.get("trades")]
  opp.sort(key=lambda x:(x["score"],x.get("published") or ""),reverse=True)
- links=[]
- for e in early:
-  candidates=[]
-  for x in live:
-   if e.get("project_type") and x.get("project_type") and e["project_type"]!=x["project_type"]: continue
-   s,evidence=lifecycle_link_score(e,x)
-   # >=0.60 means a strong municipality/type/title combination. Auto-link stays strict.
-   if s>=.60:candidates.append((s,x,evidence))
-  if candidates:
-   candidates.sort(key=lambda z:z[0],reverse=True)
-   s,x,evidence=candidates[0]
-   gap=s-candidates[1][0] if len(candidates)>1 else 1.0
-   # Same municipality/type alone never proves project identity.
-   decision=classify_link(s,gap)
-   if evidence.get("title",0)<.50 or not evidence.get("city"):decision="review"
-   links.append({"early_source_id":e.get("source_id"),"early_title":e.get("title"),"early_city":e.get("city"),
-    "live_source_id":x.get("source_id"),"live_title":x.get("title"),"live_city":x.get("city"),
-    "score":round(s,3),"status":decision,"best_gap":round(gap,3),"evidence":evidence})
+ links=[] # Lifecycle publication is computed only after the quality gate by lifecycle/build.py.
  out={"version":"0.9.2","live_records":len(live),"enriched_records":len(enriched),"duplicate_source_records":len(live)-len(enriched),"classified_opportunities":len(opp),"lifecycle_candidates":len(links),"opportunities":opp[:50],"lifecycle_links":links}
  os.makedirs(os.path.join(ROOT,"docs","data"),exist_ok=True); os.makedirs(os.path.join(ROOT,"reports"),exist_ok=True); os.makedirs(os.path.join(ROOT,"real_data"),exist_ok=True)
  with open(os.path.join(ROOT,"real_data","ted_live_enriched.json"),"w",encoding="utf-8") as f:json.dump(enriched,f,ensure_ascii=False,indent=2)

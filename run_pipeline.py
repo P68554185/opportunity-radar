@@ -13,6 +13,7 @@ STEPS=[
  ("Build audit and precision layer",[sys.executable,"intelligence/audit_precision.py"]),
  ("Smart validation and error analysis",[sys.executable,"intelligence/smart_validation.py"]),
  ("Validate historical lifecycle cases",[sys.executable,"lifecycle/validate_history.py"]),
+ ("Build evidence-based lifecycle",[sys.executable,"lifecycle/build.py"]),
  ("Build BauRadar customer feed",[sys.executable,"intelligence/customer_feed.py"]),
  ("Update website status",[sys.executable,"github_status.py"]),
  ("Verify generated feed",[sys.executable,"tests/check_generated_feed.py"]),

@@ -3,3 +3,9 @@
 
 [hidden]{display:none!important}.account-controls{display:flex;align-items:center;gap:12px}.account-panel{margin-bottom:20px}.account-panel p{font-size:14px;color:#65786d}#accountMessage{color:#9c3b25}
 .topbar{flex-wrap:wrap;gap:12px}.account-controls{flex-wrap:wrap}.project-card h3{overflow-wrap:anywhere}@media(max-width:720px){.account-controls{max-width:100%;gap:8px}.filters input,.filters select{width:100%}.account-panel form{grid-template-columns:minmax(0,1fr)}}
+.project-history{margin:16px 0;border-top:1px solid var(--line);padding-top:12px;font-size:13px}
+.project-history summary{cursor:pointer;font-weight:600;min-height:44px;display:flex;align-items:center}
+.project-history ol{padding-left:20px;margin:8px 0}
+.project-history li{padding:8px 0;display:flex;flex-wrap:wrap;gap:6px 12px;border-bottom:1px solid var(--line)}
+.project-history time{font-weight:600}.project-history a{margin-left:auto;min-height:32px}
+.project-history p{color:#65786d;font-size:12px}

@@ -25,7 +25,7 @@ def build():
     official={r["source_url"] for r in registry if r.get("status")=="official_verified"}
     projects=ingest(early)
     records=[]
-    historical_path=ROOT/"reports"/"historical_lifecycle_validation.json"
+    historical_path=ROOT/"reports"/"lifecycle_report.json"
     historical=json.loads(historical_path.read_text()) if historical_path.exists() else {}
     confirmed_history={}
     for timeline in historical.get("timelines",[]):
