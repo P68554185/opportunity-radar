@@ -40,4 +40,9 @@ Sicherheits-/Persistenzabsicherung: Auf Render startet die App nur mit einer Pos
 Öffentliche Anwendung: https://bauradar-pilot.onrender.com
 GitHub Actions: https://github.com/P68554185/opportunity-radar/actions/runs/37429224942 (erfolgreich).
 Geprüft: HTTPS-Seite, /api/live, /api/health inklusive Datenbankzugriff und Schemaanlage, 690 qualifizierte Feed-Einträge sowie anonymer Zugriffsschutz für Konto, Profile, Merkliste und Admin.
-Registrierung, E-Mail und Bezahlung sind weiterhin deaktiviert. Die erfolgreiche Datenbankverbindung ersetzt keinen Persistenz-/Wiederherstellungstest über einen Redeploy und keinen Browser-Kontotest. Der Feed im Docker-Image ist ein Deployment-Snapshot; regelmäßige Aktualisierung auf Render ist noch einzurichten.
+Registrierung, E-Mail und Bezahlung sind weiterhin deaktiviert. Die erfolgreiche Datenbankverbindung ersetzt keinen Persistenz-/Wiederherstellungstest über einen Redeploy und keinen Browser-Kontotest. PR #5 ergänzt die regelmäßige Übernahme des geprüften Pages-Feeds im laufenden Backend. Auf Render wird sie erst nach dem nächsten manuellen Deployment aktiv.
+
+## Nächstes manuelles Deployment (PR #5)
+Render: Dashboard → bauradar-pilot → Manual Deploy → Deploy latest commit. Auto-Deploy bleibt deaktiviert; keine Secrets ändern und Registrierung auf false belassen.
+Danach übernimmt der Server bei Feed-Aufrufen spätestens nach Ablauf seines 15-Minuten-Caches den geprüften Pages-Feed. Bei Netzfehlern, unpassender Policy, inkonsistenten Zählern, doppelten IDs, ungültigen Quellen oder älterem Datenstand bleibt der letzte validierte Snapshot bestehen. Bei einem Neustart dient das geprüfte Container-Snapshot als Rückfall.
+Die Prüfung ist CI-erfolgreich, aber nicht als live bereits aktiviert zu behandeln. Kontotrennung und tatsächlicher PostgreSQL-Prozessneustart bestanden in CI; ein realer Render-Redeploy-/Neon-Kontotest bleibt offen.
