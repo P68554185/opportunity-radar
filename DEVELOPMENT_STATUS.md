@@ -9,7 +9,7 @@ Stand: 06.10.2026. Funktionsnachweise haben Vorrang vor Zielterminen.
 | EARLY / Lifecycle | konservative Engine vorhanden | 37 kuratierte Signale / 36 Masterprojekte; laufende breitere Akquisition fehlt |
 | Einfache Kundenoberfläche | veröffentlicht, Chromium geprüft | Quelle, Gewerk, Phase, Auftraggeber, nächste Handlung |
 | Kostenloses Backend | Render + Neon eingerichtet | Live-Check 37429224942 erfolgreich: Datenbank erreichbar, 690 geprüfte Feed-Einträge |
-| Geschlossener Kontotest | Umsetzung/CI läuft; Live-Secret fehlt | Zwei synthetische Konten bei deaktiviertem Signup; keine echten Kundendaten |
+| Geschlossener Kontotest | CI erfolgreich; Live-Test durch Secret-Setup/Redeploy blockiert | 37433704129: zwei Konten, PostgreSQL, Neustart, Cleanup; Render/Neon-Abnahme steht aus |
 | Betriebsprofile / Merkliste / Login | implementiert, SQLite/PostgreSQL und Browser geprüft | Registrierung öffentlich deaktiviert; kein live getestetes Kundenkonto |
 | Prozessneustart / Kontotrennung | CI erfolgreich | Echter Neustart mit PostgreSQL; zwei Konten im Browser; CI 37431562638 |
 | Automatischer Render-Feed | auf Render veröffentlicht und live geprüft | Geprüfte Pages-Daten per Servercache übernehmen, ohne täglichen Redeploy |
@@ -38,7 +38,7 @@ Konservative Lifecycle-Verknüpfungen sind keine Garantie vollständiger Gebäud
 ## Nächste Schritte
 1. PR #5 integriert und vollständig geprüft (CI 37431562638): automatische Feed-Übernahme, Prozessneustart und Browser-Kontotrennung.
 2. Render-Feed veröffentlicht und live geprüft (37432113469); kein erneutes Deployment allein für die Wartungswerkzeuge erforderlich.
-3. Geschlossenen Kontotest vorbereiten; keine öffentliche Registrierung vor Infrastruktur-/Datenschutz-Abnahme.
+3. Geschlossener Kontotest in CI bestanden. Live: Test-Secrets in Render/GitHub setzen, main deployen und Closed Live Account Test starten; siehe deploy/CLOSED_ACCOUNT_TEST.md.
 4. PostgreSQL-Backup/Restore in CI bestanden (37432784843). Produktive Sicherungsplanung/geschützte Ablage und persistente Konten über echten Render-Redeploy noch prüfen.
 5. Radius, weitere EARLY-Quellen, E-Mail sowie Angebot/Rechtstexte vervollständigen.
 
@@ -48,7 +48,7 @@ Render Free und Neon Free haben Ruhephasen und Nutzungslimits; kein Produktions-
 Einrichtung und Nachweise: deploy/FREE_PILOT.md.
 
 ## Bereits integrierte Entwicklung
-PRs #1–#6: Datenmotor, Evidenzpolitik, Dublettenbereinigung, konservative Lifecycle-Regeln, einfache UI, Konto-Backend,
+PRs #1–#7: Datenmotor, Evidenzpolitik, Dublettenbereinigung, konservative Lifecycle-Regeln, einfache UI, Konto-Backend,
 PostgreSQL/TLS-Unterstützung, korrigierte CPV-Gewerke und phasengerechte nächste Handlung.
 Kern-, Feed-, SQLite-/PostgreSQL-, Browser- und Dockerprüfungen bestanden vor Integration.
 GitHub Actions veröffentlicht Pages nach erfolgreicher Live-Ingestion. Admin liegt außerhalb des öffentlichen Pages-Verzeichnisses.
@@ -72,3 +72,10 @@ PR #6 integriert: https://github.com/P68554185/opportunity-radar/pull/6
 Vollständige CI erfolgreich: https://github.com/P68554185/opportunity-radar/actions/runs/37432784843
 Tatsächlicher Dump/Restore gegen getrennte PostgreSQL-16-Datenbanken; Konten/Profile/Sitzungen/Merklisten identisch, überschreibende und nichtleere Restore-Ziele blockiert. Anschließende Browser- und Dockerprüfungen erfolgreich. Anleitung: deploy/POSTGRES_RECOVERY.md.
 Keine echte Neon-Sicherung angelegt; keine produktive Wiederherstellung vorgenommen. Der nächste Backend-Funktionsschritt bleibt ein geschlossener Kontotest ohne öffentliche Registrierung.
+
+## Geschlossener Kontotest: CI-Ergebnis und Live-Blocker
+PR #7 integriert: https://github.com/P68554185/opportunity-radar/pull/7
+Vollständige CI erfolgreich: https://github.com/P68554185/opportunity-radar/actions/runs/37433704129
+Chromium gegen PostgreSQL bei BAURADAR_ENABLE_SIGNUP=false: zwei vorhandene synthetische Konten, Profil-/Merkliste-Isolation, Logout/Wiederanmeldung, tatsächlicher Prozessneustart mit vorhandenen Sitzungen und automatische Bereinigung nach Entfernen des Test-Secrets bestanden. Testkonten erhalten keine Adminrechte.
+CI verwendet lokales HTTP (Secure-Cookies dort deaktiviert); das ist ausdrücklich kein HTTPS-/Render-/Neon-Kontotest. Der Live-Workflow prüft HTTPS-Cookies separat, sobald der Betreiber denselben zufälligen BAURADAR_CLOSED_TEST_PASSWORD-Wert sicher in Render und GitHub gesetzt und main deployt hat. Eine weitere Live-Prüfung nach manuellem Render-Redeploy erfolgt mit verify_persistence=true, ohne die bestehenden Testprofile zuerst zurückzusetzen.
+Öffentliche Registrierung bleibt deaktiviert; keine Live-Testkonten wurden durch den Assistenten angelegt. Einrichtung/Bereinigung: deploy/CLOSED_ACCOUNT_TEST.md.
