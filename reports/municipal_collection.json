@@ -1,33 +1,33 @@
 {
   "region": "Dresden",
-  "observed_at": "2026-10-06T10:37:11.878230+00:00",
+  "observed_at": "2026-10-07T05:27:07.386951+00:00",
   "sources": [
     {
       "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1061092",
       "status": "verified",
       "records": 1,
-      "content_sha256": "0b59d3bf603143bb065f729ebc9beaaff2a5170f956105f4e9a0e37bbc3b771f",
+      "content_sha256": "1a0735637ebf78183526a0b249e9622e582e99f76e487b74c440e8f5e2c94a68",
       "date_basis": "official_notice_date"
     },
     {
       "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1063128",
       "status": "verified",
       "records": 1,
-      "content_sha256": "ae9cae2b14cba383d29f0223f2c5410f0a1db2fd1447a8c4b22a8d88bd66dfbb",
+      "content_sha256": "ed5ba62bf6415295a38635e8c7f712a07ae2cdf80aecd52f59e2d26b466a5f9c",
       "date_basis": "official_notice_date"
     },
     {
       "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1063071",
       "status": "verified",
       "records": 1,
-      "content_sha256": "d14882c530fa75e8006195a6ee22b7cf0baea9018f2321e1606fced3a6a2911c",
+      "content_sha256": "9aff7c5529852ecc8f6a05559a75d025c7cd2339dcfc0ba1054cb77255dc8a03",
       "date_basis": "official_notice_date"
     },
     {
       "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1064317",
       "status": "verified",
       "records": 1,
-      "content_sha256": "c2adbdb2383b5c849c74d2dfbc1e201144a423ad90b57ea541e455d105961180",
+      "content_sha256": "5835cbbd14f83fba51c263e7071b452e0b5439abc4f760ce87e37df9bf2ca6fe",
       "date_basis": "official_notice_date"
     }
   ],
@@ -46,6 +46,10 @@
     },
     {
       "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1069094",
+      "reason": "Needs dated project goal and exact plan reference review"
+    },
+    {
+      "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1069133",
       "reason": "Needs dated project goal and exact plan reference review"
     },
     {

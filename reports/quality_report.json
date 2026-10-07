@@ -3,86 +3,86 @@
   "classified_opportunities": 9675,
   "classification_rate_pct": 96.8,
   "bands": {
-    "UPCOMING": 5554,
-    "HOT": 1679,
-    "EARLY": 2442
+    "UPCOMING": 5527,
+    "EARLY": 2467,
+    "HOT": 1681
   },
   "project_types": [
     [
       "unclassified_project",
-      3562
+      3569
     ],
     [
       "school",
-      1494
+      1484
     ],
     [
       "rail",
-      773
+      778
     ],
     [
       "water_wastewater",
-      375
+      377
     ],
     [
       "industrial",
-      343
-    ],
-    [
-      "civil_engineering",
-      333
+      345
     ],
     [
       "bridge",
-      333
+      337
+    ],
+    [
+      "civil_engineering",
+      326
     ],
     [
       "university_research",
-      295
+      292
     ],
     [
       "hospital",
-      279
+      276
     ],
     [
       "road",
-      273
-    ],
-    [
-      "administration",
-      242
+      267
     ],
     [
       "sports_leisure",
-      241
+      245
+    ],
+    [
+      "administration",
+      243
     ],
     [
       "kindergarten",
-      190
+      193
     ],
     [
       "fire_station",
-      185
+      188
     ],
     [
       "public_building",
-      182
+      183
     ],
     [
       "energy",
-      147
+      144
     ],
     [
       "public_space",
-      121
+      122
     ],
     [
       "residential",
-      98
+      97
     ],
     [
       "care_social",
-      83
+      81
     ],
     [
       "infrastructure",
@@ -90,85 +90,85 @@
     ],
     [
       "commercial",
-      57
+      59
     ]
   ],
   "trades": [
     [
       "structural",
-      1748
+      1734
     ],
     [
       "electrical",
-      1404
+      1415
     ],
     [
       "windows_doors",
-      1391
+      1377
     ],
     [
       "hvac",
-      975
+      962
     ],
     [
       "earthworks",
-      852
+      854
     ],
     [
       "railworks",
-      759
+      766
     ],
     [
       "flooring",
-      708
+      712
     ],
     [
       "demolition",
-      648
+      657
     ],
     [
       "painting",
-      644
+      636
     ],
     [
       "roof",
-      543
+      546
     ],
     [
       "insulation",
-      508
+      499
     ],
     [
       "roadworks",
-      442
+      434
     ],
     [
       "plumbing",
-      403
+      402
     ],
     [
       "facade",
-      362
+      364
     ],
     [
       "landscaping",
-      312
+      309
     ],
     [
       "drywall",
-      301
+      302
     ],
     [
       "plastering",
-      210
+      205
     ],
     [
       "fire_protection",
-      190
+      188
     ],
     [
       "elevator",
-      132
+      131
     ],
     [
       "finishing",
@@ -176,15 +176,15 @@
     ],
     [
       "sewer_pipe",
-      86
+      84
     ],
     [
       "solar_energy",
-      82
+      83
     ],
     [
       "fencing",
-      75
+      78
     ],
     [
       "building_services",
@@ -195,57 +195,74 @@
     {
       "from": 50,
       "to": 59,
-      "count": 241
+      "count": 250
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2379
+      "count": 2400
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2397
+      "count": 2380
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4152
+      "count": 4141
     },
     {
       "from": 90,
       "to": 99,
-      "count": 359
+      "count": 358
     },
     {
       "from": 100,
       "to": 100,
-      "count": 147
+      "count": 146
     }
   ],
   "quality_flags": {
-    "project_type_only": 1079,
-    "trade_only": 3562,
-    "project_and_trade": 5034,
-    "opportunity_score_85_plus": 1679
+    "project_type_only": 1087,
+    "trade_only": 3569,
+    "project_and_trade": 5019,
+    "opportunity_score_85_plus": 1681
   },
   "sample_top": [
     {
-      "source_id": "TED-685765-2026",
-      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
-      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
-      "city": "Köln",
-      "project_type": "university_research",
+      "source_id": "TED-690140-2026",
+      "title": "TEIL 1 - Straßen-, Tief- und Landschaftsbauarbeiten, TEIL 2 - Fugenpflege Natursteinpflaster - Theaterplatz und Theaterstraße bis zur Borngasse (ISK)",
+      "authority": "Stadt Aachen - Zentrale Vergabestelle FB60/300",
+      "city": "Aachen",
+      "project_type": "road",
       "trades": [
-        "drywall",
-        "insulation",
-        "structural",
-        "flooring"
+        "flooring",
+        "landscaping",
+        "roadworks",
+        "earthworks"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/685765-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/690140-2026"
+    },
+    {
+      "source_id": "TED-691682-2026",
+      "title": "Berliner Brücke (Teichstr.) - Gleiserneuerung, Brückensanierung und Integration von Radverkehrsanlagen",
+      "authority": "Vergabestelle: Städtische Werke Netz + Service GmbH, Auftraggeber: Gleisbauarbeiten (Titel 1 anteilig und Titel 3 des LV) Kasseler Verkehrs-Gesellschaft AG, Königstor 3-13, 34117 Kassel, Brückensanierung und Integration von Radverkehrsanlagen (Titel 1 anteilig, Titel 2 und Tiel 4 des LV), Magistrat der Stadt Kassel, Straßenverkehrsamt- und Tiefbauamt, Obere Königsstraße 8, 34117 Kassel",
+      "city": "Kassel",
+      "project_type": "road",
+      "trades": [
+        "structural",
+        "roadworks",
+        "railworks",
+        "electrical"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/691682-2026"
     },
     {
       "source_id": "TED-687844-2026",
@@ -267,6 +284,23 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/687844-2026"
     },
     {
+      "source_id": "TED-685765-2026",
+      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
+      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
+      "city": "Köln",
+      "project_type": "university_research",
+      "trades": [
+        "drywall",
+        "insulation",
+        "structural",
+        "flooring"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/685765-2026"
+    },
+    {
       "source_id": "TED-686493-2026",
       "title": "Kreuzungsfreier Ausbau Frankenschnellweg, Abschnitt West: Bauleistungen, Straßen- & Ingenieurbau",
       "authority": "Stadt Nürnberg - Servicebetrieb Öffentlicher Raum",
@@ -282,57 +316,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/686493-2026"
-    },
-    {
-      "source_id": "TED-684848-2026",
-      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
-      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
-      "city": "Erlangen",
-      "project_type": "school",
-      "trades": [
-        "flooring",
-        "windows_doors",
-        "electrical",
-        "earthworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026"
-    },
-    {
-      "source_id": "TED-683210-2026",
-      "title": "Bahrenfelder Straße 260 - Käfige und Netze",
-      "authority": "SBH | Schulbau Hamburg",
-      "city": "Hamburg",
-      "project_type": "public_building",
-      "trades": [
-        "windows_doors",
-        "structural",
-        "finishing",
-        "flooring"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/683210-2026"
-    },
-    {
-      "source_id": "TED-684925-2026",
-      "title": "BASF-KVT, Modul 50, Y109 - Büro- und Sozialgebäude in Modulbauweise",
-      "authority": "BASF SE",
-      "city": "Ludwigshafen am Rhein",
-      "project_type": "industrial",
-      "trades": [
-        "electrical",
-        "hvac",
-        "plumbing",
-        "fire_protection"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684925-2026"
     },
     {
       "source_id": "TED-683855-2026",
@@ -352,6 +335,57 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026"
     },
     {
+      "source_id": "TED-683210-2026",
+      "title": "Bahrenfelder Straße 260 - Käfige und Netze",
+      "authority": "SBH | Schulbau Hamburg",
+      "city": "Hamburg",
+      "project_type": "public_building",
+      "trades": [
+        "windows_doors",
+        "structural",
+        "finishing",
+        "flooring"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/683210-2026"
+    },
+    {
+      "source_id": "TED-684848-2026",
+      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
+      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
+      "city": "Erlangen",
+      "project_type": "school",
+      "trades": [
+        "flooring",
+        "windows_doors",
+        "electrical",
+        "earthworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026"
+    },
+    {
+      "source_id": "TED-684925-2026",
+      "title": "BASF-KVT, Modul 50, Y109 - Büro- und Sozialgebäude in Modulbauweise",
+      "authority": "BASF SE",
+      "city": "Ludwigshafen am Rhein",
+      "project_type": "industrial",
+      "trades": [
+        "electrical",
+        "hvac",
+        "plumbing",
+        "fire_protection"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/684925-2026"
+    },
+    {
       "source_id": "TED-681697-2026",
       "title": "Berliner Brücke (Teichstr.) - Gleiserneuerung, Brückensanierung und Integration von Radverkehrsanlagen",
       "authority": "Vergabestelle: Städtische Werke Netz + Service GmbH, Auftraggeber: Gleisbauarbeiten (Titel 1 anteilig und Titel 3 des LV) Kasseler Verkehrs-Gesellschaft AG, Königstor 3-13, 34117 Kassel, Brückensanierung und Integration von Radverkehrsanlagen (Titel 1 anteilig, Titel 2 und Tiel 4 des LV), Magistrat der Stadt Kassel, Straßenverkehrsamt- und Tiefbauamt, Obere Königsstraße 8, 34117 Kassel",
@@ -367,23 +401,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/681697-2026"
-    },
-    {
-      "source_id": "TED-681250-2026",
-      "title": "Berliner Brücke (Teichstr.) - Gleiserneuerung, Brückensanierung und Integration von Radverkehrsanlagen",
-      "authority": "Vergabestelle: Städtische Werke Netz + Service GmbH, Auftraggeber: Gleisbauarbeiten (Titel 1 anteilig und Titel 3 des LV) Kasseler Verkehrs-Gesellschaft AG, Königstor 3-13, 34117 Kassel, Brückensanierung und Integration von Radverkehrsanlagen (Titel 1 anteilig, Titel 2 und Tiel 4 des LV), Magistrat der Stadt Kassel, Straßenverkehrsamt- und Tiefbauamt, Obere Königsstraße 8, 34117 Kassel",
-      "city": "Kassel",
-      "project_type": "road",
-      "trades": [
-        "structural",
-        "roadworks",
-        "railworks",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/681250-2026"
     },
     {
       "source_id": "TED-679848-2026",
@@ -418,23 +435,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/680492-2026"
-    },
-    {
-      "source_id": "TED-680881-2026",
-      "title": "Gymnasium Füssen - Trockenbauarbeiten BA 1-2",
-      "authority": "Landkreis Ostallgäu",
-      "city": "Füssen",
-      "project_type": "school",
-      "trades": [
-        "drywall",
-        "insulation",
-        "windows_doors",
-        "fire_protection"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/680881-2026"
     }
   ]
 }
