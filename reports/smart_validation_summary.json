@@ -3,8 +3,8 @@
   "cases": 60,
   "risk": {
     "HIGH": 10,
-    "MEDIUM": 40,
-    "LOW": 10
+    "MEDIUM": 33,
+    "LOW": 17
   },
   "strategy": "Review highest-risk contradictions first; do not infer measured precision from unreviewed cases."
 }

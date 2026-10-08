@@ -1,68 +1,68 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9675,
+  "classified_opportunities": 9677,
   "classification_rate_pct": 96.8,
   "bands": {
-    "UPCOMING": 5527,
-    "EARLY": 2467,
-    "HOT": 1681
+    "UPCOMING": 5525,
+    "HOT": 1686,
+    "EARLY": 2466
   },
   "project_types": [
     [
       "unclassified_project",
-      3569
+      3559
     ],
     [
       "school",
-      1484
+      1469
     ],
     [
       "rail",
-      778
+      784
     ],
     [
       "water_wastewater",
-      377
-    ],
-    [
-      "industrial",
-      345
+      375
     ],
     [
       "bridge",
-      337
+      344
+    ],
+    [
+      "industrial",
+      342
     ],
     [
       "civil_engineering",
-      326
+      327
     ],
     [
       "university_research",
-      292
-    ],
-    [
-      "hospital",
-      276
+      301
     ],
     [
       "road",
-      267
+      276
+    ],
+    [
+      "hospital",
+      271
     ],
     [
       "sports_leisure",
-      245
+      241
     ],
     [
       "administration",
-      243
-    ],
-    [
-      "kindergarten",
-      193
+      237
     ],
     [
       "fire_station",
-      188
+      193
+    ],
+    [
+      "kindergarten",
+      192
     ],
     [
       "public_building",
@@ -70,19 +70,19 @@
     ],
     [
       "energy",
-      144
+      152
     ],
     [
       "public_space",
-      122
+      121
     ],
     [
       "residential",
-      97
+      99
     ],
     [
       "care_social",
-      81
+      86
     ],
     [
       "infrastructure",
@@ -90,7 +90,7 @@
     ],
     [
       "commercial",
-      59
+      56
     ]
   ],
   "trades": [
@@ -104,43 +104,43 @@
     ],
     [
       "windows_doors",
-      1377
+      1368
     ],
     [
       "hvac",
-      962
+      966
     ],
     [
       "earthworks",
-      854
+      863
     ],
     [
       "railworks",
-      766
+      778
     ],
     [
       "flooring",
-      712
+      698
     ],
     [
       "demolition",
-      657
+      671
     ],
     [
       "painting",
-      636
+      633
     ],
     [
       "roof",
-      546
+      544
     ],
     [
       "insulation",
-      499
+      481
     ],
     [
       "roadworks",
-      434
+      438
     ],
     [
       "plumbing",
@@ -148,23 +148,23 @@
     ],
     [
       "facade",
-      364
+      359
     ],
     [
       "landscaping",
-      309
+      310
     ],
     [
       "drywall",
-      302
+      291
     ],
     [
       "plastering",
-      205
+      200
     ],
     [
       "fire_protection",
-      188
+      187
     ],
     [
       "elevator",
@@ -175,61 +175,186 @@
       95
     ],
     [
-      "sewer_pipe",
+      "solar_energy",
       84
     ],
     [
-      "solar_energy",
-      83
+      "sewer_pipe",
+      82
     ],
     [
       "fencing",
-      78
+      75
     ],
     [
       "building_services",
-      61
+      58
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 250
+      "count": 243
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2400
+      "count": 2404
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2380
+      "count": 2375
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4141
+      "count": 4151
     },
     {
       "from": 90,
       "to": 99,
-      "count": 358
+      "count": 356
     },
     {
       "from": 100,
       "to": 100,
-      "count": 146
+      "count": 148
     }
   ],
   "quality_flags": {
-    "project_type_only": 1087,
-    "trade_only": 3569,
-    "project_and_trade": 5019,
-    "opportunity_score_85_plus": 1681
+    "project_type_only": 1102,
+    "trade_only": 3559,
+    "project_and_trade": 5016,
+    "opportunity_score_85_plus": 1686
   },
   "sample_top": [
+    {
+      "source_id": "TED-693291-2026",
+      "title": "452 - Generalsanierung der Johannes-Hirspeck-Mittelschule in Pfarrkirchen - Gewerk 6000-001 Außenanlagen",
+      "authority": "Mittelschulverband Pfarrkirchen",
+      "city": "Pfarrkirchen",
+      "project_type": "school",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "roadworks",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/693291-2026"
+    },
+    {
+      "source_id": "TED-695524-2026",
+      "title": "Los 310 Zentrale Baustelleneinrichtung - Ensemble Goethe-Wohnhaus: Denkmalgerechte Instandsetzung",
+      "authority": "Klassik Stiftung Weimar Stiftung des öffentlichen Rechts",
+      "city": "Weimar",
+      "project_type": "public_building",
+      "trades": [
+        "demolition",
+        "electrical",
+        "plumbing",
+        "windows_doors"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/695524-2026"
+    },
+    {
+      "source_id": "TED-696039-2026",
+      "title": "Rohbauarbeiten für Fahrzeugdach",
+      "authority": "Vergabestelle Landeshauptstadt Stuttgart",
+      "city": "Stuttgart, Burgholzstr. 41",
+      "project_type": "civil_engineering",
+      "trades": [
+        "roof",
+        "structural",
+        "demolition",
+        "earthworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/696039-2026"
+    },
+    {
+      "source_id": "TED-694597-2026",
+      "title": "Rahmenvertrag Bauunterhaltsleistungen nach STLB",
+      "authority": "Universitätsklinikum Köln AöR",
+      "city": "Köln",
+      "project_type": "industrial",
+      "trades": [
+        "structural",
+        "electrical",
+        "hvac",
+        "plastering",
+        "windows_doors",
+        "flooring",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/694597-2026"
+    },
+    {
+      "source_id": "TED-693757-2026",
+      "title": "Außenanlagen - Haupteingang und Eingrünung",
+      "authority": "Landkreis Rottal-Inn",
+      "city": "Pfarrkirchen",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "structural",
+        "windows_doors"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/693757-2026"
+    },
+    {
+      "source_id": "TED-694722-2026",
+      "title": "Umleiter Lübeck-Büchen - Bahnsteigverlängerung Bahnhof Mölln und Ratzeburg, Str. 1121",
+      "authority": "DB Station&Service AG (Bukr 11)",
+      "city": "Lübeck",
+      "project_type": "rail",
+      "trades": [
+        "railworks",
+        "earthworks",
+        "roof",
+        "structural",
+        "electrical",
+        "plumbing",
+        "finishing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/694722-2026"
+    },
+    {
+      "source_id": "TED-696440-2026",
+      "title": "SEP GS Gerberstraße - Sanitär VE 05",
+      "authority": "Stadt Solingen",
+      "city": "Solingen",
+      "project_type": "university_research",
+      "trades": [
+        "plumbing",
+        "insulation",
+        "hvac",
+        "fire_protection"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/696440-2026"
+    },
     {
       "source_id": "TED-690140-2026",
       "title": "TEIL 1 - Straßen-, Tief- und Landschaftsbauarbeiten, TEIL 2 - Fugenpflege Natursteinpflaster - Theaterplatz und Theaterstraße bis zur Borngasse (ISK)",
@@ -316,125 +441,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/686493-2026"
-    },
-    {
-      "source_id": "TED-683855-2026",
-      "title": "Freianlagen Sem I und Infra",
-      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
-      "city": "Gießen",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "demolition",
-        "roadworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026"
-    },
-    {
-      "source_id": "TED-683210-2026",
-      "title": "Bahrenfelder Straße 260 - Käfige und Netze",
-      "authority": "SBH | Schulbau Hamburg",
-      "city": "Hamburg",
-      "project_type": "public_building",
-      "trades": [
-        "windows_doors",
-        "structural",
-        "finishing",
-        "flooring"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/683210-2026"
-    },
-    {
-      "source_id": "TED-684848-2026",
-      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
-      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
-      "city": "Erlangen",
-      "project_type": "school",
-      "trades": [
-        "flooring",
-        "windows_doors",
-        "electrical",
-        "earthworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026"
-    },
-    {
-      "source_id": "TED-684925-2026",
-      "title": "BASF-KVT, Modul 50, Y109 - Büro- und Sozialgebäude in Modulbauweise",
-      "authority": "BASF SE",
-      "city": "Ludwigshafen am Rhein",
-      "project_type": "industrial",
-      "trades": [
-        "electrical",
-        "hvac",
-        "plumbing",
-        "fire_protection"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684925-2026"
-    },
-    {
-      "source_id": "TED-681697-2026",
-      "title": "Berliner Brücke (Teichstr.) - Gleiserneuerung, Brückensanierung und Integration von Radverkehrsanlagen",
-      "authority": "Vergabestelle: Städtische Werke Netz + Service GmbH, Auftraggeber: Gleisbauarbeiten (Titel 1 anteilig und Titel 3 des LV) Kasseler Verkehrs-Gesellschaft AG, Königstor 3-13, 34117 Kassel, Brückensanierung und Integration von Radverkehrsanlagen (Titel 1 anteilig, Titel 2 und Tiel 4 des LV), Magistrat der Stadt Kassel, Straßenverkehrsamt- und Tiefbauamt, Obere Königsstraße 8, 34117 Kassel",
-      "city": "Kassel",
-      "project_type": "road",
-      "trades": [
-        "structural",
-        "roadworks",
-        "railworks",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/681697-2026"
-    },
-    {
-      "source_id": "TED-679848-2026",
-      "title": "Gymnasium Füssen - Estricharbeiten BA 1-2",
-      "authority": "Landkreis Ostallgäu",
-      "city": "Füssen",
-      "project_type": "school",
-      "trades": [
-        "flooring",
-        "structural",
-        "insulation",
-        "roof"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/679848-2026"
-    },
-    {
-      "source_id": "TED-680492-2026",
-      "title": "Umbau Bf Müllheim Bauleistungen",
-      "authority": "DB Netz AG (Bukr 16)",
-      "city": "Müllheim",
-      "project_type": "rail",
-      "trades": [
-        "railworks",
-        "demolition",
-        "earthworks",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/680492-2026"
     }
   ]
 }
