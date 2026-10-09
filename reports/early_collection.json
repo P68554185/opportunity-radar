@@ -1,60 +1,60 @@
 {
-  "observed_at": "2026-10-08T05:25:52.540715+00:00",
+  "observed_at": "2026-10-09T05:26:18.610131+00:00",
   "sources": [
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
-      "content_sha256": "aa7997f6a2bac7a051053b52f951f802732d7dbb05374d69084348c9a7c8a236",
+      "content_sha256": "71ac0846f94b4adfbd4493303e5a3c7c19d7bcbb6cba9407226187b5b21f5e7d",
       "records": 13
     },
     {
       "source_url": "https://hibb.hamburg.de/2026/08/18/planungsdaten-fuer-das-neue-schuljahr-2026-27/",
       "status": "verified",
       "verified_from": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bsfb/weiterhin-erhebliche-investitionen-im-schulbau-1210668",
-      "content_sha256": "96ad0592595340925fb20695bff0219a15f03e438b3c7a9056f19c34292c76e2",
+      "content_sha256": "7b88c895a4dd293527dd61e9d29bd55f17316240da28d37b85bfe430a94fcd4b",
       "records": 6
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26254/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26254/",
-      "content_sha256": "357be5359db4fc94d763aa8b4e79faf5d8b843ec12397d2f85d36bd7042a981e",
+      "content_sha256": "83fa3f3285c04937e3a19ecba15a81d78d534c7937e3bd6ada3f3259bcdb4bbe",
       "records": 27
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26282/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26282/",
-      "content_sha256": "ec647464600522c95b579fff0714f51cd03b11c99456945d4a2df6f8a4557b23",
+      "content_sha256": "e90864ccc0cff0f4f21818046049014fdb877931bf076d9baf01267c471e7a78",
       "records": 2
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26283/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26283/",
-      "content_sha256": "a7f81d137c0e7cc452eeedb1c89ee1562cea5356be0267b8e50bbbdcde17d500",
+      "content_sha256": "3fb8daa2c36e172bc62039382f7afe98ce98150801081d96e08600de84e50163",
       "records": 1
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26298/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26298/",
-      "content_sha256": "e1ba9c6dc614e292bdc9344ba55db290adcf38702819eba86466261c5b8f7cbf",
+      "content_sha256": "53a6ab1093791a2b074e74d67b8d4253921e6618d8fabe2863f5c945fbb89505",
       "records": 2
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26297/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26297/",
-      "content_sha256": "d50f27ffd53319e84a70c8b2f918b44714ca2ef889aadc9634de151b39451d3c",
+      "content_sha256": "e2bfa63d4a282e23555e557f283646f576775c1485295abb16b74fb5350eb49b",
       "records": 3
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26314/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26314/",
-      "content_sha256": "b7a4cb892513b23a3e2bfe9bca711165dc22624039f85481296fb2d93acbe7cd",
+      "content_sha256": "aff60c70051745bb8a65fee5c0f4c9eaa3acc37f699b85bf051506028d115759",
       "records": 2
     }
   ],

@@ -1,28 +1,28 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9677,
-  "classification_rate_pct": 96.8,
+  "classified_opportunities": 9674,
+  "classification_rate_pct": 96.7,
   "bands": {
-    "UPCOMING": 5525,
-    "HOT": 1686,
-    "EARLY": 2466
+    "UPCOMING": 5523,
+    "EARLY": 2480,
+    "HOT": 1671
   },
   "project_types": [
     [
       "unclassified_project",
-      3559
+      3550
     ],
     [
       "school",
-      1469
+      1473
     ],
     [
       "rail",
-      784
+      796
     ],
     [
       "water_wastewater",
-      375
+      383
     ],
     [
       "bridge",
@@ -30,7 +30,7 @@
     ],
     [
       "industrial",
-      342
+      338
     ],
     [
       "civil_engineering",
@@ -38,27 +38,27 @@
     ],
     [
       "university_research",
-      301
+      306
     ],
     [
       "road",
-      276
+      275
     ],
     [
       "hospital",
-      271
+      272
     ],
     [
       "sports_leisure",
-      241
+      246
     ],
     [
       "administration",
-      237
+      230
     ],
     [
       "fire_station",
-      193
+      192
     ],
     [
       "kindergarten",
@@ -66,11 +66,11 @@
     ],
     [
       "public_building",
-      183
+      176
     ],
     [
       "energy",
-      152
+      142
     ],
     [
       "public_space",
@@ -78,11 +78,11 @@
     ],
     [
       "residential",
-      99
+      101
     ],
     [
       "care_social",
-      86
+      84
     ],
     [
       "infrastructure",
@@ -90,69 +90,69 @@
     ],
     [
       "commercial",
-      56
+      57
     ]
   ],
   "trades": [
     [
       "structural",
-      1734
+      1709
     ],
     [
       "electrical",
-      1415
+      1428
     ],
     [
       "windows_doors",
-      1368
+      1351
     ],
     [
       "hvac",
-      966
+      977
     ],
     [
       "earthworks",
-      863
+      855
     ],
     [
       "railworks",
-      778
+      787
     ],
     [
       "flooring",
-      698
+      688
     ],
     [
       "demolition",
-      671
+      654
     ],
     [
       "painting",
-      633
+      618
     ],
     [
       "roof",
-      544
+      538
     ],
     [
       "insulation",
-      481
+      475
     ],
     [
       "roadworks",
-      438
+      435
     ],
     [
       "plumbing",
-      402
+      408
     ],
     [
       "facade",
-      359
+      352
     ],
     [
       "landscaping",
-      310
+      315
     ],
     [
       "drywall",
@@ -160,76 +160,212 @@
     ],
     [
       "plastering",
-      200
+      193
     ],
     [
       "fire_protection",
-      187
+      184
     ],
     [
       "elevator",
-      131
+      130
     ],
     [
       "finishing",
-      95
-    ],
-    [
-      "solar_energy",
-      84
+      88
     ],
     [
       "sewer_pipe",
-      82
+      84
+    ],
+    [
+      "solar_energy",
+      81
     ],
     [
       "fencing",
-      75
+      71
     ],
     [
       "building_services",
-      58
+      54
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 243
+      "count": 241
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2404
+      "count": 2422
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2375
+      "count": 2356
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4151
+      "count": 4166
     },
     {
       "from": 90,
       "to": 99,
-      "count": 356
+      "count": 346
     },
     {
       "from": 100,
       "to": 100,
-      "count": 148
+      "count": 143
     }
   ],
   "quality_flags": {
-    "project_type_only": 1102,
-    "trade_only": 3559,
-    "project_and_trade": 5016,
-    "opportunity_score_85_plus": 1686
+    "project_type_only": 1098,
+    "trade_only": 3550,
+    "project_and_trade": 5026,
+    "opportunity_score_85_plus": 1671
   },
   "sample_top": [
+    {
+      "source_id": "TED-698359-2026",
+      "title": "Trockenbauarbeiten / Ersatzneubau Hallenbad Ennigerloh",
+      "authority": "Stadt Ennigerloh",
+      "city": "Ennigerloh",
+      "project_type": "sports_leisure",
+      "trades": [
+        "drywall",
+        "windows_doors",
+        "insulation",
+        "flooring"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/698359-2026"
+    },
+    {
+      "source_id": "TED-700186-2026",
+      "title": "Stadt Penkun - Bauhauptgewerk zum 2.BA Regionale Schule / Umstrukturierung 3-Ländereck-Gemeinschaftsschule",
+      "authority": "Stadt Penkun über Amt Löcknitz-Penkun",
+      "city": "Penkun",
+      "project_type": "school",
+      "trades": [
+        "demolition",
+        "flooring",
+        "painting",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/700186-2026"
+    },
+    {
+      "source_id": "TED-697045-2026",
+      "title": "Grundschule Obernkirchen - Erweiterter Holzbau BA 1",
+      "authority": "Landkreis Schaumburg - Vergabestelle",
+      "city": "Obernkirchen",
+      "project_type": "school",
+      "trades": [
+        "structural",
+        "windows_doors",
+        "insulation",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/697045-2026"
+    },
+    {
+      "source_id": "TED-700056-2026",
+      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
+      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
+      "city": "Köln",
+      "project_type": "university_research",
+      "trades": [
+        "drywall",
+        "insulation",
+        "structural",
+        "flooring"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/700056-2026"
+    },
+    {
+      "source_id": "TED-697204-2026",
+      "title": "Neubau Realschule Geisenfeld mit Sporthalle und Mensa; VE33401 Fassadenelemente BA4",
+      "authority": "Landratsamt Pfaffenhofen",
+      "city": "Geisenfeld",
+      "project_type": "school",
+      "trades": [
+        "facade",
+        "painting",
+        "structural",
+        "windows_doors"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/697204-2026"
+    },
+    {
+      "source_id": "TED-699494-2026",
+      "title": "Neubau des Rathauses in Straelen - Fenster- und Fassadenarbeiten",
+      "authority": "Stadt Straelen",
+      "city": "Straelen",
+      "project_type": "administration",
+      "trades": [
+        "windows_doors",
+        "facade",
+        "structural",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/699494-2026"
+    },
+    {
+      "source_id": "TED-697725-2026",
+      "title": "Estrich-, Andichtungs-, Fliesen- und Innenputzarbeiten / Ersatzneubau Hallenbad Ennigerloh",
+      "authority": "Stadt Ennigerloh",
+      "city": "Ennigerloh",
+      "project_type": "sports_leisure",
+      "trades": [
+        "flooring",
+        "insulation",
+        "plastering",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/697725-2026"
+    },
+    {
+      "source_id": "TED-696039-2026",
+      "title": "Rohbauarbeiten für Fahrzeugdach",
+      "authority": "Vergabestelle Landeshauptstadt Stuttgart",
+      "city": "Stuttgart, Burgholzstr. 41",
+      "project_type": "civil_engineering",
+      "trades": [
+        "roof",
+        "structural",
+        "demolition",
+        "earthworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/696039-2026"
+    },
     {
       "source_id": "TED-693291-2026",
       "title": "452 - Generalsanierung der Johannes-Hirspeck-Mittelschule in Pfarrkirchen - Gewerk 6000-001 Außenanlagen",
@@ -265,23 +401,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/695524-2026"
     },
     {
-      "source_id": "TED-696039-2026",
-      "title": "Rohbauarbeiten für Fahrzeugdach",
-      "authority": "Vergabestelle Landeshauptstadt Stuttgart",
-      "city": "Stuttgart, Burgholzstr. 41",
-      "project_type": "civil_engineering",
-      "trades": [
-        "roof",
-        "structural",
-        "demolition",
-        "earthworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/696039-2026"
-    },
-    {
       "source_id": "TED-694597-2026",
       "title": "Rahmenvertrag Bauunterhaltsleistungen nach STLB",
       "authority": "Universitätsklinikum Köln AöR",
@@ -302,43 +421,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/694597-2026"
     },
     {
-      "source_id": "TED-693757-2026",
-      "title": "Außenanlagen - Haupteingang und Eingrünung",
-      "authority": "Landkreis Rottal-Inn",
-      "city": "Pfarrkirchen",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "structural",
-        "windows_doors"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/693757-2026"
-    },
-    {
-      "source_id": "TED-694722-2026",
-      "title": "Umleiter Lübeck-Büchen - Bahnsteigverlängerung Bahnhof Mölln und Ratzeburg, Str. 1121",
-      "authority": "DB Station&Service AG (Bukr 11)",
-      "city": "Lübeck",
-      "project_type": "rail",
-      "trades": [
-        "railworks",
-        "earthworks",
-        "roof",
-        "structural",
-        "electrical",
-        "plumbing",
-        "finishing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/694722-2026"
-    },
-    {
       "source_id": "TED-696440-2026",
       "title": "SEP GS Gerberstraße - Sanitär VE 05",
       "authority": "Stadt Solingen",
@@ -354,93 +436,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/696440-2026"
-    },
-    {
-      "source_id": "TED-690140-2026",
-      "title": "TEIL 1 - Straßen-, Tief- und Landschaftsbauarbeiten, TEIL 2 - Fugenpflege Natursteinpflaster - Theaterplatz und Theaterstraße bis zur Borngasse (ISK)",
-      "authority": "Stadt Aachen - Zentrale Vergabestelle FB60/300",
-      "city": "Aachen",
-      "project_type": "road",
-      "trades": [
-        "flooring",
-        "landscaping",
-        "roadworks",
-        "earthworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/690140-2026"
-    },
-    {
-      "source_id": "TED-691682-2026",
-      "title": "Berliner Brücke (Teichstr.) - Gleiserneuerung, Brückensanierung und Integration von Radverkehrsanlagen",
-      "authority": "Vergabestelle: Städtische Werke Netz + Service GmbH, Auftraggeber: Gleisbauarbeiten (Titel 1 anteilig und Titel 3 des LV) Kasseler Verkehrs-Gesellschaft AG, Königstor 3-13, 34117 Kassel, Brückensanierung und Integration von Radverkehrsanlagen (Titel 1 anteilig, Titel 2 und Tiel 4 des LV), Magistrat der Stadt Kassel, Straßenverkehrsamt- und Tiefbauamt, Obere Königsstraße 8, 34117 Kassel",
-      "city": "Kassel",
-      "project_type": "road",
-      "trades": [
-        "structural",
-        "roadworks",
-        "railworks",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/691682-2026"
-    },
-    {
-      "source_id": "TED-687844-2026",
-      "title": "Verbinder Halle 8 VE 02 Fassade",
-      "authority": "Messe Berlin GmbH",
-      "city": "Berlin",
-      "project_type": "industrial",
-      "trades": [
-        "facade",
-        "painting",
-        "insulation",
-        "windows_doors",
-        "finishing",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/687844-2026"
-    },
-    {
-      "source_id": "TED-685765-2026",
-      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
-      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
-      "city": "Köln",
-      "project_type": "university_research",
-      "trades": [
-        "drywall",
-        "insulation",
-        "structural",
-        "flooring"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/685765-2026"
-    },
-    {
-      "source_id": "TED-686493-2026",
-      "title": "Kreuzungsfreier Ausbau Frankenschnellweg, Abschnitt West: Bauleistungen, Straßen- & Ingenieurbau",
-      "authority": "Stadt Nürnberg - Servicebetrieb Öffentlicher Raum",
-      "city": "Nürnberg",
-      "project_type": "road",
-      "trades": [
-        "roadworks",
-        "demolition",
-        "earthworks",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/686493-2026"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "active_early_signals": 60,
   "active_master_projects": 60,
   "historical_signals": 3,
-  "qualified_procurement_records": 3138,
+  "qualified_procurement_records": 3149,
   "archived_confirmed_notices": 5,
   "links": [
     {
@@ -296,6 +296,54 @@
     },
     {
       "version": "2026-10-06-identity-v1",
+      "status": "candidate",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "grützmühlenweg"
+        ],
+        "same_authority": false
+      },
+      "blockers": [],
+      "source_ids": [
+        "EARLY-HH-SCHULBAU-20260818-04",
+        "TED-697874-2026"
+      ],
+      "publication_interval_days": 52,
+      "interval_endpoint": "tender",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "master_project_id": "PRJ-4DD0C805C5",
+      "retrospective": false
+    },
+    {
+      "version": "2026-10-06-identity-v1",
+      "status": "candidate",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "grützmühlenweg"
+        ],
+        "same_authority": false
+      },
+      "blockers": [],
+      "source_ids": [
+        "EARLY-HH-SCHULBAU-20260818-04",
+        "TED-698218-2026"
+      ],
+      "publication_interval_days": 52,
+      "interval_endpoint": "tender",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "master_project_id": "PRJ-4DD0C805C5",
+      "retrospective": false
+    },
+    {
+      "version": "2026-10-06-identity-v1",
       "status": "confirmed",
       "evidence": {
         "same_city": true,
@@ -496,9 +544,9 @@
     }
   ],
   "confirmed_notice_links": 5,
-  "confirmed_current_notice_links": 5,
+  "confirmed_current_notice_links": 4,
   "confirmed_project_cases": 1,
-  "candidate_notice_links": 13,
+  "candidate_notice_links": 15,
   "live_observed_lead_days": [],
   "observed_lead_note": "Tracked observation to this notice; not necessarily the project's first tender.",
   "note": "Retrospective source dates do not demonstrate prospective BauRadar lead or first tender."

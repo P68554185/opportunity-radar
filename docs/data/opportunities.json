@@ -3,9 +3,515 @@
   "live_records": 10000,
   "enriched_records": 10000,
   "duplicate_source_records": 0,
-  "classified_opportunities": 9677,
+  "classified_opportunities": 9674,
   "lifecycle_candidates": 0,
   "opportunities": [
+    {
+      "source_id": "TED-698359-2026",
+      "notice_id": "698359-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/698359-2026",
+      "published": "2026-10-09+02:00",
+      "title": "Trockenbauarbeiten / Ersatzneubau Hallenbad Ennigerloh",
+      "description": "Trockenbauarbeiten / Ersatzneubau Hallenbad Ennigerloh Stadt Ennigerloh ['DEA38', 'DEU', 'DEA38', 'DEU']",
+      "authority": "Stadt Ennigerloh",
+      "city": "Ennigerloh",
+      "region": "",
+      "country": "DEU",
+      "project_type": "sports_leisure",
+      "trades": [
+        "drywall",
+        "windows_doors",
+        "insulation",
+        "flooring"
+      ],
+      "cpv": [
+        "45212212",
+        "45421146",
+        "45324000",
+        "45432210",
+        "45422000",
+        "45212212",
+        "45212212",
+        "45421146",
+        "45324000",
+        "45432210",
+        "45422000",
+        "45212212"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "drywall"
+        ],
+        "trade_cpv": [
+          "windows_doors",
+          "insulation",
+          "flooring"
+        ],
+        "construction_cpv": [
+          "45212212",
+          "45421146",
+          "45324000",
+          "45432210",
+          "45422000",
+          "45212212",
+          "45212212",
+          "45421146",
+          "45324000",
+          "45432210",
+          "45422000",
+          "45212212"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-700186-2026",
+      "notice_id": "700186-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/700186-2026",
+      "published": "2026-10-09+02:00",
+      "title": "Stadt Penkun - Bauhauptgewerk zum 2.BA Regionale Schule / Umstrukturierung 3-Ländereck-Gemeinschaftsschule",
+      "description": "Stadt Penkun - Bauhauptgewerk zum 2.BA Regionale Schule / Umstrukturierung 3-Ländereck-Gemeinschaftsschule Stadt Penkun über Amt Löcknitz-Penkun ['DE80N', 'DEU', 'DE80N', 'DEU']",
+      "authority": "Stadt Penkun über Amt Löcknitz-Penkun",
+      "city": "Penkun",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "demolition",
+        "flooring",
+        "painting",
+        "structural"
+      ],
+      "cpv": [
+        "45210000",
+        "45000000",
+        "45110000",
+        "45431100",
+        "45443000",
+        "45000000",
+        "45110000",
+        "45262500",
+        "45223820",
+        "45443000"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "demolition",
+          "flooring",
+          "painting",
+          "structural"
+        ],
+        "construction_cpv": [
+          "45210000",
+          "45000000",
+          "45110000",
+          "45431100",
+          "45443000",
+          "45000000",
+          "45110000",
+          "45262500",
+          "45223820",
+          "45443000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-697045-2026",
+      "notice_id": "697045-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/697045-2026",
+      "published": "2026-10-09+02:00",
+      "title": "Grundschule Obernkirchen - Erweiterter Holzbau BA 1",
+      "description": "Grundschule Obernkirchen - Erweiterter Holzbau BA 1 Landkreis Schaumburg - Vergabestelle ['DE928', 'DEU', 'DE928', 'DEU']",
+      "authority": "Landkreis Schaumburg - Vergabestelle",
+      "city": "Obernkirchen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "structural",
+        "windows_doors",
+        "insulation",
+        "painting"
+      ],
+      "cpv": [
+        "45422100",
+        "45212190",
+        "45320000",
+        "45421132",
+        "45443000",
+        "45422100",
+        "45212190",
+        "45320000",
+        "45421132",
+        "45443000"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "structural"
+        ],
+        "trade_cpv": [
+          "windows_doors",
+          "insulation",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45422100",
+          "45212190",
+          "45320000",
+          "45421132",
+          "45443000",
+          "45422100",
+          "45212190",
+          "45320000",
+          "45421132",
+          "45443000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-700056-2026",
+      "notice_id": "700056-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/700056-2026",
+      "published": "2026-10-09+02:00",
+      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
+      "description": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten Bau- und Liegenschaftsbetrieb NRW Köln ['DEA23', 'DEU', 'DEA23', 'DEU']",
+      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
+      "city": "Köln",
+      "region": "",
+      "country": "DEU",
+      "project_type": "university_research",
+      "trades": [
+        "drywall",
+        "insulation",
+        "structural",
+        "flooring"
+      ],
+      "cpv": [
+        "45324000",
+        "45262311",
+        "45262670",
+        "45432210",
+        "45324000",
+        "45262311",
+        "45262670",
+        "45432210"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "drywall"
+        ],
+        "trade_cpv": [
+          "insulation",
+          "structural",
+          "flooring"
+        ],
+        "construction_cpv": [
+          "45324000",
+          "45262311",
+          "45262670",
+          "45432210",
+          "45324000",
+          "45262311",
+          "45262670",
+          "45432210"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-697204-2026",
+      "notice_id": "697204-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/697204-2026",
+      "published": "2026-10-09+02:00",
+      "title": "Neubau Realschule Geisenfeld mit Sporthalle und Mensa; VE33401 Fassadenelemente BA4",
+      "description": "Neubau Realschule Geisenfeld mit Sporthalle und Mensa; VE33401 Fassadenelemente BA4 Landratsamt Pfaffenhofen ['DE21J', 'DEU', 'DE21J', 'DEU']",
+      "authority": "Landratsamt Pfaffenhofen",
+      "city": "Geisenfeld",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "facade",
+        "painting",
+        "structural",
+        "windows_doors"
+      ],
+      "cpv": [
+        "45443000",
+        "45262670",
+        "45441000",
+        "45421132",
+        "45210000",
+        "45400000",
+        "45443000",
+        "45262670",
+        "45441000",
+        "45421132",
+        "45210000",
+        "45400000"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "facade"
+        ],
+        "trade_cpv": [
+          "painting",
+          "structural",
+          "windows_doors"
+        ],
+        "construction_cpv": [
+          "45443000",
+          "45262670",
+          "45441000",
+          "45421132",
+          "45210000",
+          "45400000",
+          "45443000",
+          "45262670",
+          "45441000",
+          "45421132",
+          "45210000",
+          "45400000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-699494-2026",
+      "notice_id": "699494-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/699494-2026",
+      "published": "2026-10-09+02:00",
+      "title": "Neubau des Rathauses in Straelen - Fenster- und Fassadenarbeiten",
+      "description": "Neubau des Rathauses in Straelen - Fenster- und Fassadenarbeiten Stadt Straelen ['DEA1B', 'DEU', 'DEA1B', 'DEU']",
+      "authority": "Stadt Straelen",
+      "city": "Straelen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "administration",
+      "trades": [
+        "windows_doors",
+        "facade",
+        "structural",
+        "painting"
+      ],
+      "cpv": [
+        "45421130",
+        "45262670",
+        "45443000",
+        "45421130",
+        "45262670",
+        "45443000"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.85,
+      "confidence": 0.85,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "windows_doors",
+          "facade"
+        ],
+        "trade_cpv": [
+          "windows_doors",
+          "structural",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45421130",
+          "45262670",
+          "45443000",
+          "45421130",
+          "45262670",
+          "45443000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-697725-2026",
+      "notice_id": "697725-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/697725-2026",
+      "published": "2026-10-09+02:00",
+      "title": "Estrich-, Andichtungs-, Fliesen- und Innenputzarbeiten / Ersatzneubau Hallenbad Ennigerloh",
+      "description": "Estrich-, Andichtungs-, Fliesen- und Innenputzarbeiten / Ersatzneubau Hallenbad Ennigerloh Stadt Ennigerloh ['DEA38', 'DEU', 'DEA38', 'DEU']",
+      "authority": "Stadt Ennigerloh",
+      "city": "Ennigerloh",
+      "region": "",
+      "country": "DEU",
+      "project_type": "sports_leisure",
+      "trades": [
+        "flooring",
+        "insulation",
+        "plastering",
+        "structural"
+      ],
+      "cpv": [
+        "45212212",
+        "45320000",
+        "45410000",
+        "45262321",
+        "45431100",
+        "45431000",
+        "45431200",
+        "45212212",
+        "45320000",
+        "45410000",
+        "45262321",
+        "45431100",
+        "45431000",
+        "45431200"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.85,
+      "confidence": 0.85,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "flooring"
+        ],
+        "trade_cpv": [
+          "insulation",
+          "plastering",
+          "structural",
+          "flooring"
+        ],
+        "construction_cpv": [
+          "45212212",
+          "45320000",
+          "45410000",
+          "45262321",
+          "45431100",
+          "45431000",
+          "45431200",
+          "45212212",
+          "45320000",
+          "45410000",
+          "45262321",
+          "45431100",
+          "45431000",
+          "45431200"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-696039-2026",
+      "notice_id": "696039-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/696039-2026",
+      "published": "2026-10-08+02:00",
+      "title": "Rohbauarbeiten für Fahrzeugdach",
+      "description": "Rohbauarbeiten für Fahrzeugdach Vergabestelle Landeshauptstadt Stuttgart ['DE111', 'DEU', 'DE111', 'DEU']",
+      "authority": "Vergabestelle Landeshauptstadt Stuttgart",
+      "city": "Stuttgart, Burgholzstr. 41",
+      "region": "",
+      "country": "DEU",
+      "project_type": "civil_engineering",
+      "trades": [
+        "roof",
+        "structural",
+        "demolition",
+        "earthworks"
+      ],
+      "cpv": [
+        "45223220",
+        "45262311",
+        "45113000",
+        "45112000",
+        "45223220",
+        "45262311",
+        "45113000",
+        "45112000"
+      ],
+      "phase": "award",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
+      "band": "HOT",
+      "evidence": {
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "roof",
+          "structural"
+        ],
+        "trade_cpv": [
+          "structural",
+          "demolition",
+          "earthworks"
+        ],
+        "construction_cpv": [
+          "45223220",
+          "45262311",
+          "45113000",
+          "45112000",
+          "45223220",
+          "45262311",
+          "45113000",
+          "45112000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
     {
       "source_id": "TED-693291-2026",
       "notice_id": "693291-2026",
@@ -122,66 +628,6 @@
           "45311000",
           "45332200",
           "45422000"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-696039-2026",
-      "notice_id": "696039-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/696039-2026",
-      "published": "2026-10-08+02:00",
-      "title": "Rohbauarbeiten für Fahrzeugdach",
-      "description": "Rohbauarbeiten für Fahrzeugdach Vergabestelle Landeshauptstadt Stuttgart ['DE111', 'DEU', 'DE111', 'DEU']",
-      "authority": "Vergabestelle Landeshauptstadt Stuttgart",
-      "city": "Stuttgart, Burgholzstr. 41",
-      "region": "",
-      "country": "DEU",
-      "project_type": "civil_engineering",
-      "trades": [
-        "roof",
-        "structural",
-        "demolition",
-        "earthworks"
-      ],
-      "cpv": [
-        "45223220",
-        "45262311",
-        "45113000",
-        "45112000",
-        "45223220",
-        "45262311",
-        "45113000",
-        "45112000"
-      ],
-      "phase": "award",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.55,
-      "confidence": 0.55,
-      "band": "HOT",
-      "evidence": {
-        "project_text": false,
-        "project_cpv": true,
-        "trade_text": [
-          "roof",
-          "structural"
-        ],
-        "trade_cpv": [
-          "structural",
-          "demolition",
-          "earthworks"
-        ],
-        "construction_cpv": [
-          "45223220",
-          "45262311",
-          "45113000",
-          "45112000",
-          "45223220",
-          "45262311",
-          "45113000",
-          "45112000"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -780,6 +1226,78 @@
       }
     },
     {
+      "source_id": "TED-696440-2026",
+      "notice_id": "696440-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/696440-2026",
+      "published": "2026-10-08+02:00",
+      "title": "SEP GS Gerberstraße - Sanitär VE 05",
+      "description": "SEP GS Gerberstraße - Sanitär VE 05 Stadt Solingen ['DEA19', 'DEU', 'DEA19', 'DEU']",
+      "authority": "Stadt Solingen",
+      "city": "Solingen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "university_research",
+      "trades": [
+        "plumbing",
+        "insulation",
+        "hvac",
+        "fire_protection"
+      ],
+      "cpv": [
+        "45214210",
+        "45321000",
+        "45332200",
+        "45332300",
+        "45332400",
+        "45333000",
+        "45343100",
+        "45214210",
+        "45321000",
+        "45332200",
+        "45332300",
+        "45332400",
+        "45333000",
+        "45343100"
+      ],
+      "phase": "award",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
+      "band": "HOT",
+      "evidence": {
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "plumbing"
+        ],
+        "trade_cpv": [
+          "insulation",
+          "plumbing",
+          "hvac",
+          "fire_protection"
+        ],
+        "construction_cpv": [
+          "45214210",
+          "45321000",
+          "45332200",
+          "45332300",
+          "45332400",
+          "45333000",
+          "45343100",
+          "45214210",
+          "45321000",
+          "45332200",
+          "45332300",
+          "45332400",
+          "45333000",
+          "45343100"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
       "source_id": "TED-693757-2026",
       "notice_id": "693757-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/693757-2026",
@@ -935,78 +1453,6 @@
           "45453100",
           "45000000",
           "45000000"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-696440-2026",
-      "notice_id": "696440-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/696440-2026",
-      "published": "2026-10-08+02:00",
-      "title": "SEP GS Gerberstraße - Sanitär VE 05",
-      "description": "SEP GS Gerberstraße - Sanitär VE 05 Stadt Solingen ['DEA19', 'DEU', 'DEA19', 'DEU']",
-      "authority": "Stadt Solingen",
-      "city": "Solingen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "university_research",
-      "trades": [
-        "plumbing",
-        "insulation",
-        "hvac",
-        "fire_protection"
-      ],
-      "cpv": [
-        "45214210",
-        "45321000",
-        "45332200",
-        "45332300",
-        "45332400",
-        "45333000",
-        "45343100",
-        "45214210",
-        "45321000",
-        "45332200",
-        "45332300",
-        "45332400",
-        "45333000",
-        "45343100"
-      ],
-      "phase": "award",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.55,
-      "confidence": 0.55,
-      "band": "HOT",
-      "evidence": {
-        "project_text": false,
-        "project_cpv": true,
-        "trade_text": [
-          "plumbing"
-        ],
-        "trade_cpv": [
-          "insulation",
-          "plumbing",
-          "hvac",
-          "fire_protection"
-        ],
-        "construction_cpv": [
-          "45214210",
-          "45321000",
-          "45332200",
-          "45332300",
-          "45332400",
-          "45333000",
-          "45343100",
-          "45214210",
-          "45321000",
-          "45332200",
-          "45332300",
-          "45332400",
-          "45333000",
-          "45343100"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -1217,65 +1663,6 @@
       }
     },
     {
-      "source_id": "TED-685765-2026",
-      "notice_id": "685765-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/685765-2026",
-      "published": "2026-10-06+02:00",
-      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
-      "description": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten Bau- und Liegenschaftsbetrieb NRW Köln ['DEA23', 'DEU', 'DEA23', 'DEU']",
-      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
-      "city": "Köln",
-      "region": "",
-      "country": "DEU",
-      "project_type": "university_research",
-      "trades": [
-        "drywall",
-        "insulation",
-        "structural",
-        "flooring"
-      ],
-      "cpv": [
-        "45324000",
-        "45262311",
-        "45262670",
-        "45432210",
-        "45324000",
-        "45262311",
-        "45262670",
-        "45432210"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": false,
-        "trade_text": [
-          "drywall"
-        ],
-        "trade_cpv": [
-          "insulation",
-          "structural",
-          "flooring"
-        ],
-        "construction_cpv": [
-          "45324000",
-          "45262311",
-          "45262670",
-          "45432210",
-          "45324000",
-          "45262311",
-          "45262670",
-          "45432210"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
       "source_id": "TED-686493-2026",
       "notice_id": "686493-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/686493-2026",
@@ -1352,37 +1739,95 @@
       }
     },
     {
-      "source_id": "TED-684848-2026",
-      "notice_id": "684848-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026",
-      "published": "2026-10-05+02:00",
-      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
-      "description": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude Stadt Erlangen - Zentrale Vergabestelle ['DE252', 'DEU', 'DE252', 'DEU']",
-      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
-      "city": "Erlangen",
+      "source_id": "TED-685765-2026",
+      "notice_id": "685765-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/685765-2026",
+      "published": "2026-10-06+02:00",
+      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
+      "description": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten Bau- und Liegenschaftsbetrieb NRW Köln ['DEA23', 'DEU', 'DEA23', 'DEU']",
+      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
+      "city": "Köln",
       "region": "",
       "country": "DEU",
-      "project_type": "school",
+      "project_type": "university_research",
       "trades": [
-        "flooring",
-        "windows_doors",
-        "electrical",
-        "earthworks"
+        "drywall",
+        "insulation",
+        "structural",
+        "flooring"
       ],
       "cpv": [
-        "45214210",
-        "45214000",
-        "45214210",
-        "45431000",
-        "45421131",
-        "45421000",
-        "45311000",
-        "45315300",
-        "45112700",
-        "39314000",
-        "39150000"
+        "45324000",
+        "45262311",
+        "45262670",
+        "45432210",
+        "45324000",
+        "45262311",
+        "45262670",
+        "45432210"
       ],
-      "phase": "prior_information",
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "drywall"
+        ],
+        "trade_cpv": [
+          "insulation",
+          "structural",
+          "flooring"
+        ],
+        "construction_cpv": [
+          "45324000",
+          "45262311",
+          "45262670",
+          "45432210",
+          "45324000",
+          "45262311",
+          "45262670",
+          "45432210"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-683855-2026",
+      "notice_id": "683855-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026",
+      "published": "2026-10-05+02:00",
+      "title": "Freianlagen Sem I und Infra",
+      "description": "Freianlagen Sem I und Infra Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe ['DE721', 'DEU', 'DE721', 'DEU']",
+      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+      "city": "Gießen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "demolition",
+        "roadworks"
+      ],
+      "cpv": [
+        "45112700",
+        "31527200",
+        "45111000",
+        "45233120",
+        "45232452",
+        "45112700",
+        "31527200",
+        "45111000",
+        "45233120",
+        "45232452"
+      ],
+      "phase": "tender",
       "score": 100,
       "opportunity_score": 100,
       "classification_confidence": 0.75,
@@ -1391,23 +1836,23 @@
       "evidence": {
         "project_text": true,
         "project_cpv": true,
-        "trade_text": [],
+        "trade_text": [
+          "landscaping"
+        ],
         "trade_cpv": [
-          "flooring",
-          "windows_doors",
-          "electrical",
-          "earthworks"
+          "earthworks",
+          "demolition",
+          "roadworks"
         ],
         "construction_cpv": [
-          "45214210",
-          "45214000",
-          "45214210",
-          "45431000",
-          "45421131",
-          "45421000",
-          "45311000",
-          "45315300",
-          "45112700"
+          "45112700",
+          "45111000",
+          "45233120",
+          "45232452",
+          "45112700",
+          "45111000",
+          "45233120",
+          "45232452"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -1486,6 +1931,68 @@
       }
     },
     {
+      "source_id": "TED-684848-2026",
+      "notice_id": "684848-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/684848-2026",
+      "published": "2026-10-05+02:00",
+      "title": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude",
+      "description": "Michael-Poeschke-Grundschule, Neubau Hort- und Mensagebäude Stadt Erlangen - Zentrale Vergabestelle ['DE252', 'DEU', 'DE252', 'DEU']",
+      "authority": "Stadt Erlangen - Zentrale Vergabestelle",
+      "city": "Erlangen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "flooring",
+        "windows_doors",
+        "electrical",
+        "earthworks"
+      ],
+      "cpv": [
+        "45214210",
+        "45214000",
+        "45214210",
+        "45431000",
+        "45421131",
+        "45421000",
+        "45311000",
+        "45315300",
+        "45112700",
+        "39314000",
+        "39150000"
+      ],
+      "phase": "prior_information",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "flooring",
+          "windows_doors",
+          "electrical",
+          "earthworks"
+        ],
+        "construction_cpv": [
+          "45214210",
+          "45214000",
+          "45214210",
+          "45431000",
+          "45421131",
+          "45421000",
+          "45311000",
+          "45315300",
+          "45112700"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
       "source_id": "TED-684925-2026",
       "notice_id": "684925-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/684925-2026",
@@ -1546,67 +2053,6 @@
           "45332400",
           "45343000",
           "45213000"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-683855-2026",
-      "notice_id": "683855-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/683855-2026",
-      "published": "2026-10-05+02:00",
-      "title": "Freianlagen Sem I und Infra",
-      "description": "Freianlagen Sem I und Infra Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe ['DE721', 'DEU', 'DE721', 'DEU']",
-      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
-      "city": "Gießen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "demolition",
-        "roadworks"
-      ],
-      "cpv": [
-        "45112700",
-        "31527200",
-        "45111000",
-        "45233120",
-        "45232452",
-        "45112700",
-        "31527200",
-        "45111000",
-        "45233120",
-        "45232452"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": true,
-        "trade_text": [
-          "landscaping"
-        ],
-        "trade_cpv": [
-          "earthworks",
-          "demolition",
-          "roadworks"
-        ],
-        "construction_cpv": [
-          "45112700",
-          "45111000",
-          "45233120",
-          "45232452",
-          "45112700",
-          "45111000",
-          "45233120",
-          "45232452"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -1687,6 +2133,69 @@
       }
     },
     {
+      "source_id": "TED-679848-2026",
+      "notice_id": "679848-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/679848-2026",
+      "published": "2026-10-02+02:00",
+      "title": "Gymnasium Füssen - Estricharbeiten BA 1-2",
+      "description": "Gymnasium Füssen - Estricharbeiten BA 1-2 Landkreis Ostallgäu ['DE27B', 'DEU', 'DE27B', 'DEU']",
+      "authority": "Landkreis Ostallgäu",
+      "city": "Füssen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "flooring",
+        "structural",
+        "insulation",
+        "roof"
+      ],
+      "cpv": [
+        "45262321",
+        "45262320",
+        "45321000",
+        "45323000",
+        "45261420",
+        "45262321",
+        "45262320",
+        "45321000",
+        "45323000",
+        "45261420"
+      ],
+      "phase": "award",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "flooring"
+        ],
+        "trade_cpv": [
+          "structural",
+          "insulation",
+          "roof"
+        ],
+        "construction_cpv": [
+          "45262321",
+          "45262320",
+          "45321000",
+          "45323000",
+          "45261420",
+          "45262321",
+          "45262320",
+          "45321000",
+          "45323000",
+          "45261420"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
       "source_id": "TED-680734-2026",
       "notice_id": "680734-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/680734-2026",
@@ -1747,69 +2256,6 @@
           "45221112",
           "45234116",
           "45262310"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-679848-2026",
-      "notice_id": "679848-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/679848-2026",
-      "published": "2026-10-02+02:00",
-      "title": "Gymnasium Füssen - Estricharbeiten BA 1-2",
-      "description": "Gymnasium Füssen - Estricharbeiten BA 1-2 Landkreis Ostallgäu ['DE27B', 'DEU', 'DE27B', 'DEU']",
-      "authority": "Landkreis Ostallgäu",
-      "city": "Füssen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "flooring",
-        "structural",
-        "insulation",
-        "roof"
-      ],
-      "cpv": [
-        "45262321",
-        "45262320",
-        "45321000",
-        "45323000",
-        "45261420",
-        "45262321",
-        "45262320",
-        "45321000",
-        "45323000",
-        "45261420"
-      ],
-      "phase": "award",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": false,
-        "trade_text": [
-          "flooring"
-        ],
-        "trade_cpv": [
-          "structural",
-          "insulation",
-          "roof"
-        ],
-        "construction_cpv": [
-          "45262321",
-          "45262320",
-          "45321000",
-          "45323000",
-          "45261420",
-          "45262321",
-          "45262320",
-          "45321000",
-          "45323000",
-          "45261420"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -4141,548 +4587,6 @@
           "45234116",
           "45234140",
           "45262310"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-644875-2026",
-      "notice_id": "644875-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/644875-2026",
-      "published": "2026-09-18+02:00",
-      "title": "Wärmedämmverbundsystem und Putzarbeiten, Max-Weber-Schule",
-      "description": "Wärmedämmverbundsystem und Putzarbeiten, Max-Weber-Schule Stadt Freiburg i. Br. - Vergabemanagement ['DE131', 'DEU', 'DE131', 'DEU']",
-      "authority": "Stadt Freiburg i. Br. - Vergabemanagement",
-      "city": "Freiburg",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "insulation",
-        "facade",
-        "plastering",
-        "painting"
-      ],
-      "cpv": [
-        "45321000",
-        "45410000",
-        "45442100",
-        "45321000",
-        "45410000",
-        "45442100"
-      ],
-      "phase": "award",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.85,
-      "confidence": 0.85,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": false,
-        "trade_text": [
-          "insulation",
-          "facade"
-        ],
-        "trade_cpv": [
-          "insulation",
-          "plastering",
-          "painting"
-        ],
-        "construction_cpv": [
-          "45321000",
-          "45410000",
-          "45442100",
-          "45321000",
-          "45410000",
-          "45442100"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-645164-2026",
-      "notice_id": "645164-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/645164-2026",
-      "published": "2026-09-18+02:00",
-      "title": "VE10 Freianlagen inkl. Rückbau Baustraße",
-      "description": "VE10 Freianlagen inkl. Rückbau Baustraße Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen, V M 1 - Vergabestelle für den Öffentlichen Hochbau ['DE300', 'DEU', 'DE300', 'DEU']",
-      "authority": "Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen, V M 1 - Vergabestelle für den Öffentlichen Hochbau",
-      "city": "Berlin",
-      "region": "",
-      "country": "DEU",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "demolition",
-        "structural",
-        "earthworks"
-      ],
-      "cpv": [
-        "45000000",
-        "45262511",
-        "45112700",
-        "45000000",
-        "45112700",
-        "45262511"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": false,
-        "trade_text": [
-          "landscaping",
-          "demolition"
-        ],
-        "trade_cpv": [
-          "structural",
-          "earthworks"
-        ],
-        "construction_cpv": [
-          "45000000",
-          "45262511",
-          "45112700",
-          "45000000",
-          "45112700",
-          "45262511"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-645399-2026",
-      "notice_id": "645399-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/645399-2026",
-      "published": "2026-09-18+02:00",
-      "title": "B009 ,bei Oberwesel, Ausbau",
-      "description": "B009 ,bei Oberwesel, Ausbau LBM Bad Kreuznach ['DEB1D', 'DEU', 'DEB1D', 'DEB1D', 'DEU', 'DEU']",
-      "authority": "LBM Bad Kreuznach",
-      "city": "B9 bei Oberwesel/ Rhein (PLZ 55430)",
-      "region": "",
-      "country": "DEU",
-      "project_type": "road",
-      "trades": [
-        "roadworks",
-        "earthworks",
-        "demolition",
-        "fencing"
-      ],
-      "cpv": [
-        "45233124",
-        "45000000",
-        "45112400",
-        "45112500",
-        "45113000",
-        "45221230",
-        "45223200",
-        "45233120",
-        "45233130",
-        "45233161",
-        "45233210",
-        "45233221",
-        "45233222",
-        "45233250",
-        "45233251",
-        "45233252",
-        "45233253",
-        "45233260",
-        "45233290",
-        "45340000",
-        "45341000",
-        "63712700",
-        "45233124",
-        "45233124",
-        "45000000",
-        "45112400",
-        "45112500",
-        "45113000",
-        "45221230",
-        "45223200",
-        "45233120",
-        "45233130",
-        "45233161",
-        "45233210",
-        "45233221",
-        "45233222",
-        "45233250",
-        "45233251",
-        "45233252",
-        "45233253",
-        "45233260",
-        "45233290",
-        "45340000",
-        "45341000",
-        "63712700",
-        "45000000",
-        "45112400",
-        "45112500",
-        "45113000",
-        "45221230",
-        "45223200",
-        "45233120",
-        "45233130",
-        "45233161",
-        "45233210",
-        "45233221",
-        "45233222",
-        "45233250",
-        "45233251",
-        "45233252",
-        "45233253",
-        "45233260",
-        "45233290",
-        "45340000",
-        "45341000",
-        "63712700"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.55,
-      "confidence": 0.55,
-      "band": "HOT",
-      "evidence": {
-        "project_text": false,
-        "project_cpv": true,
-        "trade_text": [],
-        "trade_cpv": [
-          "roadworks",
-          "earthworks",
-          "demolition",
-          "fencing"
-        ],
-        "construction_cpv": [
-          "45233124",
-          "45000000",
-          "45112400",
-          "45112500",
-          "45113000",
-          "45221230",
-          "45223200",
-          "45233120",
-          "45233130",
-          "45233161",
-          "45233210",
-          "45233221",
-          "45233222",
-          "45233250",
-          "45233251",
-          "45233252",
-          "45233253",
-          "45233260",
-          "45233290",
-          "45340000",
-          "45341000",
-          "45233124",
-          "45233124",
-          "45000000",
-          "45112400",
-          "45112500",
-          "45113000",
-          "45221230",
-          "45223200",
-          "45233120",
-          "45233130",
-          "45233161",
-          "45233210",
-          "45233221",
-          "45233222",
-          "45233250",
-          "45233251",
-          "45233252",
-          "45233253",
-          "45233260",
-          "45233290",
-          "45340000",
-          "45341000",
-          "45000000",
-          "45112400",
-          "45112500",
-          "45113000",
-          "45221230",
-          "45223200",
-          "45233120",
-          "45233130",
-          "45233161",
-          "45233210",
-          "45233221",
-          "45233222",
-          "45233250",
-          "45233251",
-          "45233252",
-          "45233253",
-          "45233260",
-          "45233290",
-          "45340000",
-          "45341000"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-644464-2026",
-      "notice_id": "644464-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/644464-2026",
-      "published": "2026-09-18+02:00",
-      "title": "Abbruch-, Erd- und Kanalbauarbeiten im Projekt ZISSAU, 2. Baufenster",
-      "description": "Abbruch-, Erd- und Kanalbauarbeiten im Projekt ZISSAU, 2. Baufenster Landwirtschaftskammer Nordrhein-Westfalen ['DEA5B', 'DEU', 'DEA5B', 'DEU']",
-      "authority": "Landwirtschaftskammer Nordrhein-Westfalen",
-      "city": "Bad Sassendorf",
-      "region": "",
-      "country": "DEU",
-      "project_type": "water_wastewater",
-      "trades": [
-        "windows_doors",
-        "demolition",
-        "sewer_pipe",
-        "earthworks"
-      ],
-      "cpv": [
-        "45110000",
-        "45112000",
-        "45232000",
-        "45232454",
-        "45247112",
-        "45110000",
-        "45112000",
-        "45232000",
-        "45232454",
-        "45247112"
-      ],
-      "phase": "award",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.85,
-      "confidence": 0.85,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": true,
-        "trade_text": [
-          "windows_doors",
-          "demolition",
-          "sewer_pipe"
-        ],
-        "trade_cpv": [
-          "demolition",
-          "earthworks"
-        ],
-        "construction_cpv": [
-          "45110000",
-          "45112000",
-          "45232000",
-          "45232454",
-          "45247112",
-          "45110000",
-          "45112000",
-          "45232000",
-          "45232454",
-          "45247112"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-643255-2026",
-      "notice_id": "643255-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/643255-2026",
-      "published": "2026-09-18+02:00",
-      "title": "Malerarbeiten",
-      "description": "Malerarbeiten Staatliches Bauamt München 2 ['DE212', 'DEU', 'DE212', 'DEU']",
-      "authority": "Staatliches Bauamt München 2",
-      "city": "München, Ismaninger Str. 22",
-      "region": "",
-      "country": "DEU",
-      "project_type": "road",
-      "trades": [
-        "painting",
-        "flooring",
-        "roadworks",
-        "plastering"
-      ],
-      "cpv": [
-        "45442110",
-        "45442100",
-        "45442180",
-        "45442300",
-        "45432130",
-        "45233228",
-        "45410000",
-        "45442110",
-        "45442100",
-        "45442180",
-        "45442000",
-        "45442300",
-        "45432130",
-        "45233228",
-        "45410000"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.55,
-      "confidence": 0.55,
-      "band": "HOT",
-      "evidence": {
-        "project_text": false,
-        "project_cpv": true,
-        "trade_text": [
-          "painting"
-        ],
-        "trade_cpv": [
-          "painting",
-          "flooring",
-          "roadworks",
-          "plastering"
-        ],
-        "construction_cpv": [
-          "45442110",
-          "45442100",
-          "45442180",
-          "45442300",
-          "45432130",
-          "45233228",
-          "45410000",
-          "45442110",
-          "45442100",
-          "45442180",
-          "45442000",
-          "45442300",
-          "45432130",
-          "45233228",
-          "45410000"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-644677-2026",
-      "notice_id": "644677-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/644677-2026",
-      "published": "2026-09-18+02:00",
-      "title": "Freiherr-vom-Stein-Gymnasium, Ringstraße 69, 32257 Bünde; Erweiterung, Faserzementfassade",
-      "description": "Freiherr-vom-Stein-Gymnasium, Ringstraße 69, 32257 Bünde; Erweiterung, Faserzementfassade Kommunalbetriebe Bünde - Anstalt des öffentlichen Rechts (AöR) - Gebäudemanagement ['DEA43', 'DEU', 'DEA43', 'DEU']",
-      "authority": "Kommunalbetriebe Bünde - Anstalt des öffentlichen Rechts (AöR) - Gebäudemanagement",
-      "city": "Bünde",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "facade",
-        "painting",
-        "insulation",
-        "structural"
-      ],
-      "cpv": [
-        "45443000",
-        "45321000",
-        "45262670",
-        "45262650",
-        "45443000",
-        "45321000",
-        "45262670",
-        "45262650"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": false,
-        "trade_text": [
-          "facade"
-        ],
-        "trade_cpv": [
-          "painting",
-          "insulation",
-          "structural"
-        ],
-        "construction_cpv": [
-          "45443000",
-          "45321000",
-          "45262670",
-          "45262650",
-          "45443000",
-          "45321000",
-          "45262670",
-          "45262650"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-640424-2026",
-      "notice_id": "640424-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/640424-2026",
-      "published": "2026-09-17+02:00",
-      "title": "Wiederherstellung des Kurparks Bad Neuenahr-Ahrweiler: Landschaftsbauarbeiten",
-      "description": "Wiederherstellung des Kurparks Bad Neuenahr-Ahrweiler: Landschaftsbauarbeiten Ahrtal Marketing GmbH ['DEB12', 'DEU', 'DEB12', 'DEU']",
-      "authority": "Ahrtal Marketing GmbH",
-      "city": "Bad Neuenahr-Ahrweiler",
-      "region": "",
-      "country": "DEU",
-      "project_type": "road",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "roadworks",
-        "structural"
-      ],
-      "cpv": [
-        "45112712",
-        "45233222",
-        "45240000",
-        "45262650",
-        "45112711",
-        "45112712",
-        "45233222",
-        "45240000",
-        "45262650",
-        "45112711"
-      ],
-      "phase": "award",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.55,
-      "confidence": 0.55,
-      "band": "HOT",
-      "evidence": {
-        "project_text": false,
-        "project_cpv": true,
-        "trade_text": [
-          "landscaping"
-        ],
-        "trade_cpv": [
-          "earthworks",
-          "roadworks",
-          "structural"
-        ],
-        "construction_cpv": [
-          "45112712",
-          "45233222",
-          "45240000",
-          "45262650",
-          "45112711",
-          "45112712",
-          "45233222",
-          "45240000",
-          "45262650",
-          "45112711"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
