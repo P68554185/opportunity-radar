@@ -1,60 +1,60 @@
 {
-  "observed_at": "2026-10-09T05:26:18.610131+00:00",
+  "observed_at": "2026-10-10T05:24:07.822149+00:00",
   "sources": [
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
-      "content_sha256": "71ac0846f94b4adfbd4493303e5a3c7c19d7bcbb6cba9407226187b5b21f5e7d",
+      "content_sha256": "739e3154c31f5465205c8f77e57172fd07bb5d29392087a853bc3f0cb057c468",
       "records": 13
     },
     {
       "source_url": "https://hibb.hamburg.de/2026/08/18/planungsdaten-fuer-das-neue-schuljahr-2026-27/",
       "status": "verified",
       "verified_from": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bsfb/weiterhin-erhebliche-investitionen-im-schulbau-1210668",
-      "content_sha256": "7b88c895a4dd293527dd61e9d29bd55f17316240da28d37b85bfe430a94fcd4b",
+      "content_sha256": "404642b0e4cb88e1464f3f10d0eaa02a41bdc75c153a088c0beca91421355119",
       "records": 6
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26254/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26254/",
-      "content_sha256": "83fa3f3285c04937e3a19ecba15a81d78d534c7937e3bd6ada3f3259bcdb4bbe",
+      "content_sha256": "3c90aaf677b96a5561b3648a46b41dde49aac92f81ecbc92e431f55ee9e6f963",
       "records": 27
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26282/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26282/",
-      "content_sha256": "e90864ccc0cff0f4f21818046049014fdb877931bf076d9baf01267c471e7a78",
+      "content_sha256": "42aa4a63c593f9e32c54a29a843f41abccbc9fde4d7e60adb60e55d482028124",
       "records": 2
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26283/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26283/",
-      "content_sha256": "3fb8daa2c36e172bc62039382f7afe98ce98150801081d96e08600de84e50163",
+      "content_sha256": "4c6f54370bb3283df2a28dd1fdf3a5a2594590332938b92a2426b438e4bdf908",
       "records": 1
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26298/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26298/",
-      "content_sha256": "53a6ab1093791a2b074e74d67b8d4253921e6618d8fabe2863f5c945fbb89505",
+      "content_sha256": "78ba9d0c9542cd282fa9450e09b7e752d9105733f3646d458e5290694f20f8ed",
       "records": 2
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26297/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26297/",
-      "content_sha256": "e2bfa63d4a282e23555e557f283646f576775c1485295abb16b74fb5350eb49b",
+      "content_sha256": "05fc31e2ce7506c493a2a68eefacf05244b5dab3eb61625337c676fd0d7cb1dc",
       "records": 3
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26314/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26314/",
-      "content_sha256": "aff60c70051745bb8a65fee5c0f4c9eaa3acc37f699b85bf051506028d115759",
+      "content_sha256": "5a109a3169fadec8e43d633de2733fc2264e1a7896424f107bdde5afa231e928",
       "records": 2
     }
   ],
@@ -62,7 +62,7 @@
     {
       "source_url": "https://www.stmfh.bayern.de/aktuelles/pressemitteilungen/",
       "reason": "index_observation",
-      "links_seen": 626,
+      "links_seen": 628,
       "construction_headlines": 29,
       "sample_construction_links": [
         "/kommunaler_finanzausgleich/krankenhausfoerderung/",
