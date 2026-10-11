@@ -1,52 +1,52 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9675,
+  "classified_opportunities": 9677,
   "classification_rate_pct": 96.8,
   "bands": {
-    "UPCOMING": 5515,
-    "EARLY": 2488,
-    "HOT": 1672
+    "HOT": 1673,
+    "UPCOMING": 5531,
+    "EARLY": 2473
   },
   "project_types": [
     [
       "unclassified_project",
-      3566
+      3551
     ],
     [
       "school",
-      1467
+      1474
     ],
     [
       "rail",
-      805
+      801
     ],
     [
       "water_wastewater",
-      382
+      386
     ],
     [
       "bridge",
-      342
+      344
     ],
     [
       "industrial",
-      334
+      336
     ],
     [
       "civil_engineering",
-      328
+      326
     ],
     [
       "university_research",
       298
     ],
     [
-      "hospital",
-      272
+      "road",
+      276
     ],
     [
-      "road",
-      270
+      "hospital",
+      271
     ],
     [
       "sports_leisure",
@@ -54,15 +54,15 @@
     ],
     [
       "administration",
-      231
+      232
     ],
     [
       "kindergarten",
-      195
+      192
     ],
     [
       "fire_station",
-      191
+      190
     ],
     [
       "public_building",
@@ -74,7 +74,7 @@
     ],
     [
       "public_space",
-      119
+      121
     ],
     [
       "residential",
@@ -82,25 +82,25 @@
     ],
     [
       "care_social",
-      86
+      88
     ],
     [
       "infrastructure",
-      67
+      70
     ],
     [
       "commercial",
-      58
+      57
     ]
   ],
   "trades": [
     [
       "structural",
-      1712
+      1721
     ],
     [
       "electrical",
-      1416
+      1413
     ],
     [
       "windows_doors",
@@ -112,51 +112,51 @@
     ],
     [
       "earthworks",
-      857
+      868
     ],
     [
       "railworks",
-      794
+      790
     ],
     [
       "flooring",
-      693
+      682
     ],
     [
       "demolition",
-      657
+      656
     ],
     [
       "painting",
-      622
+      621
     ],
     [
       "roof",
-      542
+      544
     ],
     [
       "insulation",
-      476
+      474
     ],
     [
       "roadworks",
-      432
+      439
     ],
     [
       "plumbing",
-      404
+      406
     ],
     [
       "facade",
-      355
+      353
     ],
     [
       "landscaping",
-      313
+      312
     ],
     [
       "drywall",
-      296
+      293
     ],
     [
       "plastering",
@@ -168,23 +168,23 @@
     ],
     [
       "elevator",
-      128
+      129
     ],
     [
       "finishing",
-      86
-    ],
-    [
-      "solar_energy",
-      81
+      87
     ],
     [
       "sewer_pipe",
-      81
+      82
+    ],
+    [
+      "solar_energy",
+      78
     ],
     [
       "fencing",
-      69
+      72
     ],
     [
       "building_services",
@@ -195,39 +195,39 @@
     {
       "from": 50,
       "to": 59,
-      "count": 246
+      "count": 241
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2423
+      "count": 2413
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2362
+      "count": 2374
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4149
+      "count": 4154
     },
     {
       "from": 90,
       "to": 99,
-      "count": 354
+      "count": 353
     },
     {
       "from": 100,
       "to": 100,
-      "count": 141
+      "count": 142
     }
   ],
   "quality_flags": {
-    "project_type_only": 1098,
-    "trade_only": 3566,
-    "project_and_trade": 5011,
-    "opportunity_score_85_plus": 1672
+    "project_type_only": 1103,
+    "trade_only": 3551,
+    "project_and_trade": 5023,
+    "opportunity_score_85_plus": 1673
   },
   "sample_top": [
     {
@@ -265,23 +265,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/700186-2026"
     },
     {
-      "source_id": "TED-697045-2026",
-      "title": "Grundschule Obernkirchen - Erweiterter Holzbau BA 1",
-      "authority": "Landkreis Schaumburg - Vergabestelle",
-      "city": "Obernkirchen",
-      "project_type": "school",
-      "trades": [
-        "structural",
-        "windows_doors",
-        "insulation",
-        "painting"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/697045-2026"
-    },
-    {
       "source_id": "TED-700056-2026",
       "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
       "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
@@ -297,6 +280,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/700056-2026"
+    },
+    {
+      "source_id": "TED-697045-2026",
+      "title": "Grundschule Obernkirchen - Erweiterter Holzbau BA 1",
+      "authority": "Landkreis Schaumburg - Vergabestelle",
+      "city": "Obernkirchen",
+      "project_type": "school",
+      "trades": [
+        "structural",
+        "windows_doors",
+        "insulation",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/697045-2026"
     },
     {
       "source_id": "TED-699494-2026",
