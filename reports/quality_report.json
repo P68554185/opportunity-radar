@@ -1,68 +1,68 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9676,
-  "classification_rate_pct": 96.8,
+  "classified_opportunities": 9674,
+  "classification_rate_pct": 96.7,
   "bands": {
-    "HOT": 1668,
-    "EARLY": 2487,
-    "UPCOMING": 5521
+    "EARLY": 2477,
+    "HOT": 1675,
+    "UPCOMING": 5522
   },
   "project_types": [
     [
       "unclassified_project",
-      3574
+      3558
     ],
     [
       "school",
-      1470
+      1466
     ],
     [
       "rail",
-      803
+      809
     ],
     [
       "water_wastewater",
-      383
+      381
     ],
     [
       "bridge",
-      342
+      346
     ],
     [
       "industrial",
-      338
+      336
     ],
     [
       "civil_engineering",
-      323
+      333
     ],
     [
       "university_research",
-      297
+      298
     ],
     [
       "hospital",
-      276
+      282
     ],
     [
       "road",
-      267
+      272
     ],
     [
       "sports_leisure",
-      261
+      257
     ],
     [
       "administration",
-      231
+      229
     ],
     [
       "fire_station",
-      194
+      193
     ],
     [
       "kindergarten",
-      189
+      183
     ],
     [
       "public_building",
@@ -70,93 +70,93 @@
     ],
     [
       "energy",
-      139
+      135
     ],
     [
       "public_space",
-      118
+      121
     ],
     [
       "residential",
-      96
+      100
     ],
     [
       "care_social",
-      85
+      83
     ],
     [
       "infrastructure",
-      69
+      67
     ],
     [
       "commercial",
-      52
+      56
     ]
   ],
   "trades": [
     [
       "structural",
-      1692
+      1687
     ],
     [
       "electrical",
-      1438
+      1444
     ],
     [
       "windows_doors",
-      1349
+      1351
     ],
     [
       "hvac",
-      985
+      976
     ],
     [
       "earthworks",
-      861
+      851
     ],
     [
       "railworks",
-      788
+      791
     ],
     [
       "flooring",
-      704
+      693
     ],
     [
       "demolition",
-      655
+      659
     ],
     [
       "painting",
-      630
+      625
     ],
     [
       "roof",
-      524
+      520
     ],
     [
       "insulation",
-      476
+      472
     ],
     [
       "roadworks",
-      430
+      441
     ],
     [
       "plumbing",
-      408
+      407
     ],
     [
       "facade",
-      356
+      349
     ],
     [
       "landscaping",
-      317
+      314
     ],
     [
       "drywall",
-      294
+      297
     ],
     [
       "plastering",
@@ -164,27 +164,27 @@
     ],
     [
       "fire_protection",
-      192
+      194
     ],
     [
       "elevator",
-      134
+      129
     ],
     [
       "finishing",
-      87
+      84
     ],
     [
       "sewer_pipe",
-      81
+      82
     ],
     [
       "solar_energy",
-      81
+      80
     ],
     [
       "fencing",
-      69
+      73
     ],
     [
       "building_services",
@@ -195,17 +195,17 @@
     {
       "from": 50,
       "to": 59,
-      "count": 230
+      "count": 227
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2436
+      "count": 2430
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2359
+      "count": 2362
     },
     {
       "from": 80,
@@ -215,37 +215,37 @@
     {
       "from": 90,
       "to": 99,
-      "count": 353
+      "count": 361
     },
     {
       "from": 100,
       "to": 100,
-      "count": 142
+      "count": 138
     }
   ],
   "quality_flags": {
-    "project_type_only": 1081,
-    "trade_only": 3574,
-    "project_and_trade": 5021,
-    "opportunity_score_85_plus": 1668
+    "project_type_only": 1094,
+    "trade_only": 3558,
+    "project_and_trade": 5022,
+    "opportunity_score_85_plus": 1675
   },
   "sample_top": [
     {
-      "source_id": "TED-702057-2026",
-      "title": "Melanchthonschule, Erweiterungsneubau - Heizung-, Lüftungs-, Sanitärarbeiten & MSR-Technik",
-      "authority": "SBO Servicebetriebe Oberhausen - Eigenbetrieb der Stadt Oberhausen",
-      "city": "Oberhausen",
-      "project_type": "school",
+      "source_id": "TED-704016-2026",
+      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
+      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
+      "city": "Köln",
+      "project_type": "university_research",
       "trades": [
-        "hvac",
-        "plumbing",
-        "electrical",
-        "fire_protection"
+        "drywall",
+        "insulation",
+        "structural",
+        "flooring"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/702057-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/704016-2026"
     },
     {
       "source_id": "TED-701335-2026",
@@ -265,40 +265,21 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/701335-2026"
     },
     {
-      "source_id": "TED-702082-2026",
-      "title": "Komplexe Instandsetzung-Diverse Gewerke",
-      "authority": "HOWOGE Wohnungsbaugesellschaft mbH",
-      "city": "Berlin",
-      "project_type": "road",
+      "source_id": "TED-702057-2026",
+      "title": "Melanchthonschule, Erweiterungsneubau - Heizung-, Lüftungs-, Sanitärarbeiten & MSR-Technik",
+      "authority": "SBO Servicebetriebe Oberhausen - Eigenbetrieb der Stadt Oberhausen",
+      "city": "Oberhausen",
+      "project_type": "school",
       "trades": [
-        "electrical",
+        "hvac",
         "plumbing",
-        "windows_doors",
-        "structural",
-        "painting",
-        "roadworks"
+        "electrical",
+        "fire_protection"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/702082-2026"
-    },
-    {
-      "source_id": "TED-704016-2026",
-      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
-      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
-      "city": "Köln",
-      "project_type": "university_research",
-      "trades": [
-        "drywall",
-        "insulation",
-        "structural",
-        "flooring"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/704016-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/702057-2026"
     },
     {
       "source_id": "TED-702125-2026",
@@ -435,6 +416,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/697204-2026"
+    },
+    {
+      "source_id": "TED-699494-2026",
+      "title": "Neubau des Rathauses in Straelen - Fenster- und Fassadenarbeiten",
+      "authority": "Stadt Straelen",
+      "city": "Straelen",
+      "project_type": "administration",
+      "trades": [
+        "windows_doors",
+        "facade",
+        "structural",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/699494-2026"
     }
   ]
 }
