@@ -9088,12 +9088,12 @@
         "verfahrensartdetail": "",
         "name1": "Dresden-Neustadt Nr. 46",
         "name2": "Alter Leipziger Bahnhof - Nord",
-        "plan_ref": "A",
-        "plan_stand": "Aufstellung/Einleitung des Verfahrens",
-        "ab_dat": "",
-        "bis_dat": "",
-        "beschl_dat": "2026-05-06T00:00:00",
-        "amtsbl_dat": "2026-05-22T00:00:00",
+        "plan_ref": "B",
+        "plan_stand": "Frühzeitige Bürgerbeteiligung/Beteiligung der TÖB",
+        "ab_dat": "2026-10-26T00:00:00",
+        "bis_dat": "2026-11-27T00:00:00",
+        "beschl_dat": "",
+        "amtsbl_dat": "2026-10-15T00:00:00",
         "hinweis": "Geltungsbereich liegt ganz oder zum Teil in einem Überschwemmungs- bzw. überschwemmungsgefährdeten Gebiet",
         "url": "https://www.dresden.de/de/rathaus/dienstleistungen/bebauungsplan.php",
         "ds_modified": "2025-11-12T15:53:32.343"
@@ -9117,12 +9117,12 @@
         "verfahrensartdetail": "",
         "name1": "Dresden-Neustadt Nr. 47",
         "name2": "Alter Leipziger Bahnhof - Süd",
-        "plan_ref": "A",
-        "plan_stand": "Aufstellung/Einleitung des Verfahrens",
-        "ab_dat": "",
-        "bis_dat": "",
-        "beschl_dat": "2026-05-06T00:00:00",
-        "amtsbl_dat": "2026-05-22T00:00:00",
+        "plan_ref": "B",
+        "plan_stand": "Frühzeitige Bürgerbeteiligung/Beteiligung der TÖB",
+        "ab_dat": "2026-10-26T00:00:00",
+        "bis_dat": "2026-11-27T00:00:00",
+        "beschl_dat": "",
+        "amtsbl_dat": "2026-10-15T00:00:00",
         "hinweis": "Geltungsbereich liegt ganz oder zum Teil in einem Überschwemmungs- bzw. überschwemmungsgefährdeten Gebiet",
         "url": "https://www.dresden.de/de/rathaus/dienstleistungen/bebauungsplan.php",
         "ds_modified": "2025-11-13T11:04:55.904"
@@ -15328,6 +15328,35 @@
         51.0748566854539
       ],
       "source_url": "https://kommisdd.dresden.de/net3/public/ogc.ashx?NodeId=759&Service=WFS&Request=GetFeature&Version=2.0.0&TypeNames=cls%3AL575&Count=1000&SrsName=urn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326"
+    },
+    {
+      "id": "L354.1728",
+      "properties": {
+        "id": "1728",
+        "verf_nr": "3091",
+        "korr_nr": "0",
+        "schluessel": "3091",
+        "verf_art": "Bebauungsplan",
+        "verfahrensartdetail": "",
+        "name1": "Dresden-Reick/Gruna",
+        "name2": "Innovationscampus an den Gasometern",
+        "plan_ref": "A",
+        "plan_stand": "Aufstellung/Einleitung des Verfahrens",
+        "ab_dat": "",
+        "bis_dat": "",
+        "beschl_dat": "2026-09-30T00:00:00",
+        "amtsbl_dat": "",
+        "hinweis": "-",
+        "url": "https://www.dresden.de/de/rathaus/dienstleistungen/bebauungsplan.php",
+        "ds_modified": "2026-10-15T17:55:25.054"
+      },
+      "bbox": [
+        13.7842442951079,
+        51.0214903688308,
+        13.7908262793187,
+        51.0284873709018
+      ],
+      "source_url": "https://kommisdd.dresden.de/net3/public/ogc.ashx?NodeId=489&Service=WFS&Request=GetFeature&Version=2.0.0&TypeNames=cls%3AL354&Count=1000&SrsName=urn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326"
     }
   ],
   "attribution": "Landeshauptstadt Dresden / Quelle: Geodaten Sachsen",

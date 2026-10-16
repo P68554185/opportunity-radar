@@ -1,84 +1,84 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9681,
+  "classified_opportunities": 9683,
   "classification_rate_pct": 96.8,
   "bands": {
-    "UPCOMING": 5527,
-    "HOT": 1693,
-    "EARLY": 2461
+    "UPCOMING": 5509,
+    "EARLY": 2483,
+    "HOT": 1691
   },
   "project_types": [
     [
       "unclassified_project",
-      3544
+      3583
     ],
     [
       "school",
-      1462
+      1440
     ],
     [
       "rail",
-      823
+      830
     ],
     [
       "water_wastewater",
-      376
+      375
     ],
     [
       "bridge",
-      347
+      349
     ],
     [
       "civil_engineering",
-      340
+      329
     ],
     [
       "industrial",
-      320
+      315
     ],
     [
       "university_research",
-      290
+      291
     ],
     [
       "hospital",
-      287
-    ],
-    [
-      "road",
-      277
+      282
     ],
     [
       "sports_leisure",
-      277
+      275
+    ],
+    [
+      "road",
+      271
     ],
     [
       "administration",
-      245
+      249
     ],
     [
       "fire_station",
-      187
-    ],
-    [
-      "kindergarten",
-      177
+      178
     ],
     [
       "public_building",
-      171
+      173
+    ],
+    [
+      "kindergarten",
+      172
     ],
     [
       "energy",
-      131
+      134
     ],
     [
       "public_space",
-      121
+      124
     ],
     [
       "residential",
-      102
+      106
     ],
     [
       "care_social",
@@ -86,89 +86,93 @@
     ],
     [
       "infrastructure",
-      67
+      68
     ],
     [
       "commercial",
-      55
+      57
     ]
   ],
   "trades": [
     [
       "structural",
-      1694
+      1702
     ],
     [
       "electrical",
-      1439
+      1438
     ],
     [
       "windows_doors",
-      1326
+      1333
     ],
     [
       "hvac",
-      967
+      963
     ],
     [
       "earthworks",
-      881
+      882
     ],
     [
       "railworks",
-      808
+      811
     ],
     [
       "flooring",
-      702
+      699
     ],
     [
       "demolition",
-      665
+      671
     ],
     [
       "painting",
-      632
+      659
     ],
     [
       "roof",
-      520
+      524
     ],
     [
       "insulation",
-      471
+      479
     ],
     [
       "roadworks",
-      450
+      447
     ],
     [
       "plumbing",
-      399
+      397
     ],
     [
       "facade",
-      343
+      354
     ],
     [
       "landscaping",
-      325
+      322
     ],
     [
       "drywall",
-      283
-    ],
-    [
-      "fire_protection",
-      201
+      281
     ],
     [
       "plastering",
-      201
+      204
+    ],
+    [
+      "fire_protection",
+      200
     ],
     [
       "elevator",
-      135
+      133
+    ],
+    [
+      "finishing",
+      84
     ],
     [
       "solar_energy",
@@ -176,60 +180,109 @@
     ],
     [
       "sewer_pipe",
-      82
-    ],
-    [
-      "finishing",
-      82
+      77
     ],
     [
       "fencing",
-      67
+      68
     ],
     [
       "building_services",
-      52
+      51
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 223
+      "count": 224
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2413
+      "count": 2434
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2364
+      "count": 2376
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4186
+      "count": 4146
     },
     {
       "from": 90,
       "to": 99,
-      "count": 353
+      "count": 355
     },
     {
       "from": 100,
       "to": 100,
-      "count": 142
+      "count": 148
     }
   ],
   "quality_flags": {
-    "project_type_only": 1081,
-    "trade_only": 3544,
-    "project_and_trade": 5056,
-    "opportunity_score_85_plus": 1693
+    "project_type_only": 1072,
+    "trade_only": 3583,
+    "project_and_trade": 5028,
+    "opportunity_score_85_plus": 1691
   },
   "sample_top": [
+    {
+      "source_id": "TED-715132-2026",
+      "title": "Neubau Gesamtschule mit Sporthalle Krampnitz - Teil-Generalunternehmer-Leistungen (Rohbau und Gebäudehülle)",
+      "authority": "Entwicklungsträger Potsdam GmbH Treuhänder der Stadt",
+      "city": "Potsdam",
+      "project_type": "school",
+      "trades": [
+        "structural",
+        "earthworks",
+        "roof",
+        "insulation",
+        "windows_doors"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/715132-2026"
+    },
+    {
+      "source_id": "TED-715701-2026",
+      "title": "Trockenbauarbeiten",
+      "authority": "Landeshauptstadt München, Baureferat",
+      "city": "München",
+      "project_type": "civil_engineering",
+      "trades": [
+        "drywall",
+        "windows_doors",
+        "structural",
+        "finishing",
+        "insulation"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/715701-2026"
+    },
+    {
+      "source_id": "TED-718167-2026",
+      "title": "Garten-/Landschaftsbauarbeiten, Schloss Charlottenburg, Sanierung Freianlagen einschl. Wasserver-/entsorgung, Ehrenhof 5. BA",
+      "authority": "Stiftung Preußische Schlösser und Gärten Berlin-Brandenburg",
+      "city": "Berlin",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "demolition",
+        "roadworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/718167-2026"
+    },
     {
       "source_id": "TED-712928-2026",
       "title": "Baumeister",
@@ -285,23 +338,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/714651-2026"
     },
     {
-      "source_id": "TED-711538-2026",
-      "title": "Auftragsänderung 2: Sanierung und Umbau Schloss -Erweiterte Rohbauarbeiten",
-      "authority": "Schloss-Stadt Hückeswagen",
-      "city": "Hückeswagen",
-      "project_type": "civil_engineering",
-      "trades": [
-        "structural",
-        "demolition",
-        "earthworks",
-        "roof"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/711538-2026"
-    },
-    {
       "source_id": "TED-712258-2026",
       "title": "Sanierung Sporthalle Robert-Bosch-Gesamtschule, vorgehängte, hinterlüftete Fassade",
       "authority": "Stadt Hildesheim",
@@ -317,6 +353,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/712258-2026"
+    },
+    {
+      "source_id": "TED-711538-2026",
+      "title": "Auftragsänderung 2: Sanierung und Umbau Schloss -Erweiterte Rohbauarbeiten",
+      "authority": "Schloss-Stadt Hückeswagen",
+      "city": "Hückeswagen",
+      "project_type": "civil_engineering",
+      "trades": [
+        "structural",
+        "demolition",
+        "earthworks",
+        "roof"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/711538-2026"
     },
     {
       "source_id": "TED-707580-2026",
@@ -371,74 +424,26 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/709147-2026"
     },
     {
-      "source_id": "TED-702057-2026",
-      "title": "Melanchthonschule, Erweiterungsneubau - Heizung-, Lüftungs-, Sanitärarbeiten & MSR-Technik",
-      "authority": "SBO Servicebetriebe Oberhausen - Eigenbetrieb der Stadt Oberhausen",
-      "city": "Oberhausen",
-      "project_type": "school",
+      "source_id": "TED-709225-2026",
+      "title": "BMPII Backnang Erneuerung Bahnsteig 2 + Aufzug Bahnsteig 3",
+      "authority": "DB Station&Service AG (Bukr 11)",
+      "city": "Backnang",
+      "project_type": "rail",
       "trades": [
-        "hvac",
-        "plumbing",
-        "electrical",
-        "fire_protection"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/702057-2026"
-    },
-    {
-      "source_id": "TED-701335-2026",
-      "title": "GU Innengewerke",
-      "authority": "GESOBAU AG",
-      "city": "Berlin",
-      "project_type": "residential",
-      "trades": [
-        "hvac",
-        "electrical",
-        "flooring",
-        "windows_doors"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/701335-2026"
-    },
-    {
-      "source_id": "TED-702082-2026",
-      "title": "Komplexe Instandsetzung-Diverse Gewerke",
-      "authority": "HOWOGE Wohnungsbaugesellschaft mbH",
-      "city": "Berlin",
-      "project_type": "road",
-      "trades": [
+        "elevator",
+        "railworks",
+        "earthworks",
+        "roadworks",
+        "roof",
+        "structural",
         "electrical",
         "plumbing",
-        "windows_doors",
-        "structural",
-        "painting",
-        "roadworks"
+        "finishing"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/702082-2026"
-    },
-    {
-      "source_id": "TED-704016-2026",
-      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
-      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
-      "city": "Köln",
-      "project_type": "university_research",
-      "trades": [
-        "drywall",
-        "insulation",
-        "structural",
-        "flooring"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/704016-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/709225-2026"
     }
   ]
 }
