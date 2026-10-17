@@ -3,18 +3,18 @@
   "classified_opportunities": 9683,
   "classification_rate_pct": 96.8,
   "bands": {
-    "UPCOMING": 5509,
-    "EARLY": 2483,
-    "HOT": 1691
+    "UPCOMING": 5510,
+    "EARLY": 2478,
+    "HOT": 1695
   },
   "project_types": [
     [
       "unclassified_project",
-      3583
+      3562
     ],
     [
       "school",
-      1440
+      1452
     ],
     [
       "rail",
@@ -22,51 +22,51 @@
     ],
     [
       "water_wastewater",
-      375
+      380
     ],
     [
       "bridge",
-      349
+      350
     ],
     [
       "civil_engineering",
-      329
+      327
     ],
     [
       "industrial",
-      315
+      313
     ],
     [
       "university_research",
-      291
+      289
     ],
     [
       "hospital",
-      282
+      284
     ],
     [
       "sports_leisure",
-      275
+      278
     ],
     [
       "road",
-      271
+      274
     ],
     [
       "administration",
-      249
+      243
     ],
     [
       "fire_station",
-      178
-    ],
-    [
-      "public_building",
-      173
+      182
     ],
     [
       "kindergarten",
-      172
+      174
+    ],
+    [
+      "public_building",
+      170
     ],
     [
       "energy",
@@ -74,7 +74,7 @@
     ],
     [
       "public_space",
-      124
+      125
     ],
     [
       "residential",
@@ -82,37 +82,37 @@
     ],
     [
       "care_social",
-      82
+      83
     ],
     [
       "infrastructure",
-      68
+      69
     ],
     [
       "commercial",
-      57
+      58
     ]
   ],
   "trades": [
     [
       "structural",
-      1702
+      1697
     ],
     [
       "electrical",
-      1438
+      1429
     ],
     [
       "windows_doors",
-      1333
+      1327
     ],
     [
       "hvac",
-      963
+      964
     ],
     [
       "earthworks",
-      882
+      883
     ],
     [
       "railworks",
@@ -120,43 +120,43 @@
     ],
     [
       "flooring",
-      699
+      704
     ],
     [
       "demolition",
-      671
+      675
     ],
     [
       "painting",
-      659
+      653
     ],
     [
       "roof",
-      524
+      519
     ],
     [
       "insulation",
-      479
+      476
     ],
     [
       "roadworks",
-      447
+      446
     ],
     [
       "plumbing",
-      397
+      400
     ],
     [
       "facade",
-      354
+      352
     ],
     [
       "landscaping",
-      322
+      324
     ],
     [
       "drywall",
-      281
+      282
     ],
     [
       "plastering",
@@ -164,15 +164,15 @@
     ],
     [
       "fire_protection",
-      200
+      197
     ],
     [
       "elevator",
-      133
+      132
     ],
     [
       "finishing",
-      84
+      83
     ],
     [
       "solar_energy",
@@ -180,7 +180,7 @@
     ],
     [
       "sewer_pipe",
-      77
+      81
     ],
     [
       "fencing",
@@ -195,39 +195,39 @@
     {
       "from": 50,
       "to": 59,
-      "count": 224
+      "count": 225
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2434
+      "count": 2429
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2376
+      "count": 2367
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4146
+      "count": 4155
     },
     {
       "from": 90,
       "to": 99,
-      "count": 355
+      "count": 361
     },
     {
       "from": 100,
       "to": 100,
-      "count": 148
+      "count": 146
     }
   ],
   "quality_flags": {
-    "project_type_only": 1072,
-    "trade_only": 3583,
-    "project_and_trade": 5028,
-    "opportunity_score_85_plus": 1691
+    "project_type_only": 1075,
+    "trade_only": 3562,
+    "project_and_trade": 5046,
+    "opportunity_score_85_plus": 1695
   },
   "sample_top": [
     {
@@ -424,26 +424,21 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/709147-2026"
     },
     {
-      "source_id": "TED-709225-2026",
-      "title": "BMPII Backnang Erneuerung Bahnsteig 2 + Aufzug Bahnsteig 3",
-      "authority": "DB Station&Service AG (Bukr 11)",
-      "city": "Backnang",
-      "project_type": "rail",
+      "source_id": "TED-702057-2026",
+      "title": "Melanchthonschule, Erweiterungsneubau - Heizung-, Lüftungs-, Sanitärarbeiten & MSR-Technik",
+      "authority": "SBO Servicebetriebe Oberhausen - Eigenbetrieb der Stadt Oberhausen",
+      "city": "Oberhausen",
+      "project_type": "school",
       "trades": [
-        "elevator",
-        "railworks",
-        "earthworks",
-        "roadworks",
-        "roof",
-        "structural",
-        "electrical",
+        "hvac",
         "plumbing",
-        "finishing"
+        "electrical",
+        "fire_protection"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/709225-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/702057-2026"
     }
   ]
 }
