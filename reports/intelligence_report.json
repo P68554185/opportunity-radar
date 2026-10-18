@@ -3,7 +3,7 @@
   "live_records": 10000,
   "enriched_records": 10000,
   "duplicate_source_records": 0,
-  "classified_opportunities": 9683,
+  "classified_opportunities": 9685,
   "lifecycle_candidates": 0,
   "opportunities": [
     {
@@ -347,6 +347,88 @@
       }
     },
     {
+      "source_id": "TED-714651-2026",
+      "notice_id": "714651-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/714651-2026",
+      "published": "2026-10-15+02:00",
+      "title": "Auflassung BÜs durch Neubau SÜ in km 0,1+62, Strecke 5421, Gleisdreieck in Lindau – 2 Lose",
+      "description": "Auflassung BÜs durch Neubau SÜ in km 0,1+62, Strecke 5421, Gleisdreieck in Lindau – 2 Lose DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DE27A', 'DEU', 'DE27A', 'DE27A', 'DEU', 'DEU']",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "city": "Lindau (Bodensee)",
+      "region": "",
+      "country": "DEU",
+      "project_type": "rail",
+      "trades": [
+        "earthworks",
+        "roadworks",
+        "railworks",
+        "structural"
+      ],
+      "cpv": [
+        "45221112",
+        "44114210",
+        "45112000",
+        "45221115",
+        "45233120",
+        "45233260",
+        "45234116",
+        "45234140",
+        "45262310",
+        "45221112",
+        "45234100",
+        "44114210",
+        "45112000",
+        "45221115",
+        "45233120",
+        "45233260",
+        "45234116",
+        "45262310",
+        "45233120",
+        "45234116",
+        "45234140"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "earthworks",
+          "roadworks",
+          "railworks",
+          "structural"
+        ],
+        "construction_cpv": [
+          "45221112",
+          "45112000",
+          "45221115",
+          "45233120",
+          "45233260",
+          "45234116",
+          "45234140",
+          "45262310",
+          "45221112",
+          "45234100",
+          "45112000",
+          "45221115",
+          "45233120",
+          "45233260",
+          "45234116",
+          "45262310",
+          "45233120",
+          "45234116",
+          "45234140"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
       "source_id": "TED-713643-2026",
       "notice_id": "713643-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/713643-2026",
@@ -565,143 +647,6 @@
       }
     },
     {
-      "source_id": "TED-714651-2026",
-      "notice_id": "714651-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/714651-2026",
-      "published": "2026-10-15+02:00",
-      "title": "Auflassung BÜs durch Neubau SÜ in km 0,1+62, Strecke 5421, Gleisdreieck in Lindau – 2 Lose",
-      "description": "Auflassung BÜs durch Neubau SÜ in km 0,1+62, Strecke 5421, Gleisdreieck in Lindau – 2 Lose DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DE27A', 'DEU', 'DE27A', 'DE27A', 'DEU', 'DEU']",
-      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
-      "city": "Lindau (Bodensee)",
-      "region": "",
-      "country": "DEU",
-      "project_type": "rail",
-      "trades": [
-        "earthworks",
-        "roadworks",
-        "railworks",
-        "structural"
-      ],
-      "cpv": [
-        "45221112",
-        "44114210",
-        "45112000",
-        "45221115",
-        "45233120",
-        "45233260",
-        "45234116",
-        "45234140",
-        "45262310",
-        "45221112",
-        "45234100",
-        "44114210",
-        "45112000",
-        "45221115",
-        "45233120",
-        "45233260",
-        "45234116",
-        "45262310",
-        "45233120",
-        "45234116",
-        "45234140"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": true,
-        "trade_text": [],
-        "trade_cpv": [
-          "earthworks",
-          "roadworks",
-          "railworks",
-          "structural"
-        ],
-        "construction_cpv": [
-          "45221112",
-          "45112000",
-          "45221115",
-          "45233120",
-          "45233260",
-          "45234116",
-          "45234140",
-          "45262310",
-          "45221112",
-          "45234100",
-          "45112000",
-          "45221115",
-          "45233120",
-          "45233260",
-          "45234116",
-          "45262310",
-          "45233120",
-          "45234116",
-          "45234140"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-712258-2026",
-      "notice_id": "712258-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/712258-2026",
-      "published": "2026-10-15+02:00",
-      "title": "Sanierung Sporthalle Robert-Bosch-Gesamtschule, vorgehängte, hinterlüftete Fassade",
-      "description": "Sanierung Sporthalle Robert-Bosch-Gesamtschule, vorgehängte, hinterlüftete Fassade Stadt Hildesheim ['DE925', 'DEU', 'DE925', 'DEU']",
-      "authority": "Stadt Hildesheim",
-      "city": "Hildesheim",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "facade",
-        "painting",
-        "insulation",
-        "plastering"
-      ],
-      "cpv": [
-        "45443000",
-        "45321000",
-        "45410000",
-        "45443000",
-        "45321000",
-        "45410000"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": false,
-        "trade_text": [
-          "facade"
-        ],
-        "trade_cpv": [
-          "painting",
-          "insulation",
-          "plastering"
-        ],
-        "construction_cpv": [
-          "45443000",
-          "45321000",
-          "45410000",
-          "45443000",
-          "45321000",
-          "45410000"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
       "source_id": "TED-711538-2026",
       "notice_id": "711538-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/711538-2026",
@@ -768,6 +713,61 @@
           "45262310",
           "45262420",
           "45262522"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-712258-2026",
+      "notice_id": "712258-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/712258-2026",
+      "published": "2026-10-15+02:00",
+      "title": "Sanierung Sporthalle Robert-Bosch-Gesamtschule, vorgehängte, hinterlüftete Fassade",
+      "description": "Sanierung Sporthalle Robert-Bosch-Gesamtschule, vorgehängte, hinterlüftete Fassade Stadt Hildesheim ['DE925', 'DEU', 'DE925', 'DEU']",
+      "authority": "Stadt Hildesheim",
+      "city": "Hildesheim",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "facade",
+        "painting",
+        "insulation",
+        "plastering"
+      ],
+      "cpv": [
+        "45443000",
+        "45321000",
+        "45410000",
+        "45443000",
+        "45321000",
+        "45410000"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "facade"
+        ],
+        "trade_cpv": [
+          "painting",
+          "insulation",
+          "plastering"
+        ],
+        "construction_cpv": [
+          "45443000",
+          "45321000",
+          "45410000",
+          "45443000",
+          "45321000",
+          "45410000"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -1710,6 +1710,62 @@
       }
     },
     {
+      "source_id": "TED-699494-2026",
+      "notice_id": "699494-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/699494-2026",
+      "published": "2026-10-09+02:00",
+      "title": "Neubau des Rathauses in Straelen - Fenster- und Fassadenarbeiten",
+      "description": "Neubau des Rathauses in Straelen - Fenster- und Fassadenarbeiten Stadt Straelen ['DEA1B', 'DEU', 'DEA1B', 'DEU']",
+      "authority": "Stadt Straelen",
+      "city": "Straelen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "administration",
+      "trades": [
+        "windows_doors",
+        "facade",
+        "structural",
+        "painting"
+      ],
+      "cpv": [
+        "45421130",
+        "45262670",
+        "45443000",
+        "45421130",
+        "45262670",
+        "45443000"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.85,
+      "confidence": 0.85,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "windows_doors",
+          "facade"
+        ],
+        "trade_cpv": [
+          "windows_doors",
+          "structural",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45421130",
+          "45262670",
+          "45443000",
+          "45421130",
+          "45262670",
+          "45443000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
       "source_id": "TED-697204-2026",
       "notice_id": "697204-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/697204-2026",
@@ -1771,62 +1827,6 @@
           "45421132",
           "45210000",
           "45400000"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-699494-2026",
-      "notice_id": "699494-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/699494-2026",
-      "published": "2026-10-09+02:00",
-      "title": "Neubau des Rathauses in Straelen - Fenster- und Fassadenarbeiten",
-      "description": "Neubau des Rathauses in Straelen - Fenster- und Fassadenarbeiten Stadt Straelen ['DEA1B', 'DEU', 'DEA1B', 'DEU']",
-      "authority": "Stadt Straelen",
-      "city": "Straelen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "administration",
-      "trades": [
-        "windows_doors",
-        "facade",
-        "structural",
-        "painting"
-      ],
-      "cpv": [
-        "45421130",
-        "45262670",
-        "45443000",
-        "45421130",
-        "45262670",
-        "45443000"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.85,
-      "confidence": 0.85,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": false,
-        "trade_text": [
-          "windows_doors",
-          "facade"
-        ],
-        "trade_cpv": [
-          "windows_doors",
-          "structural",
-          "painting"
-        ],
-        "construction_cpv": [
-          "45421130",
-          "45262670",
-          "45443000",
-          "45421130",
-          "45262670",
-          "45443000"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -4177,69 +4177,6 @@
       }
     },
     {
-      "source_id": "TED-679848-2026",
-      "notice_id": "679848-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/679848-2026",
-      "published": "2026-10-02+02:00",
-      "title": "Gymnasium Füssen - Estricharbeiten BA 1-2",
-      "description": "Gymnasium Füssen - Estricharbeiten BA 1-2 Landkreis Ostallgäu ['DE27B', 'DEU', 'DE27B', 'DEU']",
-      "authority": "Landkreis Ostallgäu",
-      "city": "Füssen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "flooring",
-        "structural",
-        "insulation",
-        "roof"
-      ],
-      "cpv": [
-        "45262321",
-        "45262320",
-        "45321000",
-        "45323000",
-        "45261420",
-        "45262321",
-        "45262320",
-        "45321000",
-        "45323000",
-        "45261420"
-      ],
-      "phase": "award",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": false,
-        "trade_text": [
-          "flooring"
-        ],
-        "trade_cpv": [
-          "structural",
-          "insulation",
-          "roof"
-        ],
-        "construction_cpv": [
-          "45262321",
-          "45262320",
-          "45321000",
-          "45323000",
-          "45261420",
-          "45262321",
-          "45262320",
-          "45321000",
-          "45323000",
-          "45261420"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
       "source_id": "TED-680734-2026",
       "notice_id": "680734-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/680734-2026",
@@ -4300,6 +4237,69 @@
           "45221112",
           "45234116",
           "45262310"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-679848-2026",
+      "notice_id": "679848-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/679848-2026",
+      "published": "2026-10-02+02:00",
+      "title": "Gymnasium Füssen - Estricharbeiten BA 1-2",
+      "description": "Gymnasium Füssen - Estricharbeiten BA 1-2 Landkreis Ostallgäu ['DE27B', 'DEU', 'DE27B', 'DEU']",
+      "authority": "Landkreis Ostallgäu",
+      "city": "Füssen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "flooring",
+        "structural",
+        "insulation",
+        "roof"
+      ],
+      "cpv": [
+        "45262321",
+        "45262320",
+        "45321000",
+        "45323000",
+        "45261420",
+        "45262321",
+        "45262320",
+        "45321000",
+        "45323000",
+        "45261420"
+      ],
+      "phase": "award",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "flooring"
+        ],
+        "trade_cpv": [
+          "structural",
+          "insulation",
+          "roof"
+        ],
+        "construction_cpv": [
+          "45262321",
+          "45262320",
+          "45321000",
+          "45323000",
+          "45261420",
+          "45262321",
+          "45262320",
+          "45321000",
+          "45323000",
+          "45261420"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."

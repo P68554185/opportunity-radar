@@ -1,80 +1,80 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9683,
+  "classified_opportunities": 9685,
   "classification_rate_pct": 96.8,
   "bands": {
-    "UPCOMING": 5510,
-    "EARLY": 2478,
-    "HOT": 1695
+    "HOT": 1691,
+    "EARLY": 2486,
+    "UPCOMING": 5508
   },
   "project_types": [
     [
       "unclassified_project",
-      3562
+      3563
     ],
     [
       "school",
-      1452
+      1449
     ],
     [
       "rail",
-      830
+      832
     ],
     [
       "water_wastewater",
-      380
+      377
     ],
     [
       "bridge",
-      350
+      352
     ],
     [
       "civil_engineering",
-      327
+      329
     ],
     [
       "industrial",
-      313
+      316
     ],
     [
       "university_research",
-      289
+      290
     ],
     [
       "hospital",
-      284
-    ],
-    [
-      "sports_leisure",
-      278
+      285
     ],
     [
       "road",
+      275
+    ],
+    [
+      "sports_leisure",
       274
     ],
     [
       "administration",
-      243
+      246
     ],
     [
       "fire_station",
-      182
+      183
     ],
     [
       "kindergarten",
-      174
+      175
     ],
     [
       "public_building",
-      170
+      168
     ],
     [
       "energy",
-      134
+      137
     ],
     [
       "public_space",
-      125
+      122
     ],
     [
       "residential",
@@ -82,7 +82,7 @@
     ],
     [
       "care_social",
-      83
+      80
     ],
     [
       "infrastructure",
@@ -90,69 +90,69 @@
     ],
     [
       "commercial",
-      58
+      57
     ]
   ],
   "trades": [
     [
       "structural",
-      1697
+      1688
     ],
     [
       "electrical",
-      1429
+      1431
     ],
     [
       "windows_doors",
-      1327
+      1331
     ],
     [
       "hvac",
-      964
+      959
     ],
     [
       "earthworks",
-      883
+      880
     ],
     [
       "railworks",
-      811
+      812
     ],
     [
       "flooring",
-      704
+      701
     ],
     [
       "demolition",
-      675
+      672
     ],
     [
       "painting",
-      653
+      650
     ],
     [
       "roof",
-      519
+      522
     ],
     [
       "insulation",
-      476
+      475
     ],
     [
       "roadworks",
-      446
+      448
     ],
     [
       "plumbing",
-      400
+      399
     ],
     [
       "facade",
-      352
+      349
     ],
     [
       "landscaping",
-      324
+      321
     ],
     [
       "drywall",
@@ -160,35 +160,35 @@
     ],
     [
       "plastering",
-      204
+      203
     ],
     [
       "fire_protection",
-      197
+      195
     ],
     [
       "elevator",
       132
     ],
     [
-      "finishing",
-      83
+      "solar_energy",
+      84
     ],
     [
-      "solar_energy",
+      "finishing",
       82
     ],
     [
       "sewer_pipe",
-      81
+      80
     ],
     [
       "fencing",
-      68
+      69
     ],
     [
       "building_services",
-      51
+      53
     ]
   ],
   "score_buckets": [
@@ -200,17 +200,17 @@
     {
       "from": 60,
       "to": 69,
-      "count": 2429
+      "count": 2436
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2367
+      "count": 2362
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4155
+      "count": 4156
     },
     {
       "from": 90,
@@ -220,14 +220,14 @@
     {
       "from": 100,
       "to": 100,
-      "count": 146
+      "count": 145
     }
   ],
   "quality_flags": {
     "project_type_only": 1075,
-    "trade_only": 3562,
-    "project_and_trade": 5046,
-    "opportunity_score_85_plus": 1695
+    "trade_only": 3563,
+    "project_and_trade": 5047,
+    "opportunity_score_85_plus": 1691
   },
   "sample_top": [
     {
@@ -301,6 +301,23 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/712928-2026"
     },
     {
+      "source_id": "TED-714651-2026",
+      "title": "Auflassung BÜs durch Neubau SÜ in km 0,1+62, Strecke 5421, Gleisdreieck in Lindau – 2 Lose",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "city": "Lindau (Bodensee)",
+      "project_type": "rail",
+      "trades": [
+        "earthworks",
+        "roadworks",
+        "railworks",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/714651-2026"
+    },
+    {
       "source_id": "TED-713643-2026",
       "title": "Sanierung Von Bahnsteigdächer und Errichtung von Befahranlagen am Bf. Regensburg",
       "authority": "DB Station&Service AG (Bukr 11)",
@@ -321,21 +338,21 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/713643-2026"
     },
     {
-      "source_id": "TED-714651-2026",
-      "title": "Auflassung BÜs durch Neubau SÜ in km 0,1+62, Strecke 5421, Gleisdreieck in Lindau – 2 Lose",
-      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
-      "city": "Lindau (Bodensee)",
-      "project_type": "rail",
+      "source_id": "TED-711538-2026",
+      "title": "Auftragsänderung 2: Sanierung und Umbau Schloss -Erweiterte Rohbauarbeiten",
+      "authority": "Schloss-Stadt Hückeswagen",
+      "city": "Hückeswagen",
+      "project_type": "civil_engineering",
       "trades": [
+        "structural",
+        "demolition",
         "earthworks",
-        "roadworks",
-        "railworks",
-        "structural"
+        "roof"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/714651-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/711538-2026"
     },
     {
       "source_id": "TED-712258-2026",
@@ -353,23 +370,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/712258-2026"
-    },
-    {
-      "source_id": "TED-711538-2026",
-      "title": "Auftragsänderung 2: Sanierung und Umbau Schloss -Erweiterte Rohbauarbeiten",
-      "authority": "Schloss-Stadt Hückeswagen",
-      "city": "Hückeswagen",
-      "project_type": "civil_engineering",
-      "trades": [
-        "structural",
-        "demolition",
-        "earthworks",
-        "roof"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/711538-2026"
     },
     {
       "source_id": "TED-707580-2026",

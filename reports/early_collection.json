@@ -1,11 +1,11 @@
 {
-  "observed_at": "2026-10-17T05:33:16.952935+00:00",
+  "observed_at": "2026-10-18T05:33:25.604940+00:00",
   "sources": [
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
-      "content_sha256": "b679287257dbcabccf0ae496afa59b724dbbab50022442b2ac380822f2dcb5f5",
+      "content_sha256": "d6fc98297460da1d0f9ba2d2f60c9884a87be34768557b92c3b7d2fa4c5f861d",
       "records": 13
     },
     {
@@ -19,42 +19,42 @@
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26254/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26254/",
-      "content_sha256": "cd503c07956fe1cdc643340465f3188d7ba5880fe2d13380045c8826f0477396",
+      "content_sha256": "c8adfd39f7b9848cd1c5eae6bb1a0381b93978fb1b6171ded27a6a569e2db366",
       "records": 27
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26282/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26282/",
-      "content_sha256": "22b384cf0b16380295392257ef47488eaf3e91d069d3ce932d5cd44faebb9435",
+      "content_sha256": "af272be26ada90b392c87429b54ef172293c635864c0130664a8e3aef0513db4",
       "records": 2
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26283/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26283/",
-      "content_sha256": "5921c9d47ba9087e34ce05b719b320bdda3bfac12e8f62c5fda8e49c52adba6c",
+      "content_sha256": "847061d91f726566e33143ce6b50fdd3539fa7218c6797fbcb9130bdf6441da7",
       "records": 1
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26298/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26298/",
-      "content_sha256": "9409537fb2def1f1760f31292f02efdfd1aa04f4b67c04b5f0a89e116d96f604",
+      "content_sha256": "c1d2819fe86fdea512ccfc32926cb2f586f65a673ba0d84d842d7f8c1f9cd73f",
       "records": 2
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26297/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26297/",
-      "content_sha256": "19acb97117150b5a69b2b918163c6ff6d5ab836e404e3b100bbbc6c65b3227a6",
+      "content_sha256": "167600c3e679fa35cab176c8c2ca59a55f7a97c9a7ed8594b0122bc7cfef8045",
       "records": 3
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26314/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26314/",
-      "content_sha256": "4c09a4866293dbd09fb0dce33706e4cbb1a77c1797eca42bcea68626df2026c7",
+      "content_sha256": "673fcd3b5974e47c334a1e9a020c8c3be6a8e6ec6da1b503d786f6c589aa7129",
       "records": 2
     }
   ],
@@ -62,7 +62,7 @@
     {
       "source_url": "https://www.stmfh.bayern.de/aktuelles/pressemitteilungen/",
       "reason": "index_observation",
-      "links_seen": 625,
+      "links_seen": 622,
       "construction_headlines": 30,
       "sample_construction_links": [
         "/kommunaler_finanzausgleich/krankenhausfoerderung/",
