@@ -3,7 +3,7 @@
   "active_early_signals": 60,
   "active_master_projects": 60,
   "historical_signals": 3,
-  "qualified_procurement_records": 3169,
+  "qualified_procurement_records": 3170,
   "archived_confirmed_notices": 5,
   "links": [
     {
@@ -304,7 +304,7 @@
     }
   ],
   "confirmed_notice_links": 5,
-  "confirmed_current_notice_links": 4,
+  "confirmed_current_notice_links": 3,
   "confirmed_project_cases": 1,
   "candidate_notice_links": 5,
   "live_observed_lead_days": [],
