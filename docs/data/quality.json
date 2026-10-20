@@ -1,24 +1,24 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9688,
+  "classified_opportunities": 9691,
   "classification_rate_pct": 96.9,
   "bands": {
-    "EARLY": 2489,
-    "UPCOMING": 5511,
-    "HOT": 1688
+    "EARLY": 2476,
+    "UPCOMING": 5531,
+    "HOT": 1684
   },
   "project_types": [
     [
       "unclassified_project",
-      3594
+      3567
     ],
     [
       "school",
-      1449
+      1455
     ],
     [
       "rail",
-      820
+      818
     ],
     [
       "water_wastewater",
@@ -26,63 +26,63 @@
     ],
     [
       "bridge",
-      350
-    ],
-    [
-      "civil_engineering",
-      317
+      351
     ],
     [
       "industrial",
-      314
+      324
+    ],
+    [
+      "civil_engineering",
+      323
     ],
     [
       "university_research",
-      291
+      290
     ],
     [
       "hospital",
-      285
+      290
     ],
     [
       "road",
-      281
+      279
     ],
     [
       "sports_leisure",
-      275
+      276
     ],
     [
       "administration",
-      246
+      250
     ],
     [
       "fire_station",
-      179
-    ],
-    [
-      "kindergarten",
-      174
+      184
     ],
     [
       "public_building",
-      172
+      170
+    ],
+    [
+      "kindergarten",
+      169
     ],
     [
       "energy",
-      135
+      138
     ],
     [
       "public_space",
-      125
+      127
     ],
     [
       "residential",
-      107
+      108
     ],
     [
       "care_social",
-      79
+      77
     ],
     [
       "infrastructure",
@@ -96,59 +96,59 @@
   "trades": [
     [
       "structural",
-      1696
+      1693
     ],
     [
       "electrical",
-      1438
+      1418
     ],
     [
       "windows_doors",
-      1345
+      1331
     ],
     [
       "hvac",
-      961
+      956
     ],
     [
       "earthworks",
-      887
+      885
     ],
     [
       "railworks",
-      802
+      799
     ],
     [
       "flooring",
-      699
+      703
     ],
     [
       "demolition",
-      675
+      687
     ],
     [
       "painting",
-      656
+      657
     ],
     [
       "roof",
-      519
+      523
     ],
     [
       "insulation",
-      481
+      474
     ],
     [
       "roadworks",
-      458
+      460
     ],
     [
       "plumbing",
-      395
+      392
     ],
     [
       "facade",
-      352
+      349
     ],
     [
       "landscaping",
@@ -156,35 +156,35 @@
     ],
     [
       "drywall",
-      284
+      274
     ],
     [
       "plastering",
-      206
+      209
     ],
     [
       "fire_protection",
-      205
+      206
     ],
     [
       "elevator",
       128
     ],
     [
+      "sewer_pipe",
+      82
+    ],
+    [
       "finishing",
       82
     ],
     [
-      "sewer_pipe",
-      81
-    ],
-    [
       "solar_energy",
-      80
+      79
     ],
     [
       "fencing",
-      64
+      65
     ],
     [
       "building_services",
@@ -195,41 +195,194 @@
     {
       "from": 50,
       "to": 59,
-      "count": 230
+      "count": 227
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2439
+      "count": 2433
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2378
+      "count": 2375
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4132
+      "count": 4149
     },
     {
       "from": 90,
       "to": 99,
-      "count": 361
+      "count": 357
     },
     {
       "from": 100,
       "to": 100,
-      "count": 148
+      "count": 150
     }
   ],
   "quality_flags": {
-    "project_type_only": 1069,
-    "trade_only": 3594,
-    "project_and_trade": 5025,
-    "opportunity_score_85_plus": 1688
+    "project_type_only": 1083,
+    "trade_only": 3567,
+    "project_and_trade": 5041,
+    "opportunity_score_85_plus": 1684
   },
   "sample_top": [
+    {
+      "source_id": "TED-723531-2026",
+      "title": "Offenes Verfahren: Zimmerarbeiten inkl. Fenster - Anbau Grundschule St. Engelbert",
+      "authority": "Stadtverwaltung Brilon",
+      "city": "Brilon",
+      "project_type": "school",
+      "trades": [
+        "windows_doors",
+        "roof",
+        "structural",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/723531-2026"
+    },
+    {
+      "source_id": "TED-723240-2026",
+      "title": "Vorinformation - Bauliche Erweiterung des Gymnasiums Paulinum für die Umstellung auf G9 (Hochbau)",
+      "authority": "Stadt Münster - Zentrale Rechtsdienstleistungen und Vergabemanagement",
+      "city": "Münster",
+      "project_type": "school",
+      "trades": [
+        "windows_doors",
+        "painting",
+        "electrical",
+        "structural",
+        "flooring",
+        "demolition",
+        "insulation",
+        "fencing",
+        "plastering"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/723240-2026"
+    },
+    {
+      "source_id": "TED-725415-2026",
+      "title": "Stadteingang Ost - Umgestaltung Mühleninsel, 1.BA - Vorbereitung Baufeld - Abbruch, Fällung, Geländemodellierung",
+      "authority": "Stadt Dessau-Roßlau, Zentr. Vergabestelle",
+      "city": "Dessau-Roßlau",
+      "project_type": "road",
+      "trades": [
+        "demolition",
+        "earthworks",
+        "roadworks",
+        "electrical"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/725415-2026"
+    },
+    {
+      "source_id": "TED-723866-2026",
+      "title": "CampS Philo, Energet. Sanierung BT 3",
+      "authority": "Staatliches Bauamt Würzburg",
+      "city": "Würzburg",
+      "project_type": "university_research",
+      "trades": [
+        "structural",
+        "earthworks",
+        "windows_doors",
+        "painting",
+        "roof",
+        "insulation",
+        "plastering",
+        "flooring",
+        "fire_protection",
+        "plumbing",
+        "hvac",
+        "electrical",
+        "demolition"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/723866-2026"
+    },
+    {
+      "source_id": "TED-723733-2026",
+      "title": "Garten- und Landschaftsbau, Sportflächenbau, Stahlbau, Klimaangepasste Umgestaltung Josef-Anton-Gera-Platz in Bochum",
+      "authority": "Stadt Bochum, Referat Zentrale Vergabestelle",
+      "city": "Bochum",
+      "project_type": "civil_engineering",
+      "trades": [
+        "hvac",
+        "structural",
+        "landscaping",
+        "demolition",
+        "earthworks",
+        "roadworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/723733-2026"
+    },
+    {
+      "source_id": "TED-725356-2026",
+      "title": "Grundinstandsetzung der Straße inkl. Nebenflächen und Umbau der Haltestellen",
+      "authority": "Landesbetrieb Straßen, Brücken und Gewässer",
+      "city": "Hamburg",
+      "project_type": "water_wastewater",
+      "trades": [
+        "demolition",
+        "earthworks",
+        "roadworks",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/725356-2026"
+    },
+    {
+      "source_id": "TED-722942-2026",
+      "title": "BImA, BPol Bundespolizei Potsdam, Comp. Haus 8, 13, 14, Trockenbauarbeiten H 13, 14",
+      "authority": "Brandenburgischer Landesbetrieb für Liegenschaften und Bauen (BLB) - Zentrale Vergabestelle",
+      "city": "Potsdam",
+      "project_type": "administration",
+      "trades": [
+        "drywall",
+        "insulation",
+        "structural",
+        "windows_doors",
+        "finishing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/722942-2026"
+    },
+    {
+      "source_id": "TED-725679-2026",
+      "title": "BLB NRW Z/NL Aachen/Technisches Gebäudemanagement TGM 100-26-00020/ Los 11. Dachbau, hier: Regionallos 11.3",
+      "authority": "Bau- und Liegenschaftsbetrieb NRW Zentrale",
+      "city": "Aachen",
+      "project_type": "civil_engineering",
+      "trades": [
+        "roof",
+        "demolition",
+        "structural",
+        "windows_doors"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/725679-2026"
+    },
     {
       "source_id": "TED-722663-2026",
       "title": "B72HE061500001 KF, Neubau Landesamt für Finanzen Tiefbau Freianlagen Verkehrsanlagen",
@@ -307,147 +460,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/719199-2026"
-    },
-    {
-      "source_id": "TED-720504-2026",
-      "title": "TEIL 1 - Straßen-, Tief- und Landschaftsbauarbeiten, TEIL 2 - Fugenpflege Natursteinpflaster - Theaterplatz und Theaterstraße bis zur Borngasse (ISK)",
-      "authority": "Stadt Aachen - Zentrale Vergabestelle FB60/300",
-      "city": "Aachen",
-      "project_type": "road",
-      "trades": [
-        "flooring",
-        "landscaping",
-        "roadworks",
-        "earthworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/720504-2026"
-    },
-    {
-      "source_id": "TED-722035-2026",
-      "title": "Grundschule Waldschule, Salzgitter-Bad - Trockenbau- und Tischlerarbeiten",
-      "authority": "Stadt Salzgitter",
-      "city": "Salzgitter",
-      "project_type": "school",
-      "trades": [
-        "drywall",
-        "insulation",
-        "structural",
-        "windows_doors"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/722035-2026"
-    },
-    {
-      "source_id": "TED-715132-2026",
-      "title": "Neubau Gesamtschule mit Sporthalle Krampnitz - Teil-Generalunternehmer-Leistungen (Rohbau und Gebäudehülle)",
-      "authority": "Entwicklungsträger Potsdam GmbH Treuhänder der Stadt",
-      "city": "Potsdam",
-      "project_type": "school",
-      "trades": [
-        "structural",
-        "earthworks",
-        "roof",
-        "insulation",
-        "windows_doors"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/715132-2026"
-    },
-    {
-      "source_id": "TED-715701-2026",
-      "title": "Trockenbauarbeiten",
-      "authority": "Landeshauptstadt München, Baureferat",
-      "city": "München",
-      "project_type": "civil_engineering",
-      "trades": [
-        "drywall",
-        "windows_doors",
-        "structural",
-        "finishing",
-        "insulation"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/715701-2026"
-    },
-    {
-      "source_id": "TED-718167-2026",
-      "title": "Garten-/Landschaftsbauarbeiten, Schloss Charlottenburg, Sanierung Freianlagen einschl. Wasserver-/entsorgung, Ehrenhof 5. BA",
-      "authority": "Stiftung Preußische Schlösser und Gärten Berlin-Brandenburg",
-      "city": "Berlin",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "demolition",
-        "roadworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/718167-2026"
-    },
-    {
-      "source_id": "TED-712928-2026",
-      "title": "Baumeister",
-      "authority": "Bezirksklinikum Mittelfranken",
-      "city": "Erlangen, Kreisfreie Stadt",
-      "project_type": "civil_engineering",
-      "trades": [
-        "demolition",
-        "earthworks",
-        "structural",
-        "plumbing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/712928-2026"
-    },
-    {
-      "source_id": "TED-714651-2026",
-      "title": "Auflassung BÜs durch Neubau SÜ in km 0,1+62, Strecke 5421, Gleisdreieck in Lindau – 2 Lose",
-      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
-      "city": "Lindau (Bodensee)",
-      "project_type": "rail",
-      "trades": [
-        "earthworks",
-        "roadworks",
-        "railworks",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/714651-2026"
-    },
-    {
-      "source_id": "TED-713643-2026",
-      "title": "Sanierung Von Bahnsteigdächer und Errichtung von Befahranlagen am Bf. Regensburg",
-      "authority": "DB Station&Service AG (Bukr 11)",
-      "city": "Regensburg",
-      "project_type": "rail",
-      "trades": [
-        "railworks",
-        "earthworks",
-        "roof",
-        "structural",
-        "electrical",
-        "plumbing",
-        "finishing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/713643-2026"
     }
   ]
 }

@@ -3,33 +3,9 @@
   "active_early_signals": 60,
   "active_master_projects": 60,
   "historical_signals": 3,
-  "qualified_procurement_records": 3170,
+  "qualified_procurement_records": 3172,
   "archived_confirmed_notices": 5,
   "links": [
-    {
-      "version": "2026-10-06-identity-v1",
-      "status": "candidate",
-      "evidence": {
-        "same_city": true,
-        "same_type": true,
-        "same_project_address": false,
-        "same_project_reference": false,
-        "shared_name_anchors": [
-          "münchen"
-        ],
-        "same_authority": false
-      },
-      "blockers": [],
-      "source_ids": [
-        "EARLY-BY-KHP-20260721-06",
-        "TED-579228-2026"
-      ],
-      "publication_interval_days": 31,
-      "interval_endpoint": "prior_information",
-      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
-      "master_project_id": "PRJ-722DB2A362",
-      "retrospective": false
-    },
     {
       "version": "2026-10-06-identity-v1",
       "status": "candidate",
@@ -304,9 +280,9 @@
     }
   ],
   "confirmed_notice_links": 5,
-  "confirmed_current_notice_links": 3,
+  "confirmed_current_notice_links": 4,
   "confirmed_project_cases": 1,
-  "candidate_notice_links": 5,
+  "candidate_notice_links": 4,
   "live_observed_lead_days": [],
   "observed_lead_note": "Tracked observation to this notice; not necessarily the project's first tender.",
   "note": "Retrospective source dates do not demonstrate prospective BauRadar lead or first tender."
