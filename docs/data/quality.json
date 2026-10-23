@@ -3,26 +3,26 @@
   "classified_opportunities": 9699,
   "classification_rate_pct": 97.0,
   "bands": {
-    "UPCOMING": 5525,
-    "HOT": 1687,
-    "EARLY": 2487
+    "UPCOMING": 5552,
+    "EARLY": 2461,
+    "HOT": 1686
   },
   "project_types": [
     [
       "unclassified_project",
-      3572
+      3548
     ],
     [
       "school",
-      1469
+      1480
     ],
     [
       "rail",
-      815
+      833
     ],
     [
       "water_wastewater",
-      373
+      383
     ],
     [
       "bridge",
@@ -30,145 +30,145 @@
     ],
     [
       "industrial",
-      328
-    ],
-    [
-      "civil_engineering",
       326
     ],
     [
-      "university_research",
-      294
+      "civil_engineering",
+      324
     ],
     [
-      "sports_leisure",
-      282
+      "university_research",
+      297
     ],
     [
       "road",
-      281
+      280
     ],
     [
-      "hospital",
+      "sports_leisure",
       275
     ],
     [
+      "hospital",
+      271
+    ],
+    [
       "administration",
-      244
+      249
     ],
     [
       "fire_station",
-      183
+      186
     ],
     [
       "public_building",
-      169
+      164
     ],
     [
       "kindergarten",
-      166
+      158
     ],
     [
       "energy",
-      135
+      136
     ],
     [
       "public_space",
-      129
+      123
     ],
     [
       "residential",
-      114
+      116
     ],
     [
       "care_social",
-      76
+      78
     ],
     [
       "infrastructure",
-      65
+      68
     ],
     [
       "commercial",
-      56
+      57
     ]
   ],
   "trades": [
     [
       "structural",
-      1709
+      1712
     ],
     [
       "electrical",
-      1428
+      1427
     ],
     [
       "windows_doors",
-      1332
+      1325
     ],
     [
       "hvac",
-      949
+      951
     ],
     [
       "earthworks",
-      900
+      906
     ],
     [
       "railworks",
-      800
+      815
     ],
     [
       "flooring",
-      706
+      704
     ],
     [
       "demolition",
-      676
+      679
     ],
     [
       "painting",
-      654
+      651
     ],
     [
       "roof",
-      525
+      517
     ],
     [
       "insulation",
-      475
+      482
     ],
     [
       "roadworks",
-      460
+      459
     ],
     [
       "plumbing",
-      385
+      379
     ],
     [
       "facade",
-      344
+      353
     ],
     [
       "landscaping",
-      332
+      321
     ],
     [
       "drywall",
-      276
+      277
     ],
     [
       "plastering",
-      210
+      213
     ],
     [
       "fire_protection",
-      203
+      200
     ],
     [
       "elevator",
-      128
+      124
     ],
     [
       "finishing",
@@ -180,7 +180,7 @@
     ],
     [
       "solar_energy",
-      75
+      74
     ],
     [
       "fencing",
@@ -188,65 +188,103 @@
     ],
     [
       "building_services",
-      51
+      47
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 233
+      "count": 230
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2434
+      "count": 2422
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2360
+      "count": 2381
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4166
+      "count": 4155
     },
     {
       "from": 90,
       "to": 99,
-      "count": 357
+      "count": 361
     },
     {
       "from": 100,
       "to": 100,
-      "count": 149
+      "count": 150
     }
   ],
   "quality_flags": {
-    "project_type_only": 1070,
-    "trade_only": 3572,
-    "project_and_trade": 5057,
-    "opportunity_score_85_plus": 1687
+    "project_type_only": 1080,
+    "trade_only": 3548,
+    "project_and_trade": 5071,
+    "opportunity_score_85_plus": 1686
   },
   "sample_top": [
     {
-      "source_id": "TED-732220-2026",
-      "title": "Erweiterung Wendelinusschule Steinau, 1. BA Holzbau, Dachdecker, Fassade, Fenster, Gerüst",
-      "authority": "Kreisausschuss des Landkreises Fulda - Zentrale Vergabestelle",
-      "city": "Petersberg-Steinau",
+      "source_id": "TED-736763-2026",
+      "title": "Gymnasium Füssen - Hinterlüftete Fassadenarbeiten BA 1-2",
+      "authority": "Landkreis Ostallgäu",
+      "city": "Füssen",
       "project_type": "school",
       "trades": [
-        "roof",
-        "windows_doors",
         "facade",
-        "structural",
-        "painting"
+        "painting",
+        "insulation",
+        "plastering"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/732220-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/736763-2026"
+    },
+    {
+      "source_id": "TED-737054-2026",
+      "title": "Umbau der Verkehrsstation Bf Herborn",
+      "authority": "DB Station&Service AG (Bukr 11)",
+      "city": "Herborn",
+      "project_type": "industrial",
+      "trades": [
+        "structural",
+        "demolition",
+        "earthworks",
+        "railworks",
+        "roof",
+        "electrical",
+        "plumbing",
+        "finishing",
+        "roadworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/737054-2026"
+    },
+    {
+      "source_id": "TED-736153-2026",
+      "title": "Freianlagen und Außenanlagen",
+      "authority": "Interkommunales Vergabezentrum der Stadt Bad Vilbel im Auftrag des Magistrats der Stadt Friedberg",
+      "city": "Friedberg",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "roadworks",
+        "earthworks",
+        "fencing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/736153-2026"
     },
     {
       "source_id": "TED-731565-2026",
@@ -268,6 +306,24 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/731565-2026"
+    },
+    {
+      "source_id": "TED-732220-2026",
+      "title": "Erweiterung Wendelinusschule Steinau, 1. BA Holzbau, Dachdecker, Fassade, Fenster, Gerüst",
+      "authority": "Kreisausschuss des Landkreises Fulda - Zentrale Vergabestelle",
+      "city": "Petersberg-Steinau",
+      "project_type": "school",
+      "trades": [
+        "roof",
+        "windows_doors",
+        "facade",
+        "structural",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/732220-2026"
     },
     {
       "source_id": "TED-730532-2026",
@@ -344,23 +400,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/729871-2026"
     },
     {
-      "source_id": "TED-728080-2026",
-      "title": "Stiftung Schloss Marienburg: Bauabschnitt 2: Garten- und Landschaftsbau: Oberbauschichten",
-      "authority": "Stiftung Schloss Marienburg",
-      "city": "Pattensen",
-      "project_type": "road",
-      "trades": [
-        "landscaping",
-        "railworks",
-        "earthworks",
-        "roadworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/728080-2026"
-    },
-    {
       "source_id": "TED-727965-2026",
       "title": "Eibenkamp 1 - Tragwerk und Gebäudehülle BIM",
       "authority": "SBH | Schulbau Hamburg",
@@ -380,6 +419,23 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/727965-2026"
     },
     {
+      "source_id": "TED-728080-2026",
+      "title": "Stiftung Schloss Marienburg: Bauabschnitt 2: Garten- und Landschaftsbau: Oberbauschichten",
+      "authority": "Stiftung Schloss Marienburg",
+      "city": "Pattensen",
+      "project_type": "road",
+      "trades": [
+        "landscaping",
+        "railworks",
+        "earthworks",
+        "roadworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/728080-2026"
+    },
+    {
       "source_id": "TED-726483-2026",
       "title": "B009 ,bei Oberwesel, Ausbau",
       "authority": "LBM Bad Kreuznach",
@@ -395,71 +451,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/726483-2026"
-    },
-    {
-      "source_id": "TED-723240-2026",
-      "title": "Vorinformation - Bauliche Erweiterung des Gymnasiums Paulinum für die Umstellung auf G9 (Hochbau)",
-      "authority": "Stadt Münster - Zentrale Rechtsdienstleistungen und Vergabemanagement",
-      "city": "Münster",
-      "project_type": "school",
-      "trades": [
-        "windows_doors",
-        "painting",
-        "electrical",
-        "structural",
-        "flooring",
-        "demolition",
-        "insulation",
-        "fencing",
-        "plastering"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/723240-2026"
-    },
-    {
-      "source_id": "TED-723531-2026",
-      "title": "Offenes Verfahren: Zimmerarbeiten inkl. Fenster - Anbau Grundschule St. Engelbert",
-      "authority": "Stadtverwaltung Brilon",
-      "city": "Brilon",
-      "project_type": "school",
-      "trades": [
-        "windows_doors",
-        "roof",
-        "structural",
-        "painting"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/723531-2026"
-    },
-    {
-      "source_id": "TED-723866-2026",
-      "title": "CampS Philo, Energet. Sanierung BT 3",
-      "authority": "Staatliches Bauamt Würzburg",
-      "city": "Würzburg",
-      "project_type": "university_research",
-      "trades": [
-        "structural",
-        "earthworks",
-        "windows_doors",
-        "painting",
-        "roof",
-        "insulation",
-        "plastering",
-        "flooring",
-        "fire_protection",
-        "plumbing",
-        "hvac",
-        "electrical",
-        "demolition"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/723866-2026"
     }
   ]
 }
