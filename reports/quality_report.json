@@ -1,72 +1,72 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9699,
+  "classified_opportunities": 9704,
   "classification_rate_pct": 97.0,
   "bands": {
-    "UPCOMING": 5552,
-    "EARLY": 2461,
-    "HOT": 1686
+    "UPCOMING": 5551,
+    "EARLY": 2458,
+    "HOT": 1695
   },
   "project_types": [
     [
       "unclassified_project",
-      3548
+      3562
     ],
     [
       "school",
-      1480
+      1469
     ],
     [
       "rail",
-      833
+      828
     ],
     [
       "water_wastewater",
-      383
+      377
     ],
     [
       "bridge",
-      347
-    ],
-    [
-      "industrial",
-      326
+      350
     ],
     [
       "civil_engineering",
-      324
+      332
+    ],
+    [
+      "industrial",
+      328
     ],
     [
       "university_research",
-      297
+      292
     ],
     [
       "road",
-      280
+      281
     ],
     [
       "sports_leisure",
-      275
+      277
     ],
     [
       "hospital",
-      271
+      272
     ],
     [
       "administration",
-      249
+      250
     ],
     [
       "fire_station",
-      186
+      183
     ],
     [
       "public_building",
-      164
+      169
     ],
     [
       "kindergarten",
-      158
+      159
     ],
     [
       "energy",
@@ -74,11 +74,11 @@
     ],
     [
       "public_space",
-      123
+      125
     ],
     [
       "residential",
-      116
+      112
     ],
     [
       "care_social",
@@ -86,85 +86,85 @@
     ],
     [
       "infrastructure",
-      68
+      66
     ],
     [
       "commercial",
-      57
+      58
     ]
   ],
   "trades": [
     [
       "structural",
-      1712
+      1730
     ],
     [
       "electrical",
-      1427
+      1419
     ],
     [
       "windows_doors",
-      1325
+      1337
     ],
     [
       "hvac",
-      951
+      954
     ],
     [
       "earthworks",
-      906
+      909
     ],
     [
       "railworks",
-      815
+      811
     ],
     [
       "flooring",
-      704
+      706
     ],
     [
       "demolition",
-      679
+      674
     ],
     [
       "painting",
-      651
+      657
     ],
     [
       "roof",
-      517
+      518
     ],
     [
       "insulation",
-      482
+      483
     ],
     [
       "roadworks",
-      459
+      466
     ],
     [
       "plumbing",
-      379
+      377
     ],
     [
       "facade",
-      353
+      356
     ],
     [
       "landscaping",
-      321
+      326
     ],
     [
       "drywall",
-      277
+      279
     ],
     [
       "plastering",
-      213
+      217
     ],
     [
       "fire_protection",
-      200
+      201
     ],
     [
       "elevator",
@@ -172,62 +172,62 @@
     ],
     [
       "finishing",
-      82
+      84
     ],
     [
       "sewer_pipe",
-      79
+      81
     ],
     [
       "solar_energy",
-      74
+      75
     ],
     [
       "fencing",
-      62
+      63
     ],
     [
       "building_services",
-      47
+      48
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 230
+      "count": 231
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2422
+      "count": 2414
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2381
+      "count": 2386
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4155
+      "count": 4162
     },
     {
       "from": 90,
       "to": 99,
-      "count": 361
+      "count": 360
     },
     {
       "from": 100,
       "to": 100,
-      "count": 150
+      "count": 151
     }
   ],
   "quality_flags": {
-    "project_type_only": 1080,
-    "trade_only": 3548,
+    "project_type_only": 1071,
+    "trade_only": 3562,
     "project_and_trade": 5071,
-    "opportunity_score_85_plus": 1686
+    "opportunity_score_85_plus": 1695
   },
   "sample_top": [
     {
@@ -326,6 +326,23 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/732220-2026"
     },
     {
+      "source_id": "TED-732810-2026",
+      "title": "GU Innengewerke",
+      "authority": "GESOBAU AG",
+      "city": "Berlin",
+      "project_type": "residential",
+      "trades": [
+        "hvac",
+        "electrical",
+        "flooring",
+        "windows_doors"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/732810-2026"
+    },
+    {
       "source_id": "TED-730532-2026",
       "title": "Hauptbaumaßnahmen Autoreisezuganlage in München Süd (VE2965)",
       "authority": "DB Netz AG (Bukr 16)",
@@ -363,23 +380,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/730958-2026"
     },
     {
-      "source_id": "TED-732810-2026",
-      "title": "GU Innengewerke",
-      "authority": "GESOBAU AG",
-      "city": "Berlin",
-      "project_type": "residential",
-      "trades": [
-        "hvac",
-        "electrical",
-        "flooring",
-        "windows_doors"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/732810-2026"
-    },
-    {
       "source_id": "TED-729871-2026",
       "title": "Einrichtung BE-Flächen und Wege und Aufbau und Betrieb Baubüros auf der Strecke 3825 km 0-46",
       "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
@@ -400,6 +400,23 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/729871-2026"
     },
     {
+      "source_id": "TED-728080-2026",
+      "title": "Stiftung Schloss Marienburg: Bauabschnitt 2: Garten- und Landschaftsbau: Oberbauschichten",
+      "authority": "Stiftung Schloss Marienburg",
+      "city": "Pattensen",
+      "project_type": "road",
+      "trades": [
+        "landscaping",
+        "railworks",
+        "earthworks",
+        "roadworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/728080-2026"
+    },
+    {
       "source_id": "TED-727965-2026",
       "title": "Eibenkamp 1 - Tragwerk und Gebäudehülle BIM",
       "authority": "SBH | Schulbau Hamburg",
@@ -417,23 +434,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/727965-2026"
-    },
-    {
-      "source_id": "TED-728080-2026",
-      "title": "Stiftung Schloss Marienburg: Bauabschnitt 2: Garten- und Landschaftsbau: Oberbauschichten",
-      "authority": "Stiftung Schloss Marienburg",
-      "city": "Pattensen",
-      "project_type": "road",
-      "trades": [
-        "landscaping",
-        "railworks",
-        "earthworks",
-        "roadworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/728080-2026"
     },
     {
       "source_id": "TED-726483-2026",
