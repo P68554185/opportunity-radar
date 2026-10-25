@@ -2,11 +2,11 @@
   "version": "0.8.9",
   "records_evaluated": 10000,
   "quality_gate": {
-    "CONFIDENT": 3155,
-    "REVIEW": 6549,
-    "UNKNOWN": 296
+    "REVIEW": 6527,
+    "CONFIDENT": 3172,
+    "UNKNOWN": 301
   },
-  "customer_feed_count": 3155,
+  "customer_feed_count": 3172,
   "customer_feed_policy": "CONFIDENT_ONLY",
   "review_leakage": 0,
   "audit_sample_size": 60,

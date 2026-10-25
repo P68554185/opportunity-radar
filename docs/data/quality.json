@@ -1,72 +1,72 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9704,
+  "classified_opportunities": 9699,
   "classification_rate_pct": 97.0,
   "bands": {
-    "UPCOMING": 5551,
-    "EARLY": 2458,
-    "HOT": 1695
+    "UPCOMING": 5549,
+    "EARLY": 2464,
+    "HOT": 1686
   },
   "project_types": [
     [
       "unclassified_project",
-      3562
+      3555
     ],
     [
       "school",
-      1469
+      1478
     ],
     [
       "rail",
-      828
+      831
     ],
     [
       "water_wastewater",
-      377
+      382
     ],
     [
       "bridge",
-      350
+      348
     ],
     [
       "civil_engineering",
-      332
+      327
     ],
     [
       "industrial",
-      328
+      326
     ],
     [
       "university_research",
-      292
+      295
     ],
     [
       "road",
-      281
+      276
     ],
     [
       "sports_leisure",
-      277
+      274
     ],
     [
       "hospital",
-      272
+      273
     ],
     [
       "administration",
-      250
+      248
     ],
     [
       "fire_station",
-      183
+      187
     ],
     [
       "public_building",
-      169
+      167
     ],
     [
       "kindergarten",
-      159
+      158
     ],
     [
       "energy",
@@ -74,73 +74,73 @@
     ],
     [
       "public_space",
-      125
+      123
     ],
     [
       "residential",
-      112
+      115
     ],
     [
       "care_social",
-      78
+      76
     ],
     [
       "infrastructure",
-      66
+      67
     ],
     [
       "commercial",
-      58
+      57
     ]
   ],
   "trades": [
     [
       "structural",
-      1730
+      1722
     ],
     [
       "electrical",
-      1419
+      1427
     ],
     [
       "windows_doors",
-      1337
+      1340
     ],
     [
       "hvac",
-      954
+      959
     ],
     [
       "earthworks",
-      909
+      898
     ],
     [
       "railworks",
-      811
+      813
     ],
     [
       "flooring",
-      706
+      700
     ],
     [
       "demolition",
-      674
+      677
     ],
     [
       "painting",
-      657
+      644
     ],
     [
       "roof",
-      518
+      515
     ],
     [
       "insulation",
-      483
+      484
     ],
     [
       "roadworks",
-      466
+      459
     ],
     [
       "plumbing",
@@ -148,23 +148,23 @@
     ],
     [
       "facade",
-      356
+      351
     ],
     [
       "landscaping",
-      326
+      320
     ],
     [
       "drywall",
-      279
+      278
     ],
     [
       "plastering",
-      217
+      209
     ],
     [
       "fire_protection",
-      201
+      199
     ],
     [
       "elevator",
@@ -172,15 +172,15 @@
     ],
     [
       "finishing",
-      84
+      83
     ],
     [
       "sewer_pipe",
-      81
+      82
     ],
     [
       "solar_energy",
-      75
+      76
     ],
     [
       "fencing",
@@ -195,39 +195,39 @@
     {
       "from": 50,
       "to": 59,
-      "count": 231
+      "count": 232
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2414
+      "count": 2422
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2386
+      "count": 2376
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4162
+      "count": 4158
     },
     {
       "from": 90,
       "to": 99,
-      "count": 360
+      "count": 362
     },
     {
       "from": 100,
       "to": 100,
-      "count": 151
+      "count": 149
     }
   ],
   "quality_flags": {
-    "project_type_only": 1071,
-    "trade_only": 3562,
-    "project_and_trade": 5071,
-    "opportunity_score_85_plus": 1695
+    "project_type_only": 1072,
+    "trade_only": 3555,
+    "project_and_trade": 5072,
+    "opportunity_score_85_plus": 1686
   },
   "sample_top": [
     {
@@ -287,6 +287,24 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/736153-2026"
     },
     {
+      "source_id": "TED-732220-2026",
+      "title": "Erweiterung Wendelinusschule Steinau, 1. BA Holzbau, Dachdecker, Fassade, Fenster, Gerüst",
+      "authority": "Kreisausschuss des Landkreises Fulda - Zentrale Vergabestelle",
+      "city": "Petersberg-Steinau",
+      "project_type": "school",
+      "trades": [
+        "roof",
+        "windows_doors",
+        "facade",
+        "structural",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/732220-2026"
+    },
+    {
       "source_id": "TED-731565-2026",
       "title": "Justizzentrum Schweinfurt,Umbau_Erweit.",
       "authority": "Staatliches Bauamt Schweinfurt",
@@ -308,22 +326,23 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/731565-2026"
     },
     {
-      "source_id": "TED-732220-2026",
-      "title": "Erweiterung Wendelinusschule Steinau, 1. BA Holzbau, Dachdecker, Fassade, Fenster, Gerüst",
-      "authority": "Kreisausschuss des Landkreises Fulda - Zentrale Vergabestelle",
-      "city": "Petersberg-Steinau",
-      "project_type": "school",
+      "source_id": "TED-730958-2026",
+      "title": "VP2: Wellmitz Kabeltiefbau inkl. Coschen und Neuzelle",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "city": "Neißemünde Wellmitz",
+      "project_type": "rail",
       "trades": [
-        "roof",
-        "windows_doors",
-        "facade",
-        "structural",
-        "painting"
+        "earthworks",
+        "railworks",
+        "roadworks",
+        "demolition",
+        "electrical",
+        "plumbing"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/732220-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/730958-2026"
     },
     {
       "source_id": "TED-732810-2026",
@@ -361,25 +380,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/730532-2026"
     },
     {
-      "source_id": "TED-730958-2026",
-      "title": "VP2: Wellmitz Kabeltiefbau inkl. Coschen und Neuzelle",
-      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
-      "city": "Neißemünde Wellmitz",
-      "project_type": "rail",
-      "trades": [
-        "earthworks",
-        "railworks",
-        "roadworks",
-        "demolition",
-        "electrical",
-        "plumbing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/730958-2026"
-    },
-    {
       "source_id": "TED-729871-2026",
       "title": "Einrichtung BE-Flächen und Wege und Aufbau und Betrieb Baubüros auf der Strecke 3825 km 0-46",
       "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
@@ -400,23 +400,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/729871-2026"
     },
     {
-      "source_id": "TED-728080-2026",
-      "title": "Stiftung Schloss Marienburg: Bauabschnitt 2: Garten- und Landschaftsbau: Oberbauschichten",
-      "authority": "Stiftung Schloss Marienburg",
-      "city": "Pattensen",
-      "project_type": "road",
-      "trades": [
-        "landscaping",
-        "railworks",
-        "earthworks",
-        "roadworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/728080-2026"
-    },
-    {
       "source_id": "TED-727965-2026",
       "title": "Eibenkamp 1 - Tragwerk und Gebäudehülle BIM",
       "authority": "SBH | Schulbau Hamburg",
@@ -434,6 +417,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/727965-2026"
+    },
+    {
+      "source_id": "TED-728080-2026",
+      "title": "Stiftung Schloss Marienburg: Bauabschnitt 2: Garten- und Landschaftsbau: Oberbauschichten",
+      "authority": "Stiftung Schloss Marienburg",
+      "city": "Pattensen",
+      "project_type": "road",
+      "trades": [
+        "landscaping",
+        "railworks",
+        "earthworks",
+        "roadworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/728080-2026"
     },
     {
       "source_id": "TED-726483-2026",
