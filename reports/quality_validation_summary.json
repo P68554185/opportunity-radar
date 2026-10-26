@@ -4,13 +4,13 @@
   "records_seen": 10000,
   "records_evaluated": 10000,
   "quality_gate": {
-    "REVIEW": 6527,
-    "CONFIDENT": 3172,
-    "UNKNOWN": 301
+    "REVIEW": 6536,
+    "CONFIDENT": 3173,
+    "UNKNOWN": 291
   },
-  "customer_facing_confident": 3172,
-  "held_for_review": 6527,
-  "suppressed_unknown": 301,
+  "customer_facing_confident": 3173,
+  "held_for_review": 6536,
+  "suppressed_unknown": 291,
   "audit_sample_size": 60,
   "gate_total_check": 10000,
   "gate_total_matches_records": true,

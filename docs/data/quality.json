@@ -1,16 +1,16 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9699,
-  "classification_rate_pct": 97.0,
+  "classified_opportunities": 9709,
+  "classification_rate_pct": 97.1,
   "bands": {
-    "UPCOMING": 5549,
-    "EARLY": 2464,
-    "HOT": 1686
+    "EARLY": 2459,
+    "HOT": 1682,
+    "UPCOMING": 5568
   },
   "project_types": [
     [
       "unclassified_project",
-      3555
+      3544
     ],
     [
       "school",
@@ -18,31 +18,31 @@
     ],
     [
       "rail",
-      831
+      843
     ],
     [
       "water_wastewater",
-      382
+      380
     ],
     [
       "bridge",
-      348
+      351
     ],
     [
       "civil_engineering",
-      327
+      330
     ],
     [
       "industrial",
-      326
+      322
     ],
     [
       "university_research",
-      295
+      294
     ],
     [
       "road",
-      276
+      277
     ],
     [
       "sports_leisure",
@@ -50,19 +50,19 @@
     ],
     [
       "hospital",
-      273
+      267
     ],
     [
       "administration",
-      248
+      255
     ],
     [
       "fire_station",
-      187
+      189
     ],
     [
       "public_building",
-      167
+      170
     ],
     [
       "kindergarten",
@@ -74,15 +74,15 @@
     ],
     [
       "public_space",
-      123
+      126
     ],
     [
       "residential",
-      115
+      114
     ],
     [
       "care_social",
-      76
+      78
     ],
     [
       "infrastructure",
@@ -90,81 +90,81 @@
     ],
     [
       "commercial",
-      57
+      56
     ]
   ],
   "trades": [
     [
       "structural",
-      1722
+      1718
     ],
     [
       "electrical",
-      1427
+      1426
     ],
     [
       "windows_doors",
-      1340
+      1322
     ],
     [
       "hvac",
-      959
+      958
     ],
     [
       "earthworks",
-      898
+      901
     ],
     [
       "railworks",
-      813
+      823
     ],
     [
       "flooring",
-      700
+      709
     ],
     [
       "demolition",
-      677
+      675
     ],
     [
       "painting",
-      644
+      649
     ],
     [
       "roof",
-      515
+      513
     ],
     [
       "insulation",
-      484
+      475
     ],
     [
       "roadworks",
-      459
+      456
     ],
     [
       "plumbing",
-      377
+      373
     ],
     [
       "facade",
-      351
+      350
     ],
     [
       "landscaping",
-      320
+      322
     ],
     [
       "drywall",
-      278
+      273
     ],
     [
       "plastering",
-      209
+      216
     ],
     [
       "fire_protection",
-      199
+      200
     ],
     [
       "elevator",
@@ -172,15 +172,15 @@
     ],
     [
       "finishing",
-      83
-    ],
-    [
-      "sewer_pipe",
       82
     ],
     [
+      "sewer_pipe",
+      78
+    ],
+    [
       "solar_energy",
-      76
+      73
     ],
     [
       "fencing",
@@ -188,48 +188,102 @@
     ],
     [
       "building_services",
-      48
+      47
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 232
+      "count": 238
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2422
+      "count": 2413
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2376
+      "count": 2385
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4158
+      "count": 4164
     },
     {
       "from": 90,
       "to": 99,
-      "count": 362
+      "count": 357
     },
     {
       "from": 100,
       "to": 100,
-      "count": 149
+      "count": 152
     }
   ],
   "quality_flags": {
-    "project_type_only": 1072,
-    "trade_only": 3555,
-    "project_and_trade": 5072,
-    "opportunity_score_85_plus": 1686
+    "project_type_only": 1087,
+    "trade_only": 3544,
+    "project_and_trade": 5078,
+    "opportunity_score_85_plus": 1682
   },
   "sample_top": [
+    {
+      "source_id": "TED-739417-2026",
+      "title": "Landschaftsbauarbeiten",
+      "authority": "Gemeindeverwaltung Haßloch",
+      "city": "Haßloch",
+      "project_type": "water_wastewater",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "structural",
+        "roadworks",
+        "fencing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/739417-2026"
+    },
+    {
+      "source_id": "TED-738166-2026",
+      "title": "Trockenbauarbeiten inkl. Rückbauarbeiten",
+      "authority": "Vergabestelle Landeshauptstadt Stuttgart",
+      "city": "Stuttgart",
+      "project_type": "university_research",
+      "trades": [
+        "drywall",
+        "demolition",
+        "insulation",
+        "windows_doors"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/738166-2026"
+    },
+    {
+      "source_id": "TED-739333-2026",
+      "title": "Kabeltiefbau ESTW, Neubau Gleis 5 inkl. OLA, Gleis- und Weichenerneuerung Schönefeld",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "city": "Schönefeld",
+      "project_type": "rail",
+      "trades": [
+        "earthworks",
+        "railworks",
+        "electrical",
+        "roof",
+        "plumbing",
+        "finishing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/739333-2026"
+    },
     {
       "source_id": "TED-736763-2026",
       "title": "Gymnasium Füssen - Hinterlüftete Fassadenarbeiten BA 1-2",
@@ -246,6 +300,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/736763-2026"
+    },
+    {
+      "source_id": "TED-736153-2026",
+      "title": "Freianlagen und Außenanlagen",
+      "authority": "Interkommunales Vergabezentrum der Stadt Bad Vilbel im Auftrag des Magistrats der Stadt Friedberg",
+      "city": "Friedberg",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "roadworks",
+        "earthworks",
+        "fencing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/736153-2026"
     },
     {
       "source_id": "TED-737054-2026",
@@ -268,23 +339,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/737054-2026"
-    },
-    {
-      "source_id": "TED-736153-2026",
-      "title": "Freianlagen und Außenanlagen",
-      "authority": "Interkommunales Vergabezentrum der Stadt Bad Vilbel im Auftrag des Magistrats der Stadt Friedberg",
-      "city": "Friedberg",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "roadworks",
-        "earthworks",
-        "fencing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/736153-2026"
     },
     {
       "source_id": "TED-732220-2026",
@@ -326,6 +380,24 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/731565-2026"
     },
     {
+      "source_id": "TED-730532-2026",
+      "title": "Hauptbaumaßnahmen Autoreisezuganlage in München Süd (VE2965)",
+      "authority": "DB Netz AG (Bukr 16)",
+      "city": "München",
+      "project_type": "rail",
+      "trades": [
+        "windows_doors",
+        "railworks",
+        "earthworks",
+        "roadworks",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/730532-2026"
+    },
+    {
       "source_id": "TED-730958-2026",
       "title": "VP2: Wellmitz Kabeltiefbau inkl. Coschen und Neuzelle",
       "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
@@ -362,24 +434,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/732810-2026"
     },
     {
-      "source_id": "TED-730532-2026",
-      "title": "Hauptbaumaßnahmen Autoreisezuganlage in München Süd (VE2965)",
-      "authority": "DB Netz AG (Bukr 16)",
-      "city": "München",
-      "project_type": "rail",
-      "trades": [
-        "windows_doors",
-        "railworks",
-        "earthworks",
-        "roadworks",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/730532-2026"
-    },
-    {
       "source_id": "TED-729871-2026",
       "title": "Einrichtung BE-Flächen und Wege und Aufbau und Betrieb Baubüros auf der Strecke 3825 km 0-46",
       "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
@@ -398,59 +452,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/729871-2026"
-    },
-    {
-      "source_id": "TED-727965-2026",
-      "title": "Eibenkamp 1 - Tragwerk und Gebäudehülle BIM",
-      "authority": "SBH | Schulbau Hamburg",
-      "city": "Hamburg",
-      "project_type": "civil_engineering",
-      "trades": [
-        "windows_doors",
-        "earthworks",
-        "demolition",
-        "roof",
-        "structural",
-        "painting"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/727965-2026"
-    },
-    {
-      "source_id": "TED-728080-2026",
-      "title": "Stiftung Schloss Marienburg: Bauabschnitt 2: Garten- und Landschaftsbau: Oberbauschichten",
-      "authority": "Stiftung Schloss Marienburg",
-      "city": "Pattensen",
-      "project_type": "road",
-      "trades": [
-        "landscaping",
-        "railworks",
-        "earthworks",
-        "roadworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/728080-2026"
-    },
-    {
-      "source_id": "TED-726483-2026",
-      "title": "B009 ,bei Oberwesel, Ausbau",
-      "authority": "LBM Bad Kreuznach",
-      "city": "B9 bei Oberwesel/ Rhein (PLZ 55430)",
-      "project_type": "road",
-      "trades": [
-        "roadworks",
-        "earthworks",
-        "demolition",
-        "fencing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/726483-2026"
     }
   ]
 }

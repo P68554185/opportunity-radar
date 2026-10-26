@@ -1,11 +1,12 @@
 {
-  "observed_at": "2026-10-25T05:34:38.854348+00:00",
+  "observed_at": "2026-10-26T05:39:43.274298+00:00",
   "sources": [
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
-      "status": "refresh_failed_retained",
-      "reason": "URLError",
-      "detail": "<urlopen error timed out>"
+      "status": "verified",
+      "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
+      "content_sha256": "a5b32a401ea482f6084c9d4ae070fd5f2bbe188d2b8595be85737886b988d67e",
+      "records": 13
     },
     {
       "source_url": "https://hibb.hamburg.de/2026/08/18/planungsdaten-fuer-das-neue-schuljahr-2026-27/",
@@ -16,50 +17,93 @@
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26254/",
-      "status": "refresh_failed_retained",
-      "reason": "URLError",
-      "detail": "<urlopen error timed out>"
+      "status": "verified",
+      "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26254/",
+      "content_sha256": "9513e961f79437f3d08caac5836e4231cf64b08be7cd64c22bcf442ed3f834fa",
+      "records": 27
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26282/",
-      "status": "refresh_failed_retained",
-      "reason": "URLError",
-      "detail": "<urlopen error timed out>"
+      "status": "verified",
+      "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26282/",
+      "content_sha256": "1891ff9420c621a01d99e0dff522c6d77099f1b58ebe1762cbc306ad4879e42f",
+      "records": 2
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26283/",
-      "status": "refresh_failed_retained",
-      "reason": "URLError",
-      "detail": "<urlopen error timed out>"
+      "status": "verified",
+      "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26283/",
+      "content_sha256": "7528ffc40ce9187f3c329082786c3c429cae7ec4031085e88be7c928bb43d0bb",
+      "records": 1
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26298/",
-      "status": "refresh_failed_retained",
-      "reason": "URLError",
-      "detail": "<urlopen error timed out>"
+      "status": "verified",
+      "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26298/",
+      "content_sha256": "f9332ae660b37ec88d9b11832a9c69fd173c0ce02392597f755bf8a243400825",
+      "records": 2
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26297/",
-      "status": "refresh_failed_retained",
-      "reason": "URLError",
-      "detail": "<urlopen error timed out>"
+      "status": "verified",
+      "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26297/",
+      "content_sha256": "6283aff9a3a97e2850bba23964493d3d0af703a325547f8a96b32c5072c96996",
+      "records": 3
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26314/",
-      "status": "refresh_failed_retained",
-      "reason": "URLError",
-      "detail": "<urlopen error timed out>"
-    },
+      "status": "verified",
+      "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26314/",
+      "content_sha256": "b52985333b1ae835d8171db0346ed3fe6d07ccc7660c57b56a2bad122909c6f7",
+      "records": 2
+    }
+  ],
+  "review_queue": [
     {
       "source_url": "https://www.stmfh.bayern.de/aktuelles/pressemitteilungen/",
-      "status": "discovery_failed",
-      "reason": "URLError"
+      "reason": "index_observation",
+      "links_seen": 618,
+      "construction_headlines": 30,
+      "sample_construction_links": [
+        "/kommunaler_finanzausgleich/krankenhausfoerderung/",
+        "/kommunaler_finanzausgleich/hochbauten/",
+        "/kommunaler_finanzausgleich/krankenhausfoerderung/"
+      ]
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26395/",
+      "reason": "unsupported_or_unqualified_document_layout"
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26386/",
+      "reason": "unsupported_or_unqualified_document_layout"
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26344/",
+      "reason": "unsupported_or_unqualified_document_layout"
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26332/",
+      "reason": "unsupported_or_unqualified_document_layout"
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26305/",
+      "reason": "unsupported_or_unqualified_document_layout"
+    },
+    {
+      "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26304/",
+      "reason": "unsupported_or_unqualified_document_layout"
     },
     {
       "source_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bsfb/veroeffentlichungen/pressemeldungen",
-      "status": "discovery_failed",
-      "reason": "TimeoutError"
+      "reason": "index_observation",
+      "links_seen": 531,
+      "construction_headlines": 16,
+      "sample_construction_links": [
+        "/politik-und-verwaltung/behoerden/bsfb",
+        "/politik-und-verwaltung/behoerden/bsfb/schulen",
+        "/politik-und-verwaltung/behoerden/bsfb/familie"
+      ]
     }
-  ],
-  "review_queue": []
+  ]
 }
