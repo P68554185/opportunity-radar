@@ -1,24 +1,24 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9709,
+  "classified_opportunities": 9708,
   "classification_rate_pct": 97.1,
   "bands": {
-    "EARLY": 2473,
     "UPCOMING": 5554,
-    "HOT": 1682
+    "HOT": 1673,
+    "EARLY": 2481
   },
   "project_types": [
     [
       "unclassified_project",
-      3551
+      3578
     ],
     [
       "school",
-      1484
+      1455
     ],
     [
       "rail",
-      826
+      835
     ],
     [
       "water_wastewater",
@@ -30,7 +30,7 @@
     ],
     [
       "civil_engineering",
-      322
+      319
     ],
     [
       "industrial",
@@ -38,39 +38,39 @@
     ],
     [
       "university_research",
-      298
+      289
     ],
     [
       "road",
-      276
+      281
     ],
     [
       "sports_leisure",
-      274
+      272
     ],
     [
       "hospital",
-      264
+      268
     ],
     [
       "administration",
-      253
+      259
     ],
     [
       "fire_station",
-      192
+      190
     ],
     [
       "public_building",
-      176
+      177
     ],
     [
       "kindergarten",
-      156
+      150
     ],
     [
       "energy",
-      133
+      134
     ],
     [
       "public_space",
@@ -78,15 +78,15 @@
     ],
     [
       "residential",
-      115
+      112
     ],
     [
       "care_social",
-      79
+      82
     ],
     [
       "infrastructure",
-      69
+      66
     ],
     [
       "commercial",
@@ -96,43 +96,43 @@
   "trades": [
     [
       "structural",
-      1705
+      1719
     ],
     [
       "electrical",
-      1431
+      1428
     ],
     [
       "windows_doors",
-      1323
+      1333
     ],
     [
       "hvac",
-      951
+      946
     ],
     [
       "earthworks",
-      908
+      914
     ],
     [
       "railworks",
-      812
+      823
     ],
     [
       "flooring",
-      708
+      704
     ],
     [
       "demolition",
-      681
+      683
     ],
     [
       "painting",
-      637
+      638
     ],
     [
       "roof",
-      519
+      507
     ],
     [
       "insulation",
@@ -140,31 +140,31 @@
     ],
     [
       "roadworks",
-      459
+      454
     ],
     [
       "plumbing",
-      372
+      369
     ],
     [
       "facade",
-      343
+      349
     ],
     [
       "landscaping",
-      329
+      323
     ],
     [
       "drywall",
-      272
+      278
     ],
     [
       "plastering",
-      221
+      218
     ],
     [
       "fire_protection",
-      205
+      196
     ],
     [
       "elevator",
@@ -172,19 +172,19 @@
     ],
     [
       "finishing",
-      83
+      81
     ],
     [
       "sewer_pipe",
-      79
+      75
     ],
     [
       "solar_energy",
-      73
+      74
     ],
     [
       "fencing",
-      62
+      63
     ],
     [
       "building_services",
@@ -195,41 +195,110 @@
     {
       "from": 50,
       "to": 59,
-      "count": 234
+      "count": 240
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2431
+      "count": 2434
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2369
+      "count": 2379
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4169
+      "count": 4155
     },
     {
       "from": 90,
       "to": 99,
-      "count": 354
+      "count": 352
     },
     {
       "from": 100,
       "to": 100,
-      "count": 152
+      "count": 148
     }
   ],
   "quality_flags": {
-    "project_type_only": 1076,
-    "trade_only": 3551,
-    "project_and_trade": 5082,
-    "opportunity_score_85_plus": 1682
+    "project_type_only": 1073,
+    "trade_only": 3578,
+    "project_and_trade": 5057,
+    "opportunity_score_85_plus": 1673
   },
   "sample_top": [
+    {
+      "source_id": "TED-748434-2026",
+      "title": "Gemeinschaftsmaßnahme - Neugestaltung Blasiikirchplatz Nordhausen - BA 3.3 (Barfüßer-/Kranichstraße); Baubereich 2 - Teilbereich 2 und Baubereich 3; Straßen- und Landschaftsbau, Beleuchtung, Brunnentechnik, Trinkwasser, Trennkanal, Kabeltiefbau",
+      "authority": "Stadtverwaltung Nordhausen Wasserverband Nordhausen Nordhausen Netz GmbH",
+      "city": "Nordhausen",
+      "project_type": "water_wastewater",
+      "trades": [
+        "electrical",
+        "earthworks",
+        "landscaping",
+        "plumbing",
+        "roadworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/748434-2026"
+    },
+    {
+      "source_id": "TED-745438-2026",
+      "title": "Bau Lüftungsanlage für Großtransformatoren: Umrichterwerk Neckarwestheim",
+      "authority": "DB Energie GmbH (Bukr 31)",
+      "city": "Neckarwestheim",
+      "project_type": "water_wastewater",
+      "trades": [
+        "hvac",
+        "windows_doors",
+        "railworks",
+        "electrical"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/745438-2026"
+    },
+    {
+      "source_id": "TED-748669-2026",
+      "title": "Stiftung Schloss Marienburg: Bauabschnitt 2.3 Vorgezogene Balkenkopfsanierung: Baustelleneinrichtung",
+      "authority": "Stiftung Schloss Marienburg",
+      "city": "Pattensen",
+      "project_type": "road",
+      "trades": [
+        "demolition",
+        "electrical",
+        "fencing",
+        "roadworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/748669-2026"
+    },
+    {
+      "source_id": "TED-746219-2026",
+      "title": "Los 311 Erdbau, Abdichtungsarbeiten, Abbruch Außenbauteile - Ensemble Goethe-Wohnhaus: Denkmalgerechte Instandsetzung",
+      "authority": "Klassik Stiftung Weimar Stiftung des öffentlichen Rechts",
+      "city": "Weimar",
+      "project_type": "public_building",
+      "trades": [
+        "roof",
+        "demolition",
+        "structural",
+        "earthworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/746219-2026"
+    },
     {
       "source_id": "TED-744753-2026",
       "title": "Rohbauarbeiten Kryolager - Neubau Zentrallabor",
@@ -248,23 +317,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/744753-2026"
     },
     {
-      "source_id": "TED-741974-2026",
-      "title": "HWK DO VE501 H7 Außenanlagen Haus 7",
-      "authority": "Handwerkskammer Dortmund",
-      "city": "Dortmund",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "roadworks",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/741974-2026"
-    },
-    {
       "source_id": "TED-741980-2026",
       "title": "B009 ,bei Oberwesel, Ausbau",
       "authority": "LBM Bad Kreuznach",
@@ -280,6 +332,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/741980-2026"
+    },
+    {
+      "source_id": "TED-741974-2026",
+      "title": "HWK DO VE501 H7 Außenanlagen Haus 7",
+      "authority": "Handwerkskammer Dortmund",
+      "city": "Dortmund",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "roadworks",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/741974-2026"
     },
     {
       "source_id": "TED-743710-2026",
@@ -368,84 +437,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/736763-2026"
-    },
-    {
-      "source_id": "TED-736153-2026",
-      "title": "Freianlagen und Außenanlagen",
-      "authority": "Interkommunales Vergabezentrum der Stadt Bad Vilbel im Auftrag des Magistrats der Stadt Friedberg",
-      "city": "Friedberg",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "roadworks",
-        "earthworks",
-        "fencing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/736153-2026"
-    },
-    {
-      "source_id": "TED-737054-2026",
-      "title": "Umbau der Verkehrsstation Bf Herborn",
-      "authority": "DB Station&Service AG (Bukr 11)",
-      "city": "Herborn",
-      "project_type": "industrial",
-      "trades": [
-        "structural",
-        "demolition",
-        "earthworks",
-        "railworks",
-        "roof",
-        "electrical",
-        "plumbing",
-        "finishing",
-        "roadworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/737054-2026"
-    },
-    {
-      "source_id": "TED-731565-2026",
-      "title": "Justizzentrum Schweinfurt,Umbau_Erweit.",
-      "authority": "Staatliches Bauamt Schweinfurt",
-      "city": "Schweinfurt",
-      "project_type": "civil_engineering",
-      "trades": [
-        "plastering",
-        "windows_doors",
-        "painting",
-        "flooring",
-        "electrical",
-        "earthworks",
-        "plumbing",
-        "hvac"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/731565-2026"
-    },
-    {
-      "source_id": "TED-730532-2026",
-      "title": "Hauptbaumaßnahmen Autoreisezuganlage in München Süd (VE2965)",
-      "authority": "DB Netz AG (Bukr 16)",
-      "city": "München",
-      "project_type": "rail",
-      "trades": [
-        "windows_doors",
-        "railworks",
-        "earthworks",
-        "roadworks",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/730532-2026"
     }
   ]
 }

@@ -1,33 +1,33 @@
 {
   "region": "Dresden",
-  "observed_at": "2026-10-27T05:38:16.833107+00:00",
+  "observed_at": "2026-10-28T05:46:55.858335+00:00",
   "sources": [
     {
       "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1061092",
       "status": "verified",
       "records": 1,
-      "content_sha256": "aa4b3705391efeea97a580b9f41fb5845ec9142b314bdfc5ce1c4238f110de92",
+      "content_sha256": "7ab45b47c6ebd20fcda0458243d8753fcc6f861153b19753564d1615156aaf80",
       "date_basis": "official_notice_date"
     },
     {
       "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1063128",
       "status": "verified",
       "records": 1,
-      "content_sha256": "24d86f1d5113d521f1f50448a67ae0297188ad2f5d5e429d930f5b2ff9c55e2a",
+      "content_sha256": "06d39c48cf761357765439e630dac5b9b030e7a06c1a1fc535b964cd038de559",
       "date_basis": "official_notice_date"
     },
     {
       "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1063071",
       "status": "verified",
       "records": 1,
-      "content_sha256": "ad2223b42f66d7d0c5b2e56bf1300e0fc97b549d575afdba986cc9921c463573",
+      "content_sha256": "d683d1e518a1fbbbd34a22960cc4941eeb13cd4d70eb6bf30defbb9b0c238ffe",
       "date_basis": "official_notice_date"
     },
     {
       "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1064317",
       "status": "verified",
       "records": 1,
-      "content_sha256": "e96553873e6a1a1a72e4d0a09f311d3e1cdb6f49ded5756dab5152d20a1b450e",
+      "content_sha256": "e57a9e5ca483df6ae9c2023a90fe2b62b9eaefb3dbfe80a2cb04e291a6beaa20",
       "date_basis": "official_notice_date"
     }
   ],

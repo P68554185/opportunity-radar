@@ -1,8 +1,8 @@
 {
   "target": 10000,
   "verified_source_records": 10000,
-  "customer_records": 3244,
-  "customer_feed_bytes": 6532231,
+  "customer_records": 3218,
+  "customer_feed_bytes": 6492997,
   "maximum_customer_feed_bytes": 12000000,
   "no_accuracy_claim": true,
   "verified": true
