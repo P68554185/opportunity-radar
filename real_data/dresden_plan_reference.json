@@ -8916,10 +8916,10 @@
         "name2": "Comeniusstraße/Canalettostraße",
         "plan_ref": "C",
         "plan_stand": "Öffentliche Auslegung",
-        "ab_dat": "",
-        "bis_dat": "",
+        "ab_dat": "2026-11-02T00:00:00",
+        "bis_dat": "2026-12-04T00:00:00",
         "beschl_dat": "2026-09-30T00:00:00",
-        "amtsbl_dat": "",
+        "amtsbl_dat": "2026-10-29T00:00:00",
         "hinweis": "-",
         "url": "https://www.dresden.de/de/rathaus/dienstleistungen/bebauungsplan.php",
         "ds_modified": "2025-06-05T13:44:15.252"
@@ -12880,7 +12880,7 @@
         "ab_dat": "2019-09-24T00:00:00",
         "bis_dat": "",
         "beschl_dat": "",
-        "amtsbl_dat": "",
+        "amtsbl_dat": "2019-09-05T00:00:00",
         "hinweis": "-",
         "url": "https://www.dresden.de/de/rathaus/dienstleistungen/bebauungsplan.php",
         "ds_modified": "2017-06-27T14:50:29.699"

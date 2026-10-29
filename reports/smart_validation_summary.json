@@ -2,9 +2,9 @@
   "version": "0.9.0",
   "cases": 60,
   "risk": {
-    "HIGH": 12,
-    "MEDIUM": 33,
-    "LOW": 15
+    "HIGH": 15,
+    "MEDIUM": 29,
+    "LOW": 16
   },
   "strategy": "Review highest-risk contradictions first; do not infer measured precision from unreviewed cases."
 }

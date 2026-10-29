@@ -1,48 +1,48 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9708,
+  "classified_opportunities": 9713,
   "classification_rate_pct": 97.1,
   "bands": {
-    "UPCOMING": 5554,
-    "HOT": 1673,
-    "EARLY": 2481
+    "UPCOMING": 5558,
+    "EARLY": 2482,
+    "HOT": 1673
   },
   "project_types": [
     [
       "unclassified_project",
-      3578
+      3574
     ],
     [
       "school",
-      1455
+      1450
     ],
     [
       "rail",
-      835
+      828
     ],
     [
       "water_wastewater",
-      381
+      394
     ],
     [
       "bridge",
-      357
+      355
     ],
     [
       "civil_engineering",
-      319
+      323
     ],
     [
       "industrial",
-      315
+      309
     ],
     [
       "university_research",
-      289
+      290
     ],
     [
       "road",
-      281
+      285
     ],
     [
       "sports_leisure",
@@ -50,7 +50,7 @@
     ],
     [
       "hospital",
-      268
+      266
     ],
     [
       "administration",
@@ -58,23 +58,23 @@
     ],
     [
       "fire_station",
-      190
+      185
     ],
     [
       "public_building",
-      177
+      180
     ],
     [
       "kindergarten",
-      150
+      159
     ],
     [
       "energy",
-      134
+      135
     ],
     [
       "public_space",
-      130
+      127
     ],
     [
       "residential",
@@ -82,7 +82,7 @@
     ],
     [
       "care_social",
-      82
+      87
     ],
     [
       "infrastructure",
@@ -90,93 +90,93 @@
     ],
     [
       "commercial",
-      58
+      57
     ]
   ],
   "trades": [
     [
       "structural",
-      1719
+      1728
     ],
     [
       "electrical",
-      1428
+      1417
     ],
     [
       "windows_doors",
-      1333
+      1349
     ],
     [
       "hvac",
-      946
+      940
     ],
     [
       "earthworks",
-      914
+      897
     ],
     [
       "railworks",
-      823
+      812
     ],
     [
       "flooring",
-      704
+      705
     ],
     [
       "demolition",
-      683
+      668
     ],
     [
       "painting",
-      638
+      648
     ],
     [
       "roof",
-      507
+      513
     ],
     [
       "insulation",
-      477
+      476
     ],
     [
       "roadworks",
-      454
+      464
     ],
     [
       "plumbing",
-      369
+      373
     ],
     [
       "facade",
-      349
+      364
     ],
     [
       "landscaping",
-      323
+      318
     ],
     [
       "drywall",
-      278
+      275
     ],
     [
       "plastering",
-      218
+      224
     ],
     [
       "fire_protection",
-      196
+      200
     ],
     [
       "elevator",
-      126
+      129
     ],
     [
       "finishing",
-      81
+      82
     ],
     [
       "sewer_pipe",
-      75
+      77
     ],
     [
       "solar_energy",
@@ -184,52 +184,88 @@
     ],
     [
       "fencing",
-      63
+      64
     ],
     [
       "building_services",
-      45
+      44
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 240
+      "count": 236
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2434
+      "count": 2448
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2379
+      "count": 2363
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4155
+      "count": 4160
     },
     {
       "from": 90,
       "to": 99,
-      "count": 352
+      "count": 356
     },
     {
       "from": 100,
       "to": 100,
-      "count": 148
+      "count": 150
     }
   ],
   "quality_flags": {
-    "project_type_only": 1073,
-    "trade_only": 3578,
-    "project_and_trade": 5057,
+    "project_type_only": 1068,
+    "trade_only": 3574,
+    "project_and_trade": 5071,
     "opportunity_score_85_plus": 1673
   },
   "sample_top": [
+    {
+      "source_id": "TED-752130-2026",
+      "title": "GU-Rahmenvertrag 2026 Los 1 - Hochbau_Schlüsselfertiges Bauen",
+      "authority": "Land Berlin – Sondervermögen Immobilien des Landes Berlin (SILB) c/o BIM Berliner Immobilienmanagement GmbH Liegenschaftsfonds Berlin GmbH & Co. KG (THV 1) c/o BIM Berliner Immobilienmanagement GmbH Liegenschaftsfonds Projektgesellschaft mbH & Co. KG (THV 2) c/o BIM Berliner Immobilienmanagement GmbH Land Berlin – Sondervermögen für Daseinsvorsorge- und nicht betriebsnotwendige Bestandsgrundstücke des Landes Berlin (SODA) c/o BIM Berliner Immobilienmanagement GmbH Land Berlin – BIM Berliner Immobilienmanagement GmbH (Anmietvermögen) c/o BIM Berliner Immobilienmanagement GmbH BIM Berliner Immobilienmanagement GmbH BBF Berliner Bodenfonds GmbH Geschäftsversorgungsverträge - Jeweiliger Auftraggeber der Geschäftsbesorgung Landesamt für Flüchtlingsangelegenheiten (LAF) Land Berlin",
+      "city": "Berlin",
+      "project_type": "industrial",
+      "trades": [
+        "demolition",
+        "structural",
+        "insulation",
+        "plastering",
+        "windows_doors",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/752130-2026"
+    },
+    {
+      "source_id": "TED-750049-2026",
+      "title": "Gymnasium Füssen - Hinterlüftete Fassadenarbeiten BA 1-2",
+      "authority": "Landkreis Ostallgäu",
+      "city": "Füssen",
+      "project_type": "school",
+      "trades": [
+        "facade",
+        "painting",
+        "insulation",
+        "plastering"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/750049-2026"
+    },
     {
       "source_id": "TED-748434-2026",
       "title": "Gemeinschaftsmaßnahme - Neugestaltung Blasiikirchplatz Nordhausen - BA 3.3 (Barfüßer-/Kranichstraße); Baubereich 2 - Teilbereich 2 und Baubereich 3; Straßen- und Landschaftsbau, Beleuchtung, Brunnentechnik, Trinkwasser, Trennkanal, Kabeltiefbau",
@@ -401,42 +437,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/738166-2026"
-    },
-    {
-      "source_id": "TED-739333-2026",
-      "title": "Kabeltiefbau ESTW, Neubau Gleis 5 inkl. OLA, Gleis- und Weichenerneuerung Schönefeld",
-      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
-      "city": "Schönefeld",
-      "project_type": "rail",
-      "trades": [
-        "earthworks",
-        "railworks",
-        "electrical",
-        "roof",
-        "plumbing",
-        "finishing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/739333-2026"
-    },
-    {
-      "source_id": "TED-736763-2026",
-      "title": "Gymnasium Füssen - Hinterlüftete Fassadenarbeiten BA 1-2",
-      "authority": "Landkreis Ostallgäu",
-      "city": "Füssen",
-      "project_type": "school",
-      "trades": [
-        "facade",
-        "painting",
-        "insulation",
-        "plastering"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/736763-2026"
     }
   ]
 }
