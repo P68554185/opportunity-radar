@@ -1,24 +1,24 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9717,
+  "classified_opportunities": 9716,
   "classification_rate_pct": 97.2,
   "bands": {
-    "HOT": 1693,
-    "UPCOMING": 5559,
-    "EARLY": 2465
+    "UPCOMING": 5554,
+    "HOT": 1694,
+    "EARLY": 2468
   },
   "project_types": [
     [
       "unclassified_project",
-      3562
+      3566
     ],
     [
       "school",
-      1452
+      1472
     ],
     [
       "rail",
-      818
+      810
     ],
     [
       "water_wastewater",
@@ -26,35 +26,35 @@
     ],
     [
       "bridge",
-      345
+      347
     ],
     [
       "civil_engineering",
-      322
+      323
     ],
     [
       "industrial",
-      308
+      302
     ],
     [
       "university_research",
-      288
+      285
     ],
     [
       "road",
-      282
+      285
     ],
     [
       "sports_leisure",
-      278
-    ],
-    [
-      "hospital",
       274
     ],
     [
       "administration",
-      270
+      269
+    ],
+    [
+      "hospital",
+      269
     ],
     [
       "fire_station",
@@ -62,15 +62,15 @@
     ],
     [
       "public_building",
-      183
+      182
     ],
     [
       "kindergarten",
-      160
+      166
     ],
     [
       "energy",
-      144
+      143
     ],
     [
       "public_space",
@@ -78,53 +78,53 @@
     ],
     [
       "residential",
-      111
+      105
     ],
     [
       "care_social",
-      85
+      87
     ],
     [
       "infrastructure",
-      69
+      67
     ],
     [
       "commercial",
-      60
+      58
     ]
   ],
   "trades": [
     [
       "structural",
-      1735
+      1740
     ],
     [
       "electrical",
-      1423
+      1428
     ],
     [
       "windows_doors",
-      1343
+      1346
     ],
     [
       "hvac",
-      946
+      950
     ],
     [
       "earthworks",
-      920
+      911
     ],
     [
       "railworks",
-      803
+      796
     ],
     [
       "flooring",
-      700
+      701
     ],
     [
       "demolition",
-      668
+      669
     ],
     [
       "painting",
@@ -132,39 +132,39 @@
     ],
     [
       "roof",
-      519
+      518
     ],
     [
       "insulation",
-      479
+      481
     ],
     [
       "roadworks",
-      459
+      462
     ],
     [
       "plumbing",
-      379
+      383
     ],
     [
       "facade",
-      356
+      357
     ],
     [
       "landscaping",
-      327
+      323
     ],
     [
       "drywall",
-      271
+      273
     ],
     [
       "plastering",
-      225
+      227
     ],
     [
       "fire_protection",
-      200
+      201
     ],
     [
       "elevator",
@@ -172,35 +172,35 @@
     ],
     [
       "finishing",
-      82
-    ],
-    [
-      "sewer_pipe",
-      75
+      81
     ],
     [
       "solar_energy",
-      74
+      75
+    ],
+    [
+      "sewer_pipe",
+      73
     ],
     [
       "fencing",
-      65
+      63
     ],
     [
       "building_services",
-      43
+      42
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 246
+      "count": 239
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2421
+      "count": 2426
     },
     {
       "from": 70,
@@ -210,26 +210,43 @@
     {
       "from": 80,
       "to": 89,
-      "count": 4178
+      "count": 4177
     },
     {
       "from": 90,
       "to": 99,
-      "count": 353
+      "count": 354
     },
     {
       "from": 100,
       "to": 100,
-      "count": 148
+      "count": 149
     }
   ],
   "quality_flags": {
-    "project_type_only": 1079,
-    "trade_only": 3562,
-    "project_and_trade": 5076,
-    "opportunity_score_85_plus": 1693
+    "project_type_only": 1072,
+    "trade_only": 3566,
+    "project_and_trade": 5078,
+    "opportunity_score_85_plus": 1694
   },
   "sample_top": [
+    {
+      "source_id": "TED-755314-2026",
+      "title": "Neuss, Grünachse Hammfeld",
+      "authority": "NRW.URBAN Kommunale Entwicklung GmbH",
+      "city": "Neuss",
+      "project_type": "infrastructure",
+      "trades": [
+        "roadworks",
+        "earthworks",
+        "demolition",
+        "electrical"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/755314-2026"
+    },
     {
       "source_id": "TED-754574-2026",
       "title": "10027 B7 0004 - Polizeikommissariat Peine - Grundsanierung",
@@ -249,23 +266,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/754574-2026"
-    },
-    {
-      "source_id": "TED-755314-2026",
-      "title": "Neuss, Grünachse Hammfeld",
-      "authority": "NRW.URBAN Kommunale Entwicklung GmbH",
-      "city": "Neuss",
-      "project_type": "infrastructure",
-      "trades": [
-        "roadworks",
-        "earthworks",
-        "demolition",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/755314-2026"
     },
     {
       "source_id": "TED-752130-2026",
@@ -390,23 +390,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/744753-2026"
     },
     {
-      "source_id": "TED-741974-2026",
-      "title": "HWK DO VE501 H7 Außenanlagen Haus 7",
-      "authority": "Handwerkskammer Dortmund",
-      "city": "Dortmund",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "roadworks",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/741974-2026"
-    },
-    {
       "source_id": "TED-741980-2026",
       "title": "B009 ,bei Oberwesel, Ausbau",
       "authority": "LBM Bad Kreuznach",
@@ -422,6 +405,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/741980-2026"
+    },
+    {
+      "source_id": "TED-741974-2026",
+      "title": "HWK DO VE501 H7 Außenanlagen Haus 7",
+      "authority": "Handwerkskammer Dortmund",
+      "city": "Dortmund",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "roadworks",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/741974-2026"
     },
     {
       "source_id": "TED-743710-2026",
