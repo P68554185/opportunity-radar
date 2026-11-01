@@ -1,24 +1,24 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9716,
-  "classification_rate_pct": 97.2,
+  "classified_opportunities": 9712,
+  "classification_rate_pct": 97.1,
   "bands": {
-    "UPCOMING": 5554,
-    "HOT": 1694,
-    "EARLY": 2468
+    "UPCOMING": 5556,
+    "EARLY": 2468,
+    "HOT": 1688
   },
   "project_types": [
     [
       "unclassified_project",
-      3566
+      3568
     ],
     [
       "school",
-      1472
+      1461
     ],
     [
       "rail",
-      810
+      813
     ],
     [
       "water_wastewater",
@@ -26,51 +26,51 @@
     ],
     [
       "bridge",
-      347
+      346
     ],
     [
       "civil_engineering",
-      323
+      321
     ],
     [
       "industrial",
-      302
-    ],
-    [
-      "university_research",
-      285
+      307
     ],
     [
       "road",
-      285
+      282
+    ],
+    [
+      "university_research",
+      282
     ],
     [
       "sports_leisure",
-      274
-    ],
-    [
-      "administration",
-      269
+      275
     ],
     [
       "hospital",
-      269
+      271
+    ],
+    [
+      "administration",
+      268
     ],
     [
       "fire_station",
-      188
+      191
     ],
     [
       "public_building",
-      182
+      181
     ],
     [
       "kindergarten",
-      166
+      164
     ],
     [
       "energy",
-      143
+      142
     ],
     [
       "public_space",
@@ -78,15 +78,15 @@
     ],
     [
       "residential",
-      105
+      109
     ],
     [
       "care_social",
-      87
+      85
     ],
     [
       "infrastructure",
-      67
+      70
     ],
     [
       "commercial",
@@ -96,67 +96,67 @@
   "trades": [
     [
       "structural",
-      1740
+      1743
     ],
     [
       "electrical",
-      1428
+      1423
     ],
     [
       "windows_doors",
-      1346
+      1353
     ],
     [
       "hvac",
-      950
+      948
     ],
     [
       "earthworks",
-      911
+      913
     ],
     [
       "railworks",
-      796
+      798
     ],
     [
       "flooring",
-      701
+      705
     ],
     [
       "demolition",
-      669
+      663
     ],
     [
       "painting",
-      647
+      643
     ],
     [
       "roof",
-      518
+      520
     ],
     [
       "insulation",
-      481
+      482
     ],
     [
       "roadworks",
-      462
+      457
     ],
     [
       "plumbing",
-      383
+      378
     ],
     [
       "facade",
-      357
+      356
     ],
     [
       "landscaping",
-      323
+      322
     ],
     [
       "drywall",
-      273
+      274
     ],
     [
       "plastering",
@@ -164,43 +164,43 @@
     ],
     [
       "fire_protection",
-      201
+      202
     ],
     [
       "elevator",
-      127
+      126
     ],
     [
       "finishing",
       81
     ],
     [
-      "solar_energy",
+      "sewer_pipe",
       75
     ],
     [
-      "sewer_pipe",
+      "solar_energy",
       73
     ],
     [
       "fencing",
-      63
+      64
     ],
     [
       "building_services",
-      42
+      43
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 239
+      "count": 245
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2426
+      "count": 2422
     },
     {
       "from": 70,
@@ -210,12 +210,12 @@
     {
       "from": 80,
       "to": 89,
-      "count": 4177
+      "count": 4174
     },
     {
       "from": 90,
       "to": 99,
-      "count": 354
+      "count": 351
     },
     {
       "from": 100,
@@ -224,29 +224,12 @@
     }
   ],
   "quality_flags": {
-    "project_type_only": 1072,
-    "trade_only": 3566,
-    "project_and_trade": 5078,
-    "opportunity_score_85_plus": 1694
+    "project_type_only": 1069,
+    "trade_only": 3568,
+    "project_and_trade": 5075,
+    "opportunity_score_85_plus": 1688
   },
   "sample_top": [
-    {
-      "source_id": "TED-755314-2026",
-      "title": "Neuss, Grünachse Hammfeld",
-      "authority": "NRW.URBAN Kommunale Entwicklung GmbH",
-      "city": "Neuss",
-      "project_type": "infrastructure",
-      "trades": [
-        "roadworks",
-        "earthworks",
-        "demolition",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/755314-2026"
-    },
     {
       "source_id": "TED-754574-2026",
       "title": "10027 B7 0004 - Polizeikommissariat Peine - Grundsanierung",
@@ -266,6 +249,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/754574-2026"
+    },
+    {
+      "source_id": "TED-755314-2026",
+      "title": "Neuss, Grünachse Hammfeld",
+      "authority": "NRW.URBAN Kommunale Entwicklung GmbH",
+      "city": "Neuss",
+      "project_type": "infrastructure",
+      "trades": [
+        "roadworks",
+        "earthworks",
+        "demolition",
+        "electrical"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/755314-2026"
     },
     {
       "source_id": "TED-752130-2026",
