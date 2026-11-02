@@ -1,11 +1,11 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9712,
-  "classification_rate_pct": 97.1,
+  "classified_opportunities": 9720,
+  "classification_rate_pct": 97.2,
   "bands": {
-    "UPCOMING": 5556,
+    "UPCOMING": 5565,
     "EARLY": 2468,
-    "HOT": 1688
+    "HOT": 1687
   },
   "project_types": [
     [
@@ -14,55 +14,55 @@
     ],
     [
       "school",
-      1461
+      1464
     ],
     [
       "rail",
-      813
+      809
     ],
     [
       "water_wastewater",
-      386
+      383
     ],
     [
       "bridge",
-      346
+      355
     ],
     [
       "civil_engineering",
-      321
+      328
     ],
     [
       "industrial",
-      307
-    ],
-    [
-      "road",
-      282
+      310
     ],
     [
       "university_research",
-      282
+      284
+    ],
+    [
+      "road",
+      280
     ],
     [
       "sports_leisure",
-      275
+      277
     ],
     [
       "hospital",
-      271
+      274
     ],
     [
       "administration",
-      268
+      264
     ],
     [
       "fire_station",
-      191
+      197
     ],
     [
       "public_building",
-      181
+      182
     ],
     [
       "kindergarten",
@@ -74,93 +74,93 @@
     ],
     [
       "public_space",
-      132
+      127
     ],
     [
       "residential",
-      109
+      102
     ],
     [
       "care_social",
-      85
+      87
     ],
     [
       "infrastructure",
-      70
+      66
     ],
     [
       "commercial",
-      58
+      57
     ]
   ],
   "trades": [
     [
       "structural",
-      1743
+      1739
     ],
     [
       "electrical",
-      1423
+      1418
     ],
     [
       "windows_doors",
-      1353
+      1343
     ],
     [
       "hvac",
-      948
+      956
     ],
     [
       "earthworks",
-      913
+      914
     ],
     [
       "railworks",
-      798
+      804
     ],
     [
       "flooring",
-      705
+      707
     ],
     [
       "demolition",
-      663
+      671
     ],
     [
       "painting",
-      643
+      644
     ],
     [
       "roof",
-      520
+      518
     ],
     [
       "insulation",
-      482
+      471
     ],
     [
       "roadworks",
-      457
+      460
     ],
     [
       "plumbing",
-      378
+      389
     ],
     [
       "facade",
-      356
+      366
     ],
     [
       "landscaping",
-      322
+      323
     ],
     [
       "drywall",
-      274
+      261
     ],
     [
       "plastering",
-      227
+      224
     ],
     [
       "fire_protection",
@@ -168,49 +168,49 @@
     ],
     [
       "elevator",
-      126
+      127
     ],
     [
       "finishing",
       81
     ],
     [
-      "sewer_pipe",
+      "solar_energy",
       75
     ],
     [
-      "solar_energy",
-      73
+      "sewer_pipe",
+      74
     ],
     [
       "fencing",
-      64
+      61
     ],
     [
       "building_services",
-      43
+      40
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 245
+      "count": 236
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2422
+      "count": 2437
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2371
+      "count": 2375
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4174
+      "count": 4169
     },
     {
       "from": 90,
@@ -220,16 +220,136 @@
     {
       "from": 100,
       "to": 100,
-      "count": 149
+      "count": 152
     }
   ],
   "quality_flags": {
-    "project_type_only": 1069,
+    "project_type_only": 1075,
     "trade_only": 3568,
-    "project_and_trade": 5075,
-    "opportunity_score_85_plus": 1688
+    "project_and_trade": 5077,
+    "opportunity_score_85_plus": 1687
   },
   "sample_top": [
+    {
+      "source_id": "TED-756622-2026",
+      "title": "BLB NRW Duisburg / Mönchengladbach / Hochschule Niederrhein, Gebäude Spinnerei / Metallbaufassade / 020-25-00366",
+      "authority": "Bau- und Liegenschaftsbetrieb NRW Duisburg",
+      "city": "Mönchengladbach",
+      "project_type": "university_research",
+      "trades": [
+        "facade",
+        "structural",
+        "windows_doors",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/756622-2026"
+    },
+    {
+      "source_id": "TED-759596-2026",
+      "title": "TÜ-_-010 / LRZ.1020.001 -TUB - Neubau Luftrettungszentrum - Rohbauarbeiten",
+      "authority": "BG Kliniken Ludwigshafen und Tübingen gGmbH",
+      "city": "Tübingen",
+      "project_type": "civil_engineering",
+      "trades": [
+        "structural",
+        "roof",
+        "electrical",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/759596-2026"
+    },
+    {
+      "source_id": "TED-757977-2026",
+      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
+      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
+      "city": "Köln",
+      "project_type": "university_research",
+      "trades": [
+        "drywall",
+        "insulation",
+        "structural",
+        "flooring"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/757977-2026"
+    },
+    {
+      "source_id": "TED-756796-2026",
+      "title": "Ern. Krbw Scharnhorst (2132/10,825) & EÜ Flughafenstraße (2132/11,134)",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "city": "Dortmund",
+      "project_type": "industrial",
+      "trades": [
+        "demolition",
+        "railworks",
+        "structural",
+        "electrical"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/756796-2026"
+    },
+    {
+      "source_id": "TED-756938-2026",
+      "title": "Ern. EÜ km 91,348 (Los 1) u. EÜ 93,294 (Los 2), Strecke 5501 München - Treuchtlingen",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "city": "Gaimersheim",
+      "project_type": "bridge",
+      "trades": [
+        "earthworks",
+        "roadworks",
+        "railworks",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/756938-2026"
+    },
+    {
+      "source_id": "TED-759116-2026",
+      "title": "Maxiparkerweiterung, Garten- und Landschaftsbauarbeiten, Maxiplaza, Durchgang, nördl. MaxiGarten",
+      "authority": "Hamm.Invest GmbH",
+      "city": "Hamm",
+      "project_type": "water_wastewater",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "demolition",
+        "structural",
+        "fencing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/759116-2026"
+    },
+    {
+      "source_id": "TED-755314-2026",
+      "title": "Neuss, Grünachse Hammfeld",
+      "authority": "NRW.URBAN Kommunale Entwicklung GmbH",
+      "city": "Neuss",
+      "project_type": "infrastructure",
+      "trades": [
+        "roadworks",
+        "earthworks",
+        "demolition",
+        "electrical"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/755314-2026"
+    },
     {
       "source_id": "TED-754574-2026",
       "title": "10027 B7 0004 - Polizeikommissariat Peine - Grundsanierung",
@@ -249,23 +369,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/754574-2026"
-    },
-    {
-      "source_id": "TED-755314-2026",
-      "title": "Neuss, Grünachse Hammfeld",
-      "authority": "NRW.URBAN Kommunale Entwicklung GmbH",
-      "city": "Neuss",
-      "project_type": "infrastructure",
-      "trades": [
-        "roadworks",
-        "earthworks",
-        "demolition",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/755314-2026"
     },
     {
       "source_id": "TED-752130-2026",
@@ -337,108 +440,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/745438-2026"
-    },
-    {
-      "source_id": "TED-748669-2026",
-      "title": "Stiftung Schloss Marienburg: Bauabschnitt 2.3 Vorgezogene Balkenkopfsanierung: Baustelleneinrichtung",
-      "authority": "Stiftung Schloss Marienburg",
-      "city": "Pattensen",
-      "project_type": "road",
-      "trades": [
-        "demolition",
-        "electrical",
-        "fencing",
-        "roadworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/748669-2026"
-    },
-    {
-      "source_id": "TED-746219-2026",
-      "title": "Los 311 Erdbau, Abdichtungsarbeiten, Abbruch Außenbauteile - Ensemble Goethe-Wohnhaus: Denkmalgerechte Instandsetzung",
-      "authority": "Klassik Stiftung Weimar Stiftung des öffentlichen Rechts",
-      "city": "Weimar",
-      "project_type": "public_building",
-      "trades": [
-        "roof",
-        "demolition",
-        "structural",
-        "earthworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/746219-2026"
-    },
-    {
-      "source_id": "TED-744753-2026",
-      "title": "Rohbauarbeiten Kryolager - Neubau Zentrallabor",
-      "authority": "Universitätsklinikum Düsseldorf",
-      "city": "Düsseldorf",
-      "project_type": "university_research",
-      "trades": [
-        "structural",
-        "demolition",
-        "earthworks",
-        "roadworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/744753-2026"
-    },
-    {
-      "source_id": "TED-741980-2026",
-      "title": "B009 ,bei Oberwesel, Ausbau",
-      "authority": "LBM Bad Kreuznach",
-      "city": "B9 bei Oberwesel/ Rhein (PLZ 55430)",
-      "project_type": "road",
-      "trades": [
-        "roadworks",
-        "earthworks",
-        "demolition",
-        "fencing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/741980-2026"
-    },
-    {
-      "source_id": "TED-741974-2026",
-      "title": "HWK DO VE501 H7 Außenanlagen Haus 7",
-      "authority": "Handwerkskammer Dortmund",
-      "city": "Dortmund",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "roadworks",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/741974-2026"
-    },
-    {
-      "source_id": "TED-743710-2026",
-      "title": "Baumeisterarbeiten 4",
-      "authority": "Staatliches Bauamt München 2",
-      "city": "München, Max-Planck-Straße 1",
-      "project_type": "bridge",
-      "trades": [
-        "earthworks",
-        "demolition",
-        "structural",
-        "plastering"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/743710-2026"
     }
   ]
 }
