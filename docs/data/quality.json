@@ -1,76 +1,76 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9720,
-  "classification_rate_pct": 97.2,
+  "classified_opportunities": 9707,
+  "classification_rate_pct": 97.1,
   "bands": {
-    "UPCOMING": 5565,
-    "EARLY": 2468,
-    "HOT": 1687
+    "EARLY": 2442,
+    "UPCOMING": 5579,
+    "HOT": 1686
   },
   "project_types": [
     [
       "unclassified_project",
-      3568
+      3547
     ],
     [
       "school",
-      1464
+      1440
     ],
     [
       "rail",
-      809
+      826
     ],
     [
       "water_wastewater",
-      383
+      390
     ],
     [
       "bridge",
-      355
+      356
     ],
     [
       "civil_engineering",
-      328
+      333
     ],
     [
       "industrial",
-      310
-    ],
-    [
-      "university_research",
-      284
+      307
     ],
     [
       "road",
-      280
+      291
     ],
     [
-      "sports_leisure",
-      277
+      "university_research",
+      281
     ],
     [
       "hospital",
-      274
+      275
+    ],
+    [
+      "sports_leisure",
+      270
     ],
     [
       "administration",
-      264
+      269
     ],
     [
       "fire_station",
-      197
+      199
     ],
     [
       "public_building",
-      182
+      181
     ],
     [
       "kindergarten",
-      164
+      161
     ],
     [
       "energy",
-      142
+      143
     ],
     [
       "public_space",
@@ -78,37 +78,37 @@
     ],
     [
       "residential",
-      102
+      103
     ],
     [
       "care_social",
-      87
+      89
     ],
     [
       "infrastructure",
-      66
+      64
     ],
     [
       "commercial",
-      57
+      55
     ]
   ],
   "trades": [
     [
       "structural",
-      1739
+      1728
     ],
     [
       "electrical",
-      1418
+      1420
     ],
     [
       "windows_doors",
-      1343
+      1353
     ],
     [
       "hvac",
-      956
+      940
     ],
     [
       "earthworks",
@@ -116,71 +116,71 @@
     ],
     [
       "railworks",
-      804
+      815
     ],
     [
       "flooring",
-      707
+      702
     ],
     [
       "demolition",
-      671
+      668
     ],
     [
       "painting",
-      644
+      642
     ],
     [
       "roof",
-      518
+      519
     ],
     [
       "insulation",
-      471
+      479
     ],
     [
       "roadworks",
-      460
+      465
     ],
     [
       "plumbing",
-      389
+      385
     ],
     [
       "facade",
-      366
+      362
     ],
     [
       "landscaping",
-      323
+      325
     ],
     [
       "drywall",
-      261
+      266
     ],
     [
       "plastering",
-      224
+      218
     ],
     [
       "fire_protection",
-      202
+      206
     ],
     [
       "elevator",
-      127
+      125
     ],
     [
       "finishing",
       81
     ],
     [
-      "solar_energy",
-      75
+      "sewer_pipe",
+      77
     ],
     [
-      "sewer_pipe",
-      74
+      "solar_energy",
+      71
     ],
     [
       "fencing",
@@ -188,48 +188,140 @@
     ],
     [
       "building_services",
-      40
+      41
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 236
+      "count": 230
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2437
+      "count": 2421
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2375
+      "count": 2384
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4169
+      "count": 4167
     },
     {
       "from": 90,
       "to": 99,
-      "count": 351
+      "count": 350
     },
     {
       "from": 100,
       "to": 100,
-      "count": 152
+      "count": 155
     }
   ],
   "quality_flags": {
-    "project_type_only": 1075,
-    "trade_only": 3568,
-    "project_and_trade": 5077,
-    "opportunity_score_85_plus": 1687
+    "project_type_only": 1092,
+    "trade_only": 3547,
+    "project_and_trade": 5068,
+    "opportunity_score_85_plus": 1686
   },
   "sample_top": [
+    {
+      "source_id": "TED-761379-2026",
+      "title": "Ern. Krbw Scharnhorst (2132/10,825) & EÜ Flughafenstraße (2132/11,134)",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "city": "Dortmund",
+      "project_type": "industrial",
+      "trades": [
+        "demolition",
+        "railworks",
+        "structural",
+        "electrical"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/761379-2026"
+    },
+    {
+      "source_id": "TED-760604-2026",
+      "title": "Baumeisterarbeiten",
+      "authority": "Landeshauptstadt München vertreten durch MRG Münchner Raumentwicklungsgesellschaft mbH",
+      "city": "München",
+      "project_type": "civil_engineering",
+      "trades": [
+        "demolition",
+        "earthworks",
+        "structural",
+        "plastering",
+        "finishing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/760604-2026"
+    },
+    {
+      "source_id": "TED-762111-2026",
+      "title": "GS Rosa Luxemburg, Holzfassade",
+      "authority": "Stadt Halle (Saale), Fachbereich Recht, Team Vergabe Bauleistungen/Bauplanungen",
+      "city": "Halle (Saale)",
+      "project_type": "university_research",
+      "trades": [
+        "facade",
+        "painting",
+        "insulation",
+        "windows_doors",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/762111-2026"
+    },
+    {
+      "source_id": "TED-763516-2026",
+      "title": "Landschaftsbauarbeiten Stadionpark (Los 4: Sportinsel)",
+      "authority": "Stadt Hürth",
+      "city": "Hürth",
+      "project_type": "sports_leisure",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "demolition",
+        "roadworks",
+        "structural",
+        "electrical",
+        "plumbing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/763516-2026"
+    },
+    {
+      "source_id": "TED-762256-2026",
+      "title": "Erschließung 6. Bauabschnitt",
+      "authority": "Seehafen Kiel GmbH & CO. KG",
+      "city": "Kiel",
+      "project_type": "road",
+      "trades": [
+        "roadworks",
+        "demolition",
+        "fencing",
+        "electrical",
+        "structural",
+        "earthworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/762256-2026"
+    },
     {
       "source_id": "TED-756622-2026",
       "title": "BLB NRW Duisburg / Mönchengladbach / Hochschule Niederrhein, Gebäude Spinnerei / Metallbaufassade / 020-25-00366",
@@ -246,6 +338,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/756622-2026"
+    },
+    {
+      "source_id": "TED-756796-2026",
+      "title": "Ern. Krbw Scharnhorst (2132/10,825) & EÜ Flughafenstraße (2132/11,134)",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "city": "Dortmund",
+      "project_type": "industrial",
+      "trades": [
+        "demolition",
+        "railworks",
+        "structural",
+        "electrical"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/756796-2026"
     },
     {
       "source_id": "TED-759596-2026",
@@ -280,23 +389,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/757977-2026"
-    },
-    {
-      "source_id": "TED-756796-2026",
-      "title": "Ern. Krbw Scharnhorst (2132/10,825) & EÜ Flughafenstraße (2132/11,134)",
-      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
-      "city": "Dortmund",
-      "project_type": "industrial",
-      "trades": [
-        "demolition",
-        "railworks",
-        "structural",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/756796-2026"
     },
     {
       "source_id": "TED-756938-2026",
@@ -334,23 +426,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/759116-2026"
     },
     {
-      "source_id": "TED-755314-2026",
-      "title": "Neuss, Grünachse Hammfeld",
-      "authority": "NRW.URBAN Kommunale Entwicklung GmbH",
-      "city": "Neuss",
-      "project_type": "infrastructure",
-      "trades": [
-        "roadworks",
-        "earthworks",
-        "demolition",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/755314-2026"
-    },
-    {
       "source_id": "TED-754574-2026",
       "title": "10027 B7 0004 - Polizeikommissariat Peine - Grundsanierung",
       "authority": "Land Niedersachsen vertreten durch das Staatliche Baumanagement Niedersachsen",
@@ -369,77 +444,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/754574-2026"
-    },
-    {
-      "source_id": "TED-752130-2026",
-      "title": "GU-Rahmenvertrag 2026 Los 1 - Hochbau_Schlüsselfertiges Bauen",
-      "authority": "Land Berlin – Sondervermögen Immobilien des Landes Berlin (SILB) c/o BIM Berliner Immobilienmanagement GmbH Liegenschaftsfonds Berlin GmbH & Co. KG (THV 1) c/o BIM Berliner Immobilienmanagement GmbH Liegenschaftsfonds Projektgesellschaft mbH & Co. KG (THV 2) c/o BIM Berliner Immobilienmanagement GmbH Land Berlin – Sondervermögen für Daseinsvorsorge- und nicht betriebsnotwendige Bestandsgrundstücke des Landes Berlin (SODA) c/o BIM Berliner Immobilienmanagement GmbH Land Berlin – BIM Berliner Immobilienmanagement GmbH (Anmietvermögen) c/o BIM Berliner Immobilienmanagement GmbH BIM Berliner Immobilienmanagement GmbH BBF Berliner Bodenfonds GmbH Geschäftsversorgungsverträge - Jeweiliger Auftraggeber der Geschäftsbesorgung Landesamt für Flüchtlingsangelegenheiten (LAF) Land Berlin",
-      "city": "Berlin",
-      "project_type": "industrial",
-      "trades": [
-        "demolition",
-        "structural",
-        "insulation",
-        "plastering",
-        "windows_doors",
-        "painting"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/752130-2026"
-    },
-    {
-      "source_id": "TED-750049-2026",
-      "title": "Gymnasium Füssen - Hinterlüftete Fassadenarbeiten BA 1-2",
-      "authority": "Landkreis Ostallgäu",
-      "city": "Füssen",
-      "project_type": "school",
-      "trades": [
-        "facade",
-        "painting",
-        "insulation",
-        "plastering"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/750049-2026"
-    },
-    {
-      "source_id": "TED-748434-2026",
-      "title": "Gemeinschaftsmaßnahme - Neugestaltung Blasiikirchplatz Nordhausen - BA 3.3 (Barfüßer-/Kranichstraße); Baubereich 2 - Teilbereich 2 und Baubereich 3; Straßen- und Landschaftsbau, Beleuchtung, Brunnentechnik, Trinkwasser, Trennkanal, Kabeltiefbau",
-      "authority": "Stadtverwaltung Nordhausen Wasserverband Nordhausen Nordhausen Netz GmbH",
-      "city": "Nordhausen",
-      "project_type": "water_wastewater",
-      "trades": [
-        "electrical",
-        "earthworks",
-        "landscaping",
-        "plumbing",
-        "roadworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/748434-2026"
-    },
-    {
-      "source_id": "TED-745438-2026",
-      "title": "Bau Lüftungsanlage für Großtransformatoren: Umrichterwerk Neckarwestheim",
-      "authority": "DB Energie GmbH (Bukr 31)",
-      "city": "Neckarwestheim",
-      "project_type": "water_wastewater",
-      "trades": [
-        "hvac",
-        "windows_doors",
-        "railworks",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/745438-2026"
     }
   ]
 }
