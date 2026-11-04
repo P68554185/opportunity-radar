@@ -1,48 +1,48 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9707,
-  "classification_rate_pct": 97.1,
+  "classified_opportunities": 9703,
+  "classification_rate_pct": 97.0,
   "bands": {
-    "EARLY": 2442,
-    "UPCOMING": 5579,
-    "HOT": 1686
+    "HOT": 1677,
+    "EARLY": 2492,
+    "UPCOMING": 5534
   },
   "project_types": [
     [
       "unclassified_project",
-      3547
+      3595
     ],
     [
       "school",
-      1440
+      1416
     ],
     [
       "rail",
-      826
+      809
     ],
     [
       "water_wastewater",
-      390
+      393
     ],
     [
       "bridge",
-      356
+      352
     ],
     [
       "civil_engineering",
-      333
+      336
     ],
     [
       "industrial",
-      307
+      300
     ],
     [
       "road",
-      291
+      281
     ],
     [
       "university_research",
-      281
+      276
     ],
     [
       "hospital",
@@ -50,65 +50,65 @@
     ],
     [
       "sports_leisure",
-      270
+      271
     ],
     [
       "administration",
-      269
+      266
     ],
     [
       "fire_station",
-      199
+      198
     ],
     [
       "public_building",
-      181
+      180
     ],
     [
       "kindergarten",
-      161
+      165
     ],
     [
       "energy",
-      143
+      141
     ],
     [
       "public_space",
-      127
+      129
     ],
     [
       "residential",
-      103
+      108
     ],
     [
       "care_social",
-      89
+      88
     ],
     [
       "infrastructure",
-      64
+      70
     ],
     [
       "commercial",
-      55
+      54
     ]
   ],
   "trades": [
     [
       "structural",
-      1728
+      1712
     ],
     [
       "electrical",
-      1420
+      1431
     ],
     [
       "windows_doors",
-      1353
+      1360
     ],
     [
       "hvac",
-      940
+      959
     ],
     [
       "earthworks",
@@ -116,11 +116,11 @@
     ],
     [
       "railworks",
-      815
+      801
     ],
     [
       "flooring",
-      702
+      693
     ],
     [
       "demolition",
@@ -128,7 +128,7 @@
     ],
     [
       "painting",
-      642
+      636
     ],
     [
       "roof",
@@ -136,23 +136,23 @@
     ],
     [
       "insulation",
-      479
+      483
     ],
     [
       "roadworks",
-      465
+      449
     ],
     [
       "plumbing",
-      385
+      395
     ],
     [
       "facade",
-      362
+      356
     ],
     [
       "landscaping",
-      325
+      326
     ],
     [
       "drywall",
@@ -160,7 +160,7 @@
     ],
     [
       "plastering",
-      218
+      221
     ],
     [
       "fire_protection",
@@ -168,19 +168,19 @@
     ],
     [
       "elevator",
-      125
+      122
     ],
     [
       "finishing",
-      81
+      83
     ],
     [
       "sewer_pipe",
-      77
+      74
     ],
     [
       "solar_energy",
-      71
+      72
     ],
     [
       "fencing",
@@ -188,48 +188,119 @@
     ],
     [
       "building_services",
-      41
+      40
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 230
+      "count": 237
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2421
+      "count": 2457
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2384
+      "count": 2373
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4167
+      "count": 4129
     },
     {
       "from": 90,
       "to": 99,
-      "count": 350
+      "count": 356
     },
     {
       "from": 100,
       "to": 100,
-      "count": 155
+      "count": 151
     }
   ],
   "quality_flags": {
-    "project_type_only": 1092,
-    "trade_only": 3547,
-    "project_and_trade": 5068,
-    "opportunity_score_85_plus": 1686
+    "project_type_only": 1083,
+    "trade_only": 3595,
+    "project_and_trade": 5025,
+    "opportunity_score_85_plus": 1677
   },
   "sample_top": [
+    {
+      "source_id": "TED-764418-2026",
+      "title": "Neubau Klinikzentrum Westerstede, Fassadenarbeiten",
+      "authority": "Landkreis Ammerland - Eigenbetrieb Immobilienbetreuung",
+      "city": "Westerstede",
+      "project_type": "hospital",
+      "trades": [
+        "facade",
+        "painting",
+        "windows_doors",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/764418-2026"
+    },
+    {
+      "source_id": "TED-765397-2026",
+      "title": "BV Hamburger Allee 2-22: Modernisierung als GU-Vergabe auf \"Technisches Minimum\" im Namen der WGS",
+      "authority": "WGS - Wohnungsgesellschaft Schwerin mbH",
+      "city": "Schwerin",
+      "project_type": "residential",
+      "trades": [
+        "structural",
+        "electrical",
+        "hvac",
+        "windows_doors",
+        "painting",
+        "finishing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/765397-2026"
+    },
+    {
+      "source_id": "TED-766630-2026",
+      "title": "Med. Schule - vorgehängte und hinterlüftete Keramik- und Alufassaden",
+      "authority": "Universitätsklinikum Brandenburg an der Havel GmbH",
+      "city": "Brandenburg an der Havel",
+      "project_type": "school",
+      "trades": [
+        "facade",
+        "painting",
+        "finishing",
+        "insulation",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/766630-2026"
+    },
+    {
+      "source_id": "TED-765868-2026",
+      "title": "Neubau S-Bahn Werk München-Langwied: Rückbau Verkehrsanlage, Hochbau, Tiefbau inkl. TGA (VE 2.2)",
+      "authority": "DB Regio AG (Bukr 12)",
+      "city": "München",
+      "project_type": "road",
+      "trades": [
+        "hvac",
+        "earthworks",
+        "demolition",
+        "finishing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/765868-2026"
+    },
     {
       "source_id": "TED-761379-2026",
       "title": "Ern. Krbw Scharnhorst (2132/10,825) & EÜ Flughafenstraße (2132/11,134)",
@@ -266,22 +337,23 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/760604-2026"
     },
     {
-      "source_id": "TED-762111-2026",
-      "title": "GS Rosa Luxemburg, Holzfassade",
-      "authority": "Stadt Halle (Saale), Fachbereich Recht, Team Vergabe Bauleistungen/Bauplanungen",
-      "city": "Halle (Saale)",
-      "project_type": "university_research",
+      "source_id": "TED-762256-2026",
+      "title": "Erschließung 6. Bauabschnitt",
+      "authority": "Seehafen Kiel GmbH & CO. KG",
+      "city": "Kiel",
+      "project_type": "road",
       "trades": [
-        "facade",
-        "painting",
-        "insulation",
-        "windows_doors",
-        "structural"
+        "roadworks",
+        "demolition",
+        "fencing",
+        "electrical",
+        "structural",
+        "earthworks"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/762111-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/762256-2026"
     },
     {
       "source_id": "TED-763516-2026",
@@ -304,23 +376,22 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/763516-2026"
     },
     {
-      "source_id": "TED-762256-2026",
-      "title": "Erschließung 6. Bauabschnitt",
-      "authority": "Seehafen Kiel GmbH & CO. KG",
-      "city": "Kiel",
-      "project_type": "road",
+      "source_id": "TED-762111-2026",
+      "title": "GS Rosa Luxemburg, Holzfassade",
+      "authority": "Stadt Halle (Saale), Fachbereich Recht, Team Vergabe Bauleistungen/Bauplanungen",
+      "city": "Halle (Saale)",
+      "project_type": "university_research",
       "trades": [
-        "roadworks",
-        "demolition",
-        "fencing",
-        "electrical",
-        "structural",
-        "earthworks"
+        "facade",
+        "painting",
+        "insulation",
+        "windows_doors",
+        "structural"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/762256-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/762111-2026"
     },
     {
       "source_id": "TED-756622-2026",
@@ -372,78 +443,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/759596-2026"
-    },
-    {
-      "source_id": "TED-757977-2026",
-      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
-      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
-      "city": "Köln",
-      "project_type": "university_research",
-      "trades": [
-        "drywall",
-        "insulation",
-        "structural",
-        "flooring"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/757977-2026"
-    },
-    {
-      "source_id": "TED-756938-2026",
-      "title": "Ern. EÜ km 91,348 (Los 1) u. EÜ 93,294 (Los 2), Strecke 5501 München - Treuchtlingen",
-      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
-      "city": "Gaimersheim",
-      "project_type": "bridge",
-      "trades": [
-        "earthworks",
-        "roadworks",
-        "railworks",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/756938-2026"
-    },
-    {
-      "source_id": "TED-759116-2026",
-      "title": "Maxiparkerweiterung, Garten- und Landschaftsbauarbeiten, Maxiplaza, Durchgang, nördl. MaxiGarten",
-      "authority": "Hamm.Invest GmbH",
-      "city": "Hamm",
-      "project_type": "water_wastewater",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "demolition",
-        "structural",
-        "fencing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/759116-2026"
-    },
-    {
-      "source_id": "TED-754574-2026",
-      "title": "10027 B7 0004 - Polizeikommissariat Peine - Grundsanierung",
-      "authority": "Land Niedersachsen vertreten durch das Staatliche Baumanagement Niedersachsen",
-      "city": "Peine",
-      "project_type": "administration",
-      "trades": [
-        "structural",
-        "roof",
-        "windows_doors",
-        "painting",
-        "flooring",
-        "hvac",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/754574-2026"
     }
   ]
 }
