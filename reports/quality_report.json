@@ -1,68 +1,68 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9707,
+  "classified_opportunities": 9708,
   "classification_rate_pct": 97.1,
   "bands": {
-    "UPCOMING": 5563,
-    "EARLY": 2467,
-    "HOT": 1677
+    "UPCOMING": 5580,
+    "EARLY": 2479,
+    "HOT": 1649
   },
   "project_types": [
     [
       "unclassified_project",
-      3552
+      3578
     ],
     [
       "school",
-      1440
+      1420
     ],
     [
       "rail",
-      804
+      807
     ],
     [
       "water_wastewater",
       408
     ],
     [
-      "bridge",
-      346
+      "civil_engineering",
+      337
     ],
     [
-      "civil_engineering",
-      340
+      "bridge",
+      335
     ],
     [
       "industrial",
-      303
+      306
     ],
     [
       "road",
       283
     ],
     [
-      "university_research",
-      280
-    ],
-    [
       "hospital",
-      280
+      281
     ],
     [
-      "sports_leisure",
-      273
+      "university_research",
+      277
     ],
     [
       "administration",
-      264
+      274
+    ],
+    [
+      "sports_leisure",
+      272
     ],
     [
       "fire_station",
-      208
+      199
     ],
     [
       "public_building",
-      181
+      183
     ],
     [
       "kindergarten",
@@ -78,69 +78,69 @@
     ],
     [
       "residential",
-      108
+      113
     ],
     [
       "care_social",
-      87
+      85
     ],
     [
       "infrastructure",
-      68
+      70
     ],
     [
       "commercial",
-      53
+      51
     ]
   ],
   "trades": [
     [
       "structural",
-      1711
+      1697
     ],
     [
       "electrical",
-      1421
+      1441
     ],
     [
       "windows_doors",
-      1346
+      1345
     ],
     [
       "hvac",
-      949
+      945
     ],
     [
       "earthworks",
-      923
+      917
     ],
     [
       "railworks",
-      795
+      797
     ],
     [
       "flooring",
-      701
+      691
     ],
     [
       "demolition",
-      661
+      660
     ],
     [
       "painting",
-      630
+      628
     ],
     [
       "roof",
-      523
+      518
     ],
     [
       "insulation",
-      484
+      488
     ],
     [
       "roadworks",
-      449
+      441
     ],
     [
       "plumbing",
@@ -148,7 +148,7 @@
     ],
     [
       "facade",
-      358
+      363
     ],
     [
       "landscaping",
@@ -156,27 +156,27 @@
     ],
     [
       "drywall",
-      261
+      264
     ],
     [
       "plastering",
-      220
+      219
     ],
     [
       "fire_protection",
-      207
+      209
     ],
     [
       "elevator",
-      124
-    ],
-    [
-      "finishing",
-      82
+      126
     ],
     [
       "sewer_pipe",
-      76
+      77
+    ],
+    [
+      "finishing",
+      75
     ],
     [
       "solar_energy",
@@ -184,7 +184,7 @@
     ],
     [
       "fencing",
-      62
+      60
     ],
     [
       "building_services",
@@ -195,41 +195,75 @@
     {
       "from": 50,
       "to": 59,
-      "count": 238
+      "count": 243
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2433
+      "count": 2443
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2372
+      "count": 2409
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4154
+      "count": 4111
     },
     {
       "from": 90,
       "to": 99,
-      "count": 357
+      "count": 348
     },
     {
       "from": 100,
       "to": 100,
-      "count": 153
+      "count": 154
     }
   ],
   "quality_flags": {
-    "project_type_only": 1090,
-    "trade_only": 3552,
-    "project_and_trade": 5065,
-    "opportunity_score_85_plus": 1677
+    "project_type_only": 1104,
+    "trade_only": 3578,
+    "project_and_trade": 5026,
+    "opportunity_score_85_plus": 1649
   },
   "sample_top": [
+    {
+      "source_id": "TED-772047-2026",
+      "title": "PR Innenfassade",
+      "authority": "Handwerkskammer Niederbayern-Oberpfalz",
+      "city": "Landshut",
+      "project_type": "civil_engineering",
+      "trades": [
+        "facade",
+        "structural",
+        "painting",
+        "windows_doors"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/772047-2026"
+    },
+    {
+      "source_id": "TED-772425-2026",
+      "title": "Umbau Bf Müllheim Bauleistungen",
+      "authority": "DB Netz AG (Bukr 16)",
+      "city": "Müllheim",
+      "project_type": "rail",
+      "trades": [
+        "railworks",
+        "demolition",
+        "earthworks",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/772425-2026"
+    },
     {
       "source_id": "TED-770319-2026",
       "title": "Fassadensanierung am Lichtenberg Gymnasium Cuxhaven",
@@ -324,24 +358,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/765868-2026"
     },
     {
-      "source_id": "TED-766630-2026",
-      "title": "Med. Schule - vorgehängte und hinterlüftete Keramik- und Alufassaden",
-      "authority": "Universitätsklinikum Brandenburg an der Havel GmbH",
-      "city": "Brandenburg an der Havel",
-      "project_type": "school",
-      "trades": [
-        "facade",
-        "painting",
-        "finishing",
-        "insulation",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/766630-2026"
-    },
-    {
       "source_id": "TED-765397-2026",
       "title": "BV Hamburger Allee 2-22: Modernisierung als GU-Vergabe auf \"Technisches Minimum\" im Namen der WGS",
       "authority": "WGS - Wohnungsgesellschaft Schwerin mbH",
@@ -359,6 +375,24 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/765397-2026"
+    },
+    {
+      "source_id": "TED-766630-2026",
+      "title": "Med. Schule - vorgehängte und hinterlüftete Keramik- und Alufassaden",
+      "authority": "Universitätsklinikum Brandenburg an der Havel GmbH",
+      "city": "Brandenburg an der Havel",
+      "project_type": "school",
+      "trades": [
+        "facade",
+        "painting",
+        "finishing",
+        "insulation",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/766630-2026"
     },
     {
       "source_id": "TED-761379-2026",
@@ -394,44 +428,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/760604-2026"
-    },
-    {
-      "source_id": "TED-762111-2026",
-      "title": "GS Rosa Luxemburg, Holzfassade",
-      "authority": "Stadt Halle (Saale), Fachbereich Recht, Team Vergabe Bauleistungen/Bauplanungen",
-      "city": "Halle (Saale)",
-      "project_type": "university_research",
-      "trades": [
-        "facade",
-        "painting",
-        "insulation",
-        "windows_doors",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/762111-2026"
-    },
-    {
-      "source_id": "TED-763516-2026",
-      "title": "Landschaftsbauarbeiten Stadionpark (Los 4: Sportinsel)",
-      "authority": "Stadt Hürth",
-      "city": "Hürth",
-      "project_type": "sports_leisure",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "demolition",
-        "roadworks",
-        "structural",
-        "electrical",
-        "plumbing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/763516-2026"
     },
     {
       "source_id": "TED-762256-2026",
