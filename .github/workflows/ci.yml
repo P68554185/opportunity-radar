@@ -45,6 +45,8 @@ jobs:
         run: |
           node --check docs/app.js
           node --check docs/geography.js
+          node --check docs/format.js
+          node checks/date_format_test.js
           node checks/geography_test.js
           node --check admin/app.js
       - name: Install backend and browser test dependencies

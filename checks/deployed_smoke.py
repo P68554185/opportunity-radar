@@ -53,6 +53,8 @@ with sync_playwright() as p:
     expect(hospital.locator(".project-history")).to_be_visible()
     hospital.locator(".project-history summary").click()
     assert "2023" in hospital.locator(".project-history[open]").inner_text()
+    assert "Datum unbekannt" not in hospital.locator(".project-history[open]").inner_text()
+    assert any("25.9.2026" in element.inner_text() for element in hospital.locator("time").all())
     assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth")
     page.screenshot(path=str(OUTPUT/"mobile-project-history.png"),full_page=True)
     page.locator("#search").fill("")
