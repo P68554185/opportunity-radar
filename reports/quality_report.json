@@ -3,46 +3,46 @@
   "classified_opportunities": 9708,
   "classification_rate_pct": 97.1,
   "bands": {
-    "UPCOMING": 5580,
-    "EARLY": 2479,
-    "HOT": 1649
+    "UPCOMING": 5595,
+    "EARLY": 2467,
+    "HOT": 1646
   },
   "project_types": [
     [
       "unclassified_project",
-      3578
+      3567
     ],
     [
       "school",
-      1420
+      1419
     ],
     [
       "rail",
-      807
+      803
     ],
     [
       "water_wastewater",
-      408
-    ],
-    [
-      "civil_engineering",
-      337
+      403
     ],
     [
       "bridge",
-      335
+      342
+    ],
+    [
+      "civil_engineering",
+      341
     ],
     [
       "industrial",
-      306
+      303
     ],
     [
       "road",
-      283
+      286
     ],
     [
       "hospital",
-      281
+      283
     ],
     [
       "university_research",
@@ -50,15 +50,15 @@
     ],
     [
       "administration",
-      274
+      273
     ],
     [
       "sports_leisure",
-      272
+      273
     ],
     [
       "fire_station",
-      199
+      201
     ],
     [
       "public_building",
@@ -66,15 +66,15 @@
     ],
     [
       "kindergarten",
-      163
+      167
     ],
     [
       "energy",
-      139
+      143
     ],
     [
       "public_space",
-      127
+      126
     ],
     [
       "residential",
@@ -82,57 +82,57 @@
     ],
     [
       "care_social",
-      85
+      86
     ],
     [
       "infrastructure",
-      70
+      69
     ],
     [
       "commercial",
-      51
+      50
     ]
   ],
   "trades": [
     [
       "structural",
-      1697
+      1710
     ],
     [
       "electrical",
-      1441
+      1428
     ],
     [
       "windows_doors",
-      1345
+      1343
     ],
     [
       "hvac",
-      945
+      943
     ],
     [
       "earthworks",
-      917
+      921
     ],
     [
       "railworks",
-      797
+      795
     ],
     [
       "flooring",
-      691
+      690
     ],
     [
       "demolition",
-      660
+      657
     ],
     [
       "painting",
-      628
+      627
     ],
     [
       "roof",
-      518
+      519
     ],
     [
       "insulation",
@@ -144,15 +144,15 @@
     ],
     [
       "plumbing",
-      398
+      399
     ],
     [
       "facade",
-      363
+      362
     ],
     [
       "landscaping",
-      324
+      326
     ],
     [
       "drywall",
@@ -160,35 +160,35 @@
     ],
     [
       "plastering",
-      219
+      215
     ],
     [
       "fire_protection",
-      209
+      206
     ],
     [
       "elevator",
-      126
-    ],
-    [
-      "sewer_pipe",
-      77
+      124
     ],
     [
       "finishing",
-      75
+      78
+    ],
+    [
+      "sewer_pipe",
+      76
     ],
     [
       "solar_energy",
-      71
+      70
     ],
     [
       "fencing",
-      60
+      59
     ],
     [
       "building_services",
-      40
+      39
     ]
   ],
   "score_buckets": [
@@ -200,17 +200,17 @@
     {
       "from": 60,
       "to": 69,
-      "count": 2443
+      "count": 2428
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2409
+      "count": 2414
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4111
+      "count": 4125
     },
     {
       "from": 90,
@@ -220,33 +220,16 @@
     {
       "from": 100,
       "to": 100,
-      "count": 154
+      "count": 150
     }
   ],
   "quality_flags": {
-    "project_type_only": 1104,
-    "trade_only": 3578,
-    "project_and_trade": 5026,
-    "opportunity_score_85_plus": 1649
+    "project_type_only": 1107,
+    "trade_only": 3567,
+    "project_and_trade": 5034,
+    "opportunity_score_85_plus": 1646
   },
   "sample_top": [
-    {
-      "source_id": "TED-772047-2026",
-      "title": "PR Innenfassade",
-      "authority": "Handwerkskammer Niederbayern-Oberpfalz",
-      "city": "Landshut",
-      "project_type": "civil_engineering",
-      "trades": [
-        "facade",
-        "structural",
-        "painting",
-        "windows_doors"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/772047-2026"
-    },
     {
       "source_id": "TED-772425-2026",
       "title": "Umbau Bf Müllheim Bauleistungen",
@@ -265,6 +248,23 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/772425-2026"
     },
     {
+      "source_id": "TED-772047-2026",
+      "title": "PR Innenfassade",
+      "authority": "Handwerkskammer Niederbayern-Oberpfalz",
+      "city": "Landshut",
+      "project_type": "civil_engineering",
+      "trades": [
+        "facade",
+        "structural",
+        "painting",
+        "windows_doors"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/772047-2026"
+    },
+    {
       "source_id": "TED-770319-2026",
       "title": "Fassadensanierung am Lichtenberg Gymnasium Cuxhaven",
       "authority": "Landkreis Cuxhaven",
@@ -280,23 +280,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/770319-2026"
-    },
-    {
-      "source_id": "TED-769006-2026",
-      "title": "BCD Neubau, Erweiterte Rohbauarbeiten",
-      "authority": "Immobilien Bremen - Eigenbetrieb der Stadtgemeinde Bremen",
-      "city": "Bremen",
-      "project_type": "civil_engineering",
-      "trades": [
-        "structural",
-        "demolition",
-        "earthworks",
-        "roof"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/769006-2026"
     },
     {
       "source_id": "TED-771253-2026",
@@ -322,6 +305,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/771253-2026"
+    },
+    {
+      "source_id": "TED-769006-2026",
+      "title": "BCD Neubau, Erweiterte Rohbauarbeiten",
+      "authority": "Immobilien Bremen - Eigenbetrieb der Stadtgemeinde Bremen",
+      "city": "Bremen",
+      "project_type": "civil_engineering",
+      "trades": [
+        "structural",
+        "demolition",
+        "earthworks",
+        "roof"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/769006-2026"
     },
     {
       "source_id": "TED-764418-2026",
@@ -358,6 +358,24 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/765868-2026"
     },
     {
+      "source_id": "TED-766630-2026",
+      "title": "Med. Schule - vorgehängte und hinterlüftete Keramik- und Alufassaden",
+      "authority": "Universitätsklinikum Brandenburg an der Havel GmbH",
+      "city": "Brandenburg an der Havel",
+      "project_type": "school",
+      "trades": [
+        "facade",
+        "painting",
+        "finishing",
+        "insulation",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/766630-2026"
+    },
+    {
       "source_id": "TED-765397-2026",
       "title": "BV Hamburger Allee 2-22: Modernisierung als GU-Vergabe auf \"Technisches Minimum\" im Namen der WGS",
       "authority": "WGS - Wohnungsgesellschaft Schwerin mbH",
@@ -375,24 +393,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/765397-2026"
-    },
-    {
-      "source_id": "TED-766630-2026",
-      "title": "Med. Schule - vorgehängte und hinterlüftete Keramik- und Alufassaden",
-      "authority": "Universitätsklinikum Brandenburg an der Havel GmbH",
-      "city": "Brandenburg an der Havel",
-      "project_type": "school",
-      "trades": [
-        "facade",
-        "painting",
-        "finishing",
-        "insulation",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/766630-2026"
     },
     {
       "source_id": "TED-761379-2026",
