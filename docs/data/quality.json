@@ -1,52 +1,52 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9708,
+  "classified_opportunities": 9707,
   "classification_rate_pct": 97.1,
   "bands": {
-    "UPCOMING": 5595,
     "EARLY": 2467,
-    "HOT": 1646
+    "UPCOMING": 5591,
+    "HOT": 1649
   },
   "project_types": [
     [
       "unclassified_project",
-      3567
+      3572
     ],
     [
       "school",
-      1419
+      1425
     ],
     [
       "rail",
-      803
+      807
     ],
     [
       "water_wastewater",
       403
     ],
     [
-      "bridge",
+      "civil_engineering",
       342
     ],
     [
-      "civil_engineering",
-      341
+      "bridge",
+      340
     ],
     [
       "industrial",
-      303
-    ],
-    [
-      "road",
-      286
+      305
     ],
     [
       "hospital",
       283
     ],
     [
+      "road",
+      282
+    ],
+    [
       "university_research",
-      277
+      276
     ],
     [
       "administration",
@@ -54,27 +54,27 @@
     ],
     [
       "sports_leisure",
-      273
+      266
     ],
     [
       "fire_station",
-      201
+      200
     ],
     [
       "public_building",
-      183
+      182
     ],
     [
       "kindergarten",
-      167
+      165
     ],
     [
       "energy",
-      143
+      144
     ],
     [
       "public_space",
-      126
+      123
     ],
     [
       "residential",
@@ -82,7 +82,7 @@
     ],
     [
       "care_social",
-      86
+      87
     ],
     [
       "infrastructure",
@@ -96,75 +96,75 @@
   "trades": [
     [
       "structural",
-      1710
+      1705
     ],
     [
       "electrical",
-      1428
+      1438
     ],
     [
       "windows_doors",
-      1343
+      1341
     ],
     [
       "hvac",
-      943
+      947
     ],
     [
       "earthworks",
-      921
+      917
     ],
     [
       "railworks",
-      795
+      796
     ],
     [
       "flooring",
-      690
+      686
     ],
     [
       "demolition",
-      657
+      654
     ],
     [
       "painting",
-      627
+      631
     ],
     [
       "roof",
-      519
+      525
     ],
     [
       "insulation",
-      488
+      491
     ],
     [
       "roadworks",
-      441
+      439
     ],
     [
       "plumbing",
-      399
+      398
     ],
     [
       "facade",
-      362
+      363
     ],
     [
       "landscaping",
-      326
+      320
     ],
     [
       "drywall",
-      264
+      265
     ],
     [
       "plastering",
-      215
+      217
     ],
     [
       "fire_protection",
-      206
+      215
     ],
     [
       "elevator",
@@ -180,11 +180,11 @@
     ],
     [
       "solar_energy",
-      70
+      71
     ],
     [
       "fencing",
-      59
+      62
     ],
     [
       "building_services",
@@ -195,7 +195,7 @@
     {
       "from": 50,
       "to": 59,
-      "count": 243
+      "count": 242
     },
     {
       "from": 60,
@@ -205,29 +205,29 @@
     {
       "from": 70,
       "to": 79,
-      "count": 2414
+      "count": 2423
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4125
+      "count": 4114
     },
     {
       "from": 90,
       "to": 99,
-      "count": 348
+      "count": 349
     },
     {
       "from": 100,
       "to": 100,
-      "count": 150
+      "count": 151
     }
   ],
   "quality_flags": {
-    "project_type_only": 1107,
-    "trade_only": 3567,
-    "project_and_trade": 5034,
-    "opportunity_score_85_plus": 1646
+    "project_type_only": 1108,
+    "trade_only": 3572,
+    "project_and_trade": 5027,
+    "opportunity_score_85_plus": 1649
   },
   "sample_top": [
     {
@@ -358,24 +358,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/765868-2026"
     },
     {
-      "source_id": "TED-766630-2026",
-      "title": "Med. Schule - vorgehängte und hinterlüftete Keramik- und Alufassaden",
-      "authority": "Universitätsklinikum Brandenburg an der Havel GmbH",
-      "city": "Brandenburg an der Havel",
-      "project_type": "school",
-      "trades": [
-        "facade",
-        "painting",
-        "finishing",
-        "insulation",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/766630-2026"
-    },
-    {
       "source_id": "TED-765397-2026",
       "title": "BV Hamburger Allee 2-22: Modernisierung als GU-Vergabe auf \"Technisches Minimum\" im Namen der WGS",
       "authority": "WGS - Wohnungsgesellschaft Schwerin mbH",
@@ -393,6 +375,24 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/765397-2026"
+    },
+    {
+      "source_id": "TED-766630-2026",
+      "title": "Med. Schule - vorgehängte und hinterlüftete Keramik- und Alufassaden",
+      "authority": "Universitätsklinikum Brandenburg an der Havel GmbH",
+      "city": "Brandenburg an der Havel",
+      "project_type": "school",
+      "trades": [
+        "facade",
+        "painting",
+        "finishing",
+        "insulation",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/766630-2026"
     },
     {
       "source_id": "TED-761379-2026",
