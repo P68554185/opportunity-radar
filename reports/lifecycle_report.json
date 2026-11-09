@@ -3,8 +3,8 @@
   "active_early_signals": 60,
   "active_master_projects": 60,
   "historical_signals": 3,
-  "qualified_procurement_records": 3159,
-  "archived_confirmed_notices": 6,
+  "qualified_procurement_records": 3176,
+  "archived_confirmed_notices": 7,
   "links": [
     {
       "version": "2026-10-06-identity-v1",
@@ -230,6 +230,31 @@
     },
     {
       "version": "2026-10-06-identity-v1",
+      "status": "confirmed",
+      "evidence": {
+        "same_city": true,
+        "same_type": true,
+        "same_project_address": false,
+        "same_project_reference": false,
+        "shared_name_anchors": [
+          "alsfeld",
+          "kreiskrankenhaus"
+        ],
+        "same_authority": true
+      },
+      "blockers": [],
+      "source_ids": [
+        "HIST-KKA-20230727",
+        "TED-776554-2026"
+      ],
+      "publication_interval_days": 1201,
+      "interval_endpoint": "award",
+      "interpretation": "Source-publication interval to this notice; neither live detection lead nor first tender.",
+      "master_project_id": "PRJ-A36FC997D2",
+      "retrospective": true
+    },
+    {
+      "version": "2026-10-06-identity-v1",
       "status": "probable",
       "evidence": {
         "same_city": true,
@@ -307,12 +332,19 @@
           "published": "2026-11-04+01:00",
           "phase": "tender",
           "title": "Neubau Kreiskrankenhaus Alsfeld, Innenputzarbeiten, KKA"
+        },
+        {
+          "source_id": "TED-776554-2026",
+          "source_url": "https://ted.europa.eu/en/notice/-/detail/776554-2026",
+          "published": "2026-11-09+01:00",
+          "phase": "award",
+          "title": "Neubau Kreiskrankenhaus Alsfeld, Stahlbauarbeiten, KKA"
         }
       ]
     }
   ],
-  "confirmed_notice_links": 6,
-  "confirmed_current_notice_links": 4,
+  "confirmed_notice_links": 7,
+  "confirmed_current_notice_links": 5,
   "confirmed_project_cases": 1,
   "candidate_notice_links": 4,
   "live_observed_lead_days": [
@@ -322,6 +354,13 @@
         "TED-764911-2026"
       ],
       "days": 29
+    },
+    {
+      "source_ids": [
+        "HIST-KKA-20230727",
+        "TED-776554-2026"
+      ],
+      "days": 34
     }
   ],
   "observed_lead_note": "Tracked observation to this notice; not necessarily the project's first tender.",

@@ -3,9 +3,178 @@
   "live_records": 10000,
   "enriched_records": 10000,
   "duplicate_source_records": 0,
-  "classified_opportunities": 9707,
+  "classified_opportunities": 9702,
   "lifecycle_candidates": 0,
   "opportunities": [
+    {
+      "source_id": "TED-777824-2026",
+      "notice_id": "777824-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/777824-2026",
+      "published": "2026-11-09+01:00",
+      "title": "Baumeisterarbeiten",
+      "description": "Baumeisterarbeiten Staatliches Bauamt Bamberg ['DE245', 'DEU', 'DE245', 'DEU']",
+      "authority": "Staatliches Bauamt Bamberg",
+      "city": "Ebrach",
+      "region": "",
+      "country": "DEU",
+      "project_type": "public_building",
+      "trades": [
+        "demolition",
+        "earthworks",
+        "insulation",
+        "structural"
+      ],
+      "cpv": [
+        "45212350",
+        "45113000",
+        "45111100",
+        "45111000",
+        "45112000",
+        "45320000",
+        "45232000",
+        "45262300",
+        "45262311",
+        "45262522",
+        "45262400",
+        "45223000",
+        "45262520",
+        "44211100",
+        "45262200",
+        "45212350",
+        "45113000",
+        "45111100",
+        "45111000",
+        "45112000",
+        "45320000",
+        "45232000",
+        "45262300",
+        "45262311",
+        "45262522",
+        "45262400",
+        "45223000",
+        "45262520",
+        "44211100",
+        "45262200"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
+      "band": "HOT",
+      "evidence": {
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "demolition",
+          "earthworks",
+          "insulation",
+          "structural"
+        ],
+        "construction_cpv": [
+          "45212350",
+          "45113000",
+          "45111100",
+          "45111000",
+          "45112000",
+          "45320000",
+          "45232000",
+          "45262300",
+          "45262311",
+          "45262522",
+          "45262400",
+          "45223000",
+          "45262520",
+          "45262200",
+          "45212350",
+          "45113000",
+          "45111100",
+          "45111000",
+          "45112000",
+          "45320000",
+          "45232000",
+          "45262300",
+          "45262311",
+          "45262522",
+          "45262400",
+          "45223000",
+          "45262520",
+          "45262200"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-775200-2026",
+      "notice_id": "775200-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/775200-2026",
+      "published": "2026-11-09+01:00",
+      "title": "Bau Lüftungsanlage für Großtransformatoren: Umrichterwerk Neckarwestheim",
+      "description": "Bau Lüftungsanlage für Großtransformatoren: Umrichterwerk Neckarwestheim DB Energie GmbH (Bukr 31) ['DE118', 'DEU', 'DE118', 'DEU']",
+      "authority": "DB Energie GmbH (Bukr 31)",
+      "city": "Neckarwestheim",
+      "region": "",
+      "country": "DEU",
+      "project_type": "water_wastewater",
+      "trades": [
+        "hvac",
+        "windows_doors",
+        "railworks",
+        "electrical"
+      ],
+      "cpv": [
+        "45232220",
+        "31214000",
+        "45200000",
+        "45234170",
+        "45315300",
+        "45315500",
+        "45315700",
+        "45232220",
+        "31214000",
+        "45200000",
+        "45234170",
+        "45315300",
+        "45315500",
+        "45315700"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
+      "band": "HOT",
+      "evidence": {
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "hvac",
+          "windows_doors"
+        ],
+        "trade_cpv": [
+          "railworks",
+          "electrical"
+        ],
+        "construction_cpv": [
+          "45232220",
+          "45200000",
+          "45234170",
+          "45315300",
+          "45315500",
+          "45315700",
+          "45232220",
+          "45200000",
+          "45234170",
+          "45315300",
+          "45315500",
+          "45315700"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
     {
       "source_id": "TED-772425-2026",
       "notice_id": "772425-2026",
@@ -197,6 +366,78 @@
       }
     },
     {
+      "source_id": "TED-769006-2026",
+      "notice_id": "769006-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/769006-2026",
+      "published": "2026-11-05+01:00",
+      "title": "BCD Neubau, Erweiterte Rohbauarbeiten",
+      "description": "BCD Neubau, Erweiterte Rohbauarbeiten Immobilien Bremen - Eigenbetrieb der Stadtgemeinde Bremen ['DE501', 'DEU', 'DE501', 'DEU']",
+      "authority": "Immobilien Bremen - Eigenbetrieb der Stadtgemeinde Bremen",
+      "city": "Bremen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "civil_engineering",
+      "trades": [
+        "structural",
+        "demolition",
+        "earthworks",
+        "roof"
+      ],
+      "cpv": [
+        "45223220",
+        "45113000",
+        "45112000",
+        "45262120",
+        "45262500",
+        "45262310",
+        "45261420",
+        "45223220",
+        "45113000",
+        "45112000",
+        "45262120",
+        "45262500",
+        "45262310",
+        "45261420"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
+      "band": "HOT",
+      "evidence": {
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "structural"
+        ],
+        "trade_cpv": [
+          "demolition",
+          "earthworks",
+          "structural",
+          "roof"
+        ],
+        "construction_cpv": [
+          "45223220",
+          "45113000",
+          "45112000",
+          "45262120",
+          "45262500",
+          "45262310",
+          "45261420",
+          "45223220",
+          "45113000",
+          "45112000",
+          "45262120",
+          "45262500",
+          "45262310",
+          "45261420"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
       "source_id": "TED-771253-2026",
       "notice_id": "771253-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/771253-2026",
@@ -336,78 +577,6 @@
           "45210000",
           "45200000",
           "45000000"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-769006-2026",
-      "notice_id": "769006-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/769006-2026",
-      "published": "2026-11-05+01:00",
-      "title": "BCD Neubau, Erweiterte Rohbauarbeiten",
-      "description": "BCD Neubau, Erweiterte Rohbauarbeiten Immobilien Bremen - Eigenbetrieb der Stadtgemeinde Bremen ['DE501', 'DEU', 'DE501', 'DEU']",
-      "authority": "Immobilien Bremen - Eigenbetrieb der Stadtgemeinde Bremen",
-      "city": "Bremen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "civil_engineering",
-      "trades": [
-        "structural",
-        "demolition",
-        "earthworks",
-        "roof"
-      ],
-      "cpv": [
-        "45223220",
-        "45113000",
-        "45112000",
-        "45262120",
-        "45262500",
-        "45262310",
-        "45261420",
-        "45223220",
-        "45113000",
-        "45112000",
-        "45262120",
-        "45262500",
-        "45262310",
-        "45261420"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.55,
-      "confidence": 0.55,
-      "band": "HOT",
-      "evidence": {
-        "project_text": false,
-        "project_cpv": true,
-        "trade_text": [
-          "structural"
-        ],
-        "trade_cpv": [
-          "demolition",
-          "earthworks",
-          "structural",
-          "roof"
-        ],
-        "construction_cpv": [
-          "45223220",
-          "45113000",
-          "45112000",
-          "45262120",
-          "45262500",
-          "45262310",
-          "45261420",
-          "45223220",
-          "45113000",
-          "45112000",
-          "45262120",
-          "45262500",
-          "45262310",
-          "45261420"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -604,67 +773,6 @@
           "45443000",
           "45453000",
           "45453100"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-766630-2026",
-      "notice_id": "766630-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/766630-2026",
-      "published": "2026-11-04+01:00",
-      "title": "Med. Schule - vorgehängte und hinterlüftete Keramik- und Alufassaden",
-      "description": "Med. Schule - vorgehängte und hinterlüftete Keramik- und Alufassaden Universitätsklinikum Brandenburg an der Havel GmbH ['DE401', 'DEU', 'DE401', 'DEU']",
-      "authority": "Universitätsklinikum Brandenburg an der Havel GmbH",
-      "city": "Brandenburg an der Havel",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "facade",
-        "painting",
-        "finishing",
-        "insulation",
-        "structural"
-      ],
-      "cpv": [
-        "45443000",
-        "45451200",
-        "45320000",
-        "45262650",
-        "45443000",
-        "45451200",
-        "45320000",
-        "45262650"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": false,
-        "trade_text": [
-          "facade"
-        ],
-        "trade_cpv": [
-          "painting",
-          "finishing",
-          "insulation",
-          "structural"
-        ],
-        "construction_cpv": [
-          "45443000",
-          "45451200",
-          "45320000",
-          "45262650",
-          "45443000",
-          "45451200",
-          "45320000",
-          "45262650"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -2390,71 +2498,6 @@
       }
     },
     {
-      "source_id": "TED-746219-2026",
-      "notice_id": "746219-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/746219-2026",
-      "published": "2026-10-28+01:00",
-      "title": "Los 311 Erdbau, Abdichtungsarbeiten, Abbruch Außenbauteile - Ensemble Goethe-Wohnhaus: Denkmalgerechte Instandsetzung",
-      "description": "Los 311 Erdbau, Abdichtungsarbeiten, Abbruch Außenbauteile - Ensemble Goethe-Wohnhaus: Denkmalgerechte Instandsetzung Klassik Stiftung Weimar Stiftung des öffentlichen Rechts ['DEG05', 'DEU', 'DEG05', 'DEU']",
-      "authority": "Klassik Stiftung Weimar Stiftung des öffentlichen Rechts",
-      "city": "Weimar",
-      "region": "",
-      "country": "DEU",
-      "project_type": "public_building",
-      "trades": [
-        "roof",
-        "demolition",
-        "structural",
-        "earthworks"
-      ],
-      "cpv": [
-        "45261420",
-        "45261420",
-        "45111100",
-        "45262522",
-        "45212350",
-        "45261420",
-        "45112000",
-        "45111100",
-        "45262522",
-        "45212350"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.55,
-      "confidence": 0.55,
-      "band": "HOT",
-      "evidence": {
-        "project_text": false,
-        "project_cpv": true,
-        "trade_text": [
-          "roof",
-          "demolition"
-        ],
-        "trade_cpv": [
-          "roof",
-          "demolition",
-          "structural",
-          "earthworks"
-        ],
-        "construction_cpv": [
-          "45261420",
-          "45261420",
-          "45111100",
-          "45262522",
-          "45212350",
-          "45261420",
-          "45112000",
-          "45111100",
-          "45262522",
-          "45212350"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
       "source_id": "TED-744753-2026",
       "notice_id": "744753-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/744753-2026",
@@ -3879,6 +3922,68 @@
       }
     },
     {
+      "source_id": "TED-732220-2026",
+      "notice_id": "732220-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/732220-2026",
+      "published": "2026-10-22+02:00",
+      "title": "Erweiterung Wendelinusschule Steinau, 1. BA Holzbau, Dachdecker, Fassade, Fenster, Gerüst",
+      "description": "Erweiterung Wendelinusschule Steinau, 1. BA Holzbau, Dachdecker, Fassade, Fenster, Gerüst Kreisausschuss des Landkreises Fulda - Zentrale Vergabestelle ['DE732', 'DEU', 'DE732', 'DEU']",
+      "authority": "Kreisausschuss des Landkreises Fulda - Zentrale Vergabestelle",
+      "city": "Petersberg-Steinau",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "roof",
+        "windows_doors",
+        "facade",
+        "structural",
+        "painting"
+      ],
+      "cpv": [
+        "45422100",
+        "45260000",
+        "45421100",
+        "45443000",
+        "45422100",
+        "45260000",
+        "45421100",
+        "45443000"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.85,
+      "confidence": 0.85,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "roof",
+          "windows_doors",
+          "facade",
+          "structural"
+        ],
+        "trade_cpv": [
+          "windows_doors",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45422100",
+          "45260000",
+          "45421100",
+          "45443000",
+          "45422100",
+          "45260000",
+          "45421100",
+          "45443000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
       "source_id": "TED-731565-2026",
       "notice_id": "731565-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/731565-2026",
@@ -4043,62 +4148,61 @@
       }
     },
     {
-      "source_id": "TED-732220-2026",
-      "notice_id": "732220-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/732220-2026",
+      "source_id": "TED-730532-2026",
+      "notice_id": "730532-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/730532-2026",
       "published": "2026-10-22+02:00",
-      "title": "Erweiterung Wendelinusschule Steinau, 1. BA Holzbau, Dachdecker, Fassade, Fenster, Gerüst",
-      "description": "Erweiterung Wendelinusschule Steinau, 1. BA Holzbau, Dachdecker, Fassade, Fenster, Gerüst Kreisausschuss des Landkreises Fulda - Zentrale Vergabestelle ['DE732', 'DEU', 'DE732', 'DEU']",
-      "authority": "Kreisausschuss des Landkreises Fulda - Zentrale Vergabestelle",
-      "city": "Petersberg-Steinau",
+      "title": "Hauptbaumaßnahmen Autoreisezuganlage in München Süd (VE2965)",
+      "description": "Hauptbaumaßnahmen Autoreisezuganlage in München Süd (VE2965) DB Netz AG (Bukr 16) ['DE212', 'DEU', 'DE212', 'DEU']",
+      "authority": "DB Netz AG (Bukr 16)",
+      "city": "München",
       "region": "",
       "country": "DEU",
-      "project_type": "school",
+      "project_type": "rail",
       "trades": [
-        "roof",
         "windows_doors",
-        "facade",
-        "structural",
-        "painting"
+        "railworks",
+        "earthworks",
+        "roadworks",
+        "structural"
       ],
       "cpv": [
-        "45422100",
-        "45260000",
-        "45421100",
-        "45443000",
-        "45422100",
-        "45260000",
-        "45421100",
-        "45443000"
+        "45234116",
+        "45112000",
+        "45233222",
+        "45262310",
+        "45234116",
+        "45112000",
+        "45233222",
+        "45262310"
       ],
-      "phase": "tender",
+      "phase": "award",
       "score": 100,
       "opportunity_score": 100,
-      "classification_confidence": 0.85,
-      "confidence": 0.85,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
       "band": "HOT",
       "evidence": {
-        "project_text": true,
-        "project_cpv": false,
+        "project_text": false,
+        "project_cpv": true,
         "trade_text": [
-          "roof",
-          "windows_doors",
-          "facade",
-          "structural"
+          "windows_doors"
         ],
         "trade_cpv": [
-          "windows_doors",
-          "painting"
+          "railworks",
+          "earthworks",
+          "roadworks",
+          "structural"
         ],
         "construction_cpv": [
-          "45422100",
-          "45260000",
-          "45421100",
-          "45443000",
-          "45422100",
-          "45260000",
-          "45421100",
-          "45443000"
+          "45234116",
+          "45112000",
+          "45233222",
+          "45262310",
+          "45234116",
+          "45112000",
+          "45233222",
+          "45262310"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -4399,67 +4503,6 @@
           "45431000",
           "45432200",
           "45421000"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-730532-2026",
-      "notice_id": "730532-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/730532-2026",
-      "published": "2026-10-22+02:00",
-      "title": "Hauptbaumaßnahmen Autoreisezuganlage in München Süd (VE2965)",
-      "description": "Hauptbaumaßnahmen Autoreisezuganlage in München Süd (VE2965) DB Netz AG (Bukr 16) ['DE212', 'DEU', 'DE212', 'DEU']",
-      "authority": "DB Netz AG (Bukr 16)",
-      "city": "München",
-      "region": "",
-      "country": "DEU",
-      "project_type": "rail",
-      "trades": [
-        "windows_doors",
-        "railworks",
-        "earthworks",
-        "roadworks",
-        "structural"
-      ],
-      "cpv": [
-        "45234116",
-        "45112000",
-        "45233222",
-        "45262310",
-        "45234116",
-        "45112000",
-        "45233222",
-        "45262310"
-      ],
-      "phase": "award",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.55,
-      "confidence": 0.55,
-      "band": "HOT",
-      "evidence": {
-        "project_text": false,
-        "project_cpv": true,
-        "trade_text": [
-          "windows_doors"
-        ],
-        "trade_cpv": [
-          "railworks",
-          "earthworks",
-          "roadworks",
-          "structural"
-        ],
-        "construction_cpv": [
-          "45234116",
-          "45112000",
-          "45233222",
-          "45262310",
-          "45234116",
-          "45112000",
-          "45233222",
-          "45262310"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -5128,6 +5171,74 @@
       }
     },
     {
+      "source_id": "TED-723531-2026",
+      "notice_id": "723531-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/723531-2026",
+      "published": "2026-10-20+02:00",
+      "title": "Offenes Verfahren: Zimmerarbeiten inkl. Fenster - Anbau Grundschule St. Engelbert",
+      "description": "Offenes Verfahren: Zimmerarbeiten inkl. Fenster - Anbau Grundschule St. Engelbert Stadtverwaltung Brilon ['DEA57', 'DEU', 'DEA57', 'DEU']",
+      "authority": "Stadtverwaltung Brilon",
+      "city": "Brilon",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "windows_doors",
+        "roof",
+        "structural",
+        "painting"
+      ],
+      "cpv": [
+        "45422000",
+        "45261210",
+        "45262670",
+        "45421130",
+        "45422100",
+        "45443000",
+        "45422000",
+        "45261210",
+        "45262670",
+        "45421130",
+        "45422100",
+        "45443000"
+      ],
+      "phase": "award",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.85,
+      "confidence": 0.85,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "windows_doors"
+        ],
+        "trade_cpv": [
+          "windows_doors",
+          "roof",
+          "structural",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45422000",
+          "45261210",
+          "45262670",
+          "45421130",
+          "45422100",
+          "45443000",
+          "45422000",
+          "45261210",
+          "45262670",
+          "45421130",
+          "45422100",
+          "45443000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
       "source_id": "TED-723240-2026",
       "notice_id": "723240-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/723240-2026",
@@ -5256,74 +5367,6 @@
           "45422000",
           "45430000",
           "45432200"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-723531-2026",
-      "notice_id": "723531-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/723531-2026",
-      "published": "2026-10-20+02:00",
-      "title": "Offenes Verfahren: Zimmerarbeiten inkl. Fenster - Anbau Grundschule St. Engelbert",
-      "description": "Offenes Verfahren: Zimmerarbeiten inkl. Fenster - Anbau Grundschule St. Engelbert Stadtverwaltung Brilon ['DEA57', 'DEU', 'DEA57', 'DEU']",
-      "authority": "Stadtverwaltung Brilon",
-      "city": "Brilon",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "windows_doors",
-        "roof",
-        "structural",
-        "painting"
-      ],
-      "cpv": [
-        "45422000",
-        "45261210",
-        "45262670",
-        "45421130",
-        "45422100",
-        "45443000",
-        "45422000",
-        "45261210",
-        "45262670",
-        "45421130",
-        "45422100",
-        "45443000"
-      ],
-      "phase": "award",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.85,
-      "confidence": 0.85,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": false,
-        "trade_text": [
-          "windows_doors"
-        ],
-        "trade_cpv": [
-          "windows_doors",
-          "roof",
-          "structural",
-          "painting"
-        ],
-        "construction_cpv": [
-          "45422000",
-          "45261210",
-          "45262670",
-          "45421130",
-          "45422100",
-          "45443000",
-          "45422000",
-          "45261210",
-          "45262670",
-          "45421130",
-          "45422100",
-          "45443000"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."

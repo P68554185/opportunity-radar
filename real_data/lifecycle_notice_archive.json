@@ -404,5 +404,60 @@
         "policy_version": "2026-10-05-evidence-v1"
       }
     }
+  },
+  "TED-776554-2026": {
+    "first_tracked_seen_at": "2026-11-09T13:52:12.875822+00:00",
+    "quality_policy_version": "2026-10-05-evidence-v1",
+    "notice": {
+      "source_id": "TED-776554-2026",
+      "notice_id": "776554-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/776554-2026",
+      "published": "2026-11-09+01:00",
+      "title": "Neubau Kreiskrankenhaus Alsfeld, Stahlbauarbeiten, KKA",
+      "description": "Neubau Kreiskrankenhaus Alsfeld, Stahlbauarbeiten, KKA Kreiskrankenhaus des Vogelsbergkreises in Alsfeld GmbH ['DE725', 'DEU', 'DE725', 'DEU']",
+      "authority": "Kreiskrankenhaus des Vogelsbergkreises in Alsfeld GmbH",
+      "city": "Alsfeld",
+      "region": "",
+      "country": "DEU",
+      "project_type": "hospital",
+      "trades": [
+        "structural"
+      ],
+      "cpv": [
+        "45223210",
+        "45223210"
+      ],
+      "phase": "award",
+      "score": 82,
+      "opportunity_score": 82,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "UPCOMING",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "structural"
+        ],
+        "trade_cpv": [],
+        "construction_cpv": [
+          "45223210",
+          "45223210"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      },
+      "quality_status": "CONFIDENT",
+      "quality_evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.75,
+        "policy_version": "2026-10-05-evidence-v1"
+      }
+    }
   }
 }

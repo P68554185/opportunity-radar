@@ -1,64 +1,64 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9707,
-  "classification_rate_pct": 97.1,
+  "classified_opportunities": 9702,
+  "classification_rate_pct": 97.0,
   "bands": {
-    "EARLY": 2467,
-    "UPCOMING": 5591,
-    "HOT": 1649
+    "EARLY": 2448,
+    "UPCOMING": 5613,
+    "HOT": 1641
   },
   "project_types": [
     [
       "unclassified_project",
-      3572
+      3554
     ],
     [
       "school",
-      1425
+      1405
     ],
     [
       "rail",
-      807
+      791
     ],
     [
       "water_wastewater",
-      403
+      410
     ],
     [
       "civil_engineering",
-      342
+      333
     ],
     [
       "bridge",
-      340
+      333
     ],
     [
       "industrial",
-      305
-    ],
-    [
-      "hospital",
-      283
+      315
     ],
     [
       "road",
+      284
+    ],
+    [
+      "hospital",
       282
     ],
     [
-      "university_research",
-      276
+      "sports_leisure",
+      280
     ],
     [
       "administration",
-      273
+      275
     ],
     [
-      "sports_leisure",
-      266
+      "university_research",
+      268
     ],
     [
       "fire_station",
-      200
+      207
     ],
     [
       "public_building",
@@ -66,27 +66,27 @@
     ],
     [
       "kindergarten",
-      165
+      178
     ],
     [
       "energy",
-      144
+      142
     ],
     [
       "public_space",
-      123
+      133
     ],
     [
       "residential",
-      113
+      120
     ],
     [
       "care_social",
-      87
+      90
     ],
     [
       "infrastructure",
-      69
+      70
     ],
     [
       "commercial",
@@ -96,67 +96,67 @@
   "trades": [
     [
       "structural",
-      1705
+      1717
     ],
     [
       "electrical",
-      1438
+      1435
     ],
     [
       "windows_doors",
-      1341
+      1335
     ],
     [
       "hvac",
-      947
+      960
     ],
     [
       "earthworks",
-      917
+      913
     ],
     [
       "railworks",
-      796
+      785
     ],
     [
       "flooring",
-      686
+      689
     ],
     [
       "demolition",
-      654
+      653
     ],
     [
       "painting",
-      631
+      638
     ],
     [
       "roof",
-      525
+      515
     ],
     [
       "insulation",
-      491
+      489
     ],
     [
       "roadworks",
-      439
+      440
     ],
     [
       "plumbing",
-      398
+      399
     ],
     [
       "facade",
-      363
+      355
     ],
     [
       "landscaping",
-      320
+      330
     ],
     [
       "drywall",
-      265
+      267
     ],
     [
       "plastering",
@@ -164,7 +164,7 @@
     ],
     [
       "fire_protection",
-      215
+      214
     ],
     [
       "elevator",
@@ -172,50 +172,50 @@
     ],
     [
       "finishing",
-      78
-    ],
-    [
-      "sewer_pipe",
       76
     ],
     [
+      "sewer_pipe",
+      75
+    ],
+    [
       "solar_energy",
-      71
+      72
     ],
     [
       "fencing",
-      62
+      60
     ],
     [
       "building_services",
-      39
+      41
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 242
+      "count": 238
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2428
+      "count": 2412
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2423
+      "count": 2409
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4114
+      "count": 4151
     },
     {
       "from": 90,
       "to": 99,
-      "count": 349
+      "count": 341
     },
     {
       "from": 100,
@@ -224,12 +224,46 @@
     }
   ],
   "quality_flags": {
-    "project_type_only": 1108,
-    "trade_only": 3572,
-    "project_and_trade": 5027,
-    "opportunity_score_85_plus": 1649
+    "project_type_only": 1085,
+    "trade_only": 3554,
+    "project_and_trade": 5063,
+    "opportunity_score_85_plus": 1641
   },
   "sample_top": [
+    {
+      "source_id": "TED-777824-2026",
+      "title": "Baumeisterarbeiten",
+      "authority": "Staatliches Bauamt Bamberg",
+      "city": "Ebrach",
+      "project_type": "public_building",
+      "trades": [
+        "demolition",
+        "earthworks",
+        "insulation",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/777824-2026"
+    },
+    {
+      "source_id": "TED-775200-2026",
+      "title": "Bau Lüftungsanlage für Großtransformatoren: Umrichterwerk Neckarwestheim",
+      "authority": "DB Energie GmbH (Bukr 31)",
+      "city": "Neckarwestheim",
+      "project_type": "water_wastewater",
+      "trades": [
+        "hvac",
+        "windows_doors",
+        "railworks",
+        "electrical"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/775200-2026"
+    },
     {
       "source_id": "TED-772425-2026",
       "title": "Umbau Bf Müllheim Bauleistungen",
@@ -282,6 +316,23 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/770319-2026"
     },
     {
+      "source_id": "TED-769006-2026",
+      "title": "BCD Neubau, Erweiterte Rohbauarbeiten",
+      "authority": "Immobilien Bremen - Eigenbetrieb der Stadtgemeinde Bremen",
+      "city": "Bremen",
+      "project_type": "civil_engineering",
+      "trades": [
+        "structural",
+        "demolition",
+        "earthworks",
+        "roof"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/769006-2026"
+    },
+    {
       "source_id": "TED-771253-2026",
       "title": "JVA Ebr, TBM4, San. Zellenbau HTW - 1TP",
       "authority": "Staatliches Bauamt Bamberg",
@@ -305,23 +356,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/771253-2026"
-    },
-    {
-      "source_id": "TED-769006-2026",
-      "title": "BCD Neubau, Erweiterte Rohbauarbeiten",
-      "authority": "Immobilien Bremen - Eigenbetrieb der Stadtgemeinde Bremen",
-      "city": "Bremen",
-      "project_type": "civil_engineering",
-      "trades": [
-        "structural",
-        "demolition",
-        "earthworks",
-        "roof"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/769006-2026"
     },
     {
       "source_id": "TED-764418-2026",
@@ -377,24 +411,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/765397-2026"
     },
     {
-      "source_id": "TED-766630-2026",
-      "title": "Med. Schule - vorgehängte und hinterlüftete Keramik- und Alufassaden",
-      "authority": "Universitätsklinikum Brandenburg an der Havel GmbH",
-      "city": "Brandenburg an der Havel",
-      "project_type": "school",
-      "trades": [
-        "facade",
-        "painting",
-        "finishing",
-        "insulation",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/766630-2026"
-    },
-    {
       "source_id": "TED-761379-2026",
       "title": "Ern. Krbw Scharnhorst (2132/10,825) & EÜ Flughafenstraße (2132/11,134)",
       "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
@@ -428,25 +444,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/760604-2026"
-    },
-    {
-      "source_id": "TED-762256-2026",
-      "title": "Erschließung 6. Bauabschnitt",
-      "authority": "Seehafen Kiel GmbH & CO. KG",
-      "city": "Kiel",
-      "project_type": "road",
-      "trades": [
-        "roadworks",
-        "demolition",
-        "fencing",
-        "electrical",
-        "structural",
-        "earthworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/762256-2026"
     }
   ]
 }
