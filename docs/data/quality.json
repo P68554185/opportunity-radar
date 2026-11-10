@@ -1,92 +1,92 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9702,
+  "classified_opportunities": 9705,
   "classification_rate_pct": 97.0,
   "bands": {
-    "EARLY": 2448,
-    "UPCOMING": 5613,
-    "HOT": 1641
+    "UPCOMING": 5581,
+    "EARLY": 2466,
+    "HOT": 1658
   },
   "project_types": [
     [
       "unclassified_project",
-      3554
+      3574
     ],
     [
       "school",
-      1405
+      1407
     ],
     [
       "rail",
-      791
+      793
     ],
     [
       "water_wastewater",
-      410
-    ],
-    [
-      "civil_engineering",
-      333
+      405
     ],
     [
       "bridge",
-      333
+      339
+    ],
+    [
+      "civil_engineering",
+      332
     ],
     [
       "industrial",
-      315
+      316
     ],
     [
       "road",
-      284
-    ],
-    [
-      "hospital",
       282
     ],
     [
       "sports_leisure",
-      280
+      277
     ],
     [
       "administration",
-      275
+      272
     ],
     [
       "university_research",
+      269
+    ],
+    [
+      "hospital",
       268
     ],
     [
       "fire_station",
-      207
-    ],
-    [
-      "public_building",
-      182
+      208
     ],
     [
       "kindergarten",
-      178
+      183
+    ],
+    [
+      "public_building",
+      179
     ],
     [
       "energy",
-      142
+      139
     ],
     [
       "public_space",
-      133
+      138
     ],
     [
       "residential",
-      120
+      116
     ],
     [
       "care_social",
-      90
+      89
     ],
     [
       "infrastructure",
-      70
+      69
     ],
     [
       "commercial",
@@ -100,75 +100,79 @@
     ],
     [
       "electrical",
-      1435
+      1432
     ],
     [
       "windows_doors",
-      1335
+      1331
     ],
     [
       "hvac",
-      960
+      978
     ],
     [
       "earthworks",
-      913
+      921
     ],
     [
       "railworks",
-      785
+      784
     ],
     [
       "flooring",
-      689
+      690
     ],
     [
       "demolition",
-      653
+      646
     ],
     [
       "painting",
-      638
+      633
     ],
     [
       "roof",
-      515
+      519
     ],
     [
       "insulation",
-      489
+      488
     ],
     [
       "roadworks",
-      440
+      435
     ],
     [
       "plumbing",
-      399
+      407
     ],
     [
       "facade",
-      355
+      358
     ],
     [
       "landscaping",
-      330
+      336
     ],
     [
       "drywall",
-      267
-    ],
-    [
-      "plastering",
-      217
+      261
     ],
     [
       "fire_protection",
-      214
+      221
+    ],
+    [
+      "plastering",
+      211
     ],
     [
       "elevator",
-      124
+      126
+    ],
+    [
+      "solar_energy",
+      76
     ],
     [
       "finishing",
@@ -176,60 +180,169 @@
     ],
     [
       "sewer_pipe",
-      75
-    ],
-    [
-      "solar_energy",
-      72
+      73
     ],
     [
       "fencing",
-      60
+      64
     ],
     [
       "building_services",
-      41
+      37
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 238
+      "count": 240
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2412
+      "count": 2431
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2409
+      "count": 2396
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4151
+      "count": 4144
     },
     {
       "from": 90,
       "to": 99,
-      "count": 341
+      "count": 344
     },
     {
       "from": 100,
       "to": 100,
-      "count": 151
+      "count": 150
     }
   ],
   "quality_flags": {
     "project_type_only": 1085,
-    "trade_only": 3554,
-    "project_and_trade": 5063,
-    "opportunity_score_85_plus": 1641
+    "trade_only": 3574,
+    "project_and_trade": 5046,
+    "opportunity_score_85_plus": 1658
   },
   "sample_top": [
+    {
+      "source_id": "TED-782569-2026",
+      "title": "Bautechnik - 4. Reinigungsstufe zur Spurenstoffreduktion",
+      "authority": "Emschergenossenschaft Lippeverband Einkauf-Emschergenossenschaft Einkauf-Lippeverband",
+      "city": "Hamm",
+      "project_type": "civil_engineering",
+      "trades": [
+        "demolition",
+        "earthworks",
+        "insulation",
+        "flooring",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/782569-2026"
+    },
+    {
+      "source_id": "TED-781433-2026",
+      "title": "Sanierung Grundschule Evesen - Außenanlagen",
+      "authority": "Landkreis Schaumburg - Vergabestelle",
+      "city": "Bückeburg",
+      "project_type": "school",
+      "trades": [
+        "landscaping",
+        "demolition",
+        "earthworks",
+        "roadworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/781433-2026"
+    },
+    {
+      "source_id": "TED-780198-2026",
+      "title": "Kooperation Eppendorfer Marktplatz, 2.BA, Los 3, Straßen- und Leitungsbau",
+      "authority": "Landesbetrieb Straßen, Brücken und Gewässer Hamburger Energiewerke GmbH wilhelm.tel GmbH",
+      "city": "Hamburg-Nord",
+      "project_type": "road",
+      "trades": [
+        "roadworks",
+        "demolition",
+        "earthworks",
+        "roof",
+        "structural",
+        "electrical",
+        "insulation",
+        "plumbing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/780198-2026"
+    },
+    {
+      "source_id": "TED-782597-2026",
+      "title": "449 HEB - Neubau einer integrativen Kindertagesstätte in Hersbruch",
+      "authority": "Arbeiter-Samariter-Bund Regionalverband Nürnberger Land e. V.",
+      "city": "Hersbruck",
+      "project_type": "university_research",
+      "trades": [
+        "earthworks",
+        "windows_doors",
+        "flooring",
+        "insulation",
+        "painting",
+        "hvac"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/782597-2026"
+    },
+    {
+      "source_id": "TED-782619-2026",
+      "title": "Neubau Ost Haus 18 WFK Eberswalde_Bauleistungen BA 1_Vorinformation",
+      "authority": "GLG Werner Forßmann Klinikum Eberswalde GmbH",
+      "city": "Eberswalde",
+      "project_type": "industrial",
+      "trades": [
+        "earthworks",
+        "structural",
+        "roof",
+        "painting",
+        "windows_doors",
+        "flooring",
+        "hvac",
+        "electrical"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/782619-2026"
+    },
+    {
+      "source_id": "TED-782796-2026",
+      "title": "Feuerwehrtechnische Zentrale Ebergötzen, Neubau - VE 502 Landschaftsbau und Pflasterarbeiten",
+      "authority": "Landkreis Göttingen",
+      "city": "Ebergötzen",
+      "project_type": "road",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "roadworks",
+        "fencing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/782796-2026"
+    },
     {
       "source_id": "TED-777824-2026",
       "title": "Baumeisterarbeiten",
@@ -331,119 +444,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/769006-2026"
-    },
-    {
-      "source_id": "TED-771253-2026",
-      "title": "JVA Ebr, TBM4, San. Zellenbau HTW - 1TP",
-      "authority": "Staatliches Bauamt Bamberg",
-      "city": "Ebrach",
-      "project_type": "civil_engineering",
-      "trades": [
-        "structural",
-        "painting",
-        "roof",
-        "earthworks",
-        "insulation",
-        "fire_protection",
-        "windows_doors",
-        "flooring",
-        "hvac",
-        "plumbing",
-        "electrical",
-        "demolition"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/771253-2026"
-    },
-    {
-      "source_id": "TED-764418-2026",
-      "title": "Neubau Klinikzentrum Westerstede, Fassadenarbeiten",
-      "authority": "Landkreis Ammerland - Eigenbetrieb Immobilienbetreuung",
-      "city": "Westerstede",
-      "project_type": "hospital",
-      "trades": [
-        "facade",
-        "painting",
-        "windows_doors",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/764418-2026"
-    },
-    {
-      "source_id": "TED-765868-2026",
-      "title": "Neubau S-Bahn Werk München-Langwied: Rückbau Verkehrsanlage, Hochbau, Tiefbau inkl. TGA (VE 2.2)",
-      "authority": "DB Regio AG (Bukr 12)",
-      "city": "München",
-      "project_type": "road",
-      "trades": [
-        "hvac",
-        "earthworks",
-        "demolition",
-        "finishing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/765868-2026"
-    },
-    {
-      "source_id": "TED-765397-2026",
-      "title": "BV Hamburger Allee 2-22: Modernisierung als GU-Vergabe auf \"Technisches Minimum\" im Namen der WGS",
-      "authority": "WGS - Wohnungsgesellschaft Schwerin mbH",
-      "city": "Schwerin",
-      "project_type": "residential",
-      "trades": [
-        "structural",
-        "electrical",
-        "hvac",
-        "windows_doors",
-        "painting",
-        "finishing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/765397-2026"
-    },
-    {
-      "source_id": "TED-761379-2026",
-      "title": "Ern. Krbw Scharnhorst (2132/10,825) & EÜ Flughafenstraße (2132/11,134)",
-      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
-      "city": "Dortmund",
-      "project_type": "industrial",
-      "trades": [
-        "demolition",
-        "railworks",
-        "structural",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/761379-2026"
-    },
-    {
-      "source_id": "TED-760604-2026",
-      "title": "Baumeisterarbeiten",
-      "authority": "Landeshauptstadt München vertreten durch MRG Münchner Raumentwicklungsgesellschaft mbH",
-      "city": "München",
-      "project_type": "civil_engineering",
-      "trades": [
-        "demolition",
-        "earthworks",
-        "structural",
-        "plastering",
-        "finishing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/760604-2026"
     }
   ]
 }

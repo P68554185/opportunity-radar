@@ -1,34 +1,38 @@
 {
   "region": "Dresden",
-  "observed_at": "2026-11-09T13:50:29.073262+00:00",
+  "observed_at": "2026-11-10T13:25:59.988194+00:00",
   "sources": [
     {
       "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1061092",
       "status": "verified",
       "records": 1,
-      "content_sha256": "724be72f0c4fc0c449c21cea861e45635e50c92cfe22f7835a29e176e70d3439",
+      "content_sha256": "5ad5888c28fabf313702074cb97044a0892c9983681f98f235f845bf9beb4819",
       "date_basis": "official_notice_date"
     },
     {
       "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1063128",
       "status": "verified",
       "records": 1,
-      "content_sha256": "81aaabf8f2360273b0d0c04875a6347246b016112fd58065feb7fa65157cda42",
+      "content_sha256": "14b3d50e9386518cd8e79f8e2ce2361e2ccb0ec2791165e47b93f4ee85345948",
       "date_basis": "official_notice_date"
     },
     {
       "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1063071",
       "status": "verified",
       "records": 1,
-      "content_sha256": "a61f336e17aa9ed435f96c33c1641b824d2e8c3868bf0f7bcaa133c674eb5af6",
+      "content_sha256": "b2a739b4a753a8640fb67806a9654336bc118899c37b2f756878ac7457cee7cc",
       "date_basis": "official_notice_date"
     },
     {
       "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1064317",
-      "status": "verified",
-      "records": 1,
-      "content_sha256": "5e893d9d3482643d14d12618cde264a251f20aa6ab3e748868efba1e3b36ec58",
-      "date_basis": "official_notice_date"
+      "status": "refresh_failed_retained",
+      "reason": "URLError",
+      "detail": "<urlopen error [Errno 104] Connection reset by peer>"
+    },
+    {
+      "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen?format=Bauleitplan&status=BEENDETE",
+      "status": "discovery_failed",
+      "reason": "URLError"
     }
   ],
   "review_queue": [
@@ -70,34 +74,6 @@
     },
     {
       "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1069756",
-      "reason": "Needs dated project goal and exact plan reference review"
-    },
-    {
-      "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1062420",
-      "reason": "Needs dated project goal and exact plan reference review"
-    },
-    {
-      "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1064757",
-      "reason": "Needs dated project goal and exact plan reference review"
-    },
-    {
-      "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1064764",
-      "reason": "Needs dated project goal and exact plan reference review"
-    },
-    {
-      "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1065512",
-      "reason": "Needs dated project goal and exact plan reference review"
-    },
-    {
-      "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1065790",
-      "reason": "Needs dated project goal and exact plan reference review"
-    },
-    {
-      "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1066647",
-      "reason": "Needs dated project goal and exact plan reference review"
-    },
-    {
-      "source_url": "https://buergerbeteiligung.sachsen.de/portal/dresden/beteiligung/themen/1066719",
       "reason": "Needs dated project goal and exact plan reference review"
     }
   ]
