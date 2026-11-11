@@ -1,44 +1,44 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9705,
+  "classified_opportunities": 9700,
   "classification_rate_pct": 97.0,
   "bands": {
-    "UPCOMING": 5581,
-    "EARLY": 2466,
-    "HOT": 1658
+    "UPCOMING": 5596,
+    "EARLY": 2467,
+    "HOT": 1637
   },
   "project_types": [
     [
       "unclassified_project",
-      3574
+      3591
     ],
     [
       "school",
-      1407
+      1413
     ],
     [
       "rail",
-      793
+      792
     ],
     [
       "water_wastewater",
-      405
+      413
     ],
     [
       "bridge",
-      339
+      326
     ],
     [
       "civil_engineering",
-      332
+      323
     ],
     [
       "industrial",
-      316
+      314
     ],
     [
       "road",
-      282
+      284
     ],
     [
       "sports_leisure",
@@ -50,101 +50,101 @@
     ],
     [
       "university_research",
-      269
+      271
     ],
     [
       "hospital",
-      268
+      265
     ],
     [
       "fire_station",
-      208
+      204
     ],
     [
       "kindergarten",
-      183
-    ],
-    [
-      "public_building",
       179
     ],
     [
-      "energy",
-      139
+      "public_building",
+      177
     ],
     [
       "public_space",
-      138
+      140
+    ],
+    [
+      "energy",
+      137
     ],
     [
       "residential",
-      116
+      123
     ],
     [
       "care_social",
-      89
+      87
     ],
     [
       "infrastructure",
-      69
+      66
     ],
     [
       "commercial",
-      50
+      46
     ]
   ],
   "trades": [
     [
       "structural",
-      1717
+      1703
     ],
     [
       "electrical",
-      1432
+      1440
     ],
     [
       "windows_doors",
-      1331
+      1343
     ],
     [
       "hvac",
-      978
+      990
     ],
     [
       "earthworks",
-      921
+      911
     ],
     [
       "railworks",
-      784
+      785
     ],
     [
       "flooring",
-      690
-    ],
-    [
-      "demolition",
-      646
+      683
     ],
     [
       "painting",
-      633
+      643
+    ],
+    [
+      "demolition",
+      632
     ],
     [
       "roof",
-      519
+      511
     ],
     [
       "insulation",
-      488
+      490
     ],
     [
       "roadworks",
-      435
+      437
     ],
     [
       "plumbing",
-      407
+      404
     ],
     [
       "facade",
@@ -152,43 +152,43 @@
     ],
     [
       "landscaping",
-      336
+      338
     ],
     [
       "drywall",
-      261
+      269
     ],
     [
       "fire_protection",
-      221
+      228
     ],
     [
       "plastering",
-      211
+      207
     ],
     [
       "elevator",
-      126
-    ],
-    [
-      "solar_energy",
-      76
+      125
     ],
     [
       "finishing",
-      76
+      78
+    ],
+    [
+      "solar_energy",
+      74
     ],
     [
       "sewer_pipe",
-      73
+      70
     ],
     [
       "fencing",
-      64
+      63
     ],
     [
       "building_services",
-      37
+      35
     ]
   ],
   "score_buckets": [
@@ -200,22 +200,22 @@
     {
       "from": 60,
       "to": 69,
-      "count": 2431
+      "count": 2429
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2396
+      "count": 2404
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4144
+      "count": 4146
     },
     {
       "from": 90,
       "to": 99,
-      "count": 344
+      "count": 331
     },
     {
       "from": 100,
@@ -224,12 +224,120 @@
     }
   ],
   "quality_flags": {
-    "project_type_only": 1085,
-    "trade_only": 3574,
-    "project_and_trade": 5046,
-    "opportunity_score_85_plus": 1658
+    "project_type_only": 1081,
+    "trade_only": 3591,
+    "project_and_trade": 5028,
+    "opportunity_score_85_plus": 1637
   },
   "sample_top": [
+    {
+      "source_id": "TED-785144-2026",
+      "title": "U-Bahn Farmsen, Baulos 1, Straßenbau (Los 1)",
+      "authority": "Landesbetrieb Straßen, Brücken und Gewässer",
+      "city": "Hamburg Wandsbek",
+      "project_type": "road",
+      "trades": [
+        "roadworks",
+        "demolition",
+        "earthworks",
+        "roof",
+        "structural",
+        "electrical",
+        "plumbing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/785144-2026"
+    },
+    {
+      "source_id": "TED-783141-2026",
+      "title": "Kabeltiefbau ESTW, Neubau Gleis 5 inkl. OLA, Gleis- und Weichenerneuerung Schönefeld",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "city": "Schönefeld",
+      "project_type": "rail",
+      "trades": [
+        "earthworks",
+        "railworks",
+        "electrical",
+        "roof",
+        "plumbing",
+        "finishing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/783141-2026"
+    },
+    {
+      "source_id": "TED-783900-2026",
+      "title": "452 - Generalsanierung der Johannes-Hirspeck-Mittelschule in Pfarrkirchen - Gewerk 6000-001 Außenanlagen",
+      "authority": "Mittelschulverband Pfarrkirchen",
+      "city": "Pfarrkirchen",
+      "project_type": "school",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "roadworks",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/783900-2026"
+    },
+    {
+      "source_id": "TED-783940-2026",
+      "title": "Neubau Klinikzentrum Westerstede, Fassadenarbeiten",
+      "authority": "Landkreis Ammerland - Eigenbetrieb Immobilienbetreuung",
+      "city": "Westerstede",
+      "project_type": "hospital",
+      "trades": [
+        "facade",
+        "painting",
+        "windows_doors",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/783940-2026"
+    },
+    {
+      "source_id": "TED-783832-2026",
+      "title": "Bau Lüftungsanlage für Großtransformatoren: Umrichterwerk Neckarwestheim",
+      "authority": "DB Energie GmbH (Bukr 31)",
+      "city": "Neckarwestheim",
+      "project_type": "water_wastewater",
+      "trades": [
+        "hvac",
+        "windows_doors",
+        "railworks",
+        "electrical"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/783832-2026"
+    },
+    {
+      "source_id": "TED-786281-2026",
+      "title": "Trockenbauarbeiten DIN 18340, Sanierung der Hildegardis-Schule, 3. Bauabschnitt, Klinikstr. 1, 44791 Bochum",
+      "authority": "Stadt Bochum, Referat Zentrale Vergabestelle",
+      "city": "Bochum",
+      "project_type": "school",
+      "trades": [
+        "drywall",
+        "demolition",
+        "structural",
+        "insulation",
+        "roof"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/786281-2026"
+    },
     {
       "source_id": "TED-782569-2026",
       "title": "Bautechnik - 4. Reinigungsstufe zur Spurenstoffreduktion",
@@ -342,108 +450,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/782796-2026"
-    },
-    {
-      "source_id": "TED-777824-2026",
-      "title": "Baumeisterarbeiten",
-      "authority": "Staatliches Bauamt Bamberg",
-      "city": "Ebrach",
-      "project_type": "public_building",
-      "trades": [
-        "demolition",
-        "earthworks",
-        "insulation",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/777824-2026"
-    },
-    {
-      "source_id": "TED-775200-2026",
-      "title": "Bau Lüftungsanlage für Großtransformatoren: Umrichterwerk Neckarwestheim",
-      "authority": "DB Energie GmbH (Bukr 31)",
-      "city": "Neckarwestheim",
-      "project_type": "water_wastewater",
-      "trades": [
-        "hvac",
-        "windows_doors",
-        "railworks",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/775200-2026"
-    },
-    {
-      "source_id": "TED-772425-2026",
-      "title": "Umbau Bf Müllheim Bauleistungen",
-      "authority": "DB Netz AG (Bukr 16)",
-      "city": "Müllheim",
-      "project_type": "rail",
-      "trades": [
-        "railworks",
-        "demolition",
-        "earthworks",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/772425-2026"
-    },
-    {
-      "source_id": "TED-772047-2026",
-      "title": "PR Innenfassade",
-      "authority": "Handwerkskammer Niederbayern-Oberpfalz",
-      "city": "Landshut",
-      "project_type": "civil_engineering",
-      "trades": [
-        "facade",
-        "structural",
-        "painting",
-        "windows_doors"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/772047-2026"
-    },
-    {
-      "source_id": "TED-770319-2026",
-      "title": "Fassadensanierung am Lichtenberg Gymnasium Cuxhaven",
-      "authority": "Landkreis Cuxhaven",
-      "city": "Cuxhaven",
-      "project_type": "school",
-      "trades": [
-        "facade",
-        "structural",
-        "insulation",
-        "roof"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/770319-2026"
-    },
-    {
-      "source_id": "TED-769006-2026",
-      "title": "BCD Neubau, Erweiterte Rohbauarbeiten",
-      "authority": "Immobilien Bremen - Eigenbetrieb der Stadtgemeinde Bremen",
-      "city": "Bremen",
-      "project_type": "civil_engineering",
-      "trades": [
-        "structural",
-        "demolition",
-        "earthworks",
-        "roof"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/769006-2026"
     }
   ]
 }
