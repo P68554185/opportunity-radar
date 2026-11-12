@@ -1,40 +1,40 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9700,
-  "classification_rate_pct": 97.0,
+  "classified_opportunities": 9708,
+  "classification_rate_pct": 97.1,
   "bands": {
-    "UPCOMING": 5596,
-    "EARLY": 2467,
-    "HOT": 1637
+    "UPCOMING": 5592,
+    "EARLY": 2468,
+    "HOT": 1648
   },
   "project_types": [
     [
       "unclassified_project",
-      3591
+      3585
     ],
     [
       "school",
-      1413
+      1418
     ],
     [
       "rail",
-      792
+      783
     ],
     [
       "water_wastewater",
-      413
+      417
     ],
     [
       "bridge",
-      326
+      329
     ],
     [
       "civil_engineering",
-      323
+      329
     ],
     [
       "industrial",
-      314
+      311
     ],
     [
       "road",
@@ -42,7 +42,7 @@
     ],
     [
       "sports_leisure",
-      277
+      276
     ],
     [
       "administration",
@@ -50,31 +50,31 @@
     ],
     [
       "university_research",
-      271
+      266
     ],
     [
       "hospital",
-      265
+      262
     ],
     [
       "fire_station",
-      204
-    ],
-    [
-      "kindergarten",
-      179
+      208
     ],
     [
       "public_building",
-      177
+      183
     ],
     [
-      "public_space",
-      140
+      "kindergarten",
+      183
     ],
     [
       "energy",
-      137
+      139
+    ],
+    [
+      "public_space",
+      138
     ],
     [
       "residential",
@@ -82,7 +82,7 @@
     ],
     [
       "care_social",
-      87
+      89
     ],
     [
       "infrastructure",
@@ -90,7 +90,7 @@
     ],
     [
       "commercial",
-      46
+      47
     ]
   ],
   "trades": [
@@ -100,23 +100,23 @@
     ],
     [
       "electrical",
-      1440
+      1467
     ],
     [
       "windows_doors",
-      1343
+      1345
     ],
     [
       "hvac",
-      990
+      992
     ],
     [
       "earthworks",
-      911
+      904
     ],
     [
       "railworks",
-      785
+      772
     ],
     [
       "flooring",
@@ -124,27 +124,27 @@
     ],
     [
       "painting",
-      643
+      642
     ],
     [
       "demolition",
-      632
+      631
     ],
     [
       "roof",
-      511
+      517
     ],
     [
       "insulation",
-      490
+      499
     ],
     [
       "roadworks",
-      437
+      438
     ],
     [
       "plumbing",
-      404
+      395
     ],
     [
       "facade",
@@ -152,27 +152,27 @@
     ],
     [
       "landscaping",
-      338
+      329
     ],
     [
       "drywall",
-      269
+      268
     ],
     [
       "fire_protection",
-      228
+      233
     ],
     [
       "plastering",
-      207
+      210
     ],
     [
       "elevator",
-      125
+      126
     ],
     [
       "finishing",
-      78
+      79
     ],
     [
       "solar_energy",
@@ -180,75 +180,90 @@
     ],
     [
       "sewer_pipe",
-      70
+      71
     ],
     [
       "fencing",
-      63
+      67
     ],
     [
       "building_services",
-      35
+      34
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 240
+      "count": 237
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2429
+      "count": 2439
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2404
+      "count": 2396
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4146
+      "count": 4156
     },
     {
       "from": 90,
       "to": 99,
-      "count": 331
+      "count": 328
     },
     {
       "from": 100,
       "to": 100,
-      "count": 150
+      "count": 152
     }
   ],
   "quality_flags": {
-    "project_type_only": 1081,
-    "trade_only": 3591,
-    "project_and_trade": 5028,
-    "opportunity_score_85_plus": 1637
+    "project_type_only": 1084,
+    "trade_only": 3585,
+    "project_and_trade": 5039,
+    "opportunity_score_85_plus": 1648
   },
   "sample_top": [
     {
-      "source_id": "TED-785144-2026",
-      "title": "U-Bahn Farmsen, Baulos 1, Straßenbau (Los 1)",
-      "authority": "Landesbetrieb Straßen, Brücken und Gewässer",
-      "city": "Hamburg Wandsbek",
-      "project_type": "road",
+      "source_id": "TED-789292-2026",
+      "title": "Freudenstadt Hbf; Bau; 1Weiche+TB+OB (Los1); EWHA (Los2); Gleisfeldbeleuchtung (Los3); OLA (Los4)",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "city": "Freudenstadt",
+      "project_type": "rail",
       "trades": [
-        "roadworks",
+        "electrical",
+        "railworks",
         "demolition",
         "earthworks",
-        "roof",
-        "structural",
-        "electrical",
-        "plumbing"
+        "hvac"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/785144-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/789292-2026"
+    },
+    {
+      "source_id": "TED-789309-2026",
+      "title": "Gewässerbau, offener Kanalbau, Beton-,Stahlbau, Abbrucharbeiten im Bereich von Kanälen und Beton-,Stahlbauwerken",
+      "authority": "Emschergenossenschaft",
+      "city": "Dortmund",
+      "project_type": "water_wastewater",
+      "trades": [
+        "structural",
+        "demolition",
+        "sewer_pipe",
+        "earthworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/789309-2026"
     },
     {
       "source_id": "TED-783141-2026",
@@ -433,23 +448,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/782619-2026"
-    },
-    {
-      "source_id": "TED-782796-2026",
-      "title": "Feuerwehrtechnische Zentrale Ebergötzen, Neubau - VE 502 Landschaftsbau und Pflasterarbeiten",
-      "authority": "Landkreis Göttingen",
-      "city": "Ebergötzen",
-      "project_type": "road",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "roadworks",
-        "fencing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/782796-2026"
     }
   ]
 }
