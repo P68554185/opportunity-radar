@@ -4224,13 +4224,13 @@
         "amtsbl_dat": "2009-07-23T00:00:00",
         "hinweis": "Geltungsbereich liegt ganz oder zum Teil in einem Überschwemmungs- bzw. überschwemmungsgefährdeten Gebiet",
         "url": "https://www.dresden.de/de/rathaus/dienstleistungen/bebauungsplan.php",
-        "ds_modified": "2007-04-17T08:49:48.691"
+        "ds_modified": "2026-11-09T07:23:36.068"
       },
       "bbox": [
-        13.792315622758627,
-        51.12133039711657,
+        13.7923156227586,
+        51.1213242615952,
         13.7963563593548,
-        51.124278005478885
+        51.1242780054789
       ],
       "source_url": "https://kommisdd.dresden.de/net3/public/ogc.ashx?NodeId=489&Service=WFS&Request=GetFeature&Version=2.0.0&TypeNames=cls%3AL354&Count=1000&SrsName=urn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326"
     },
@@ -10575,7 +10575,7 @@
         "amtsbl_dat": "2022-03-03T00:00:00",
         "hinweis": "-",
         "url": "https://www.dresden.de/de/rathaus/dienstleistungen/bebauungsplan.php",
-        "ds_modified": "2022-05-12T13:32:49.058"
+        "ds_modified": "2026-11-10T09:48:31.646"
       },
       "bbox": [
         13.7438115978845,
@@ -10633,7 +10633,7 @@
         "amtsbl_dat": "2025-01-28T00:00:00",
         "hinweis": "-",
         "url": "https://www.dresden.de/de/rathaus/dienstleistungen/bebauungsplan.php",
-        "ds_modified": "2019-09-11T10:23:04.46"
+        "ds_modified": "2026-11-10T09:52:20.547"
       },
       "bbox": [
         13.7496292019769,

@@ -3,74 +3,74 @@
   "classified_opportunities": 9708,
   "classification_rate_pct": 97.1,
   "bands": {
-    "UPCOMING": 5592,
+    "HOT": 1636,
     "EARLY": 2468,
-    "HOT": 1648
+    "UPCOMING": 5604
   },
   "project_types": [
     [
       "unclassified_project",
-      3585
+      3599
     ],
     [
       "school",
-      1418
+      1396
     ],
     [
       "rail",
-      783
+      790
     ],
     [
       "water_wastewater",
-      417
-    ],
-    [
-      "bridge",
-      329
+      412
     ],
     [
       "civil_engineering",
       329
     ],
     [
+      "bridge",
+      328
+    ],
+    [
       "industrial",
-      311
+      321
     ],
     [
       "road",
-      284
-    ],
-    [
-      "sports_leisure",
-      276
+      282
     ],
     [
       "administration",
-      272
+      278
     ],
     [
-      "university_research",
-      266
+      "sports_leisure",
+      278
     ],
     [
       "hospital",
       262
     ],
     [
-      "fire_station",
-      208
+      "university_research",
+      257
     ],
     [
-      "public_building",
-      183
+      "fire_station",
+      199
     ],
     [
       "kindergarten",
-      183
+      188
+    ],
+    [
+      "public_building",
+      186
     ],
     [
       "energy",
-      139
+      140
     ],
     [
       "public_space",
@@ -82,7 +82,7 @@
     ],
     [
       "care_social",
-      89
+      91
     ],
     [
       "infrastructure",
@@ -90,13 +90,13 @@
     ],
     [
       "commercial",
-      47
+      45
     ]
   ],
   "trades": [
     [
       "structural",
-      1703
+      1713
     ],
     [
       "electrical",
@@ -104,23 +104,23 @@
     ],
     [
       "windows_doors",
-      1345
+      1339
     ],
     [
       "hvac",
-      992
+      980
     ],
     [
       "earthworks",
-      904
+      907
     ],
     [
       "railworks",
-      772
+      781
     ],
     [
       "flooring",
-      683
+      676
     ],
     [
       "painting",
@@ -128,15 +128,15 @@
     ],
     [
       "demolition",
-      631
+      634
     ],
     [
       "roof",
-      517
+      511
     ],
     [
       "insulation",
-      499
+      495
     ],
     [
       "roadworks",
@@ -144,7 +144,7 @@
     ],
     [
       "plumbing",
-      395
+      396
     ],
     [
       "facade",
@@ -152,31 +152,31 @@
     ],
     [
       "landscaping",
-      329
+      328
     ],
     [
       "drywall",
-      268
+      269
     ],
     [
       "fire_protection",
-      233
+      240
     ],
     [
       "plastering",
-      210
+      213
     ],
     [
       "elevator",
-      126
+      127
     ],
     [
       "finishing",
-      79
+      81
     ],
     [
       "solar_energy",
-      74
+      73
     ],
     [
       "sewer_pipe",
@@ -195,41 +195,131 @@
     {
       "from": 50,
       "to": 59,
-      "count": 237
+      "count": 240
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2439
+      "count": 2438
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2396
+      "count": 2408
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4156
+      "count": 4155
     },
     {
       "from": 90,
       "to": 99,
-      "count": 328
+      "count": 313
     },
     {
       "from": 100,
       "to": 100,
-      "count": 152
+      "count": 154
     }
   ],
   "quality_flags": {
-    "project_type_only": 1084,
-    "trade_only": 3585,
-    "project_and_trade": 5039,
-    "opportunity_score_85_plus": 1648
+    "project_type_only": 1086,
+    "trade_only": 3599,
+    "project_and_trade": 5023,
+    "opportunity_score_85_plus": 1636
   },
   "sample_top": [
+    {
+      "source_id": "TED-791519-2026",
+      "title": "410/420 Sanitär und Heizung",
+      "authority": "Universitätsklinikum Erlangen",
+      "city": "Erlangen",
+      "project_type": "care_social",
+      "trades": [
+        "hvac",
+        "plumbing",
+        "demolition",
+        "insulation"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/791519-2026"
+    },
+    {
+      "source_id": "TED-791310-2026",
+      "title": "Teilneubau GEH II - Fenster und Außentüren und PR-Fassade",
+      "authority": "Klinikum Region Hannover GmbH",
+      "city": "Gehrden",
+      "project_type": "public_building",
+      "trades": [
+        "windows_doors",
+        "facade",
+        "structural",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/791310-2026"
+    },
+    {
+      "source_id": "TED-790966-2026",
+      "title": "Freianlagen Sem I und Infra",
+      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+      "city": "Gießen",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "demolition",
+        "roadworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/790966-2026"
+    },
+    {
+      "source_id": "TED-789823-2026",
+      "title": "Teilneubau GEH II - Aluminium-Bekleidung Fassade",
+      "authority": "Klinikum Region Hannover GmbH",
+      "city": "Gehrden",
+      "project_type": "care_social",
+      "trades": [
+        "facade",
+        "structural",
+        "painting",
+        "finishing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/789823-2026"
+    },
+    {
+      "source_id": "TED-792615-2026",
+      "title": "BMPII Backnang Erneuerung Bahnsteig 2 + Aufzug Bahnsteig 3",
+      "authority": "DB Station&Service AG (Bukr 11)",
+      "city": "Backnang",
+      "project_type": "rail",
+      "trades": [
+        "elevator",
+        "railworks",
+        "earthworks",
+        "roadworks",
+        "roof",
+        "structural",
+        "electrical",
+        "plumbing",
+        "finishing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/792615-2026"
+    },
     {
       "source_id": "TED-789292-2026",
       "title": "Freudenstadt Hbf; Bau; 1Weiche+TB+OB (Los1); EWHA (Los2); Gleisfeldbeleuchtung (Los3); OLA (Los4)",
@@ -264,6 +354,43 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/789309-2026"
+    },
+    {
+      "source_id": "TED-785144-2026",
+      "title": "U-Bahn Farmsen, Baulos 1, Straßenbau (Los 1)",
+      "authority": "Landesbetrieb Straßen, Brücken und Gewässer",
+      "city": "Hamburg Wandsbek",
+      "project_type": "road",
+      "trades": [
+        "roadworks",
+        "demolition",
+        "earthworks",
+        "roof",
+        "structural",
+        "electrical",
+        "plumbing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/785144-2026"
+    },
+    {
+      "source_id": "TED-783940-2026",
+      "title": "Neubau Klinikzentrum Westerstede, Fassadenarbeiten",
+      "authority": "Landkreis Ammerland - Eigenbetrieb Immobilienbetreuung",
+      "city": "Westerstede",
+      "project_type": "hospital",
+      "trades": [
+        "facade",
+        "painting",
+        "windows_doors",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/783940-2026"
     },
     {
       "source_id": "TED-783141-2026",
@@ -302,23 +429,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/783900-2026"
     },
     {
-      "source_id": "TED-783940-2026",
-      "title": "Neubau Klinikzentrum Westerstede, Fassadenarbeiten",
-      "authority": "Landkreis Ammerland - Eigenbetrieb Immobilienbetreuung",
-      "city": "Westerstede",
-      "project_type": "hospital",
-      "trades": [
-        "facade",
-        "painting",
-        "windows_doors",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/783940-2026"
-    },
-    {
       "source_id": "TED-783832-2026",
       "title": "Bau Lüftungsanlage für Großtransformatoren: Umrichterwerk Neckarwestheim",
       "authority": "DB Energie GmbH (Bukr 31)",
@@ -334,120 +444,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/783832-2026"
-    },
-    {
-      "source_id": "TED-786281-2026",
-      "title": "Trockenbauarbeiten DIN 18340, Sanierung der Hildegardis-Schule, 3. Bauabschnitt, Klinikstr. 1, 44791 Bochum",
-      "authority": "Stadt Bochum, Referat Zentrale Vergabestelle",
-      "city": "Bochum",
-      "project_type": "school",
-      "trades": [
-        "drywall",
-        "demolition",
-        "structural",
-        "insulation",
-        "roof"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/786281-2026"
-    },
-    {
-      "source_id": "TED-782569-2026",
-      "title": "Bautechnik - 4. Reinigungsstufe zur Spurenstoffreduktion",
-      "authority": "Emschergenossenschaft Lippeverband Einkauf-Emschergenossenschaft Einkauf-Lippeverband",
-      "city": "Hamm",
-      "project_type": "civil_engineering",
-      "trades": [
-        "demolition",
-        "earthworks",
-        "insulation",
-        "flooring",
-        "painting"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/782569-2026"
-    },
-    {
-      "source_id": "TED-781433-2026",
-      "title": "Sanierung Grundschule Evesen - Außenanlagen",
-      "authority": "Landkreis Schaumburg - Vergabestelle",
-      "city": "Bückeburg",
-      "project_type": "school",
-      "trades": [
-        "landscaping",
-        "demolition",
-        "earthworks",
-        "roadworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/781433-2026"
-    },
-    {
-      "source_id": "TED-780198-2026",
-      "title": "Kooperation Eppendorfer Marktplatz, 2.BA, Los 3, Straßen- und Leitungsbau",
-      "authority": "Landesbetrieb Straßen, Brücken und Gewässer Hamburger Energiewerke GmbH wilhelm.tel GmbH",
-      "city": "Hamburg-Nord",
-      "project_type": "road",
-      "trades": [
-        "roadworks",
-        "demolition",
-        "earthworks",
-        "roof",
-        "structural",
-        "electrical",
-        "insulation",
-        "plumbing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/780198-2026"
-    },
-    {
-      "source_id": "TED-782597-2026",
-      "title": "449 HEB - Neubau einer integrativen Kindertagesstätte in Hersbruch",
-      "authority": "Arbeiter-Samariter-Bund Regionalverband Nürnberger Land e. V.",
-      "city": "Hersbruck",
-      "project_type": "university_research",
-      "trades": [
-        "earthworks",
-        "windows_doors",
-        "flooring",
-        "insulation",
-        "painting",
-        "hvac"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/782597-2026"
-    },
-    {
-      "source_id": "TED-782619-2026",
-      "title": "Neubau Ost Haus 18 WFK Eberswalde_Bauleistungen BA 1_Vorinformation",
-      "authority": "GLG Werner Forßmann Klinikum Eberswalde GmbH",
-      "city": "Eberswalde",
-      "project_type": "industrial",
-      "trades": [
-        "earthworks",
-        "structural",
-        "roof",
-        "painting",
-        "windows_doors",
-        "flooring",
-        "hvac",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/782619-2026"
     }
   ]
 }
