@@ -3,10 +3,10 @@
   "records_evaluated": 10000,
   "quality_gate": {
     "REVIEW": 6555,
-    "CONFIDENT": 3160,
-    "UNKNOWN": 285
+    "CONFIDENT": 3158,
+    "UNKNOWN": 287
   },
-  "customer_feed_count": 3160,
+  "customer_feed_count": 3158,
   "customer_feed_policy": "CONFIDENT_ONLY",
   "review_leakage": 0,
   "audit_sample_size": 60,

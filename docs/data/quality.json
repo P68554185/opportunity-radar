@@ -1,11 +1,11 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9715,
-  "classification_rate_pct": 97.2,
+  "classified_opportunities": 9713,
+  "classification_rate_pct": 97.1,
   "bands": {
-    "EARLY": 2467,
-    "UPCOMING": 5605,
-    "HOT": 1643
+    "EARLY": 2464,
+    "UPCOMING": 5618,
+    "HOT": 1631
   },
   "project_types": [
     [
@@ -14,43 +14,43 @@
     ],
     [
       "school",
-      1405
+      1400
     ],
     [
       "rail",
-      787
+      792
     ],
     [
       "water_wastewater",
-      420
+      415
     ],
     [
       "civil_engineering",
-      332
+      331
     ],
     [
       "bridge",
-      324
+      328
     ],
     [
       "industrial",
       317
     ],
     [
-      "sports_leisure",
-      282
+      "road",
+      280
     ],
     [
-      "road",
-      276
+      "sports_leisure",
+      280
     ],
     [
       "administration",
-      275
+      276
     ],
     [
       "university_research",
-      267
+      263
     ],
     [
       "hospital",
@@ -58,7 +58,7 @@
     ],
     [
       "fire_station",
-      204
+      203
     ],
     [
       "kindergarten",
@@ -66,7 +66,7 @@
     ],
     [
       "public_building",
-      183
+      180
     ],
     [
       "energy",
@@ -74,7 +74,7 @@
     ],
     [
       "public_space",
-      136
+      139
     ],
     [
       "residential",
@@ -82,11 +82,11 @@
     ],
     [
       "care_social",
-      90
+      93
     ],
     [
       "infrastructure",
-      67
+      66
     ],
     [
       "commercial",
@@ -96,35 +96,35 @@
   "trades": [
     [
       "structural",
-      1716
+      1708
     ],
     [
       "electrical",
-      1461
+      1468
     ],
     [
       "windows_doors",
-      1339
+      1334
     ],
     [
       "hvac",
-      986
+      985
     ],
     [
       "earthworks",
-      908
+      913
     ],
     [
       "railworks",
-      781
+      783
     ],
     [
       "flooring",
-      685
+      675
     ],
     [
       "painting",
-      643
+      635
     ],
     [
       "demolition",
@@ -132,43 +132,43 @@
     ],
     [
       "roof",
-      506
+      512
     ],
     [
       "insulation",
-      496
+      493
     ],
     [
       "roadworks",
-      426
+      433
     ],
     [
       "plumbing",
-      398
+      396
     ],
     [
       "facade",
-      360
+      357
     ],
     [
       "landscaping",
-      333
+      337
     ],
     [
       "drywall",
-      270
+      268
     ],
     [
       "fire_protection",
-      238
+      234
     ],
     [
       "plastering",
-      216
+      212
     ],
     [
       "elevator",
-      125
+      126
     ],
     [
       "finishing",
@@ -176,11 +176,11 @@
     ],
     [
       "solar_energy",
-      74
+      73
     ],
     [
       "sewer_pipe",
-      73
+      72
     ],
     [
       "fencing",
@@ -195,39 +195,39 @@
     {
       "from": 50,
       "to": 59,
-      "count": 239
+      "count": 244
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2440
+      "count": 2431
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2409
+      "count": 2422
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4152
+      "count": 4145
     },
     {
       "from": 90,
       "to": 99,
-      "count": 319
+      "count": 316
     },
     {
       "from": 100,
       "to": 100,
-      "count": 156
+      "count": 155
     }
   ],
   "quality_flags": {
-    "project_type_only": 1100,
+    "project_type_only": 1098,
     "trade_only": 3593,
     "project_and_trade": 5022,
-    "opportunity_score_85_plus": 1643
+    "opportunity_score_85_plus": 1631
   },
   "sample_top": [
     {
@@ -376,23 +376,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/785144-2026"
     },
     {
-      "source_id": "TED-783940-2026",
-      "title": "Neubau Klinikzentrum Westerstede, Fassadenarbeiten",
-      "authority": "Landkreis Ammerland - Eigenbetrieb Immobilienbetreuung",
-      "city": "Westerstede",
-      "project_type": "hospital",
-      "trades": [
-        "facade",
-        "painting",
-        "windows_doors",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/783940-2026"
-    },
-    {
       "source_id": "TED-783141-2026",
       "title": "Kabeltiefbau ESTW, Neubau Gleis 5 inkl. OLA, Gleis- und Weichenerneuerung Schönefeld",
       "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
@@ -427,6 +410,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/783900-2026"
+    },
+    {
+      "source_id": "TED-783940-2026",
+      "title": "Neubau Klinikzentrum Westerstede, Fassadenarbeiten",
+      "authority": "Landkreis Ammerland - Eigenbetrieb Immobilienbetreuung",
+      "city": "Westerstede",
+      "project_type": "hospital",
+      "trades": [
+        "facade",
+        "painting",
+        "windows_doors",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/783940-2026"
     },
     {
       "source_id": "TED-783832-2026",
