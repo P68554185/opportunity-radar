@@ -1,5 +1,5 @@
 {
-  "observed_at": "2026-11-15T12:42:36.701693+00:00",
+  "observed_at": "2026-11-16T13:34:57.894536+00:00",
   "attribution": "Landeshauptstadt Dresden / Quelle: Geodaten Sachsen",
   "license": "https://www.govdata.de/dl-de/by-2-0",
   "sources": [
@@ -18,7 +18,7 @@
     {
       "node": 184,
       "status": "verified",
-      "records": 67607,
+      "records": 67606,
       "number_matched": "unknown",
       "coverage": "Returned licensed municipal addresses; unknown numberMatched does not establish completeness"
     }

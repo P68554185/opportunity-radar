@@ -1,20 +1,20 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9713,
-  "classification_rate_pct": 97.1,
+  "classified_opportunities": 9717,
+  "classification_rate_pct": 97.2,
   "bands": {
-    "EARLY": 2464,
-    "UPCOMING": 5618,
-    "HOT": 1631
+    "EARLY": 2460,
+    "UPCOMING": 5624,
+    "HOT": 1633
   },
   "project_types": [
     [
       "unclassified_project",
-      3593
+      3594
     ],
     [
       "school",
-      1400
+      1406
     ],
     [
       "rail",
@@ -25,48 +25,48 @@
       415
     ],
     [
-      "civil_engineering",
-      331
+      "bridge",
+      332
     ],
     [
-      "bridge",
-      328
+      "civil_engineering",
+      323
     ],
     [
       "industrial",
       317
     ],
     [
-      "road",
-      280
-    ],
-    [
       "sports_leisure",
-      280
+      288
     ],
     [
       "administration",
-      276
+      280
+    ],
+    [
+      "road",
+      279
     ],
     [
       "university_research",
-      263
+      271
     ],
     [
       "hospital",
-      261
+      253
     ],
     [
       "fire_station",
-      203
+      202
     ],
     [
       "kindergarten",
-      188
+      186
     ],
     [
       "public_building",
-      180
+      181
     ],
     [
       "energy",
@@ -74,7 +74,7 @@
     ],
     [
       "public_space",
-      139
+      137
     ],
     [
       "residential",
@@ -82,29 +82,29 @@
     ],
     [
       "care_social",
-      93
+      88
     ],
     [
       "infrastructure",
-      66
+      67
     ],
     [
       "commercial",
-      44
+      42
     ]
   ],
   "trades": [
     [
       "structural",
-      1708
+      1707
     ],
     [
       "electrical",
-      1468
+      1464
     ],
     [
       "windows_doors",
-      1334
+      1345
     ],
     [
       "hvac",
@@ -112,19 +112,19 @@
     ],
     [
       "earthworks",
-      913
+      907
     ],
     [
       "railworks",
-      783
+      778
     ],
     [
       "flooring",
-      675
+      676
     ],
     [
       "painting",
-      635
+      647
     ],
     [
       "demolition",
@@ -132,31 +132,31 @@
     ],
     [
       "roof",
-      512
+      510
     ],
     [
       "insulation",
-      493
+      495
     ],
     [
       "roadworks",
-      433
+      434
     ],
     [
       "plumbing",
-      396
+      399
     ],
     [
       "facade",
-      357
+      358
     ],
     [
       "landscaping",
-      337
+      332
     ],
     [
       "drywall",
-      268
+      276
     ],
     [
       "fire_protection",
@@ -164,72 +164,140 @@
     ],
     [
       "plastering",
-      212
+      210
     ],
     [
       "elevator",
-      126
-    ],
-    [
-      "finishing",
-      80
+      127
     ],
     [
       "solar_energy",
-      73
+      75
+    ],
+    [
+      "finishing",
+      74
     ],
     [
       "sewer_pipe",
-      72
+      71
     ],
     [
       "fencing",
-      67
+      66
     ],
     [
       "building_services",
-      33
+      35
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 244
+      "count": 229
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2431
+      "count": 2440
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2422
+      "count": 2409
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4145
+      "count": 4178
     },
     {
       "from": 90,
       "to": 99,
-      "count": 316
+      "count": 310
     },
     {
       "from": 100,
       "to": 100,
-      "count": 155
+      "count": 151
     }
   ],
   "quality_flags": {
-    "project_type_only": 1098,
-    "trade_only": 3593,
-    "project_and_trade": 5022,
-    "opportunity_score_85_plus": 1631
+    "project_type_only": 1090,
+    "trade_only": 3594,
+    "project_and_trade": 5033,
+    "opportunity_score_85_plus": 1633
   },
   "sample_top": [
+    {
+      "source_id": "TED-796518-2026",
+      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
+      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
+      "city": "Köln",
+      "project_type": "university_research",
+      "trades": [
+        "drywall",
+        "insulation",
+        "structural",
+        "flooring"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/796518-2026"
+    },
+    {
+      "source_id": "TED-793148-2026",
+      "title": "Feuerwehrtechnische Zentrale Ebergötzen, Neubau - VE 502 Landschaftsbau und Pflasterarbeiten",
+      "authority": "Landkreis Göttingen",
+      "city": "Ebergötzen",
+      "project_type": "road",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "roadworks",
+        "fencing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/793148-2026"
+    },
+    {
+      "source_id": "TED-795841-2026",
+      "title": "2026-1004987_Flughafen München_P20 Beschichtungssanierung",
+      "authority": "Flughafen München GmbH",
+      "city": "München",
+      "project_type": "industrial",
+      "trades": [
+        "painting",
+        "structural",
+        "roadworks",
+        "insulation"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/795841-2026"
+    },
+    {
+      "source_id": "TED-795965-2026",
+      "title": "Garten-/Landschaftsbauarbeiten, Schloss Charlottenburg, Sanierung Freianlagen einschl. Wasserver-/entsorgung, Ehrenhof 5. BA",
+      "authority": "Stiftung Preußische Schlösser und Gärten Berlin-Brandenburg",
+      "city": "Berlin",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "demolition",
+        "roadworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/795965-2026"
+    },
     {
       "source_id": "TED-791519-2026",
       "title": "410/420 Sanitär und Heizung",
@@ -263,6 +331,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/791310-2026"
+    },
+    {
+      "source_id": "TED-790966-2026",
+      "title": "Freianlagen Sem I und Infra",
+      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+      "city": "Gießen",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "demolition",
+        "roadworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/790966-2026"
     },
     {
       "source_id": "TED-789823-2026",
@@ -302,23 +387,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/792615-2026"
-    },
-    {
-      "source_id": "TED-790966-2026",
-      "title": "Freianlagen Sem I und Infra",
-      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
-      "city": "Gießen",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "demolition",
-        "roadworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/790966-2026"
     },
     {
       "source_id": "TED-789292-2026",
@@ -374,76 +442,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/785144-2026"
-    },
-    {
-      "source_id": "TED-783141-2026",
-      "title": "Kabeltiefbau ESTW, Neubau Gleis 5 inkl. OLA, Gleis- und Weichenerneuerung Schönefeld",
-      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
-      "city": "Schönefeld",
-      "project_type": "rail",
-      "trades": [
-        "earthworks",
-        "railworks",
-        "electrical",
-        "roof",
-        "plumbing",
-        "finishing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/783141-2026"
-    },
-    {
-      "source_id": "TED-783900-2026",
-      "title": "452 - Generalsanierung der Johannes-Hirspeck-Mittelschule in Pfarrkirchen - Gewerk 6000-001 Außenanlagen",
-      "authority": "Mittelschulverband Pfarrkirchen",
-      "city": "Pfarrkirchen",
-      "project_type": "school",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "roadworks",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/783900-2026"
-    },
-    {
-      "source_id": "TED-783940-2026",
-      "title": "Neubau Klinikzentrum Westerstede, Fassadenarbeiten",
-      "authority": "Landkreis Ammerland - Eigenbetrieb Immobilienbetreuung",
-      "city": "Westerstede",
-      "project_type": "hospital",
-      "trades": [
-        "facade",
-        "painting",
-        "windows_doors",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/783940-2026"
-    },
-    {
-      "source_id": "TED-783832-2026",
-      "title": "Bau Lüftungsanlage für Großtransformatoren: Umrichterwerk Neckarwestheim",
-      "authority": "DB Energie GmbH (Bukr 31)",
-      "city": "Neckarwestheim",
-      "project_type": "water_wastewater",
-      "trades": [
-        "hvac",
-        "windows_doors",
-        "railworks",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/783832-2026"
     }
   ]
 }
