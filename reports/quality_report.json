@@ -1,84 +1,84 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9717,
+  "classified_opportunities": 9716,
   "classification_rate_pct": 97.2,
   "bands": {
-    "EARLY": 2460,
-    "UPCOMING": 5624,
-    "HOT": 1633
+    "EARLY": 2455,
+    "UPCOMING": 5625,
+    "HOT": 1636
   },
   "project_types": [
     [
       "unclassified_project",
-      3594
+      3600
     ],
     [
       "school",
-      1406
+      1403
     ],
     [
       "rail",
-      792
+      784
     ],
     [
       "water_wastewater",
-      415
+      408
     ],
     [
       "bridge",
-      332
+      338
     ],
     [
       "civil_engineering",
-      323
+      321
     ],
     [
       "industrial",
-      317
+      313
     ],
     [
       "sports_leisure",
-      288
-    ],
-    [
-      "administration",
-      280
+      286
     ],
     [
       "road",
-      279
+      281
+    ],
+    [
+      "administration",
+      281
     ],
     [
       "university_research",
-      271
+      272
     ],
     [
       "hospital",
-      253
+      250
     ],
     [
       "fire_station",
-      202
+      206
     ],
     [
       "kindergarten",
-      186
+      189
     ],
     [
       "public_building",
-      181
+      180
     ],
     [
       "energy",
-      140
+      145
     ],
     [
       "public_space",
-      137
+      140
     ],
     [
       "residential",
-      124
+      123
     ],
     [
       "care_social",
@@ -86,7 +86,7 @@
     ],
     [
       "infrastructure",
-      67
+      66
     ],
     [
       "commercial",
@@ -100,59 +100,59 @@
     ],
     [
       "electrical",
-      1464
+      1478
     ],
     [
       "windows_doors",
-      1345
+      1313
     ],
     [
       "hvac",
-      985
+      980
     ],
     [
       "earthworks",
-      907
+      917
     ],
     [
       "railworks",
-      778
+      770
     ],
     [
       "flooring",
-      676
-    ],
-    [
-      "painting",
-      647
+      693
     ],
     [
       "demolition",
-      633
+      644
+    ],
+    [
+      "painting",
+      643
     ],
     [
       "roof",
-      510
+      512
     ],
     [
       "insulation",
-      495
+      496
     ],
     [
       "roadworks",
-      434
+      438
     ],
     [
       "plumbing",
-      399
+      401
     ],
     [
       "facade",
-      358
+      354
     ],
     [
       "landscaping",
-      332
+      336
     ],
     [
       "drywall",
@@ -160,27 +160,27 @@
     ],
     [
       "fire_protection",
-      234
+      238
     ],
     [
       "plastering",
-      210
+      211
     ],
     [
       "elevator",
-      127
+      130
     ],
     [
       "solar_energy",
-      75
+      79
     ],
     [
       "finishing",
-      74
+      77
     ],
     [
       "sewer_pipe",
-      71
+      74
     ],
     [
       "fencing",
@@ -188,64 +188,117 @@
     ],
     [
       "building_services",
-      35
+      36
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 229
+      "count": 228
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2440
+      "count": 2434
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2409
+      "count": 2419
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4178
+      "count": 4166
     },
     {
       "from": 90,
       "to": 99,
-      "count": 310
+      "count": 314
     },
     {
       "from": 100,
       "to": 100,
-      "count": 151
+      "count": 155
     }
   ],
   "quality_flags": {
-    "project_type_only": 1090,
-    "trade_only": 3594,
+    "project_type_only": 1083,
+    "trade_only": 3600,
     "project_and_trade": 5033,
-    "opportunity_score_85_plus": 1633
+    "opportunity_score_85_plus": 1636
   },
   "sample_top": [
     {
-      "source_id": "TED-796518-2026",
-      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
-      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
-      "city": "Köln",
-      "project_type": "university_research",
+      "source_id": "TED-799846-2026",
+      "title": "Außenanlagen",
+      "authority": "Handwerkskammer Ostwestfalen-Lippe zu Bielefeld",
+      "city": "Bielefeld",
+      "project_type": "public_space",
       "trades": [
-        "drywall",
-        "insulation",
-        "structural",
-        "flooring"
+        "landscaping",
+        "earthworks",
+        "demolition",
+        "electrical",
+        "roadworks"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/796518-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/799846-2026"
+    },
+    {
+      "source_id": "TED-799980-2026",
+      "title": "VE139_4_Außenanlagen Therapiegarten",
+      "authority": "Sana Klinikum Offenbach GmbH",
+      "city": "Offenbach am Main",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "roadworks",
+        "electrical"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/799980-2026"
+    },
+    {
+      "source_id": "TED-797568-2026",
+      "title": "VG Maifeld - Energetische Sanierung Grundschule Ochtendung: Abbruch- und Rohbauarbeiten",
+      "authority": "Verbandsgemeinde Maifeld",
+      "city": "Ochtendung",
+      "project_type": "school",
+      "trades": [
+        "structural",
+        "demolition",
+        "earthworks",
+        "insulation",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/797568-2026"
+    },
+    {
+      "source_id": "TED-796994-2026",
+      "title": "Neubau Feuerwache und Verwaltungsgebäude, Ladestraße 3a u. b in Wismar, Los 1-05: Erd- und Rohbauarbeiten",
+      "authority": "Hansestadt Wismar, Rechtsamt",
+      "city": "Wismar",
+      "project_type": "fire_station",
+      "trades": [
+        "structural",
+        "demolition",
+        "earthworks",
+        "plastering"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/796994-2026"
     },
     {
       "source_id": "TED-793148-2026",
@@ -282,6 +335,23 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/795841-2026"
     },
     {
+      "source_id": "TED-796518-2026",
+      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
+      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
+      "city": "Köln",
+      "project_type": "university_research",
+      "trades": [
+        "drywall",
+        "insulation",
+        "structural",
+        "flooring"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/796518-2026"
+    },
+    {
       "source_id": "TED-795965-2026",
       "title": "Garten-/Landschaftsbauarbeiten, Schloss Charlottenburg, Sanierung Freianlagen einschl. Wasserver-/entsorgung, Ehrenhof 5. BA",
       "authority": "Stiftung Preußische Schlösser und Gärten Berlin-Brandenburg",
@@ -297,23 +367,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/795965-2026"
-    },
-    {
-      "source_id": "TED-791519-2026",
-      "title": "410/420 Sanitär und Heizung",
-      "authority": "Universitätsklinikum Erlangen",
-      "city": "Erlangen",
-      "project_type": "care_social",
-      "trades": [
-        "hvac",
-        "plumbing",
-        "demolition",
-        "insulation"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/791519-2026"
     },
     {
       "source_id": "TED-791310-2026",
@@ -333,21 +386,21 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/791310-2026"
     },
     {
-      "source_id": "TED-790966-2026",
-      "title": "Freianlagen Sem I und Infra",
-      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
-      "city": "Gießen",
-      "project_type": "public_space",
+      "source_id": "TED-791519-2026",
+      "title": "410/420 Sanitär und Heizung",
+      "authority": "Universitätsklinikum Erlangen",
+      "city": "Erlangen",
+      "project_type": "care_social",
       "trades": [
-        "landscaping",
-        "earthworks",
+        "hvac",
+        "plumbing",
         "demolition",
-        "roadworks"
+        "insulation"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/790966-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/791519-2026"
     },
     {
       "source_id": "TED-789823-2026",
@@ -387,61 +440,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/792615-2026"
-    },
-    {
-      "source_id": "TED-789292-2026",
-      "title": "Freudenstadt Hbf; Bau; 1Weiche+TB+OB (Los1); EWHA (Los2); Gleisfeldbeleuchtung (Los3); OLA (Los4)",
-      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
-      "city": "Freudenstadt",
-      "project_type": "rail",
-      "trades": [
-        "electrical",
-        "railworks",
-        "demolition",
-        "earthworks",
-        "hvac"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/789292-2026"
-    },
-    {
-      "source_id": "TED-789309-2026",
-      "title": "Gewässerbau, offener Kanalbau, Beton-,Stahlbau, Abbrucharbeiten im Bereich von Kanälen und Beton-,Stahlbauwerken",
-      "authority": "Emschergenossenschaft",
-      "city": "Dortmund",
-      "project_type": "water_wastewater",
-      "trades": [
-        "structural",
-        "demolition",
-        "sewer_pipe",
-        "earthworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/789309-2026"
-    },
-    {
-      "source_id": "TED-785144-2026",
-      "title": "U-Bahn Farmsen, Baulos 1, Straßenbau (Los 1)",
-      "authority": "Landesbetrieb Straßen, Brücken und Gewässer",
-      "city": "Hamburg Wandsbek",
-      "project_type": "road",
-      "trades": [
-        "roadworks",
-        "demolition",
-        "earthworks",
-        "roof",
-        "structural",
-        "electrical",
-        "plumbing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/785144-2026"
     }
   ]
 }

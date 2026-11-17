@@ -15735,6 +15735,62 @@
         51.0284873709018
       ],
       "source_url": "https://kommisdd.dresden.de/net3/public/ogc.ashx?NodeId=489&Service=WFS&Request=GetFeature&Version=2.0.0&TypeNames=cls%3AL354&Count=1000&SrsName=urn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326"
+    },
+    {
+      "id": "L575.1734",
+      "properties": {
+        "id": "1734",
+        "verf_nr": "6064",
+        "korr_nr": "0",
+        "schluessel": "6064",
+        "verf_art": "VB-Plan",
+        "name1": "Dresden-Striesen",
+        "name2": "Quartier Schandauer-/Gottleubaer-/Glashütter Straße",
+        "plan_ref": "A",
+        "plan_stand": "Aufstellung/Einleitung des Verfahrens",
+        "ab_dat": "",
+        "bis_dat": "",
+        "beschl_dat": "2026-11-04T00:00:00",
+        "amtsbl_dat": "",
+        "hinweis": "-",
+        "url": "https://www.dresden.de/de/rathaus/dienstleistungen/bebauungsplan.php",
+        "ds_modified": "2026-11-16T11:57:04.287"
+      },
+      "bbox": [
+        13.7976480400614,
+        51.0403592025979,
+        13.8008046592687,
+        51.0419651592375
+      ],
+      "source_url": "https://kommisdd.dresden.de/net3/public/ogc.ashx?NodeId=759&Service=WFS&Request=GetFeature&Version=2.0.0&TypeNames=cls%3AL575&Count=1000&SrsName=urn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326"
+    },
+    {
+      "id": "L575.1733",
+      "properties": {
+        "id": "1733",
+        "verf_nr": "6069",
+        "korr_nr": "0",
+        "schluessel": "6069",
+        "verf_art": "VB-Plan",
+        "name1": "Dresden-Obergohlis",
+        "name2": "Wohnbebauung Grüner Weg",
+        "plan_ref": "A",
+        "plan_stand": "Aufstellung/Einleitung des Verfahrens",
+        "ab_dat": "",
+        "bis_dat": "",
+        "beschl_dat": "2026-11-04T00:00:00",
+        "amtsbl_dat": "",
+        "hinweis": "-",
+        "url": "https://www.dresden.de/de/rathaus/dienstleistungen/bebauungsplan.php",
+        "ds_modified": "2026-11-16T11:18:31.387"
+      },
+      "bbox": [
+        13.6435049106482,
+        51.0852977845807,
+        13.6487201220227,
+        51.0888693859246
+      ],
+      "source_url": "https://kommisdd.dresden.de/net3/public/ogc.ashx?NodeId=759&Service=WFS&Request=GetFeature&Version=2.0.0&TypeNames=cls%3AL575&Count=1000&SrsName=urn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326"
     }
   ],
   "attribution": "Landeshauptstadt Dresden / Quelle: Geodaten Sachsen",

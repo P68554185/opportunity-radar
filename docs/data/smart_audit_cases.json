@@ -4,30 +4,24 @@
   "strategy": "RISK_FIRST_ACTIVE_VALIDATION",
   "cases": [
     {
-      "audit_id": 40,
-      "notice_id": "665571-2026",
-      "title": "SEP GS Schützenstraße - Sanierung und Erweiterung - Maler- und Lackierarbeiten",
-      "description": "SEP GS Schützenstraße - Sanierung und Erweiterung - Maler- und Lackierarbeiten Stadt Solingen ['DEA19', 'DEU', 'DEA19', 'DEU']",
-      "original_title": "SEP GS Schützenstraße - Sanierung und Erweiterung - Maler- und Lackierarbeiten",
-      "original_description": "SEP GS Schützenstraße - Sanierung und Erweiterung - Maler- und Lackierarbeiten Stadt Solingen ['DEA19', 'DEU', 'DEA19', 'DEU']",
+      "audit_id": 10,
+      "notice_id": "691016-2026",
+      "title": "26E40072; Hochschule Hannover; Sanierung Teilbereich Bauteil 1A ; Abbrucharbeiten",
+      "description": "26E40072; Hochschule Hannover; Sanierung Teilbereich Bauteil 1A ; Abbrucharbeiten Land Niedersachsen vertreten durch das Staatliche Baumanagement Niedersachsen ['DE929', 'DEU', 'DE929', 'DEU']",
+      "original_title": "26E40072; Hochschule Hannover; Sanierung Teilbereich Bauteil 1A ; Abbrucharbeiten",
+      "original_description": "26E40072; Hochschule Hannover; Sanierung Teilbereich Bauteil 1A ; Abbrucharbeiten Land Niedersachsen vertreten durch das Staatliche Baumanagement Niedersachsen ['DE929', 'DEU', 'DE929', 'DEU']",
       "cpv": [
-        "45442100",
-        "45000000",
-        "45214200",
-        "45442110",
-        "45442180",
-        "45442100",
-        "45000000",
-        "45214200",
-        "45442110",
-        "45442180"
+        "45214300",
+        "45111100",
+        "45214300",
+        "45111100"
       ],
       "project_type_predicted": "university_research",
       "trades_predicted": [
-        "painting"
+        "demolition"
       ],
-      "confidence": 0.55,
-      "quality_status": "REVIEW",
+      "confidence": 0.85,
+      "quality_status": "CONFIDENT",
       "evidence": {
         "project_type": true,
         "trade": true,
@@ -35,51 +29,58 @@
         "textual_evidence": 1,
         "source": true,
         "country": true,
-        "confidence": 0.55,
+        "confidence": 0.85,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Stadt Solingen",
-      "published": "2026-09-28+02:00",
-      "city": "Solingen",
+      "authority": "Land Niedersachsen vertreten durch das Staatliche Baumanagement Niedersachsen",
+      "published": "2026-10-07+02:00",
+      "city": "Hannover",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/665571-2026",
-      "phase": "tender",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/691016-2026",
+      "phase": "award",
       "smart_review": {
         "risk": "HIGH",
-        "risk_score": 7,
+        "risk_score": 8,
         "reasons": [
           "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
-          "Text stützt alternative Projektarten: road",
-          "Gewerke ohne direkten Textbeleg: painting"
+          "Text stützt alternative Projektarten: school",
+          "Gewerke ohne direkten Textbeleg: demolition",
+          "Hohe Confidence trotz widersprüchlicher/breiter Evidenz"
         ],
         "project_text_support": 0,
         "project_alternatives": [
-          "road"
+          "school"
         ],
         "trade_support": {
-          "painting": 0
+          "demolition": 0
         },
         "unsupported_trades": [
-          "painting"
+          "demolition"
         ]
       },
       "review_order": 1
     },
     {
-      "audit_id": 50,
-      "notice_id": "793776-2026",
-      "title": "Landgrabenstraße / Gibitzenhofstraße - VP16 Weichensteuerung",
-      "description": "Landgrabenstraße / Gibitzenhofstraße - VP16 Weichensteuerung VAG Verkehrs-Aktiengesellschaft ['DE254', 'DEU', 'DE254', 'DEU']",
-      "original_title": "Landgrabenstraße / Gibitzenhofstraße - VP16 Weichensteuerung",
-      "original_description": "Landgrabenstraße / Gibitzenhofstraße - VP16 Weichensteuerung VAG Verkehrs-Aktiengesellschaft ['DE254', 'DEU', 'DE254', 'DEU']",
+      "audit_id": 30,
+      "notice_id": "753711-2026",
+      "title": "Tuna Bestandsnetz; S-Bahn Stuttgart; Vergabepaket 3: baulicher Brandschutz",
+      "description": "Tuna Bestandsnetz; S-Bahn Stuttgart; Vergabepaket 3: baulicher Brandschutz DB Netz AG (Bukr 16) ['DE111', 'DEU', 'DE111', 'DEU']",
+      "original_title": "Tuna Bestandsnetz; S-Bahn Stuttgart; Vergabepaket 3: baulicher Brandschutz",
+      "original_description": "Tuna Bestandsnetz; S-Bahn Stuttgart; Vergabepaket 3: baulicher Brandschutz DB Netz AG (Bukr 16) ['DE111', 'DEU', 'DE111', 'DEU']",
       "cpv": [
-        "45234115",
-        "34632000",
-        "45234115"
+        "45221200",
+        "45221247",
+        "45221248",
+        "45343100",
+        "45221200",
+        "45221247",
+        "45221248",
+        "45343100"
       ],
-      "project_type_predicted": "rail",
+      "project_type_predicted": "bridge",
       "trades_predicted": [
-        "railworks"
+        "hvac",
+        "fire_protection"
       ],
       "confidence": 0.55,
       "quality_status": "REVIEW",
@@ -93,12 +94,68 @@
         "confidence": 0.55,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "VAG Verkehrs-Aktiengesellschaft",
-      "published": "2026-11-16+01:00",
-      "city": "",
+      "authority": "DB Netz AG (Bukr 16)",
+      "published": "2026-10-30+01:00",
+      "city": "70191",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/793776-2026",
-      "phase": "tender",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/753711-2026",
+      "phase": "award",
+      "smart_review": {
+        "risk": "HIGH",
+        "risk_score": 7,
+        "reasons": [
+          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
+          "Text stützt alternative Projektarten: rail",
+          "Gewerke ohne direkten Textbeleg: hvac, fire_protection"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [
+          "rail"
+        ],
+        "trade_support": {
+          "hvac": 0,
+          "fire_protection": 0
+        },
+        "unsupported_trades": [
+          "hvac",
+          "fire_protection"
+        ]
+      },
+      "review_order": 2
+    },
+    {
+      "audit_id": 6,
+      "notice_id": "773757-2026",
+      "title": "Umbau Bf. Zossen einschließlich BÜ-Ersatzmaßnahme B246n inkl. Straßenüberführung und Kreisverkehr",
+      "description": "Umbau Bf. Zossen einschließlich BÜ-Ersatzmaßnahme B246n inkl. Straßenüberführung und Kreisverkehr DB Netz AG (Bukr 16) ['DE40H', 'DEU', 'DE40H', 'DEU']",
+      "original_title": "Umbau Bf. Zossen einschließlich BÜ-Ersatzmaßnahme B246n inkl. Straßenüberführung und Kreisverkehr",
+      "original_description": "Umbau Bf. Zossen einschließlich BÜ-Ersatzmaßnahme B246n inkl. Straßenüberführung und Kreisverkehr DB Netz AG (Bukr 16) ['DE40H', 'DEU', 'DE40H', 'DEU']",
+      "cpv": [
+        "45234100",
+        "45234100"
+      ],
+      "project_type_predicted": "bridge",
+      "trades_predicted": [
+        "railworks"
+      ],
+      "confidence": 0.75,
+      "quality_status": "CONFIDENT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.75,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "DB Netz AG (Bukr 16)",
+      "published": "2026-11-06+01:00",
+      "city": "Zossen",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/773757-2026",
+      "phase": "award",
       "smart_review": {
         "risk": "HIGH",
         "risk_score": 7,
@@ -118,22 +175,23 @@
           "railworks"
         ]
       },
-      "review_order": 2
+      "review_order": 3
     },
     {
-      "audit_id": 6,
-      "notice_id": "718060-2026",
-      "title": "Energetische Sanierung und barrierefreier Umbau Rathaus Meitingen Maler- und Lackierarbeiten",
-      "description": "Energetische Sanierung und barrierefreier Umbau Rathaus Meitingen Maler- und Lackierarbeiten Markt Meitingen Vergabestelle ['DE276', 'DEU', 'DE276', 'DEU']",
-      "original_title": "Energetische Sanierung und barrierefreier Umbau Rathaus Meitingen Maler- und Lackierarbeiten",
-      "original_description": "Energetische Sanierung und barrierefreier Umbau Rathaus Meitingen Maler- und Lackierarbeiten Markt Meitingen Vergabestelle ['DE276', 'DEU', 'DE276', 'DEU']",
+      "audit_id": 15,
+      "notice_id": "732242-2026",
+      "title": "Theodor-Fliedner-Stiftung | Neubau Alberichstraße | Freianlagen",
+      "description": "Theodor-Fliedner-Stiftung | Neubau Alberichstraße | Freianlagen Theodor-Fliedner-Stiftung ['DE126', 'DEU', 'DE126', 'DEU']",
+      "original_title": "Theodor-Fliedner-Stiftung | Neubau Alberichstraße | Freianlagen",
+      "original_description": "Theodor-Fliedner-Stiftung | Neubau Alberichstraße | Freianlagen Theodor-Fliedner-Stiftung ['DE126', 'DEU', 'DE126', 'DEU']",
       "cpv": [
-        "45000000",
-        "45000000"
+        "45112710",
+        "45112710"
       ],
-      "project_type_predicted": "administration",
+      "project_type_predicted": "public_space",
       "trades_predicted": [
-        "painting"
+        "landscaping",
+        "earthworks"
       ],
       "confidence": 0.75,
       "quality_status": "CONFIDENT",
@@ -147,45 +205,47 @@
         "confidence": 0.75,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Markt Meitingen Vergabestelle",
-      "published": "2026-10-16+02:00",
-      "city": "",
+      "authority": "Theodor-Fliedner-Stiftung",
+      "published": "2026-10-22+02:00",
+      "city": "Mannheim",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/718060-2026",
-      "phase": "award",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/732242-2026",
+      "phase": "tender",
       "smart_review": {
         "risk": "HIGH",
         "risk_score": 7,
         "reasons": [
           "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
-          "Text stützt alternative Projektarten: admin",
-          "Gewerke ohne direkten Textbeleg: painting"
+          "Text stützt alternative Projektarten: road",
+          "Gewerke ohne direkten Textbeleg: landscaping, earthworks"
         ],
         "project_text_support": 0,
         "project_alternatives": [
-          "admin"
+          "road"
         ],
         "trade_support": {
-          "painting": 0
+          "landscaping": 0,
+          "earthworks": 0
         },
         "unsupported_trades": [
-          "painting"
+          "landscaping",
+          "earthworks"
         ]
       },
-      "review_order": 3
+      "review_order": 4
     },
     {
-      "audit_id": 14,
-      "notice_id": "662115-2026",
-      "title": "Verwaltungsgebäude Gebäude B, 34576 Homberg (Efze), Grundhafte Sanierung des Gebäudes B",
-      "description": "Verwaltungsgebäude Gebäude B, 34576 Homberg (Efze), Grundhafte Sanierung des Gebäudes B Kreisausschuss des Schwalm-Eder-Kreises ['DE735', 'DEU', 'DE735', 'DEU']",
-      "original_title": "Verwaltungsgebäude Gebäude B, 34576 Homberg (Efze), Grundhafte Sanierung des Gebäudes B",
-      "original_description": "Verwaltungsgebäude Gebäude B, 34576 Homberg (Efze), Grundhafte Sanierung des Gebäudes B Kreisausschuss des Schwalm-Eder-Kreises ['DE735', 'DEU', 'DE735', 'DEU']",
+      "audit_id": 24,
+      "notice_id": "793846-2026",
+      "title": "Reutlingen, Hochschule, Gebäude 22, Ersatzbau der Fakultät für Angewandte Chemie Systemtrennwand",
+      "description": "Reutlingen, Hochschule, Gebäude 22, Ersatzbau der Fakultät für Angewandte Chemie Systemtrennwand Vermögen und Bau Baden-Württemberg, Amt Tübingen ['DE142', 'DEU', 'DE142', 'DEU']",
+      "original_title": "Reutlingen, Hochschule, Gebäude 22, Ersatzbau der Fakultät für Angewandte Chemie Systemtrennwand",
+      "original_description": "Reutlingen, Hochschule, Gebäude 22, Ersatzbau der Fakultät für Angewandte Chemie Systemtrennwand Vermögen und Bau Baden-Württemberg, Amt Tübingen ['DE142', 'DEU', 'DE142', 'DEU']",
       "cpv": [
-        "45421132",
-        "45421132"
+        "45421152",
+        "45421152"
       ],
-      "project_type_predicted": "administration",
+      "project_type_predicted": "university_research",
       "trades_predicted": [
         "windows_doors"
       ],
@@ -201,23 +261,23 @@
         "confidence": 0.75,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Kreisausschuss des Schwalm-Eder-Kreises",
-      "published": "2026-09-25+02:00",
-      "city": "",
+      "authority": "Vermögen und Bau Baden-Württemberg, Amt Tübingen",
+      "published": "2026-11-16+01:00",
+      "city": "Reutlingen",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/662115-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/793846-2026",
       "phase": "tender",
       "smart_review": {
         "risk": "HIGH",
         "risk_score": 7,
         "reasons": [
           "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
-          "Text stützt alternative Projektarten: admin",
+          "Text stützt alternative Projektarten: school",
           "Gewerke ohne direkten Textbeleg: windows_doors"
         ],
         "project_text_support": 0,
         "project_alternatives": [
-          "admin"
+          "school"
         ],
         "trade_support": {
           "windows_doors": 0
@@ -226,85 +286,26 @@
           "windows_doors"
         ]
       },
-      "review_order": 4
-    },
-    {
-      "audit_id": 25,
-      "notice_id": "756402-2026",
-      "title": "FBLAD | Sanierung Freibad Ladenburg - Solarabsorberanlage",
-      "description": "FBLAD | Sanierung Freibad Ladenburg - Solarabsorberanlage Stadt Ladenburg ['DE128', 'DEU', 'DE128', 'DEU']",
-      "original_title": "FBLAD | Sanierung Freibad Ladenburg - Solarabsorberanlage",
-      "original_description": "FBLAD | Sanierung Freibad Ladenburg - Solarabsorberanlage Stadt Ladenburg ['DE128', 'DEU', 'DE128', 'DEU']",
-      "cpv": [
-        "45212212",
-        "45330000",
-        "45212212",
-        "45330000"
-      ],
-      "project_type_predicted": "sports_leisure",
-      "trades_predicted": [
-        "solar_energy",
-        "hvac"
-      ],
-      "confidence": 0.75,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.75,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Stadt Ladenburg",
-      "published": "2026-11-02+01:00",
-      "city": "Ladenburg",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/756402-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "HIGH",
-        "risk_score": 7,
-        "reasons": [
-          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
-          "Text stützt alternative Projektarten: energy",
-          "Gewerke ohne direkten Textbeleg: solar_energy, hvac"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [
-          "energy"
-        ],
-        "trade_support": {
-          "solar_energy": 0,
-          "hvac": 0
-        },
-        "unsupported_trades": [
-          "solar_energy",
-          "hvac"
-        ]
-      },
       "review_order": 5
     },
     {
-      "audit_id": 10,
-      "notice_id": "779229-2026",
-      "title": "A9_163,9-167,5_ERH_bRF_Los 4 - Verkehrszeichenbrücken u. -kragträger AS Droyßig",
-      "description": "A9_163,9-167,5_ERH_bRF_Los 4 - Verkehrszeichenbrücken u. -kragträger AS Droyßig Die Autobahn GmbH des Bundes - NL Ost ['DEE08', 'DEU', 'DEE08', 'DEU']",
-      "original_title": "A9_163,9-167,5_ERH_bRF_Los 4 - Verkehrszeichenbrücken u. -kragträger AS Droyßig",
-      "original_description": "A9_163,9-167,5_ERH_bRF_Los 4 - Verkehrszeichenbrücken u. -kragträger AS Droyßig Die Autobahn GmbH des Bundes - NL Ost ['DEE08', 'DEU', 'DEE08', 'DEU']",
+      "audit_id": 3,
+      "notice_id": "713743-2026",
+      "title": "Sanierung und Erweiterung der Turnhalle Südwest; Los 19 - Raffstoreanlage",
+      "description": "Sanierung und Erweiterung der Turnhalle Südwest; Los 19 - Raffstoreanlage Stadt Sangerhausen ['DEE0A', 'DEU', 'DEE0A', 'DEU']",
+      "original_title": "Sanierung und Erweiterung der Turnhalle Südwest; Los 19 - Raffstoreanlage",
+      "original_description": "Sanierung und Erweiterung der Turnhalle Südwest; Los 19 - Raffstoreanlage Stadt Sangerhausen ['DEE0A', 'DEU', 'DEE0A', 'DEU']",
       "cpv": [
         "45000000",
-        "45233290",
+        "45421145",
         "45000000",
-        "45233290"
+        "45421145"
       ],
-      "project_type_predicted": "bridge",
+      "project_type_predicted": "sports_leisure",
       "trades_predicted": [
-        "roadworks"
+        "windows_doors"
       ],
-      "confidence": 0.75,
+      "confidence": 0.85,
       "quality_status": "CONFIDENT",
       "evidence": {
         "project_type": true,
@@ -313,51 +314,48 @@
         "textual_evidence": 1,
         "source": true,
         "country": true,
-        "confidence": 0.75,
+        "confidence": 0.85,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Die Autobahn GmbH des Bundes - NL Ost",
-      "published": "2026-11-10+01:00",
-      "city": "Droyßig",
+      "authority": "Stadt Sangerhausen",
+      "published": "2026-10-15+02:00",
+      "city": "Sangerhausen",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/779229-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/713743-2026",
       "phase": "tender",
       "smart_review": {
         "risk": "HIGH",
         "risk_score": 6,
         "reasons": [
-          "Text stützt alternative Projektarten: rail, road",
-          "Gewerke ohne direkten Textbeleg: roadworks",
-          "Sehr breite/generische Leistungsbeschreibung – Überklassifizierung möglich"
+          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
+          "Gewerke ohne direkten Textbeleg: windows_doors",
+          "Hohe Confidence trotz widersprüchlicher/breiter Evidenz"
         ],
-        "project_text_support": 1,
-        "project_alternatives": [
-          "rail",
-          "road"
-        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
         "trade_support": {
-          "roadworks": 0
+          "windows_doors": 0
         },
         "unsupported_trades": [
-          "roadworks"
+          "windows_doors"
         ]
       },
       "review_order": 6
     },
     {
-      "audit_id": 12,
-      "notice_id": "795863-2026",
-      "title": "Abbruch Finanzamt (21940077 / Polizei Norderstedt / Neubau)",
-      "description": "Abbruch Finanzamt (21940077 / Polizei Norderstedt / Neubau) Land Schleswig-Holstein endvertreten durch Gebäudemanagement Schleswig-Holstein AöR ['DEF0D', 'DEU', 'DEF0D', 'DEU']",
-      "original_title": "Abbruch Finanzamt (21940077 / Polizei Norderstedt / Neubau)",
-      "original_description": "Abbruch Finanzamt (21940077 / Polizei Norderstedt / Neubau) Land Schleswig-Holstein endvertreten durch Gebäudemanagement Schleswig-Holstein AöR ['DEF0D', 'DEU', 'DEF0D', 'DEU']",
+      "audit_id": 11,
+      "notice_id": "794294-2026",
+      "title": "Reutlingen, Hochschule, Gebäude 22, Ersatzbau der Fakultät für Angewandte Chemie Elektro, Stark- und Schwachstromanlagen",
+      "description": "Reutlingen, Hochschule, Gebäude 22, Ersatzbau der Fakultät für Angewandte Chemie Elektro, Stark- und Schwachstromanlagen Vermögen und Bau Baden-Württemberg, Amt Tübingen ['DE142', 'DEU', 'DE142', 'DEU']",
+      "original_title": "Reutlingen, Hochschule, Gebäude 22, Ersatzbau der Fakultät für Angewandte Chemie Elektro, Stark- und Schwachstromanlagen",
+      "original_description": "Reutlingen, Hochschule, Gebäude 22, Ersatzbau der Fakultät für Angewandte Chemie Elektro, Stark- und Schwachstromanlagen Vermögen und Bau Baden-Württemberg, Amt Tübingen ['DE142', 'DEU', 'DE142', 'DEU']",
       "cpv": [
-        "45111000",
-        "45111000"
+        "45315100",
+        "45315100"
       ],
-      "project_type_predicted": "administration",
+      "project_type_predicted": "university_research",
       "trades_predicted": [
-        "demolition"
+        "electrical"
       ],
       "confidence": 0.85,
       "quality_status": "CONFIDENT",
@@ -371,100 +369,105 @@
         "confidence": 0.85,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Land Schleswig-Holstein endvertreten durch Gebäudemanagement Schleswig-Holstein AöR",
+      "authority": "Vermögen und Bau Baden-Württemberg, Amt Tübingen",
       "published": "2026-11-16+01:00",
-      "city": "Norderstedt",
+      "city": "Reutlingen",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/795863-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "HIGH",
-        "risk_score": 6,
-        "reasons": [
-          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
-          "Gewerke ohne direkten Textbeleg: demolition",
-          "Hohe Confidence trotz widersprüchlicher/breiter Evidenz"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [],
-        "trade_support": {
-          "demolition": 0
-        },
-        "unsupported_trades": [
-          "demolition"
-        ]
-      },
-      "review_order": 7
-    },
-    {
-      "audit_id": 22,
-      "notice_id": "753890-2026",
-      "title": "Sanierung Adolph-Holm Kindergarten - Abbrucharbeiten",
-      "description": "Sanierung Adolph-Holm Kindergarten - Abbrucharbeiten Gemeinde Adendorf ['DE935', 'DEU', 'DE935', 'DEU']",
-      "original_title": "Sanierung Adolph-Holm Kindergarten - Abbrucharbeiten",
-      "original_description": "Sanierung Adolph-Holm Kindergarten - Abbrucharbeiten Gemeinde Adendorf ['DE935', 'DEU', 'DE935', 'DEU']",
-      "cpv": [
-        "45111100",
-        "45111100"
-      ],
-      "project_type_predicted": "kindergarten",
-      "trades_predicted": [
-        "demolition"
-      ],
-      "confidence": 0.85,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.85,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Gemeinde Adendorf",
-      "published": "2026-10-30+01:00",
-      "city": "Adendorf",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/753890-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/794294-2026",
       "phase": "award",
       "smart_review": {
         "risk": "HIGH",
         "risk_score": 6,
         "reasons": [
           "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
-          "Gewerke ohne direkten Textbeleg: demolition",
+          "Text stützt alternative Projektarten: school",
+          "Hohe Confidence trotz widersprüchlicher/breiter Evidenz"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [
+          "school"
+        ],
+        "trade_support": {
+          "electrical": 2
+        },
+        "unsupported_trades": []
+      },
+      "review_order": 7
+    },
+    {
+      "audit_id": 17,
+      "notice_id": "702160-2026",
+      "title": "Sanierung und Erweiterung der Turnhalle Südwest; Los 4 - Dachdeckungs- / Zimmerarbeiten",
+      "description": "Sanierung und Erweiterung der Turnhalle Südwest; Los 4 - Dachdeckungs- / Zimmerarbeiten Stadt Sangerhausen ['DEE0A', 'DEU', 'DEE0A', 'DEU']",
+      "original_title": "Sanierung und Erweiterung der Turnhalle Südwest; Los 4 - Dachdeckungs- / Zimmerarbeiten",
+      "original_description": "Sanierung und Erweiterung der Turnhalle Südwest; Los 4 - Dachdeckungs- / Zimmerarbeiten Stadt Sangerhausen ['DEE0A', 'DEU', 'DEE0A', 'DEU']",
+      "cpv": [
+        "45000000",
+        "45261200",
+        "45422000",
+        "45000000",
+        "45261200",
+        "45422000"
+      ],
+      "project_type_predicted": "sports_leisure",
+      "trades_predicted": [
+        "roof",
+        "windows_doors"
+      ],
+      "confidence": 0.85,
+      "quality_status": "CONFIDENT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.85,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Stadt Sangerhausen",
+      "published": "2026-10-12+02:00",
+      "city": "Sangerhausen",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/702160-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "HIGH",
+        "risk_score": 6,
+        "reasons": [
+          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
+          "Gewerke ohne direkten Textbeleg: windows_doors",
           "Hohe Confidence trotz widersprüchlicher/breiter Evidenz"
         ],
         "project_text_support": 0,
         "project_alternatives": [],
         "trade_support": {
-          "demolition": 0
+          "roof": 1,
+          "windows_doors": 0
         },
         "unsupported_trades": [
-          "demolition"
+          "windows_doors"
         ]
       },
       "review_order": 8
     },
     {
-      "audit_id": 23,
-      "notice_id": "739445-2026",
-      "title": "Universität Stuttgart, Ersatzneubau Biotechnik Erd-/Abbruch-/Verbauarbeiten",
-      "description": "Universität Stuttgart, Ersatzneubau Biotechnik Erd-/Abbruch-/Verbauarbeiten Vermögen und Bau Baden-Württemberg, Universitätsbauamt Stuttgart und Hohenheim ['DE111', 'DEU', 'DE111', 'DEU']",
-      "original_title": "Universität Stuttgart, Ersatzneubau Biotechnik Erd-/Abbruch-/Verbauarbeiten",
-      "original_description": "Universität Stuttgart, Ersatzneubau Biotechnik Erd-/Abbruch-/Verbauarbeiten Vermögen und Bau Baden-Württemberg, Universitätsbauamt Stuttgart und Hohenheim ['DE111', 'DEU', 'DE111', 'DEU']",
+      "audit_id": 21,
+      "notice_id": "677939-2026",
+      "title": "Neubau Historisches Rathaus Gronau - Elektroinstallationsarbeiten",
+      "description": "Neubau Historisches Rathaus Gronau - Elektroinstallationsarbeiten Stadt Gronau (Westf.) ['DEA34', 'DEU', 'DEA34', 'DEU']",
+      "original_title": "Neubau Historisches Rathaus Gronau - Elektroinstallationsarbeiten",
+      "original_description": "Neubau Historisches Rathaus Gronau - Elektroinstallationsarbeiten Stadt Gronau (Westf.) ['DEA34', 'DEU', 'DEA34', 'DEU']",
       "cpv": [
-        "45210000",
-        "45111100",
-        "45210000",
-        "45111100"
+        "45311200",
+        "45317000",
+        "45311200",
+        "45317000"
       ],
-      "project_type_predicted": "university_research",
+      "project_type_predicted": "administration",
       "trades_predicted": [
-        "hvac",
-        "demolition"
+        "electrical"
       ],
       "confidence": 0.85,
       "quality_status": "CONFIDENT",
@@ -478,51 +481,45 @@
         "confidence": 0.85,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Vermögen und Bau Baden-Württemberg, Universitätsbauamt Stuttgart und Hohenheim",
-      "published": "2026-10-26+01:00",
-      "city": "Stuttgart",
+      "authority": "Stadt Gronau (Westf.)",
+      "published": "2026-10-02+02:00",
+      "city": "Gronau",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/739445-2026",
-      "phase": "tender",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/677939-2026",
+      "phase": "award",
       "smart_review": {
         "risk": "HIGH",
         "risk_score": 6,
         "reasons": [
           "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
-          "Gewerke ohne direkten Textbeleg: hvac, demolition",
+          "Text stützt alternative Projektarten: admin",
           "Hohe Confidence trotz widersprüchlicher/breiter Evidenz"
         ],
         "project_text_support": 0,
-        "project_alternatives": [],
+        "project_alternatives": [
+          "admin"
+        ],
         "trade_support": {
-          "hvac": 0,
-          "demolition": 0
+          "electrical": 1
         },
-        "unsupported_trades": [
-          "hvac",
-          "demolition"
-        ]
+        "unsupported_trades": []
       },
       "review_order": 9
     },
     {
-      "audit_id": 33,
-      "notice_id": "725843-2026",
-      "title": "Generalsanierung HLK Köln-W’tal-Hagen (Bauleistung)",
-      "description": "Generalsanierung HLK Köln-W’tal-Hagen (Bauleistung) DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DEA1A', 'DEU', 'DEU']",
-      "original_title": "Generalsanierung HLK Köln-W’tal-Hagen (Bauleistung)",
-      "original_description": "Generalsanierung HLK Köln-W’tal-Hagen (Bauleistung) DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DEA1A', 'DEU', 'DEU']",
+      "audit_id": 31,
+      "notice_id": "772399-2026",
+      "title": "Maler- und Lackierarbeiten",
+      "description": "Maler- und Lackierarbeiten Studentenwerk Niederbayern Oberpfalz ['DE232', 'DEU', 'DE232', 'DEU']",
+      "original_title": "Maler- und Lackierarbeiten",
+      "original_description": "Maler- und Lackierarbeiten Studentenwerk Niederbayern Oberpfalz ['DE232', 'DEU', 'DE232', 'DEU']",
       "cpv": [
-        "45234100",
-        "45230000",
-        "45234116",
-        "45234130",
-        "45236000",
-        "45234100"
+        "45210000",
+        "45210000"
       ],
-      "project_type_predicted": "rail",
+      "project_type_predicted": "industrial",
       "trades_predicted": [
-        "railworks"
+        "painting"
       ],
       "confidence": 0.55,
       "quality_status": "REVIEW",
@@ -536,205 +533,44 @@
         "confidence": 0.55,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
-      "published": "2026-10-20+02:00",
-      "city": "Nordrhein-Westfalen",
+      "authority": "Studentenwerk Niederbayern Oberpfalz",
+      "published": "2026-11-06+01:00",
+      "city": "Regensburg",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/725843-2026",
-      "phase": "award",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/772399-2026",
+      "phase": "tender",
       "smart_review": {
         "risk": "HIGH",
         "risk_score": 5,
         "reasons": [
           "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
-          "Gewerke ohne direkten Textbeleg: railworks"
+          "Gewerke ohne direkten Textbeleg: painting"
         ],
         "project_text_support": 0,
         "project_alternatives": [],
         "trade_support": {
-          "railworks": 0
+          "painting": 0
         },
         "unsupported_trades": [
-          "railworks"
+          "painting"
         ]
       },
       "review_order": 10
     },
     {
-      "audit_id": 36,
-      "notice_id": "656375-2026",
-      "title": "Neubau UA Eving - Schaltanlagenbau",
-      "description": "Neubau UA Eving - Schaltanlagenbau Dortmunder Netz GmbH ['DEA52', 'DEU', 'DEA52', 'DEA52', 'DEA52', 'DEA52', 'DEA52', 'DEU', 'DEU', 'DEU', 'DEU', 'DEU']",
-      "original_title": "Neubau UA Eving - Schaltanlagenbau",
-      "original_description": "Neubau UA Eving - Schaltanlagenbau Dortmunder Netz GmbH ['DEA52', 'DEU', 'DEA52', 'DEA52', 'DEA52', 'DEA52', 'DEA52', 'DEU', 'DEU', 'DEU', 'DEU', 'DEU']",
+      "audit_id": 41,
+      "notice_id": "745154-2026",
+      "title": "LV 017A-2 Schlosserarbeiten BA 2",
+      "description": "LV 017A-2 Schlosserarbeiten BA 2 Stadt Neusäß ['DE276', 'DEU', 'DE276', 'DEU']",
+      "original_title": "LV 017A-2 Schlosserarbeiten BA 2",
+      "original_description": "LV 017A-2 Schlosserarbeiten BA 2 Stadt Neusäß ['DE276', 'DEU', 'DE276', 'DEU']",
       "cpv": [
-        "45232221",
-        "31214000",
-        "45315700",
-        "45232221",
-        "45317300",
-        "45317300",
-        "45317300",
-        "45317300",
-        "45315700"
-      ],
-      "project_type_predicted": "water_wastewater",
-      "trades_predicted": [
-        "electrical"
-      ],
-      "confidence": 0.55,
-      "quality_status": "REVIEW",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.55,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Dortmunder Netz GmbH",
-      "published": "2026-09-23+02:00",
-      "city": "Dortmund",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/656375-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "HIGH",
-        "risk_score": 5,
-        "reasons": [
-          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
-          "Gewerke ohne direkten Textbeleg: electrical"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [],
-        "trade_support": {
-          "electrical": 0
-        },
-        "unsupported_trades": [
-          "electrical"
-        ]
-      },
-      "review_order": 11
-    },
-    {
-      "audit_id": 37,
-      "notice_id": "792963-2026",
-      "title": "Planung, Errichtung und Inbetriebnahme einer Hackschnitzelfeuerungsanlage/Heizanlage",
-      "description": "Planung, Errichtung und Inbetriebnahme einer Hackschnitzelfeuerungsanlage/Heizanlage Stadtwerke Torgelow GmbH ['DE80N', 'DEU', 'DE80N', 'DEU']",
-      "original_title": "Planung, Errichtung und Inbetriebnahme einer Hackschnitzelfeuerungsanlage/Heizanlage",
-      "original_description": "Planung, Errichtung und Inbetriebnahme einer Hackschnitzelfeuerungsanlage/Heizanlage Stadtwerke Torgelow GmbH ['DE80N', 'DEU', 'DE80N', 'DEU']",
-      "cpv": [
-        "45251250",
-        "45210000",
-        "09324000",
-        "45331110",
-        "71321200",
-        "45251250",
-        "45210000",
-        "09324000",
-        "45331110",
-        "71321200"
-      ],
-      "project_type_predicted": "energy",
-      "trades_predicted": [
-        "hvac"
-      ],
-      "confidence": 0.55,
-      "quality_status": "REVIEW",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.55,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Stadtwerke Torgelow GmbH",
-      "published": "2026-11-16+01:00",
-      "city": "Torgelow",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/792963-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "HIGH",
-        "risk_score": 5,
-        "reasons": [
-          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
-          "Gewerke ohne direkten Textbeleg: hvac"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [],
-        "trade_support": {
-          "hvac": 0
-        },
-        "unsupported_trades": [
-          "hvac"
-        ]
-      },
-      "review_order": 12
-    },
-    {
-      "audit_id": 45,
-      "notice_id": "771234-2026",
-      "title": "Julius-Ludowieg-Straße 89 - GU-Leistung Innenausbau",
-      "description": "Julius-Ludowieg-Straße 89 - GU-Leistung Innenausbau GMH | Gebäudemanagement Hamburg GmbH ['DE600', 'DEU', 'DE600', 'DE600', 'DEU', 'DEU']",
-      "original_title": "Julius-Ludowieg-Straße 89 - GU-Leistung Innenausbau",
-      "original_description": "Julius-Ludowieg-Straße 89 - GU-Leistung Innenausbau GMH | Gebäudemanagement Hamburg GmbH ['DE600', 'DEU', 'DE600', 'DE600', 'DEU', 'DEU']",
-      "cpv": [
-        "45214200",
-        "45214200",
-        "45214200"
-      ],
-      "project_type_predicted": "university_research",
-      "trades_predicted": [],
-      "confidence": 0.35,
-      "quality_status": "REVIEW",
-      "evidence": {
-        "project_type": true,
-        "trade": false,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.35,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "GMH | Gebäudemanagement Hamburg GmbH",
-      "published": "2026-11-05+01:00",
-      "city": "Hamburg",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/771234-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "HIGH",
-        "risk_score": 5,
-        "reasons": [
-          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
-          "Text stützt alternative Projektarten: road"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [
-          "road"
-        ],
-        "trade_support": {},
-        "unsupported_trades": []
-      },
-      "review_order": 13
-    },
-    {
-      "audit_id": 47,
-      "notice_id": "737566-2026",
-      "title": "Ersatzneubau Mehrzweckhalle Ruhland, Los 3 Rohbau Massiv",
-      "description": "Ersatzneubau Mehrzweckhalle Ruhland, Los 3 Rohbau Massiv Amt Ruhland ['DE40B', 'DEU', 'DE40B', 'DEU']",
-      "original_title": "Ersatzneubau Mehrzweckhalle Ruhland, Los 3 Rohbau Massiv",
-      "original_description": "Ersatzneubau Mehrzweckhalle Ruhland, Los 3 Rohbau Massiv Amt Ruhland ['DE40B', 'DEU', 'DE40B', 'DEU']",
-      "cpv": [
-        "45223220",
-        "45223220"
+        "45262670",
+        "45223210",
+        "45223110",
+        "45262670",
+        "45223210",
+        "45223110"
       ],
       "project_type_predicted": "civil_engineering",
       "trades_predicted": [
@@ -752,11 +588,11 @@
         "confidence": 0.55,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Amt Ruhland",
-      "published": "2026-10-26+01:00",
-      "city": "",
+      "authority": "Stadt Neusäß",
+      "published": "2026-10-27+01:00",
+      "city": "Neusäß",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/737566-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/745154-2026",
       "phase": "award",
       "smart_review": {
         "risk": "HIGH",
@@ -774,22 +610,32 @@
           "structural"
         ]
       },
-      "review_order": 14
+      "review_order": 11
     },
     {
       "audit_id": 48,
-      "notice_id": "647728-2026",
-      "title": "Förderanlagen 70-00241-3140-453 - PR1245206 -3140-B",
-      "description": "Förderanlagen 70-00241-3140-453 - PR1245206 -3140-B Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. - Einkauf B12 - Vergabestelle Bau ['DEA2D', 'DEU', 'DEA2D', 'DEU']",
-      "original_title": "Förderanlagen 70-00241-3140-453 - PR1245206 -3140-B",
-      "original_description": "Förderanlagen 70-00241-3140-453 - PR1245206 -3140-B Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. - Einkauf B12 - Vergabestelle Bau ['DEA2D', 'DEU', 'DEA2D', 'DEU']",
+      "notice_id": "668264-2026",
+      "title": "Geb. 3403 Energetische Sanierung Dach und Fassade - VE407 Erneuerung zentrale Kälteerzeugung",
+      "description": "Geb. 3403 Energetische Sanierung Dach und Fassade - VE407 Erneuerung zentrale Kälteerzeugung Gottfried Wilhelm Leibniz Universität Hannover Stiftung Öffentlichen Rechts/ Dezernat 3, Gebäudemanagement Sachgebiet 36 Vergabe- und Vertragswesen ['DE929', 'DEU', 'DE929', 'DEU']",
+      "original_title": "Geb. 3403 Energetische Sanierung Dach und Fassade - VE407 Erneuerung zentrale Kälteerzeugung",
+      "original_description": "Geb. 3403 Energetische Sanierung Dach und Fassade - VE407 Erneuerung zentrale Kälteerzeugung Gottfried Wilhelm Leibniz Universität Hannover Stiftung Öffentlichen Rechts/ Dezernat 3, Gebäudemanagement Sachgebiet 36 Vergabe- und Vertragswesen ['DE929', 'DEU', 'DE929', 'DEU']",
       "cpv": [
-        "45214620",
-        "45214620"
+        "45331231",
+        "42123300",
+        "42510000",
+        "42512500",
+        "45231113",
+        "45331231",
+        "42123300",
+        "42510000",
+        "42512500",
+        "45231113"
       ],
-      "project_type_predicted": "university_research",
+      "project_type_predicted": "water_wastewater",
       "trades_predicted": [
-        "elevator"
+        "hvac",
+        "roof",
+        "facade"
       ],
       "confidence": 0.55,
       "quality_status": "REVIEW",
@@ -803,47 +649,49 @@
         "confidence": 0.55,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. - Einkauf B12 - Vergabestelle Bau",
-      "published": "2026-09-21+02:00",
-      "city": "Aachen",
+      "authority": "Gottfried Wilhelm Leibniz Universität Hannover Stiftung Öffentlichen Rechts/ Dezernat 3, Gebäudemanagement Sachgebiet 36 Vergabe- und Vertragswesen",
+      "published": "2026-09-29+02:00",
+      "city": "Hannover",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/647728-2026",
-      "phase": "award",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/668264-2026",
+      "phase": "tender",
       "smart_review": {
         "risk": "HIGH",
         "risk_score": 5,
         "reasons": [
           "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
-          "Gewerke ohne direkten Textbeleg: elevator"
+          "Gewerke ohne direkten Textbeleg: hvac"
         ],
         "project_text_support": 0,
         "project_alternatives": [],
         "trade_support": {
-          "elevator": 0
+          "hvac": 0,
+          "roof": 1,
+          "facade": 1
         },
         "unsupported_trades": [
-          "elevator"
+          "hvac"
         ]
       },
-      "review_order": 15
+      "review_order": 12
     },
     {
-      "audit_id": 2,
-      "notice_id": "652400-2026",
-      "title": "Hallenbad Heißen Ersatzneubau - Raumlufttechnische Anlagen (NT 1-6)",
-      "description": "Hallenbad Heißen Ersatzneubau - Raumlufttechnische Anlagen (NT 1-6) Mülheim an der Ruhr - ImmobilienService ['DEA16', 'DEU', 'DEA16', 'DEU']",
-      "original_title": "Hallenbad Heißen Ersatzneubau - Raumlufttechnische Anlagen (NT 1-6)",
-      "original_description": "Hallenbad Heißen Ersatzneubau - Raumlufttechnische Anlagen (NT 1-6) Mülheim an der Ruhr - ImmobilienService ['DEA16', 'DEU', 'DEA16', 'DEU']",
+      "audit_id": 1,
+      "notice_id": "654854-2026",
+      "title": "Universität Stuttgart, Ersatzneubau Biotechnik Baustelleneinrichtung",
+      "description": "Universität Stuttgart, Ersatzneubau Biotechnik Baustelleneinrichtung Vermögen und Bau Baden-Württemberg, Universitätsbauamt Stuttgart und Hohenheim ['DE111', 'DEU', 'DE111', 'DEU']",
+      "original_title": "Universität Stuttgart, Ersatzneubau Biotechnik Baustelleneinrichtung",
+      "original_description": "Universität Stuttgart, Ersatzneubau Biotechnik Baustelleneinrichtung Vermögen und Bau Baden-Württemberg, Universitätsbauamt Stuttgart und Hohenheim ['DE111', 'DEU', 'DE111', 'DEU']",
       "cpv": [
-        "45331210",
-        "42912320",
-        "42512300",
-        "45331210",
-        "42912320"
+        "45210000",
+        "45113000",
+        "45210000",
+        "45113000"
       ],
-      "project_type_predicted": "sports_leisure",
+      "project_type_predicted": "university_research",
       "trades_predicted": [
-        "hvac"
+        "hvac",
+        "demolition"
       ],
       "confidence": 0.75,
       "quality_status": "CONFIDENT",
@@ -857,74 +705,231 @@
         "confidence": 0.75,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Mülheim an der Ruhr - ImmobilienService",
-      "published": "2026-09-22+02:00",
-      "city": "Mülheim an der Ruhr",
+      "authority": "Vermögen und Bau Baden-Württemberg, Universitätsbauamt Stuttgart und Hohenheim",
+      "published": "2026-09-23+02:00",
+      "city": "Stuttgart",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/652400-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/654854-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "HIGH",
+        "risk_score": 5,
+        "reasons": [
+          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
+          "Gewerke ohne direkten Textbeleg: hvac, demolition"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
+        "trade_support": {
+          "hvac": 0,
+          "demolition": 0
+        },
+        "unsupported_trades": [
+          "hvac",
+          "demolition"
+        ]
+      },
+      "review_order": 13
+    },
+    {
+      "audit_id": 4,
+      "notice_id": "666905-2026",
+      "title": "Hausbrucher Bahnhofstraße 19 - Abbruch",
+      "description": "Hausbrucher Bahnhofstraße 19 - Abbruch GMH | Gebäudemanagement Hamburg GmbH ['DE600', 'DEU', 'DE600', 'DEU']",
+      "original_title": "Hausbrucher Bahnhofstraße 19 - Abbruch",
+      "original_description": "Hausbrucher Bahnhofstraße 19 - Abbruch GMH | Gebäudemanagement Hamburg GmbH ['DE600', 'DEU', 'DE600', 'DEU']",
+      "cpv": [
+        "45111000",
+        "45111000"
+      ],
+      "project_type_predicted": "rail",
+      "trades_predicted": [
+        "demolition"
+      ],
+      "confidence": 0.85,
+      "quality_status": "CONFIDENT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.85,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "GMH | Gebäudemanagement Hamburg GmbH",
+      "published": "2026-09-28+02:00",
+      "city": "Hamburg",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/666905-2026",
+      "phase": "award",
+      "smart_review": {
+        "risk": "HIGH",
+        "risk_score": 5,
+        "reasons": [
+          "Text stützt alternative Projektarten: road",
+          "Gewerke ohne direkten Textbeleg: demolition",
+          "Hohe Confidence trotz widersprüchlicher/breiter Evidenz"
+        ],
+        "project_text_support": 1,
+        "project_alternatives": [
+          "road"
+        ],
+        "trade_support": {
+          "demolition": 0
+        },
+        "unsupported_trades": [
+          "demolition"
+        ]
+      },
+      "review_order": 14
+    },
+    {
+      "audit_id": 5,
+      "notice_id": "717275-2026",
+      "title": "Sanierung Freibad - Landschaftsgärtnerische Arbeiten Vorplatz",
+      "description": "Sanierung Freibad - Landschaftsgärtnerische Arbeiten Vorplatz Landkreis Vechta ['DE94F', 'DEU', 'DE94F', 'DEU']",
+      "original_title": "Stadt Dinklage: Sanierung Freibad - Landschaftsgärtnerische Arbeiten Vorplatz",
+      "original_description": "Stadt Dinklage: Sanierung Freibad - Landschaftsgärtnerische Arbeiten Vorplatz Landkreis Vechta ['DE94F', 'DEU', 'DE94F', 'DEU']",
+      "cpv": [
+        "45112700",
+        "45112700"
+      ],
+      "project_type_predicted": "sports_leisure",
+      "trades_predicted": [
+        "earthworks"
+      ],
+      "confidence": 0.75,
+      "quality_status": "CONFIDENT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.75,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Landkreis Vechta",
+      "published": "2026-10-16+02:00",
+      "city": "Dinklage",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/717275-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "HIGH",
+        "risk_score": 5,
+        "reasons": [
+          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
+          "Gewerke ohne direkten Textbeleg: earthworks"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
+        "trade_support": {
+          "earthworks": 0
+        },
+        "unsupported_trades": [
+          "earthworks"
+        ]
+      },
+      "review_order": 15
+    },
+    {
+      "audit_id": 13,
+      "notice_id": "775970-2026",
+      "title": "Neubau Wohnheim für 24 Menschen mit Behinderung - Haus 3",
+      "description": "Neubau Wohnheim für 24 Menschen mit Behinderung - Haus 3 Rummelsberger Diakonie e.V. ['DE25B', 'DEU', 'DE25B', 'DEU']",
+      "original_title": "Neubau Wohnheim für 24 Menschen mit Behinderung - Haus 3",
+      "original_description": "Neubau Wohnheim für 24 Menschen mit Behinderung - Haus 3 Rummelsberger Diakonie e.V. ['DE25B', 'DEU', 'DE25B', 'DEU']",
+      "cpv": [
+        "45262520",
+        "45262310",
+        "45262500"
+      ],
+      "project_type_predicted": "residential",
+      "trades_predicted": [
+        "structural"
+      ],
+      "confidence": 0.75,
+      "quality_status": "CONFIDENT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.75,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Rummelsberger Diakonie e.V.",
+      "published": "2026-11-09+01:00",
+      "city": "Hilpoltstein",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/775970-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "HIGH",
+        "risk_score": 5,
+        "reasons": [
+          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
+          "Gewerke ohne direkten Textbeleg: structural"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
+        "trade_support": {
+          "structural": 0
+        },
+        "unsupported_trades": [
+          "structural"
+        ]
+      },
+      "review_order": 16
+    },
+    {
+      "audit_id": 18,
+      "notice_id": "659409-2026",
+      "title": "Sanierung Schulzentrum BA 4_MSR Technik BA4",
+      "description": "Sanierung Schulzentrum BA 4_MSR Technik BA4 Stadt Eggenfelden ['DE22A', 'DEU', 'DE22A', 'DEU']",
+      "original_title": "Sanierung Schulzentrum BA 4_MSR Technik BA4",
+      "original_description": "Sanierung Schulzentrum BA 4_MSR Technik BA4 Stadt Eggenfelden ['DE22A', 'DEU', 'DE22A', 'DEU']",
+      "cpv": [
+        "45317000",
+        "45317000"
+      ],
+      "project_type_predicted": "school",
+      "trades_predicted": [
+        "electrical"
+      ],
+      "confidence": 0.75,
+      "quality_status": "CONFIDENT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.75,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Stadt Eggenfelden",
+      "published": "2026-09-24+02:00",
+      "city": "",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/659409-2026",
       "phase": "award",
       "smart_review": {
         "risk": "HIGH",
         "risk_score": 5,
         "reasons": [
           "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
-          "Gewerke ohne direkten Textbeleg: hvac"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [],
-        "trade_support": {
-          "hvac": 0
-        },
-        "unsupported_trades": [
-          "hvac"
-        ]
-      },
-      "review_order": 16
-    },
-    {
-      "audit_id": 34,
-      "notice_id": "672777-2026",
-      "title": "U-Bahn Nürnberg, Erneuerung von sieben Fahrtreppen",
-      "description": "U-Bahn Nürnberg, Erneuerung von sieben Fahrtreppen Stadt Nürnberg, U-Bahnbauamt ['DE254', 'DEU', 'DE254', 'DEU']",
-      "original_title": "U-Bahn Nürnberg, Erneuerung von sieben Fahrtreppen",
-      "original_description": "U-Bahn Nürnberg, Erneuerung von sieben Fahrtreppen Stadt Nürnberg, U-Bahnbauamt ['DE254', 'DEU', 'DE254', 'DEU']",
-      "cpv": [
-        "45313200",
-        "45313200"
-      ],
-      "project_type_predicted": "",
-      "trades_predicted": [
-        "electrical"
-      ],
-      "confidence": 0.35,
-      "quality_status": "REVIEW",
-      "evidence": {
-        "project_type": false,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.35,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Stadt Nürnberg, U-Bahnbauamt",
-      "published": "2026-09-30+02:00",
-      "city": "Nürnberg/Fürth",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/672777-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 4,
-        "reasons": [
-          "Text stützt alternative Projektarten: rail",
           "Gewerke ohne direkten Textbeleg: electrical"
         ],
         "project_text_support": 0,
-        "project_alternatives": [
-          "rail"
-        ],
+        "project_alternatives": [],
         "trade_support": {
           "electrical": 0
         },
@@ -935,523 +940,77 @@
       "review_order": 17
     },
     {
-      "audit_id": 49,
-      "notice_id": "708504-2026",
-      "title": "Nürnberg, Regensburger Straße 104 - 106, 340-Trockenbau",
-      "description": "Nürnberg, Regensburger Straße 104 - 106, 340-Trockenbau Bundesagentur für Arbeit, BA-SH GB 9 ['DEU', 'DEU']",
-      "original_title": "Nürnberg, Regensburger Straße 104 - 106, 340-Trockenbau",
-      "original_description": "Nürnberg, Regensburger Straße 104 - 106, 340-Trockenbau Bundesagentur für Arbeit, BA-SH GB 9 ['DEU', 'DEU']",
+      "audit_id": 20,
+      "notice_id": "698314-2026",
+      "title": "BIM-ABS Kehl - Appenweier; POS Süd; Verkehrsanlagen",
+      "description": "BIM-ABS Kehl - Appenweier; POS Süd; Verkehrsanlagen DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DE134', 'DEU', 'DE134', 'DEU']",
+      "original_title": "BIM-ABS Kehl - Appenweier; POS Süd; Verkehrsanlagen",
+      "original_description": "BIM-ABS Kehl - Appenweier; POS Süd; Verkehrsanlagen DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DE134', 'DEU', 'DE134', 'DEU']",
       "cpv": [
-        "45324000",
-        "45324000"
+        "45221000",
+        "45221112",
+        "45234116",
+        "45234130",
+        "45221000",
+        "45221112",
+        "45234116",
+        "45234130"
       ],
-      "project_type_predicted": "",
+      "project_type_predicted": "road",
       "trades_predicted": [
-        "drywall",
-        "insulation"
+        "railworks"
       ],
-      "confidence": 0.35,
-      "quality_status": "REVIEW",
+      "confidence": 0.75,
+      "quality_status": "CONFIDENT",
       "evidence": {
-        "project_type": false,
+        "project_type": true,
         "trade": true,
         "cpv": true,
         "textual_evidence": 1,
         "source": true,
         "country": true,
-        "confidence": 0.35,
+        "confidence": 0.75,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Bundesagentur für Arbeit, BA-SH GB 9",
-      "published": "2026-10-14+02:00",
-      "city": "",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "published": "2026-10-09+02:00",
+      "city": "Kehl",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/708504-2026",
-      "phase": "tender",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/698314-2026",
+      "phase": "award",
       "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 4,
+        "risk": "HIGH",
+        "risk_score": 5,
         "reasons": [
-          "Text stützt alternative Projektarten: road",
-          "Gewerke ohne direkten Textbeleg: drywall, insulation"
+          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg",
+          "Gewerke ohne direkten Textbeleg: railworks"
         ],
         "project_text_support": 0,
-        "project_alternatives": [
-          "road"
-        ],
+        "project_alternatives": [],
         "trade_support": {
-          "drywall": 0,
-          "insulation": 0
+          "railworks": 0
         },
         "unsupported_trades": [
-          "drywall",
-          "insulation"
+          "railworks"
         ]
       },
       "review_order": 18
     },
     {
-      "audit_id": 26,
-      "notice_id": "691528-2026",
-      "title": "Versorgungsgebiet Stadtwerke Bad Homburg v. d. Höhe, Rahmenvereinbarung - Jahresunterhaltung Gas-, Wasser- u. Wärmeversorgung inkl. Bereitschaftsdienst (2 Lose)",
-      "description": "Versorgungsgebiet Stadtwerke Bad Homburg v. d. Höhe, Rahmenvereinbarung - Jahresunterhaltung Gas-, Wasser- u. Wärmeversorgung inkl. Bereitschaftsdienst (2 Lose) Stadt Bad Homburg v. d. Höhe - Der Magistrat, Fachbereich Recht - Vergabestelle - ['DE718', 'DEU', 'DE718', 'DE718', 'DEU', 'DEU']",
-      "original_title": "Versorgungsgebiet Stadtwerke Bad Homburg v. d. Höhe, Rahmenvereinbarung - Jahresunterhaltung Gas-, Wasser- u. Wärmeversorgung inkl. Bereitschaftsdienst (2 Lose)",
-      "original_description": "Versorgungsgebiet Stadtwerke Bad Homburg v. d. Höhe, Rahmenvereinbarung - Jahresunterhaltung Gas-, Wasser- u. Wärmeversorgung inkl. Bereitschaftsdienst (2 Lose) Stadt Bad Homburg v. d. Höhe - Der Magistrat, Fachbereich Recht - Vergabestelle - ['DE718', 'DEU', 'DE718', 'DE718', 'DEU', 'DEU']",
-      "cpv": [
-        "45231100",
-        "45231221",
-        "45232150",
-        "45231600",
-        "45231100",
-        "45231100",
-        "45231221",
-        "45232150",
-        "45231600"
-      ],
-      "project_type_predicted": "water_wastewater",
-      "trades_predicted": [],
-      "confidence": 0.35,
-      "quality_status": "REVIEW",
-      "evidence": {
-        "project_type": true,
-        "trade": false,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.35,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Stadt Bad Homburg v. d. Höhe - Der Magistrat, Fachbereich Recht - Vergabestelle -",
-      "published": "2026-10-07+02:00",
-      "city": "Bad Homburg v. d. Höhe",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/691528-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 3,
-        "reasons": [
-          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [],
-        "trade_support": {},
-        "unsupported_trades": []
-      },
-      "review_order": 19
-    },
-    {
-      "audit_id": 39,
-      "notice_id": "647686-2026",
-      "title": "Grundleitungssanierung (KG 410)",
-      "description": "Grundleitungssanierung (KG 410) Sprinkenhof GmbH ['DE600', 'DEU', 'DE600', 'DEU']",
-      "original_title": "Grundleitungssanierung (KG 410)",
-      "original_description": "Grundleitungssanierung (KG 410) Sprinkenhof GmbH ['DE600', 'DEU', 'DE600', 'DEU']",
-      "cpv": [
-        "45232410",
-        "45232410"
-      ],
-      "project_type_predicted": "water_wastewater",
-      "trades_predicted": [],
-      "confidence": 0.35,
-      "quality_status": "REVIEW",
-      "evidence": {
-        "project_type": true,
-        "trade": false,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.35,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Sprinkenhof GmbH",
-      "published": "2026-09-21+02:00",
-      "city": "Hamburg",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/647686-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 3,
-        "reasons": [
-          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [],
-        "trade_support": {},
-        "unsupported_trades": []
-      },
-      "review_order": 20
-    },
-    {
-      "audit_id": 15,
-      "notice_id": "774720-2026",
-      "title": "Neubau Kita am Reiterplatz_Hockenheim - Sanitärinstallationen",
-      "description": "Neubau Kita am Reiterplatz_Hockenheim - Sanitärinstallationen Postillion e.V. ['DE128', 'DEU', 'DE128', 'DEU']",
-      "original_title": "Neubau Kita am Reiterplatz_Hockenheim - Sanitärinstallationen",
-      "original_description": "Neubau Kita am Reiterplatz_Hockenheim - Sanitärinstallationen Postillion e.V. ['DE128', 'DEU', 'DE128', 'DEU']",
-      "cpv": [
-        "45214100",
-        "45332400",
-        "45214100",
-        "45332400"
-      ],
-      "project_type_predicted": "kindergarten",
-      "trades_predicted": [
-        "plumbing"
-      ],
-      "confidence": 0.85,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.85,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Postillion e.V.",
-      "published": "2026-11-06+01:00",
-      "city": "",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/774720-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 3,
-        "reasons": [
-          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [],
-        "trade_support": {
-          "plumbing": 1
-        },
-        "unsupported_trades": []
-      },
-      "review_order": 21
-    },
-    {
-      "audit_id": 16,
-      "notice_id": "795413-2026",
-      "title": "Neubau Sporthalle - Elektroarbeiten",
-      "description": "Neubau Sporthalle - Elektroarbeiten Stadt Bad Waldsee ['DE148', 'DEU', 'DE148', 'DEU']",
-      "original_title": "Neubau Sporthalle - Elektroarbeiten",
-      "original_description": "Neubau Sporthalle - Elektroarbeiten Stadt Bad Waldsee ['DE148', 'DEU', 'DE148', 'DEU']",
-      "cpv": [
-        "45212225",
-        "45310000",
-        "45315600",
-        "45316000",
-        "45315100",
-        "45314000",
-        "45314300",
-        "45314310",
-        "45212225",
-        "45310000",
-        "45315600",
-        "45316000",
-        "45315100",
-        "45314000",
-        "45314300",
-        "45314310"
-      ],
-      "project_type_predicted": "sports_leisure",
-      "trades_predicted": [
-        "electrical"
-      ],
-      "confidence": 0.85,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.85,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Stadt Bad Waldsee",
-      "published": "2026-11-16+01:00",
-      "city": "Bad Waldsee",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/795413-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 3,
-        "reasons": [
-          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [],
-        "trade_support": {
-          "electrical": 1
-        },
-        "unsupported_trades": []
-      },
-      "review_order": 22
-    },
-    {
-      "audit_id": 18,
-      "notice_id": "765003-2026",
-      "title": "SV-MBR-261103-003 - PRS: Neukonzeption Sauna Prinzregentenstadion, Sanitäranlagen",
-      "description": "SV-MBR-261103-003 - PRS: Neukonzeption Sauna Prinzregentenstadion, Sanitäranlagen Stadtwerke München GmbH ['DE212', 'DEU', 'DE212', 'DEU']",
-      "original_title": "SV-MBR-261103-003 - PRS: Neukonzeption Sauna Prinzregentenstadion, Sanitäranlagen",
-      "original_description": "SV-MBR-261103-003 - PRS: Neukonzeption Sauna Prinzregentenstadion, Sanitäranlagen Stadtwerke München GmbH ['DE212', 'DEU', 'DE212', 'DEU']",
-      "cpv": [
-        "45332400",
-        "45332400"
-      ],
-      "project_type_predicted": "sports_leisure",
-      "trades_predicted": [
-        "plumbing"
-      ],
-      "confidence": 0.85,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.85,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Stadtwerke München GmbH",
-      "published": "2026-11-04+01:00",
-      "city": "",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/765003-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 3,
-        "reasons": [
-          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [],
-        "trade_support": {
-          "plumbing": 1
-        },
-        "unsupported_trades": []
-      },
-      "review_order": 23
-    },
-    {
-      "audit_id": 21,
-      "notice_id": "777352-2026",
-      "title": "Neubau Kita Dohuser Weg - Sanitär",
-      "description": "Neubau Kita Dohuser Weg - Sanitär Stadt Wittmund ['DE94H', 'DEU', 'DE94H', 'DEU']",
-      "original_title": "Neubau Kita Dohuser Weg - Sanitär",
-      "original_description": "Neubau Kita Dohuser Weg - Sanitär Stadt Wittmund ['DE94H', 'DEU', 'DE94H', 'DEU']",
-      "cpv": [
-        "45232460",
-        "45332400",
-        "45232460",
-        "45332400"
-      ],
-      "project_type_predicted": "kindergarten",
-      "trades_predicted": [
-        "plumbing"
-      ],
-      "confidence": 0.85,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.85,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Stadt Wittmund",
-      "published": "2026-11-09+01:00",
-      "city": "Wittmund",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/777352-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 3,
-        "reasons": [
-          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [],
-        "trade_support": {
-          "plumbing": 1
-        },
-        "unsupported_trades": []
-      },
-      "review_order": 24
-    },
-    {
-      "audit_id": 51,
-      "notice_id": "785147-2026",
-      "title": "Herstellung einer Baustraße",
-      "description": "Herstellung einer Baustraße Wirtschaftsförderung Bremen GmbH ['DE501', 'DEU', 'DE501', 'DEU']",
-      "original_title": "Herstellung einer Baustraße",
-      "original_description": "Herstellung einer Baustraße Wirtschaftsförderung Bremen GmbH ['DE501', 'DEU', 'DE501', 'DEU']",
+      "audit_id": 32,
+      "notice_id": "690462-2026",
+      "title": "Streckenbepflanzung und Ausgleichsmaßnahmen",
+      "description": "Streckenbepflanzung und Ausgleichsmaßnahmen Landesbetrieb Straßenbau NRW - Regionalniederlassung Münsterland ['DEA35', 'DEU', 'DEA35', 'DEU']",
+      "original_title": "Streckenbepflanzung und Ausgleichsmaßnahmen",
+      "original_description": "Streckenbepflanzung und Ausgleichsmaßnahmen Landesbetrieb Straßenbau NRW - Regionalniederlassung Münsterland ['DEA35', 'DEU', 'DEA35', 'DEU']",
       "cpv": [
         "45000000",
-        "45000000"
-      ],
-      "project_type_predicted": "",
-      "trades_predicted": [],
-      "confidence": 0,
-      "quality_status": "UNKNOWN",
-      "evidence": {
-        "project_type": false,
-        "trade": false,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Wirtschaftsförderung Bremen GmbH",
-      "published": "2026-11-11+01:00",
-      "city": "Bremen",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/785147-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 2,
-        "reasons": [
-          "Text stützt alternative Projektarten: road"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [
-          "road"
-        ],
-        "trade_support": {},
-        "unsupported_trades": []
-      },
-      "review_order": 25
-    },
-    {
-      "audit_id": 53,
-      "notice_id": "751174-2026",
-      "title": "WI - Baggerungen 2027-2029 HE",
-      "description": "WI - Baggerungen 2027-2029 HE Wasserstraßen- und Schifffahrtsamt Elbe-Nordsee ['DE932', 'DEU', 'DE932', 'DEU']",
-      "original_title": "WI - Baggerungen 2027-2029 HE",
-      "original_description": "WI - Baggerungen 2027-2029 HE Wasserstraßen- und Schifffahrtsamt Elbe-Nordsee ['DE932', 'DEU', 'DE932', 'DEU']",
-      "cpv": [
-        "45244100",
-        "45244100"
-      ],
-      "project_type_predicted": "",
-      "trades_predicted": [],
-      "confidence": 0,
-      "quality_status": "UNKNOWN",
-      "evidence": {
-        "project_type": false,
-        "trade": false,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Wasserstraßen- und Schifffahrtsamt Elbe-Nordsee",
-      "published": "2026-10-29+01:00",
-      "city": "",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/751174-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 2,
-        "reasons": [
-          "Text stützt alternative Projektarten: road"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [
-          "road"
-        ],
-        "trade_support": {},
-        "unsupported_trades": []
-      },
-      "review_order": 26
-    },
-    {
-      "audit_id": 54,
-      "notice_id": "685992-2026",
-      "title": "A063, AS Göllheim - AD Kaiserslautern, DeBi, FR KL, 2. BA",
-      "description": "A063, AS Göllheim - AD Kaiserslautern, DeBi, FR KL, 2. BA Die Autobahn GmbH des Bundes - NL West ['DEB32', 'DEU', 'DEB32', 'DEU']",
-      "original_title": "A063, AS Göllheim - AD Kaiserslautern, DeBi, FR KL, 2. BA",
-      "original_description": "A063, AS Göllheim - AD Kaiserslautern, DeBi, FR KL, 2. BA Die Autobahn GmbH des Bundes - NL West ['DEB32', 'DEU', 'DEB32', 'DEU']",
-      "cpv": [
+        "45112730",
         "45000000",
-        "45000000"
-      ],
-      "project_type_predicted": "",
-      "trades_predicted": [],
-      "confidence": 0,
-      "quality_status": "UNKNOWN",
-      "evidence": {
-        "project_type": false,
-        "trade": false,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Die Autobahn GmbH des Bundes - NL West",
-      "published": "2026-10-06+02:00",
-      "city": "Wattenheim",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/685992-2026",
-      "phase": "award",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 2,
-        "reasons": [
-          "Text stützt alternative Projektarten: rail, road"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [
-          "rail",
-          "road"
-        ],
-        "trade_support": {},
-        "unsupported_trades": []
-      },
-      "review_order": 27
-    },
-    {
-      "audit_id": 27,
-      "notice_id": "737476-2026",
-      "title": "BLB NRW Münster / MRV Essen-Heidhausen / Schadstoffsanierung und Gebäuderückbau / 060-26-00233",
-      "description": "BLB NRW Münster / MRV Essen-Heidhausen / Schadstoffsanierung und Gebäuderückbau / 060-26-00233 Bau- und Liegenschaftsbetrieb NRW Münster ['DEA13', 'DEU', 'DEA13', 'DEU']",
-      "original_title": "BLB NRW Münster / MRV Essen-Heidhausen / Schadstoffsanierung und Gebäuderückbau / 060-26-00233",
-      "original_description": "BLB NRW Münster / MRV Essen-Heidhausen / Schadstoffsanierung und Gebäuderückbau / 060-26-00233 Bau- und Liegenschaftsbetrieb NRW Münster ['DEA13', 'DEU', 'DEA13', 'DEU']",
-      "cpv": [
-        "45111100",
-        "45112500",
-        "90740000",
-        "45111100",
-        "45112500",
-        "90740000"
+        "45112730"
       ],
       "project_type_predicted": "",
       "trades_predicted": [
-        "demolition",
         "earthworks"
       ],
       "confidence": 0.35,
@@ -1466,196 +1025,39 @@
         "confidence": 0.35,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Bau- und Liegenschaftsbetrieb NRW Münster",
-      "published": "2026-10-26+01:00",
-      "city": "Essen",
+      "authority": "Landesbetrieb Straßenbau NRW - Regionalniederlassung Münsterland",
+      "published": "2026-10-07+02:00",
+      "city": "",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/737476-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/690462-2026",
       "phase": "award",
       "smart_review": {
         "risk": "MEDIUM",
-        "risk_score": 2,
+        "risk_score": 4,
         "reasons": [
-          "Gewerke ohne direkten Textbeleg: demolition, earthworks"
+          "Text stützt alternative Projektarten: road",
+          "Gewerke ohne direkten Textbeleg: earthworks"
         ],
         "project_text_support": 0,
-        "project_alternatives": [],
+        "project_alternatives": [
+          "road"
+        ],
         "trade_support": {
-          "demolition": 0,
           "earthworks": 0
         },
         "unsupported_trades": [
-          "demolition",
           "earthworks"
         ]
       },
-      "review_order": 28
+      "review_order": 19
     },
     {
-      "audit_id": 28,
-      "notice_id": "729697-2026",
-      "title": "Heizung für den Neubau des Berufskollegs Meschede",
-      "description": "Heizung für den Neubau des Berufskollegs Meschede Hochsauerlandkreis ['DEA57', 'DEU', 'DEA57', 'DEU']",
-      "original_title": "Heizung für den Neubau des Berufskollegs Meschede",
-      "original_description": "Heizung für den Neubau des Berufskollegs Meschede Hochsauerlandkreis ['DEA57', 'DEU', 'DEA57', 'DEU']",
-      "cpv": [
-        "45330000",
-        "45300000",
-        "45315000",
-        "45330000",
-        "45300000",
-        "45315000"
-      ],
-      "project_type_predicted": "",
-      "trades_predicted": [
-        "hvac",
-        "electrical"
-      ],
-      "confidence": 0.35,
-      "quality_status": "REVIEW",
-      "evidence": {
-        "project_type": false,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.35,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Hochsauerlandkreis",
-      "published": "2026-10-21+02:00",
-      "city": "Meschede",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/729697-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 2,
-        "reasons": [
-          "Gewerke ohne direkten Textbeleg: electrical"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [],
-        "trade_support": {
-          "hvac": 1,
-          "electrical": 0
-        },
-        "unsupported_trades": [
-          "electrical"
-        ]
-      },
-      "review_order": 29
-    },
-    {
-      "audit_id": 29,
-      "notice_id": "707292-2026",
-      "title": "GREEN HUB - Los 005 Zimmerer-/Holzbauarbeiten",
-      "description": "GREEN HUB - Los 005 Zimmerer-/Holzbauarbeiten Bekotec GmbH ['DE40B', 'DEU', 'DE40B', 'DEU']",
-      "original_title": "GREEN HUB - Los 005 Zimmerer-/Holzbauarbeiten",
-      "original_description": "GREEN HUB - Los 005 Zimmerer-/Holzbauarbeiten Bekotec GmbH ['DE40B', 'DEU', 'DE40B', 'DEU']",
-      "cpv": [
-        "45000000",
-        "45000000"
-      ],
-      "project_type_predicted": "",
-      "trades_predicted": [
-        "structural"
-      ],
-      "confidence": 0.35,
-      "quality_status": "REVIEW",
-      "evidence": {
-        "project_type": false,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.35,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Bekotec GmbH",
-      "published": "2026-10-13+02:00",
-      "city": "Lübbenau",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/707292-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 2,
-        "reasons": [
-          "Gewerke ohne direkten Textbeleg: structural"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [],
-        "trade_support": {
-          "structural": 0
-        },
-        "unsupported_trades": [
-          "structural"
-        ]
-      },
-      "review_order": 30
-    },
-    {
-      "audit_id": 32,
-      "notice_id": "688585-2026",
-      "title": "GSNord - Fassadenarbeiten",
-      "description": "GSNord - Fassadenarbeiten Stadt Kassel Immobilien GmbH & Co. KG ['DE731', 'DEU', 'DE731', 'DEU']",
-      "original_title": "GSNord - Fassadenarbeiten",
-      "original_description": "GSNord - Fassadenarbeiten Stadt Kassel Immobilien GmbH & Co. KG ['DE731', 'DEU', 'DE731', 'DEU']",
-      "cpv": [
-        "45443000",
-        "45443000"
-      ],
-      "project_type_predicted": "",
-      "trades_predicted": [
-        "facade",
-        "painting"
-      ],
-      "confidence": 0.35,
-      "quality_status": "REVIEW",
-      "evidence": {
-        "project_type": false,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.35,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Stadt Kassel Immobilien GmbH & Co. KG",
-      "published": "2026-10-06+02:00",
-      "city": "",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/688585-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 2,
-        "reasons": [
-          "Gewerke ohne direkten Textbeleg: painting"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [],
-        "trade_support": {
-          "facade": 1,
-          "painting": 0
-        },
-        "unsupported_trades": [
-          "painting"
-        ]
-      },
-      "review_order": 31
-    },
-    {
-      "audit_id": 38,
-      "notice_id": "770294-2026",
-      "title": "001 Gerüstarbeiten - SZ Gundelfingen, 8. BA, Kandelstr. 47, 79194 Gundelfingen",
-      "description": "001 Gerüstarbeiten - SZ Gundelfingen, 8. BA, Kandelstr. 47, 79194 Gundelfingen Landkreis Breisgau-Hochschwarzwald ['DE132', 'DEU', 'DE132', 'DEU']",
-      "original_title": "001 Gerüstarbeiten - SZ Gundelfingen, 8. BA, Kandelstr. 47, 79194 Gundelfingen",
-      "original_description": "001 Gerüstarbeiten - SZ Gundelfingen, 8. BA, Kandelstr. 47, 79194 Gundelfingen Landkreis Breisgau-Hochschwarzwald ['DE132', 'DEU', 'DE132', 'DEU']",
+      "audit_id": 37,
+      "notice_id": "796794-2026",
+      "title": "Neubau Mehrfamilienhäuser Wieslocher Straße, Gerüstbauarbeiten",
+      "description": "Neubau Mehrfamilienhäuser Wieslocher Straße, Gerüstbauarbeiten Stadt Walldorf ['DE128', 'DEU', 'DE128', 'DEU']",
+      "original_title": "Neubau Mehrfamilienhäuser Wieslocher Straße, Gerüstbauarbeiten",
+      "original_description": "Neubau Mehrfamilienhäuser Wieslocher Straße, Gerüstbauarbeiten Stadt Walldorf ['DE128', 'DEU', 'DE128', 'DEU']",
       "cpv": [
         "45262100",
         "45262100"
@@ -1676,20 +1078,23 @@
         "confidence": 0.35,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Landkreis Breisgau-Hochschwarzwald",
-      "published": "2026-11-05+01:00",
-      "city": "Gundelfingen",
+      "authority": "Stadt Walldorf",
+      "published": "2026-11-17+01:00",
+      "city": "Walldorf",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/770294-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/796794-2026",
       "phase": "award",
       "smart_review": {
         "risk": "MEDIUM",
-        "risk_score": 2,
+        "risk_score": 4,
         "reasons": [
+          "Text stützt alternative Projektarten: road",
           "Gewerke ohne direkten Textbeleg: structural"
         ],
         "project_text_support": 0,
-        "project_alternatives": [],
+        "project_alternatives": [
+          "road"
+        ],
         "trade_support": {
           "structural": 0
         },
@@ -1697,25 +1102,21 @@
           "structural"
         ]
       },
-      "review_order": 32
+      "review_order": 20
     },
     {
-      "audit_id": 41,
-      "notice_id": "758454-2026",
-      "title": "Trockenbau Ex-Post",
-      "description": "Trockenbau Ex-Post Kreisausschuss Main-Taunus-Kreis, Hochbau- und Liegenschaftsamt ['DE71A', 'DEU', 'DE71A', 'DEU']",
-      "original_title": "Trockenbau Ex-Post",
-      "original_description": "Trockenbau Ex-Post Kreisausschuss Main-Taunus-Kreis, Hochbau- und Liegenschaftsamt ['DE71A', 'DEU', 'DE71A', 'DEU']",
+      "audit_id": 42,
+      "notice_id": "670898-2026",
+      "title": "Isestraße 144- 146 - Tischler",
+      "description": "Isestraße 144- 146 - Tischler SBH | Schulbau Hamburg ['DE600', 'DEU', 'DE600', 'DEU']",
+      "original_title": "Isestraße 144- 146 - Tischler",
+      "original_description": "Isestraße 144- 146 - Tischler SBH | Schulbau Hamburg ['DE600', 'DEU', 'DE600', 'DEU']",
       "cpv": [
-        "45324000",
-        "45421146",
-        "45324000",
-        "45421146"
+        "45421000",
+        "45421000"
       ],
       "project_type_predicted": "",
       "trades_predicted": [
-        "drywall",
-        "insulation",
         "windows_doors"
       ],
       "confidence": 0.35,
@@ -1730,113 +1131,46 @@
         "confidence": 0.35,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Kreisausschuss Main-Taunus-Kreis, Hochbau- und Liegenschaftsamt",
-      "published": "2026-11-02+01:00",
-      "city": "Hattersheim",
+      "authority": "SBH | Schulbau Hamburg",
+      "published": "2026-09-30+02:00",
+      "city": "Hamburg",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/758454-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/670898-2026",
       "phase": "award",
       "smart_review": {
         "risk": "MEDIUM",
-        "risk_score": 2,
+        "risk_score": 4,
         "reasons": [
-          "Gewerke ohne direkten Textbeleg: drywall, insulation, windows_doors"
+          "Text stützt alternative Projektarten: road",
+          "Gewerke ohne direkten Textbeleg: windows_doors"
         ],
         "project_text_support": 0,
-        "project_alternatives": [],
+        "project_alternatives": [
+          "road"
+        ],
         "trade_support": {
-          "drywall": 0,
-          "insulation": 0,
           "windows_doors": 0
         },
         "unsupported_trades": [
-          "drywall",
-          "insulation",
           "windows_doors"
         ]
       },
-      "review_order": 33
+      "review_order": 21
     },
     {
-      "audit_id": 42,
-      "notice_id": "753688-2026",
-      "title": "SV-JWA-260907-001 - Umweltverbundröhre Laim TWT München, Maschinelle Entrauchungsanlage",
-      "description": "SV-JWA-260907-001 - Umweltverbundröhre Laim TWT München, Maschinelle Entrauchungsanlage Stadtwerke München GmbH ['DE212', 'DEU', 'DE212', 'DEU']",
-      "original_title": "SV-JWA-260907-001 - Umweltverbundröhre Laim TWT München, Maschinelle Entrauchungsanlage",
-      "original_description": "SV-JWA-260907-001 - Umweltverbundröhre Laim TWT München, Maschinelle Entrauchungsanlage Stadtwerke München GmbH ['DE212', 'DEU', 'DE212', 'DEU']",
+      "audit_id": 46,
+      "notice_id": "798234-2026",
+      "title": "Spezialtiefbau",
+      "description": "Spezialtiefbau Gemeinnütziges Berufsförderungswerk des thüringischen Dachdeckerhandwerks e.V. Dachdeckerschule Lehesten ['DEG0U', 'DEU', 'DEG0U', 'DEU']",
+      "original_title": "Spezialtiefbau",
+      "original_description": "Spezialtiefbau Gemeinnütziges Berufsförderungswerk des thüringischen Dachdeckerhandwerks e.V. Dachdeckerschule Lehesten ['DEG0U', 'DEU', 'DEG0U', 'DEU']",
       "cpv": [
-        "45343000",
-        "45331210",
-        "42521000",
-        "45343100",
-        "50712000",
-        "45343000",
-        "45331210",
-        "42521000",
-        "45343100",
-        "50712000"
+        "45262426",
+        "45262426"
       ],
       "project_type_predicted": "",
       "trades_predicted": [
-        "fire_protection",
-        "hvac"
-      ],
-      "confidence": 0.35,
-      "quality_status": "REVIEW",
-      "evidence": {
-        "project_type": false,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.35,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Stadtwerke München GmbH",
-      "published": "2026-10-30+01:00",
-      "city": "",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/753688-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 2,
-        "reasons": [
-          "Gewerke ohne direkten Textbeleg: fire_protection, hvac"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [],
-        "trade_support": {
-          "fire_protection": 0,
-          "hvac": 0
-        },
-        "unsupported_trades": [
-          "fire_protection",
-          "hvac"
-        ]
-      },
-      "review_order": 34
-    },
-    {
-      "audit_id": 43,
-      "notice_id": "739145-2026",
-      "title": "Hardtbergbad - Metallbauarbeiten Türen, Veglasungen, Stahl- und Brandschutztüren",
-      "description": "Hardtbergbad - Metallbauarbeiten Türen, Veglasungen, Stahl- und Brandschutztüren Bundesstadt Bonn - Referat Vergabedienste ['DEA22', 'DEU', 'DEA22', 'DEA22', 'DEU', 'DEU']",
-      "original_title": "Bundesstadt Bonn: Hardtbergbad - Metallbauarbeiten Türen, Veglasungen, Stahl- und Brandschutztüren",
-      "original_description": "Bundesstadt Bonn: Hardtbergbad - Metallbauarbeiten Türen, Veglasungen, Stahl- und Brandschutztüren Bundesstadt Bonn - Referat Vergabedienste ['DEA22', 'DEU', 'DEA22', 'DEA22', 'DEU', 'DEU']",
-      "cpv": [
-        "45262670",
-        "45421131",
-        "45262670",
-        "45262670",
-        "45421131",
-        "45421131"
-      ],
-      "project_type_predicted": "",
-      "trades_predicted": [
-        "windows_doors",
-        "fire_protection",
+        "earthworks",
         "structural"
       ],
       "confidence": 0.35,
@@ -1851,48 +1185,115 @@
         "confidence": 0.35,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Bundesstadt Bonn - Referat Vergabedienste",
-      "published": "2026-10-26+01:00",
-      "city": "Bonn",
+      "authority": "Gemeinnütziges Berufsförderungswerk des thüringischen Dachdeckerhandwerks e.V. Dachdeckerschule Lehesten",
+      "published": "2026-11-17+01:00",
+      "city": "Lehesten",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/739145-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/798234-2026",
       "phase": "tender",
       "smart_review": {
         "risk": "MEDIUM",
-        "risk_score": 2,
+        "risk_score": 4,
         "reasons": [
-          "Gewerke ohne direkten Textbeleg: fire_protection, structural"
+          "Text stützt alternative Projektarten: school",
+          "Gewerke ohne direkten Textbeleg: structural"
         ],
         "project_text_support": 0,
-        "project_alternatives": [],
+        "project_alternatives": [
+          "school"
+        ],
         "trade_support": {
-          "windows_doors": 1,
-          "fire_protection": 0,
+          "earthworks": 1,
           "structural": 0
         },
         "unsupported_trades": [
-          "fire_protection",
           "structural"
         ]
       },
-      "review_order": 35
+      "review_order": 22
     },
     {
-      "audit_id": 44,
-      "notice_id": "760298-2026",
-      "title": "B1, Geotechn. Erkundungen Baugrund + Pfeiler",
-      "description": "B1, Geotechn. Erkundungen Baugrund + Pfeiler DEGES Deutsche Einheit Fernstraßenplanungs- und -bau GmbH ['DEA11', 'DEU', 'DEA11', 'DEU']",
-      "original_title": "B1, Geotechn. Erkundungen Baugrund + Pfeiler",
-      "original_description": "B1, Geotechn. Erkundungen Baugrund + Pfeiler DEGES Deutsche Einheit Fernstraßenplanungs- und -bau GmbH ['DEA11', 'DEU', 'DEA11', 'DEU']",
+      "audit_id": 38,
+      "notice_id": "687161-2026",
+      "title": "Vergabeverfahren zum Erwerb einer Neuen Zentrale der Deutschen Bundesbank",
+      "description": "Vergabeverfahren zum Erwerb einer Neuen Zentrale der Deutschen Bundesbank Deutsche Bundesbank, Zentralbereich Beschaffungen ['DE712', 'DEU', 'DE712', 'DEU']",
+      "original_title": "Vergabeverfahren zum Erwerb einer Neuen Zentrale der Deutschen Bundesbank",
+      "original_description": "Vergabeverfahren zum Erwerb einer Neuen Zentrale der Deutschen Bundesbank Deutsche Bundesbank, Zentralbereich Beschaffungen ['DE712', 'DEU', 'DE712', 'DEU']",
       "cpv": [
-        "45233124",
-        "45221000",
-        "45233124",
-        "45221000"
+        "45213150",
+        "70100000",
+        "70000000",
+        "70120000",
+        "70121200",
+        "70122000",
+        "70122200",
+        "71000000",
+        "71240000",
+        "71320000",
+        "45000000",
+        "45213150",
+        "70100000",
+        "70000000",
+        "70120000",
+        "70121200",
+        "70122000",
+        "70122200",
+        "71000000",
+        "71240000",
+        "71320000",
+        "45000000"
       ],
-      "project_type_predicted": "road",
+      "project_type_predicted": "commercial",
+      "trades_predicted": [],
+      "confidence": 0.35,
+      "quality_status": "REVIEW",
+      "evidence": {
+        "project_type": true,
+        "trade": false,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.35,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Deutsche Bundesbank, Zentralbereich Beschaffungen",
+      "published": "2026-10-06+02:00",
+      "city": "Frankfurt am Main",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/687161-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 3,
+        "reasons": [
+          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
+        "trade_support": {},
+        "unsupported_trades": []
+      },
+      "review_order": 23
+    },
+    {
+      "audit_id": 39,
+      "notice_id": "681112-2026",
+      "title": "SCS-ERT-BAII-Sanitärinstallationsarbeiten",
+      "description": "SCS-ERT-BAII-Sanitärinstallationsarbeiten Stadt Augsburg ['DE271', 'DEU', 'DE271', 'DEU']",
+      "original_title": "SCS-ERT-BAII-Sanitärinstallationsarbeiten",
+      "original_description": "SCS-ERT-BAII-Sanitärinstallationsarbeiten Stadt Augsburg ['DE271', 'DEU', 'DE271', 'DEU']",
+      "cpv": [
+        "45000000",
+        "45332400",
+        "45232460",
+        "45000000",
+        "45332400",
+        "45232460"
+      ],
+      "project_type_predicted": "water_wastewater",
       "trades_predicted": [
-        "roadworks"
+        "plumbing"
       ],
       "confidence": 0.55,
       "quality_status": "REVIEW",
@@ -1906,669 +1307,80 @@
         "confidence": 0.55,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "DEGES Deutsche Einheit Fernstraßenplanungs- und -bau GmbH",
-      "published": "2026-11-02+01:00",
-      "city": "Berlin",
+      "authority": "Stadt Augsburg",
+      "published": "2026-10-02+02:00",
+      "city": "Augsburg",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/760298-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/681112-2026",
       "phase": "tender",
       "smart_review": {
         "risk": "MEDIUM",
-        "risk_score": 2,
+        "risk_score": 3,
         "reasons": [
-          "Gewerke ohne direkten Textbeleg: roadworks"
+          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg"
         ],
-        "project_text_support": 1,
+        "project_text_support": 0,
         "project_alternatives": [],
         "trade_support": {
-          "roadworks": 0
+          "plumbing": 1
         },
-        "unsupported_trades": [
-          "roadworks"
-        ]
+        "unsupported_trades": []
       },
-      "review_order": 36
+      "review_order": 24
     },
     {
-      "audit_id": 4,
-      "notice_id": "771307-2026",
-      "title": "Neubau \"Zentrum für seelische Gesundheit (ZfsG)\" am Klinikum Nürnberg, Campus Nord",
-      "description": "Neubau \"Zentrum für seelische Gesundheit (ZfsG)\" am Klinikum Nürnberg, Campus Nord Klinikum Nürnberg ['DE254', 'DEU', 'DE254', 'DEU']",
-      "original_title": "Neubau \"Zentrum für seelische Gesundheit (ZfsG)\" am Klinikum Nürnberg, Campus Nord",
-      "original_description": "Neubau \"Zentrum für seelische Gesundheit (ZfsG)\" am Klinikum Nürnberg, Campus Nord Klinikum Nürnberg ['DE254', 'DEU', 'DE254', 'DEU']",
+      "audit_id": 40,
+      "notice_id": "655401-2026",
+      "title": "ABS 46/2 BA 3: Südkopf Wesel VP 16 Strecke km 25,900 . 27,100 mit KIB inkl. GSH",
+      "description": "ABS 46/2 BA 3: Südkopf Wesel VP 16 Strecke km 25,900 . 27,100 mit KIB inkl. GSH DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DEA1F', 'DEU', 'DEA1F', 'DEU']",
+      "original_title": "ABS 46/2 BA 3: Südkopf Wesel VP 16 Strecke km 25,900 . 27,100 mit KIB inkl. GSH",
+      "original_description": "ABS 46/2 BA 3: Südkopf Wesel VP 16 Strecke km 25,900 . 27,100 mit KIB inkl. GSH DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DEA1F', 'DEU', 'DEA1F', 'DEU']",
       "cpv": [
-        "45215100",
-        "45200000",
-        "45261000",
-        "45261210",
-        "45261320",
-        "45261410",
-        "45215100",
-        "45200000",
-        "45261000",
-        "45261210",
-        "45261320",
-        "45261410"
+        "45236000",
+        "45223000",
+        "45236000",
+        "45223000"
       ],
-      "project_type_predicted": "hospital",
-      "trades_predicted": [
-        "roof"
-      ],
-      "confidence": 0.75,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.75,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Klinikum Nürnberg",
-      "published": "2026-11-05+01:00",
-      "city": "",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/771307-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 2,
-        "reasons": [
-          "Gewerke ohne direkten Textbeleg: roof"
-        ],
-        "project_text_support": 1,
-        "project_alternatives": [],
-        "trade_support": {
-          "roof": 0
-        },
-        "unsupported_trades": [
-          "roof"
-        ]
-      },
-      "review_order": 37
-    },
-    {
-      "audit_id": 5,
-      "notice_id": "687440-2026",
-      "title": "BRA - Erweiterung der Grund- und Mittelschule in Brannenburg LV201 Sanitäre Installationen",
-      "description": "BRA - Erweiterung der Grund- und Mittelschule in Brannenburg LV201 Sanitäre Installationen Gemeinde Brannenburg ['DE21K', 'DEU', 'DE21K', 'DEU']",
-      "original_title": "BRA - Erweiterung der Grund- und Mittelschule in Brannenburg LV201 Sanitäre Installationen",
-      "original_description": "BRA - Erweiterung der Grund- und Mittelschule in Brannenburg LV201 Sanitäre Installationen Gemeinde Brannenburg ['DE21K', 'DEU', 'DE21K', 'DEU']",
-      "cpv": [
-        "45330000",
-        "45330000"
-      ],
-      "project_type_predicted": "school",
-      "trades_predicted": [
-        "plumbing",
-        "hvac"
-      ],
-      "confidence": 0.75,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.75,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Gemeinde Brannenburg",
-      "published": "2026-10-06+02:00",
-      "city": "",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/687440-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 2,
-        "reasons": [
-          "Gewerke ohne direkten Textbeleg: hvac"
-        ],
-        "project_text_support": 1,
-        "project_alternatives": [],
-        "trade_support": {
-          "plumbing": 1,
-          "hvac": 0
-        },
-        "unsupported_trades": [
-          "hvac"
-        ]
-      },
-      "review_order": 38
-    },
-    {
-      "audit_id": 7,
-      "notice_id": "650800-2026",
-      "title": "Generalsanierung Gartenschule Ettlingen, Metallbau- und Verglasungsarbeiten innen",
-      "description": "Generalsanierung Gartenschule Ettlingen, Metallbau- und Verglasungsarbeiten innen Landratsamt Karlsruhe, Amt für Gebäudemanagement, Bauverwaltung ['DE123', 'DEU', 'DE123', 'DEU']",
-      "original_title": "Generalsanierung Gartenschule Ettlingen, Metallbau- und Verglasungsarbeiten innen",
-      "original_description": "Generalsanierung Gartenschule Ettlingen, Metallbau- und Verglasungsarbeiten innen Landratsamt Karlsruhe, Amt für Gebäudemanagement, Bauverwaltung ['DE123', 'DEU', 'DE123', 'DEU']",
-      "cpv": [
-        "45421131",
-        "45262670",
-        "45441000",
-        "45421131",
-        "45262670",
-        "45441000"
-      ],
-      "project_type_predicted": "school",
-      "trades_predicted": [
-        "windows_doors",
-        "structural",
-        "painting"
-      ],
-      "confidence": 0.75,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.75,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Landratsamt Karlsruhe, Amt für Gebäudemanagement, Bauverwaltung",
-      "published": "2026-09-22+02:00",
-      "city": "Ettlingen",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/650800-2026",
-      "phase": "award",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 2,
-        "reasons": [
-          "Gewerke ohne direkten Textbeleg: windows_doors, structural, painting"
-        ],
-        "project_text_support": 1,
-        "project_alternatives": [],
-        "trade_support": {
-          "windows_doors": 0,
-          "structural": 0,
-          "painting": 0
-        },
-        "unsupported_trades": [
-          "windows_doors",
-          "structural",
-          "painting"
-        ]
-      },
-      "review_order": 39
-    },
-    {
-      "audit_id": 8,
-      "notice_id": "740988-2026",
-      "title": "M ST 26006 Putz- und Stuckarbeiten, Eichendorffschule, Görresstr. 2, 40670 Meerbusch - Osterath",
-      "description": "M ST 26006 Putz- und Stuckarbeiten, Eichendorffschule, Görresstr. 2, 40670 Meerbusch - Osterath Stadt Meerbusch ['DEA1D', 'DEU', 'DEA1D', 'DEU']",
-      "original_title": "M ST 26006 Putz- und Stuckarbeiten, Eichendorffschule, Görresstr. 2, 40670 Meerbusch - Osterath",
-      "original_description": "M ST 26006 Putz- und Stuckarbeiten, Eichendorffschule, Görresstr. 2, 40670 Meerbusch - Osterath Stadt Meerbusch ['DEA1D', 'DEU', 'DEA1D', 'DEU']",
-      "cpv": [
-        "45410000",
-        "45214210",
-        "45410000",
-        "45214210"
-      ],
-      "project_type_predicted": "school",
-      "trades_predicted": [
-        "plastering"
-      ],
-      "confidence": 0.75,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.75,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Stadt Meerbusch",
-      "published": "2026-10-26+01:00",
-      "city": "Meerbusch-Osterath",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/740988-2026",
-      "phase": "award",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 2,
-        "reasons": [
-          "Gewerke ohne direkten Textbeleg: plastering"
-        ],
-        "project_text_support": 1,
-        "project_alternatives": [],
-        "trade_support": {
-          "plastering": 0
-        },
-        "unsupported_trades": [
-          "plastering"
-        ]
-      },
-      "review_order": 40
-    },
-    {
-      "audit_id": 9,
-      "notice_id": "786488-2026",
-      "title": "Neustrukturierung, Sanierung und Erweiterung der Gesamtschule Gießen Ost, 2. BA",
-      "description": "Neustrukturierung, Sanierung und Erweiterung der Gesamtschule Gießen Ost, 2. BA Magistrat der Universitätsstadt Gießen - Hochbauamt - ['DE721', 'DEU', 'DE721', 'DEU']",
-      "original_title": "Neustrukturierung, Sanierung und Erweiterung der Gesamtschule Gießen Ost, 2. BA",
-      "original_description": "Neustrukturierung, Sanierung und Erweiterung der Gesamtschule Gießen Ost, 2. BA Magistrat der Universitätsstadt Gießen - Hochbauamt - ['DE721', 'DEU', 'DE721', 'DEU']",
-      "cpv": [
-        "45232460",
-        "45343200",
-        "45232460",
-        "45343200"
-      ],
-      "project_type_predicted": "school",
-      "trades_predicted": [
-        "fire_protection"
-      ],
-      "confidence": 0.75,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.75,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Magistrat der Universitätsstadt Gießen - Hochbauamt -",
-      "published": "2026-11-12+01:00",
-      "city": "Gießen",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/786488-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 2,
-        "reasons": [
-          "Gewerke ohne direkten Textbeleg: fire_protection"
-        ],
-        "project_text_support": 1,
-        "project_alternatives": [],
-        "trade_support": {
-          "fire_protection": 0
-        },
-        "unsupported_trades": [
-          "fire_protection"
-        ]
-      },
-      "review_order": 41
-    },
-    {
-      "audit_id": 13,
-      "notice_id": "676839-2026",
-      "title": "Aufzugsanlage - 3. Bauabschnitt Neubau Grundschule",
-      "description": "Aufzugsanlage - 3. Bauabschnitt Neubau Grundschule Gemeinde Schönkirchen c/o Amt Schrevenborn ['DEF0A', 'DEU', 'DEF0A', 'DEU']",
-      "original_title": "Aufzugsanlage - 3. Bauabschnitt Neubau Grundschule",
-      "original_description": "Aufzugsanlage - 3. Bauabschnitt Neubau Grundschule Gemeinde Schönkirchen c/o Amt Schrevenborn ['DEF0A', 'DEU', 'DEF0A', 'DEU']",
-      "cpv": [
-        "45313100",
-        "45313100"
-      ],
-      "project_type_predicted": "school",
-      "trades_predicted": [
-        "elevator",
-        "electrical"
-      ],
-      "confidence": 0.75,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.75,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Gemeinde Schönkirchen c/o Amt Schrevenborn",
-      "published": "2026-10-01+02:00",
-      "city": "Schönkirchen",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/676839-2026",
-      "phase": "award",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 2,
-        "reasons": [
-          "Gewerke ohne direkten Textbeleg: elevator, electrical"
-        ],
-        "project_text_support": 2,
-        "project_alternatives": [],
-        "trade_support": {
-          "elevator": 0,
-          "electrical": 0
-        },
-        "unsupported_trades": [
-          "elevator",
-          "electrical"
-        ]
-      },
-      "review_order": 42
-    },
-    {
-      "audit_id": 17,
-      "notice_id": "699351-2026",
-      "title": "Neubau Feuerwehrgerätehaus Mitte - Abgasabsauganlage Fahrzeughalle",
-      "description": "Neubau Feuerwehrgerätehaus Mitte - Abgasabsauganlage Fahrzeughalle Gemeinde Hüllhorst über Kreis Minden-Lübbecke ['DEA46', 'DEU', 'DEA46', 'DEU']",
-      "original_title": "Neubau Feuerwehrgerätehaus Mitte - Abgasabsauganlage Fahrzeughalle",
-      "original_description": "Neubau Feuerwehrgerätehaus Mitte - Abgasabsauganlage Fahrzeughalle Gemeinde Hüllhorst über Kreis Minden-Lübbecke ['DEA46', 'DEU', 'DEA46', 'DEU']",
-      "cpv": [
-        "45330000",
-        "45331210",
-        "45350000",
-        "45330000"
-      ],
-      "project_type_predicted": "fire_station",
-      "trades_predicted": [
-        "hvac",
-        "building_services"
-      ],
-      "confidence": 0.75,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.75,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Gemeinde Hüllhorst über Kreis Minden-Lübbecke",
-      "published": "2026-10-09+02:00",
-      "city": "",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/699351-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 2,
-        "reasons": [
-          "Gewerke ohne direkten Textbeleg: hvac, building_services"
-        ],
-        "project_text_support": 1,
-        "project_alternatives": [],
-        "trade_support": {
-          "hvac": 0,
-          "building_services": 0
-        },
-        "unsupported_trades": [
-          "hvac",
-          "building_services"
-        ]
-      },
-      "review_order": 43
-    },
-    {
-      "audit_id": 19,
-      "notice_id": "779436-2026",
-      "title": "Neustrukturierung, Sanierung und Erweiterung der Gesamtschule Gießen-Ost, 2. Bauabschnitt, Haus 6",
-      "description": "Neustrukturierung, Sanierung und Erweiterung der Gesamtschule Gießen-Ost, 2. Bauabschnitt, Haus 6 Magistrat der Universitätsstadt Gießen - Hochbauamt - ['DE721', 'DEU', 'DE721', 'DEU']",
-      "original_title": "Neustrukturierung, Sanierung und Erweiterung der Gesamtschule Gießen-Ost, 2. Bauabschnitt, Haus 6",
-      "original_description": "Neustrukturierung, Sanierung und Erweiterung der Gesamtschule Gießen-Ost, 2. Bauabschnitt, Haus 6 Magistrat der Universitätsstadt Gießen - Hochbauamt - ['DE721', 'DEU', 'DE721', 'DEU']",
-      "cpv": [
-        "45262100",
-        "45262100",
-        "45262110",
-        "45262120",
-        "45262120",
-        "45262110"
-      ],
-      "project_type_predicted": "school",
-      "trades_predicted": [
-        "structural"
-      ],
-      "confidence": 0.75,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.75,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Magistrat der Universitätsstadt Gießen - Hochbauamt -",
-      "published": "2026-11-10+01:00",
-      "city": "Gießen",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/779436-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 2,
-        "reasons": [
-          "Gewerke ohne direkten Textbeleg: structural"
-        ],
-        "project_text_support": 1,
-        "project_alternatives": [],
-        "trade_support": {
-          "structural": 0
-        },
-        "unsupported_trades": [
-          "structural"
-        ]
-      },
-      "review_order": 44
-    },
-    {
-      "audit_id": 20,
-      "notice_id": "724467-2026",
-      "title": "Knappschaft Kliniken Saar - Sulzbach -Sanierung der Pflegestation im 2. & 3. OG",
-      "description": "Knappschaft Kliniken Saar - Sulzbach -Sanierung der Pflegestation im 2. & 3. OG Knappschaft Kliniken Saar GmbH / Klinik Sulzbach ['DEC01', 'DEU', 'DEC01', 'DEU']",
-      "original_title": "Knappschaft Kliniken Saar - Sulzbach -Sanierung der Pflegestation im 2. & 3. OG",
-      "original_description": "Knappschaft Kliniken Saar - Sulzbach -Sanierung der Pflegestation im 2. & 3. OG Knappschaft Kliniken Saar GmbH / Klinik Sulzbach ['DEC01', 'DEU', 'DEC01', 'DEU']",
-      "cpv": [
-        "45343000",
-        "45343100",
-        "45343000",
-        "45343100"
-      ],
-      "project_type_predicted": "hospital",
-      "trades_predicted": [
-        "fire_protection"
-      ],
-      "confidence": 0.75,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.75,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Knappschaft Kliniken Saar GmbH / Klinik Sulzbach",
-      "published": "2026-10-20+02:00",
-      "city": "Sulzbach",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/724467-2026",
-      "phase": "award",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 2,
-        "reasons": [
-          "Gewerke ohne direkten Textbeleg: fire_protection"
-        ],
-        "project_text_support": 1,
-        "project_alternatives": [],
-        "trade_support": {
-          "fire_protection": 0
-        },
-        "unsupported_trades": [
-          "fire_protection"
-        ]
-      },
-      "review_order": 45
-    },
-    {
-      "audit_id": 24,
-      "notice_id": "761287-2026",
-      "title": "Zentrales Gebäudemanagement Schwerin, Eigenbetrieb der Landeshauptstadt Schwerin - Neubau Förderschule e-s E und Bürgerzentrum - Los 02.02 - Metallbau - Stahl-Alu-Elemente außen + Sonnenschutz - BT 2+3 - Förderschulen GS+RS",
-      "description": "Zentrales Gebäudemanagement Schwerin, Eigenbetrieb der Landeshauptstadt Schwerin - Neubau Förderschule e-s E und Bürgerzentrum - Los 02.02 - Metallbau - Stahl-Alu-Elemente außen + Sonnenschutz - BT 2+3 - Förderschulen GS+RS Zentrales Gebäudemanagement Schwerin, Eigenbetrieb der Landeshauptstadt Schwerin ['DE804', 'DEU', 'DE804', 'DEU']",
-      "original_title": "Zentrales Gebäudemanagement Schwerin, Eigenbetrieb der Landeshauptstadt Schwerin - Neubau Förderschule e-s E und Bürgerzentrum - Los 02.02 - Metallbau - Stahl-Alu-Elemente außen + Sonnenschutz - BT 2+3 - Förderschulen GS+RS",
-      "original_description": "Zentrales Gebäudemanagement Schwerin, Eigenbetrieb der Landeshauptstadt Schwerin - Neubau Förderschule e-s E und Bürgerzentrum - Los 02.02 - Metallbau - Stahl-Alu-Elemente außen + Sonnenschutz - BT 2+3 - Förderschulen GS+RS Zentrales Gebäudemanagement Schwerin, Eigenbetrieb der Landeshauptstadt Schwerin ['DE804', 'DEU', 'DE804', 'DEU']",
-      "cpv": [
-        "45262670",
-        "45262670"
-      ],
-      "project_type_predicted": "school",
-      "trades_predicted": [
-        "windows_doors",
-        "structural"
-      ],
-      "confidence": 0.75,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.75,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Zentrales Gebäudemanagement Schwerin, Eigenbetrieb der Landeshauptstadt Schwerin",
-      "published": "2026-11-03+01:00",
-      "city": "Schwerin",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/761287-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "MEDIUM",
-        "risk_score": 2,
-        "reasons": [
-          "Gewerke ohne direkten Textbeleg: windows_doors, structural"
-        ],
-        "project_text_support": 1,
-        "project_alternatives": [],
-        "trade_support": {
-          "windows_doors": 0,
-          "structural": 0
-        },
-        "unsupported_trades": [
-          "windows_doors",
-          "structural"
-        ]
-      },
-      "review_order": 46
-    },
-    {
-      "audit_id": 52,
-      "notice_id": "741546-2026",
-      "title": "Totalunternehmerleistung Bau- und Planungsleistungen i. F. v. Architekten-/Ingenieurleistungen sowie Instandhaltungsleistungen",
-      "description": "Totalunternehmerleistung Bau- und Planungsleistungen i. F. v. Architekten-/Ingenieurleistungen sowie Instandhaltungsleistungen Staatliches Hochbauamt Heidelberg ['DE125', 'DEU', 'DE125', 'DE123', 'DEU', 'DEU']",
-      "original_title": "Totalunternehmerleistung Bau- und Planungsleistungen i. F. v. Architekten-/Ingenieurleistungen sowie Instandhaltungsleistungen",
-      "original_description": "Totalunternehmerleistung Bau- und Planungsleistungen i. F. v. Architekten-/Ingenieurleistungen sowie Instandhaltungsleistungen Staatliches Hochbauamt Heidelberg ['DE125', 'DEU', 'DE125', 'DE123', 'DEU', 'DEU']",
-      "cpv": [
-        "45000000",
-        "45200000",
-        "45000000",
-        "45200000"
-      ],
-      "project_type_predicted": "",
+      "project_type_predicted": "infrastructure",
       "trades_predicted": [],
-      "confidence": 0,
-      "quality_status": "UNKNOWN",
+      "confidence": 0.35,
+      "quality_status": "REVIEW",
       "evidence": {
-        "project_type": false,
+        "project_type": true,
         "trade": false,
         "cpv": true,
         "textual_evidence": 1,
         "source": true,
         "country": true,
-        "confidence": 0,
+        "confidence": 0.35,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Staatliches Hochbauamt Heidelberg",
-      "published": "2026-10-27+01:00",
-      "city": "Bruchsal",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "published": "2026-09-23+02:00",
+      "city": "Wesel",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/741546-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/655401-2026",
       "phase": "award",
       "smart_review": {
-        "risk": "LOW",
-        "risk_score": 0,
+        "risk": "MEDIUM",
+        "risk_score": 3,
         "reasons": [
-          "Keine offensichtliche Regel-Kollision erkannt"
+          "Projektart hat im Text keinen klaren Schlüsselwort-Beleg"
         ],
         "project_text_support": 0,
         "project_alternatives": [],
         "trade_support": {},
         "unsupported_trades": []
       },
-      "review_order": 47
+      "review_order": 25
     },
     {
-      "audit_id": 55,
-      "notice_id": "657473-2026",
-      "title": "Funkinfrastruktur Strecke 6100 von Hamburg-Rothenburg bis Berlin-Spandau",
-      "description": "Funkinfrastruktur Strecke 6100 von Hamburg-Rothenburg bis Berlin-Spandau DB Netz AG (Bukr 16) ['DE300', 'DEU', 'DEU']",
-      "original_title": "Funkinfrastruktur Strecke 6100 von Hamburg-Rothenburg bis Berlin-Spandau",
-      "original_description": "Funkinfrastruktur Strecke 6100 von Hamburg-Rothenburg bis Berlin-Spandau DB Netz AG (Bukr 16) ['DE300', 'DEU', 'DEU']",
-      "cpv": [
-        "45200000",
-        "45200000"
-      ],
-      "project_type_predicted": "",
-      "trades_predicted": [],
-      "confidence": 0,
-      "quality_status": "UNKNOWN",
-      "evidence": {
-        "project_type": false,
-        "trade": false,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "DB Netz AG (Bukr 16)",
-      "published": "2026-09-24+02:00",
-      "city": "Strecke 6100",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/657473-2026",
-      "phase": "award",
-      "smart_review": {
-        "risk": "LOW",
-        "risk_score": 0,
-        "reasons": [
-          "Keine offensichtliche Regel-Kollision erkannt"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [],
-        "trade_support": {},
-        "unsupported_trades": []
-      },
-      "review_order": 48
-    },
-    {
-      "audit_id": 56,
-      "notice_id": "688157-2026",
-      "title": "VOB, Hauptverwaltung Lüneburg, Neubau u. Modernisierung - Los Baustrom (LV 4551)",
-      "description": "VOB, Hauptverwaltung Lüneburg, Neubau u. Modernisierung - Los Baustrom (LV 4551) Handwerkskammer Braunschweig-Lüneburg-Stade ['DE935', 'DEU', 'DE935', 'DE935', 'DEU', 'DEU']",
-      "original_title": "VOB, Hauptverwaltung Lüneburg, Neubau u. Modernisierung - Los Baustrom (LV 4551)",
-      "original_description": "VOB, Hauptverwaltung Lüneburg, Neubau u. Modernisierung - Los Baustrom (LV 4551) Handwerkskammer Braunschweig-Lüneburg-Stade ['DE935', 'DEU', 'DE935', 'DE935', 'DEU', 'DEU']",
+      "audit_id": 54,
+      "notice_id": "688138-2026",
+      "title": "Neubau BW 7.01d Bauausführung",
+      "description": "Neubau BW 7.01d Bauausführung Die Autobahn GmbH des Bundes - NL Nordwest ['DE913', 'DEU', 'DE913', 'DEU']",
+      "original_title": "Neubau BW 7.01d Bauausführung",
+      "original_description": "Neubau BW 7.01d Bauausführung Die Autobahn GmbH des Bundes - NL Nordwest ['DE913', 'DEU', 'DE913', 'DEU']",
       "cpv": [
         "45000000",
         "45000000"
@@ -2587,35 +1399,38 @@
         "confidence": 0,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Handwerkskammer Braunschweig-Lüneburg-Stade",
+      "authority": "Die Autobahn GmbH des Bundes - NL Nordwest",
       "published": "2026-10-06+02:00",
-      "city": "Lüneburg",
+      "city": "A39",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/688157-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/688138-2026",
       "phase": "award",
       "smart_review": {
-        "risk": "LOW",
-        "risk_score": 0,
+        "risk": "MEDIUM",
+        "risk_score": 2,
         "reasons": [
-          "Keine offensichtliche Regel-Kollision erkannt"
+          "Text stützt alternative Projektarten: rail, road"
         ],
         "project_text_support": 0,
-        "project_alternatives": [],
+        "project_alternatives": [
+          "rail",
+          "road"
+        ],
         "trade_support": {},
         "unsupported_trades": []
       },
-      "review_order": 49
+      "review_order": 26
     },
     {
       "audit_id": 57,
-      "notice_id": "693259-2026",
-      "title": "Umbau der Emschermündung Los 3.2",
-      "description": "Umbau der Emschermündung Los 3.2 Emschergenossenschaft ['DEA1F', 'DEU', 'DEA1F', 'DEU']",
-      "original_title": "Umbau der Emschermündung Los 3.2",
-      "original_description": "Umbau der Emschermündung Los 3.2 Emschergenossenschaft ['DEA1F', 'DEU', 'DEA1F', 'DEU']",
+      "notice_id": "698329-2026",
+      "title": "Totalunternehmer Landebahn",
+      "description": "Totalunternehmer Landebahn Staatliches Bauamt Ingolstadt ['DE21J', 'DEU', 'DE21J', 'DEU']",
+      "original_title": "Totalunternehmer Landebahn",
+      "original_description": "Totalunternehmer Landebahn Staatliches Bauamt Ingolstadt ['DE21J', 'DEU', 'DE21J', 'DEU']",
       "cpv": [
-        "45240000",
-        "45240000"
+        "45000000",
+        "45000000"
       ],
       "project_type_predicted": "",
       "trades_predicted": [],
@@ -2631,80 +1446,34 @@
         "confidence": 0,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Emschergenossenschaft",
-      "published": "2026-10-08+02:00",
-      "city": "Dinslaken",
+      "authority": "Staatliches Bauamt Ingolstadt",
+      "published": "2026-10-09+02:00",
+      "city": "Manching",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/693259-2026",
-      "phase": "award",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/698329-2026",
+      "phase": "tender",
       "smart_review": {
-        "risk": "LOW",
-        "risk_score": 0,
+        "risk": "MEDIUM",
+        "risk_score": 2,
         "reasons": [
-          "Keine offensichtliche Regel-Kollision erkannt"
+          "Text stützt alternative Projektarten: rail"
         ],
         "project_text_support": 0,
-        "project_alternatives": [],
+        "project_alternatives": [
+          "rail"
+        ],
         "trade_support": {},
         "unsupported_trades": []
       },
-      "review_order": 50
-    },
-    {
-      "audit_id": 58,
-      "notice_id": "762494-2026",
-      "title": "Instandsetzung Wehr Neuwerben LOS 2: Massivbau / Wasserbau",
-      "description": "Instandsetzung Wehr Neuwerben LOS 2: Massivbau / Wasserbau Landesbetrieb für Hochwasserschutz und Wasserwirtschaft Sachsen-Anhalt ['DEE0D', 'DEU', 'DEE0D', 'DEU']",
-      "original_title": "Instandsetzung Wehr Neuwerben LOS 2: Massivbau / Wasserbau",
-      "original_description": "Instandsetzung Wehr Neuwerben LOS 2: Massivbau / Wasserbau Landesbetrieb für Hochwasserschutz und Wasserwirtschaft Sachsen-Anhalt ['DEE0D', 'DEU', 'DEE0D', 'DEU']",
-      "cpv": [
-        "45000000",
-        "45240000",
-        "45247220",
-        "45000000",
-        "45240000",
-        "45247220"
-      ],
-      "project_type_predicted": "",
-      "trades_predicted": [],
-      "confidence": 0,
-      "quality_status": "UNKNOWN",
-      "evidence": {
-        "project_type": false,
-        "trade": false,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Landesbetrieb für Hochwasserschutz und Wasserwirtschaft Sachsen-Anhalt",
-      "published": "2026-11-03+01:00",
-      "city": "",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/762494-2026",
-      "phase": "award",
-      "smart_review": {
-        "risk": "LOW",
-        "risk_score": 0,
-        "reasons": [
-          "Keine offensichtliche Regel-Kollision erkannt"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [],
-        "trade_support": {},
-        "unsupported_trades": []
-      },
-      "review_order": 51
+      "review_order": 27
     },
     {
       "audit_id": 59,
-      "notice_id": "692969-2026",
-      "title": "Baulogistikarbeiten",
-      "description": "Baulogistikarbeiten Staatliches Bauamt Freising ['DE21C', 'DEU', 'DE21C', 'DEU']",
-      "original_title": "Baulogistikarbeiten",
-      "original_description": "Baulogistikarbeiten Staatliches Bauamt Freising ['DE21C', 'DEU', 'DE21C', 'DEU']",
+      "notice_id": "697016-2026",
+      "title": "Rahmenvertrag für bis zu 50 baugleiche Rechenzentren (Technikstandort=TSO) als Generalunternehmer-Modell für die Digitale Schiene Deutschland",
+      "description": "Rahmenvertrag für bis zu 50 baugleiche Rechenzentren (Technikstandort=TSO) als Generalunternehmer-Modell für die Digitale Schiene Deutschland DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DE712', 'DEU', 'DEU']",
+      "original_title": "Rahmenvertrag für bis zu 50 baugleiche Rechenzentren (Technikstandort=TSO) als Generalunternehmer-Modell für die Digitale Schiene Deutschland",
+      "original_description": "Rahmenvertrag für bis zu 50 baugleiche Rechenzentren (Technikstandort=TSO) als Generalunternehmer-Modell für die Digitale Schiene Deutschland DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DE712', 'DEU', 'DEU']",
       "cpv": [
         "45200000",
         "45200000"
@@ -2723,85 +1492,43 @@
         "confidence": 0,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Staatliches Bauamt Freising",
-      "published": "2026-10-08+02:00",
-      "city": "Fürstenfeldbruck",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "published": "2026-10-09+02:00",
+      "city": "bundesweit",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/692969-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "LOW",
-        "risk_score": 0,
-        "reasons": [
-          "Keine offensichtliche Regel-Kollision erkannt"
-        ],
-        "project_text_support": 0,
-        "project_alternatives": [],
-        "trade_support": {},
-        "unsupported_trades": []
-      },
-      "review_order": 52
-    },
-    {
-      "audit_id": 60,
-      "notice_id": "765665-2026",
-      "title": "Funkinfrastruktur Strecke 6100 von Hamburg-Rothenburg bis Berlin-Spandau",
-      "description": "Funkinfrastruktur Strecke 6100 von Hamburg-Rothenburg bis Berlin-Spandau DB Netz AG (Bukr 16) ['DE300', 'DEU', 'DEU']",
-      "original_title": "Funkinfrastruktur Strecke 6100 von Hamburg-Rothenburg bis Berlin-Spandau",
-      "original_description": "Funkinfrastruktur Strecke 6100 von Hamburg-Rothenburg bis Berlin-Spandau DB Netz AG (Bukr 16) ['DE300', 'DEU', 'DEU']",
-      "cpv": [
-        "45200000",
-        "45200000"
-      ],
-      "project_type_predicted": "",
-      "trades_predicted": [],
-      "confidence": 0,
-      "quality_status": "UNKNOWN",
-      "evidence": {
-        "project_type": false,
-        "trade": false,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "DB Netz AG (Bukr 16)",
-      "published": "2026-11-04+01:00",
-      "city": "Strecke 6100",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/765665-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/697016-2026",
       "phase": "award",
       "smart_review": {
-        "risk": "LOW",
-        "risk_score": 0,
+        "risk": "MEDIUM",
+        "risk_score": 2,
         "reasons": [
-          "Keine offensichtliche Regel-Kollision erkannt"
+          "Text stützt alternative Projektarten: rail"
         ],
         "project_text_support": 0,
-        "project_alternatives": [],
+        "project_alternatives": [
+          "rail"
+        ],
         "trade_support": {},
         "unsupported_trades": []
       },
-      "review_order": 53
+      "review_order": 28
     },
     {
-      "audit_id": 30,
-      "notice_id": "703459-2026",
-      "title": "201 - Heizung",
-      "description": "201 - Heizung Markt Markt Indersdorf ['DE217', 'DEU', 'DE217', 'DEU']",
-      "original_title": "201 - Heizung",
-      "original_description": "201 - Heizung Markt Markt Indersdorf ['DE217', 'DEU', 'DE217', 'DEU']",
+      "audit_id": 26,
+      "notice_id": "760386-2026",
+      "title": "Adam-Kraft-Straße 2 - Starkstromanlagen",
+      "description": "Adam-Kraft-Straße 2 - Starkstromanlagen Stadt Nürnberg Hochbauamt ['DE254', 'DEU', 'DE254', 'DEU']",
+      "original_title": "Adam-Kraft-Straße 2 - Starkstromanlagen",
+      "original_description": "Adam-Kraft-Straße 2 - Starkstromanlagen Stadt Nürnberg Hochbauamt ['DE254', 'DEU', 'DE254', 'DEU']",
       "cpv": [
-        "45331000",
-        "45331000",
-        "45331000",
-        "45331000"
+        "45311000",
+        "09331200",
+        "45311000",
+        "09331200"
       ],
       "project_type_predicted": "",
       "trades_predicted": [
-        "hvac"
+        "electrical"
       ],
       "confidence": 0.35,
       "quality_status": "REVIEW",
@@ -2815,34 +1542,454 @@
         "confidence": 0.35,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Markt Markt Indersdorf",
-      "published": "2026-10-12+02:00",
-      "city": "Markt Indersdorf ",
+      "authority": "Stadt Nürnberg Hochbauamt",
+      "published": "2026-11-02+01:00",
+      "city": "Nürnberg",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/703459-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/760386-2026",
       "phase": "tender",
       "smart_review": {
-        "risk": "LOW",
-        "risk_score": 0,
+        "risk": "MEDIUM",
+        "risk_score": 2,
         "reasons": [
-          "Keine offensichtliche Regel-Kollision erkannt"
+          "Text stützt alternative Projektarten: road"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [
+          "road"
+        ],
+        "trade_support": {
+          "electrical": 1
+        },
+        "unsupported_trades": []
+      },
+      "review_order": 29
+    },
+    {
+      "audit_id": 29,
+      "notice_id": "754044-2026",
+      "title": "Erweiterung IGS Schaumburg - Gerüstbauarbeiten",
+      "description": "Erweiterung IGS Schaumburg - Gerüstbauarbeiten Landkreis Schaumburg - Vergabestelle ['DE928', 'DEU', 'DE928', 'DEU']",
+      "original_title": "Erweiterung IGS Schaumburg - Gerüstbauarbeiten",
+      "original_description": "Erweiterung IGS Schaumburg - Gerüstbauarbeiten Landkreis Schaumburg - Vergabestelle ['DE928', 'DEU', 'DE928', 'DEU']",
+      "cpv": [
+        "45262100",
+        "45262110",
+        "45262120",
+        "45262100",
+        "45262110",
+        "45262120"
+      ],
+      "project_type_predicted": "",
+      "trades_predicted": [
+        "structural"
+      ],
+      "confidence": 0.35,
+      "quality_status": "REVIEW",
+      "evidence": {
+        "project_type": false,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.35,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Landkreis Schaumburg - Vergabestelle",
+      "published": "2026-10-30+01:00",
+      "city": "Stadthagen",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/754044-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Gewerke ohne direkten Textbeleg: structural"
         ],
         "project_text_support": 0,
         "project_alternatives": [],
         "trade_support": {
-          "hvac": 1
+          "structural": 0
+        },
+        "unsupported_trades": [
+          "structural"
+        ]
+      },
+      "review_order": 30
+    },
+    {
+      "audit_id": 33,
+      "notice_id": "778631-2026",
+      "title": "MPI für Meteorologie in Hamburg - Umbau: Baustelleneinrichtung",
+      "description": "MPI für Meteorologie in Hamburg - Umbau: Baustelleneinrichtung Max-Planck-Gesellschaft Abt.III ['DE600', 'DEU', 'DE600', 'DEU']",
+      "original_title": "MPI für Meteorologie in Hamburg - Umbau: Baustelleneinrichtung",
+      "original_description": "MPI für Meteorologie in Hamburg - Umbau: Baustelleneinrichtung Max-Planck-Gesellschaft Abt.III ['DE600', 'DEU', 'DE600', 'DEU']",
+      "cpv": [
+        "45113000",
+        "45113000"
+      ],
+      "project_type_predicted": "",
+      "trades_predicted": [
+        "demolition"
+      ],
+      "confidence": 0.35,
+      "quality_status": "REVIEW",
+      "evidence": {
+        "project_type": false,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.35,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Max-Planck-Gesellschaft Abt.III",
+      "published": "2026-11-09+01:00",
+      "city": "Hamburg, Max-Planck-Institut für Meteorologie",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/778631-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Gewerke ohne direkten Textbeleg: demolition"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
+        "trade_support": {
+          "demolition": 0
+        },
+        "unsupported_trades": [
+          "demolition"
+        ]
+      },
+      "review_order": 31
+    },
+    {
+      "audit_id": 34,
+      "notice_id": "717712-2026",
+      "title": "SEZ_Kunstfels D3",
+      "description": "SEZ_Kunstfels D3 Zoologischer Garten Halle GmbH ['DEE02', 'DEU', 'DEE02', 'DEU']",
+      "original_title": "SEZ_Kunstfels D3",
+      "original_description": "SEZ_Kunstfels D3 Zoologischer Garten Halle GmbH ['DEE02', 'DEU', 'DEE02', 'DEU']",
+      "cpv": [
+        "45262000",
+        "45262310",
+        "45262000",
+        "45262310"
+      ],
+      "project_type_predicted": "",
+      "trades_predicted": [
+        "structural"
+      ],
+      "confidence": 0.35,
+      "quality_status": "REVIEW",
+      "evidence": {
+        "project_type": false,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.35,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Zoologischer Garten Halle GmbH",
+      "published": "2026-10-16+02:00",
+      "city": "Halle (Saale)",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/717712-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Gewerke ohne direkten Textbeleg: structural"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
+        "trade_support": {
+          "structural": 0
+        },
+        "unsupported_trades": [
+          "structural"
+        ]
+      },
+      "review_order": 32
+    },
+    {
+      "audit_id": 35,
+      "notice_id": "723573-2026",
+      "title": "Dachdeckungsarbeiten",
+      "description": "Dachdeckungsarbeiten Landeshauptstadt Hannover - Fachbereich Gebäudemanagement ['DE929', 'DEU', 'DE929', 'DEU']",
+      "original_title": "Dachdeckungsarbeiten",
+      "original_description": "Dachdeckungsarbeiten Landeshauptstadt Hannover - Fachbereich Gebäudemanagement ['DE929', 'DEU', 'DE929', 'DEU']",
+      "cpv": [
+        "45261210",
+        "45261300",
+        "45112713",
+        "45261210",
+        "45261300",
+        "45112713"
+      ],
+      "project_type_predicted": "",
+      "trades_predicted": [
+        "roof",
+        "earthworks"
+      ],
+      "confidence": 0.35,
+      "quality_status": "REVIEW",
+      "evidence": {
+        "project_type": false,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.35,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Landeshauptstadt Hannover - Fachbereich Gebäudemanagement",
+      "published": "2026-10-20+02:00",
+      "city": "Hannover",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/723573-2026",
+      "phase": "award",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Gewerke ohne direkten Textbeleg: earthworks"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
+        "trade_support": {
+          "roof": 1,
+          "earthworks": 0
+        },
+        "unsupported_trades": [
+          "earthworks"
+        ]
+      },
+      "review_order": 33
+    },
+    {
+      "audit_id": 36,
+      "notice_id": "691522-2026",
+      "title": "Metallbauarbeiten",
+      "description": "Metallbauarbeiten Stadt Emsdetten ['DEA37', 'DEU', 'DEA37', 'DEU']",
+      "original_title": "Metallbauarbeiten",
+      "original_description": "Metallbauarbeiten Stadt Emsdetten ['DEA37', 'DEU', 'DEA37', 'DEU']",
+      "cpv": [
+        "45262670",
+        "45262670"
+      ],
+      "project_type_predicted": "",
+      "trades_predicted": [
+        "structural"
+      ],
+      "confidence": 0.35,
+      "quality_status": "REVIEW",
+      "evidence": {
+        "project_type": false,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.35,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Stadt Emsdetten",
+      "published": "2026-10-07+02:00",
+      "city": "Emsdetten",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/691522-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Gewerke ohne direkten Textbeleg: structural"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
+        "trade_support": {
+          "structural": 0
+        },
+        "unsupported_trades": [
+          "structural"
+        ]
+      },
+      "review_order": 34
+    },
+    {
+      "audit_id": 43,
+      "notice_id": "669281-2026",
+      "title": "Erdarbeiten - Baugrube",
+      "description": "Erdarbeiten - Baugrube Städtische Klinikum \"St. Georg\" Leipzig ['DED51', 'DEU', 'DED51', 'DEU']",
+      "original_title": "Erdarbeiten - Baugrube",
+      "original_description": "Erdarbeiten - Baugrube Städtische Klinikum \"St. Georg\" Leipzig ['DED51', 'DEU', 'DED51', 'DEU']",
+      "cpv": [
+        "45112000",
+        "45112200",
+        "45000000",
+        "45112000",
+        "45112200",
+        "45000000"
+      ],
+      "project_type_predicted": "",
+      "trades_predicted": [
+        "earthworks"
+      ],
+      "confidence": 0.35,
+      "quality_status": "REVIEW",
+      "evidence": {
+        "project_type": false,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.35,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Städtische Klinikum \"St. Georg\" Leipzig",
+      "published": "2026-09-29+02:00",
+      "city": "Leipzig",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/669281-2026",
+      "phase": "award",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Text stützt alternative Projektarten: hospital"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [
+          "hospital"
+        ],
+        "trade_support": {
+          "earthworks": 1
         },
         "unsupported_trades": []
       },
-      "review_order": 54
+      "review_order": 35
     },
     {
-      "audit_id": 31,
-      "notice_id": "759377-2026",
-      "title": "WKSP_ESTW Rüsselsheim, Kabeltiefbau",
-      "description": "WKSP_ESTW Rüsselsheim, Kabeltiefbau DB Netz AG (Bukr 16) ['DE717', 'DEU', 'DE717', 'DEU']",
-      "original_title": "WKSP_ESTW Rüsselsheim, Kabeltiefbau",
-      "original_description": "WKSP_ESTW Rüsselsheim, Kabeltiefbau DB Netz AG (Bukr 16) ['DE717', 'DEU', 'DE717', 'DEU']",
+      "audit_id": 45,
+      "notice_id": "654072-2026",
+      "title": "Tischler-Einbaumöbel",
+      "description": "Tischler-Einbaumöbel LRA Erlangen-Höchstadt ['DE257', 'DEU', 'DE257', 'DEU']",
+      "original_title": "Tischler-Einbaumöbel",
+      "original_description": "Tischler-Einbaumöbel LRA Erlangen-Höchstadt ['DE257', 'DEU', 'DE257', 'DEU']",
+      "cpv": [
+        "45421153",
+        "45421153"
+      ],
+      "project_type_predicted": "",
+      "trades_predicted": [
+        "windows_doors"
+      ],
+      "confidence": 0.35,
+      "quality_status": "REVIEW",
+      "evidence": {
+        "project_type": false,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.35,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "LRA Erlangen-Höchstadt",
+      "published": "2026-09-23+02:00",
+      "city": "Spardorf",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/654072-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Gewerke ohne direkten Textbeleg: windows_doors"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
+        "trade_support": {
+          "windows_doors": 0
+        },
+        "unsupported_trades": [
+          "windows_doors"
+        ]
+      },
+      "review_order": 36
+    },
+    {
+      "audit_id": 49,
+      "notice_id": "716992-2026",
+      "title": "Gemeinde Nufringen - Investorenwettbewerb über die Errichtung von Doppelhäusern",
+      "description": "Gemeinde Nufringen - Investorenwettbewerb über die Errichtung von Doppelhäusern Gemeinde Nufringen ['DE112', 'DEU', 'DE112', 'DEU']",
+      "original_title": "Gemeinde Nufringen - Investorenwettbewerb über die Errichtung von Doppelhäusern",
+      "original_description": "Gemeinde Nufringen - Investorenwettbewerb über die Errichtung von Doppelhäusern Gemeinde Nufringen ['DE112', 'DEU', 'DE112', 'DEU']",
+      "cpv": [
+        "45000000",
+        "71000000",
+        "45000000",
+        "71000000"
+      ],
+      "project_type_predicted": "",
+      "trades_predicted": [
+        "windows_doors"
+      ],
+      "confidence": 0.35,
+      "quality_status": "REVIEW",
+      "evidence": {
+        "project_type": false,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.35,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Gemeinde Nufringen",
+      "published": "2026-10-16+02:00",
+      "city": "Nufringen",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/716992-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Gewerke ohne direkten Textbeleg: windows_doors"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
+        "trade_support": {
+          "windows_doors": 0
+        },
+        "unsupported_trades": [
+          "windows_doors"
+        ]
+      },
+      "review_order": 37
+    },
+    {
+      "audit_id": 50,
+      "notice_id": "794166-2026",
+      "title": "Nordmainische S-Bahn, Kabeltiefbau Strecke 3660 Ffm-Ost bis Maintal-Ost (Los 1 und 2)",
+      "description": "Nordmainische S-Bahn, Kabeltiefbau Strecke 3660 Ffm-Ost bis Maintal-Ost (Los 1 und 2) DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DE712', 'DEU', 'DE712', 'DEU']",
+      "original_title": "Nordmainische S-Bahn, Kabeltiefbau Strecke 3660 Ffm-Ost bis Maintal-Ost (Los 1 und 2)",
+      "original_description": "Nordmainische S-Bahn, Kabeltiefbau Strecke 3660 Ffm-Ost bis Maintal-Ost (Los 1 und 2) DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DE712', 'DEU', 'DE712', 'DEU']",
       "cpv": [
         "45314300",
         "45314300"
@@ -2864,11 +2011,934 @@
         "confidence": 0.35,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "DB Netz AG (Bukr 16)",
-      "published": "2026-11-02+01:00",
-      "city": "Rüsselsheim",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "published": "2026-11-16+01:00",
+      "city": "Frankfurt am Main",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/759377-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/794166-2026",
+      "phase": "award",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Text stützt alternative Projektarten: rail"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [
+          "rail"
+        ],
+        "trade_support": {
+          "earthworks": 1,
+          "electrical": 1
+        },
+        "unsupported_trades": []
+      },
+      "review_order": 38
+    },
+    {
+      "audit_id": 7,
+      "notice_id": "776585-2026",
+      "title": "Umbau und Erweiterung der Nationalparkschule Grundschule \"Ostseeblick\" Schulstraße 5 18545 Sassnitz Los 24 Fliesen",
+      "description": "Umbau und Erweiterung der Nationalparkschule Grundschule \"Ostseeblick\" Schulstraße 5 18545 Sassnitz Los 24 Fliesen BIG Städtebau GmbH ['DE80L', 'DEU', 'DE80L', 'DEU']",
+      "original_title": "Umbau und Erweiterung der Nationalparkschule Grundschule \"Ostseeblick\" Schulstraße 5 18545 Sassnitz Los 24 Fliesen",
+      "original_description": "Umbau und Erweiterung der Nationalparkschule Grundschule \"Ostseeblick\" Schulstraße 5 18545 Sassnitz Los 24 Fliesen BIG Städtebau GmbH ['DE80L', 'DEU', 'DE80L', 'DEU']",
+      "cpv": [
+        "45210000",
+        "45210000"
+      ],
+      "project_type_predicted": "school",
+      "trades_predicted": [
+        "flooring"
+      ],
+      "confidence": 0.75,
+      "quality_status": "CONFIDENT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.75,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "BIG Städtebau GmbH",
+      "published": "2026-11-09+01:00",
+      "city": "Sassnitz",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/776585-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Gewerke ohne direkten Textbeleg: flooring"
+        ],
+        "project_text_support": 2,
+        "project_alternatives": [],
+        "trade_support": {
+          "flooring": 0
+        },
+        "unsupported_trades": [
+          "flooring"
+        ]
+      },
+      "review_order": 39
+    },
+    {
+      "audit_id": 8,
+      "notice_id": "766019-2026",
+      "title": "Ernst-Moritz-Arndt-Gymnasium, Ersatzneubau - Innenausbau Decken Saal, Foyer",
+      "description": "Ernst-Moritz-Arndt-Gymnasium, Ersatzneubau - Innenausbau Decken Saal, Foyer Bundesstadt Bonn - Referat Vergabedienste ['DEA22', 'DEU', 'DEA22', 'DEA22', 'DEU', 'DEU']",
+      "original_title": "Bundesstadt Bonn: Ernst-Moritz-Arndt-Gymnasium, Ersatzneubau - Innenausbau Decken Saal, Foyer",
+      "original_description": "Bundesstadt Bonn: Ernst-Moritz-Arndt-Gymnasium, Ersatzneubau - Innenausbau Decken Saal, Foyer Bundesstadt Bonn - Referat Vergabedienste ['DEA22', 'DEU', 'DEA22', 'DEA22', 'DEU', 'DEU']",
+      "cpv": [
+        "45262670",
+        "45422100",
+        "45262670",
+        "45262670",
+        "45422100",
+        "45422100"
+      ],
+      "project_type_predicted": "school",
+      "trades_predicted": [
+        "structural",
+        "windows_doors"
+      ],
+      "confidence": 0.75,
+      "quality_status": "CONFIDENT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.75,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Bundesstadt Bonn - Referat Vergabedienste",
+      "published": "2026-11-04+01:00",
+      "city": "Bonn",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/766019-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Gewerke ohne direkten Textbeleg: structural, windows_doors"
+        ],
+        "project_text_support": 1,
+        "project_alternatives": [],
+        "trade_support": {
+          "structural": 0,
+          "windows_doors": 0
+        },
+        "unsupported_trades": [
+          "structural",
+          "windows_doors"
+        ]
+      },
+      "review_order": 40
+    },
+    {
+      "audit_id": 9,
+      "notice_id": "662619-2026",
+      "title": "Johannes-Selenka-Schule - Allgemeine Sanierung - Rohbauarbeiten_MS",
+      "description": "Johannes-Selenka-Schule - Allgemeine Sanierung - Rohbauarbeiten_MS Stadt Braunschweig Fachbereich Bauordnung und Zentrale Vergabestelle ['DE911', 'DEU', 'DE911', 'DEU']",
+      "original_title": "Johannes-Selenka-Schule - Allgemeine Sanierung - Rohbauarbeiten_MS",
+      "original_description": "Johannes-Selenka-Schule - Allgemeine Sanierung - Rohbauarbeiten_MS Stadt Braunschweig Fachbereich Bauordnung und Zentrale Vergabestelle ['DE911', 'DEU', 'DE911', 'DEU']",
+      "cpv": [
+        "45223200",
+        "45223500",
+        "45223200"
+      ],
+      "project_type_predicted": "school",
+      "trades_predicted": [
+        "structural"
+      ],
+      "confidence": 0.75,
+      "quality_status": "CONFIDENT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.75,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Stadt Braunschweig Fachbereich Bauordnung und Zentrale Vergabestelle",
+      "published": "2026-09-25+02:00",
+      "city": "",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/662619-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Gewerke ohne direkten Textbeleg: structural"
+        ],
+        "project_text_support": 1,
+        "project_alternatives": [],
+        "trade_support": {
+          "structural": 0
+        },
+        "unsupported_trades": [
+          "structural"
+        ]
+      },
+      "review_order": 41
+    },
+    {
+      "audit_id": 12,
+      "notice_id": "779474-2026",
+      "title": "Marienschule, Lehrschwimmbecken, Lastenaufzug",
+      "description": "Marienschule, Lehrschwimmbecken, Lastenaufzug Stadt Kleve ['DEA1B', 'DEU', 'DEA1B', 'DEU']",
+      "original_title": "Marienschule, Lehrschwimmbecken, Lastenaufzug",
+      "original_description": "Marienschule, Lehrschwimmbecken, Lastenaufzug Stadt Kleve ['DEA1B', 'DEU', 'DEA1B', 'DEU']",
+      "cpv": [
+        "45313100",
+        "45313100"
+      ],
+      "project_type_predicted": "school",
+      "trades_predicted": [
+        "elevator",
+        "electrical"
+      ],
+      "confidence": 0.75,
+      "quality_status": "CONFIDENT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.75,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Stadt Kleve",
+      "published": "2026-11-10+01:00",
+      "city": "Kleve",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/779474-2026",
+      "phase": "award",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Gewerke ohne direkten Textbeleg: elevator, electrical"
+        ],
+        "project_text_support": 1,
+        "project_alternatives": [],
+        "trade_support": {
+          "elevator": 0,
+          "electrical": 0
+        },
+        "unsupported_trades": [
+          "elevator",
+          "electrical"
+        ]
+      },
+      "review_order": 42
+    },
+    {
+      "audit_id": 14,
+      "notice_id": "799230-2026",
+      "title": "Rohbauarbeiten - Umbau u. Sanierung Bestand TP2 - Gesamtschule Münster-West",
+      "description": "Rohbauarbeiten - Umbau u. Sanierung Bestand TP2 - Gesamtschule Münster-West Stadt Münster - Zentrale Rechtsdienstleistungen und Vergabemanagement ['DEA33', 'DEU', 'DEA33', 'DEU']",
+      "original_title": "Rohbauarbeiten - Umbau u. Sanierung Bestand TP2 - Gesamtschule Münster-West",
+      "original_description": "Rohbauarbeiten - Umbau u. Sanierung Bestand TP2 - Gesamtschule Münster-West Stadt Münster - Zentrale Rechtsdienstleistungen und Vergabemanagement ['DEA33', 'DEU', 'DEA33', 'DEU']",
+      "cpv": [
+        "45000000",
+        "45112000",
+        "45223220",
+        "45232450",
+        "45262210",
+        "45262310",
+        "45262330",
+        "45262520",
+        "45320000",
+        "45000000",
+        "45112000",
+        "45223220",
+        "45232450",
+        "45262210",
+        "45262310",
+        "45262330",
+        "45262520",
+        "45320000"
+      ],
+      "project_type_predicted": "school",
+      "trades_predicted": [
+        "structural",
+        "earthworks",
+        "insulation"
+      ],
+      "confidence": 0.85,
+      "quality_status": "CONFIDENT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.85,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Stadt Münster - Zentrale Rechtsdienstleistungen und Vergabemanagement",
+      "published": "2026-11-17+01:00",
+      "city": "Münster",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/799230-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Gewerke ohne direkten Textbeleg: structural, earthworks, insulation"
+        ],
+        "project_text_support": 1,
+        "project_alternatives": [],
+        "trade_support": {
+          "structural": 0,
+          "earthworks": 0,
+          "insulation": 0
+        },
+        "unsupported_trades": [
+          "structural",
+          "earthworks",
+          "insulation"
+        ]
+      },
+      "review_order": 43
+    },
+    {
+      "audit_id": 16,
+      "notice_id": "717622-2026",
+      "title": "Sanierung und Erweiterung Pfingstweideschule Kemnat - Bodenbelagsarbeiten",
+      "description": "Sanierung und Erweiterung Pfingstweideschule Kemnat - Bodenbelagsarbeiten Stadt Ostfildern, Fachbereich 4, Gebäudemanagement ['DE113', 'DEU', 'DE113', 'DEU']",
+      "original_title": "Sanierung und Erweiterung Pfingstweideschule Kemnat - Bodenbelagsarbeiten",
+      "original_description": "Sanierung und Erweiterung Pfingstweideschule Kemnat - Bodenbelagsarbeiten Stadt Ostfildern, Fachbereich 4, Gebäudemanagement ['DE113', 'DEU', 'DE113', 'DEU']",
+      "cpv": [
+        "45214210",
+        "45214210"
+      ],
+      "project_type_predicted": "school",
+      "trades_predicted": [
+        "flooring"
+      ],
+      "confidence": 0.75,
+      "quality_status": "CONFIDENT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.75,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Stadt Ostfildern, Fachbereich 4, Gebäudemanagement",
+      "published": "2026-10-16+02:00",
+      "city": "Ostfildern",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/717622-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Gewerke ohne direkten Textbeleg: flooring"
+        ],
+        "project_text_support": 1,
+        "project_alternatives": [],
+        "trade_support": {
+          "flooring": 0
+        },
+        "unsupported_trades": [
+          "flooring"
+        ]
+      },
+      "review_order": 44
+    },
+    {
+      "audit_id": 19,
+      "notice_id": "667797-2026",
+      "title": "Neubau Feuerwehrhaus und Bauhof Heitersheim - Metallbau- und Verglasungsarbeiten",
+      "description": "Neubau Feuerwehrhaus und Bauhof Heitersheim - Metallbau- und Verglasungsarbeiten Stadt Heitersheim ['DE132', 'DEU', 'DE132', 'DEU']",
+      "original_title": "Neubau Feuerwehrhaus und Bauhof Heitersheim - Metallbau- und Verglasungsarbeiten",
+      "original_description": "Neubau Feuerwehrhaus und Bauhof Heitersheim - Metallbau- und Verglasungsarbeiten Stadt Heitersheim ['DE132', 'DEU', 'DE132', 'DEU']",
+      "cpv": [
+        "45262670",
+        "45262670"
+      ],
+      "project_type_predicted": "fire_station",
+      "trades_predicted": [
+        "structural"
+      ],
+      "confidence": 0.75,
+      "quality_status": "CONFIDENT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.75,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Stadt Heitersheim",
+      "published": "2026-09-29+02:00",
+      "city": "Heitersheim",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/667797-2026",
+      "phase": "award",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Gewerke ohne direkten Textbeleg: structural"
+        ],
+        "project_text_support": 1,
+        "project_alternatives": [],
+        "trade_support": {
+          "structural": 0
+        },
+        "unsupported_trades": [
+          "structural"
+        ]
+      },
+      "review_order": 45
+    },
+    {
+      "audit_id": 22,
+      "notice_id": "700661-2026",
+      "title": "Neubau einer zweizügigen Grundschule mit Hort und Einfeldsporthalle Los100 Außenanlagen",
+      "description": "Neubau einer zweizügigen Grundschule mit Hort und Einfeldsporthalle Los100 Außenanlagen Gemeinde Neukirchen im Erzgebirge ['DED42', 'DEU', 'DED42', 'DEU']",
+      "original_title": "Neubau einer zweizügigen Grundschule mit Hort und Einfeldsporthalle Los100 Außenanlagen",
+      "original_description": "Neubau einer zweizügigen Grundschule mit Hort und Einfeldsporthalle Los100 Außenanlagen Gemeinde Neukirchen im Erzgebirge ['DED42', 'DEU', 'DED42', 'DEU']",
+      "cpv": [
+        "45214210",
+        "45112710",
+        "45214210"
+      ],
+      "project_type_predicted": "school",
+      "trades_predicted": [
+        "landscaping",
+        "earthworks"
+      ],
+      "confidence": 0.75,
+      "quality_status": "CONFIDENT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.75,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Gemeinde Neukirchen im Erzgebirge",
+      "published": "2026-10-12+02:00",
+      "city": "Neukirchen",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/700661-2026",
+      "phase": "award",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Gewerke ohne direkten Textbeleg: landscaping, earthworks"
+        ],
+        "project_text_support": 2,
+        "project_alternatives": [],
+        "trade_support": {
+          "landscaping": 0,
+          "earthworks": 0
+        },
+        "unsupported_trades": [
+          "landscaping",
+          "earthworks"
+        ]
+      },
+      "review_order": 46
+    },
+    {
+      "audit_id": 23,
+      "notice_id": "753853-2026",
+      "title": "Neubau einer fünfzügigen Grundschule mit Zweifeldsporthalle in 67574 Osthofen - Garten- und Landschaftsbauarbeiten",
+      "description": "Neubau einer fünfzügigen Grundschule mit Zweifeldsporthalle in 67574 Osthofen - Garten- und Landschaftsbauarbeiten Verbandsgemeindeverwaltung Wonnegau ['DEB3B', 'DEU', 'DEB3B', 'DEU']",
+      "original_title": "Neubau einer fünfzügigen Grundschule mit Zweifeldsporthalle in 67574 Osthofen - Garten- und Landschaftsbauarbeiten",
+      "original_description": "Neubau einer fünfzügigen Grundschule mit Zweifeldsporthalle in 67574 Osthofen - Garten- und Landschaftsbauarbeiten Verbandsgemeindeverwaltung Wonnegau ['DEB3B', 'DEU', 'DEB3B', 'DEU']",
+      "cpv": [
+        "45214200",
+        "45112712",
+        "45232451",
+        "45214200",
+        "45112712",
+        "45232451"
+      ],
+      "project_type_predicted": "school",
+      "trades_predicted": [
+        "landscaping",
+        "earthworks"
+      ],
+      "confidence": 0.75,
+      "quality_status": "CONFIDENT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.75,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Verbandsgemeindeverwaltung Wonnegau",
+      "published": "2026-10-30+01:00",
+      "city": "Osthofen",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/753853-2026",
+      "phase": "award",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Gewerke ohne direkten Textbeleg: landscaping, earthworks"
+        ],
+        "project_text_support": 2,
+        "project_alternatives": [],
+        "trade_support": {
+          "landscaping": 0,
+          "earthworks": 0
+        },
+        "unsupported_trades": [
+          "landscaping",
+          "earthworks"
+        ]
+      },
+      "review_order": 47
+    },
+    {
+      "audit_id": 25,
+      "notice_id": "672456-2026",
+      "title": "Neubau Gesamtschule Nord+ in Kassel - KG 480 Gebäude- und Anlagenautomation",
+      "description": "Neubau Gesamtschule Nord+ in Kassel - KG 480 Gebäude- und Anlagenautomation Stadt Kassel Immobilien GmbH & Co. KG ['DE731', 'DEU', 'DE731', 'DEU']",
+      "original_title": "Neubau Gesamtschule Nord+ in Kassel - KG 480 Gebäude- und Anlagenautomation",
+      "original_description": "Neubau Gesamtschule Nord+ in Kassel - KG 480 Gebäude- und Anlagenautomation Stadt Kassel Immobilien GmbH & Co. KG ['DE731', 'DEU', 'DE731', 'DEU']",
+      "cpv": [
+        "45315700",
+        "45315700"
+      ],
+      "project_type_predicted": "school",
+      "trades_predicted": [
+        "electrical"
+      ],
+      "confidence": 0.75,
+      "quality_status": "CONFIDENT",
+      "evidence": {
+        "project_type": true,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.75,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Stadt Kassel Immobilien GmbH & Co. KG",
+      "published": "2026-09-30+02:00",
+      "city": "",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/672456-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "MEDIUM",
+        "risk_score": 2,
+        "reasons": [
+          "Gewerke ohne direkten Textbeleg: electrical"
+        ],
+        "project_text_support": 1,
+        "project_alternatives": [],
+        "trade_support": {
+          "electrical": 0
+        },
+        "unsupported_trades": [
+          "electrical"
+        ]
+      },
+      "review_order": 48
+    },
+    {
+      "audit_id": 51,
+      "notice_id": "789275-2026",
+      "title": "Krananlage 70-00002-2780-410 - PR1316824 -2780-B",
+      "description": "Krananlage 70-00002-2780-410 - PR1316824 -2780-B Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. - Einkauf B12 - Vergabestelle Bau ['DE803', 'DEU', 'DE803', 'DEU']",
+      "original_title": "Krananlage 70-00002-2780-410 - PR1316824 -2780-B",
+      "original_description": "Krananlage 70-00002-2780-410 - PR1316824 -2780-B Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. - Einkauf B12 - Vergabestelle Bau ['DE803', 'DEU', 'DE803', 'DEU']",
+      "cpv": [
+        "45510000",
+        "45510000"
+      ],
+      "project_type_predicted": "",
+      "trades_predicted": [],
+      "confidence": 0,
+      "quality_status": "UNKNOWN",
+      "evidence": {
+        "project_type": false,
+        "trade": false,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. - Einkauf B12 - Vergabestelle Bau",
+      "published": "2026-11-12+01:00",
+      "city": "Rostock",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/789275-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "LOW",
+        "risk_score": 0,
+        "reasons": [
+          "Keine offensichtliche Regel-Kollision erkannt"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
+        "trade_support": {},
+        "unsupported_trades": []
+      },
+      "review_order": 49
+    },
+    {
+      "audit_id": 52,
+      "notice_id": "659010-2026",
+      "title": "Bauhauptleistung Erneuerung EÜ Hausbend Strecke 2505 km 1,473",
+      "description": "Bauhauptleistung Erneuerung EÜ Hausbend Strecke 2505 km 1,473 DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DEA14', 'DEU', 'DEA14', 'DEU']",
+      "original_title": "Bauhauptleistung Erneuerung EÜ Hausbend Strecke 2505 km 1,473",
+      "original_description": "Bauhauptleistung Erneuerung EÜ Hausbend Strecke 2505 km 1,473 DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DEA14', 'DEU', 'DEA14', 'DEU']",
+      "cpv": [
+        "45000000",
+        "45000000"
+      ],
+      "project_type_predicted": "",
+      "trades_predicted": [],
+      "confidence": 0,
+      "quality_status": "UNKNOWN",
+      "evidence": {
+        "project_type": false,
+        "trade": false,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "published": "2026-09-24+02:00",
+      "city": "Krefeld",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/659010-2026",
+      "phase": "award",
+      "smart_review": {
+        "risk": "LOW",
+        "risk_score": 0,
+        "reasons": [
+          "Keine offensichtliche Regel-Kollision erkannt"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
+        "trade_support": {},
+        "unsupported_trades": []
+      },
+      "review_order": 50
+    },
+    {
+      "audit_id": 53,
+      "notice_id": "753142-2026",
+      "title": "Planung und Errichtung Neubau des Instituts für Pharmazeutische und Biomedizinische Wissenschaften durch einen Generalunternehmer",
+      "description": "Planung und Errichtung Neubau des Instituts für Pharmazeutische und Biomedizinische Wissenschaften durch einen Generalunternehmer Johannes Gutenberg-Universität Mainz ['DEB35', 'DEU', 'DEB35', 'DEU']",
+      "original_title": "Planung und Errichtung Neubau des Instituts für Pharmazeutische und Biomedizinische Wissenschaften durch einen Generalunternehmer",
+      "original_description": "Planung und Errichtung Neubau des Instituts für Pharmazeutische und Biomedizinische Wissenschaften durch einen Generalunternehmer Johannes Gutenberg-Universität Mainz ['DEB35', 'DEU', 'DEB35', 'DEU']",
+      "cpv": [
+        "45000000",
+        "45200000",
+        "71320000",
+        "45000000",
+        "45200000",
+        "71320000"
+      ],
+      "project_type_predicted": "",
+      "trades_predicted": [],
+      "confidence": 0,
+      "quality_status": "UNKNOWN",
+      "evidence": {
+        "project_type": false,
+        "trade": false,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Johannes Gutenberg-Universität Mainz",
+      "published": "2026-10-30+01:00",
+      "city": "Mainz",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/753142-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "LOW",
+        "risk_score": 0,
+        "reasons": [
+          "Keine offensichtliche Regel-Kollision erkannt"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
+        "trade_support": {},
+        "unsupported_trades": []
+      },
+      "review_order": 51
+    },
+    {
+      "audit_id": 55,
+      "notice_id": "703456-2026",
+      "title": "Alpha Ventus Decommissioning - WTG scope",
+      "description": "Alpha Ventus Decommissioning - WTG scope Vattenfall ['DE943', 'DEU', 'DE943', 'DEU']",
+      "original_title": "Alpha Ventus Decommissioning - WTG scope",
+      "original_description": "Alpha Ventus Decommissioning - WTG scope Vattenfall ['DE943', 'DEU', 'DE943', 'DEU']",
+      "cpv": [
+        "98391000",
+        "31121320",
+        "31121330",
+        "45244100",
+        "60651100",
+        "76521000",
+        "76522000",
+        "98391000",
+        "31121320",
+        "31121330",
+        "45244100",
+        "60651100",
+        "76521000",
+        "76522000"
+      ],
+      "project_type_predicted": "",
+      "trades_predicted": [],
+      "confidence": 0,
+      "quality_status": "UNKNOWN",
+      "evidence": {
+        "project_type": false,
+        "trade": false,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Vattenfall",
+      "published": "2026-10-12+02:00",
+      "city": "",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/703456-2026",
+      "phase": "award",
+      "smart_review": {
+        "risk": "LOW",
+        "risk_score": 0,
+        "reasons": [
+          "Keine offensichtliche Regel-Kollision erkannt"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
+        "trade_support": {},
+        "unsupported_trades": []
+      },
+      "review_order": 52
+    },
+    {
+      "audit_id": 56,
+      "notice_id": "651306-2026",
+      "title": "Sanierung des westlichen Deckwerkes Leyhörn",
+      "description": "Sanierung des westlichen Deckwerkes Leyhörn Deichacht Krummhörn ['DE947', 'DEU', 'DE947', 'DEU']",
+      "original_title": "Sanierung des westlichen Deckwerkes Leyhörn",
+      "original_description": "Sanierung des westlichen Deckwerkes Leyhörn Deichacht Krummhörn ['DE947', 'DEU', 'DE947', 'DEU']",
+      "cpv": [
+        "45243300",
+        "45243300"
+      ],
+      "project_type_predicted": "",
+      "trades_predicted": [],
+      "confidence": 0,
+      "quality_status": "UNKNOWN",
+      "evidence": {
+        "project_type": false,
+        "trade": false,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Deichacht Krummhörn",
+      "published": "2026-09-22+02:00",
+      "city": "Krummhörn",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/651306-2026",
+      "phase": "award",
+      "smart_review": {
+        "risk": "LOW",
+        "risk_score": 0,
+        "reasons": [
+          "Keine offensichtliche Regel-Kollision erkannt"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
+        "trade_support": {},
+        "unsupported_trades": []
+      },
+      "review_order": 53
+    },
+    {
+      "audit_id": 58,
+      "notice_id": "765181-2026",
+      "title": "Funkinfrastruktur Strecke 6100 von Hamburg-Rothenburg bis Berlin-Spandau",
+      "description": "Funkinfrastruktur Strecke 6100 von Hamburg-Rothenburg bis Berlin-Spandau DB Netz AG (Bukr 16) ['DE300', 'DEU', 'DEU']",
+      "original_title": "Funkinfrastruktur Strecke 6100 von Hamburg-Rothenburg bis Berlin-Spandau",
+      "original_description": "Funkinfrastruktur Strecke 6100 von Hamburg-Rothenburg bis Berlin-Spandau DB Netz AG (Bukr 16) ['DE300', 'DEU', 'DEU']",
+      "cpv": [
+        "45200000",
+        "45200000"
+      ],
+      "project_type_predicted": "",
+      "trades_predicted": [],
+      "confidence": 0,
+      "quality_status": "UNKNOWN",
+      "evidence": {
+        "project_type": false,
+        "trade": false,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "DB Netz AG (Bukr 16)",
+      "published": "2026-11-04+01:00",
+      "city": "Strecke 6100",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/765181-2026",
+      "phase": "award",
+      "smart_review": {
+        "risk": "LOW",
+        "risk_score": 0,
+        "reasons": [
+          "Keine offensichtliche Regel-Kollision erkannt"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
+        "trade_support": {},
+        "unsupported_trades": []
+      },
+      "review_order": 54
+    },
+    {
+      "audit_id": 60,
+      "notice_id": "768799-2026",
+      "title": "70423 Wärmeversorgungsanl. - Zentrale Anlagentechnik, Reha-Zentrum Ückeritz",
+      "description": "70423 Wärmeversorgungsanl. - Zentrale Anlagentechnik, Reha-Zentrum Ückeritz DRV Bund Einkaufsmanagement Bauleistungen ['DE80N', 'DEU', 'DE80N', 'DEU']",
+      "original_title": "70423 Wärmeversorgungsanl. - Zentrale Anlagentechnik, Reha-Zentrum Ückeritz",
+      "original_description": "70423 Wärmeversorgungsanl. - Zentrale Anlagentechnik, Reha-Zentrum Ückeritz DRV Bund Einkaufsmanagement Bauleistungen ['DE80N', 'DEU', 'DE80N', 'DEU']",
+      "cpv": [
+        "45000000",
+        "45000000"
+      ],
+      "project_type_predicted": "",
+      "trades_predicted": [],
+      "confidence": 0,
+      "quality_status": "UNKNOWN",
+      "evidence": {
+        "project_type": false,
+        "trade": false,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "DRV Bund Einkaufsmanagement Bauleistungen",
+      "published": "2026-11-05+01:00",
+      "city": "Ückeritz",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/768799-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "LOW",
+        "risk_score": 0,
+        "reasons": [
+          "Keine offensichtliche Regel-Kollision erkannt"
+        ],
+        "project_text_support": 0,
+        "project_alternatives": [],
+        "trade_support": {},
+        "unsupported_trades": []
+      },
+      "review_order": 55
+    },
+    {
+      "audit_id": 27,
+      "notice_id": "664184-2026",
+      "title": "Heizungs- und Kältetechnik",
+      "description": "Heizungs- und Kältetechnik Landkreis Nienburg/Weser ['DE927', 'DEU', 'DE927', 'DEU']",
+      "original_title": "Heizungs- und Kältetechnik",
+      "original_description": "Heizungs- und Kältetechnik Landkreis Nienburg/Weser ['DE927', 'DEU', 'DE927', 'DEU']",
+      "cpv": [
+        "45331000",
+        "42510000",
+        "45331231",
+        "45331000",
+        "42510000",
+        "45331231"
+      ],
+      "project_type_predicted": "",
+      "trades_predicted": [
+        "hvac"
+      ],
+      "confidence": 0.35,
+      "quality_status": "REVIEW",
+      "evidence": {
+        "project_type": false,
+        "trade": true,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.35,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Landkreis Nienburg/Weser",
+      "published": "2026-09-28+02:00",
+      "city": "Marklohe",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/664184-2026",
       "phase": "award",
       "smart_review": {
         "risk": "LOW",
@@ -2879,23 +2949,72 @@
         "project_text_support": 0,
         "project_alternatives": [],
         "trade_support": {
-          "earthworks": 1,
-          "electrical": 1
+          "hvac": 1
         },
         "unsupported_trades": []
       },
-      "review_order": 55
+      "review_order": 56
     },
     {
-      "audit_id": 35,
-      "notice_id": "689112-2026",
-      "title": "Fenster und Außentüren",
-      "description": "Fenster und Außentüren Gemeinde Wiesenthau ['DE248', 'DEU', 'DE248', 'DEU']",
-      "original_title": "Fenster und Außentüren",
-      "original_description": "Fenster und Außentüren Gemeinde Wiesenthau ['DE248', 'DEU', 'DE248', 'DEU']",
+      "audit_id": 28,
+      "notice_id": "656411-2026",
+      "title": "Erweiterung Kläranlage Hohenwart",
+      "description": "Erweiterung Kläranlage Hohenwart Markt Hohenwart ['DE21J', 'DEU', 'DE21J', 'DEU']",
+      "original_title": "Erweiterung Kläranlage Hohenwart",
+      "original_description": "Erweiterung Kläranlage Hohenwart Markt Hohenwart ['DE21J', 'DEU', 'DE21J', 'DEU']",
       "cpv": [
-        "45421100",
-        "45421100"
+        "45252100",
+        "45252130",
+        "45252100",
+        "45252130"
+      ],
+      "project_type_predicted": "water_wastewater",
+      "trades_predicted": [],
+      "confidence": 0.35,
+      "quality_status": "REVIEW",
+      "evidence": {
+        "project_type": true,
+        "trade": false,
+        "cpv": true,
+        "textual_evidence": 1,
+        "source": true,
+        "country": true,
+        "confidence": 0.35,
+        "policy_version": "2026-10-05-evidence-v1"
+      },
+      "authority": "Markt Hohenwart",
+      "published": "2026-09-23+02:00",
+      "city": "",
+      "country": "DEU",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/656411-2026",
+      "phase": "tender",
+      "smart_review": {
+        "risk": "LOW",
+        "risk_score": 0,
+        "reasons": [
+          "Keine offensichtliche Regel-Kollision erkannt"
+        ],
+        "project_text_support": 1,
+        "project_alternatives": [],
+        "trade_support": {},
+        "unsupported_trades": []
+      },
+      "review_order": 57
+    },
+    {
+      "audit_id": 44,
+      "notice_id": "760871-2026",
+      "title": "Bildungszentrum West - Holztüren - Bauabschnitt 1",
+      "description": "Bildungszentrum West - Holztüren - Bauabschnitt 1 Stadt Ludwigsburg ['DE115', 'DEU', 'DE115', 'DEU']",
+      "original_title": "Bildungszentrum West - Holztüren - Bauabschnitt 1",
+      "original_description": "Bildungszentrum West - Holztüren - Bauabschnitt 1 Stadt Ludwigsburg ['DE115', 'DEU', 'DE115', 'DEU']",
+      "cpv": [
+        "45421131",
+        "44221200",
+        "44221220",
+        "45421131",
+        "44221200",
+        "44221220"
       ],
       "project_type_predicted": "",
       "trades_predicted": [
@@ -2913,11 +3032,11 @@
         "confidence": 0.35,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Gemeinde Wiesenthau",
-      "published": "2026-10-06+02:00",
-      "city": "Wiesenthau",
+      "authority": "Stadt Ludwigsburg",
+      "published": "2026-11-03+01:00",
+      "city": "Ludwigsburg",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/689112-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/760871-2026",
       "phase": "award",
       "smart_review": {
         "risk": "LOW",
@@ -2928,30 +3047,32 @@
         "project_text_support": 0,
         "project_alternatives": [],
         "trade_support": {
-          "windows_doors": 2
+          "windows_doors": 1
         },
         "unsupported_trades": []
       },
-      "review_order": 56
+      "review_order": 58
     },
     {
-      "audit_id": 46,
-      "notice_id": "796532-2026",
-      "title": "Neubau 3. Mainbrücke mit städtischem Fußgängersteg",
-      "description": "Neubau 3. Mainbrücke mit städtischem Fußgängersteg DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DE712', 'DEU', 'DE712', 'DEU']",
-      "original_title": "Neubau 3. Mainbrücke mit städtischem Fußgängersteg",
-      "original_description": "Neubau 3. Mainbrücke mit städtischem Fußgängersteg DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DE712', 'DEU', 'DE712', 'DEU']",
+      "audit_id": 47,
+      "notice_id": "772940-2026",
+      "title": "Elektrische Kabel- und Leitungsanlagen in Gebäuden_Blitzschutzanlage",
+      "description": "Elektrische Kabel- und Leitungsanlagen in Gebäuden_Blitzschutzanlage Land Berlin – Sondervermögen Immobilien des Landes Berlin (SILB) c/o BIM Berliner Immobilienmanagement GmbH ['DE300', 'DEU', 'DE300', 'DEU']",
+      "original_title": "Elektrische Kabel- und Leitungsanlagen in Gebäuden_Blitzschutzanlage",
+      "original_description": "Elektrische Kabel- und Leitungsanlagen in Gebäuden_Blitzschutzanlage Land Berlin – Sondervermögen Immobilien des Landes Berlin (SILB) c/o BIM Berliner Immobilienmanagement GmbH ['DE300', 'DEU', 'DE300', 'DEU']",
       "cpv": [
-        "45221115",
-        "45221115"
+        "45312310",
+        "45312310"
       ],
-      "project_type_predicted": "bridge",
-      "trades_predicted": [],
+      "project_type_predicted": "",
+      "trades_predicted": [
+        "electrical"
+      ],
       "confidence": 0.35,
       "quality_status": "REVIEW",
       "evidence": {
-        "project_type": true,
-        "trade": false,
+        "project_type": false,
+        "trade": true,
         "cpv": true,
         "textual_evidence": 1,
         "source": true,
@@ -2959,11 +3080,11 @@
         "confidence": 0.35,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
-      "published": "2026-11-16+01:00",
-      "city": "Frankfurt am Main",
+      "authority": "Land Berlin – Sondervermögen Immobilien des Landes Berlin (SILB) c/o BIM Berliner Immobilienmanagement GmbH",
+      "published": "2026-11-06+01:00",
+      "city": "Berlin",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/796532-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/772940-2026",
       "phase": "award",
       "smart_review": {
         "risk": "LOW",
@@ -2971,101 +3092,7 @@
         "reasons": [
           "Keine offensichtliche Regel-Kollision erkannt"
         ],
-        "project_text_support": 1,
-        "project_alternatives": [],
-        "trade_support": {},
-        "unsupported_trades": []
-      },
-      "review_order": 57
-    },
-    {
-      "audit_id": 1,
-      "notice_id": "757929-2026",
-      "title": "5904 Gleis 81, 83; G.016180054",
-      "description": "5904 Gleis 81, 83; G.016180054 DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DE254', 'DEU', 'DE254', 'DEU']",
-      "original_title": "VB_GE Dürrenhof, Strecke: 5904 Gleis 81, 83; G.016180054",
-      "original_description": "VB_GE Dürrenhof, Strecke: 5904 Gleis 81, 83; G.016180054 DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16) ['DE254', 'DEU', 'DE254', 'DEU']",
-      "cpv": [
-        "45234100",
-        "45234100"
-      ],
-      "project_type_predicted": "rail",
-      "trades_predicted": [
-        "railworks"
-      ],
-      "confidence": 0.75,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.75,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
-      "published": "2026-11-02+01:00",
-      "city": "Nürnberg",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/757929-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "LOW",
-        "risk_score": 0,
-        "reasons": [
-          "Keine offensichtliche Regel-Kollision erkannt"
-        ],
-        "project_text_support": 1,
-        "project_alternatives": [],
-        "trade_support": {
-          "railworks": 1
-        },
-        "unsupported_trades": []
-      },
-      "review_order": 58
-    },
-    {
-      "audit_id": 3,
-      "notice_id": "665285-2026",
-      "title": "Ertüchtigung der Kläranlage 2026 - Elektro- und MSR-Technik",
-      "description": "Ertüchtigung der Kläranlage 2026 - Elektro- und MSR-Technik Stadt Gunzenhausen ['DE25C', 'DEU', 'DE25C', 'DEU']",
-      "original_title": "Ertüchtigung der Kläranlage 2026 - Elektro- und MSR-Technik",
-      "original_description": "Ertüchtigung der Kläranlage 2026 - Elektro- und MSR-Technik Stadt Gunzenhausen ['DE25C', 'DEU', 'DE25C', 'DEU']",
-      "cpv": [
-        "45000000",
-        "45000000"
-      ],
-      "project_type_predicted": "water_wastewater",
-      "trades_predicted": [
-        "electrical"
-      ],
-      "confidence": 0.75,
-      "quality_status": "CONFIDENT",
-      "evidence": {
-        "project_type": true,
-        "trade": true,
-        "cpv": true,
-        "textual_evidence": 1,
-        "source": true,
-        "country": true,
-        "confidence": 0.75,
-        "policy_version": "2026-10-05-evidence-v1"
-      },
-      "authority": "Stadt Gunzenhausen",
-      "published": "2026-09-28+02:00",
-      "city": "Gunzenhausen",
-      "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/665285-2026",
-      "phase": "tender",
-      "smart_review": {
-        "risk": "LOW",
-        "risk_score": 0,
-        "reasons": [
-          "Keine offensichtliche Regel-Kollision erkannt"
-        ],
-        "project_text_support": 1,
+        "project_text_support": 0,
         "project_alternatives": [],
         "trade_support": {
           "electrical": 1
@@ -3075,19 +3102,19 @@
       "review_order": 59
     },
     {
-      "audit_id": 11,
-      "notice_id": "728618-2026",
-      "title": "Neubau eines Feuerwehrgerätehauses Stadt Friedrichstadt - Fenster und Außentüren",
-      "description": "Neubau eines Feuerwehrgerätehauses Stadt Friedrichstadt - Fenster und Außentüren Stadt Friedrichstadt über Amt Nordsee-Treene ['DEF07', 'DEU', 'DEF07', 'DEU']",
-      "original_title": "Neubau eines Feuerwehrgerätehauses Stadt Friedrichstadt - Fenster und Außentüren",
-      "original_description": "Neubau eines Feuerwehrgerätehauses Stadt Friedrichstadt - Fenster und Außentüren Stadt Friedrichstadt über Amt Nordsee-Treene ['DEF07', 'DEU', 'DEF07', 'DEU']",
+      "audit_id": 2,
+      "notice_id": "752305-2026",
+      "title": "Gleisbau - Ehinger Tor",
+      "description": "Gleisbau - Ehinger Tor SWU Verkehr GmbH ['DE144', 'DEU', 'DE144', 'DEU']",
+      "original_title": "Gleisbau - Ehinger Tor",
+      "original_description": "Gleisbau - Ehinger Tor SWU Verkehr GmbH ['DE144', 'DEU', 'DE144', 'DEU']",
       "cpv": [
-        "45421130",
-        "45421130"
+        "45234116",
+        "45234116"
       ],
-      "project_type_predicted": "fire_station",
+      "project_type_predicted": "rail",
       "trades_predicted": [
-        "windows_doors"
+        "railworks"
       ],
       "confidence": 0.85,
       "quality_status": "CONFIDENT",
@@ -3101,12 +3128,12 @@
         "confidence": 0.85,
         "policy_version": "2026-10-05-evidence-v1"
       },
-      "authority": "Stadt Friedrichstadt über Amt Nordsee-Treene",
-      "published": "2026-10-21+02:00",
-      "city": "Friedrichstadt",
+      "authority": "SWU Verkehr GmbH",
+      "published": "2026-10-29+01:00",
+      "city": "Ulm",
       "country": "DEU",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/728618-2026",
-      "phase": "award",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/752305-2026",
+      "phase": "tender",
       "smart_review": {
         "risk": "LOW",
         "risk_score": 0,
@@ -3116,7 +3143,7 @@
         "project_text_support": 1,
         "project_alternatives": [],
         "trade_support": {
-          "windows_doors": 2
+          "railworks": 1
         },
         "unsupported_trades": []
       },
