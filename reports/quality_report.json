@@ -3,82 +3,82 @@
   "classified_opportunities": 9716,
   "classification_rate_pct": 97.2,
   "bands": {
-    "EARLY": 2455,
-    "UPCOMING": 5625,
-    "HOT": 1636
+    "UPCOMING": 5629,
+    "EARLY": 2470,
+    "HOT": 1617
   },
   "project_types": [
     [
       "unclassified_project",
-      3600
+      3621
     ],
     [
       "school",
-      1403
+      1398
     ],
     [
       "rail",
-      784
+      769
     ],
     [
       "water_wastewater",
-      408
+      413
     ],
     [
       "bridge",
-      338
+      339
     ],
     [
       "civil_engineering",
-      321
+      319
     ],
     [
       "industrial",
-      313
+      315
     ],
     [
       "sports_leisure",
-      286
-    ],
-    [
-      "road",
-      281
+      288
     ],
     [
       "administration",
-      281
+      283
+    ],
+    [
+      "road",
+      280
     ],
     [
       "university_research",
-      272
+      270
     ],
     [
       "hospital",
-      250
+      257
     ],
     [
       "fire_station",
-      206
+      204
     ],
     [
       "kindergarten",
-      189
+      188
     ],
     [
       "public_building",
-      180
+      183
     ],
     [
       "energy",
-      145
+      143
     ],
     [
       "public_space",
-      140
+      133
     ],
     [
       "residential",
-      123
+      121
     ],
     [
       "care_social",
@@ -86,45 +86,45 @@
     ],
     [
       "infrastructure",
-      66
+      63
     ],
     [
       "commercial",
-      42
+      41
     ]
   ],
   "trades": [
     [
       "structural",
-      1707
+      1725
     ],
     [
       "electrical",
-      1478
+      1458
     ],
     [
       "windows_doors",
-      1313
+      1323
     ],
     [
       "hvac",
-      980
+      983
     ],
     [
       "earthworks",
-      917
+      906
     ],
     [
       "railworks",
-      770
+      757
     ],
     [
       "flooring",
-      693
+      703
     ],
     [
       "demolition",
-      644
+      651
     ],
     [
       "painting",
@@ -132,27 +132,27 @@
     ],
     [
       "roof",
-      512
+      517
     ],
     [
       "insulation",
-      496
+      492
     ],
     [
       "roadworks",
-      438
+      435
     ],
     [
       "plumbing",
-      401
+      398
     ],
     [
       "facade",
-      354
+      353
     ],
     [
       "landscaping",
-      336
+      333
     ],
     [
       "drywall",
@@ -160,19 +160,15 @@
     ],
     [
       "fire_protection",
-      238
+      242
     ],
     [
       "plastering",
-      211
+      202
     ],
     [
       "elevator",
       130
-    ],
-    [
-      "solar_energy",
-      79
     ],
     [
       "finishing",
@@ -180,7 +176,11 @@
     ],
     [
       "sewer_pipe",
-      74
+      76
+    ],
+    [
+      "solar_energy",
+      75
     ],
     [
       "fencing",
@@ -188,7 +188,7 @@
     ],
     [
       "building_services",
-      36
+      38
     ]
   ],
   "score_buckets": [
@@ -200,36 +200,99 @@
     {
       "from": 60,
       "to": 69,
-      "count": 2434
+      "count": 2443
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2419
+      "count": 2426
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4166
+      "count": 4165
     },
     {
       "from": 90,
       "to": 99,
-      "count": 314
+      "count": 301
     },
     {
       "from": 100,
       "to": 100,
-      "count": 155
+      "count": 153
     }
   ],
   "quality_flags": {
-    "project_type_only": 1083,
-    "trade_only": 3600,
-    "project_and_trade": 5033,
-    "opportunity_score_85_plus": 1636
+    "project_type_only": 1079,
+    "trade_only": 3621,
+    "project_and_trade": 5016,
+    "opportunity_score_85_plus": 1617
   },
   "sample_top": [
+    {
+      "source_id": "TED-801460-2026",
+      "title": "Eibenkamp 1 - Tragwerk und Gebäudehülle BIM",
+      "authority": "SBH | Schulbau Hamburg",
+      "city": "Hamburg",
+      "project_type": "civil_engineering",
+      "trades": [
+        "windows_doors",
+        "earthworks",
+        "demolition",
+        "roof",
+        "structural",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/801460-2026"
+    },
+    {
+      "source_id": "TED-802012-2026",
+      "title": "BePo, Neubau Versorgungsgebäude mit Infrastrukturmaßnahmen",
+      "authority": "Staatliches Bauamt Erlangen-Nürnberg, Technische Geschäftsleitung, SG Bau",
+      "city": "Nürnberg",
+      "project_type": "public_building",
+      "trades": [
+        "earthworks",
+        "structural",
+        "painting",
+        "fire_protection",
+        "insulation",
+        "windows_doors",
+        "plastering",
+        "flooring",
+        "electrical",
+        "hvac"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/802012-2026"
+    },
+    {
+      "source_id": "TED-803652-2026",
+      "title": "Sanierung Schulschwimmbad und Abriss/Neubau Bauteil B mit offener Ganztagsschule (OGTS), Türkenfeld",
+      "authority": "Gemeinde Türkenfeld",
+      "city": "Türkenfeld",
+      "project_type": "school",
+      "trades": [
+        "structural",
+        "windows_doors",
+        "flooring",
+        "painting",
+        "hvac",
+        "electrical",
+        "roof",
+        "earthworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/803652-2026"
+    },
     {
       "source_id": "TED-799846-2026",
       "title": "Außenanlagen",
@@ -247,23 +310,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/799846-2026"
-    },
-    {
-      "source_id": "TED-799980-2026",
-      "title": "VE139_4_Außenanlagen Therapiegarten",
-      "authority": "Sana Klinikum Offenbach GmbH",
-      "city": "Offenbach am Main",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "roadworks",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/799980-2026"
     },
     {
       "source_id": "TED-797568-2026",
@@ -284,6 +330,23 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/797568-2026"
     },
     {
+      "source_id": "TED-799980-2026",
+      "title": "VE139_4_Außenanlagen Therapiegarten",
+      "authority": "Sana Klinikum Offenbach GmbH",
+      "city": "Offenbach am Main",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "roadworks",
+        "electrical"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/799980-2026"
+    },
+    {
       "source_id": "TED-796994-2026",
       "title": "Neubau Feuerwache und Verwaltungsgebäude, Ladestraße 3a u. b in Wismar, Los 1-05: Erd- und Rohbauarbeiten",
       "authority": "Hansestadt Wismar, Rechtsamt",
@@ -299,6 +362,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/796994-2026"
+    },
+    {
+      "source_id": "TED-796518-2026",
+      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
+      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
+      "city": "Köln",
+      "project_type": "university_research",
+      "trades": [
+        "drywall",
+        "insulation",
+        "structural",
+        "flooring"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/796518-2026"
     },
     {
       "source_id": "TED-793148-2026",
@@ -335,23 +415,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/795841-2026"
     },
     {
-      "source_id": "TED-796518-2026",
-      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
-      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
-      "city": "Köln",
-      "project_type": "university_research",
-      "trades": [
-        "drywall",
-        "insulation",
-        "structural",
-        "flooring"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/796518-2026"
-    },
-    {
       "source_id": "TED-795965-2026",
       "title": "Garten-/Landschaftsbauarbeiten, Schloss Charlottenburg, Sanierung Freianlagen einschl. Wasserver-/entsorgung, Ehrenhof 5. BA",
       "authority": "Stiftung Preußische Schlösser und Gärten Berlin-Brandenburg",
@@ -384,62 +447,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/791310-2026"
-    },
-    {
-      "source_id": "TED-791519-2026",
-      "title": "410/420 Sanitär und Heizung",
-      "authority": "Universitätsklinikum Erlangen",
-      "city": "Erlangen",
-      "project_type": "care_social",
-      "trades": [
-        "hvac",
-        "plumbing",
-        "demolition",
-        "insulation"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/791519-2026"
-    },
-    {
-      "source_id": "TED-789823-2026",
-      "title": "Teilneubau GEH II - Aluminium-Bekleidung Fassade",
-      "authority": "Klinikum Region Hannover GmbH",
-      "city": "Gehrden",
-      "project_type": "care_social",
-      "trades": [
-        "facade",
-        "structural",
-        "painting",
-        "finishing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/789823-2026"
-    },
-    {
-      "source_id": "TED-792615-2026",
-      "title": "BMPII Backnang Erneuerung Bahnsteig 2 + Aufzug Bahnsteig 3",
-      "authority": "DB Station&Service AG (Bukr 11)",
-      "city": "Backnang",
-      "project_type": "rail",
-      "trades": [
-        "elevator",
-        "railworks",
-        "earthworks",
-        "roadworks",
-        "roof",
-        "structural",
-        "electrical",
-        "plumbing",
-        "finishing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/792615-2026"
     }
   ]
 }
