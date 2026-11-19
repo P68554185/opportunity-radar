@@ -1,56 +1,56 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9716,
+  "classified_opportunities": 9717,
   "classification_rate_pct": 97.2,
   "bands": {
-    "UPCOMING": 5629,
-    "EARLY": 2470,
-    "HOT": 1617
+    "HOT": 1637,
+    "EARLY": 2477,
+    "UPCOMING": 5603
   },
   "project_types": [
     [
       "unclassified_project",
-      3621
+      3636
     ],
     [
       "school",
-      1398
+      1407
     ],
     [
       "rail",
-      769
+      756
     ],
     [
       "water_wastewater",
-      413
+      411
     ],
     [
       "bridge",
-      339
+      332
     ],
     [
       "civil_engineering",
-      319
+      324
     ],
     [
       "industrial",
-      315
-    ],
-    [
-      "sports_leisure",
-      288
+      312
     ],
     [
       "administration",
-      283
+      290
+    ],
+    [
+      "sports_leisure",
+      287
     ],
     [
       "road",
-      280
+      283
     ],
     [
       "university_research",
-      270
+      267
     ],
     [
       "hospital",
@@ -58,154 +58,154 @@
     ],
     [
       "fire_station",
-      204
+      208
     ],
     [
       "kindergarten",
-      188
+      190
     ],
     [
       "public_building",
-      183
+      169
     ],
     [
       "energy",
-      143
+      144
     ],
     [
       "public_space",
-      133
+      135
     ],
     [
       "residential",
-      121
+      124
     ],
     [
       "care_social",
-      88
+      84
     ],
     [
       "infrastructure",
-      63
+      65
     ],
     [
       "commercial",
-      41
+      36
     ]
   ],
   "trades": [
     [
       "structural",
-      1725
+      1728
     ],
     [
       "electrical",
-      1458
+      1476
     ],
     [
       "windows_doors",
-      1323
+      1322
     ],
     [
       "hvac",
-      983
+      993
     ],
     [
       "earthworks",
-      906
+      920
     ],
     [
       "railworks",
-      757
+      742
     ],
     [
       "flooring",
-      703
+      698
     ],
     [
       "demolition",
-      651
+      654
     ],
     [
       "painting",
-      643
+      653
     ],
     [
       "roof",
-      517
+      527
     ],
     [
       "insulation",
-      492
+      504
     ],
     [
       "roadworks",
-      435
+      445
     ],
     [
       "plumbing",
-      398
+      402
     ],
     [
       "facade",
-      353
+      358
     ],
     [
       "landscaping",
-      333
+      335
     ],
     [
       "drywall",
-      276
+      285
     ],
     [
       "fire_protection",
-      242
+      244
     ],
     [
       "plastering",
-      202
+      207
     ],
     [
       "elevator",
-      130
+      131
     ],
     [
       "finishing",
       77
     ],
     [
-      "sewer_pipe",
+      "solar_energy",
       76
     ],
     [
-      "solar_energy",
+      "sewer_pipe",
       75
     ],
     [
       "fencing",
-      66
+      67
     ],
     [
       "building_services",
-      38
+      37
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 228
+      "count": 235
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2443
+      "count": 2441
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2426
+      "count": 2409
     },
     {
       "from": 80,
@@ -215,21 +215,127 @@
     {
       "from": 90,
       "to": 99,
-      "count": 301
+      "count": 307
     },
     {
       "from": 100,
       "to": 100,
-      "count": 153
+      "count": 160
     }
   ],
   "quality_flags": {
-    "project_type_only": 1079,
-    "trade_only": 3621,
-    "project_and_trade": 5016,
-    "opportunity_score_85_plus": 1617
+    "project_type_only": 1060,
+    "trade_only": 3636,
+    "project_and_trade": 5021,
+    "opportunity_score_85_plus": 1637
   },
   "sample_top": [
+    {
+      "source_id": "TED-803897-2026",
+      "title": "Kläranlage Aurich-Haxtum, Bau Faulung II - Dachdeckungsarbeiten",
+      "authority": "Stadt Aurich",
+      "city": "Aurich-Haxtum",
+      "project_type": "water_wastewater",
+      "trades": [
+        "roof",
+        "structural",
+        "earthworks",
+        "windows_doors"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/803897-2026"
+    },
+    {
+      "source_id": "TED-805827-2026",
+      "title": "Ern. EÜ km 0,992 ü. d. Gstadter Straße, Strecke 5320 Treuchtlingen–Nürnberg",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "city": "Treuchtlingen",
+      "project_type": "bridge",
+      "trades": [
+        "earthworks",
+        "roadworks",
+        "railworks",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/805827-2026"
+    },
+    {
+      "source_id": "TED-804338-2026",
+      "title": "Industrie- und Gewerbestandort Bentwisch B-Plan 20 Großgewerbegebiet Bentwisch",
+      "authority": "Gemeinde Bentwisch über Bentwisch GmbH",
+      "city": "Bentwisch",
+      "project_type": "water_wastewater",
+      "trades": [
+        "demolition",
+        "earthworks",
+        "roadworks",
+        "electrical"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/804338-2026"
+    },
+    {
+      "source_id": "TED-804094-2026",
+      "title": "RZ Bad Eilsen - BE2060 Umbau Therapiezentrum - Innenausbau (2B)",
+      "authority": "Deutsche Rentenversicherung Braunschweig-Hannover",
+      "city": "Bad Eilsen",
+      "project_type": "public_building",
+      "trades": [
+        "insulation",
+        "flooring",
+        "structural",
+        "windows_doors",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/804094-2026"
+    },
+    {
+      "source_id": "TED-803810-2026",
+      "title": "Verbinder Halle 8/9 VE GÜ Ausbau",
+      "authority": "Messe Berlin GmbH",
+      "city": "Berlin",
+      "project_type": "industrial",
+      "trades": [
+        "windows_doors",
+        "insulation",
+        "structural",
+        "flooring",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/803810-2026"
+    },
+    {
+      "source_id": "TED-804657-2026",
+      "title": "Teilnahmewettbewerb für das Projekt ViDia Kliniken Karlsruhe Neubau 2. Bauabschnitt- Vergabepaket 5- Tiefbau, Rohbau, Fassade und Dach, Außenanlagen",
+      "authority": "Vincentius-Diakonissen-Kliniken gAG (ViDia Kliniken)",
+      "city": "Karlsruhe",
+      "project_type": "hospital",
+      "trades": [
+        "roof",
+        "facade",
+        "earthworks",
+        "structural",
+        "landscaping",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/804657-2026"
+    },
     {
       "source_id": "TED-801460-2026",
       "title": "Eibenkamp 1 - Tragwerk und Gebäudehülle BIM",
@@ -312,24 +418,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/799846-2026"
     },
     {
-      "source_id": "TED-797568-2026",
-      "title": "VG Maifeld - Energetische Sanierung Grundschule Ochtendung: Abbruch- und Rohbauarbeiten",
-      "authority": "Verbandsgemeinde Maifeld",
-      "city": "Ochtendung",
-      "project_type": "school",
-      "trades": [
-        "structural",
-        "demolition",
-        "earthworks",
-        "insulation",
-        "painting"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/797568-2026"
-    },
-    {
       "source_id": "TED-799980-2026",
       "title": "VE139_4_Außenanlagen Therapiegarten",
       "authority": "Sana Klinikum Offenbach GmbH",
@@ -347,106 +435,22 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/799980-2026"
     },
     {
-      "source_id": "TED-796994-2026",
-      "title": "Neubau Feuerwache und Verwaltungsgebäude, Ladestraße 3a u. b in Wismar, Los 1-05: Erd- und Rohbauarbeiten",
-      "authority": "Hansestadt Wismar, Rechtsamt",
-      "city": "Wismar",
-      "project_type": "fire_station",
+      "source_id": "TED-797568-2026",
+      "title": "VG Maifeld - Energetische Sanierung Grundschule Ochtendung: Abbruch- und Rohbauarbeiten",
+      "authority": "Verbandsgemeinde Maifeld",
+      "city": "Ochtendung",
+      "project_type": "school",
       "trades": [
         "structural",
         "demolition",
         "earthworks",
-        "plastering"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/796994-2026"
-    },
-    {
-      "source_id": "TED-796518-2026",
-      "title": "BLB NRW Köln / Technische Hochschule Köln, Campus Deutz, Neubau Gebäude B, Trockenbauarbeiten",
-      "authority": "Bau- und Liegenschaftsbetrieb NRW Köln",
-      "city": "Köln",
-      "project_type": "university_research",
-      "trades": [
-        "drywall",
         "insulation",
-        "structural",
-        "flooring"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/796518-2026"
-    },
-    {
-      "source_id": "TED-793148-2026",
-      "title": "Feuerwehrtechnische Zentrale Ebergötzen, Neubau - VE 502 Landschaftsbau und Pflasterarbeiten",
-      "authority": "Landkreis Göttingen",
-      "city": "Ebergötzen",
-      "project_type": "road",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "roadworks",
-        "fencing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/793148-2026"
-    },
-    {
-      "source_id": "TED-795841-2026",
-      "title": "2026-1004987_Flughafen München_P20 Beschichtungssanierung",
-      "authority": "Flughafen München GmbH",
-      "city": "München",
-      "project_type": "industrial",
-      "trades": [
-        "painting",
-        "structural",
-        "roadworks",
-        "insulation"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/795841-2026"
-    },
-    {
-      "source_id": "TED-795965-2026",
-      "title": "Garten-/Landschaftsbauarbeiten, Schloss Charlottenburg, Sanierung Freianlagen einschl. Wasserver-/entsorgung, Ehrenhof 5. BA",
-      "authority": "Stiftung Preußische Schlösser und Gärten Berlin-Brandenburg",
-      "city": "Berlin",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "demolition",
-        "roadworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/795965-2026"
-    },
-    {
-      "source_id": "TED-791310-2026",
-      "title": "Teilneubau GEH II - Fenster und Außentüren und PR-Fassade",
-      "authority": "Klinikum Region Hannover GmbH",
-      "city": "Gehrden",
-      "project_type": "public_building",
-      "trades": [
-        "windows_doors",
-        "facade",
-        "structural",
         "painting"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/791310-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/797568-2026"
     }
   ]
 }
