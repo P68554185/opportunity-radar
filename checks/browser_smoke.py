@@ -43,6 +43,8 @@ with tempfile.TemporaryDirectory() as temp:
             hospital.locator(".project-history summary").click()
             expect(hospital.locator(".project-history[open] li").first).to_be_visible()
             assert "2023" in hospital.locator(".project-history[open]").inner_text()
+            assert "Datum unbekannt" not in hospital.locator(".project-history[open]").inner_text()
+            assert any("25.9.2026" in element.inner_text() for element in hospital.locator("time").all())
             # Existing bookmarks for a procurement notice still resolve to the merged master.
             page.evaluate("localStorage.setItem('bauradar.saved.v1',JSON.stringify(['TED-660397-2026']))")
             page.reload()
