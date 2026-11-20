@@ -1,20 +1,20 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9717,
+  "classified_opportunities": 9716,
   "classification_rate_pct": 97.2,
   "bands": {
-    "HOT": 1637,
-    "EARLY": 2477,
-    "UPCOMING": 5603
+    "EARLY": 2476,
+    "UPCOMING": 5611,
+    "HOT": 1629
   },
   "project_types": [
     [
       "unclassified_project",
-      3636
+      3631
     ],
     [
       "school",
-      1407
+      1404
     ],
     [
       "rail",
@@ -22,15 +22,15 @@
     ],
     [
       "water_wastewater",
-      411
+      414
     ],
     [
       "bridge",
-      332
+      328
     ],
     [
       "civil_engineering",
-      324
+      322
     ],
     [
       "industrial",
@@ -38,7 +38,7 @@
     ],
     [
       "administration",
-      290
+      292
     ],
     [
       "sports_leisure",
@@ -46,19 +46,19 @@
     ],
     [
       "road",
-      283
+      278
     ],
     [
       "university_research",
-      267
+      274
     ],
     [
       "hospital",
-      257
+      258
     ],
     [
       "fire_station",
-      208
+      205
     ],
     [
       "kindergarten",
@@ -66,7 +66,7 @@
     ],
     [
       "public_building",
-      169
+      171
     ],
     [
       "energy",
@@ -78,41 +78,41 @@
     ],
     [
       "residential",
-      124
+      125
     ],
     [
       "care_social",
-      84
+      88
     ],
     [
       "infrastructure",
-      65
+      62
     ],
     [
       "commercial",
-      36
+      40
     ]
   ],
   "trades": [
     [
       "structural",
-      1728
+      1721
     ],
     [
       "electrical",
-      1476
+      1471
     ],
     [
       "windows_doors",
-      1322
+      1321
     ],
     [
       "hvac",
-      993
+      992
     ],
     [
       "earthworks",
-      920
+      914
     ],
     [
       "railworks",
@@ -120,43 +120,43 @@
     ],
     [
       "flooring",
-      698
+      701
     ],
     [
       "demolition",
-      654
+      658
     ],
     [
       "painting",
-      653
+      651
     ],
     [
       "roof",
-      527
+      526
     ],
     [
       "insulation",
-      504
+      502
     ],
     [
       "roadworks",
-      445
+      443
     ],
     [
       "plumbing",
-      402
+      404
     ],
     [
       "facade",
-      358
+      357
     ],
     [
       "landscaping",
-      335
+      331
     ],
     [
       "drywall",
-      285
+      278
     ],
     [
       "fire_protection",
@@ -164,70 +164,70 @@
     ],
     [
       "plastering",
-      207
+      210
     ],
     [
       "elevator",
-      131
+      126
     ],
     [
       "finishing",
-      77
-    ],
-    [
-      "solar_energy",
       76
     ],
     [
+      "solar_energy",
+      74
+    ],
+    [
       "sewer_pipe",
-      75
+      72
     ],
     [
       "fencing",
-      67
+      65
     ],
     [
       "building_services",
-      37
+      38
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 235
+      "count": 231
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2441
+      "count": 2449
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2409
+      "count": 2404
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4165
+      "count": 4172
     },
     {
       "from": 90,
       "to": 99,
-      "count": 307
+      "count": 305
     },
     {
       "from": 100,
       "to": 100,
-      "count": 160
+      "count": 155
     }
   ],
   "quality_flags": {
-    "project_type_only": 1060,
-    "trade_only": 3636,
-    "project_and_trade": 5021,
-    "opportunity_score_85_plus": 1637
+    "project_type_only": 1065,
+    "trade_only": 3631,
+    "project_and_trade": 5020,
+    "opportunity_score_85_plus": 1629
   },
   "sample_top": [
     {
@@ -265,23 +265,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/805827-2026"
     },
     {
-      "source_id": "TED-804338-2026",
-      "title": "Industrie- und Gewerbestandort Bentwisch B-Plan 20 Großgewerbegebiet Bentwisch",
-      "authority": "Gemeinde Bentwisch über Bentwisch GmbH",
-      "city": "Bentwisch",
-      "project_type": "water_wastewater",
-      "trades": [
-        "demolition",
-        "earthworks",
-        "roadworks",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/804338-2026"
-    },
-    {
       "source_id": "TED-804094-2026",
       "title": "RZ Bad Eilsen - BE2060 Umbau Therapiezentrum - Innenausbau (2B)",
       "authority": "Deutsche Rentenversicherung Braunschweig-Hannover",
@@ -300,22 +283,21 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/804094-2026"
     },
     {
-      "source_id": "TED-803810-2026",
-      "title": "Verbinder Halle 8/9 VE GÜ Ausbau",
-      "authority": "Messe Berlin GmbH",
-      "city": "Berlin",
-      "project_type": "industrial",
+      "source_id": "TED-804338-2026",
+      "title": "Industrie- und Gewerbestandort Bentwisch B-Plan 20 Großgewerbegebiet Bentwisch",
+      "authority": "Gemeinde Bentwisch über Bentwisch GmbH",
+      "city": "Bentwisch",
+      "project_type": "water_wastewater",
       "trades": [
-        "windows_doors",
-        "insulation",
-        "structural",
-        "flooring",
-        "painting"
+        "demolition",
+        "earthworks",
+        "roadworks",
+        "electrical"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/803810-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/804338-2026"
     },
     {
       "source_id": "TED-804657-2026",
@@ -337,23 +319,43 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/804657-2026"
     },
     {
-      "source_id": "TED-801460-2026",
-      "title": "Eibenkamp 1 - Tragwerk und Gebäudehülle BIM",
-      "authority": "SBH | Schulbau Hamburg",
-      "city": "Hamburg",
-      "project_type": "civil_engineering",
+      "source_id": "TED-803810-2026",
+      "title": "Verbinder Halle 8/9 VE GÜ Ausbau",
+      "authority": "Messe Berlin GmbH",
+      "city": "Berlin",
+      "project_type": "industrial",
       "trades": [
         "windows_doors",
-        "earthworks",
-        "demolition",
-        "roof",
+        "insulation",
         "structural",
+        "flooring",
         "painting"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/801460-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/803810-2026"
+    },
+    {
+      "source_id": "TED-803652-2026",
+      "title": "Sanierung Schulschwimmbad und Abriss/Neubau Bauteil B mit offener Ganztagsschule (OGTS), Türkenfeld",
+      "authority": "Gemeinde Türkenfeld",
+      "city": "Türkenfeld",
+      "project_type": "school",
+      "trades": [
+        "structural",
+        "windows_doors",
+        "flooring",
+        "painting",
+        "hvac",
+        "electrical",
+        "roof",
+        "earthworks"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/803652-2026"
     },
     {
       "source_id": "TED-802012-2026",
@@ -379,25 +381,23 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/802012-2026"
     },
     {
-      "source_id": "TED-803652-2026",
-      "title": "Sanierung Schulschwimmbad und Abriss/Neubau Bauteil B mit offener Ganztagsschule (OGTS), Türkenfeld",
-      "authority": "Gemeinde Türkenfeld",
-      "city": "Türkenfeld",
-      "project_type": "school",
+      "source_id": "TED-801460-2026",
+      "title": "Eibenkamp 1 - Tragwerk und Gebäudehülle BIM",
+      "authority": "SBH | Schulbau Hamburg",
+      "city": "Hamburg",
+      "project_type": "civil_engineering",
       "trades": [
-        "structural",
         "windows_doors",
-        "flooring",
-        "painting",
-        "hvac",
-        "electrical",
+        "earthworks",
+        "demolition",
         "roof",
-        "earthworks"
+        "structural",
+        "painting"
       ],
       "score": 100,
       "band": "HOT",
       "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/803652-2026"
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/801460-2026"
     },
     {
       "source_id": "TED-799846-2026",
@@ -418,23 +418,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/799846-2026"
     },
     {
-      "source_id": "TED-799980-2026",
-      "title": "VE139_4_Außenanlagen Therapiegarten",
-      "authority": "Sana Klinikum Offenbach GmbH",
-      "city": "Offenbach am Main",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "roadworks",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/799980-2026"
-    },
-    {
       "source_id": "TED-797568-2026",
       "title": "VG Maifeld - Energetische Sanierung Grundschule Ochtendung: Abbruch- und Rohbauarbeiten",
       "authority": "Verbandsgemeinde Maifeld",
@@ -451,6 +434,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/797568-2026"
+    },
+    {
+      "source_id": "TED-799980-2026",
+      "title": "VE139_4_Außenanlagen Therapiegarten",
+      "authority": "Sana Klinikum Offenbach GmbH",
+      "city": "Offenbach am Main",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "roadworks",
+        "electrical"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/799980-2026"
     }
   ]
 }
