@@ -1,28 +1,28 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9716,
+  "classified_opportunities": 9720,
   "classification_rate_pct": 97.2,
   "bands": {
-    "EARLY": 2476,
-    "UPCOMING": 5611,
-    "HOT": 1629
+    "UPCOMING": 5606,
+    "EARLY": 2488,
+    "HOT": 1626
   },
   "project_types": [
     [
       "unclassified_project",
-      3631
+      3658
     ],
     [
       "school",
-      1404
+      1423
     ],
     [
       "rail",
-      756
+      731
     ],
     [
       "water_wastewater",
-      414
+      415
     ],
     [
       "bridge",
@@ -34,35 +34,35 @@
     ],
     [
       "industrial",
-      312
-    ],
-    [
-      "administration",
-      292
+      315
     ],
     [
       "sports_leisure",
+      292
+    ],
+    [
+      "administration",
       287
     ],
     [
       "road",
-      278
+      277
     ],
     [
       "university_research",
-      274
+      264
     ],
     [
       "hospital",
-      258
+      256
     ],
     [
       "fire_station",
-      205
+      210
     ],
     [
       "kindergarten",
-      190
+      192
     ],
     [
       "public_building",
@@ -70,57 +70,57 @@
     ],
     [
       "energy",
-      144
+      140
     ],
     [
       "public_space",
-      135
+      134
     ],
     [
       "residential",
-      125
+      117
     ],
     [
       "care_social",
-      88
+      87
     ],
     [
       "infrastructure",
-      62
+      63
     ],
     [
       "commercial",
-      40
+      38
     ]
   ],
   "trades": [
     [
       "structural",
-      1721
+      1731
     ],
     [
       "electrical",
-      1471
+      1480
     ],
     [
       "windows_doors",
-      1321
+      1342
     ],
     [
       "hvac",
-      992
+      993
     ],
     [
       "earthworks",
-      914
+      912
     ],
     [
       "railworks",
-      742
+      713
     ],
     [
       "flooring",
-      701
+      709
     ],
     [
       "demolition",
@@ -128,108 +128,161 @@
     ],
     [
       "painting",
-      651
-    ],
-    [
-      "roof",
-      526
+      655
     ],
     [
       "insulation",
-      502
+      515
+    ],
+    [
+      "roof",
+      508
     ],
     [
       "roadworks",
-      443
+      441
     ],
     [
       "plumbing",
-      404
+      402
     ],
     [
       "facade",
-      357
+      364
     ],
     [
       "landscaping",
-      331
+      333
     ],
     [
       "drywall",
-      278
+      290
     ],
     [
       "fire_protection",
-      244
+      248
     ],
     [
       "plastering",
-      210
+      207
     ],
     [
       "elevator",
-      126
+      130
     ],
     [
       "finishing",
+      77
+    ],
+    [
+      "sewer_pipe",
       76
     ],
     [
       "solar_energy",
-      74
-    ],
-    [
-      "sewer_pipe",
-      72
+      71
     ],
     [
       "fencing",
-      65
+      69
     ],
     [
       "building_services",
-      38
+      39
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 231
+      "count": 232
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2449
+      "count": 2456
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2404
+      "count": 2417
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4172
+      "count": 4153
     },
     {
       "from": 90,
       "to": 99,
-      "count": 305
+      "count": 302
     },
     {
       "from": 100,
       "to": 100,
-      "count": 155
+      "count": 160
     }
   ],
   "quality_flags": {
-    "project_type_only": 1065,
-    "trade_only": 3631,
-    "project_and_trade": 5020,
-    "opportunity_score_85_plus": 1629
+    "project_type_only": 1058,
+    "trade_only": 3658,
+    "project_and_trade": 5004,
+    "opportunity_score_85_plus": 1626
   },
   "sample_top": [
+    {
+      "source_id": "TED-808452-2026",
+      "title": "Umbau und Erweiterung der Albert-Schweitzer-Schule - hier: Holzbau und Fassade",
+      "authority": "Stadt Oelde",
+      "city": "Oelde",
+      "project_type": "school",
+      "trades": [
+        "facade",
+        "structural",
+        "windows_doors",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/808452-2026"
+    },
+    {
+      "source_id": "TED-808919-2026",
+      "title": "VWG Am Stadion 5, 2. BA, Bauleistungen",
+      "authority": "Stadt Halle (Saale), Fachbereich Recht, Team Vergabe Bauleistungen/Bauplanungen",
+      "city": "Halle (Saale)",
+      "project_type": "sports_leisure",
+      "trades": [
+        "structural",
+        "demolition",
+        "plastering",
+        "insulation",
+        "flooring"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/808919-2026"
+    },
+    {
+      "source_id": "TED-807556-2026",
+      "title": "Landschaftsbauarbeiten",
+      "authority": "Gemeindeverwaltung Haßloch",
+      "city": "Haßloch",
+      "project_type": "water_wastewater",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "structural",
+        "roadworks",
+        "fencing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/807556-2026"
+    },
     {
       "source_id": "TED-803897-2026",
       "title": "Kläranlage Aurich-Haxtum, Bau Faulung II - Dachdeckungsarbeiten",
@@ -358,6 +411,25 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/803652-2026"
     },
     {
+      "source_id": "TED-801460-2026",
+      "title": "Eibenkamp 1 - Tragwerk und Gebäudehülle BIM",
+      "authority": "SBH | Schulbau Hamburg",
+      "city": "Hamburg",
+      "project_type": "civil_engineering",
+      "trades": [
+        "windows_doors",
+        "earthworks",
+        "demolition",
+        "roof",
+        "structural",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/801460-2026"
+    },
+    {
       "source_id": "TED-802012-2026",
       "title": "BePo, Neubau Versorgungsgebäude mit Infrastrukturmaßnahmen",
       "authority": "Staatliches Bauamt Erlangen-Nürnberg, Technische Geschäftsleitung, SG Bau",
@@ -379,78 +451,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/802012-2026"
-    },
-    {
-      "source_id": "TED-801460-2026",
-      "title": "Eibenkamp 1 - Tragwerk und Gebäudehülle BIM",
-      "authority": "SBH | Schulbau Hamburg",
-      "city": "Hamburg",
-      "project_type": "civil_engineering",
-      "trades": [
-        "windows_doors",
-        "earthworks",
-        "demolition",
-        "roof",
-        "structural",
-        "painting"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/801460-2026"
-    },
-    {
-      "source_id": "TED-799846-2026",
-      "title": "Außenanlagen",
-      "authority": "Handwerkskammer Ostwestfalen-Lippe zu Bielefeld",
-      "city": "Bielefeld",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "demolition",
-        "electrical",
-        "roadworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/799846-2026"
-    },
-    {
-      "source_id": "TED-797568-2026",
-      "title": "VG Maifeld - Energetische Sanierung Grundschule Ochtendung: Abbruch- und Rohbauarbeiten",
-      "authority": "Verbandsgemeinde Maifeld",
-      "city": "Ochtendung",
-      "project_type": "school",
-      "trades": [
-        "structural",
-        "demolition",
-        "earthworks",
-        "insulation",
-        "painting"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/797568-2026"
-    },
-    {
-      "source_id": "TED-799980-2026",
-      "title": "VE139_4_Außenanlagen Therapiegarten",
-      "authority": "Sana Klinikum Offenbach GmbH",
-      "city": "Offenbach am Main",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "roadworks",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/799980-2026"
     }
   ]
 }
