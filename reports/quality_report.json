@@ -1,64 +1,64 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9720,
+  "classified_opportunities": 9724,
   "classification_rate_pct": 97.2,
   "bands": {
-    "UPCOMING": 5606,
-    "EARLY": 2488,
-    "HOT": 1626
+    "EARLY": 2491,
+    "HOT": 1620,
+    "UPCOMING": 5613
   },
   "project_types": [
     [
       "unclassified_project",
-      3658
+      3657
     ],
     [
       "school",
-      1423
+      1417
     ],
     [
       "rail",
-      731
+      734
     ],
     [
       "water_wastewater",
-      415
+      411
     ],
     [
       "bridge",
-      328
+      331
     ],
     [
       "civil_engineering",
-      322
+      323
     ],
     [
       "industrial",
-      315
-    ],
-    [
-      "sports_leisure",
-      292
+      314
     ],
     [
       "administration",
-      287
+      291
+    ],
+    [
+      "sports_leisure",
+      290
     ],
     [
       "road",
-      277
+      276
     ],
     [
       "university_research",
-      264
+      267
     ],
     [
       "hospital",
-      256
+      254
     ],
     [
       "fire_station",
-      210
+      209
     ],
     [
       "kindergarten",
@@ -66,85 +66,85 @@
     ],
     [
       "public_building",
-      171
+      173
     ],
     [
       "energy",
-      140
+      145
     ],
     [
       "public_space",
-      134
+      135
     ],
     [
       "residential",
-      117
+      118
     ],
     [
       "care_social",
-      87
+      89
     ],
     [
       "infrastructure",
-      63
+      61
     ],
     [
       "commercial",
-      38
+      37
     ]
   ],
   "trades": [
     [
       "structural",
-      1731
+      1739
     ],
     [
       "electrical",
-      1480
+      1478
     ],
     [
       "windows_doors",
-      1342
+      1344
     ],
     [
       "hvac",
-      993
+      995
     ],
     [
       "earthworks",
-      912
+      914
     ],
     [
       "railworks",
-      713
+      710
     ],
     [
       "flooring",
-      709
+      700
     ],
     [
       "demolition",
-      658
+      657
     ],
     [
       "painting",
-      655
-    ],
-    [
-      "insulation",
-      515
+      653
     ],
     [
       "roof",
-      508
+      513
+    ],
+    [
+      "insulation",
+      511
     ],
     [
       "roadworks",
-      441
+      444
     ],
     [
       "plumbing",
-      402
+      398
     ],
     [
       "facade",
@@ -152,23 +152,23 @@
     ],
     [
       "landscaping",
-      333
+      336
     ],
     [
       "drywall",
-      290
+      288
     ],
     [
       "fire_protection",
-      248
+      244
     ],
     [
       "plastering",
-      207
+      209
     ],
     [
       "elevator",
-      130
+      129
     ],
     [
       "finishing",
@@ -176,7 +176,7 @@
     ],
     [
       "sewer_pipe",
-      76
+      74
     ],
     [
       "solar_energy",
@@ -184,7 +184,7 @@
     ],
     [
       "fencing",
-      69
+      67
     ],
     [
       "building_services",
@@ -200,22 +200,22 @@
     {
       "from": 60,
       "to": 69,
-      "count": 2456
+      "count": 2459
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2417
+      "count": 2415
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4153
+      "count": 4157
     },
     {
       "from": 90,
       "to": 99,
-      "count": 302
+      "count": 301
     },
     {
       "from": 100,
@@ -224,29 +224,12 @@
     }
   ],
   "quality_flags": {
-    "project_type_only": 1058,
-    "trade_only": 3658,
-    "project_and_trade": 5004,
-    "opportunity_score_85_plus": 1626
+    "project_type_only": 1060,
+    "trade_only": 3657,
+    "project_and_trade": 5007,
+    "opportunity_score_85_plus": 1620
   },
   "sample_top": [
-    {
-      "source_id": "TED-808452-2026",
-      "title": "Umbau und Erweiterung der Albert-Schweitzer-Schule - hier: Holzbau und Fassade",
-      "authority": "Stadt Oelde",
-      "city": "Oelde",
-      "project_type": "school",
-      "trades": [
-        "facade",
-        "structural",
-        "windows_doors",
-        "painting"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/808452-2026"
-    },
     {
       "source_id": "TED-808919-2026",
       "title": "VWG Am Stadion 5, 2. BA, Bauleistungen",
@@ -264,6 +247,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/808919-2026"
+    },
+    {
+      "source_id": "TED-808452-2026",
+      "title": "Umbau und Erweiterung der Albert-Schweitzer-Schule - hier: Holzbau und Fassade",
+      "authority": "Stadt Oelde",
+      "city": "Oelde",
+      "project_type": "school",
+      "trades": [
+        "facade",
+        "structural",
+        "windows_doors",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/808452-2026"
     },
     {
       "source_id": "TED-807556-2026",

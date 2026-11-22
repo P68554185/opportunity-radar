@@ -3,60 +3,9 @@
   "live_records": 10000,
   "enriched_records": 10000,
   "duplicate_source_records": 0,
-  "classified_opportunities": 9720,
+  "classified_opportunities": 9724,
   "lifecycle_candidates": 0,
   "opportunities": [
-    {
-      "source_id": "TED-808452-2026",
-      "notice_id": "808452-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/808452-2026",
-      "published": "2026-11-20+01:00",
-      "title": "Umbau und Erweiterung der Albert-Schweitzer-Schule - hier: Holzbau und Fassade",
-      "description": "Umbau und Erweiterung der Albert-Schweitzer-Schule - hier: Holzbau und Fassade Stadt Oelde ['DEA38', 'DEU', 'DEA38', 'DEU']",
-      "authority": "Stadt Oelde",
-      "city": "Oelde",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "facade",
-        "structural",
-        "windows_doors",
-        "painting"
-      ],
-      "cpv": [
-        "45422100",
-        "45443000",
-        "45422100",
-        "45443000"
-      ],
-      "phase": "award",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": false,
-        "trade_text": [
-          "facade",
-          "structural"
-        ],
-        "trade_cpv": [
-          "windows_doors",
-          "painting"
-        ],
-        "construction_cpv": [
-          "45422100",
-          "45443000",
-          "45422100",
-          "45443000"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
     {
       "source_id": "TED-808919-2026",
       "notice_id": "808919-2026",
@@ -120,6 +69,57 @@
           "45324000",
           "45262670",
           "45431000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-808452-2026",
+      "notice_id": "808452-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/808452-2026",
+      "published": "2026-11-20+01:00",
+      "title": "Umbau und Erweiterung der Albert-Schweitzer-Schule - hier: Holzbau und Fassade",
+      "description": "Umbau und Erweiterung der Albert-Schweitzer-Schule - hier: Holzbau und Fassade Stadt Oelde ['DEA38', 'DEU', 'DEA38', 'DEU']",
+      "authority": "Stadt Oelde",
+      "city": "Oelde",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "facade",
+        "structural",
+        "windows_doors",
+        "painting"
+      ],
+      "cpv": [
+        "45422100",
+        "45443000",
+        "45422100",
+        "45443000"
+      ],
+      "phase": "award",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "facade",
+          "structural"
+        ],
+        "trade_cpv": [
+          "windows_doors",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45422100",
+          "45443000",
+          "45422100",
+          "45443000"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -1677,65 +1677,6 @@
       }
     },
     {
-      "source_id": "TED-791310-2026",
-      "notice_id": "791310-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/791310-2026",
-      "published": "2026-11-13+01:00",
-      "title": "Teilneubau GEH II - Fenster und Außentüren und PR-Fassade",
-      "description": "Teilneubau GEH II - Fenster und Außentüren und PR-Fassade Klinikum Region Hannover GmbH ['DE929', 'DEU', 'DE929', 'DEU']",
-      "authority": "Klinikum Region Hannover GmbH",
-      "city": "Gehrden",
-      "region": "",
-      "country": "DEU",
-      "project_type": "public_building",
-      "trades": [
-        "windows_doors",
-        "facade",
-        "structural",
-        "painting"
-      ],
-      "cpv": [
-        "45262670",
-        "45443000",
-        "45441000",
-        "45212190",
-        "45262670",
-        "45443000",
-        "45441000",
-        "45212190"
-      ],
-      "phase": "award",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.55,
-      "confidence": 0.55,
-      "band": "HOT",
-      "evidence": {
-        "project_text": false,
-        "project_cpv": true,
-        "trade_text": [
-          "windows_doors",
-          "facade"
-        ],
-        "trade_cpv": [
-          "structural",
-          "painting"
-        ],
-        "construction_cpv": [
-          "45262670",
-          "45443000",
-          "45441000",
-          "45212190",
-          "45262670",
-          "45443000",
-          "45441000",
-          "45212190"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
       "source_id": "TED-791519-2026",
       "notice_id": "791519-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/791519-2026",
@@ -1798,6 +1739,126 @@
           "45232460",
           "45321000",
           "45331000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-791310-2026",
+      "notice_id": "791310-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/791310-2026",
+      "published": "2026-11-13+01:00",
+      "title": "Teilneubau GEH II - Fenster und Außentüren und PR-Fassade",
+      "description": "Teilneubau GEH II - Fenster und Außentüren und PR-Fassade Klinikum Region Hannover GmbH ['DE929', 'DEU', 'DE929', 'DEU']",
+      "authority": "Klinikum Region Hannover GmbH",
+      "city": "Gehrden",
+      "region": "",
+      "country": "DEU",
+      "project_type": "public_building",
+      "trades": [
+        "windows_doors",
+        "facade",
+        "structural",
+        "painting"
+      ],
+      "cpv": [
+        "45262670",
+        "45443000",
+        "45441000",
+        "45212190",
+        "45262670",
+        "45443000",
+        "45441000",
+        "45212190"
+      ],
+      "phase": "award",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
+      "band": "HOT",
+      "evidence": {
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "windows_doors",
+          "facade"
+        ],
+        "trade_cpv": [
+          "structural",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45262670",
+          "45443000",
+          "45441000",
+          "45212190",
+          "45262670",
+          "45443000",
+          "45441000",
+          "45212190"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-790966-2026",
+      "notice_id": "790966-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/790966-2026",
+      "published": "2026-11-13+01:00",
+      "title": "Freianlagen Sem I und Infra",
+      "description": "Freianlagen Sem I und Infra Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe ['DE721', 'DEU', 'DE721', 'DEU']",
+      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+      "city": "Gießen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "public_space",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "demolition",
+        "roadworks"
+      ],
+      "cpv": [
+        "45112700",
+        "31527200",
+        "45111000",
+        "45233120",
+        "45232452",
+        "45112700",
+        "31527200",
+        "45111000",
+        "45233120",
+        "45232452"
+      ],
+      "phase": "award",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "landscaping"
+        ],
+        "trade_cpv": [
+          "earthworks",
+          "demolition",
+          "roadworks"
+        ],
+        "construction_cpv": [
+          "45112700",
+          "45111000",
+          "45233120",
+          "45232452",
+          "45112700",
+          "45111000",
+          "45233120",
+          "45232452"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -2019,67 +2080,6 @@
           "45453000",
           "45453100",
           "45454000"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-790966-2026",
-      "notice_id": "790966-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/790966-2026",
-      "published": "2026-11-13+01:00",
-      "title": "Freianlagen Sem I und Infra",
-      "description": "Freianlagen Sem I und Infra Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe ['DE721', 'DEU', 'DE721', 'DEU']",
-      "authority": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
-      "city": "Gießen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "demolition",
-        "roadworks"
-      ],
-      "cpv": [
-        "45112700",
-        "31527200",
-        "45111000",
-        "45233120",
-        "45232452",
-        "45112700",
-        "31527200",
-        "45111000",
-        "45233120",
-        "45232452"
-      ],
-      "phase": "award",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": true,
-        "trade_text": [
-          "landscaping"
-        ],
-        "trade_cpv": [
-          "earthworks",
-          "demolition",
-          "roadworks"
-        ],
-        "construction_cpv": [
-          "45112700",
-          "45111000",
-          "45233120",
-          "45232452",
-          "45112700",
-          "45111000",
-          "45233120",
-          "45232452"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -3693,6 +3693,93 @@
       }
     },
     {
+      "source_id": "TED-782796-2026",
+      "notice_id": "782796-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/782796-2026",
+      "published": "2026-11-10+01:00",
+      "title": "Feuerwehrtechnische Zentrale Ebergötzen, Neubau - VE 502 Landschaftsbau und Pflasterarbeiten",
+      "description": "Feuerwehrtechnische Zentrale Ebergötzen, Neubau - VE 502 Landschaftsbau und Pflasterarbeiten Landkreis Göttingen ['DE91C', 'DEU', 'DE91C', 'DEU']",
+      "authority": "Landkreis Göttingen",
+      "city": "Ebergötzen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "road",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "roadworks",
+        "fencing"
+      ],
+      "cpv": [
+        "45112700",
+        "45000000",
+        "45112500",
+        "45112700",
+        "45112710",
+        "45112730",
+        "45233222",
+        "45233250",
+        "45236000",
+        "45342000",
+        "77300000",
+        "77310000",
+        "45112700",
+        "45000000",
+        "45112500",
+        "45112700",
+        "45112710",
+        "45112730",
+        "45233222",
+        "45233250",
+        "45236000",
+        "45342000",
+        "77300000",
+        "77310000"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
+      "band": "HOT",
+      "evidence": {
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "landscaping"
+        ],
+        "trade_cpv": [
+          "earthworks",
+          "roadworks",
+          "fencing"
+        ],
+        "construction_cpv": [
+          "45112700",
+          "45000000",
+          "45112500",
+          "45112700",
+          "45112710",
+          "45112730",
+          "45233222",
+          "45233250",
+          "45236000",
+          "45342000",
+          "45112700",
+          "45000000",
+          "45112500",
+          "45112700",
+          "45112710",
+          "45112730",
+          "45233222",
+          "45233250",
+          "45236000",
+          "45342000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
       "source_id": "TED-782597-2026",
       "notice_id": "782597-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/782597-2026",
@@ -3865,93 +3952,6 @@
           "45331000",
           "45112700",
           "45333000"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-782796-2026",
-      "notice_id": "782796-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/782796-2026",
-      "published": "2026-11-10+01:00",
-      "title": "Feuerwehrtechnische Zentrale Ebergötzen, Neubau - VE 502 Landschaftsbau und Pflasterarbeiten",
-      "description": "Feuerwehrtechnische Zentrale Ebergötzen, Neubau - VE 502 Landschaftsbau und Pflasterarbeiten Landkreis Göttingen ['DE91C', 'DEU', 'DE91C', 'DEU']",
-      "authority": "Landkreis Göttingen",
-      "city": "Ebergötzen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "road",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "roadworks",
-        "fencing"
-      ],
-      "cpv": [
-        "45112700",
-        "45000000",
-        "45112500",
-        "45112700",
-        "45112710",
-        "45112730",
-        "45233222",
-        "45233250",
-        "45236000",
-        "45342000",
-        "77300000",
-        "77310000",
-        "45112700",
-        "45000000",
-        "45112500",
-        "45112700",
-        "45112710",
-        "45112730",
-        "45233222",
-        "45233250",
-        "45236000",
-        "45342000",
-        "77300000",
-        "77310000"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.55,
-      "confidence": 0.55,
-      "band": "HOT",
-      "evidence": {
-        "project_text": false,
-        "project_cpv": true,
-        "trade_text": [
-          "landscaping"
-        ],
-        "trade_cpv": [
-          "earthworks",
-          "roadworks",
-          "fencing"
-        ],
-        "construction_cpv": [
-          "45112700",
-          "45000000",
-          "45112500",
-          "45112700",
-          "45112710",
-          "45112730",
-          "45233222",
-          "45233250",
-          "45236000",
-          "45342000",
-          "45112700",
-          "45000000",
-          "45112500",
-          "45112700",
-          "45112710",
-          "45112730",
-          "45233222",
-          "45233250",
-          "45236000",
-          "45342000"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
