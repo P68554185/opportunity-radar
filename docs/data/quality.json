@@ -1,28 +1,28 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9724,
+  "classified_opportunities": 9716,
   "classification_rate_pct": 97.2,
   "bands": {
-    "EARLY": 2491,
-    "HOT": 1620,
-    "UPCOMING": 5613
+    "UPCOMING": 5604,
+    "EARLY": 2490,
+    "HOT": 1622
   },
   "project_types": [
     [
       "unclassified_project",
-      3657
+      3659
     ],
     [
       "school",
-      1417
+      1420
     ],
     [
       "rail",
-      734
+      711
     ],
     [
       "water_wastewater",
-      411
+      419
     ],
     [
       "bridge",
@@ -30,43 +30,43 @@
     ],
     [
       "civil_engineering",
-      323
+      328
     ],
     [
       "industrial",
-      314
-    ],
-    [
-      "administration",
-      291
+      309
     ],
     [
       "sports_leisure",
-      290
+      289
+    ],
+    [
+      "administration",
+      287
     ],
     [
       "road",
-      276
+      275
     ],
     [
       "university_research",
-      267
+      271
     ],
     [
       "hospital",
-      254
+      248
     ],
     [
       "fire_station",
-      209
+      208
     ],
     [
       "kindergarten",
-      192
+      190
     ],
     [
       "public_building",
-      173
+      175
     ],
     [
       "energy",
@@ -74,162 +74,250 @@
     ],
     [
       "public_space",
-      135
+      137
     ],
     [
       "residential",
-      118
+      123
     ],
     [
       "care_social",
-      89
+      93
     ],
     [
       "infrastructure",
-      61
+      62
     ],
     [
       "commercial",
-      37
+      36
     ]
   ],
   "trades": [
     [
       "structural",
-      1739
+      1727
     ],
     [
       "electrical",
-      1478
+      1492
     ],
     [
       "windows_doors",
-      1344
+      1343
     ],
     [
       "hvac",
-      995
+      994
     ],
     [
       "earthworks",
-      914
-    ],
-    [
-      "railworks",
-      710
+      916
     ],
     [
       "flooring",
-      700
+      705
+    ],
+    [
+      "railworks",
+      693
     ],
     [
       "demolition",
-      657
+      660
     ],
     [
       "painting",
-      653
-    ],
-    [
-      "roof",
-      513
+      654
     ],
     [
       "insulation",
-      511
+      512
+    ],
+    [
+      "roof",
+      505
     ],
     [
       "roadworks",
-      444
+      442
     ],
     [
       "plumbing",
-      398
+      399
     ],
     [
       "facade",
-      364
+      362
     ],
     [
       "landscaping",
-      336
+      340
     ],
     [
       "drywall",
-      288
+      292
     ],
     [
       "fire_protection",
-      244
+      245
     ],
     [
       "plastering",
-      209
+      208
     ],
     [
       "elevator",
-      129
+      130
     ],
     [
       "finishing",
-      77
+      79
     ],
     [
       "sewer_pipe",
-      74
+      75
     ],
     [
       "solar_energy",
-      71
+      72
     ],
     [
       "fencing",
-      67
+      66
     ],
     [
       "building_services",
-      39
+      41
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 232
+      "count": 231
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2459
+      "count": 2461
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2415
+      "count": 2413
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4157
+      "count": 4151
     },
     {
       "from": 90,
       "to": 99,
-      "count": 301
+      "count": 299
     },
     {
       "from": 100,
       "to": 100,
-      "count": 160
+      "count": 161
     }
   ],
   "quality_flags": {
-    "project_type_only": 1060,
-    "trade_only": 3657,
-    "project_and_trade": 5007,
-    "opportunity_score_85_plus": 1620
+    "project_type_only": 1062,
+    "trade_only": 3659,
+    "project_and_trade": 4995,
+    "opportunity_score_85_plus": 1622
   },
   "sample_top": [
+    {
+      "source_id": "TED-813132-2026",
+      "title": "Neubau Halle 5 in Mühldorf, DB RegioNetz Infrastruktur GmbH",
+      "authority": "DB RegioNetz Infrastruktur GmbH Südostbayernbahn (Bukr 16)",
+      "city": "Mühldorf",
+      "project_type": "rail",
+      "trades": [
+        "railworks",
+        "hvac",
+        "fire_protection",
+        "building_services"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/813132-2026"
+    },
+    {
+      "source_id": "TED-813902-2026",
+      "title": "Eichsfeld Gymnasium Duderstadt, Neubau Erweiterungsbau - Außenanlagen Schulhof und Wirtschaftshof",
+      "authority": "Landkreis Göttingen",
+      "city": "Duderstadt",
+      "project_type": "school",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "roadworks",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/813902-2026"
+    },
+    {
+      "source_id": "TED-812375-2026",
+      "title": "Innenputzarbeiten DIN 18350, Sanierung der Hildegardis-Schule, 3. Bauabschnitt, Klinikstr. 1, 44791 Bochum",
+      "authority": "Stadt Bochum, Referat Zentrale Vergabestelle",
+      "city": "Bochum",
+      "project_type": "school",
+      "trades": [
+        "plastering",
+        "finishing",
+        "fire_protection",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/812375-2026"
+    },
+    {
+      "source_id": "TED-813085-2026",
+      "title": "Sanitär-Heizung-RLT, Technische Anlagen in Freianlagen",
+      "authority": "Hamburger Gesellschaft für Gewerbebauförderung mbH vertreten durch Sprinkenhof GmbH",
+      "city": "Hamburg",
+      "project_type": "public_space",
+      "trades": [
+        "hvac",
+        "landscaping",
+        "plumbing",
+        "electrical"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/813085-2026"
+    },
+    {
+      "source_id": "TED-813513-2026",
+      "title": "Rohbauarbeiten",
+      "authority": "Staatliches Bauamt Würzburg",
+      "city": "Würzburg",
+      "project_type": "civil_engineering",
+      "trades": [
+        "structural",
+        "roof",
+        "insulation",
+        "demolition",
+        "earthworks",
+        "hvac",
+        "plumbing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/813513-2026"
+    },
     {
       "source_id": "TED-808919-2026",
       "title": "VWG Am Stadion 5, 2. BA, Bauleistungen",
@@ -351,106 +439,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/804338-2026"
-    },
-    {
-      "source_id": "TED-804657-2026",
-      "title": "Teilnahmewettbewerb für das Projekt ViDia Kliniken Karlsruhe Neubau 2. Bauabschnitt- Vergabepaket 5- Tiefbau, Rohbau, Fassade und Dach, Außenanlagen",
-      "authority": "Vincentius-Diakonissen-Kliniken gAG (ViDia Kliniken)",
-      "city": "Karlsruhe",
-      "project_type": "hospital",
-      "trades": [
-        "roof",
-        "facade",
-        "earthworks",
-        "structural",
-        "landscaping",
-        "painting"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/804657-2026"
-    },
-    {
-      "source_id": "TED-803810-2026",
-      "title": "Verbinder Halle 8/9 VE GÜ Ausbau",
-      "authority": "Messe Berlin GmbH",
-      "city": "Berlin",
-      "project_type": "industrial",
-      "trades": [
-        "windows_doors",
-        "insulation",
-        "structural",
-        "flooring",
-        "painting"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/803810-2026"
-    },
-    {
-      "source_id": "TED-803652-2026",
-      "title": "Sanierung Schulschwimmbad und Abriss/Neubau Bauteil B mit offener Ganztagsschule (OGTS), Türkenfeld",
-      "authority": "Gemeinde Türkenfeld",
-      "city": "Türkenfeld",
-      "project_type": "school",
-      "trades": [
-        "structural",
-        "windows_doors",
-        "flooring",
-        "painting",
-        "hvac",
-        "electrical",
-        "roof",
-        "earthworks"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/803652-2026"
-    },
-    {
-      "source_id": "TED-801460-2026",
-      "title": "Eibenkamp 1 - Tragwerk und Gebäudehülle BIM",
-      "authority": "SBH | Schulbau Hamburg",
-      "city": "Hamburg",
-      "project_type": "civil_engineering",
-      "trades": [
-        "windows_doors",
-        "earthworks",
-        "demolition",
-        "roof",
-        "structural",
-        "painting"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/801460-2026"
-    },
-    {
-      "source_id": "TED-802012-2026",
-      "title": "BePo, Neubau Versorgungsgebäude mit Infrastrukturmaßnahmen",
-      "authority": "Staatliches Bauamt Erlangen-Nürnberg, Technische Geschäftsleitung, SG Bau",
-      "city": "Nürnberg",
-      "project_type": "public_building",
-      "trades": [
-        "earthworks",
-        "structural",
-        "painting",
-        "fire_protection",
-        "insulation",
-        "windows_doors",
-        "plastering",
-        "flooring",
-        "electrical",
-        "hvac"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/802012-2026"
     }
   ]
 }
