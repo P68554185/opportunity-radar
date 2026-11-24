@@ -1,40 +1,40 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9716,
+  "classified_opportunities": 9724,
   "classification_rate_pct": 97.2,
   "bands": {
-    "UPCOMING": 5604,
-    "EARLY": 2490,
-    "HOT": 1622
+    "EARLY": 2506,
+    "UPCOMING": 5590,
+    "HOT": 1628
   },
   "project_types": [
     [
       "unclassified_project",
-      3659
+      3673
     ],
     [
       "school",
-      1420
+      1417
     ],
     [
       "rail",
-      711
+      713
     ],
     [
       "water_wastewater",
-      419
-    ],
-    [
-      "bridge",
-      331
+      417
     ],
     [
       "civil_engineering",
-      328
+      330
+    ],
+    [
+      "bridge",
+      326
     ],
     [
       "industrial",
-      309
+      306
     ],
     [
       "sports_leisure",
@@ -42,11 +42,11 @@
     ],
     [
       "administration",
-      287
+      285
     ],
     [
       "road",
-      275
+      273
     ],
     [
       "university_research",
@@ -54,7 +54,7 @@
     ],
     [
       "hospital",
-      248
+      255
     ],
     [
       "fire_station",
@@ -66,57 +66,57 @@
     ],
     [
       "public_building",
-      175
-    ],
-    [
-      "energy",
-      145
+      176
     ],
     [
       "public_space",
-      137
+      142
+    ],
+    [
+      "energy",
+      141
     ],
     [
       "residential",
-      123
+      121
     ],
     [
       "care_social",
-      93
+      94
     ],
     [
       "infrastructure",
-      62
+      60
     ],
     [
       "commercial",
-      36
+      37
     ]
   ],
   "trades": [
     [
       "structural",
-      1727
+      1736
     ],
     [
       "electrical",
-      1492
+      1476
     ],
     [
       "windows_doors",
-      1343
+      1355
     ],
     [
       "hvac",
-      994
+      996
     ],
     [
       "earthworks",
-      916
+      909
     ],
     [
       "flooring",
-      705
+      713
     ],
     [
       "railworks",
@@ -124,23 +124,23 @@
     ],
     [
       "demolition",
-      660
+      659
     ],
     [
       "painting",
-      654
+      658
     ],
     [
       "insulation",
-      512
+      511
     ],
     [
       "roof",
-      505
+      503
     ],
     [
       "roadworks",
-      442
+      444
     ],
     [
       "plumbing",
@@ -152,39 +152,39 @@
     ],
     [
       "landscaping",
-      340
+      339
     ],
     [
       "drywall",
-      292
+      297
     ],
     [
       "fire_protection",
-      245
+      246
     ],
     [
       "plastering",
-      208
+      212
     ],
     [
       "elevator",
-      130
+      128
     ],
     [
       "finishing",
-      79
+      80
     ],
     [
       "sewer_pipe",
-      75
+      74
     ],
     [
       "solar_energy",
-      72
+      70
     ],
     [
       "fencing",
-      66
+      69
     ],
     [
       "building_services",
@@ -200,36 +200,53 @@
     {
       "from": 60,
       "to": 69,
-      "count": 2461
+      "count": 2478
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2413
+      "count": 2414
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4151
+      "count": 4147
     },
     {
       "from": 90,
       "to": 99,
-      "count": 299
+      "count": 295
     },
     {
       "from": 100,
       "to": 100,
-      "count": 161
+      "count": 159
     }
   ],
   "quality_flags": {
-    "project_type_only": 1062,
-    "trade_only": 3659,
+    "project_type_only": 1056,
+    "trade_only": 3673,
     "project_and_trade": 4995,
-    "opportunity_score_85_plus": 1622
+    "opportunity_score_85_plus": 1628
   },
   "sample_top": [
+    {
+      "source_id": "TED-815979-2026",
+      "title": "Neubau Sporthalle Zur Ahrensdorfer Heide 11 in Ludwigsfelde - Los 19 - Innenfassade - Glas",
+      "authority": "Stadt Ludwigsfelde",
+      "city": "Ludwigsfelde",
+      "project_type": "sports_leisure",
+      "trades": [
+        "facade",
+        "structural",
+        "windows_doors",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/815979-2026"
+    },
     {
       "source_id": "TED-813132-2026",
       "title": "Neubau Halle 5 in Mühldorf, DB RegioNetz Infrastruktur GmbH",
@@ -246,23 +263,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/813132-2026"
-    },
-    {
-      "source_id": "TED-813902-2026",
-      "title": "Eichsfeld Gymnasium Duderstadt, Neubau Erweiterungsbau - Außenanlagen Schulhof und Wirtschaftshof",
-      "authority": "Landkreis Göttingen",
-      "city": "Duderstadt",
-      "project_type": "school",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "roadworks",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/813902-2026"
     },
     {
       "source_id": "TED-812375-2026",
