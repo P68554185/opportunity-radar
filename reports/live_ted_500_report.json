@@ -3,10 +3,10 @@
   "page_budget": 44,
   "downloaded_live": 10000,
   "normalized": 10000,
-  "duplicates_skipped": 196,
-  "project_type_classified": 6051,
+  "duplicates_skipped": 203,
+  "project_type_classified": 6062,
   "trade_classified": 8668,
   "errors": [],
   "status": "complete",
-  "run_at": "2026-11-24 15:49 UTC"
+  "run_at": "2026-11-25 15:33 UTC"
 }

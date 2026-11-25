@@ -1,16 +1,16 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9724,
-  "classification_rate_pct": 97.2,
+  "classified_opportunities": 9727,
+  "classification_rate_pct": 97.3,
   "bands": {
-    "EARLY": 2506,
-    "UPCOMING": 5590,
-    "HOT": 1628
+    "UPCOMING": 5592,
+    "EARLY": 2504,
+    "HOT": 1631
   },
   "project_types": [
     [
       "unclassified_project",
-      3673
+      3665
     ],
     [
       "school",
@@ -18,117 +18,117 @@
     ],
     [
       "rail",
-      713
+      731
     ],
     [
       "water_wastewater",
-      417
+      413
     ],
     [
       "civil_engineering",
-      330
+      332
     ],
     [
       "bridge",
-      326
+      330
     ],
     [
       "industrial",
-      306
+      308
     ],
     [
       "sports_leisure",
-      289
+      295
     ],
     [
       "administration",
-      285
+      287
     ],
     [
       "road",
-      273
+      277
     ],
     [
       "university_research",
-      271
+      267
     ],
     [
       "hospital",
-      255
+      245
     ],
     [
       "fire_station",
-      208
+      207
     ],
     [
       "kindergarten",
-      190
+      192
     ],
     [
       "public_building",
-      176
-    ],
-    [
-      "public_space",
-      142
+      170
     ],
     [
       "energy",
       141
     ],
     [
+      "public_space",
+      134
+    ],
+    [
       "residential",
-      121
+      119
     ],
     [
       "care_social",
-      94
+      91
     ],
     [
       "infrastructure",
-      60
+      66
     ],
     [
       "commercial",
-      37
+      40
     ]
   ],
   "trades": [
     [
       "structural",
-      1736
+      1726
     ],
     [
       "electrical",
-      1476
+      1450
     ],
     [
       "windows_doors",
-      1355
+      1342
     ],
     [
       "hvac",
-      996
+      989
     ],
     [
       "earthworks",
-      909
+      917
     ],
     [
       "flooring",
-      713
+      723
     ],
     [
       "railworks",
-      693
+      713
     ],
     [
       "demolition",
-      659
+      663
     ],
     [
       "painting",
-      658
+      662
     ],
     [
       "insulation",
@@ -136,86 +136,86 @@
     ],
     [
       "roof",
-      503
+      506
     ],
     [
       "roadworks",
-      444
+      449
     ],
     [
       "plumbing",
-      399
+      402
     ],
     [
       "facade",
-      362
+      365
     ],
     [
       "landscaping",
-      339
+      334
     ],
     [
       "drywall",
-      297
+      296
     ],
     [
       "fire_protection",
-      246
+      244
     ],
     [
       "plastering",
-      212
+      215
     ],
     [
       "elevator",
-      128
+      127
     ],
     [
       "finishing",
-      80
+      77
     ],
     [
       "sewer_pipe",
-      74
+      71
     ],
     [
       "solar_energy",
-      70
-    ],
-    [
-      "fencing",
       69
     ],
     [
+      "fencing",
+      67
+    ],
+    [
       "building_services",
-      41
+      40
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 231
+      "count": 235
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2478
+      "count": 2475
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2414
+      "count": 2403
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4147
+      "count": 4153
     },
     {
       "from": 90,
       "to": 99,
-      "count": 295
+      "count": 302
     },
     {
       "from": 100,
@@ -224,12 +224,47 @@
     }
   ],
   "quality_flags": {
-    "project_type_only": 1056,
-    "trade_only": 3673,
-    "project_and_trade": 4995,
-    "opportunity_score_85_plus": 1628
+    "project_type_only": 1059,
+    "trade_only": 3665,
+    "project_and_trade": 5003,
+    "opportunity_score_85_plus": 1631
   },
   "sample_top": [
+    {
+      "source_id": "TED-818471-2026",
+      "title": "Oberer Brühl - Metallrahmeneinfassung für hinterlüftete Fassade",
+      "authority": "Stadt Villingen-Schwenningen",
+      "city": "Villingen-Schwenningen",
+      "project_type": "civil_engineering",
+      "trades": [
+        "facade",
+        "structural",
+        "roof",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/818471-2026"
+    },
+    {
+      "source_id": "TED-818061-2026",
+      "title": "Ern. EÜ km 127,218 ü. d. Altmühl, Str. 5501, München - Treuchtlingen, bei Solnhofen",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "city": "Solnhofen",
+      "project_type": "bridge",
+      "trades": [
+        "demolition",
+        "earthworks",
+        "roadworks",
+        "railworks",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/818061-2026"
+    },
     {
       "source_id": "TED-815979-2026",
       "title": "Neubau Sporthalle Zur Ahrensdorfer Heide 11 in Ludwigsfelde - Los 19 - Innenfassade - Glas",
@@ -263,6 +298,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/813132-2026"
+    },
+    {
+      "source_id": "TED-813902-2026",
+      "title": "Eichsfeld Gymnasium Duderstadt, Neubau Erweiterungsbau - Außenanlagen Schulhof und Wirtschaftshof",
+      "authority": "Landkreis Göttingen",
+      "city": "Duderstadt",
+      "project_type": "school",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "roadworks",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/813902-2026"
     },
     {
       "source_id": "TED-812375-2026",
@@ -387,58 +439,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/803897-2026"
-    },
-    {
-      "source_id": "TED-805827-2026",
-      "title": "Ern. EÜ km 0,992 ü. d. Gstadter Straße, Strecke 5320 Treuchtlingen–Nürnberg",
-      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
-      "city": "Treuchtlingen",
-      "project_type": "bridge",
-      "trades": [
-        "earthworks",
-        "roadworks",
-        "railworks",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/805827-2026"
-    },
-    {
-      "source_id": "TED-804094-2026",
-      "title": "RZ Bad Eilsen - BE2060 Umbau Therapiezentrum - Innenausbau (2B)",
-      "authority": "Deutsche Rentenversicherung Braunschweig-Hannover",
-      "city": "Bad Eilsen",
-      "project_type": "public_building",
-      "trades": [
-        "insulation",
-        "flooring",
-        "structural",
-        "windows_doors",
-        "painting"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/804094-2026"
-    },
-    {
-      "source_id": "TED-804338-2026",
-      "title": "Industrie- und Gewerbestandort Bentwisch B-Plan 20 Großgewerbegebiet Bentwisch",
-      "authority": "Gemeinde Bentwisch über Bentwisch GmbH",
-      "city": "Bentwisch",
-      "project_type": "water_wastewater",
-      "trades": [
-        "demolition",
-        "earthworks",
-        "roadworks",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/804338-2026"
     }
   ]
 }

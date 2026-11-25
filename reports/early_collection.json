@@ -1,11 +1,11 @@
 {
-  "observed_at": "2026-11-24T15:47:09.419481+00:00",
+  "observed_at": "2026-11-25T15:31:05.324624+00:00",
   "sources": [
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26322/",
-      "content_sha256": "2700eb33885d79402792aa2d313fdadbd163a31fb52b0165990fbeeddd174066",
+      "content_sha256": "ab3486d4b953d175128868bda1bcab405169bc9346f4ec3d551214ec99a45d12",
       "records": 13
     },
     {
@@ -19,55 +19,50 @@
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26254/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26254/",
-      "content_sha256": "9f05e4893b660677f23d9d989957f9401544915e16780fc0e9048596c27df121",
+      "content_sha256": "2a92febb2952301dd2cc5a50063dc18106a7df97bf1e6d8299dbb094fb53707c",
       "records": 27
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26282/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26282/",
-      "content_sha256": "07c09f7aaff17e7ec684adf36803309e600c59356792a807d9e7b019e03bbc96",
+      "content_sha256": "41d08baa33c32eafcc74033350ea6716014559aec6dbc36a18e849b1f4ec0115",
       "records": 2
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26283/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26283/",
-      "content_sha256": "cbcbe3d84a3c4e3b6eb04ddb5a6a5eef6787c1f9e90a359a2e1c3fd92a86db45",
+      "content_sha256": "bb6192d7e5ae03d9fa0651efe061226b56f853fdb0fd0abd701796f29a2a0a07",
       "records": 1
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26298/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26298/",
-      "content_sha256": "ca2d4b0334439be795bb6193c88e2bdaf3f611e2e25bd4e2a86b39706d2086b6",
+      "content_sha256": "03ce86ad25b0a93b0b3e9a7fa81b3f76c7c229c1867e00cf10c1f0789f9cc97d",
       "records": 2
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26297/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26297/",
-      "content_sha256": "db029400147ae13c55aa46ee15a09da9e7f41ea9cc0aa185deb3dff3b4b7ea69",
+      "content_sha256": "381f9f60a3dac00a28e02e9ff061a7ee9e656a0191019b5355c7b8536f81993b",
       "records": 3
     },
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26314/",
       "status": "verified",
       "verified_from": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26314/",
-      "content_sha256": "4e02283fb7f087a8235ae39dcb251cb8620dfeaabb2a498d59a7f2d503bdd2c8",
+      "content_sha256": "c55ce5a65384570714b5a5f2b170a56f083f9ea52140ccbc8cdf084b9bccad56",
       "records": 2
-    },
-    {
-      "source_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bsfb/veroeffentlichungen/pressemeldungen",
-      "status": "discovery_failed",
-      "reason": "URLError"
     }
   ],
   "review_queue": [
     {
       "source_url": "https://www.stmfh.bayern.de/aktuelles/pressemitteilungen/",
       "reason": "index_observation",
-      "links_seen": 624,
+      "links_seen": 626,
       "construction_headlines": 29,
       "sample_construction_links": [
         "/kommunaler_finanzausgleich/krankenhausfoerderung/",
@@ -98,6 +93,17 @@
     {
       "source_url": "https://www.stmfh.bayern.de/internet/stmf/aktuelles/pressemitteilungen/26304/",
       "reason": "unsupported_or_unqualified_document_layout"
+    },
+    {
+      "source_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bsfb/veroeffentlichungen/pressemeldungen",
+      "reason": "index_observation",
+      "links_seen": 530,
+      "construction_headlines": 15,
+      "sample_construction_links": [
+        "/politik-und-verwaltung/behoerden/bsfb",
+        "/politik-und-verwaltung/behoerden/bsfb/schulen",
+        "/politik-und-verwaltung/behoerden/bsfb/familie"
+      ]
     }
   ]
 }
