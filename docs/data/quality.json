@@ -3,22 +3,22 @@
   "classified_opportunities": 9727,
   "classification_rate_pct": 97.3,
   "bands": {
-    "UPCOMING": 5592,
-    "EARLY": 2504,
-    "HOT": 1631
+    "UPCOMING": 5620,
+    "HOT": 1611,
+    "EARLY": 2496
   },
   "project_types": [
     [
       "unclassified_project",
-      3665
+      3661
     ],
     [
       "school",
-      1417
+      1409
     ],
     [
       "rail",
-      731
+      752
     ],
     [
       "water_wastewater",
@@ -26,15 +26,15 @@
     ],
     [
       "civil_engineering",
-      332
+      334
     ],
     [
       "bridge",
-      330
+      328
     ],
     [
       "industrial",
-      308
+      313
     ],
     [
       "sports_leisure",
@@ -45,44 +45,44 @@
       287
     ],
     [
-      "road",
-      277
+      "university_research",
+      270
     ],
     [
-      "university_research",
-      267
+      "road",
+      269
     ],
     [
       "hospital",
-      245
+      252
     ],
     [
       "fire_station",
-      207
+      198
     ],
     [
       "kindergarten",
-      192
+      183
     ],
     [
       "public_building",
-      170
-    ],
-    [
-      "energy",
-      141
+      173
     ],
     [
       "public_space",
-      134
+      139
+    ],
+    [
+      "energy",
+      136
     ],
     [
       "residential",
-      119
+      117
     ],
     [
       "care_social",
-      91
+      89
     ],
     [
       "infrastructure",
@@ -90,85 +90,85 @@
     ],
     [
       "commercial",
-      40
+      43
     ]
   ],
   "trades": [
     [
       "structural",
-      1726
+      1719
     ],
     [
       "electrical",
-      1450
+      1465
     ],
     [
       "windows_doors",
-      1342
+      1341
     ],
     [
       "hvac",
-      989
+      988
     ],
     [
       "earthworks",
-      917
-    ],
-    [
-      "flooring",
-      723
+      901
     ],
     [
       "railworks",
-      713
+      735
     ],
     [
-      "demolition",
-      663
+      "flooring",
+      717
     ],
     [
       "painting",
-      662
+      665
     ],
     [
-      "insulation",
-      511
+      "demolition",
+      656
     ],
     [
       "roof",
-      506
+      516
+    ],
+    [
+      "insulation",
+      510
     ],
     [
       "roadworks",
-      449
+      431
     ],
     [
       "plumbing",
-      402
+      388
     ],
     [
       "facade",
-      365
+      373
     ],
     [
       "landscaping",
-      334
+      336
     ],
     [
       "drywall",
-      296
+      297
     ],
     [
       "fire_protection",
-      244
+      245
     ],
     [
       "plastering",
-      215
+      211
     ],
     [
       "elevator",
-      127
+      123
     ],
     [
       "finishing",
@@ -176,15 +176,15 @@
     ],
     [
       "sewer_pipe",
-      71
-    ],
-    [
-      "solar_energy",
-      69
+      73
     ],
     [
       "fencing",
-      67
+      69
+    ],
+    [
+      "solar_energy",
+      68
     ],
     [
       "building_services",
@@ -195,27 +195,27 @@
     {
       "from": 50,
       "to": 59,
-      "count": 235
+      "count": 233
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2475
+      "count": 2462
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2403
+      "count": 2425
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4153
+      "count": 4149
     },
     {
       "from": 90,
       "to": 99,
-      "count": 302
+      "count": 299
     },
     {
       "from": 100,
@@ -224,12 +224,82 @@
     }
   ],
   "quality_flags": {
-    "project_type_only": 1059,
-    "trade_only": 3665,
-    "project_and_trade": 5003,
-    "opportunity_score_85_plus": 1631
+    "project_type_only": 1064,
+    "trade_only": 3661,
+    "project_and_trade": 5002,
+    "opportunity_score_85_plus": 1611
   },
   "sample_top": [
+    {
+      "source_id": "TED-821824-2026",
+      "title": "Haus der Familie, hier Gerüstbauarbeiten (Los 6), Systemaußenwand (Los 7), Vorgehängte Hinterlüftete Fassade (Los 8) und Metallbau -Türen und Fenster- (Los 9)",
+      "authority": "Stadt Datteln",
+      "city": "Datteln",
+      "project_type": "civil_engineering",
+      "trades": [
+        "windows_doors",
+        "facade",
+        "structural",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/821824-2026"
+    },
+    {
+      "source_id": "TED-824090-2026",
+      "title": "messe- kongress- kulturforum saarbrücken - fassadenarbeiten",
+      "authority": "Congress-Centrum Saar GmbH",
+      "city": "Saarbrücken",
+      "project_type": "bridge",
+      "trades": [
+        "facade",
+        "painting",
+        "structural",
+        "windows_doors"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/824090-2026"
+    },
+    {
+      "source_id": "TED-823038-2026",
+      "title": "Verbinder Halle 8 VE 02 Fassade",
+      "authority": "Messe Berlin GmbH",
+      "city": "Berlin",
+      "project_type": "industrial",
+      "trades": [
+        "facade",
+        "painting",
+        "insulation",
+        "windows_doors",
+        "finishing",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/823038-2026"
+    },
+    {
+      "source_id": "TED-821010-2026",
+      "title": "Albert Schweitzer Schule und KTS Dach-, Fenster- und Fassadensanierung, Malerarbeiten",
+      "authority": "Stadt Ludwigshafen, Bereich Gebäudewirtschaft",
+      "city": "Ludwigshafen am Rhein",
+      "project_type": "school",
+      "trades": [
+        "painting",
+        "roof",
+        "windows_doors",
+        "facade"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/821010-2026"
+    },
     {
       "source_id": "TED-818471-2026",
       "title": "Oberer Brühl - Metallrahmeneinfassung für hinterlüftete Fassade",
@@ -369,76 +439,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/813513-2026"
-    },
-    {
-      "source_id": "TED-808919-2026",
-      "title": "VWG Am Stadion 5, 2. BA, Bauleistungen",
-      "authority": "Stadt Halle (Saale), Fachbereich Recht, Team Vergabe Bauleistungen/Bauplanungen",
-      "city": "Halle (Saale)",
-      "project_type": "sports_leisure",
-      "trades": [
-        "structural",
-        "demolition",
-        "plastering",
-        "insulation",
-        "flooring"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/808919-2026"
-    },
-    {
-      "source_id": "TED-808452-2026",
-      "title": "Umbau und Erweiterung der Albert-Schweitzer-Schule - hier: Holzbau und Fassade",
-      "authority": "Stadt Oelde",
-      "city": "Oelde",
-      "project_type": "school",
-      "trades": [
-        "facade",
-        "structural",
-        "windows_doors",
-        "painting"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/808452-2026"
-    },
-    {
-      "source_id": "TED-807556-2026",
-      "title": "Landschaftsbauarbeiten",
-      "authority": "Gemeindeverwaltung Haßloch",
-      "city": "Haßloch",
-      "project_type": "water_wastewater",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "structural",
-        "roadworks",
-        "fencing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/807556-2026"
-    },
-    {
-      "source_id": "TED-803897-2026",
-      "title": "Kläranlage Aurich-Haxtum, Bau Faulung II - Dachdeckungsarbeiten",
-      "authority": "Stadt Aurich",
-      "city": "Aurich-Haxtum",
-      "project_type": "water_wastewater",
-      "trades": [
-        "roof",
-        "structural",
-        "earthworks",
-        "windows_doors"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/803897-2026"
     }
   ]
 }
