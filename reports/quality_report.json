@@ -1,64 +1,64 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9727,
+  "classified_opportunities": 9728,
   "classification_rate_pct": 97.3,
   "bands": {
-    "UPCOMING": 5620,
-    "HOT": 1611,
-    "EARLY": 2496
+    "UPCOMING": 5603,
+    "EARLY": 2485,
+    "HOT": 1640
   },
   "project_types": [
     [
       "unclassified_project",
-      3661
+      3626
     ],
     [
       "school",
-      1409
+      1423
     ],
     [
       "rail",
-      752
+      753
     ],
     [
       "water_wastewater",
-      413
-    ],
-    [
-      "civil_engineering",
-      334
+      410
     ],
     [
       "bridge",
-      328
+      337
+    ],
+    [
+      "civil_engineering",
+      329
     ],
     [
       "industrial",
-      313
-    ],
-    [
-      "sports_leisure",
-      295
+      314
     ],
     [
       "administration",
-      287
+      300
     ],
     [
-      "university_research",
-      270
+      "sports_leisure",
+      297
     ],
     [
       "road",
-      269
+      280
+    ],
+    [
+      "university_research",
+      279
     ],
     [
       "hospital",
-      252
+      240
     ],
     [
       "fire_station",
-      198
+      199
     ],
     [
       "kindergarten",
@@ -66,97 +66,97 @@
     ],
     [
       "public_building",
-      173
-    ],
-    [
-      "public_space",
-      139
+      174
     ],
     [
       "energy",
-      136
+      138
+    ],
+    [
+      "public_space",
+      134
     ],
     [
       "residential",
-      117
+      118
     ],
     [
       "care_social",
-      89
+      85
     ],
     [
       "infrastructure",
-      66
+      64
     ],
     [
       "commercial",
-      43
+      45
     ]
   ],
   "trades": [
     [
       "structural",
-      1719
+      1732
     ],
     [
       "electrical",
-      1465
+      1451
     ],
     [
       "windows_doors",
-      1341
+      1338
     ],
     [
       "hvac",
-      988
+      995
     ],
     [
       "earthworks",
-      901
+      907
     ],
     [
       "railworks",
-      735
+      732
     ],
     [
       "flooring",
-      717
+      722
     ],
     [
       "painting",
-      665
+      664
     ],
     [
       "demolition",
-      656
+      649
+    ],
+    [
+      "insulation",
+      518
     ],
     [
       "roof",
       516
     ],
     [
-      "insulation",
-      510
-    ],
-    [
       "roadworks",
-      431
+      442
     ],
     [
       "plumbing",
-      388
+      400
     ],
     [
       "facade",
-      373
+      370
     ],
     [
       "landscaping",
-      336
+      325
     ],
     [
       "drywall",
-      297
+      305
     ],
     [
       "fire_protection",
@@ -164,7 +164,7 @@
     ],
     [
       "plastering",
-      211
+      208
     ],
     [
       "elevator",
@@ -172,11 +172,11 @@
     ],
     [
       "finishing",
-      77
+      79
     ],
     [
       "sewer_pipe",
-      73
+      74
     ],
     [
       "fencing",
@@ -184,52 +184,141 @@
     ],
     [
       "solar_energy",
-      68
+      63
     ],
     [
       "building_services",
-      40
+      39
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 233
+      "count": 226
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2462
+      "count": 2456
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2425
+      "count": 2405
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4149
+      "count": 4177
     },
     {
       "from": 90,
       "to": 99,
-      "count": 299
+      "count": 298
     },
     {
       "from": 100,
       "to": 100,
-      "count": 159
+      "count": 166
     }
   ],
   "quality_flags": {
-    "project_type_only": 1064,
-    "trade_only": 3661,
-    "project_and_trade": 5002,
-    "opportunity_score_85_plus": 1611
+    "project_type_only": 1060,
+    "trade_only": 3626,
+    "project_and_trade": 5042,
+    "opportunity_score_85_plus": 1640
   },
   "sample_top": [
+    {
+      "source_id": "TED-826350-2026",
+      "title": "Feuerwehrtechnische Zentrale Ebergötzen, Neubau - VE 502 Landschaftsbau und Pflasterarbeiten",
+      "authority": "Landkreis Göttingen",
+      "city": "Ebergötzen",
+      "project_type": "road",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "roadworks",
+        "fencing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/826350-2026"
+    },
+    {
+      "source_id": "TED-827252-2026",
+      "title": "Knappschaft Kliniken Universitätsklinikum Bochum - Sanierung Bettenhochhaus - Betoninstandsetzung Fassade Haus A",
+      "authority": "Knappschaft Kliniken Universitätsklinikum Bochum GmbH",
+      "city": "Bochum",
+      "project_type": "hospital",
+      "trades": [
+        "facade",
+        "structural",
+        "finishing",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/827252-2026"
+    },
+    {
+      "source_id": "TED-826077-2026",
+      "title": "Landschaftsbauarbeiten",
+      "authority": "Gemeindeverwaltung Haßloch",
+      "city": "Haßloch",
+      "project_type": "water_wastewater",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "structural",
+        "roadworks",
+        "fencing"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/826077-2026"
+    },
+    {
+      "source_id": "TED-825610-2026",
+      "title": "Auflassung BÜs durch Neubau SÜ in km 0,1+62, Strecke 5421, Gleisdreieck in Lindau – 2 Lose",
+      "authority": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "city": "Lindau (Bodensee)",
+      "project_type": "rail",
+      "trades": [
+        "earthworks",
+        "roadworks",
+        "railworks",
+        "structural"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/825610-2026"
+    },
+    {
+      "source_id": "TED-827090-2026",
+      "title": "Erweiterungsbau an den Fachtrakt des Karlsgymnasium Bad Reichenhall",
+      "authority": "Landkreis Berchtesgadener Land",
+      "city": "Bad Reichenhall",
+      "project_type": "school",
+      "trades": [
+        "electrical",
+        "hvac",
+        "insulation",
+        "structural",
+        "windows_doors",
+        "roof",
+        "painting"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/827090-2026"
+    },
     {
       "source_id": "TED-821824-2026",
       "title": "Haus der Familie, hier Gerüstbauarbeiten (Los 6), Systemaußenwand (Los 7), Vorgehängte Hinterlüftete Fassade (Los 8) und Metallbau -Türen und Fenster- (Los 9)",
@@ -351,94 +440,6 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/815979-2026"
-    },
-    {
-      "source_id": "TED-813132-2026",
-      "title": "Neubau Halle 5 in Mühldorf, DB RegioNetz Infrastruktur GmbH",
-      "authority": "DB RegioNetz Infrastruktur GmbH Südostbayernbahn (Bukr 16)",
-      "city": "Mühldorf",
-      "project_type": "rail",
-      "trades": [
-        "railworks",
-        "hvac",
-        "fire_protection",
-        "building_services"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/813132-2026"
-    },
-    {
-      "source_id": "TED-813902-2026",
-      "title": "Eichsfeld Gymnasium Duderstadt, Neubau Erweiterungsbau - Außenanlagen Schulhof und Wirtschaftshof",
-      "authority": "Landkreis Göttingen",
-      "city": "Duderstadt",
-      "project_type": "school",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "roadworks",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/813902-2026"
-    },
-    {
-      "source_id": "TED-812375-2026",
-      "title": "Innenputzarbeiten DIN 18350, Sanierung der Hildegardis-Schule, 3. Bauabschnitt, Klinikstr. 1, 44791 Bochum",
-      "authority": "Stadt Bochum, Referat Zentrale Vergabestelle",
-      "city": "Bochum",
-      "project_type": "school",
-      "trades": [
-        "plastering",
-        "finishing",
-        "fire_protection",
-        "structural"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/812375-2026"
-    },
-    {
-      "source_id": "TED-813085-2026",
-      "title": "Sanitär-Heizung-RLT, Technische Anlagen in Freianlagen",
-      "authority": "Hamburger Gesellschaft für Gewerbebauförderung mbH vertreten durch Sprinkenhof GmbH",
-      "city": "Hamburg",
-      "project_type": "public_space",
-      "trades": [
-        "hvac",
-        "landscaping",
-        "plumbing",
-        "electrical"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/813085-2026"
-    },
-    {
-      "source_id": "TED-813513-2026",
-      "title": "Rohbauarbeiten",
-      "authority": "Staatliches Bauamt Würzburg",
-      "city": "Würzburg",
-      "project_type": "civil_engineering",
-      "trades": [
-        "structural",
-        "roof",
-        "insulation",
-        "demolition",
-        "earthworks",
-        "hvac",
-        "plumbing"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/813513-2026"
     }
   ]
 }
