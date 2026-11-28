@@ -1,92 +1,92 @@
 {
   "live_records": 10000,
-  "classified_opportunities": 9728,
+  "classified_opportunities": 9733,
   "classification_rate_pct": 97.3,
   "bands": {
-    "UPCOMING": 5603,
-    "EARLY": 2485,
-    "HOT": 1640
+    "UPCOMING": 5605,
+    "EARLY": 2490,
+    "HOT": 1638
   },
   "project_types": [
     [
       "unclassified_project",
-      3626
+      3633
     ],
     [
       "school",
-      1423
+      1426
     ],
     [
       "rail",
-      753
+      749
     ],
     [
       "water_wastewater",
-      410
+      412
     ],
     [
       "bridge",
-      337
+      344
     ],
     [
       "civil_engineering",
-      329
+      331
     ],
     [
       "industrial",
-      314
+      310
     ],
     [
       "administration",
-      300
+      298
     ],
     [
       "sports_leisure",
-      297
-    ],
-    [
-      "road",
-      280
+      296
     ],
     [
       "university_research",
-      279
+      278
+    ],
+    [
+      "road",
+      278
     ],
     [
       "hospital",
-      240
+      242
     ],
     [
       "fire_station",
-      199
+      198
     ],
     [
       "kindergarten",
-      183
+      181
     ],
     [
       "public_building",
-      174
+      178
     ],
     [
       "energy",
-      138
+      139
     ],
     [
       "public_space",
-      134
+      129
     ],
     [
       "residential",
-      118
+      120
     ],
     [
       "care_social",
-      85
+      84
     ],
     [
       "infrastructure",
-      64
+      62
     ],
     [
       "commercial",
@@ -96,55 +96,55 @@
   "trades": [
     [
       "structural",
-      1732
+      1736
     ],
     [
       "electrical",
-      1451
+      1459
     ],
     [
       "windows_doors",
-      1338
+      1347
     ],
     [
       "hvac",
-      995
+      997
     ],
     [
       "earthworks",
-      907
+      900
     ],
     [
       "railworks",
-      732
+      726
     ],
     [
       "flooring",
-      722
+      725
     ],
     [
       "painting",
-      664
+      659
     ],
     [
       "demolition",
-      649
+      653
     ],
     [
       "insulation",
-      518
+      517
     ],
     [
       "roof",
-      516
+      511
     ],
     [
       "roadworks",
-      442
+      443
     ],
     [
       "plumbing",
-      400
+      402
     ],
     [
       "facade",
@@ -152,7 +152,7 @@
     ],
     [
       "landscaping",
-      325
+      321
     ],
     [
       "drywall",
@@ -164,15 +164,15 @@
     ],
     [
       "plastering",
-      208
+      206
     ],
     [
       "elevator",
-      123
+      124
     ],
     [
       "finishing",
-      79
+      80
     ],
     [
       "sewer_pipe",
@@ -180,42 +180,42 @@
     ],
     [
       "fencing",
-      69
+      70
     ],
     [
       "solar_energy",
-      63
+      66
     ],
     [
       "building_services",
-      39
+      37
     ]
   ],
   "score_buckets": [
     {
       "from": 50,
       "to": 59,
-      "count": 226
+      "count": 224
     },
     {
       "from": 60,
       "to": 69,
-      "count": 2456
+      "count": 2466
     },
     {
       "from": 70,
       "to": 79,
-      "count": 2405
+      "count": 2406
     },
     {
       "from": 80,
       "to": 89,
-      "count": 4177
+      "count": 4176
     },
     {
       "from": 90,
       "to": 99,
-      "count": 298
+      "count": 295
     },
     {
       "from": 100,
@@ -224,10 +224,10 @@
     }
   ],
   "quality_flags": {
-    "project_type_only": 1060,
-    "trade_only": 3626,
-    "project_and_trade": 5042,
-    "opportunity_score_85_plus": 1640
+    "project_type_only": 1059,
+    "trade_only": 3633,
+    "project_and_trade": 5041,
+    "opportunity_score_85_plus": 1638
   },
   "sample_top": [
     {
@@ -337,23 +337,6 @@
       "source_url": "https://ted.europa.eu/en/notice/-/detail/821824-2026"
     },
     {
-      "source_id": "TED-824090-2026",
-      "title": "messe- kongress- kulturforum saarbrücken - fassadenarbeiten",
-      "authority": "Congress-Centrum Saar GmbH",
-      "city": "Saarbrücken",
-      "project_type": "bridge",
-      "trades": [
-        "facade",
-        "painting",
-        "structural",
-        "windows_doors"
-      ],
-      "score": 100,
-      "band": "HOT",
-      "reason": "Projektart + Gewerke",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/824090-2026"
-    },
-    {
       "source_id": "TED-823038-2026",
       "title": "Verbinder Halle 8 VE 02 Fassade",
       "authority": "Messe Berlin GmbH",
@@ -371,6 +354,23 @@
       "band": "HOT",
       "reason": "Projektart + Gewerke",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/823038-2026"
+    },
+    {
+      "source_id": "TED-824090-2026",
+      "title": "messe- kongress- kulturforum saarbrücken - fassadenarbeiten",
+      "authority": "Congress-Centrum Saar GmbH",
+      "city": "Saarbrücken",
+      "project_type": "bridge",
+      "trades": [
+        "facade",
+        "painting",
+        "structural",
+        "windows_doors"
+      ],
+      "score": 100,
+      "band": "HOT",
+      "reason": "Projektart + Gewerke",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/824090-2026"
     },
     {
       "source_id": "TED-821010-2026",

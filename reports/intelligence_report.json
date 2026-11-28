@@ -3,7 +3,7 @@
   "live_records": 10000,
   "enriched_records": 10000,
   "duplicate_source_records": 0,
-  "classified_opportunities": 9728,
+  "classified_opportunities": 9733,
   "lifecycle_candidates": 0,
   "opportunities": [
     {
@@ -459,65 +459,6 @@
       }
     },
     {
-      "source_id": "TED-824090-2026",
-      "notice_id": "824090-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/824090-2026",
-      "published": "2026-11-26+01:00",
-      "title": "messe- kongress- kulturforum saarbrücken - fassadenarbeiten",
-      "description": "messe- kongress- kulturforum saarbrücken - fassadenarbeiten Congress-Centrum Saar GmbH ['DEC01', 'DEU', 'DEC01', 'DEU']",
-      "authority": "Congress-Centrum Saar GmbH",
-      "city": "Saarbrücken",
-      "region": "",
-      "country": "DEU",
-      "project_type": "bridge",
-      "trades": [
-        "facade",
-        "painting",
-        "structural",
-        "windows_doors"
-      ],
-      "cpv": [
-        "45000000",
-        "45443000",
-        "45262670",
-        "45421100",
-        "45000000",
-        "45443000",
-        "45262670",
-        "45421100"
-      ],
-      "phase": "award",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": false,
-        "trade_text": [
-          "facade"
-        ],
-        "trade_cpv": [
-          "painting",
-          "structural",
-          "windows_doors"
-        ],
-        "construction_cpv": [
-          "45000000",
-          "45443000",
-          "45262670",
-          "45421100",
-          "45000000",
-          "45443000",
-          "45262670",
-          "45421100"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
       "source_id": "TED-823038-2026",
       "notice_id": "823038-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/823038-2026",
@@ -583,6 +524,65 @@
           "45421100",
           "45452000",
           "45262100"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-824090-2026",
+      "notice_id": "824090-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/824090-2026",
+      "published": "2026-11-26+01:00",
+      "title": "messe- kongress- kulturforum saarbrücken - fassadenarbeiten",
+      "description": "messe- kongress- kulturforum saarbrücken - fassadenarbeiten Congress-Centrum Saar GmbH ['DEC01', 'DEU', 'DEC01', 'DEU']",
+      "authority": "Congress-Centrum Saar GmbH",
+      "city": "Saarbrücken",
+      "region": "",
+      "country": "DEU",
+      "project_type": "bridge",
+      "trades": [
+        "facade",
+        "painting",
+        "structural",
+        "windows_doors"
+      ],
+      "cpv": [
+        "45000000",
+        "45443000",
+        "45262670",
+        "45421100",
+        "45000000",
+        "45443000",
+        "45262670",
+        "45421100"
+      ],
+      "phase": "award",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "facade"
+        ],
+        "trade_cpv": [
+          "painting",
+          "structural",
+          "windows_doors"
+        ],
+        "construction_cpv": [
+          "45000000",
+          "45443000",
+          "45262670",
+          "45421100",
+          "45000000",
+          "45443000",
+          "45262670",
+          "45421100"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -1200,57 +1200,6 @@
       }
     },
     {
-      "source_id": "TED-808452-2026",
-      "notice_id": "808452-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/808452-2026",
-      "published": "2026-11-20+01:00",
-      "title": "Umbau und Erweiterung der Albert-Schweitzer-Schule - hier: Holzbau und Fassade",
-      "description": "Umbau und Erweiterung der Albert-Schweitzer-Schule - hier: Holzbau und Fassade Stadt Oelde ['DEA38', 'DEU', 'DEA38', 'DEU']",
-      "authority": "Stadt Oelde",
-      "city": "Oelde",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "facade",
-        "structural",
-        "windows_doors",
-        "painting"
-      ],
-      "cpv": [
-        "45422100",
-        "45443000",
-        "45422100",
-        "45443000"
-      ],
-      "phase": "award",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": false,
-        "trade_text": [
-          "facade",
-          "structural"
-        ],
-        "trade_cpv": [
-          "windows_doors",
-          "painting"
-        ],
-        "construction_cpv": [
-          "45422100",
-          "45443000",
-          "45422100",
-          "45443000"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
       "source_id": "TED-808919-2026",
       "notice_id": "808919-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/808919-2026",
@@ -1313,6 +1262,57 @@
           "45324000",
           "45262670",
           "45431000"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-808452-2026",
+      "notice_id": "808452-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/808452-2026",
+      "published": "2026-11-20+01:00",
+      "title": "Umbau und Erweiterung der Albert-Schweitzer-Schule - hier: Holzbau und Fassade",
+      "description": "Umbau und Erweiterung der Albert-Schweitzer-Schule - hier: Holzbau und Fassade Stadt Oelde ['DEA38', 'DEU', 'DEA38', 'DEU']",
+      "authority": "Stadt Oelde",
+      "city": "Oelde",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "facade",
+        "structural",
+        "windows_doors",
+        "painting"
+      ],
+      "cpv": [
+        "45422100",
+        "45443000",
+        "45422100",
+        "45443000"
+      ],
+      "phase": "award",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": false,
+        "trade_text": [
+          "facade",
+          "structural"
+        ],
+        "trade_cpv": [
+          "windows_doors",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45422100",
+          "45443000",
+          "45422100",
+          "45443000"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -2343,73 +2343,6 @@
           "45232410",
           "45316100",
           "45233222"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-799980-2026",
-      "notice_id": "799980-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/799980-2026",
-      "published": "2026-11-17+01:00",
-      "title": "VE139_4_Außenanlagen Therapiegarten",
-      "description": "VE139_4_Außenanlagen Therapiegarten Sana Klinikum Offenbach GmbH ['DE713', 'DEU', 'DE713', 'DEU']",
-      "authority": "Sana Klinikum Offenbach GmbH",
-      "city": "Offenbach am Main",
-      "region": "",
-      "country": "DEU",
-      "project_type": "public_space",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "roadworks",
-        "electrical"
-      ],
-      "cpv": [
-        "45112700",
-        "45233253",
-        "45112330",
-        "45316100",
-        "43325000",
-        "45112710",
-        "73400000",
-        "45112700",
-        "45233253",
-        "45112330",
-        "45316100",
-        "43325000",
-        "45112710",
-        "73400000"
-      ],
-      "phase": "award",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": true,
-        "trade_text": [
-          "landscaping"
-        ],
-        "trade_cpv": [
-          "earthworks",
-          "roadworks",
-          "electrical"
-        ],
-        "construction_cpv": [
-          "45112700",
-          "45233253",
-          "45112330",
-          "45316100",
-          "45112710",
-          "45112700",
-          "45233253",
-          "45112330",
-          "45316100",
-          "45112710"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -3865,6 +3798,65 @@
       }
     },
     {
+      "source_id": "TED-783900-2026",
+      "notice_id": "783900-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/783900-2026",
+      "published": "2026-11-11+01:00",
+      "title": "452 - Generalsanierung der Johannes-Hirspeck-Mittelschule in Pfarrkirchen - Gewerk 6000-001 Außenanlagen",
+      "description": "452 - Generalsanierung der Johannes-Hirspeck-Mittelschule in Pfarrkirchen - Gewerk 6000-001 Außenanlagen Mittelschulverband Pfarrkirchen ['DE22A', 'DEU', 'DE22A', 'DEU']",
+      "authority": "Mittelschulverband Pfarrkirchen",
+      "city": "Pfarrkirchen",
+      "region": "",
+      "country": "DEU",
+      "project_type": "school",
+      "trades": [
+        "landscaping",
+        "earthworks",
+        "roadworks",
+        "structural"
+      ],
+      "cpv": [
+        "45112000",
+        "45112700",
+        "45233222",
+        "45262310",
+        "45112000",
+        "45112700",
+        "45233222",
+        "45262310"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.75,
+      "confidence": 0.75,
+      "band": "HOT",
+      "evidence": {
+        "project_text": true,
+        "project_cpv": true,
+        "trade_text": [
+          "landscaping"
+        ],
+        "trade_cpv": [
+          "earthworks",
+          "roadworks",
+          "structural"
+        ],
+        "construction_cpv": [
+          "45112000",
+          "45112700",
+          "45233222",
+          "45262310",
+          "45112000",
+          "45112700",
+          "45233222",
+          "45262310"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
       "source_id": "TED-783940-2026",
       "notice_id": "783940-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/783940-2026",
@@ -3926,65 +3918,6 @@
           "45421144",
           "45262670",
           "45421160"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
-      "source_id": "TED-783900-2026",
-      "notice_id": "783900-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/783900-2026",
-      "published": "2026-11-11+01:00",
-      "title": "452 - Generalsanierung der Johannes-Hirspeck-Mittelschule in Pfarrkirchen - Gewerk 6000-001 Außenanlagen",
-      "description": "452 - Generalsanierung der Johannes-Hirspeck-Mittelschule in Pfarrkirchen - Gewerk 6000-001 Außenanlagen Mittelschulverband Pfarrkirchen ['DE22A', 'DEU', 'DE22A', 'DEU']",
-      "authority": "Mittelschulverband Pfarrkirchen",
-      "city": "Pfarrkirchen",
-      "region": "",
-      "country": "DEU",
-      "project_type": "school",
-      "trades": [
-        "landscaping",
-        "earthworks",
-        "roadworks",
-        "structural"
-      ],
-      "cpv": [
-        "45112000",
-        "45112700",
-        "45233222",
-        "45262310",
-        "45112000",
-        "45112700",
-        "45233222",
-        "45262310"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.75,
-      "confidence": 0.75,
-      "band": "HOT",
-      "evidence": {
-        "project_text": true,
-        "project_cpv": true,
-        "trade_text": [
-          "landscaping"
-        ],
-        "trade_cpv": [
-          "earthworks",
-          "roadworks",
-          "structural"
-        ],
-        "construction_cpv": [
-          "45112000",
-          "45112700",
-          "45233222",
-          "45262310",
-          "45112000",
-          "45112700",
-          "45233222",
-          "45262310"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
@@ -4199,75 +4132,6 @@
       }
     },
     {
-      "source_id": "TED-783832-2026",
-      "notice_id": "783832-2026",
-      "source_url": "https://ted.europa.eu/en/notice/-/detail/783832-2026",
-      "published": "2026-11-11+01:00",
-      "title": "Bau Lüftungsanlage für Großtransformatoren: Umrichterwerk Neckarwestheim",
-      "description": "Bau Lüftungsanlage für Großtransformatoren: Umrichterwerk Neckarwestheim DB Energie GmbH (Bukr 31) ['DE118', 'DEU', 'DE118', 'DEU']",
-      "authority": "DB Energie GmbH (Bukr 31)",
-      "city": "Neckarwestheim",
-      "region": "",
-      "country": "DEU",
-      "project_type": "water_wastewater",
-      "trades": [
-        "hvac",
-        "windows_doors",
-        "railworks",
-        "electrical"
-      ],
-      "cpv": [
-        "45232220",
-        "31214000",
-        "45200000",
-        "45234170",
-        "45315300",
-        "45315500",
-        "45315700",
-        "45232220",
-        "31214000",
-        "45200000",
-        "45234170",
-        "45315300",
-        "45315500",
-        "45315700"
-      ],
-      "phase": "tender",
-      "score": 100,
-      "opportunity_score": 100,
-      "classification_confidence": 0.55,
-      "confidence": 0.55,
-      "band": "HOT",
-      "evidence": {
-        "project_text": false,
-        "project_cpv": true,
-        "trade_text": [
-          "hvac",
-          "windows_doors"
-        ],
-        "trade_cpv": [
-          "railworks",
-          "electrical"
-        ],
-        "construction_cpv": [
-          "45232220",
-          "45200000",
-          "45234170",
-          "45315300",
-          "45315500",
-          "45315700",
-          "45232220",
-          "45200000",
-          "45234170",
-          "45315300",
-          "45315500",
-          "45315700"
-        ],
-        "policy_version": "2026-10-05-evidence-v1",
-        "confidence_note": "Rule-based evidence strength; not measured accuracy."
-      }
-    },
-    {
       "source_id": "TED-786281-2026",
       "notice_id": "786281-2026",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/786281-2026",
@@ -4347,6 +4211,207 @@
           "45300000",
           "45323000",
           "45261410"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-783832-2026",
+      "notice_id": "783832-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/783832-2026",
+      "published": "2026-11-11+01:00",
+      "title": "Bau Lüftungsanlage für Großtransformatoren: Umrichterwerk Neckarwestheim",
+      "description": "Bau Lüftungsanlage für Großtransformatoren: Umrichterwerk Neckarwestheim DB Energie GmbH (Bukr 31) ['DE118', 'DEU', 'DE118', 'DEU']",
+      "authority": "DB Energie GmbH (Bukr 31)",
+      "city": "Neckarwestheim",
+      "region": "",
+      "country": "DEU",
+      "project_type": "water_wastewater",
+      "trades": [
+        "hvac",
+        "windows_doors",
+        "railworks",
+        "electrical"
+      ],
+      "cpv": [
+        "45232220",
+        "31214000",
+        "45200000",
+        "45234170",
+        "45315300",
+        "45315500",
+        "45315700",
+        "45232220",
+        "31214000",
+        "45200000",
+        "45234170",
+        "45315300",
+        "45315500",
+        "45315700"
+      ],
+      "phase": "tender",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
+      "band": "HOT",
+      "evidence": {
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [
+          "hvac",
+          "windows_doors"
+        ],
+        "trade_cpv": [
+          "railworks",
+          "electrical"
+        ],
+        "construction_cpv": [
+          "45232220",
+          "45200000",
+          "45234170",
+          "45315300",
+          "45315500",
+          "45315700",
+          "45232220",
+          "45200000",
+          "45234170",
+          "45315300",
+          "45315500",
+          "45315700"
+        ],
+        "policy_version": "2026-10-05-evidence-v1",
+        "confidence_note": "Rule-based evidence strength; not measured accuracy."
+      }
+    },
+    {
+      "source_id": "TED-782569-2026",
+      "notice_id": "782569-2026",
+      "source_url": "https://ted.europa.eu/en/notice/-/detail/782569-2026",
+      "published": "2026-11-10+01:00",
+      "title": "Bautechnik - 4. Reinigungsstufe zur Spurenstoffreduktion",
+      "description": "Bautechnik - 4. Reinigungsstufe zur Spurenstoffreduktion Emschergenossenschaft Lippeverband Einkauf-Emschergenossenschaft Einkauf-Lippeverband ['DEA54', 'DEU', 'DEA54', 'DEU']",
+      "authority": "Emschergenossenschaft Lippeverband Einkauf-Emschergenossenschaft Einkauf-Lippeverband",
+      "city": "Hamm",
+      "region": "",
+      "country": "DEU",
+      "project_type": "civil_engineering",
+      "trades": [
+        "demolition",
+        "earthworks",
+        "insulation",
+        "flooring",
+        "painting"
+      ],
+      "cpv": [
+        "45000000",
+        "45200000",
+        "45220000",
+        "45222000",
+        "45223000",
+        "45113000",
+        "45223110",
+        "45223210",
+        "45223220",
+        "45223500",
+        "45112000",
+        "45223810",
+        "45223820",
+        "45320000",
+        "45321000",
+        "45430000",
+        "45431000",
+        "45431100",
+        "45431200",
+        "45440000",
+        "45442100",
+        "45442110",
+        "45000000",
+        "45200000",
+        "45220000",
+        "45222000",
+        "45223000",
+        "45113000",
+        "45223110",
+        "45223210",
+        "45223220",
+        "45223500",
+        "45112000",
+        "45223810",
+        "45223820",
+        "45320000",
+        "45321000",
+        "45430000",
+        "45431000",
+        "45431100",
+        "45431200",
+        "45440000",
+        "45442100",
+        "45442110"
+      ],
+      "phase": "award",
+      "score": 100,
+      "opportunity_score": 100,
+      "classification_confidence": 0.55,
+      "confidence": 0.55,
+      "band": "HOT",
+      "evidence": {
+        "project_text": false,
+        "project_cpv": true,
+        "trade_text": [],
+        "trade_cpv": [
+          "demolition",
+          "earthworks",
+          "insulation",
+          "flooring",
+          "painting"
+        ],
+        "construction_cpv": [
+          "45000000",
+          "45200000",
+          "45220000",
+          "45222000",
+          "45223000",
+          "45113000",
+          "45223110",
+          "45223210",
+          "45223220",
+          "45223500",
+          "45112000",
+          "45223810",
+          "45223820",
+          "45320000",
+          "45321000",
+          "45430000",
+          "45431000",
+          "45431100",
+          "45431200",
+          "45440000",
+          "45442100",
+          "45442110",
+          "45000000",
+          "45200000",
+          "45220000",
+          "45222000",
+          "45223000",
+          "45113000",
+          "45223110",
+          "45223210",
+          "45223220",
+          "45223500",
+          "45112000",
+          "45223810",
+          "45223820",
+          "45320000",
+          "45321000",
+          "45430000",
+          "45431000",
+          "45431100",
+          "45431200",
+          "45440000",
+          "45442100",
+          "45442110"
         ],
         "policy_version": "2026-10-05-evidence-v1",
         "confidence_note": "Rule-based evidence strength; not measured accuracy."
